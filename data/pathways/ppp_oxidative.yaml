@@ -1,0 +1,77 @@
+id: ppp_oxidative
+title: 'Pentose phosphate pathway: oxidative phase（PPP 氧化期）'
+layout: free
+cell: 0.8
+nodes:
+- id: g6p
+  ref: b_glucose_6p
+  pos:
+  - 0
+  - 0
+- id: lac
+  ref: phosphogluconolactone
+  pos:
+  - 1.15
+  - 0
+- id: pg
+  ref: phosphogluconate
+  pos:
+  - 2.3
+  - 0
+- id: ru5p
+  ref: ribulose_5p
+  pos:
+  - 2.3
+  - 1.1
+- id: r5p
+  ref: ribose_5p
+  pos:
+  - 1.5
+  - 2.1
+- id: x5p
+  ref: xylulose_5p
+  pos:
+  - 3.1
+  - 2.1
+- id: non
+  text: 'Non-oxidative phase (reversible):
+
+    transketolase (TPP, 2C), transaldolase (3C)
+
+    → F6P + G3P'
+  kind: plain
+  pos:
+  - 3.6
+  - 1.1
+edges:
+- from: g6p
+  to: lac
+  step: g6pd
+  label: G6PD
+  side_text: NADP^+ → NADPH
+- from: lac
+  to: pg
+  step: lactonase
+  label: lactonase
+  side_text: H_2O
+- from: pg
+  to: ru5p
+  step: phosphogluconate_dehydrogenase
+  label: 6PG DH
+  side_text: NADP^+ → NADPH, CO_2
+- from: ru5p
+  to: r5p
+  step: ribose_5p_isomerase
+  label: isomerase
+  reversible: true
+- from: ru5p
+  to: x5p
+  step: ribulose_5p_epimerase
+  label: epimerase
+  reversible: true
+  label_side: right
+tags:
+- carb_metabolism
+- PPP
+notes_zh: 氧化期不可逆：G6P → 2 NADPH + CO₂ + Ru5P；G6PD 限速（NADP⁺ 活化）。非氧化期可逆：依需求在 R5P（核苷酸）與 F6P／G3P（糖解）之間轉換。NADPH 用於：脂肪酸、膽固醇合成，glutathione 還原，CYP450，呼吸爆。
+status: pending

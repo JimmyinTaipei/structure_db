@@ -1,0 +1,14 @@
+id: asparagine
+name: Asparagine
+aliases: [Asn, N, 天門冬醯胺]
+smiles: "NC(=O)C[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: C, dfork: {l: H_2N, r: O, rb: 2}}
+decorate:
+  boxes: [{rows: [2, 3], name: R}]
+tags: [amino_acid, polar]
+notes_zh: "Asn / N。N-linked glycosylation（Asn-X-Ser/Thr）。生糖。"
+status: approved

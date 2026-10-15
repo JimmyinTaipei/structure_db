@@ -1,0 +1,8 @@
+id: phosphatidylinositol
+name: "Phosphatidylinositol"
+aliases: [PI]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])OC1C(O)C(O)C(O)C(O)C1O"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "inositol"}
+tags: [lipid, phospholipid]
+notes_zh: "PI：磷酸化成 PIP₂ → phospholipase C 切成 IP₃（釋放 Ca²⁺）+ DAG（活化 PKC）；GPI anchor。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

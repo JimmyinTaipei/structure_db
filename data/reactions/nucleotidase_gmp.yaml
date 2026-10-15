@@ -1,0 +1,18 @@
+id: nucleotidase_gmp
+title: "GMP → Guanosine + Pᵢ (5′-nucleotidase)"
+substrates: [gmp]
+products: [guanosine]
+cofactors_in: [H2O]
+cofactors_out: [Pi]
+enzyme: "5′-nucleotidase"
+reversible: false
+decorate:
+  gmp:
+    colors:
+      u4: [magenta, '{P}']
+  Pi:
+    colors: {0: magenta}
+card_zh:
+  type: "水解去磷酸"
+tags: [nucleotide, purine, degradation]
+status: pending

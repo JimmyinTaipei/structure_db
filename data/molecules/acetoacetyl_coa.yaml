@@ -1,0 +1,21 @@
+id: acetoacetyl_coa
+name: Acetoacetyl-CoA
+aliases:
+- 乙醯乙醯輔酶A
+smiles: CC(=O)CC(=O)S[1*]
+chain:
+- c: CH_3
+- c: C
+  r: O
+  rb: 2
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- ketone_bodies
+- cholesterol_synthesis
+notes_zh: 2 acetyl-CoA 經 thiolase 縮合；酮體合成與膽固醇合成的共同起點（前者在粒線體，後者在細胞質）。
+status: pending

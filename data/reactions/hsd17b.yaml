@@ -1,0 +1,36 @@
+id: hsd17b
+title: Androstenedione → Testosterone (17β-HSD)
+substrates:
+- androstenedione
+products:
+- testosterone
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: '17β-hydroxysteroid
+
+  dehydrogenase'
+reversible: false
+decorate:
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  testosterone:
+    highlight:
+    - smarts: '[CH1;R][OH:1]'
+      color: magenta
+card_zh:
+  location: Leydig 細胞（17β-HSD3）、周邊組織
+  type: 17-酮還原成 17β-OH
+  deficiency:
+  - 17β-HSD3 缺乏：男性 46,XY 外生殖器女性化，青春期部分男性化
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

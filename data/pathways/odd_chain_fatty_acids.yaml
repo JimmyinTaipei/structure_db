@@ -1,0 +1,48 @@
+id: odd_chain_fatty_acids
+title: 'Odd-chain fatty acids: Propionyl-CoA → Succinyl-CoA'
+layout: linear
+nodes:
+- id: pro
+  ref: propionyl_coa
+  pos:
+  - 0
+  - 0
+- id: smm
+  ref: s_methylmalonyl_coa
+  pos:
+  - 1
+  - 0
+- id: rmm
+  ref: r_methylmalonyl_coa
+  pos:
+  - 2
+  - 0
+- id: suc
+  ref: succinyl_coa
+  pos:
+  - 3
+  - 0
+edges:
+- from: pro
+  to: smm
+  step: propionyl_coa_carboxylase
+  label: 'carboxylase
+
+    (biotin)'
+  side_text: ATP, HCO_3^-
+- from: smm
+  to: rmm
+  step: methylmalonyl_coa_epimerase
+  label: epimerase
+  reversible: true
+- from: rmm
+  to: suc
+  step: methylmalonyl_coa_mutase
+  label: 'mutase
+
+    (B_{12})'
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: propionyl-CoA（奇數碳脂肪酸、Val、Ile、Met、Thr）→ succinyl-CoA → TCA。biotin 與 B12 各用一次。B12 缺乏 → MMA ↑。
+status: pending

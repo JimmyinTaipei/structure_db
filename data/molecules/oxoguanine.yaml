@@ -1,0 +1,15 @@
+id: oxoguanine
+name: 8-Oxoguanine
+label: 8-oxoG
+aliases:
+- 8-oxo-dG
+- 8-oxoG
+smiles: '[17*]n1c2nc(N)[nH]c(=O)c2[nH]c1=O'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- repair
+notes_zh: ROS 氧化 G 的 C8。syn 構形可與 A 配對 → G·C 變 T·A（transversion）。由 OGG1（glycosylase）以 BER 移除；MUTYH 移除對面誤配的 A。
+parts_png: false
+status: pending

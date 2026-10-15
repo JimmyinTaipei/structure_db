@@ -1,0 +1,23 @@
+id: argininosuccinate_synthetase
+title: "Urea cycle ③ Citrulline + Aspartate → Argininosuccinate (ASS)"
+step: 3
+substrates: [citrulline, aspartate]
+products: [argininosuccinate]
+cofactors_in: [ATP]
+cofactors_out: [AMP, PPi]
+prosthetic: ["Mg^{2+}"]
+extra_out: [H+]                   # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "argininosuccinate\nsynthetase"
+reversible: false
+decorate:                         # 青藍：aspartate 的 N（尿素第二個 N）；洋紅：aspartate 的碳骨架
+  aspartate: {colors: {0: magenta, 1: {c: magenta, r: magenta, l: cyan}, 2: magenta, 3: magenta}}
+  argininosuccinate: {colors: {7: cyan, 8: magenta, 9: magenta, 10: magenta}}
+card_zh:
+  location: 細胞質
+  type: 縮合（ATP → AMP + PPᵢ，相當於消耗 2 個高能磷酸鍵）
+  mechanism: "citrulline 的 C=O 先被 ATP 活化成 citrullyl-AMP，再被 aspartate 的胺基取代"
+  deficiency: "ASS 缺乏 → citrullinemia type I（血中 citrulline ↑、高血氨）"
+  exam_points:
+    - "尿素的第二個 N 來自 aspartate"
+tags: [urea]
+status: pending

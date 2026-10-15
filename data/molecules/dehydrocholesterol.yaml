@@ -1,0 +1,23 @@
+id: dehydrocholesterol
+name: 7-Dehydrocholesterol
+label: 7-Dehydrocholesterol
+aliases:
+- 7-DHC
+- provitamin D3
+- 7-去氫膽固醇
+smiles: CC(C)CCC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC=C4[C@@]3(CC[C@@H](C4)O)C)C
+ring:
+  orient: steroid
+  letters: true
+  methyls: false
+decorate:
+  highlight:
+  - smarts: '[C;R]=[C;R][C;R]=[C;R]'
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+- lipid
+- steroid
+notes_zh: 膽固醇合成的最後中間物（B 環多一個 C7=C8 雙鍵）。洋紅：B 環的共軛雙烯，皮膚中吸收 UVB 後 B 環在 C9–C10 斷開 → previtamin D₃ → （熱異構化）vitamin D₃。
+status: pending

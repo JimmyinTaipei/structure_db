@@ -1,0 +1,20 @@
+id: xanthine_oxidase_2
+title: "Xanthine → Uric acid (xanthine oxidase)"
+substrates: [xanthine]
+products: [uric_acid]
+cofactors_in: [H2O, O2]
+cofactors_out: [H2O2]
+enzyme: "xanthine oxidase"
+reversible: false
+decorate:                         # 洋紅：C8 新加的 O
+  uric_acid: {base_colors: {9: magenta}}
+  H2O: {colors: {0: magenta}}
+card_zh:
+  type: "氧化（C8 加 O）"
+  deficiency:
+    - "痛風：尿酸鈉結晶沉積於關節（第一蹠趾關節 podagra）；負雙折射針狀結晶"
+    - "腫瘤溶解症候群：化療前給 allopurinol 或 rasburicase（重組 urate oxidase）"
+  exam_points:
+    - "人類缺乏 urate oxidase（uricase），所以尿酸是終產物"
+tags: [nucleotide, purine, degradation]
+status: pending

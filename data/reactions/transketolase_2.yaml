@@ -1,0 +1,21 @@
+id: transketolase_2
+title: Transketolase（第二步）X5P + E4P ⇌ G3P + F6P
+substrates: [xylulose_5p, erythrose_4p]
+products: [glyceraldehyde_3p, fructose_6p]
+prosthetic: [TPP]
+prosthetic_font: sans
+enzyme: transketolase
+reversible: true
+decorate:
+  xylulose_5p: {colors: {0: magenta, 1: magenta, 2: cyan, 3: cyan, 4: cyan}}
+  glyceraldehyde_3p: {colors: {0: cyan, 1: cyan, 2: cyan}}
+  fructose_6p: {colors: {0: magenta, 1: magenta}}
+card_zh:
+  location: 細胞質（PPP 非氧化期）
+  deltaG: "接近平衡，可逆"
+  cofactors: "TPP（B1）、Mg²⁺"
+  mechanism: "同第一步：X5P 的 C1–C2 轉給 E4P → 生成 F6P，X5P 剩下的 C3–C5 成為 G3P"
+  exam_points:
+    - "淨結果：3 個 pentose-P → 2 個 F6P + 1 個 G3P（回到糖解）"
+tags: [carb_metabolism, PPP]
+status: pending

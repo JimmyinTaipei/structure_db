@@ -1,0 +1,31 @@
+id: pfk2
+title: Fructose 6-phosphate → Fructose 2,6-bisphosphate (PFK-2)
+substrates:
+- b_fructose_6p
+products:
+- fructose_26bp
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: 'PFK-2
+
+  (bifunctional enzyme)'
+reversible: false
+decorate:
+  fructose_26bp:
+    colors:
+      u1: [magenta, '{P}']
+card_zh:
+  location: 細胞質
+  type: 磷酸化（調控用，非代謝主幹）
+  regulation: 同一條多肽有 PFK-2 與 FBPase-2 兩個活性。肝：glucagon → PKA 磷酸化 → PFK-2 關、FBPase-2 開 → F2,6BP ↓；insulin 去磷酸化 → 相反
+  exam_points:
+  - F2,6BP：PFK-1 最強的活化劑、FBPase-1 抑制劑
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+status: pending

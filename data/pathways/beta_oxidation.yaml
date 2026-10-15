@@ -1,0 +1,73 @@
+id: beta_oxidation
+title: β-Oxidation（β 氧化，一輪四步）
+layout: free
+cell_size: 9.5
+nodes:
+- id: acyl
+  ref: acyl_coa
+  pos:
+  - 0
+  - 0
+- id: enoyl
+  ref: enoyl_coa
+  pos:
+  - 1.5
+  - 0
+- id: oh
+  ref: hydroxyacyl_coa
+  pos:
+  - 1.5
+  - 1.25
+- id: keto
+  ref: ketoacyl_coa
+  pos:
+  - 0
+  - 1.25
+- id: n2
+  ref: acyl_coa_n2
+  pos:
+  - -0.7
+  - 2.45
+- id: ac
+  ref: acetyl_coa
+  pos:
+  - 0.7
+  - 2.45
+edges:
+- from: acyl
+  to: enoyl
+  step: acyl_coa_dehydrogenase
+  label: acyl-CoA DH
+  side_text: FAD → FADH_2
+- from: enoyl
+  to: oh
+  step: enoyl_coa_hydratase
+  label: 'enoyl-CoA
+
+    hydratase'
+  side_text: H_2O
+  label_side: right
+- from: oh
+  to: keto
+  step: hydroxyacyl_coa_dehydrogenase
+  label: 3-hydroxyacyl-CoA DH
+  side_text: NAD^+ → NADH
+  label_side: right
+- from: keto
+  to: n2
+  step: beta_ketothiolase
+  label: thiolase
+  side_text: CoA-SH
+- from: keto
+  to: ac
+  step: beta_ketothiolase
+- from: n2
+  to: acyl
+  label: next cycle
+  bend: 0.45
+  label_side: right
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 氧化（FAD）→ 加水 → 氧化（NAD⁺）→ 硫解。每輪少 2 碳，產生 1 FADH₂、1 NADH、1 acetyl-CoA。palmitate：7 輪 → 8 acetyl-CoA，淨 106 ATP。不飽和脂肪酸另需 enoyl-CoA isomerase（與 2,4-dienoyl-CoA reductase）；極長鏈先在 peroxisome 縮短（Zellweger、X-ALD）。
+status: pending

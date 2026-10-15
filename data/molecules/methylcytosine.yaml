@@ -1,0 +1,16 @@
+id: methylcytosine
+name: 5-Methylcytosine
+aliases:
+- 5mC
+- 5-甲基胞嘧啶
+smiles: Cc1c[nH]c(=O)nc1N
+ring:
+  down: 4
+  right: 5
+  nh_bond: true
+  mirror: true
+tags:
+- nucleotide
+- pyrimidine
+notes_zh: CpG 中 C 的 5 位甲基化（DNMT，SAM）→ 基因沉默（epigenetic）。自發去胺基直接變成 thymine，修復系統不易辨認 → CpG 為突變熱點。
+status: pending

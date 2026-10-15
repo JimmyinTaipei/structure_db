@@ -1,0 +1,33 @@
+id: a_glucose_6p
+name: α-D-Glucose 6-phosphate
+label: 'Glucose
+
+  6-phosphate'
+aliases:
+- α-G6P
+- glucose 6-phosphate (ring)
+smiles: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)([O-])[O-]
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: OH
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: CH_2O{P}
+      down: H
+tags:
+- carb_metabolism
+- glycogen
+notes_zh: 環狀 G6P（α），phosphoglucomutase 與 G1P 互換。開鏈畫法見 Glucose 6-phosphate。
+status: pending

@@ -1,0 +1,48 @@
+id: dipeptide_formation
+title: Peptide bond formation (condensation)
+substrates:
+- glycine
+- alanine
+products:
+- glycylalanine
+cofactors_out:
+- H2O
+enzyme: Ribosome (peptidyl transferase)
+reversible: false
+decorate:
+  glycine:
+    colors:
+      0:
+        c:
+        - - cyan
+          - CO
+        - - magenta
+          - O^-
+  alanine:
+    colors:
+      1:
+        l:
+        - - magenta
+          - ^+H_3
+        - - cyan
+          - N
+  glycylalanine:
+    colors:
+      c1: cyan
+      o1: cyan
+      n2: cyan
+  H2O:
+    colors:
+      0: magenta
+card_zh:
+  type: 縮合（脫水）反應：前一個胺基酸的 α-COO⁻ 與下一個的 α-NH₃⁺ 形成醯胺鍵，脫去 1 H₂O
+  deltaG: 直接縮合在熱力學上不利（ΔG > 0）；細胞內先把胺基酸活化成 aminoacyl-tRNA（消耗 ATP），由核糖體 peptidyl transferase（23S/28S rRNA，ribozyme）催化
+  mechanism: 胜肽鍵的逆反應（水解）雖然有利但很慢，所以蛋白質在水中穩定；酸、鹼或 protease 可水解
+  exam_points:
+  - n 個胺基酸的直鏈胜肽：n − 1 個胜肽鍵、脫 n − 1 個 H₂O；環狀胜肽則為 n 個
+  - 胜肽鍵 = C(=O)–N 鍵，部分雙鍵性質、平面、幾乎都是 trans（Pro 前可為 cis）
+  - 寫法：N 端在左、C 端在右
+tags:
+- protein
+- peptide
+status: pending

@@ -1,0 +1,17 @@
+id: b_glucosamine
+name: "β-D-Glucosamine"
+label: "β-D-Glucosamine"
+aliases: [GlcN, 葡萄糖胺]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)[NH3+])O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "NH_3^+"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "CH_2OH", down: "H"}
+tags: [carbohydrate, sugar_derivative]
+notes_zh: "胺基糖：C2-OH 換成胺基（生理 pH 為 –NH₃⁺）。由 fructose 6-P + Gln 合成（GFAT），是 GAG、幾丁質的前驅物。"
+status: pending

@@ -1,0 +1,24 @@
+id: lactonase
+title: PPP ② 6-Phosphoglucono-δ-lactone → 6-Phosphogluconate (lactonase)
+substrates:
+- phosphogluconolactone
+products:
+- phosphogluconate
+cofactors_in:
+- H2O
+extra_out:
+- H+
+enzyme: lactonase
+reversible: false
+decorate:
+  H2O:
+    colors: {0: magenta}
+  phosphogluconate:
+    colors:
+      0: {fork_r: magenta}
+card_zh:
+  type: 水解（開環）
+tags:
+- carb_metabolism
+- PPP
+status: pending

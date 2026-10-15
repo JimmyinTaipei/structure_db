@@ -1,0 +1,61 @@
+id: glycogen_n1
+name: Glycogen (n+1 residues)
+label: 'Glycogen
+
+  (n+1 residues)'
+aliases:
+- glycogen chain (n+1)
+smiles: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[9*])O)O)O[C@@H]1[C@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O1)O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: link
+      2:
+        up: H
+        down: OH
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: HO
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OR
+      2:
+        up: H
+        down: OH
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: link
+      5:
+        up: CH_2OH
+        down: H
+    at:
+    - 4.9
+    - 0
+  links:
+  - from:
+    - 0
+    - 1
+    - down
+    to:
+    - 1
+    - 4
+    - down
+tags:
+- carb_metabolism
+- glycogen
+notes_zh: 多一個以 α1→4 接上的葡萄糖（左）。
+status: pending

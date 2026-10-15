@@ -1,0 +1,17 @@
+id: adenylosuccinate
+name: "Adenylosuccinate"
+aliases: [S-AMP]
+smiles: "[O-]C(=O)C[C@H](Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O)C(=O)[O-]"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  base: "[*]n1cnc2c(N[C@@H](CC(=O)[O-])C(=O)[O-])ncnc21"
+  base_right: 5     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "IMP + Asp（adenylosuccinate synthetase，耗 GTP）的產物；lyase 切出 fumarate → AMP（與尿素循環 ASL 類似）。"
+status: pending

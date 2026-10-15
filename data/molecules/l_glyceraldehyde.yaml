@@ -1,0 +1,11 @@
+id: l_glyceraldehyde
+name: "L-Glyceraldehyde"
+aliases: [Glyceraldehyde]
+smiles: "O=C[C@@H](O)CO"
+chain:
+  - {c: "C", fork: {l: "O", lb: 2, r: "H"}}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "D-glyceraldehyde 的鏡像異構物（enantiomer）：OH 在左 = L。"
+status: pending

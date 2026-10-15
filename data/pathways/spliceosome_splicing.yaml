@@ -1,0 +1,441 @@
+id: spliceosome_splicing
+title: Pre-mRNA splicing by the spliceosome
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0
+      - 2.2
+    - - 20
+      - 2.2
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 2.0
+    - 2.2
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: exon 1
+    text_size: 0.62
+  - g: blob
+    at:
+    - 18.0
+    - 2.2
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: green
+    text: exon 2
+    text_size: 0.62
+  - g: ion
+    at:
+    - 11.6
+    - 2.2
+    r: 0.32
+    hue: red
+    text: A
+    text_size: 0.42
+  - g: text
+    at:
+    - 4.6
+    - 3.0500000000000003
+    text: GU
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 13.6
+    - 3.0500000000000003
+    text: (Py)_n
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 15.3
+    - 3.0500000000000003
+    text: AG
+    size: 0.72
+    align: center
+  - g: blob
+    at:
+    - 4.9
+    - 1.0000000000000002
+    w: 1.5
+    h: 1.2
+    shape: round
+    hue: teal
+    text: U1
+    text_size: 0.62
+  - g: blob
+    at:
+    - 11.6
+    - 1.0000000000000002
+    w: 1.5
+    h: 1.2
+    shape: round
+    hue: purple
+    text: U2
+    text_size: 0.62
+  - g: blob
+    at:
+    - 14.6
+    - 1.0500000000000003
+    w: 2.1
+    h: 1.0
+    shape: oval
+    hue: gray
+    text: U2AF
+    text_size: 0.55
+  - g: text
+    at:
+    - 21.6
+    - 2.2
+    text: 1. U1, U2, U2AF bind
+    size: 0.78
+    align: left
+  - g: region
+    x0: 3.3
+    y0: 5.0
+    x1: 16.7
+    y1: 9.5
+    hue: gray
+    opacity: 0.18
+    dashed: true
+  - g: strand
+    kind: rna
+    points:
+    - - 0
+      - 8.6
+    - - 4.0
+      - 8.6
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 4.0
+      - 8.6
+    - - 4.9
+      - 8.0
+    - - 6.8
+      - 6.3
+    - - 10.0
+      - 5.8
+    - - 13.2
+      - 6.3
+    - - 15.1
+      - 8.0
+    - - 16.0
+      - 8.6
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 16.0
+      - 8.6
+    - - 20
+      - 8.6
+    width: 0.3
+  - g: blob
+    at:
+    - 2.0
+    - 8.6
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: exon 1
+    text_size: 0.62
+  - g: blob
+    at:
+    - 18.0
+    - 8.6
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: green
+    text: exon 2
+    text_size: 0.62
+  - g: ion
+    at:
+    - 12.4
+    - 6.05
+    r: 0.32
+    hue: red
+    text: A
+    text_size: 0.42
+  - g: arrow
+    from:
+    - 11.9
+    - 6.3999999999999995
+    to:
+    - 4.6
+    - 8.1
+    curve: 0.25
+    color: '#E8731A'
+    width: 1.2
+  - g: ion
+    at:
+    - 6.2
+    - 5.699999999999999
+    r: 0.3
+    hue: orange
+    text: '1'
+    text_size: 0.45
+  - g: text
+    at:
+    - 10.0
+    - 4.5
+    text: spliceosome
+    size: 0.68
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 21.6
+    - 8.0
+    text: 2. branch-A 2′-OH attacks 5′ss
+    size: 0.78
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0
+      - 14.6
+    - - 4.0
+      - 14.6
+    width: 0.3
+  - g: blob
+    at:
+    - 2.0
+    - 14.6
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: exon 1
+    text_size: 0.62
+  - g: text
+    at:
+    - 4.9
+    - 13.85
+    text: 3'-OH
+    size: 0.68
+    align: center
+    color: '#C2338A'
+  - g: strand
+    kind: rna
+    points:
+    - - 10.48756934444398
+      - 13.607141914088839
+    - - 10.319253331742773
+      - 13.871345131623848
+    - - 10.088291723621255
+      - 14.08298245314679
+    - - 9.810424171990803
+      - 14.22763114494309
+    - - 9.50458689129719
+      - 14.295433637710094
+    - - 9.191622186799684
+      - 14.281769303614649
+    - - 8.892858085911161
+      - 14.187569344443979
+    - - 8.628654868376152
+      - 14.019253331742773
+    - - 8.41701754685321
+      - 13.788291723621255
+    - - 8.27236885505691
+      - 13.510424171990802
+    - - 8.204566362289906
+      - 13.20458689129719
+    - - 8.218230696385351
+      - 12.891622186799683
+    - - 8.312430655556021
+      - 12.59285808591116
+    - - 8.480746668257227
+      - 12.328654868376152
+    - - 8.711708276378745
+      - 12.11701754685321
+    - - 8.989575828009198
+      - 11.97236885505691
+    - - 9.29541310870281
+      - 11.904566362289906
+    - - 9.608377813200317
+      - 11.91823069638535
+    - - 9.90714191408884
+      - 12.01243065555602
+    - - 10.171345131623848
+      - 12.180746668257227
+    - - 10.38298245314679
+      - 12.411708276378743
+    - - 10.52763114494309
+      - 12.689575828009197
+    - - 10.595433637710094
+      - 12.99541310870281
+    - - 11.4
+      - 13.799999999999999
+    - - 12.8
+      - 14.6
+    - - 16.0
+      - 14.6
+    - - 20
+      - 14.6
+    width: 0.3
+  - g: ion
+    at:
+    - 10.6
+    - 13.1
+    r: 0.3
+    hue: red
+    text: A
+    text_size: 0.42
+  - g: blob
+    at:
+    - 18.0
+    - 14.6
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: green
+    text: exon 2
+    text_size: 0.62
+  - g: arrow
+    from:
+    - 4.6
+    - 15.2
+    to:
+    - 15.8
+    - 15.2
+    curve: 0.12
+    color: '#E8731A'
+    width: 1.2
+  - g: ion
+    at:
+    - 10.2
+    - 16.9
+    r: 0.3
+    hue: orange
+    text: '2'
+    text_size: 0.45
+  - g: text
+    at:
+    - 21.6
+    - 14.2
+    text: 3. exon-1 3′-OH attacks 3′ss
+    size: 0.78
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0
+      - 19.8
+    - - 8.0
+      - 19.8
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 2.0
+    - 19.8
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: exon 1
+    text_size: 0.62
+  - g: blob
+    at:
+    - 6.0
+    - 19.8
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: green
+    text: exon 2
+    text_size: 0.62
+  - g: strand
+    kind: rna
+    points:
+    - - 13.996938565740315
+      - 19.86488008791477
+    - - 13.842648887430876
+      - 20.107066370655197
+    - - 13.630934079986151
+      - 20.301067248717892
+    - - 13.376222157658235
+      - 20.433661882864502
+    - - 13.095871317022423
+      - 20.49581416790092
+    - - 12.808987004566376
+      - 20.48328852831343
+    - - 12.53511991208523
+      - 20.396938565740317
+    - - 12.292933629344807
+      - 20.242648887430878
+    - - 12.098932751282108
+      - 20.030934079986153
+    - - 11.9663381171355
+      - 19.77622215765824
+    - - 11.90418583209908
+      - 19.495871317022427
+    - - 11.916711471686572
+      - 19.208987004566378
+    - - 12.003061434259685
+      - 18.935119912085234
+    - - 12.157351112569124
+      - 18.692933629344807
+    - - 12.369065920013849
+      - 18.498932751282112
+    - - 12.623777842341765
+      - 18.366338117135502
+    - - 12.904128682977577
+      - 18.304185832099083
+    - - 13.191012995433622
+      - 18.316711471686574
+    - - 13.46488008791477
+      - 18.403061434259687
+    - - 13.707066370655193
+      - 18.557351112569126
+    - - 13.90106724871789
+      - 18.76906592001385
+    - - 14.0336618828645
+      - 19.023777842341765
+    - - 14.09581416790092
+      - 19.304128682977577
+    - - 15.4
+      - 19.400000000000002
+    width: 0.3
+  - g: ion
+    at:
+    - 14.1
+    - 19.400000000000002
+    r: 0.3
+    hue: red
+    text: A
+    text_size: 0.42
+  - g: text
+    at:
+    - 21.6
+    - 19.400000000000002
+    text: 4. exons joined + lariat
+    size: 0.78
+    align: left
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'U1 認 5′ss（GU）、U2 認 branch point A（A 突出）、U2AF 認 Py tract 與 3′ AG → U4/U6·U5 加入 → U1、U4 離開 → U6 與 5′ss、U2 配對成 RNA 催化中心（ribozyme）。第一次轉酯：branch A 的 2′-OH 攻擊 5′ss → exon 1 3′-OH + lariat（2′–5′ 鍵）；第二次：exon
+  1 3′-OH 攻擊 3′ss → exon 接合、lariat 釋出。Major（U2 型，GU–AG，>99 %）；minor（U12 型，AU–AC：U11、U12、U4atac、U6atac）。
+
+  【補充】Two transesterifications: the number of phosphodiester bonds does not change (no ATP for the chemistry; ATP drives the RNA helicases that remodel snRNPs). Major (U2-type) GU–AG introns > 99 %; minor
+  (U12-type) AU–AC introns use U11, U12, U4atac, U6atac + U5. snRNAs are U-rich; U3 is a snoRNA (rRNA processing), not a splicing snRNA. Splice-site mutations: β-thalassaemia; SMN2 exon-7 skipping (spinal
+  muscular atrophy). Anti-Sm (snRNP) antibodies in SLE.'
+parts_png: false
+status: pending

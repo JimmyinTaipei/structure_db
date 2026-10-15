@@ -1,0 +1,14 @@
+id: ornithine
+name: Ornithine
+aliases: [Orn, 鳥胺酸]
+smiles: "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]"
+chain:
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: "^+NH_3"}
+tags: [urea]
+notes_zh: 非蛋白質胺基酸；尿素循環的「載體」，由 ornithine/citrulline antiporter 在粒線體與細胞質間往返。
+status: pending

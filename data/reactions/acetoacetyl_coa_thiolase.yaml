@@ -1,0 +1,24 @@
+id: acetoacetyl_coa_thiolase
+title: 2 Acetyl-CoA ⇌ Acetoacetyl-CoA (thiolase)
+substrates:
+- id: acetyl_coa
+  n: 2
+products:
+- acetoacetyl_coa
+cofactors_out:
+- CoA-SH
+enzyme: thiolase
+reversible: true
+decorate:
+  acetoacetyl_coa:
+    colors: {0: magenta, 1: magenta}
+  CoA-SH:
+    colors: {0: magenta}
+card_zh:
+  location: 粒線體（酮體）／細胞質（膽固醇）
+  type: Claisen 縮合（β 氧化最後一步的逆反應）
+tags:
+- lipid_metabolism
+- ketone_bodies
+- cholesterol_synthesis
+status: pending

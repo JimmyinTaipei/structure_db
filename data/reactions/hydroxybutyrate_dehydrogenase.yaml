@@ -1,0 +1,35 @@
+id: hydroxybutyrate_dehydrogenase
+title: Acetoacetate ⇌ D-β-Hydroxybutyrate (β-hydroxybutyrate DH)
+substrates:
+- acetoacetate
+products:
+- beta_hydroxybutyrate
+cofactors_in:
+- NADH+H+
+cofactors_out:
+- NAD+
+enzyme: 'D-β-hydroxybutyrate
+
+  dehydrogenase'
+reversible: true
+decorate:
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  beta_hydroxybutyrate:
+    colors:
+      2:
+        l: magenta
+        r: [magenta, H]
+card_zh:
+  location: 粒線體
+  type: 氧化還原（可逆）
+  exam_points:
+  - NADH/NAD⁺ 越高（飢餓、酒精、DKA）→ β-HB 比例越高
+tags:
+- lipid_metabolism
+- ketone_bodies
+status: pending

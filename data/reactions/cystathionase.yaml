@@ -1,0 +1,41 @@
+id: cystathionase
+title: Cystathionine → Cysteine + α-Ketobutyrate + NH₄⁺ (cystathionine γ-lyase)
+substrates:
+- cystathionine
+products:
+- cysteine
+- alpha_ketobutyrate
+- id: ammonium
+  view: formula
+cofactors_in:
+- H2O
+prosthetic:
+- PLP
+enzyme: 'cystathionine
+
+  γ-lyase'
+reversible: false
+decorate:
+  cystathionine:
+    colors:
+      0: magenta
+      1: {c: magenta, l: cyan}
+      2: magenta
+      3: magenta
+  alpha_ketobutyrate:
+    colors:
+      0: magenta
+      1: {c: magenta}
+      2: magenta
+      3: magenta
+  ammonium:
+    colors: {0: cyan}
+card_zh:
+  type: 裂解（PLP）
+  exam_points:
+  - Cys 的 S 來自 Met，碳骨架來自 Ser → Cys 是條件必需胺基酸
+  - cystathioninuria 為良性
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

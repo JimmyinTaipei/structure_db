@@ -1,0 +1,87 @@
+id: insulin_glucagon_regulation
+title: 'Insulin vs glucagon: key enzymes（胰島素與升糖素調控的酵素）'
+layout: free
+cell_size: 3.2
+nodes:
+- id: ih
+  text: Insulin (dephosphorylation)
+  kind: heading
+  pos:
+  - -3.0
+  - 0
+- id: gh
+  text: Glucagon / epinephrine (cAMP–PKA)
+  kind: heading
+  pos:
+  - 3.0
+  - 0
+- id: i1
+  text: 'Glycogen synthase ↑
+
+    Glycogen phosphorylase ↓'
+  kind: name
+  pos:
+  - -1.4
+  - 1.3
+- id: g1
+  text: 'Glycogen phosphorylase ↑
+
+    Glycogen synthase ↓'
+  kind: name
+  pos:
+  - 4.6
+  - 1.3
+- id: i2
+  text: 'PFK-2 ↑ (F2,6BP ↑) → glycolysis ↑
+
+    Pyruvate kinase (L) ↑'
+  kind: name
+  pos:
+  - -1.4
+  - 2.6
+- id: g2
+  text: 'FBPase-2 ↑ (F2,6BP ↓) → gluconeogenesis ↑
+
+    Pyruvate kinase (L) ↓, PEPCK ↑'
+  kind: name
+  pos:
+  - 4.6
+  - 2.6
+- id: i3
+  text: 'PDH ↑ (PDH phosphatase)
+
+    ACC ↑ → malonyl-CoA ↑'
+  kind: name
+  pos:
+  - -1.4
+  - 3.9
+- id: g3
+  text: 'ACC ↓ (also AMPK)
+
+    CPT-I ↑ → β-oxidation, ketogenesis'
+  kind: name
+  pos:
+  - 4.6
+  - 3.9
+- id: i4
+  text: 'HMG-CoA reductase ↑
+
+    LPL ↑, HSL ↓'
+  kind: name
+  pos:
+  - -1.4
+  - 5.2
+- id: g4
+  text: 'HSL ↑ (lipolysis)
+
+    HMG-CoA reductase ↓'
+  kind: name
+  pos:
+  - 4.6
+  - 5.2
+edges: []
+tags:
+- energy_metabolism
+- integration
+notes_zh: 原則：升糖素／腎上腺素經 cAMP–PKA 把酵素磷酸化；胰島素活化 protein phosphatase-1 去磷酸化。被磷酸化而「活化」的只有分解方向的酵素（glycogen phosphorylase、phosphorylase kinase、HSL、FBPase-2）；合成方向（glycogen synthase、ACC、PFK-2、PK-L、HMG-CoA reductase）被磷酸化則失活。
+status: pending

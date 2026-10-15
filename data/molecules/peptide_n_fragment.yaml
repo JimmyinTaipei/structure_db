@@ -1,0 +1,14 @@
+id: peptide_n_fragment
+name: N-terminal fragment (new carboxyl end)
+label: Pep_N–Phe–COOH
+aliases:
+- second product
+smiles: '[23*]C(=O)N[C@@H](Cc1ccccc1)C(=O)O'
+ring:
+  coordgen: true
+tags:
+- enzyme
+- catalysis
+notes_zh: 第二個產物：帶新羧基端的 N 端片段（去醯化步驟由水解釋出）。
+parts_png: false
+status: pending

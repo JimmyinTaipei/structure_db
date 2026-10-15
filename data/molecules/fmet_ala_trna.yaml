@@ -1,0 +1,15 @@
+id: fmet_ala_trna
+name: fMet-Ala-tRNA (dipeptidyl-tRNA)
+label: fMet-Ala-tRNA^{Ala}
+aliases:
+- dipeptidyl-tRNA
+- peptidyl-tRNA
+smiles: O=CN[C@@H](CCSC)C(=O)N[C@@H](C)C(=O)O[20*]
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- translation
+notes_zh: 第一個胜肽鍵形成後的 dipeptidyl-tRNA，位於 A 位，之後由 EF-G 轉位到 P 位。
+parts_png: false
+status: pending

@@ -1,0 +1,14 @@
+id: peptide_c_fragment
+name: C-terminal fragment (new amino end)
+label: H_2N–Pep_C
+aliases:
+- first product
+smiles: N[24*]
+ring:
+  coordgen: true
+tags:
+- enzyme
+- catalysis
+notes_zh: 第一個產物：帶新胺基端的 C 端片段（醯化步驟釋出）。
+parts_png: false
+status: pending

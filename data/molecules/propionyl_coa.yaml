@@ -1,0 +1,17 @@
+id: propionyl_coa
+name: Propionyl-CoA
+aliases:
+- 丙醯輔酶A
+smiles: CCC(=O)S[1*]
+chain:
+- c: CH_3
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 奇數碳脂肪酸 β 氧化的最後 3 碳；也來自 Val、Ile、Met、Thr 與膽固醇側鏈。→ succinyl-CoA（可淨生成葡萄糖）。
+status: pending

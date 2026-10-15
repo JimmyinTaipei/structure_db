@@ -1,0 +1,23 @@
+id: lactate
+name: L-Lactate
+aliases:
+- lactate
+- lactic acid
+- 乳酸
+smiles: C[C@H](O)C(=O)[O-]
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: C
+  l: HO
+  r: H
+- c: CH_3
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+notes_zh: L-乳酸（Fischer：HO 在左）。無氧糖解的終產物（LDH 再生 NAD⁺，讓 GAPDH 能繼續）；紅血球沒有粒線體，只能做到 lactate。經 Cori cycle 回肝臟做糖質新生。
+status: pending

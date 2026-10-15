@@ -1,0 +1,14 @@
+id: retinal
+name: all-trans-Retinal
+label: all-trans-Retinal
+aliases:
+- retinaldehyde
+- 視黃醛
+smiles: CC1=C(C(C)(C)CCC1)/C=C/C(C)=C/C=C/C(C)=C/C=O
+ring:
+  methyls: false
+tags:
+- vitamin
+- fat_soluble
+notes_zh: retinol 的醛（可逆）。光照使 rhodopsin 中的 11-cis-retinal 異構化成 all-trans-retinal → 視覺訊號；再於 RPE 異構化回 11-cis。
+status: pending

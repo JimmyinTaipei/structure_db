@@ -1,0 +1,26 @@
+id: thromboxane_synthase
+title: PGH₂ → TXA₂ (thromboxane synthase)
+substrates:
+- pgh2
+products:
+- txa2
+enzyme: thromboxane synthase
+reversible: false
+decorate:
+  pgh2:
+    highlight:
+    - smarts: '[OX2:1][OX2:2]'
+      color: magenta
+  txa2:
+    highlight:
+    - smarts: '[O;R:1]'
+      color: magenta
+card_zh:
+  location: 血小板
+  type: 異構化（CYP5A1）
+  exam_points:
+  - TXA₂：血管收縮＋血小板凝集；PGI₂：相反
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

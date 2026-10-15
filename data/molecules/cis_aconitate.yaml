@@ -1,0 +1,13 @@
+id: cis_aconitate
+name: cis-Aconitate
+aliases: [順烏頭酸]
+smiles: "C(C(=O)[O-])/C(C(=O)[O-])=C/C(=O)[O-]"
+chain:
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: C, r: "COO^-", down: 2}
+  - {c: C, l: H}
+  - {c: "COO^-"}
+tags: [TCA]
+notes_zh: Aconitase 反應的酵素結合中間物。
+status: pending

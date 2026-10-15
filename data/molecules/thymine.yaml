@@ -1,0 +1,8 @@
+id: thymine
+name: "Thymine"
+aliases: [T, 胸腺嘧啶]
+smiles: "Cc1[cH][nH]c(=O)[nH]c1=O"
+ring: {down: 3, right: 4, nh_bond: true, mirror: true}
+tags: [nucleotide, pyrimidine]
+notes_zh: "5-methyluracil，DNA 專用。甲基來自 N⁵,N¹⁰-methylene-THF（thymidylate synthase）。"
+status: pending

@@ -1,0 +1,16 @@
+id: ndp
+name: "Ribonucleoside diphosphate"
+label: "NDP"
+aliases: [NDP]
+smiles: "[*][C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "Base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}–{P}–OCH_2", down: "H"}
+  numbers: true
+tags: [nucleotide]
+notes_zh: "NDP（ADP、GDP、CDP、UDP）：ribonucleotide reductase 的受質。"
+status: pending

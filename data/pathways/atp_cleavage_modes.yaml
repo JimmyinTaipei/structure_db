@@ -1,0 +1,71 @@
+id: atp_cleavage_modes
+title: Two ways to cleave ATP
+layout: free
+cell_size: 4.6
+nodes:
+- id: atp
+  ref: atp_n
+  pos:
+  - 1.2
+  - 0
+- id: bg
+  text: 'β–γ cleavage
+
+    ATP → ADP + P_i
+
+    (1 ~Ⓟ, ΔG°'' −7.3 kcal/mol)'
+  pos:
+  - -0.6
+  - 2.5
+  kind: concept
+- id: ab
+  text: 'α–β cleavage
+
+    ATP → AMP + PP_i
+
+    → PP_i + H_2O → 2 P_i
+
+    (2 ~Ⓟ, ΔG°'' ≈ −15 kcal/mol)'
+  pos:
+  - 3.0
+  - 2.5
+  kind: concept
+- id: bg1
+  text: 'Kinases (hexokinase, PFK-1),
+
+    ATPases, active transport'
+  pos:
+  - -0.6
+  - 3.8
+  kind: name
+- id: ab1
+  text: 'Aminoacyl-tRNA synthetase,
+
+    acyl-CoA synthetase,
+
+    UDP-Glc pyrophosphorylase (UTP),
+
+    argininosuccinate synthetase,
+
+    DNA / RNA polymerase'
+  pos:
+  - 3.0
+  - 4.1
+  kind: name
+edges:
+- from: atp
+  to: bg
+- from: atp
+  to: ab
+- from: bg
+  to: bg1
+  head: false
+- from: ab
+  to: ab1
+  head: false
+tags:
+- energy_metabolism
+- bioenergetics
+notes_zh: β–γ 斷裂（→ ADP + Pi）用掉 1 個高能鍵：激酶、ATPase、主動運輸。α–β 斷裂（→ AMP + PPi）再由 pyrophosphatase 水解 PPi → 2 Pi，相當於消耗 2 個高能鍵，讓反應強力往右（不可逆）：胺基酸活化（aminoacyl-tRNA）、脂肪酸活化（acyl-CoA，故 β 氧化計算要扣 2 ATP）、UDP-glucose 合成（UTP
+  → PPi）、尿素循環 ASS、核酸聚合。其他 NTP：CTP → 磷脂（CDP-choline、CDP-ethanolamine）；GTP → 蛋白質合成（IF2、EF-Tu、EF-G、RF3）、糖質新生 PEPCK；UTP → 醣（UDP-Glc）。高能可識別記號：UDP（醣）、CoA（醯基）、SAM（甲基）。
+status: pending

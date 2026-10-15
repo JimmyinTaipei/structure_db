@@ -1,0 +1,175 @@
+id: eukaryotic_origin_licensing
+title: Eukaryotic origin licensing and firing
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 6.5
+    - 0.3
+    text: 'G1: licensing (helicase loaded, inactive)'
+    size: 0.95
+    align: center
+  - g: dsdna
+    from:
+    - 0.5
+    - 4
+    to:
+    - 13
+    - 4
+    width: 1.0
+    seq: ATTTAT
+  - id: orc
+    g: blob
+    at:
+    - 3.2
+    - 2.7
+    w: 2.4
+    h: 1.5
+    shape: kidney
+    hue: blue
+    label: ORC
+    label_at:
+    - 3.2
+    - 7.4
+  - id: cdc6
+    g: blob
+    at:
+    - 5.0
+    - 2.6
+    w: 1.2
+    h: 1.0
+    shape: round
+    hue: teal
+    label: Cdc6, Cdt1
+    label_at:
+    - 5.8
+    - 9.0
+    point:
+    - 5.0
+    - 3.0
+  - g: ring
+    at:
+    - 8.6
+    - 4
+    w: 1.0
+    h: 2.6
+    hue: orange
+  - g: ring
+    at:
+    - 9.7
+    - 4
+    w: 1.0
+    h: 2.6
+    hue: orange
+  - id: mcm
+    g: text
+    at:
+    - 9.15
+    - 7.4
+    text: 'MCM2–7
+
+      double hexamer'
+    size: 0.85
+  - g: arrow
+    from:
+    - 14.0
+    - 4
+    to:
+    - 16.0
+    - 4
+    style: fat
+  - g: text
+    at:
+    - 23.5
+    - 0.3
+    text: 'S phase: firing (CDK + DDK)'
+    size: 0.95
+    align: center
+  - g: dsdna
+    from:
+    - 17.0
+    - 4
+    to:
+    - 19.6
+    - 4
+    width: 1.0
+    seq: ATTTAT
+  - g: dsdna
+    from:
+    - 27.4
+    - 4
+    to:
+    - 30.0
+    - 4
+    width: 1.0
+    seq: ATTTAT
+  - g: strand
+    kind: parent
+    points:
+    - - 19.6
+      - 3.5
+    - - 21.0
+      - 2.4
+    - - 26.0
+      - 2.4
+    - - 27.4
+      - 3.5
+  - g: strand
+    kind: parent
+    points:
+    - - 19.6
+      - 4.5
+    - - 21.0
+      - 5.6
+    - - 26.0
+      - 5.6
+    - - 27.4
+      - 4.5
+  - id: cmg1
+    g: ring
+    kind: hexamer
+    at:
+    - 20.6
+    - 2.6
+    r: 0.6
+    hue: orange
+  - id: cmg2
+    g: ring
+    kind: hexamer
+    at:
+    - 26.4
+    - 5.4
+    r: 0.6
+    hue: orange
+    label: 'CMG helicase
+
+      (Cdc45–MCM–GINS)'
+    label_at:
+    - 26.6
+    - 8.8
+  - g: text
+    at:
+    - 23.5
+    - 4.0
+    text: bubble
+    size: 0.75
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 0.0
+    - 11.2
+    text: 'Licensing only in G1 (low CDK); in S/G2 high CDK and geminin (blocks Cdt1) prevent reloading → each origin fires once per cycle.
+
+      Eukaryotes: many origins (ARS in yeast ≈ 11 bp core), replicons; pols α (primase), ε (leading), δ (lagging); PCNA clamp, RFC clamp loader, primers removed by Pol δ strand displacement + FEN1 (Dna2
+      for long flaps); RNase H1 cannot cut the last rN.'
+    size: 0.75
+    align: left
+tags:
+- molecular_biology
+- replication
+notes_zh: G1（CDK 低）：ORC 結合起點 → Cdc6、Cdt1 把 MCM2–7 以雙六聚體套在雙股 DNA 上（licensed，但不活化）。S 期：CDK 與 DDK（Cdc7–Dbf4）磷酸化 → Cdc45 + GINS 加入成 CMG helicase，兩組朝相反方向移動 → 雙向複製。S/G2 時 CDK 高、geminin 抑制 Cdt1 → 不能再裝 MCM → 每個起點每週期只發一次（防止重複複製）。真核聚合酶：α（含
+  primase，起始 RNA–DNA 引子）、ε（領先股）、δ（延遲股）、γ（粒線體）、β（BER 修補）；PCNA = clamp，RFC = clamp loader；引子移除：Pol δ 股置換把引子推成 flap → FEN1 切除（長 flap 加 Dna2）；RNase H1 可降解 RNA 但切不掉最後一個與 DNA 相連的 rN。
+parts_png: false
+status: pending

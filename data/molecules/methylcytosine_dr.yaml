@@ -1,0 +1,14 @@
+id: methylcytosine_dr
+name: 5-Methylcytosine (in DNA)
+label: 5-Methylcytosine (in DNA)
+aliases:
+- 5mC
+smiles: '[17*]n1cc(C)c(N)nc1=O'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: CpG 中 C 的 C5 甲基化（位於大溝，不影響配對）。啟動子 CpG island 甲基化 → 基因沉默（招募 MBD 蛋白與 HDAC）。自發去胺 → T（CpG 突變熱點）。
+parts_png: false
+status: pending

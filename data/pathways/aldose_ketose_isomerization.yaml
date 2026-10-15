@@ -1,0 +1,43 @@
+id: aldose_ketose_isomerization
+title: Aldose ⇌ enediol ⇌ ketose
+layout: free
+cell_size: 7.5
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+- id: ene
+  ref: enediol
+  pos:
+  - 1.35
+  - 0
+- id: fru
+  ref: d_fructose
+  pos:
+  - 2.7
+  - 0
+- id: man
+  ref: d_mannose
+  pos:
+  - 1.35
+  - 1.95
+edges:
+- from: glc
+  to: ene
+  reversible: true
+  label: base / isomerase
+- from: ene
+  to: fru
+  reversible: true
+- from: ene
+  to: man
+  reversible: true
+  label: C2 epimer
+tags:
+- carbohydrate
+- monosaccharide
+notes_zh: 互變異構（tautomerism）：aldose 的 C1 醛基與 C2–H 互換 → cis-enediol → ketose。鹼性下 glucose、mannose、fructose 互相轉換（Lobry de Bruyn–van Ekenstein）；酵素版即 phosphoglucose isomerase（G6P ⇌ F6P）、triose phosphate isomerase。Fructose
+  在鹼性 Fehling 試劑中也呈還原性，就是因為能轉成 enediol／aldose。
+status: pending

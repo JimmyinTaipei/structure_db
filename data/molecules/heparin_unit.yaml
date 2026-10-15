@@ -1,0 +1,65 @@
+id: heparin_unit
+name: Heparin (repeating unit)
+label: Heparin
+aliases:
+- heparin
+- heparan sulfate
+- 肝素
+smiles: O=C([O-])[C@@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](NS(=O)(=O)[O-])[C@@H](O)O[C@@H]2COS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@@H](O)[C@@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        down: OSO_3^-
+      3:
+        up: OH
+        down: H
+        up_len: 0.4
+      4:
+        up: H
+        down: HO
+      5:
+        up: H
+        down: COO^-
+        down_len: 0.6
+        down_dx: 0.35
+  - ring: pyranose
+    subs:
+      1:
+        up: OH
+        down: H
+      2:
+        up: NHSO_3^-
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: CH_2OSO_3^-
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: IdoA-2-sulfate(α1→4)GlcNS-6-sulfate，單元間 α1→4。帶負電密度最高的生物分子。由 mast cell 分泌；結合 antithrombin III 使其抑制 thrombin、factor Xa 的速度加快約 1000 倍 → 抗凝血。Heparan sulfate 結構相近但硫酸較少、GlcA 較多，分布在細胞表面（syndecan）。
+status: pending

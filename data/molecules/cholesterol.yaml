@@ -1,0 +1,8 @@
+id: cholesterol
+name: "Cholesterol"
+aliases: [膽固醇]
+smiles: "CC(C)CCC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C"
+ring: {letters: true, orient: "steroid", methyls: false}
+tags: [lipid, steroid]
+notes_zh: "27 碳。A–D 四環固醇核，C3-OH（兩性：OH 極性、其餘疏水）、C5=C6 雙鍵、C17 側鏈。膜的流動性緩衝；固醇類荷爾蒙、膽酸、維生素 D 的前驅物。限速酵素 HMG-CoA reductase（statin）。"
+status: pending

@@ -1,0 +1,27 @@
+id: bpg_23
+name: 2,3-Bisphosphoglycerate
+label: '2,3-Bisphospho-
+
+  glycerate'
+aliases:
+- 2,3-BPG
+- 2,3-DPG
+- 2,3-二磷酸甘油酸
+smiles: '[O-]C(=O)[C@H](OP(=O)([O-])[O-])COP(=O)([O-])[O-]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: C
+  l: H
+  r: O{P}
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- glycolysis
+- protein
+- hemoglobin
+notes_zh: RBC 內約 5 mM，由 1,3-BPG 經 bisphosphoglycerate mutase 形成（Rapoport–Luebering shunt，少產 1 ATP）。結合 deoxy-Hb 中央空腔（β 鏈正電殘基）→ 穩定 T 態、O₂ 曲線右移。
+status: pending

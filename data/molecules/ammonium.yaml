@@ -1,0 +1,8 @@
+id: ammonium
+name: Ammonium ion
+aliases: [NH4+, NH3, 銨離子, 氨]
+smiles: "[NH4+]"
+formula: "NH_4^+"
+tags: [amino_acid_metabolism, urea]
+notes_zh: 生理 pH 下 NH₃ 主要以 NH₄⁺ 存在；對腦有毒（消耗 α-KG、glutamate → glutamine 堆積、腦水腫）。
+status: approved

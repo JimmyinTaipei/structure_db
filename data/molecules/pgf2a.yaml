@@ -1,0 +1,14 @@
+id: pgf2a
+name: Prostaglandin F2α
+label: PGF_2α
+aliases:
+- PGF₂α
+- dinoprost
+smiles: CCCCC[C@H](O)/C=C/[C@@H]1[C@@H](C/C=C\CCCC(=O)[O-])[C@@H](O)C[C@H]1O
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: 子宮收縮（分娩、月經痛）、支氣管收縮；carboprost、latanoprost（青光眼）為類似物。
+status: pending

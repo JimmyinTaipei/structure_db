@@ -1,0 +1,14 @@
+id: hypoxanthine_rib
+name: Hypoxanthine (inosine in RNA)
+label: Hypoxanthine (I, in RNA)
+aliases:
+- inosine in RNA
+smiles: '[19*]n1cnc2c(=O)[nH]cnc21'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: RNA 中的 inosine 鹼基。I 與 C 配對（像 G），所以 A→I 編輯在轉譯時被讀成 G；tRNA 反密碼子第一位的 I 可與 U、C、A 擺動配對。
+parts_png: false
+status: pending

@@ -1,0 +1,33 @@
+id: tyrosine_hydroxylase
+title: Tyrosine → L-DOPA (tyrosine hydroxylase)
+substrates:
+- tyrosine
+products:
+- l_dopa
+cofactors_in:
+- O2
+- BH4
+cofactors_out:
+- H2O
+- BH2
+enzyme: tyrosine hydroxylase
+reversible: false
+decorate:
+  l_dopa:
+    colors:
+      3:
+        ring:
+        - atoms: [7]
+          color: magenta
+  O2:
+    colors: {0: magenta}
+  H2O:
+    colors: {0: magenta}
+card_zh:
+  location: 腎上腺髓質、交感神經、多巴胺神經元
+  type: 羥化（BH4、Fe²⁺）
+  regulation: 兒茶酚胺合成的限速步驟；兒茶酚胺回饋抑制，PKA 磷酸化活化
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

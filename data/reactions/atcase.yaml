@@ -1,0 +1,31 @@
+id: atcase
+title: "嘧啶 ② Carbamoyl phosphate + Asp → Carbamoyl aspartate (ATCase)"
+step: 2
+substrates: [carbamoyl_phosphate, aspartate]
+products: [carbamoyl_aspartate]
+cofactors_out: [Pi]
+extra_out: [H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "aspartate\ntranscarbamoylase"
+reversible: false
+decorate:
+  carbamoyl_phosphate:
+    colors:
+      0:
+        l: magenta
+        c: magenta
+        u: magenta
+        r: [cyan, '{P}']
+  Pi:
+    colors: {0: cyan}
+  carbamoyl_aspartate:
+    highlight:
+    - atoms: [0, 1, 2]
+      color: magenta
+card_zh:
+  location: 細胞質（CAD）
+  type: "胺甲醯基轉移到 Asp 的 α-胺基"
+  regulation: "細菌：CTP 抑制、ATP 活化（別構調控、T ⇌ R 協同性的教科書範例）"
+  exam_points:
+    - "嘧啶環 6 個原子：C2、N3 來自 carbamoyl phosphate；N1、C4、C5、C6 來自 Asp"
+tags: [nucleotide, pyrimidine]
+status: pending

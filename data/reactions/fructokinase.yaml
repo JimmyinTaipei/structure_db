@@ -1,0 +1,29 @@
+id: fructokinase
+title: Fructose → Fructose 1-phosphate (fructokinase)
+substrates:
+- d_fructose
+products:
+- fructose_1p
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: fructokinase
+reversible: false
+decorate:
+  fructose_1p:
+    colors:
+      0:
+        c: [magenta, '{P}']
+card_zh:
+  location: 肝（以及腎、小腸）
+  type: 磷酸化
+  deficiency: essential fructosuria：fructokinase 缺乏 → 尿中有果糖，無症狀（良性）
+  exam_points:
+  - 繞過 PFK-1 → 果糖進入糖解比葡萄糖快、不受調控（大量果糖 → 脂肪生成、尿酸 ↑）
+tags:
+- carb_metabolism
+- fructose_metabolism
+status: pending

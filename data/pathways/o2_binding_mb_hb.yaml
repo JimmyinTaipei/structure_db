@@ -1,0 +1,83 @@
+id: o2_binding_mb_hb
+title: 'O2 binding: myoglobin vs hemoglobin'
+layout: plot
+plot:
+  size:
+  - 16
+  - 10
+  params:
+    P50m: 2.8
+    P50: 26
+    n: 2.8
+  x:
+    min: 0
+    max: 110
+    label: pO_2 (mmHg)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+  y:
+    min: 0
+    max: 1.12
+    label: Fractional saturation (Y)
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  bands:
+  - x0: 20
+    x1: 40
+    label: Tissues
+    color: cyan
+  - x0: 90
+    x1: 105
+    label: Lungs
+    color: magenta
+  curves:
+  - id: mb
+    y: hill(x, P50m, 1)
+    color: cyan
+    label: Myoglobin (hyperbolic, n_H = 1)
+    label_at: 60
+    label_off:
+    - -1.2
+    - -0.75
+    label_align: left
+  - id: hb
+    y: hill(x, P50, n)
+    color: red
+    label: Hemoglobin (sigmoid, n_H ≈ 2.8)
+    label_at: 50
+    label_off:
+    - 0.5
+    - 0.75
+    label_align: left
+  points:
+  - 'on': mb
+    x: P50m
+    y: 0.5
+    drop: x
+    color: cyan
+    label: P_{50} ≈ 2.8
+    label_off:
+    - 0.4
+    - 1.5
+  - 'on': hb
+    x: P50
+    y: 0.5
+    drop: both
+    color: red
+    label: P_{50} ≈ 26
+    label_off:
+    - 0.4
+    - 0.6
+tags:
+- protein
+- hemoglobin
+notes_zh: Mb：單一 heme，雙曲線，P₅₀ ≈ 2.8 mmHg（親和力高，儲氧）。Hb：四聚體、協同結合，S 形曲線，P₅₀ ≈ 26 mmHg，Hill 係數 ≈ 2.8。肺（~100 mmHg）幾乎飽和、組織（20–40 mmHg）落在曲線陡峭段 → 可大量卸氧；Mb 在組織 pO₂ 仍幾乎飽和，所以不能當運輸者。
+status: pending

@@ -1,0 +1,22 @@
+id: alt
+title: "Transamination: Alanine + α-Ketoglutarate ⇌ Pyruvate + Glutamate (ALT)"
+substrates: [alanine, {id: alpha_kg, chain: aa}]
+products: [{id: pyruvate, chain: aa}, glutamate]
+prosthetic: [PLP]
+enzyme: "alanine aminotransferase\n(ALT)"
+reversible: true
+decorate:                         # 胺基（同一個 N）從 Ala 轉到 Glu
+  alanine: {colors: {1: {l: magenta}}}
+  glutamate: {colors: {1: {l: magenta}}}
+card_zh:
+  location: 細胞質（肝、肌肉）
+  type: 轉胺作用（transamination）
+  deltaG: "ΔG'° ≈ 0，可逆；方向由濃度決定"
+  cofactors: "PLP（pyridoxal phosphate，B6）"
+  mechanism: "Ping-pong：PLP 先接下胺基變成 PMP（pyridoxamine phosphate），再把胺基交給 α-KG；中間經 Schiff base（aldimine ⇌ ketimine）"
+  deficiency: "血清 ALT 上升 → 肝細胞損傷（比 AST 更具肝專一性）"
+  exam_points:
+    - "α-KG/Glu 是轉胺作用的胺基集中站：幾乎所有胺基酸都把 N 交給 α-KG"
+    - "肌肉經 ALT 把 N 以 alanine 形式送到肝（glucose–alanine cycle）"
+tags: [amino_acid_metabolism, transamination]
+status: pending

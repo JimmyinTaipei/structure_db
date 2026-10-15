@@ -1,0 +1,133 @@
+id: fatty_acid_synthesis
+title: Fatty acid synthesis（脂肪酸合成，名稱版）
+layout: free
+cell_size: 6.2
+text: false
+nodes:
+- id: hm
+  text: Mitochondrion
+  kind: heading
+  pos:
+  - 0
+  - -0.7
+- id: hc
+  text: Cytosol
+  kind: heading
+  pos:
+  - 1.6
+  - -0.7
+- id: pyr
+  ref: pyruvate
+  pos:
+  - 0
+  - 0
+  view: name
+- id: ac_m
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 1
+  view: name
+- id: cit_m
+  ref: citrate
+  pos:
+  - 0
+  - 2
+  view: name
+- id: oaa_m
+  ref: oxaloacetate
+  pos:
+  - -1.1
+  - 1.5
+  view: name
+- id: cit_c
+  ref: citrate
+  pos:
+  - 1.6
+  - 2
+  view: name
+- id: ac_c
+  ref: acetyl_coa
+  pos:
+  - 1.6
+  - 3
+  view: name
+- id: mal
+  ref: malonyl_coa
+  pos:
+  - 1.6
+  - 4
+  view: name
+- id: pal
+  ref: palmitate
+  pos:
+  - 1.6
+  - 5
+  view: name
+- id: oaa_c
+  ref: oxaloacetate
+  pos:
+  - 3.2
+  - 2.5
+  view: name
+- id: mal_c
+  ref: malate
+  pos:
+  - 3.2
+  - 1.5
+  view: name
+- id: pyr_c
+  ref: pyruvate
+  pos:
+  - 3.2
+  - 0.5
+  view: name
+edges:
+- from: pyr
+  to: ac_m
+  step: pdh
+  label: PDH
+- from: ac_m
+  to: cit_m
+  step: citrate_synthase
+  label: citrate synthase
+- from: oaa_m
+  to: cit_m
+- from: cit_m
+  to: cit_c
+  label: 'citrate
+
+    transporter'
+- from: cit_c
+  to: ac_c
+  step: citrate_lyase
+  label: ATP-citrate lyase
+  label_side: right
+- from: cit_c
+  to: oaa_c
+- from: ac_c
+  to: mal
+  step: acetyl_coa_carboxylase
+  label: 'ACC (biotin)
+
+    rate-limiting'
+  side_text: ATP, HCO_3^-
+- from: mal
+  to: pal
+  step: fatty_acid_synthase
+  label: fatty acid synthase
+  side_text: 14 NADPH
+- from: oaa_c
+  to: mal_c
+  label: MDH
+  side_text: NADH
+- from: mal_c
+  to: pyr_c
+  step: malic_enzyme
+  label: malic enzyme
+  side_text: NADP^+ → NADPH
+tags:
+- lipid_metabolism
+- fa_synthesis
+notes_zh: 餐後（insulin）：粒線體的 acetyl-CoA 以 citrate 形式送出 → ATP-citrate lyase → ACC（限速；citrate 活化、palmitoyl-CoA 抑制；AMPK／PKA 磷酸化抑制）→ FAS。NADPH 來自 PPP 與 malic enzyme。
+status: pending

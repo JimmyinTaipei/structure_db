@@ -1,0 +1,19 @@
+id: proline
+name: Proline
+aliases: [Pro, P, 脯胺酸]
+smiles: "[O-]C(=O)[C@@H]1CCC[NH2+]1"
+free:                               # Lehninger：H₂N⁺–C–CH₂ 在上，H₂C—CH₂ 在下（環含 Cα 與 N）
+  atoms:
+    a:  ["COO^-", 0, -0.15]
+    ca: [C, 0, 1]
+    h:  [H, 0.72, 0.5]
+    n:  ["^+H_2N", -1.15, 1]
+    cb: [CH_2, 1.15, 1]
+    cg: [CH_2, 1.15, 2]
+    cd: [H_2C, -1.15, 2]
+  bonds: [[a, ca], [ca, h], [ca, n], [ca, cb], [cb, cg], [cg, cd], [cd, n]]
+decorate:
+  boxes: [{atoms: [cb, cg], name: R}, {atoms: [cd, cg], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Pro / P。唯一的二級胺（imino acid）；環的剛性使它常出現在轉角、破壞 α-helix。collagen 的 hydroxyproline 需 vitamin C。生糖。（此圖以座標繪製，驗證只比對分子式，不比對立體化學）"
+status: approved

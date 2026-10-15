@@ -1,0 +1,14 @@
+id: chymo_substrate
+name: Peptide substrate (Phe–X bond)
+label: Peptide (…Phe–X…)
+aliases:
+- chymotrypsin substrate
+smiles: '[23*]C(=O)N[C@@H](Cc1ccccc1)C(=O)N[24*]'
+ring:
+  coordgen: false
+tags:
+- enzyme
+- catalysis
+notes_zh: Chymotrypsin 切在芳香族胺基酸（Phe、Trp、Tyr）羧基端的胜肽鍵。Pep_N、Pep_C = 受質胜肽 N 端側、C 端側的其餘部分。
+parts_png: false
+status: pending

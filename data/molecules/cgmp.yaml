@@ -1,0 +1,16 @@
+id: cgmp
+name: cGMP
+label: cGMP (3',5'-cyclic GMP)
+aliases:
+- cyclic GMP
+- 環鳥苷酸
+smiles: Nc1nc2c(ncn2[C@@H]2O[C@@H]3COP(=O)([O-])O[C@H]3[C@H]2O)c(=O)[nH]1
+ring:
+  coordgen: true
+  rotate: 180
+tags:
+- signal_transduction
+- second_messenger
+- nucleotide
+notes_zh: Guanylyl cyclase 產生：膜型（ANF 受體）與可溶型（NO 受體，含 heme）。活化 PKG → 平滑肌放鬆；視網膜中 cGMP 打開 Na⁺ 通道，光 → transducin → PDE6 分解 cGMP → 通道關閉（過極化）。PDE5 抑制劑 sildenafil 延長 cGMP 作用。
+status: pending

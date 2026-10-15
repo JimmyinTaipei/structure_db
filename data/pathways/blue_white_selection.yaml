@@ -1,0 +1,310 @@
+id: blue_white_selection
+title: 'Clone selection: blue-white and replica plating'
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.6
+    text: Blue-white screening (X-gal)
+    size: 0.85
+    align: left
+  - g: plasmid
+    at:
+    - 2.6
+    - 4.5
+    kind: relaxed
+    r: 1.8
+  - g: strand
+    kind: '#4C8BD6'
+    points:
+    - - 1.4
+      - 3.15
+    - - 2.6
+      - 2.7
+    - - 3.8
+      - 3.15
+    width: 0.42
+  - g: text
+    at:
+    - 2.6
+    - 1.7000000000000002
+    text: lacZα (MCS)
+    size: 0.65
+    align: center
+    color: '#2E6E9E'
+  - g: strand
+    kind: '#E0A100'
+    points:
+    - - 1.2
+      - 5.7
+    - - 2.6
+      - 6.3
+    - - 4.0
+      - 5.7
+    width: 0.42
+  - g: text
+    at:
+    - 2.6
+    - 7.3
+    text: amp^R
+    size: 0.65
+    align: center
+    color: '#B08F10'
+  - g: region
+    x0: 7.6
+    y0: 2.1
+    x1: 12.4
+    y1: 6.9
+    hue: yellow
+    opacity: 0.25
+  - g: ion
+    at:
+    - 8.8
+    - 3.5
+    r: 0.32
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 10.4
+    - 3.1
+    r: 0.32
+    hue: '#F2F2F2'
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 11.3
+    - 4.3
+    r: 0.32
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 9.4
+    - 5.1
+    r: 0.32
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 10.8
+    - 5.7
+    r: 0.32
+    hue: '#F2F2F2'
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 8.5
+    - 5.4
+    r: 0.32
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 10.0
+    - 4.4
+    r: 0.32
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 13.2
+    - 3.3
+    text: 'blue: no insert'
+    size: 0.72
+    align: left
+    color: '#2E6E9E'
+  - g: text
+    at:
+    - 13.2
+    - 4.7
+    text: 'white: insert'
+    size: 0.72
+    align: left
+  - g: text
+    at:
+    - 13.2
+    - 6.1
+    text: (lacZα disrupted)
+    size: 0.65
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 0.0
+    - 9.6
+    text: Replica plating (pBR322)
+    size: 0.85
+    align: left
+  - g: region
+    x0: 0.6000000000000001
+    y0: 11.2
+    x1: 5.4
+    y1: 16.0
+    hue: yellow
+    opacity: 0.25
+  - g: ion
+    at:
+    - 1.8
+    - 12.6
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.4
+    - 12.2
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.3
+    - 13.4
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 2.4
+    - 14.2
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.8
+    - 14.799999999999999
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 1.5
+    - 14.5
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.0
+    - 13.5
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 3.0
+    - 16.6
+    text: ampicillin
+    size: 0.7
+    align: center
+  - g: arrow
+    from:
+    - 6.0
+    - 13.6
+    to:
+    - 8.0
+    - 13.6
+    style: fat
+  - g: region
+    x0: 8.6
+    y0: 11.2
+    x1: 13.4
+    y1: 16.0
+    hue: yellow
+    opacity: 0.25
+  - g: ion
+    at:
+    - 9.8
+    - 12.6
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 12.3
+    - 13.4
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 10.4
+    - 14.2
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 9.5
+    - 14.5
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 11.0
+    - 13.5
+    r: 0.32
+    hue: brown
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 11.0
+    - 16.6
+    text: tetracycline
+    size: 0.7
+    align: center
+  - g: region
+    x0: 11.08
+    y0: 11.879999999999999
+    x1: 11.72
+    y1: 12.52
+    hue: red
+    opacity: 0.0
+    dashed: true
+  - g: region
+    x0: 11.48
+    y0: 14.479999999999999
+    x1: 12.120000000000001
+    y1: 15.12
+    hue: red
+    opacity: 0.0
+    dashed: true
+  - g: text
+    at:
+    - 14.4
+    - 13.0
+    text: missing on Tet = insert in tet^R
+    size: 0.72
+    align: left
+    color: '#D62828'
+tags:
+- molecular_biology
+- techniques
+notes_zh: 質體帶 amp^R（只讓轉形菌生長）與 lacZα（MCS 位於其中）。宿主 lacZΔM15 + 質體 lacZα → α-complementation 形成 β-gal → X-gal 變藍；插入片段破壞 lacZα → 白色菌落 = 含重組質體。需 IPTG 誘導。pBR322：amp^R 與 tet^R，插入 tet^R → 可長在 ampicillin、不能長在 tetracycline（replica
+  plating 挑出）。
+parts_png: false
+status: pending

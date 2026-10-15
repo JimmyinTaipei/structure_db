@@ -1,0 +1,23 @@
+id: cps1
+title: "Urea cycle ① HCO₃⁻ + NH₄⁺ → Carbamoyl phosphate (CPS I)"
+step: 1
+substrates: [bicarbonate, ammonium]
+products: [carbamoyl_phosphate]
+cofactors_in: [2ATP]
+cofactors_out: [2ADP, Pi]
+extra_out: [H+, H+]               # 生理 pH 下釋出的 2 H⁺（不畫，只參與平衡）
+enzyme: "carbamoyl phosphate\nsynthetase I"
+reversible: false
+decorate:                         # 洋紅：NH₄⁺ 的 N；青藍：HCO₃⁻ 的 C 與 O
+  ammonium: {colors: {0: magenta}}
+  bicarbonate: {colors: {0: cyan}}
+  carbamoyl_phosphate: {colors: {0: {l: magenta, c: cyan, u: cyan}}}
+card_zh:
+  location: 粒線體基質（肝）
+  type: 消耗 2 ATP（一個磷酸化 HCO₃⁻、一個轉移 Pᵢ 給 carbamate）
+  regulation: "必需的別構活化劑：N-acetylglutamate（NAG，由 NAGS 以 acetyl-CoA + Glu 合成；arginine 活化 NAGS）。尿素循環的速率決定步驟"
+  deficiency: "CPS I 或 NAGS 缺乏 → 高血氨，但無 orotic aciduria（與 OTC 缺乏區分）；NAGS 缺乏可用 carglumic acid 治療"
+  exam_points:
+    - "CPS I（粒線體，NH₄⁺，尿素）vs CPS II（細胞質，glutamine，嘧啶合成）"
+tags: [urea]
+status: pending

@@ -1,0 +1,16 @@
+id: acetone
+name: Acetone
+aliases:
+- 丙酮
+smiles: CC(C)=O
+chain:
+- c: CH_3
+- c: C
+  r: O
+  rb: 2
+- c: CH_3
+tags:
+- lipid_metabolism
+- ketone_bodies
+notes_zh: acetoacetate 自發脫羧的產物，不能再利用，由肺排出（DKA 的水果味口氣）。
+status: pending

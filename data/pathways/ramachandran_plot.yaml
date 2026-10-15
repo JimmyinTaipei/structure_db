@@ -1,0 +1,159 @@
+id: ramachandran_plot
+title: Ramachandran plot
+layout: plot
+plot:
+  size:
+  - 12
+  - 12
+  x:
+    min: -180
+    max: 180
+    label: φ (degrees)
+    ticks:
+    - -180
+    - -90
+    - 0
+    - 90
+    - 180
+    at: -180
+    label_pos: center
+  y:
+    min: -180
+    max: 180
+    label: ψ (degrees)
+    ticks:
+    - -180
+    - -90
+    - 0
+    - 90
+    - 180
+    at: -180
+    label_pos: center
+  areas:
+  - points:
+    - - -180
+      - 180
+    - - -45
+      - 180
+    - - -45
+      - 100
+    - - -60
+      - 70
+    - - -100
+      - 60
+    - - -150
+      - 90
+    - - -180
+      - 90
+    color: cyan
+    label: β
+    label_at:
+    - -165
+    - 165
+    opacity: 0.3
+  - points:
+    - - -180
+      - -180
+    - - -45
+      - -180
+    - - -45
+      - -170
+    - - -180
+      - -165
+    color: cyan
+    opacity: 0.3
+  - points:
+    - - -160
+      - -70
+    - - -110
+      - -70
+    - - -45
+      - -70
+    - - -35
+      - -40
+    - - -45
+      - -15
+    - - -90
+      - 0
+    - - -160
+      - -20
+    color: magenta
+    label: α_R
+    label_at:
+    - -135
+    - -40
+    opacity: 0.3
+  - points:
+    - - 45
+      - 20
+    - - 75
+      - 25
+    - - 85
+      - 60
+    - - 65
+      - 85
+    - - 45
+      - 70
+    color: green
+    label: α_L
+    label_at:
+    - 100
+    - 55
+    opacity: 0.3
+  points:
+  - x: -51
+    y: 153
+    color: orange
+    label: Collagen triple helix
+    label_off:
+    - 0.5
+    - -0.3
+    leader: true
+  - x: -139
+    y: 135
+    color: cyan
+    label: Antiparallel β sheet
+    label_off:
+    - 3.5
+    - 0.15
+    leader: true
+  - x: -119
+    y: 113
+    color: cyan
+    label: Parallel β sheet
+    label_off:
+    - 2.9
+    - 0.95
+    leader: true
+  - x: -57
+    y: -47
+    color: magenta
+    label: Right-handed α helix
+    label_off:
+    - 1.3
+    - 0.2
+    leader: true
+  - x: 57
+    y: 47
+    color: green
+    label: Left-handed α helix
+    label_off:
+    - 0.6
+    - 1.5
+    leader: true
+  texts:
+  - at:
+    - 95
+    - -125
+    text: 'Gly (no side chain)
+
+      can go almost anywhere;
+
+      Pro: φ fixed ≈ −60°'
+    size: 0.85
+    color: gray
+tags:
+- protein
+- protein_structure
+notes_zh: Ramachandran plot：φ（N–Cα）與 ψ（Cα–C）的允許組合（色塊為允許區，示意）。左上大片為 β 區，左下為右手 α-helix（φ ≈ −57°、ψ ≈ −47°），右上小區為左手 α-helix（少見，多為 Gly）。Gly 沒有側鏈，幾乎可落在任何區域；Pro 的 φ 固定在約 −60°。
+status: pending

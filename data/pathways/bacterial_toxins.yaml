@@ -1,0 +1,295 @@
+id: bacterial_toxins
+title: ADP-ribosylating bacterial toxins
+layout: free
+cell_size: 5.6
+nodes:
+- id: ct
+  text: Cholera toxin
+  pos:
+  - 0
+  - 0
+  kind: drug
+- id: pt
+  text: Pertussis toxin
+  pos:
+  - 0
+  - 1.3
+  kind: drug
+- id: dt
+  text: Diphtheria toxin
+  pos:
+  - 0
+  - 2.6
+  kind: drug
+- id: gs
+  text: 'G_sα (Arg)
+
+    GTPase lost → always on'
+  pos:
+  - 2.2
+  - 0
+  kind: protein
+- id: gi
+  text: 'G_iα (Cys)
+
+    cannot inhibit AC'
+  pos:
+  - 2.2
+  - 1.3
+  kind: protein
+- id: ef
+  text: 'eEF2 (diphthamide,
+
+    modified His)'
+  pos:
+  - 2.2
+  - 2.6
+  kind: protein
+- id: r1
+  text: 'cAMP ↑ → CFTR Cl^- secretion
+
+    → watery diarrhea'
+  pos:
+  - 4.6
+  - 0
+  kind: name
+- id: r2
+  text: cAMP ↑ (whooping cough)
+  pos:
+  - 4.6
+  - 1.3
+  kind: name
+- id: r3
+  text: 'Translation stops
+
+    → cell death'
+  pos:
+  - 4.6
+  - 2.6
+  kind: name
+edges:
+- from: ct
+  to: gs
+  label: 'ADP-ribose
+
+    (from NAD^+)'
+- from: pt
+  to: gi
+- from: dt
+  to: ef
+- from: gs
+  to: r1
+- from: gi
+  to: r2
+- from: ef
+  to: r3
+tags:
+- signal_transduction
+- gpcr
+notes_zh: 三種毒素都是 ADP-ribosyltransferase：把 NAD⁺ 的 ADP-ribose 接到目標蛋白（釋出 nicotinamide）。Cholera：Gsα 的 Arg → GTPase 失活 → AC 持續 → 腸道 cAMP ↑ → CFTR 分泌 Cl⁻ → 水瀉。Pertussis：Giα 的 Cys → Gi 無法被受體活化 → 無法抑制 AC → cAMP
+  ↑。Diphtheria（Pseudomonas exotoxin A 同）：eEF2 的 diphthamide（修飾的 His）→ 轉位停止 → 蛋白質合成停止。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: membrane
+        y: 3.0
+        x0: -1.0
+        x1: 21.0
+        lipids: true
+      - g: text
+        at:
+        - 20.8
+        - 1.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 20.8
+        - 5.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 4.0
+        - -0.2
+        text: Cholera toxin
+        size: 0.8
+        align: center
+        color: red
+      - g: gprotein
+        at:
+        - 4.0
+        - 5.3
+        nucleotide: GTP
+        hue: green
+        accent: true
+      - g: ligand
+        at:
+        - 3.2
+        - 7.4
+        shape: hexagon
+        hue: red
+        r: 0.36
+      - g: text
+        at:
+        - 3.2
+        - 8.4
+        text: ADP-ribose (Arg)
+        size: 0.55
+        align: center
+        color: red
+      - g: text
+        at:
+        - 4.0
+        - 9.8
+        text: 'G_sα: GTPase lost'
+        size: 0.65
+        align: center
+      - g: arrow
+        from:
+        - 4.0
+        - 10.6
+        to:
+        - 4.0
+        - 11.6
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 4.0
+        - 12.4
+        text: 'cAMP ↑ → Cl^- out
+
+          (watery diarrhea)'
+        size: 0.65
+        align: center
+      - g: text
+        at:
+        - 14.6
+        - -0.2
+        text: Pertussis toxin
+        size: 0.8
+        align: center
+        color: red
+      - g: gprotein
+        at:
+        - 14.6
+        - 5.3
+        nucleotide: GDP
+        hue: orange
+      - g: ligand
+        at:
+        - 13.8
+        - 7.4
+        shape: hexagon
+        hue: red
+        r: 0.36
+      - g: text
+        at:
+        - 13.8
+        - 8.4
+        text: ADP-ribose (Cys)
+        size: 0.55
+        align: center
+        color: red
+      - g: text
+        at:
+        - 14.6
+        - 9.8
+        text: 'G_iα stuck: no inhibition'
+        size: 0.65
+        align: center
+      - g: arrow
+        from:
+        - 14.6
+        - 10.6
+        to:
+        - 14.6
+        - 11.6
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 14.6
+        - 12.4
+        text: cAMP ↑
+        size: 0.65
+        align: center
+      - g: text
+        at:
+        - 28.0
+        - -0.2
+        text: Diphtheria toxin
+        size: 0.8
+        align: center
+        color: red
+      - g: strand
+        kind: rna
+        points:
+        - - 23.0
+          - 6.0
+        - - 33.0
+          - 6.0
+        ends:
+        - 5'
+        - 3'
+      - g: ribosome
+        at:
+        - 28.0
+        - 6.0
+        w: 4.4
+      - g: blob
+        at:
+        - 31.2
+        - 3.0
+        w: 1.8
+        h: 1.2
+        shape: oval
+        hue: teal
+        text: eEF2
+        text_size: 0.45
+      - g: ligand
+        at:
+        - 32.4
+        - 2.0
+        shape: hexagon
+        hue: red
+        r: 0.36
+      - g: text
+        at:
+        - 28.0
+        - 9.8
+        text: eEF2 (diphthamide) blocked
+        size: 0.65
+        align: center
+      - g: arrow
+        from:
+        - 28.0
+        - 10.6
+        to:
+        - 28.0
+        - 11.6
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 28.0
+        - 12.4
+        text: translation stops
+        size: 0.65
+        align: center
+      - g: text
+        at:
+        - 16.0
+        - 14.6
+        text: NAD^+ → ADP-ribose–protein + nicotinamide
+        size: 0.7
+        align: center
+        color: gray

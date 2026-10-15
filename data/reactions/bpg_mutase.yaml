@@ -1,0 +1,32 @@
+id: bpg_mutase
+title: Bisphosphoglycerate mutase
+substrates:
+- bpg_13
+products:
+- bpg_23
+cofactors_out:
+- H+
+enzyme: Bisphosphoglycerate mutase
+reversible: false
+decorate:
+  bpg_13:
+    colors:
+      0:
+        fork_r: magenta
+  bpg_23:
+    colors:
+      1:
+        r: magenta
+card_zh:
+  location: RBC 細胞質
+  type: 分子內磷酸轉移：C1 的 acyl-phosphate 移到 C2（Rapoport–Luebering shunt）
+  exam_points:
+  - 繞過 PGK → 每經此路徑少產 1 ATP
+  - 產物 2,3-BPG 使 Hb 曲線右移；高海拔、貧血、慢性缺氧時增加
+  - 儲存血 2,3-BPG 下降 → 輸血後 O₂ 釋放較差
+tags:
+- carb_metabolism
+- glycolysis
+- protein
+- hemoglobin
+status: pending

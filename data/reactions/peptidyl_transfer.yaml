@@ -1,0 +1,48 @@
+id: peptidyl_transfer
+title: Peptidyl transfer (first peptide bond)
+substrates:
+- fmet_trna
+- alanyl_trna
+products:
+- fmet_ala_trna
+cofactors_in: []
+cofactors_out:
+- tRNA
+extra_out:
+- H+
+enzyme: 'peptidyl transferase
+
+  (23S rRNA, ribozyme)'
+reversible: false
+decorate:
+  alanyl_trna:
+    highlight:
+    - smarts: '[NH3+:1]'
+      color: magenta
+  fmet_trna:
+    highlight:
+    - smarts: '[C:1](=[O:2])O*'
+      color: cyan
+  fmet_ala_trna:
+    highlight:
+    - smarts: C(=O)[NH:1]C(C)C(=O)O*
+      color: magenta
+    - smarts: '[C:1](=[O:2])[NH]C(C)C(=O)O*'
+      color: cyan
+  tRNA:
+    colors:
+      0:
+        c:
+        - - cyan
+          - tRNA
+card_zh:
+  type: A 位 aa-tRNA 的 α-NH₂（洋紅 N）攻擊 P 位 fMet-tRNA 的酯羰基（青 C=O）→ 胜肽轉移到 A 位 tRNA，P 位留下去醯化 tRNA
+  mechanism: 不需蛋白質與額外能量：酯鍵的能量推動；23S rRNA（A2451）定位受質，P 位 tRNA 的 2′-OH 參與質子轉移
+  exam_points:
+  - 胜肽鏈由 P 轉到 A（大分子轉給小分子），與脂肪酸合成相同模式
+  - Chloramphenicol 抑制此步（50S）
+tags:
+- molecular_biology
+- translation
+parts_png: false
+status: pending

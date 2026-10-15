@@ -1,0 +1,16 @@
+id: pra
+name: "5-Phosphoribosylamine"
+label: "5-Phosphoribosyl-\namine"
+aliases: [PRA]
+smiles: "N[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "NH_2", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "PRA：Gln-PRPP amidotransferase 的產物（嘌呤合成限速步驟）。注意 C1′ 由 α 轉成 β（反轉）。"
+status: pending

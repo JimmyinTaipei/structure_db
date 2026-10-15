@@ -1,0 +1,40 @@
+id: hsd3b
+title: Pregnenolone → Progesterone (3β-HSD)
+substrates:
+- pregnenolone
+products:
+- progesterone
+cofactors_in:
+- NAD+
+cofactors_out:
+- NADH+H+
+enzyme: '3β-hydroxysteroid dehydrogenase
+
+  /Δ5,4-isomerase'
+reversible: false
+decorate:
+  pregnenolone:
+    highlight:
+    - smarts: '[C;R][OH:1]'
+      color: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  progesterone:
+    highlight:
+    - smarts: '[C;R](=[O:1])C=C'
+      color: magenta
+card_zh:
+  location: ER
+  type: 3β-OH 氧化成酮＋雙鍵由 Δ5 移到 Δ4
+  deficiency:
+  - 3β-HSD 缺乏：所有活性荷爾蒙 ↓、DHEA ↑；男嬰外生殖器模糊、女嬰輕度男性化、失鹽
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

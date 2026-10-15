@@ -1,0 +1,32 @@
+id: protein_kinase_ser
+title: Protein kinase (Ser phosphorylation)
+substrates:
+- serine
+products:
+- phosphoserine
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+- H+
+enzyme: Ser/Thr protein kinase
+reversible: false
+decorate:
+  ATP:
+    colors:
+      0: magenta
+  phosphoserine:
+    colors:
+      2:
+      - magenta
+      - '{P}'
+card_zh:
+  type: ATP 的 γ-磷酸（洋紅）轉移到 Ser 側鏈 –OH（Ser 的 O 為親核基）
+  regulation: phosphatase 水解移除 → 可逆開關
+  exam_points:
+  - Ser/Thr kinase：PKA、PKC、CaMK…；Tyr kinase：insulin receptor、EGFR、Src
+  - Mg²⁺–ATP 才是真正受質
+tags:
+- protein
+- protein_structure
+status: pending

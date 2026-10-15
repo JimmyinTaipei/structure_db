@@ -1,0 +1,14 @@
+id: o6_methylguanine
+name: O6-Methylguanine
+label: O^6-Methylguanine
+aliases:
+- O6-meG
+smiles: '[17*]n1cnc2c(OC)nc(N)nc21'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- repair
+notes_zh: 烷化劑（nitrosamine、temozolomide）在 G 的 O6 加甲基 → 與 T 配對 → G·C 變 A·T（transition）。由 MGMT 直接修復。
+parts_png: false
+status: pending

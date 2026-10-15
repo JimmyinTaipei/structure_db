@@ -1,0 +1,24 @@
+id: succinate_dehydrogenase
+title: "TCA ⑥ Succinate ⇌ Fumarate"
+step: 6
+substrates: [{id: succinate, chain: explicit}]
+products: [fumarate]
+cofactors_in: [FAD]
+cofactors_out: [FADH2]
+enzyme: "succinate\ndehydrogenase"
+cofactors_inline: true          # 輔因子直接寫進方程式（Mathews）
+reversible: true
+decorate:                         # 原子追蹤：兩個 H（trans 方向）→ FADH₂
+  succinate: {colors: {1: {l: magenta}, 2: {r: magenta}}}
+  FADH2: {colors: {0: {c: [magenta, "H_2"]}}}
+card_zh:
+  location: 粒線體內膜（唯一嵌在內膜的 TCA 酵素）
+  type: 脫氫（形成 trans 雙鍵）
+  deltaG: "ΔG'° = 0 kJ/mol，可逆"
+  cofactors: "FAD 共價結合（His）、3 個 Fe-S 中心"
+  regulation: "Malonate 為競爭性抑制劑（結構類似 succinate）"
+  exam_points:
+    - "即電子傳遞鏈 Complex II；FADH₂ 電子直接交給 ubiquinone"
+    - "SDH 突變 → 遺傳性 paraganglioma／pheochromocytoma"
+tags: [TCA]
+status: pending

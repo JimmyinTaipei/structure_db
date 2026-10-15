@@ -1,0 +1,15 @@
+id: alanyl_adenylate
+name: Alanyl-adenylate (Ala-AMP)
+label: Alanyl-AMP
+aliases:
+- aminoacyl-AMP
+- aminoacyl adenylate
+smiles: C[C@H]([NH3+])C(=O)OP(=O)([O-])O[4*]
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- translation
+notes_zh: 胺醯-AMP：胺基酸的羧基與 AMP 的磷酸形成混合酸酐（高能），由 aaRS 結合在活性中心。Ado = adenosine。
+parts_png: false
+status: pending

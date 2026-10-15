@@ -1,0 +1,64 @@
+id: hyaluronate_unit
+name: Hyaluronate (repeating unit)
+label: Hyaluronate
+aliases:
+- hyaluronic acid
+- hyaluronan
+- 玻尿酸
+- 透明質酸
+smiles: CC(=O)N[C@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2C(=O)[O-])O[C@H](CO)[C@@H](O)[C@@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: NHAc
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: HO
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: OH
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: COO^-
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: 重複雙醣：[–4)GlcA(β1→3)GlcNAc(β1–]ₙ，圖為 GlcNAc(β1→4)GlcA 這一半。唯一「不含硫酸」、也不以共價鍵接 core protein 的 GAG；分子極大、高度水合 → 關節液潤滑、玻璃體、軟骨中作為 aggrecan 的骨架（經 link protein 非共價結合）。嚴格說玻尿酸是 GAG，不是 proteoglycan。
+status: pending

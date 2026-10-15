@@ -1,0 +1,30 @@
+id: datp
+name: dATP
+aliases:
+- deoxyadenosine triphosphate
+smiles: Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)C1
+haworth:
+  ring: furanose
+  numbers: true
+  base: '[*]n1cnc2c(N)ncnc21'
+  base_right: 5
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: H
+    3:
+      up: H
+      down: OH
+    4:
+      up: '{P}–{P}–{P}–OCH_2'
+      down: H
+tags:
+- molecular_biology
+- replication
+- nucleotide
+notes_zh: DNA polymerase 的受質之一；3′-OH 讓下一個核苷酸可以接上。
+parts_png: false
+status: pending

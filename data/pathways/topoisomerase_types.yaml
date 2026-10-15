@@ -1,0 +1,151 @@
+id: topoisomerase_types
+title: Topoisomerase I and II
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 5.5
+    - 0.4
+    text: Topoisomerase I
+    size: 1.0
+    align: center
+  - g: strand
+    kind: parent
+    points:
+    - - 0.5
+      - 3.0
+    - - 4.8
+      - 3.0
+    width: 0.28
+  - g: strand
+    kind: parent
+    points:
+    - - 6.2
+      - 3.0
+    - - 10.5
+      - 3.0
+    width: 0.28
+  - g: strand
+    kind: parent
+    points:
+    - - 0.5
+      - 4.3
+    - - 10.5
+      - 4.3
+    width: 0.28
+  - id: topo1
+    g: blob
+    at:
+    - 5.5
+    - 2.4
+    w: 2.2
+    h: 1.5
+    shape: kidney
+    hue: purple
+    label: 'Tyr–O–P (covalent)
+
+      cuts ONE strand'
+    label_at:
+    - 5.5
+    - 7.6
+    point:
+    - 5.5
+    - 3.0
+  - g: arrow
+    from:
+    - 7.4
+    - 5.4
+    to:
+    - 3.6
+    - 5.4
+    curve: 0.35
+    color: magenta
+  - g: text
+    at:
+    - 5.5
+    - 9.6
+    text: strand rotates → ΔLk ±1, no ATP
+    size: 0.8
+    align: center
+  - g: text
+    at:
+    - 20.5
+    - -0.6
+    text: Topoisomerase II (gyrase in bacteria)
+    size: 1.0
+    align: center
+  - g: dsdna
+    from:
+    - 14.5
+    - 3.6
+    to:
+    - 19.4
+    - 3.6
+    width: 0.9
+    seq: GC
+  - g: dsdna
+    from:
+    - 21.6
+    - 3.6
+    to:
+    - 26.5
+    - 3.6
+    width: 0.9
+    seq: GC
+  - g: dsdna
+    from:
+    - 20.5
+    - 0.9
+    to:
+    - 20.5
+    - 7.8
+    width: 0.9
+    seq: AT
+    kinds:
+    - new
+    - new
+  - id: topo2a
+    g: blob
+    at:
+    - 18.7
+    - 3.6
+    w: 1.8
+    h: 1.6
+    shape: kidney
+    hue: purple
+    rot: 90
+  - id: topo2b
+    g: blob
+    at:
+    - 22.3
+    - 3.6
+    w: 1.8
+    h: 1.6
+    shape: kidney
+    hue: purple
+    rot: -90
+    label: cuts both strands
+    label_at:
+    - 28.6
+    - 6.6
+    point:
+    - 22.9
+    - 4.2
+  - g: text
+    at:
+    - 20.5
+    - 9.6
+    text: ΔLk ±2, ATP; gyrase adds negative supercoils
+    size: 0.8
+    align: center
+tags:
+- molecular_biology
+- replication
+- dna_structure
+notes_zh: 'Topo I：切斷一股（活性 Tyr 與磷酸形成共價中間物，能量保留所以不耗 ATP），另一股旋轉後接回 → 連結數 Lk 改變 1。真核 topo I 可鬆弛正、負超螺旋。Topo II：二聚體切斷雙股（G 段），讓另一段雙股（T 段）穿過再接回 → ΔLk = 2，耗 ATP。細菌 gyrase 是唯一能主動引入負超螺旋的 topo II；topo IV 分離連環體。藥物：camptothecin、irinotecan、topotecan（topo
+  I）；etoposide、doxorubicin（topo II，抗癌）；quinolone（ciprofloxacin）抑制 gyrase 與 topo IV。
+
+  【補充】Inhibitors: camptothecin, irinotecan, topotecan (topo I); etoposide, doxorubicin (topo II); quinolones / fluoroquinolones (bacterial gyrase, topo IV); novobiocin (gyrase ATPase).'
+parts_png: false
+status: pending

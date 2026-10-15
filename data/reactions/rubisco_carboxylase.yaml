@@ -1,0 +1,36 @@
+id: rubisco_carboxylase
+title: Rubisco (carboxylation)
+substrates:
+- ribulose_15bp
+products:
+- id: pg_3
+  n: 2
+cofactors_in:
+- CO2
+- H2O
+cofactors_out:
+- 2H+
+enzyme: 'Rubisco
+
+  (ribulose-1,5-bisphosphate carboxylase/oxygenase)'
+reversible: false
+decorate:
+  CO2:
+    colors:
+      0: magenta
+  pg_3:
+    colors:
+      0: magenta
+card_zh:
+  location: 葉綠體 stroma
+  type: 羧化：CO₂ 接到 RuBP 的 C2（經 enediolate 中間物），6 碳中間物水解成 2 × 3-PG；洋紅 CO₂ 成為其中一個 3-PG 的 COO⁻
+  regulation:
+  - 光照 → stroma pH ↑、Mg²⁺ ↑ → 活化；需 carbamoylation（Lys + CO₂ + Mg²⁺）
+  - Rubisco activase 移除抑制性的糖磷酸
+  exam_points:
+  - 地球上最多的蛋白質；催化很慢（約 3 次／秒）
+  - 同時有 oxygenase 活性 → 光呼吸；C4、CAM 植物先把 CO₂ 濃縮以減少光呼吸
+tags:
+- carb_metabolism
+- calvin_cycle
+status: pending

@@ -1,0 +1,16 @@
+id: dndp
+name: "Deoxyribonucleoside diphosphate"
+label: "dNDP"
+aliases: [dNDP]
+smiles: "[*][C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)C1"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "Base", down: "H"}
+    2: {up: "H", down: "H"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}–{P}–OCH_2", down: "H"}
+  numbers: true
+tags: [nucleotide]
+notes_zh: "dNDP：RNR 產物，2′-OH 被還原成 H。"
+status: pending

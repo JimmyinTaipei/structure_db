@@ -1,0 +1,13 @@
+id: pgg2
+name: Prostaglandin G2
+label: PGG_2
+aliases:
+- PGG₂
+smiles: CCCCC[C@@H](/C=C/[C@@H]1[C@@H](C/C=C\CCCC(=O)[O-])[C@@H]2C[C@H]1OO2)OO
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: COX 的環氧酶（cyclooxygenase）活性：arachidonate + 2 O₂ → 環內過氧化物（9,11-endoperoxide）＋ 15-OOH。
+status: pending

@@ -1,0 +1,30 @@
+id: ala_dehydratase
+title: 2 δ-Aminolevulinate → Porphobilinogen (ALA dehydratase)
+substrates:
+- id: aminolevulinate
+  n: 2
+products:
+- porphobilinogen
+cofactors_out:
+- 2H2O
+extra_out:
+- H+
+enzyme: 'ALA dehydratase
+
+  (PBG synthase)'
+reversible: false
+decorate:
+  aminolevulinate:
+    colors:
+      3: {r: magenta}
+  2H2O:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: 縮合（Zn²⁺）
+  deficiency:
+  - 鉛中毒：抑制 ALAD 與 ferrochelatase → ALA ↑、紅血球 Zn-protoporphyrin ↑、小球性貧血、嗜鹼性點彩
+tags:
+- amino_acid_metabolism
+- heme
+status: pending

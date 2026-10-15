@@ -1,0 +1,12 @@
+id: glyceraldehyde_3p
+name: Glyceraldehyde 3-phosphate
+label: "Glyceraldehyde\n3-phosphate"
+aliases: [G3P, GAP, GA3P, 甘油醛-3-磷酸]
+smiles: "O=C[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: H}}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP, glycolysis]
+notes_zh: 糖解作用與 PPP 的交會點；由 GAPDH 氧化成 1,3-BPG（產生 NADH）。
+status: pending

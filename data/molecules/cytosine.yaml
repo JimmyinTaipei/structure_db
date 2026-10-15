@@ -1,0 +1,8 @@
+id: cytosine
+name: "Cytosine"
+aliases: [C, 胞嘧啶]
+smiles: "Nc1[cH][cH][nH]c(=O)n1"
+ring: {down: 4, right: 5, nh_bond: true, mirror: true}
+tags: [nucleotide, pyrimidine]
+notes_zh: "嘧啶鹼基。脫胺 → uracil（DNA 用 T 而非 U 的理由之一）。"
+status: pending

@@ -1,0 +1,220 @@
+id: pcr_cycle
+title: Polymerase chain reaction (PCR)
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.8
+    text: template
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 1.0
+    - - 8.0
+      - 1.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 2.0
+    - - 8.0
+      - 2.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 11.5
+    - -0.8
+    text: 1. denature 95 °C
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 11.5
+      - 0.6
+    - - 19.5
+      - 0.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 11.5
+      - 3.2
+    - - 19.5
+      - 3.2
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 23.0
+    - -0.8
+    text: 2. anneal 55 °C
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 23.0
+      - 0.6
+    - - 31.0
+      - 0.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 29.2
+      - 1.4
+    - - 31.0
+      - 1.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 23.0
+      - 3.2
+    - - 31.0
+      - 3.2
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: new
+    points:
+    - - 23.0
+      - 2.4
+    - - 24.8
+      - 2.4
+    width: 0.3
+  - g: text
+    at:
+    - 27.0
+    - 4.4
+    text: primers
+    size: 0.68
+    align: center
+    color: '#D9622B'
+  - g: text
+    at:
+    - 34.5
+    - -0.8
+    text: 3. extend 72 °C
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 34.5
+      - 0.6
+    - - 42.5
+      - 0.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 42.5
+      - 1.4
+    - - 35.3
+      - 1.4
+    width: 0.3
+    arrow: true
+  - g: strand
+    kind: parent
+    points:
+    - - 34.5
+      - 3.2
+    - - 42.5
+      - 3.2
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: new
+    points:
+    - - 34.5
+      - 2.4
+    - - 41.7
+      - 2.4
+    width: 0.3
+    arrow: true
+  - g: text
+    at:
+    - 38.5
+    - 4.4
+    text: Taq polymerase
+    size: 0.68
+    align: center
+    color: '#D9622B'
+  - g: arrow
+    from:
+    - 9.1
+    - 1.9
+    to:
+    - 10.6
+    - 1.9
+    style: fat
+  - g: arrow
+    from:
+    - 20.6
+    - 1.9
+    to:
+    - 22.1
+    - 1.9
+    style: fat
+  - g: arrow
+    from:
+    - 32.1
+    - 1.9
+    to:
+    - 33.6
+    - 1.9
+    style: fat
+  - g: arrow
+    from:
+    - 38.5
+    - 5.2
+    to:
+    - 15.5
+    - 5.2
+    curve: -0.12
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 25.0
+    - 9.0
+    text: 25–35 cycles → 2^n copies
+    size: 0.8
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- techniques
+notes_zh: 一對 primer（15–25 nt，分別結合兩股的 3′ 端）、Taq DNA polymerase（Thermus aquaticus，耐熱、無 3′→5′ 校對）、dNTP、Mg²⁺。每循環：95 °C 變性 → 50–65 °C 黏合（約 Tm − 5；Tm ≈ 4(G+C) + 2(A+T)）→ 72 °C 延長。n 個循環產物約 2ⁿ（嚴格長度的 amplicon =
+  2ⁿ − 2n）。應用：診斷、STR／DNA 指紋、RAPD、RT-PCR（先反轉錄）。高保真 PCR 用 Pfu（有校對）。
+parts_png: false
+status: pending

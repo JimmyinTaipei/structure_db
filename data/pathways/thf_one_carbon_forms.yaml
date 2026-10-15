@@ -1,0 +1,123 @@
+id: thf_one_carbon_forms
+title: One-carbon units on tetrahydrofolate
+layout: free
+cell_size: 15.0
+nodes:
+- id: f
+  ref: formyl_thf
+  pos:
+  - 0
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[N:1][CH:2]=[O:3]'
+      color: magenta
+- id: m
+  ref: methenyl_thf
+  pos:
+  - 1.75
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[N+:1]=[CH:2][N:3]'
+      color: magenta
+- id: ch2
+  ref: methylene_thf
+  pos:
+  - 0
+  - 1.15
+  decorate:
+    highlight:
+    - smarts: '[#7:1][CH2;r5:2][#7:3]'
+      color: magenta
+- id: ch3
+  ref: methyl_thf
+  pos:
+  - 0
+  - 2.3
+  decorate:
+    highlight:
+    - smarts: '[CH3:1][N:2]'
+      color: magenta
+- id: pur
+  text: 'purine C2, C8
+
+    (fMet-tRNA)'
+  kind: concept
+  pos:
+  - 0
+  - -0.6
+- id: shmt
+  text: 'THF + Ser → Gly
+
+    (SHMT)'
+  kind: concept
+  pos:
+  - 1.6
+  - 0.92
+- id: dtmp
+  text: 'dUMP → dTMP
+
+    (thymidylate synthase)'
+  kind: concept
+  pos:
+  - 1.6
+  - 1.42
+- id: met
+  text: 'Hcy → Met, THF
+
+    (methionine synthase, B_{12})'
+  kind: concept
+  pos:
+  - 1.6
+  - 2.3
+- id: lv1
+  text: formate level
+  kind: heading
+  pos:
+  - 2.95
+  - 0
+- id: lv2
+  text: formaldehyde level
+  kind: heading
+  pos:
+  - 2.95
+  - 1.15
+- id: lv3
+  text: methanol level
+  kind: heading
+  pos:
+  - 2.95
+  - 2.3
+edges:
+- from: f
+  to: m
+  label: cyclohydrolase
+  reversible: true
+- from: m
+  to: ch2
+  label: MTHFD
+  side_text: NADPH
+  reversible: true
+- from: ch2
+  to: ch3
+  label: MTHFR (irreversible)
+  side_text: NADPH
+- from: shmt
+  to: ch2
+- from: ch2
+  to: dtmp
+- from: ch3
+  to: met
+- from: f
+  to: pur
+text: false
+tags:
+- amino_acid_metabolism
+- one_carbon
+- vitamin
+- coenzyme
+notes_zh: 洋紅為一碳單位，由上到下氧化程度遞減：formyl／methenyl（甲酸層級）→ methylene（甲醛層級）→ methyl（甲醇層級）。N¹⁰-formyl-THF：嘌呤 C2、C8，fMet-tRNA；N⁵,N¹⁰-methylene-THF：Ser → Gly（SHMT）產生，供 thymidylate synthase （dUMP → dTMP，同時給出還原力，THF
+  → DHF，需 DHFR 再生；methotrexate、5-FU 作用點）；N⁵-methyl-THF：MTHFR 不可逆生成，唯一去路為 methionine synthase（B12）把甲基給 homocysteine。B12 缺乏 → methyl-folate trap。
+parts_png: false
+status: pending

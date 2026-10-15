@@ -1,0 +1,42 @@
+id: apobec1_editing
+title: C → U RNA editing (APOBEC-1)
+substrates:
+- cytosine_rib
+products:
+- uracil_rib
+cofactors_in:
+- H2O
+cofactors_out:
+- ammonium
+cofactors_inline: true
+extra_in:
+- H+
+enzyme: 'APOBEC-1
+
+  (cytidine deaminase)'
+reversible: false
+decorate:
+  cytosine_rib:
+    highlight:
+    - smarts: '[NH2:1]c'
+      color: magenta
+  uracil_rib:
+    highlight:
+    - smarts: '[O:1]=c1ccn(*)c(=O)[nH]1'
+      color: cyan
+  H2O:
+    colors:
+      0: cyan
+  ammonium:
+    colors:
+      0: magenta
+card_zh:
+  type: 水解脫胺：C4 的 NH₂（洋紅）離開成 NH₄⁺，H₂O 的 O（青）成為 C4=O
+  exam_points:
+  - apoB mRNA codon 2153 CAA → UAA（終止）：小腸 apoB-48，肝臟不編輯 → apoB-100
+  - 需輔助蛋白 ACF；同家族 APOBEC3G 為抗病毒蛋白、AID 負責體細胞高度突變
+tags:
+- molecular_biology
+- rna_processing
+parts_png: false
+status: pending

@@ -1,0 +1,85 @@
+id: bpg_effect
+title: 2,3-BPG and Hb O2 affinity
+layout: plot
+plot:
+  size:
+  - 18
+  - 10
+  params:
+    n: 2.8
+    P0: 8
+    P5: 26
+    P8: 31
+  x:
+    min: 0
+    max: 130
+    label: pO_2 (mmHg)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+    - 120
+  y:
+    min: 0
+    max: 1.12
+    label: Fractional saturation (Y)
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  bands:
+  - x0: 20
+    x1: 40
+    label: Tissues
+    color: cyan
+  - x0: 90
+    x1: 105
+    label: Lungs
+    color: magenta
+  curves:
+  - id: stripped
+    y: hill(x, P0, 2.4)
+    color: cyan
+  - id: normal
+    y: hill(x, P5, n)
+  - id: altitude
+    y: hill(x, P8, n)
+    color: red
+  points:
+  - 'on': stripped
+    x: P0
+    y: 0.5
+    color: cyan
+    drop: x
+  - 'on': normal
+    x: P5
+    y: 0.5
+    drop: x
+  - 'on': altitude
+    x: P8
+    y: 0.5
+    color: red
+    drop: x
+  legend:
+    at:
+    - 46
+    - 0.62
+    items:
+    - curve: stripped
+      text: Stripped Hb, no BPG (P_{50} ≈ 8)
+    - curve: normal
+      text: Normal, 5 mM BPG (P_{50} ≈ 26)
+    - curve: altitude
+      text: High altitude, 8 mM BPG (P_{50} ≈ 31)
+caption:
+  text: 2,3-BPG binds the central cavity of deoxy (T-state) Hb → stabilises T → right shift
+tags:
+- protein
+- hemoglobin
+notes_zh: 2,3-BPG 結合在 deoxy-Hb（T 態）兩條 β 鏈之間的中央空腔（帶正電的 His143、Lys82、His2），穩定 T 態 → 曲線右移。去除 BPG 的 Hb 親和力極高（P₅₀ 約 8 mmHg），幾乎無法在組織卸氧。高海拔、慢性缺氧、貧血時 BPG 上升。HbF 的 γ 鏈 His143 → Ser，BPG 結合弱 → 親和力高於 HbA，讓胎兒能從母體取得
+  O₂。
+status: pending

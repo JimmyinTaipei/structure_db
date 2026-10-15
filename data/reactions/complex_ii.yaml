@@ -1,0 +1,45 @@
+id: complex_ii
+title: 'Complex II: Succinate + Q → Fumarate + QH₂ (succinate dehydrogenase)'
+substrates:
+- id: succinate
+  chain: explicit
+- ubiquinone
+products:
+- fumarate
+- ubiquinol
+prosthetic:
+- FAD,
+- Fe-S
+enzyme: 'Complex II
+
+  (succinate dehydrogenase)'
+conditions: no H^+ pumped
+reversible: false
+decorate:
+  succinate:
+    colors:
+      1:
+        l: magenta
+      2:
+        r: magenta
+  ubiquinol:
+    colors:
+      o1:
+      - magenta
+      - H
+      o4:
+      - magenta
+      - H
+card_zh:
+  location: 粒線體內膜（TCA 唯一的膜結合酵素）
+  type: 氧化（FAD → Fe-S → Q）
+  deficiency:
+  - malonate：競爭性抑制（結構類似 succinate）
+  - carboxin、TTFA 抑制 Q 結合位
+  exam_points:
+  - 不打質子 → FADH₂ 的 P/O ≈ 1.5（6 H⁺）
+  - 也是 TCA 的第 6 步
+tags:
+- energy_metabolism
+- etc_oxphos
+status: pending

@@ -1,0 +1,22 @@
+id: fumarase
+title: "TCA ⑦ Fumarate ⇌ L-Malate"
+step: 7
+substrates: [fumarate]
+products: [{id: malate, chain: explicit}]
+cofactors_in: [H2O]
+enzyme: "fumarase"
+cofactors_inline: true          # 輔因子直接寫進方程式（Mathews）
+reversible: true
+decorate:                         # Mathews：H₂O 的 HO 與 H 加到雙鍵兩端（洋紅）
+  H2O: {colors: {0: magenta}}
+  malate: {colors: {1: {l: magenta}, 2: {r: magenta}}}
+card_zh:
+  location: 粒線體基質（細胞質另有一型）
+  type: 水合（trans 加成）
+  deltaG: "ΔG'° = −3.8 kJ/mol，可逆"
+  mechanism: "高度立體專一：只作用於 trans（fumarate，不作用於 maleate），只生成 L-malate"
+  deficiency: "Fumarate hydratase 突變 → 遺傳性平滑肌瘤病與腎細胞癌（HLRCC）"
+  exam_points:
+    - "又稱 fumarate hydratase"
+tags: [TCA]
+status: pending

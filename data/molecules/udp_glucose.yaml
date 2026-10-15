@@ -1,0 +1,33 @@
+id: udp_glucose
+name: UDP-glucose
+label: UDP-glucose
+aliases:
+- UDP-Glc
+- UDPG
+- 尿苷二磷酸葡萄糖
+smiles: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)OP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6ccc(=O)[nH]c6=O)[C@H](O)[C@@H]5O)O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: O–UDP
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- glycogen
+- galactose_metabolism
+notes_zh: 活化的葡萄糖供體（肝醣、乳糖、glucuronate、醣蛋白）。UDP 接在 α-C1 上；PPi 被 pyrophosphatase 水解，使合成不可逆。
+status: pending

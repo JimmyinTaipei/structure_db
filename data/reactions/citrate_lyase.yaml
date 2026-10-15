@@ -1,0 +1,33 @@
+id: citrate_lyase
+title: Citrate → Acetyl-CoA + Oxaloacetate (ATP-citrate lyase)
+substrates:
+- citrate
+products:
+- acetyl_coa
+- oxaloacetate
+cofactors_in:
+- CoA-SH
+- ATP
+cofactors_out:
+- ADP
+- Pi
+enzyme: ATP-citrate lyase
+reversible: false
+decorate:
+  citrate:
+    colors: {0: magenta, 1: magenta}
+  CoA-SH:
+    colors: {0: cyan}
+  acetyl_coa:
+    colors:
+      0: {c: magenta, l: magenta, u: magenta, r: cyan}
+card_zh:
+  location: 細胞質
+  type: 裂解（耗 ATP）
+  exam_points:
+  - acetyl-CoA 不能穿過粒線體內膜：以 citrate 形式出來（citrate shuttle）
+  - insulin 誘導
+tags:
+- lipid_metabolism
+- fa_synthesis
+status: pending

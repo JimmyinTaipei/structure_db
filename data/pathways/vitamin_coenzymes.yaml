@@ -1,0 +1,257 @@
+id: vitamin_coenzymes
+title: Water-soluble vitamins → coenzymes（水溶性維生素與其輔酶）
+layout: free
+cell_size: 6.6
+text: false
+nodes:
+- id: h1
+  text: Vitamin
+  kind: heading
+  pos:
+  - 0
+  - -0.7
+- id: h2
+  text: Coenzyme
+  kind: heading
+  pos:
+  - 2.3
+  - -0.7
+- id: h3
+  text: Reaction type / enzymes
+  kind: heading
+  pos:
+  - 4.7
+  - -0.7
+- id: b1
+  ref: thiamine
+  view: name
+  pos:
+  - 0
+  - 0
+- id: tpp
+  ref: tpp
+  view: name
+  pos:
+  - 2.3
+  - 0
+- id: f1
+  text: 'Oxidative decarboxylation (PDH, α-KGDH, BCKDH),
+
+    transketolase'
+  kind: plain
+  pos:
+  - 4.9
+  - 0
+- id: b2
+  ref: riboflavin
+  view: name
+  pos:
+  - 0
+  - 1
+- id: fmn
+  ref: fmn
+  view: name
+  pos:
+  - 1.3
+  - 1
+- id: fad
+  ref: fad
+  view: name
+  pos:
+  - 2.3
+  - 1
+- id: f2
+  text: 'Redox, 1 or 2 e^- (Complex I, II,
+
+    acyl-CoA DH, E3 of PDH)'
+  kind: plain
+  pos:
+  - 4.9
+  - 1
+- id: b3
+  ref: nicotinate
+  view: name
+  pos:
+  - 0
+  - 2
+- id: nad
+  ref: nad
+  view: name
+  pos:
+  - 2.3
+  - 2
+- id: nadp
+  ref: nadp
+  view: name
+  pos:
+  - 2.3
+  - 2.6
+- id: f3
+  text: 'Redox, hydride (2 e^-): NAD^+ catabolic,
+
+    NADPH anabolic'
+  kind: plain
+  pos:
+  - 4.9
+  - 2.3
+- id: b5
+  ref: pantothenate
+  view: name
+  pos:
+  - 0
+  - 3.4
+- id: coa
+  ref: coa
+  view: name
+  pos:
+  - 2.3
+  - 3.4
+- id: f5
+  text: 'Acyl carrier (thioester): acetyl-CoA,
+
+    fatty acid synthase (ACP)'
+  kind: plain
+  pos:
+  - 4.9
+  - 3.4
+- id: b6
+  ref: pyridoxal
+  view: name
+  pos:
+  - 0
+  - 4.4
+- id: plp
+  ref: plp
+  view: name
+  pos:
+  - 2.3
+  - 4.4
+- id: f6
+  text: 'Amino acids: transamination, decarboxylation;
+
+    ALA synthase, glycogen phosphorylase'
+  kind: plain
+  pos:
+  - 4.9
+  - 4.4
+- id: b7
+  ref: biotin
+  view: name
+  pos:
+  - 0
+  - 5.4
+- id: bl
+  text: 'Biotin–Lys
+
+    (carboxylases)'
+  kind: name
+  pos:
+  - 2.3
+  - 5.4
+- id: f7
+  text: 'Carboxylation (+CO_2): pyruvate carboxylase,
+
+    acetyl-CoA C, propionyl-CoA C'
+  kind: plain
+  pos:
+  - 4.9
+  - 5.4
+- id: b9
+  ref: folate
+  view: name
+  pos:
+  - 0
+  - 6.4
+- id: thf
+  ref: thf
+  view: name
+  pos:
+  - 2.3
+  - 6.4
+- id: f9
+  text: 'One-carbon transfer: purines, dTMP,
+
+    Ser → Gly, Met'
+  kind: plain
+  pos:
+  - 4.9
+  - 6.4
+- id: b12
+  ref: cobalamin
+  view: name
+  pos:
+  - 0
+  - 7.4
+- id: mecbl
+  text: 'Methyl-Cbl
+
+    Adenosyl-Cbl'
+  kind: name
+  pos:
+  - 2.3
+  - 7.4
+- id: f12
+  text: 'Methionine synthase (Hcy → Met),
+
+    methylmalonyl-CoA mutase'
+  kind: plain
+  pos:
+  - 4.9
+  - 7.4
+- id: c
+  ref: ascorbate
+  view: name
+  pos:
+  - 0
+  - 8.4
+- id: fc
+  text: 'Hydroxylation (Pro, Lys: collagen),
+
+    antioxidant, Fe absorption'
+  kind: plain
+  pos:
+  - 4.9
+  - 8.4
+edges:
+- from: b1
+  to: tpp
+  step: thiamine_pyrophosphokinase
+  label: ATP → AMP
+- from: b2
+  to: fmn
+  step: riboflavin_kinase
+  label: ATP
+- from: fmn
+  to: fad
+  step: fad_synthetase
+  label: ATP
+- from: b3
+  to: nad
+  label: Preiss–Handler
+- from: nad
+  to: nadp
+  label: NAD kinase
+  label_side: right
+- from: b5
+  to: coa
+  label: + Cys, ATP
+- from: b6
+  to: plp
+  step: pyridoxal_kinase
+  label: ATP
+- from: b7
+  to: bl
+  label: 'holocarboxylase
+
+    synthetase'
+- from: b9
+  to: thf
+  label: DHFR × 2 (via DHF)
+- from: b12
+  to: mecbl
+tags:
+- vitamin
+- water_soluble
+- coenzyme
+notes_zh: B1 TPP、B2 FAD/FMN、B3 NAD(P)、B5 CoA、B6 PLP、B7 biotin、B9 THF、B12 cobalamin。口訣：PDH 需要 B1、B2、B3、B5、lipoate（「Tender Loving Care For Nancy」：TPP、lipoate、CoA、FAD、NAD⁺）。
+status: pending

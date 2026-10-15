@@ -1,0 +1,62 @@
+id: chitin_unit
+name: Chitin (repeating unit)
+label: Chitin
+aliases:
+- chitin
+- chitobiose
+- 幾丁質
+smiles: CC(=O)N[C@@H]1[C@@H](O)[C@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H](CO)O[C@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: NHAc
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: HO
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: NHAc
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: CH_2OH
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+notes_zh: GlcNAc(β1→4)GlcNAc 的同元多醣（homopolysaccharide）；與 cellulose 只差在 C2 的 OH 換成 NHAc。節肢動物外骨骼、真菌細胞壁。
+status: pending

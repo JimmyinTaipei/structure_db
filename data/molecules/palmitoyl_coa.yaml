@@ -1,0 +1,18 @@
+id: palmitoyl_coa
+name: Palmitoyl-CoA
+aliases:
+- palmitoyl coenzyme A
+- C16:0-CoA
+- 棕櫚醯輔酶A
+smiles: '[1*]SC(=O)CCCCCCCCCCCCCCC'
+lipid:
+  type: fatty_acid
+  chains:
+  - n: 16
+  end: coa
+tags:
+- lipid_metabolism
+- beta_oxidation
+- fa_synthesis
+notes_zh: 脂肪酸活化後的形式（高能硫酯）。細胞質中由 acyl-CoA synthetase（耗 2 個高能磷酸鍵：ATP → AMP + PPi）生成；要進粒線體必須先換成 acylcarnitine。
+status: pending

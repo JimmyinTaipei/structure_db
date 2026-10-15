@@ -1,0 +1,195 @@
+id: nuclear_receptor_signaling
+title: Nuclear (steroid) receptors
+layout: scene
+scene:
+  items:
+  - g: membrane
+    y: 1.0
+    x0: 0.0
+    x1: 28.0
+    t: 1.6
+  - g: ligand
+    at:
+    - 3.0
+    - -1.4
+    shape: diamond
+    hue: orange
+    r: 0.45
+  - g: arrow
+    from:
+    - 3.0
+    - -0.6
+    to:
+    - 3.0
+    - 3.6
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 4.0
+    - -1.4
+    text: steroid
+    size: 0.7
+    align: left
+  - g: blob
+    at:
+    - 6.0
+    - 6.0
+    w: 2.6
+    h: 1.8
+    shape: kidney
+    hue: purple
+    text: GR
+    text_size: 0.6
+  - g: blob
+    at:
+    - 7.9
+    - 7.2
+    w: 2.0
+    h: 1.4
+    shape: oval
+    hue: gray
+    text: HSP90
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 9.4
+    - 6.0
+    to:
+    - 12.2
+    - 6.0
+    style: fat
+  - g: blob
+    at:
+    - 14.4
+    - 5.6
+    w: 2.6
+    h: 1.8
+    shape: kidney
+    hue: purple
+    text: GR
+    text_size: 0.6
+  - g: ligand
+    at:
+    - 14.8
+    - 4.4
+    shape: diamond
+    hue: orange
+    r: 0.38
+  - g: blob
+    at:
+    - 15.6
+    - 8.6
+    w: 2.0
+    h: 1.4
+    shape: oval
+    hue: gray
+    text: HSP90
+    text_size: 0.45
+  - g: region
+    x0: 18.6
+    y0: 3.0
+    x1: 29.0
+    y1: 14.6
+    hue: blue
+    opacity: 0.12
+    dashed: true
+  - g: text
+    at:
+    - 28.6
+    - 3.6
+    text: nucleus
+    size: 0.65
+    align: right
+    color: gray
+  - g: arrow
+    from:
+    - 16.6
+    - 5.6
+    to:
+    - 19.8
+    - 7.6
+    color: gray
+    width: 1.0
+  - g: strand
+    kind: parent
+    points:
+    - - 19.2
+      - 11.4
+    - - 28.4
+      - 11.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 19.2
+      - 12.4
+    - - 28.4
+      - 12.4
+    width: 0.3
+  - g: region
+    x0: 20.4
+    y0: 11.200000000000001
+    x1: 23.6
+    y1: 12.6
+    hue: yellow
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 22.0
+    - 11.9
+    text: HRE
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 21.0
+    - 10.4
+    w: 1.9
+    h: 1.5
+    shape: kidney
+    hue: purple
+    text: ''
+    text_size: 0.62
+  - g: blob
+    at:
+    - 23.0
+    - 10.4
+    w: 1.9
+    h: 1.5
+    shape: kidney
+    hue: purple
+    text: ''
+    text_size: 0.62
+  - g: ligand
+    at:
+    - 21.0
+    - 9.4
+    shape: diamond
+    hue: orange
+    r: 0.32
+  - g: ligand
+    at:
+    - 23.0
+    - 9.4
+    shape: diamond
+    hue: orange
+    r: 0.32
+  - g: arrow
+    from:
+    - 24.2
+    - 10.0
+    to:
+    - 28.0
+    - 10.0
+    color: '#2E9E4F'
+    width: 1.8
+tags:
+- molecular_biology
+- gene_regulation
+- signal_transduction
+notes_zh: Type I（glucocorticoid、mineralocorticoid、sex steroids）：細胞質中與 HSP90 結合；激素穿膜結合後 HSP90 離開 → 同源二聚 → 入核 → 以 Zn-finger DBD 結合 HRE（反向重複）→ 招募 coactivator（HAT）。Type II（thyroid、retinoic acid、vitamin D、PPAR）：已在核內與
+  RXR 異源二聚、無激素時結合 corepressor（HDAC），激素結合後換成 coactivator。結構：AF-1、DBD（兩個 Cys₄ 鋅指）、LBD/AF-2。
+parts_png: false
+status: pending

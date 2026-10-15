@@ -1,0 +1,92 @@
+id: p53_rb_checkpoint
+title: DNA damage → p53 → G1 arrest
+layout: free
+cell_size: 4.4
+nodes:
+- id: dmg
+  text: DNA double-strand break
+  pos:
+  - 0
+  - 0
+  kind: name
+- id: mrn
+  text: MRN complex
+  pos:
+  - 0
+  - 0.9
+  kind: protein
+- id: atm
+  text: ATM / ATR (Ser/Thr kinases)
+  pos:
+  - 0
+  - 1.8
+  kind: protein
+- id: p53
+  text: p53 (stabilized)
+  pos:
+  - 0
+  - 2.7
+  kind: protein
+- id: p21
+  text: p21 (CKI)
+  pos:
+  - 0
+  - 3.6
+  kind: protein
+- id: cdk
+  text: CDK2 · cyclin E
+  pos:
+  - 0
+  - 4.6
+  kind: protein
+- id: rb
+  text: Rb · E2F (E2F held)
+  pos:
+  - 0
+  - 5.6
+  kind: protein
+- id: g1
+  text: 'G1 arrest → repair
+
+    (or apoptosis via Bax)'
+  pos:
+  - -2.4
+  - 2.7
+  kind: name
+- id: rbp
+  text: 'If no p21: Rb-P releases E2F
+
+    → S-phase genes'
+  pos:
+  - 2.9
+  - 5.6
+  kind: name
+edges:
+- from: dmg
+  to: mrn
+- from: mrn
+  to: atm
+- from: atm
+  to: p53
+  label: P
+- from: p53
+  to: p21
+  label: transcription
+- from: p21
+  to: cdk
+  inhibit: true
+- from: cdk
+  to: rb
+  inhibit: true
+  label: cannot phosphorylate Rb
+- from: p53
+  to: g1
+- from: rb
+  to: rbp
+  color: gray
+tags:
+- signal_transduction
+- cancer
+notes_zh: DNA 雙股斷裂 → MRN → ATM/ATR 磷酸化 p53（不再被 MDM2 送去分解）→ p53 轉錄 p21（CDK inhibitor）→ CDK2/cyclin E 失活 → Rb 保持去磷酸、抓住 E2F → 停在 G1 修復；無法修復則 p53 → Bax → 凋亡。p53、Rb、BRCA1/2 為腫瘤抑制基因（loss-of-function、隱性、常為生殖細胞遺傳）；Ras、Myc、ErbB2
+  為原致癌基因（gain-of-function、顯性、體細胞突變）。原致癌基因活化方式：點突變、基因擴增、染色體轉位、promoter/enhancer 插入。c-onc 與 v-onc（病毒來源）。
+status: pending

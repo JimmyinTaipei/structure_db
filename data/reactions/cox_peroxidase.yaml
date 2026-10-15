@@ -1,0 +1,38 @@
+id: cox_peroxidase
+title: PGG₂ → PGH₂ (COX, peroxidase activity)
+substrates:
+- pgg2
+products:
+- pgh2
+cofactors_in:
+- 2GSH
+cofactors_out:
+- GSSG
+- H2O
+enzyme: 'cyclooxygenase
+
+  (peroxidase site)'
+reversible: false
+decorate:
+  pgg2:
+    highlight:
+    - smarts: '[OX2H1:1][OX2]'
+      color: magenta
+  H2O:
+    colors:
+      0: magenta
+  2GSH:
+    colors:
+      0: cyan
+  GSSG:
+    colors:
+      0: cyan
+card_zh:
+  location: ER 膜（同一個 PGH synthase 的另一個活性位）
+  type: 還原 15-OOH → 15-OH（電子由還原劑提供，圖中以 GSH 表示）
+  exam_points:
+  - aspirin 只抑制環氧酶活性，不抑制過氧化酶活性
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

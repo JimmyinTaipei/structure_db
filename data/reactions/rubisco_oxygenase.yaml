@@ -1,0 +1,31 @@
+id: rubisco_oxygenase
+title: Rubisco (oxygenation, photorespiration)
+substrates:
+- ribulose_15bp
+products:
+- pg_3
+- phosphoglycolate_2
+cofactors_in:
+- O2
+cofactors_out:
+- 2H+
+enzyme: Rubisco (oxygenase)
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  phosphoglycolate_2:
+    colors:
+      0:
+        fork_r: magenta
+card_zh:
+  location: 葉綠體 stroma
+  type: O₂ 取代 CO₂ 加到 RuBP：產物 1 個 3-PG + 1 個 2-phosphoglycolate；洋紅 O 進入 2-phosphoglycolate 的羧基
+  exam_points:
+  - 高溫、低 CO₂/O₂ 比時增加
+  - 2-phosphoglycolate 的回收（photorespiration）跨葉綠體、peroxisome、粒線體，放出 CO₂ 與 NH₃
+tags:
+- carb_metabolism
+- calvin_cycle
+status: pending

@@ -1,0 +1,38 @@
+id: methionine_adenosyltransferase
+title: Methionine + ATP → SAM (methionine adenosyltransferase)
+substrates:
+- methionine
+- atp_n
+products:
+- sam
+cofactors_in:
+- H2O
+cofactors_out:
+- PPi
+- Pi
+enzyme: 'methionine
+
+  adenosyltransferase'
+reversible: false
+decorate:
+  methionine:
+    colors: {4: magenta}
+  sam:
+    highlight:
+    - atoms: [13, 14]
+      color: magenta
+  atp_n:
+    colors:
+      u4: [cyan, '{P}–{P}–{P}']
+  PPi:
+    colors: {0: cyan}
+  Pi:
+    colors: {0: cyan}
+card_zh:
+  type: ATP 的腺苷接到 S 上，三個磷酸全部離開（PPi + Pi）
+  exam_points:
+  - SAM 是主要的甲基供體
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

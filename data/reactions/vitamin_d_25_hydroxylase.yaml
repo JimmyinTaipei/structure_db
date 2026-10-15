@@ -1,0 +1,32 @@
+id: vitamin_d_25_hydroxylase
+title: Vitamin D3 → Calcidiol (25-hydroxylase, liver)
+substrates:
+- cholecalciferol
+products:
+- calcidiol
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: '25-hydroxylase
+
+  (CYP2R1, liver)'
+reversible: false
+decorate:
+  O2:
+    colors: {0: magenta}
+  calcidiol:
+    highlight:
+    - {smarts: '[CX4](C)(C)(C)[OH:1]', color: magenta}
+card_zh:
+  location: 肝（微粒體）
+  type: 羥化（cytochrome P450 單氧酶）
+  regulation: 幾乎不受調控（受質多就做多）
+  exam_points:
+  - 25-OH-D₃ 是評估 vitamin D 存量的指標
+tags:
+- vitamin
+- fat_soluble
+status: pending

@@ -1,0 +1,41 @@
+id: globotriaosylceramide
+name: Globotriaosylceramide (Gb3)
+label: 'Globotriaosyl-
+
+  ceramide (Gb3)'
+aliases:
+- Gb3
+- ceramide trihexoside
+smiles: C(OC1OC(CO)C(OC2OC(CO)C(OC3OC(CO)C(O)C(O)C3O)C(O)C2O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+free:
+  atoms:
+    cer:
+    - Ceramide
+    - 0
+    - 0
+    - 7
+    s0:
+    - '@glc'
+    - 0.95
+    - 0
+    s1:
+    - '@gal'
+    - 1.75
+    - 0
+    s2:
+    - '@gal'
+    - 2.55
+    - 0
+  bonds:
+  - - cer
+    - s0
+  - - s0
+    - s1
+  - - s1
+    - s2
+  schematic: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: ceramide–Glc–Gal–Gal（末端 α1→4）。Fabry disease：α-galactosidase A 缺乏（X-linked）→ 末梢神經痛、angiokeratoma、少汗、腎衰竭、心肌病。也是 Shiga toxin 受體。（SNFG 示意圖：藍圓 Glc、黃圓 Gal、黃方 GalNAc、紫菱 NeuAc）
+status: pending

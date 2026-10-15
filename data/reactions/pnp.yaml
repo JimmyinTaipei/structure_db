@@ -1,0 +1,23 @@
+id: pnp
+title: "Inosine + Pᵢ → Hypoxanthine + Ribose 1-P (PNP)"
+substrates: [inosine]
+products: [hypoxanthine]
+cofactors_in: [Pi]
+cofactors_out: [R1P]
+enzyme: "purine nucleoside\nphosphorylase (PNP)"
+reversible: true
+decorate:
+  Pi:
+    colors: {0: magenta}
+  R1P:
+    colors:
+      0:
+        c:
+        - [magenta, '{P}']
+card_zh:
+  location: 細胞質
+  type: "磷酸解（phosphorolysis，不是水解）：Pi 切開醣苷鍵"
+  cofactors: "也作用於 guanosine → guanine"
+  deficiency: "PNP 缺乏 → T 細胞免疫缺陷（dGTP 累積），B 細胞相對正常；尿酸偏低"
+tags: [nucleotide, purine, degradation]
+status: pending

@@ -1,0 +1,21 @@
+id: biotin
+name: Biotin (vitamin B7)
+label: Biotin (B_7)
+aliases:
+- vitamin B7
+- vitamin H
+- 生物素
+smiles: '[O-]C(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12'
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[NH:1]([CH][CH2]S)C(=O)'
+    color: magenta
+tags:
+- vitamin
+- water_soluble
+- coenzyme
+notes_zh: 羧基以醯胺鍵接在酵素的 Lys 上（biocytin，holocarboxylase synthetase）。洋紅：N1′，ATP + HCO₃⁻ 先在這裡形成 carboxybiotin，再把 CO₂ 轉給受質。酵素：pyruvate carboxylase、acetyl-CoA carboxylase、propionyl-CoA carboxylase（ABC：ATP、Biotin、CO₂）。生蛋白的
+  avidin 會結合 biotin。
+status: pending

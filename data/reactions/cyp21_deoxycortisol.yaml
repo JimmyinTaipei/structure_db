@@ -1,0 +1,33 @@
+id: cyp21_deoxycortisol
+title: 17α-Hydroxyprogesterone → 11-Deoxycortisol (CYP21A2)
+substrates:
+- oh_progesterone
+products:
+- deoxycortisol
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: 'CYP21A2
+
+  (21-hydroxylase)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  deoxycortisol:
+    highlight:
+    - smarts: C(=O)C[OH:1]
+      color: magenta
+card_zh:
+  location: ER（束狀帶）
+  type: 單氧化（C21）
+  exam_points:
+  - 新生兒篩檢以 17-OHP 偵測 21-hydroxylase 缺乏
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

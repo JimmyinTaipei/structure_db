@@ -1,0 +1,31 @@
+id: aldose_reductase
+title: Glucose → Sorbitol (aldose reductase)
+substrates:
+- glucose
+products:
+- sorbitol
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: aldose reductase
+reversible: false
+decorate:
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  sorbitol:
+    colors: {0: magenta}
+card_zh:
+  location: 水晶體、視網膜、神經（Schwann 細胞）、腎
+  type: 還原（醛 → 醇）
+  deficiency: 高血糖時 sorbitol 累積（缺 sorbitol DH 的組織）→ 滲透壓損傷：糖尿病白內障、神經病變、視網膜病變；也耗用 NADPH
+  exam_points:
+  - polyol pathway 第一步
+tags:
+- carb_metabolism
+- polyol
+status: pending

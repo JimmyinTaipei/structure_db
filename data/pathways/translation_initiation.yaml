@@ -1,0 +1,353 @@
+id: translation_initiation
+title: 'Translation initiation: bacteria vs eukaryotes'
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.6
+    text: Bacteria (E. coli)
+    size: 0.95
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 4.0
+    - - 11.0
+      - 4.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 2.6
+    - 4.0
+    w: 2.0
+    h: 0.75
+    shape: box
+    hue: yellow
+    text: SD
+    text_size: 0.62
+  - g: text
+    at:
+    - 2.6
+    - 3.25
+    text: AGGAGG
+    size: 0.62
+    align: center
+    color: '#B08F10'
+  - g: blob
+    at:
+    - 5.6
+    - 5.0
+    w: 6.2
+    h: 1.5
+    shape: oval
+    hue: '#C9BEDF'
+    text: 30S
+    text_size: 0.55
+  - g: text
+    at:
+    - 5.6
+    - 6.4
+    text: 16S rRNA 3′ end pairs with SD
+    size: 0.62
+    align: center
+    color: gray
+  - g: trna
+    shape: icon
+    at:
+    - 5.4
+    - 4.0
+    s: 0.8
+    anticodon: UAC
+    aa: fMet
+  - g: blob
+    at:
+    - 7.2
+    - 2.4
+    w: 1.8
+    h: 1.0
+    shape: oval
+    hue: green
+    text: IF2·GTP
+    text_size: 0.45
+  - g: blob
+    at:
+    - 9.0
+    - 3.45
+    w: 1.1
+    h: 0.9
+    shape: round
+    hue: orange
+    text: IF1
+    text_size: 0.62
+  - g: blob
+    at:
+    - 3.7
+    - 2.2
+    w: 1.1
+    h: 0.9
+    shape: round
+    hue: yellow
+    text: IF3
+    text_size: 0.62
+  - g: arrow
+    from:
+    - 12.0
+    - 3.5
+    to:
+    - 14.4
+    - 3.5
+    style: fat
+  - g: text
+    at:
+    - 13.4
+    - 2.3
+    text: + 50S
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 13.4
+    - 5.2
+    text: 'IF2: GTP → GDP
+
+      IF1, 2, 3 leave'
+    size: 0.65
+    align: center
+    color: gray
+  - g: strand
+    kind: rna
+    points:
+    - - 15.0
+      - 4.0
+    - - 26.5
+      - 4.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 20.6
+    - 4.0
+    w: 7.0
+    sites: true
+    large: 50S
+    small: 30S
+  - g: trna
+    shape: icon
+    at:
+    - 20.6
+    - 4.0
+    s: 0.8
+    anticodon: UAC
+    aa: fMet
+  - g: text
+    at:
+    - 20.6
+    - 7.2
+    text: 70S initiation complex
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 0.0
+    - 10.4
+    text: Eukaryotes (cap-dependent scanning)
+    size: 0.95
+    align: left
+  - g: ion
+    at:
+    - 0.5
+    - 15.0
+    r: 0.5
+    hue: green
+    text: m^7G
+    text_size: 0.4
+  - g: strand
+    kind: rna
+    points:
+    - - 1.0
+      - 15.0
+    - - 27.0
+      - 15.0
+    width: 0.3
+    ends:
+    - ''
+    - ''
+  - g: text
+    at:
+    - 27.3
+    - 15.0
+    text: AAAA
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: blob
+    at:
+    - 26.6
+    - 14.05
+    w: 1.6
+    h: 0.9
+    shape: oval
+    hue: teal
+    text: PABP
+    text_size: 0.45
+  - g: blob
+    at:
+    - 1.6
+    - 14.05
+    w: 1.2
+    h: 0.95
+    shape: round
+    hue: pink
+    text: 4E
+    text_size: 0.62
+  - g: blob
+    at:
+    - 3.2
+    - 13.8
+    w: 2.2
+    h: 0.9
+    shape: box
+    hue: gray
+    text: 4G
+    text_size: 0.55
+  - g: blob
+    at:
+    - 3.4
+    - 15.85
+    w: 1.3
+    h: 1.0
+    shape: round
+    hue: orange
+    text: 4A
+    text_size: 0.62
+  - g: text
+    at:
+    - 2.6
+    - 12.7
+    text: eIF4F = 4E + 4G + 4A
+    size: 0.65
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 8.8
+    - 16.0
+    w: 4.6
+    h: 1.4
+    shape: oval
+    hue: '#E6C3D6'
+    text: 40S
+    text_size: 0.55
+  - g: trna
+    shape: icon
+    at:
+    - 8.6
+    - 15.0
+    s: 0.8
+    anticodon: UAC
+    aa: Met
+  - g: blob
+    at:
+    - 10.6
+    - 13.7
+    w: 2.2
+    h: 1.0
+    shape: oval
+    hue: green
+    text: eIF2·GTP
+    text_size: 0.45
+  - g: blob
+    at:
+    - 6.9
+    - 14.1
+    w: 1.4
+    h: 0.9
+    shape: oval
+    hue: yellow
+    text: eIF3
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 11.4
+    - 17.1
+    to:
+    - 14.4
+    - 17.1
+    curve: 0
+    color: '#E8731A'
+    width: 1.1
+  - g: text
+    at:
+    - 12.9
+    - 17.9
+    text: scanning (ATP)
+    size: 0.65
+    align: center
+    color: '#E8731A'
+  - g: text
+    at:
+    - 14.8
+    - 14.2
+    text: gccRccAUGG
+    size: 0.65
+    align: center
+    color: '#2F6A33'
+  - g: text
+    at:
+    - 14.8
+    - 15.9
+    text: Kozak
+    size: 0.6
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 17.4
+    - 14.5
+    to:
+    - 18.8
+    - 14.5
+    style: fat
+  - g: ribosome
+    at:
+    - 22.6
+    - 15.0
+    w: 6.6
+    sites: true
+    hue: pink
+    large: 60S
+    small: 40S
+  - g: trna
+    shape: icon
+    at:
+    - 22.6
+    - 15.0
+    s: 0.75
+    anticodon: UAC
+    aa: Met
+  - g: text
+    at:
+    - 22.6
+    - 18.0
+    text: '80S: eIF5 → GTP hydrolysis, eIF5B joins 60S'
+    size: 0.68
+    align: center
+tags:
+- molecular_biology
+- translation
+notes_zh: '原核：30S + IF3 + IF1 + IF2·GTP·fMet-tRNA + mRNA（SD 與 16S rRNA 3′ 端配對）→ 50S 加入、IF2 水解 GTP、IF 離開 → 70S 起始複合體（fMet-tRNA 在 P）。真核：43S（40S + eIF1/1A/3 + eIF2·GTP·Met-tRNAi）+ eIF4F（4E 認 cap、4G 支架、4A helicase）與
+  PABP 活化的 mRNA → 48S 以 ATP 掃描至 Kozak 序列中的 AUG → eIF5 使 eIF2 水解 GTP、eIF5B 帶 60S → 80S。eIF2α 磷酸化 → 抑制 eIF2B → 整體轉譯關閉。
+
+  【補充】Bacteria: IF3 keeps 30S apart from 50S and checks the start codon; IF1 blocks the A site; IF2·GTP brings fMet-tRNA_{fMet} to the P site. Start codons AUG (GUG, UUG). Methionine is formylated on the
+  tRNA (N10-formyl-THF transformylase); deformylase and Met aminopeptidase later trim the N terminus. Eukaryotes: 43S = 40S + eIF1, 1A, 3 + eIF2·GTP·Met-tRNA_i; eIF4F + PABP activate the mRNA (closed loop)
+  → 48S scans to the first AUG in a Kozak context. eIF2-GDP is recycled by eIF2B (GEF); eIF2α phosphorylation (PKR, PERK, GCN2, HRI) blocks this — global shut-off. IRESs (viruses) bypass the cap.'
+parts_png: false
+status: pending

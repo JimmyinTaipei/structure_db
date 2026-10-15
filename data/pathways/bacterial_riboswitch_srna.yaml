@@ -1,0 +1,179 @@
+id: bacterial_riboswitch_srna
+title: Bacterial sRNA and riboswitch
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.0
+    text: sRNA + Hfq (trans)
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 4.0
+    - - 11.0
+      - 4.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 3.8
+    - 4.0
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: yellow
+    text: SD
+    text_size: 0.62
+  - g: blob
+    at:
+    - 6.2
+    - 4.0
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: gray
+    text: AUG
+    text_size: 0.5
+  - g: strand
+    kind: '#E0A100'
+    points:
+    - - 2.6
+      - 3.25
+    - - 5.2
+      - 3.25
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: ring
+    kind: hexamer
+    at:
+    - 3.9
+    - 2.0
+    r: 0.55
+    hue: teal
+    text: Hfq
+  - g: blob
+    at:
+    - 9.0
+    - 1.4
+    w: 2.6
+    h: 1.5
+    shape: oval
+    hue: '#C9BEDF'
+    text: 30S
+    text_size: 0.55
+  - g: mark
+    kind: x
+    at:
+    - 6.8
+    - 1.4
+  - g: text
+    at:
+    - 3.9
+    - 5.3
+    text: SD blocked
+    size: 0.7
+    align: center
+    color: '#D62828'
+  - g: text
+    at:
+    - 14.0
+    - -1.0
+    text: 'Riboswitch (cis): TPP'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 14.0
+      - 4.0
+    - - 16.4
+      - 4.0
+    - - 16.4
+      - 1.7999999999999998
+    - - 17.4
+      - 1.2000000000000002
+    - - 18.4
+      - 1.7999999999999998
+    - - 18.4
+      - 4.0
+    - - 20.6
+      - 4.0
+    - - 20.6
+      - 2.0
+    - - 21.1
+      - 1.5
+    - - 21.6
+      - 2.0
+    - - 21.6
+      - 4.0
+    - - 25.0
+      - 4.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ligand
+    at:
+    - 17.4
+    - 2.7
+    shape: diamond
+    hue: orange
+    r: 0.42
+  - g: blob
+    at:
+    - 21.6
+    - 3.0
+    w: 1.4
+    h: 0.55
+    shape: box
+    hue: yellow
+    rot: 90
+    text: ''
+  - g: text
+    at:
+    - 22.4
+    - 3.0
+    text: SD
+    size: 0.6
+    align: left
+    color: '#B08F10'
+  - g: text
+    at:
+    - 17.4
+    - 5.0
+    text: aptamer
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 17.4
+    - 0.6000000000000001
+    text: TPP
+    size: 0.62
+    align: center
+    color: '#B5651F'
+  - g: text
+    at:
+    - 19.5
+    - 6.2
+    text: metabolite bound → translation off
+    size: 0.7
+    align: center
+    color: '#D62828'
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: sRNA（50–300 nt，反式）：Hfq 協助與 mRNA 配對，蓋住 SD → 抑制轉譯或促使分解（OxyS 抑制 rpoS；DsrA、RprA 打開 rpoS 的髮夾反而促進）。Riboswitch（順式，mRNA 5′UTR 本身）：aptamer 結合代謝物（TPP、FMN、SAM、lysine）→ expression platform 改變構形：形成終止子（轉錄）或把
+  SD 藏進髮夾（轉譯）；真菌、植物的 TPP riboswitch 也可改變剪接。
+parts_png: false
+status: pending

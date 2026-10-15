@@ -1,0 +1,89 @@
+id: mucopolysaccharidoses
+title: Mucopolysaccharidoses (lysosomal GAG degradation)
+layout: free
+cell_size: 4.6
+nodes:
+- id: h
+  text: Lysosomal storage of GAGs (urine GAGs ↑)
+  pos:
+  - -1.4
+  - -0.75
+  kind: heading
+- id: hurler
+  text: 'Hurler (MPS I)
+
+    α-L-iduronidase
+
+    DS + HS · corneal clouding
+
+    autosomal recessive'
+  pos:
+  - 0
+  - 0.4
+  kind: concept
+- id: hunter
+  text: 'Hunter (MPS II)
+
+    iduronate-2-sulfatase
+
+    DS + HS · NO corneal clouding
+
+    X-linked recessive'
+  pos:
+  - 3.05
+  - 0.4
+  kind: concept
+- id: sanfilippo
+  text: 'Sanfilippo (MPS III)
+
+    heparan sulfate–
+
+    degrading enzymes
+
+    HS · severe CNS'
+  pos:
+  - 6.1
+  - 0.4
+  kind: concept
+- id: morquio
+  text: 'Morquio (MPS IV)
+
+    galactose-6-sulfatase /
+
+    β-galactosidase
+
+    KS · skeletal dysplasia'
+  pos:
+  - 0
+  - 1.75
+  kind: concept
+- id: sly
+  text: 'Sly (MPS VII)
+
+    β-glucuronidase
+
+    DS + HS + CS'
+  pos:
+  - 3.05
+  - 1.75
+  kind: concept
+- id: ml
+  text: 'I-cell disease
+
+    no mannose-6-P tag →
+
+    enzymes secreted, not
+
+    delivered to lysosomes'
+  pos:
+  - 6.1
+  - 1.75
+  kind: drug
+edges: []
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: 黏多醣症（MPS）：溶體分解 GAG 的酵素缺乏，GAG 堆積、尿中 GAG 上升；共同表現為粗糙臉孔、骨骼變形、肝脾腫大、智能退化。口訣：Hunter「看得清楚獵物」→ 無角膜混濁、X-linked；Hurler 有角膜混濁、體染色體隱性。DS = dermatan sulfate，HS = heparan sulfate，KS = keratan sulfate，CS = chondroitin
+  sulfate。I-cell disease（mucolipidosis II）：GlcNAc phosphotransferase 缺乏，無法加上 mannose-6-phosphate 標籤。
+status: pending

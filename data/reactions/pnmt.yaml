@@ -1,0 +1,31 @@
+id: pnmt
+title: Norepinephrine → Epinephrine (PNMT)
+substrates:
+- norepinephrine
+products:
+- epinephrine
+cofactors_in:
+- SAM
+cofactors_out:
+- SAH
+extra_out:
+- H+
+enzyme: 'phenylethanolamine
+
+  N-methyltransferase'
+reversible: false
+decorate:
+  SAM:
+    colors: {0: magenta}
+  epinephrine:
+    colors:
+      0:
+        l: [magenta, CH_3]
+card_zh:
+  location: 腎上腺髓質
+  type: N-甲基化（SAM）
+  regulation: cortisol 誘導 PNMT 的表現
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

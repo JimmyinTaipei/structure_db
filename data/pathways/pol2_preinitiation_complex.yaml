@@ -1,0 +1,328 @@
+id: pol2_preinitiation_complex
+title: RNA polymerase II promoter and preinitiation complex
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.2
+    text: Core promoter (class II gene)
+    size: 0.9
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.0
+    - - 26
+      - 1.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 2.0
+    - - 26
+      - 2.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#9C86C4'
+    points:
+    - - 3.2
+      - 1.0
+    - - 4.2
+      - 1.0
+    width: 0.3
+  - g: strand
+    kind: '#9C86C4'
+    points:
+    - - 3.2
+      - 2.0
+    - - 4.2
+      - 2.0
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 4.6
+      - 1.0
+    - - 6.0
+      - 1.0
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 4.6
+      - 2.0
+    - - 6.0
+      - 2.0
+    width: 0.3
+  - g: strand
+    kind: '#4E9A51'
+    points:
+    - - 10.6
+      - 1.0
+    - - 11.8
+      - 1.0
+    width: 0.3
+  - g: strand
+    kind: '#4E9A51'
+    points:
+    - - 10.6
+      - 2.0
+    - - 11.8
+      - 2.0
+    width: 0.3
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 17.4
+      - 1.0
+    - - 18.6
+      - 1.0
+    width: 0.3
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 17.4
+      - 2.0
+    - - 18.6
+      - 2.0
+    width: 0.3
+  - g: text
+    at:
+    - 3.7
+    - 0.1
+    text: BRE
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 5.3
+    - 3.0
+    text: 'TATA box (−30)
+
+      TATAAA'
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 11.2
+    - 3.0
+    text: Inr (+1)
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 18.0
+    - 3.0
+    text: DPE (+30)
+    size: 0.68
+    align: center
+  - g: arrow
+    from:
+    - 11.2
+    - 0.6
+    to:
+    - 13.2
+    - -0.3
+    curve: -0.3
+    color: black
+    width: 1.1
+  - g: text
+    at:
+    - 0.0
+    - 4.9
+    text: TFIID → IIA → IIB → Pol II·IIF → IIE → IIH
+    size: 0.78
+    align: left
+  - g: blob
+    at:
+    - 12.2
+    - 11.6
+    w: 6.0
+    h: 5.4
+    shape: oval
+    hue: blue
+    text: Pol II
+    text_size: 0.85
+    text_dy: -1.6
+    accent: true
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 11.0
+    - - 26
+      - 11.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 12.0
+    - - 26
+      - 12.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: blob
+    at:
+    - 2.3
+    - 10.25
+    w: 1.6
+    h: 1.4
+    shape: round
+    hue: pink
+    text: IIA
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.9
+    - 10.45
+    w: 2.4
+    h: 1.1
+    shape: kidney
+    hue: dkgreen
+    text: TBP
+    text_size: 0.58
+    rot: 180
+  - g: blob
+    at:
+    - 4.9
+    - 8.5
+    w: 3.4
+    h: 2.6
+    shape: oval
+    hue: green
+    text: 'TFIID
+
+      (TAFs)'
+    text_size: 0.6
+  - g: blob
+    at:
+    - 7.7
+    - 10.15
+    w: 1.6
+    h: 1.6
+    shape: round
+    hue: orange
+    text: IIB
+    text_size: 0.62
+  - g: blob
+    at:
+    - 15.2
+    - 9.7
+    w: 1.7
+    h: 1.6
+    shape: round
+    hue: teal
+    text: IIF
+    text_size: 0.62
+  - g: blob
+    at:
+    - 16.9
+    - 8.6
+    w: 1.7
+    h: 1.6
+    shape: round
+    hue: purple
+    text: IIE
+    text_size: 0.62
+  - g: blob
+    at:
+    - 19.3
+    - 8.3
+    w: 3.0
+    h: 2.2
+    shape: bilobe
+    hue: yellow
+    text: TFIIH
+    text_size: 0.6
+  - g: strand
+    kind: gray
+    points:
+    - - 14.6
+      - 13.6
+    - - 16.2
+      - 14.6
+    - - 18.4
+      - 14.9
+    - - 20.6
+      - 15.4
+    - - 23.6
+      - 15.4
+    width: 0.24
+  - g: ion
+    at:
+    - 18.4
+    - 14.9
+    r: 0.32
+    hue: yellow
+    text: P
+    text_size: 0.45
+  - g: ion
+    at:
+    - 20.6
+    - 15.4
+    r: 0.32
+    hue: yellow
+    text: P
+    text_size: 0.45
+  - g: ion
+    at:
+    - 22.6
+    - 15.4
+    r: 0.32
+    hue: yellow
+    text: P
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 20.6
+    - 9.4
+    to:
+    - 22.4
+    - 14.7
+    curve: -0.3
+    color: '#E8731A'
+    width: 1.1
+  - g: text
+    at:
+    - 21.4
+    - 8.6
+    text: CDK7 (kinase)
+    size: 0.68
+    align: left
+    color: '#E8731A'
+  - g: text
+    at:
+    - 24.2
+    - 15.4
+    text: 'CTD: 52 × YSPTSPS
+
+      (Rpb1 tail)'
+    size: 0.68
+    align: left
+tags:
+- molecular_biology
+- transcription
+notes_zh: 'Core promoter：BRE、TATA box（−30，TATAAA，Hogness box）、Inr（+1）、DPE（+30）。組裝：TFIID（TBP 認 TATA、使 DNA 彎曲）→ IIA → IIB → Pol II·IIF → IIE → IIH。TFIIB 似 σ（決定起點），TFIIF 唯一先與 Pol II 結合，TFIIH 有 helicase（XPB，也參與
+  NER）與 CTD kinase（CDK7，Ser5）→ promoter clearance；P-TEFb（CDK9）磷酸化 Ser2 → 延長。CTD = 52 個 YSPTSPS 重複，作為 cap、剪接、poly(A) 因子的平台。
+
+  【補充】TFIID = TBP + TAFs; reads TATA, Inr, DPE (TBP is also used by Pol I and Pol III). TFIIA stabilises TBP–DNA. TFIIB bridges TBP and Pol II and picks +1 (σ-like). TFIIF escorts Pol II. TFIIE recruits
+  TFIIH. TFIIH: helicase (XPB) opens the promoter (ATP); CDK7 phosphorylates CTD Ser5 → promoter clearance; TFIIH also works in NER. Ser5-P CTD recruits the capping enzymes; P-TEFb (CDK9) phosphorylates
+  Ser2 → productive elongation and loading of splicing and poly(A) factors. Unphosphorylated Pol II (IIA) joins the PIC; phosphorylated Pol II (IIO) elongates. α-Amanitin blocks Pol II translocation.'
+parts_png: false
+status: pending

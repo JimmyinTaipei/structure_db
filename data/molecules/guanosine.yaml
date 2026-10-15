@@ -1,0 +1,17 @@
+id: guanosine
+name: "Guanosine"
+aliases: [鳥苷]
+smiles: "O=c1[nH]c(N)nc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "HOCH_2", down: "H"}
+  base: "[*]n1cnc2c(=O)[nH]c(N)nc21"
+  base_right: 5     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "PNP → guanine + ribose 1-P。"
+status: pending

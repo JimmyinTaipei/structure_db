@@ -1,0 +1,42 @@
+id: prolyl_hydroxylase
+title: Prolyl 4-hydroxylase
+substrates:
+- proline
+- alpha_kg
+products:
+- hydroxyproline
+- succinate
+cofactors_in:
+- O2
+cofactors_out:
+- CO2
+prosthetic:
+- Fe^{2+}
+- vitamin C
+enzyme: Prolyl 4-hydroxylase
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  hydroxyproline:
+    colors:
+      oh: magenta
+  alpha_kg:
+    colors:
+      4: cyan
+  CO2:
+    colors:
+      0: cyan
+card_zh:
+  location: ER lumen（轉譯後修飾，作用於 collagen 鏈上的 Pro）
+  type: α-KG–dependent dioxygenase：O₂ 一個 O 進入 Hyp（洋紅），另一個進入 succinate；α-KG 的 C1 以 CO₂ 離開（青）
+  cofactors: Fe²⁺；ascorbate 把氧化成 Fe³⁺ 的鐵還原回 Fe²⁺
+  deficiency: Vitamin C 缺乏 → Hyp 不足 → collagen 三股螺旋不穩 → scurvy
+  exam_points:
+  - Collagen：(Gly-X-Y)ₙ，X 常為 Pro、Y 常為 Hyp
+  - 同類酵素：lysyl hydroxylase、HIF-1α prolyl hydroxylase（氧感測）
+tags:
+- protein
+- protein_structure
+status: pending

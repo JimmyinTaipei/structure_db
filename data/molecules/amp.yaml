@@ -1,0 +1,17 @@
+id: amp
+name: "AMP"
+aliases: [adenylate, 腺苷酸]
+smiles: "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  base: "[*]n1cnc2c(N)ncnc21"
+  base_right: 5     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "Adenosine 5′-monophosphate。IMP + Asp（GTP）→ adenylosuccinate → AMP + fumarate。"
+status: pending

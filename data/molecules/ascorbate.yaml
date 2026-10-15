@@ -1,0 +1,21 @@
+id: ascorbate
+name: Ascorbic acid (vitamin C)
+label: Ascorbic acid (C)
+aliases:
+- vitamin C
+- ascorbate
+- 維生素C
+- 抗壞血酸
+smiles: OC[C@H](O)[C@H]1OC(=O)C(O)=C1O
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[OH:1]C=C[OH:2]'
+    color: magenta
+tags:
+- vitamin
+- water_soluble
+notes_zh: 洋紅：烯二醇（enediol），失去 2 H（2 e⁻ + 2 H⁺）→ dehydroascorbate，所以是還原劑／抗氧化劑。功能：prolyl／lysyl hydroxylase 的輔因子（膠原蛋白，維持 Fe²⁺）、dopamine β-hydroxylase、促進非血基質鐵（Fe³⁺ → Fe²⁺）吸收。缺乏：壞血病（牙齦出血、毛囊周圍出血、傷口不癒）。人類缺 L-gulonolactone
+  oxidase，不能自行合成。
+status: pending

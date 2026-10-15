@@ -1,0 +1,43 @@
+id: alcohol_dehydrogenase
+title: Ethanol → Acetaldehyde (alcohol dehydrogenase)
+substrates:
+- ethanol
+products:
+- acetaldehyde
+cofactors_in:
+- NAD+
+cofactors_out:
+- NADH+H+
+enzyme: 'alcohol dehydrogenase
+
+  (ADH)'
+reversible: true
+decorate:
+  ethanol:
+    colors:
+      0:
+        u: magenta
+        r:
+        - magenta
+        - H
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+card_zh:
+  location: 肝細胞細胞質（也在胃）
+  type: 氧化（NAD⁺）
+  regulation: 零級動力學（Km 很低，飲酒時已飽和）→ 每小時約代謝 7–10 g 乙醇
+  deficiency:
+  - fomepizole 抑制 ADH：治療甲醇、乙二醇中毒
+  - 女性胃 ADH 較少 → 同劑量血中濃度較高
+  exam_points:
+  - NADH/NAD⁺ ↑ 是酒精代謝異常的根源（見總圖）
+tags:
+- energy_metabolism
+- ethanol
+status: pending

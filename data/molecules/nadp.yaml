@@ -1,0 +1,22 @@
+id: nadp
+name: NADP+
+label: NADP^+
+aliases:
+- nicotinamide adenine dinucleotide phosphate
+- NADP
+smiles: NC(=O)c1ccc[n+](c1)[C@@H]4O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6cnc7c(N)ncnc76)[C@H](OP(=O)([O-])[O-])[C@@H]5O)[C@@H](O)[C@H]4O
+ring:
+  coordgen: false
+  seed: 14
+  flip: true
+decorate:
+  highlight:
+  - smarts: NC(=O)c1ccc[n+]c1
+    color: magenta
+  - smarts: n[CH]1O[CH][CH](O)[CH]1[O:1][P:2](=[O:3])([O-:4])[O-:5]
+    color: cyan
+tags:
+- vitamin
+- coenzyme
+notes_zh: 與 NAD⁺ 的差別只有腺苷 2′-OH 上多一個磷酸（青藍）。NAD kinase 由 NAD⁺ 生成。酵素靠這個磷酸分辨 NAD 與 NADP。
+status: pending

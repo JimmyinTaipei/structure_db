@@ -1,0 +1,446 @@
+id: apoptosis_pathways
+title: 'Apoptosis: extrinsic and intrinsic pathways'
+layout: free
+cell_size: 4.4
+nodes:
+- id: ext
+  text: Extrinsic
+  pos:
+  - -1.4
+  - -0.65
+  kind: heading
+- id: int
+  text: Intrinsic (mitochondrial)
+  pos:
+  - 1.8
+  - -0.65
+  kind: heading
+- id: fas
+  text: FasL, TNF → death receptor
+  pos:
+  - -1.4
+  - 0.2
+  kind: protein
+- id: c8
+  text: Caspase 8
+  pos:
+  - -1.4
+  - 1.4
+  kind: protein
+- id: ros
+  text: 'DNA damage, ROS,
+
+    growth-factor loss'
+  pos:
+  - 1.8
+  - 0.2
+  kind: name
+- id: bax
+  text: 'Bax / Bak pores
+
+    (outer mito. membrane)'
+  pos:
+  - 1.8
+  - 1.4
+  kind: protein
+- id: bcl
+  text: Bcl-2
+  pos:
+  - 3.5
+  - 1.4
+  kind: drug
+- id: cyt
+  text: 'Cytochrome c release
+
+    (cardiolipin peroxidation)'
+  pos:
+  - 1.8
+  - 2.5
+  kind: carrier
+- id: apo
+  text: 'Apoptosome
+
+    (Apaf-1 · cyt c · dATP)_7'
+  pos:
+  - 1.8
+  - 3.6
+  kind: protein
+- id: c9
+  text: Caspase 9
+  pos:
+  - 1.8
+  - 4.6
+  kind: protein
+- id: c3
+  text: Caspase 3, 7 (executioner)
+  pos:
+  - 0.2
+  - 5.6
+  kind: protein
+- id: death
+  text: 'Proteolysis, DNA laddering, PS exposed,
+
+    cell shrinks → phagocytosed (no inflammation)'
+  pos:
+  - 0.2
+  - 6.6
+  kind: name
+edges:
+- from: fas
+  to: c8
+- from: c8
+  to: c3
+- from: c8
+  to: bax
+  label: Bid
+- from: ros
+  to: bax
+- from: bcl
+  to: bax
+  inhibit: true
+- from: bax
+  to: cyt
+- from: cyt
+  to: apo
+- from: apo
+  to: c9
+- from: c9
+  to: c3
+- from: c3
+  to: death
+tags:
+- signal_transduction
+- apoptosis
+notes_zh: Caspase：活性位 Cys，切在 Asp 之後。Initiator：2、8、9、10；executioner：3、6、7；發炎型：1、4、5、12。外源：FasL／TNF → death receptor → caspase 8（可經 Bid 放大到粒線體）。內源：DNA damage（p53 → Bax）、ROS → Bax/Bak 在外膜形成孔，cardiolipin 過氧化使
+  cyt c 釋出 → 與 Apaf-1、dATP 組成 apoptosome → caspase 9 → caspase 3/7。Bcl-2 抗凋亡。C. elegans 對應：Ced-9 = Bcl-2（抗），Ced-4 = Apaf-1，Ced-3 = caspase 9。凋亡 vs 壞死：凋亡細胞縮小、DNA ladder、PS 外翻（scramblase，Ca²⁺）、無發炎；壞死細胞腫脹、破裂、發炎。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: membrane
+        y: 3.0
+        x0: -1.0
+        x1: 12.0
+        lipids: true
+      - g: text
+        at:
+        - -1.0
+        - 0.0
+        text: Extrinsic
+        size: 0.8
+        align: left
+      - g: ligand
+        at:
+        - 4.0
+        - -0.8
+        shape: triangle
+        hue: red
+        r: 0.45
+      - g: text
+        at:
+        - 5.2
+        - -0.8
+        text: FasL, TNF
+        size: 0.62
+        align: left
+      - g: blob
+        at:
+        - 3.4
+        - 0.6
+        w: 0.8
+        h: 1.2
+        shape: oval
+        hue: purple
+      - g: blob
+        at:
+        - 4.6
+        - 0.6
+        w: 0.8
+        h: 1.2
+        shape: oval
+        hue: purple
+      - g: blob
+        at:
+        - 3.4
+        - 3.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: purple
+      - g: blob
+        at:
+        - 4.6
+        - 3.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: purple
+      - g: blob
+        at:
+        - 4.0
+        - 6.0
+        w: 2.6
+        h: 1.3
+        shape: oval
+        hue: orange
+        accent: true
+        text: caspase 8
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 4.0
+        - 4.9
+        to:
+        - 4.0
+        - 5.3
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 15.0
+        - 0.0
+        text: Intrinsic
+        size: 0.8
+        align: left
+      - g: region
+        x0: 15.0
+        y0: 1.4
+        x1: 29.0
+        y1: 7.0
+        hue: orange
+        opacity: 0.25
+      - g: text
+        at:
+        - 28.6
+        - 2.0
+        text: mitochondrion
+        size: 0.62
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 12.6
+        - 10.2
+        text: DNA damage, ROS
+        size: 0.62
+        align: center
+      - g: arrow
+        from:
+        - 14.6
+        - 9.8
+        to:
+        - 18.4
+        - 8.4
+        color: black
+        curve: 0
+      - g: channel
+        at:
+        - 20.0
+        - 7.0
+        hue: purple
+        open: true
+        h: 2.2
+      - g: text
+        at:
+        - 20.0
+        - 9.4
+        text: Bax/Bak
+        size: 0.62
+        align: center
+      - g: blob
+        at:
+        - 24.6
+        - 8.2
+        w: 1.8
+        h: 1.1
+        shape: oval
+        hue: green
+        text: Bcl-2
+        text_size: 0.42
+      - g: arrow
+        from:
+        - 23.6
+        - 8.0
+        to:
+        - 21.4
+        - 7.6
+        inhibit: true
+        color: red
+        width: 1.2
+        curve: 0
+      - g: ion
+        at:
+        - 20.0
+        - 4.8
+        r: 0.35
+        hue: red
+        text: c
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 20.0
+        - 5.4
+        to:
+        - 20.0
+        - 10.4
+        color: red
+        curve: 0
+      - g: ion
+        at:
+        - 20.0
+        - 11.0
+        r: 0.35
+        hue: red
+        text: c
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 6.0
+        - 6.2
+        to:
+        - 15.8
+        - 6.2
+        color: gray
+        curve: 0.12
+      - g: text
+        at:
+        - 10.6
+        - 7.6
+        text: tBid
+        size: 0.6
+        align: center
+        color: gray
+      - g: ion
+        at:
+        - 20.0
+        - 12.899999999999999
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 21.016380927208438
+        - 13.389463257583646
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 21.267406285836373
+        - 14.489277214143208
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 20.564048860852825
+        - 15.371259528273145
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 19.435951139147175
+        - 15.371259528273145
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 18.732593714163627
+        - 14.489277214143208
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 18.983619072791562
+        - 13.389463257583646
+        r: 0.45
+        hue: purple
+      - g: ion
+        at:
+        - 20.0
+        - 14.2
+        r: 0.35
+        hue: red
+        text: c
+        text_size: 0.36
+      - g: text
+        at:
+        - 22.0
+        - 14.2
+        text: apoptosome
+        size: 0.62
+        align: left
+      - g: text
+        at:
+        - 22.0
+        - 15.2
+        text: (Apaf-1 · cyt c · dATP)_7
+        size: 0.55
+        align: left
+        color: gray
+      - g: arrow
+        from:
+        - 20.0
+        - 11.6
+        to:
+        - 20.0
+        - 12.4
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 14.6
+        - 15.4
+        w: 2.6
+        h: 1.3
+        shape: oval
+        hue: orange
+        accent: true
+        text: caspase 9
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 18.4
+        - 14.8
+        to:
+        - 16.0
+        - 15.2
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 6.6
+        - 13.4
+        w: 3.0
+        h: 1.4
+        shape: oval
+        hue: red
+        accent: true
+        text: caspase 3, 7
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 4.0
+        - 6.8
+        to:
+        - 6.0
+        - 12.6
+        color: black
+        curve: 0
+      - g: arrow
+        from:
+        - 13.2
+        - 15.2
+        to:
+        - 8.2
+        - 13.8
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 6.6
+        - 16.0
+        text: 'shrinks · DNA ladder
+
+          PS out · no inflammation'
+        size: 0.6
+        align: center

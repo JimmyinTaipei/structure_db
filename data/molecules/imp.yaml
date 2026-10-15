@@ -1,0 +1,17 @@
+id: imp
+name: "IMP"
+aliases: [inosinate, 肌苷酸]
+smiles: "O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  base: "[*]n1cnc2c(=O)[nH]cnc21"
+  base_right: 5     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "Inosine monophosphate：嘌呤從頭合成的第一個完整嘌呤核苷酸，AMP 與 GMP 的分歧點。"
+status: pending

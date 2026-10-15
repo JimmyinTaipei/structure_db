@@ -1,0 +1,8 @@
+id: phosphatidylserine
+name: "Phosphatidylserine"
+aliases: [PS]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])OCC([NH3+])C(=O)[O-]"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "serine"}
+tags: [lipid, phospholipid]
+notes_zh: "PS：帶負電，正常位於膜內葉；細胞凋亡時翻到外葉 → 巨噬細胞辨識（annexin V 染色）；血小板活化時外翻促進凝血。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

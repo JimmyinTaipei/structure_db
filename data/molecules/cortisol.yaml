@@ -1,0 +1,8 @@
+id: cortisol
+name: "Cortisol"
+aliases: [hydrocortisone, 皮質醇]
+smiles: "C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)CO)O)C)O"
+ring: {letters: true, orient: "steroid", methyls: false}
+tags: [lipid, steroid]
+notes_zh: "glucocorticoid（腎上腺皮質束狀帶）。21-hydroxylase 缺乏 → cortisol、aldosterone ↓ → CAH。"
+status: pending

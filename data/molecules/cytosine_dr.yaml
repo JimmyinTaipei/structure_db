@@ -1,0 +1,13 @@
+id: cytosine_dr
+name: Cytosine (in DNA)
+label: Cytosine (in DNA)
+aliases: []
+smiles: '[17*]n1ccc(N)nc1=O'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: DNA 中的 cytosine（dR = 去氧核糖與骨架）。
+parts_png: false
+status: pending

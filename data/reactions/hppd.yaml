@@ -1,0 +1,35 @@
+id: hppd
+title: p-Hydroxyphenylpyruvate → Homogentisate (HPP dioxygenase)
+substrates:
+- hydroxyphenylpyruvate
+products:
+- homogentisate
+- id: co2
+  view: formula
+cofactors_in:
+- O2
+enzyme: 'p-hydroxyphenylpyruvate
+
+  dioxygenase'
+reversible: false
+decorate:
+  hydroxyphenylpyruvate:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+  O2:
+    colors: {0: cyan}
+  homogentisate:
+    colors:
+      2:
+        ring:
+        - atoms: [8]
+          color: cyan
+card_zh:
+  type: 雙氧酶（Fe²⁺、vitamin C）：脫羧＋羥化＋側鏈移位
+  exam_points:
+  - nitisinone 抑制此酶，用於治療 tyrosinemia I（fumarylacetoacetate hydrolase 缺乏）
+tags:
+- amino_acid_metabolism
+- aa_degradation
+status: pending

@@ -1,0 +1,40 @@
+id: acetyl_coa_synthetase
+title: Acetate → Acetyl-CoA (acetyl-CoA synthetase)
+substrates:
+- acetate
+products:
+- acetyl_coa
+cofactors_in:
+- CoA-SH
+- ATP
+cofactors_out:
+- AMP
+- PPi
+enzyme: 'acetyl-CoA synthetase
+
+  (ACSS)'
+reversible: false
+decorate:
+  acetate:
+    colors:
+      0:
+        fork_r: magenta
+  AMP:
+    colors:
+      0: magenta
+  CoA-SH:
+    colors:
+      0: cyan
+  acetyl_coa:
+    colors:
+      0:
+        r: cyan
+card_zh:
+  location: 肝外組織（肌肉、心臟、腦）的細胞質與粒線體
+  type: 活化（經 acetyl-AMP 中間物，耗 2 個高能鍵）
+  exam_points:
+  - 與脂肪酸的 acyl-CoA synthetase 同樣產生 AMP + PPi
+tags:
+- energy_metabolism
+- ethanol
+status: pending

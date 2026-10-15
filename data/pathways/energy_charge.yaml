@@ -1,0 +1,63 @@
+id: energy_charge
+title: Energy charge regulates catabolism and anabolism
+layout: plot
+plot:
+  size:
+  - 15
+  - 9.5
+  x:
+    min: 0
+    max: 1
+    label: Energy charge
+    ticks:
+    - 0
+    - 0.25
+    - 0.5
+    - 0.75
+    - 1
+  y:
+    min: 0
+    max: 1.15
+    label: Relative rate
+    label_pos: center
+    tick_labels: false
+    ticks: []
+  bands:
+  - x0: 0.8
+    x1: 0.95
+    label: most cells
+    color: green
+  curves:
+  - id: cat
+    y: 1/(1+exp((x-0.78)*18))
+    color: magenta
+    width: 1.2
+  - id: ana
+    y: 1/(1+exp(-(x-0.72)*18))
+    color: cyan
+    width: 1.2
+  texts:
+  - at:
+    - 0.05
+    - 0.86
+    text: 'ATP-generating
+
+      (catabolic) pathways'
+    align: left
+    color: magenta
+  - at:
+    - 0.05
+    - 0.16
+    text: 'ATP-utilizing
+
+      (anabolic) pathways'
+    align: left
+    color: cyan
+caption:
+  text: EC = ([ATP] + 1/2 [ADP]) / ([ATP] + [ADP] + [AMP])
+tags:
+- energy_metabolism
+- bioenergetics
+notes_zh: Energy charge（Atkinson）＝([ATP] + ½[ADP]) / ([ATP] + [ADP] + [AMP])，0–1；多數細胞維持 0.8–0.95。EC 高 → 產 ATP 的分解路徑（糖解、TCA）被抑制、耗 ATP 的合成路徑被促進；EC 低則相反。高能訊號：ATP、acetyl-CoA、citrate、NADH（抑制 PFK-1、PDH、IDH…）；低能訊號：ADP、AMP、NAD⁺（AMP
+  活化 PFK-1、glycogen phosphorylase b、AMPK）。Adenylate kinase：2 ADP ⇌ ATP + AMP，使 AMP 成為敏感的低能訊號。
+status: pending

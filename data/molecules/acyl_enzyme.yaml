@@ -1,0 +1,15 @@
+id: acyl_enzyme
+name: Acyl-enzyme intermediate (chymotrypsin)
+label: Acyl-enzyme
+aliases:
+- acyl-enzyme
+- 醯基-酵素中間物
+smiles: '[23*]C(=O)N[C@@H](Cc1ccccc1)C(=O)OC[22*]'
+ring:
+  coordgen: false
+tags:
+- enzyme
+- catalysis
+notes_zh: 受質的醯基以酯鍵接在 Ser195 的 O 上（共價催化）；胺基端產物已離開。Enz = 酵素其餘部分。
+parts_png: false
+status: pending

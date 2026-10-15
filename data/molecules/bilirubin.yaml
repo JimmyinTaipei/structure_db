@@ -1,0 +1,13 @@
+id: bilirubin
+name: Bilirubin
+aliases:
+- unconjugated bilirubin
+- 膽紅素
+smiles: CC1=C(C=C)C(=O)N/C1=C\c1[nH]c(Cc2[nH]c(/C=C3\NC(=O)C(C=C)=C3C)c(C)c2CCC(=O)[O-])c(CCC(=O)[O-])c1C
+ring:
+  methyls: false
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: heme oxygenase 打開環（放出 CO 與 Fe）→ biliverdin（綠）→ biliverdin reductase（NADPH）→ bilirubin（黃，(4Z,15Z)）。分子內氫鍵使其不溶於水 → 接 albumin 運送；肝 UGT1A1 接 2 個 glucuronate 後才能排入膽汁。
+status: pending

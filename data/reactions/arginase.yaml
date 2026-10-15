@@ -1,0 +1,24 @@
+id: arginase
+title: "Urea cycle ⑤ Arginine + H₂O → Ornithine + Urea (arginase)"
+step: 5
+substrates: [arginine]
+products: [ornithine, urea]
+cofactors_in: [H2O]
+cofactors_inline: true
+prosthetic: ["Mn^{2+}"]
+enzyme: "arginase"
+reversible: false
+decorate:                         # 洋紅：胍基的 C 與兩個 N → urea；青藍：H₂O 的 O → urea 的 O
+  arginine: {colors: {6: magenta, 7: magenta}}
+  H2O: {colors: {0: cyan}}
+  urea: {colors: {0: {c: magenta, l: magenta, r: magenta, u: cyan}}}
+card_zh:
+  location: 細胞質（肝）
+  type: 水解
+  cofactors: "Mn²⁺"
+  deficiency: "Arginase 缺乏 → hyperargininemia（漸進性痙攣性雙癱，高血氨通常較輕）"
+  exam_points:
+    - "ornithine 回到粒線體，循環完成"
+    - "每生成 1 個 urea：3 ATP → 2 ADP + AMP（4 個高能磷酸鍵）"
+tags: [urea]
+status: pending

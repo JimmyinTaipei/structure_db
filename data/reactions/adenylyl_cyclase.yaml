@@ -1,0 +1,41 @@
+id: adenylyl_cyclase
+title: ATP → cAMP + PPi (adenylyl cyclase)
+substrates:
+- atp_n
+products:
+- camp
+cofactors_out:
+- PPi
+prosthetic:
+- Mg^{2+}
+enzyme: adenylyl cyclase
+reversible: false
+decorate:
+  atp_n:
+    colors:
+      d3:
+      - cyan
+      - O
+      u4:
+      - magenta
+      - '{P}–{P}'
+  PPi:
+    colors:
+      0: magenta
+  camp:
+    highlight:
+    - smarts: P1(=O)([O-])OCC2OC(n)C(O)C2[O:1]1
+      color: cyan
+card_zh:
+  location: 細胞膜內側（12 次跨膜的膜蛋白）
+  type: 分子內磷酸轉移：3′-OH（青）攻擊 α-P，β、γ 以 PPi（洋紅）離開，形成 3′,5′-環狀磷酸二酯
+  regulation: Gsα–GTP 活化、Giα 抑制；forskolin 直接活化；cholera toxin 使 Gsα 持續活化 → cAMP 持續上升
+  exam_points:
+  - PPi 被 pyrophosphatase 水解 → 推動反應
+  - cAMP → PKA（R₂C₂ + 4 cAMP → 2 C）、Epac、CNG 通道
+  - β-adrenergic、glucagon、ACTH、TSH、PTH、LH/FSH、ADH(V₂) 都經 Gs–cAMP
+tags:
+- signal_transduction
+- second_messenger
+- gpcr
+status: pending

@@ -1,0 +1,8 @@
+id: phosphatidate
+name: "Phosphatidate"
+aliases: [PA, phosphatidic acid]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])[O-]"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "phosphate"}
+tags: [lipid, phospholipid]
+notes_zh: "PA：最簡單的甘油磷脂，TAG 與其他磷脂合成的分歧點（→ DAG → TAG、PC、PE；→ CDP-DAG → PI、PG、cardiolipin）。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

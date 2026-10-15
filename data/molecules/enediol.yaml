@@ -1,0 +1,29 @@
+id: enediol
+name: 1,2-Enediol
+label: cis-1,2-Enediol
+aliases:
+- enediol intermediate
+- 烯二醇
+smiles: O/C=C(/O)[C@@H](O)[C@H](O)[C@H](O)CO
+chain:
+- c: C
+  l: H
+  r: OH
+  down: 2
+- c: C
+  r: OH
+- c: C
+  l: HO
+  r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2OH
+tags:
+- carbohydrate
+- monosaccharide
+notes_zh: 鹼性條件下（或 phosphohexose isomerase）aldose ⇌ ketose 的共同中間物：C1=C2 雙鍵、兩個 OH 在同側（cis）。由 enediol 重新質子化可得 glucose、mannose（C2 epimer）或 fructose（Lobry de Bruyn–van Ekenstein 轉換）。
+status: pending

@@ -1,0 +1,21 @@
+id: ipp
+name: Isopentenyl pyrophosphate
+label: 'Isopentenyl
+
+  pyrophosphate (IPP)'
+aliases:
+- IPP
+- isopentenyl diphosphate
+smiles: C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-]
+chain:
+- c: CH_2
+  down: 2
+- c: C
+  r: CH_3
+- c: CH_2
+- c: CH_2O{P}–{P}
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+notes_zh: 活化的異戊二烯（C5）單位。mevalonate + 3 ATP → IPP + CO₂。
+status: pending

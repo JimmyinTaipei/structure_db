@@ -1,0 +1,36 @@
+id: cpt1
+title: Palmitoyl-CoA + Carnitine → Palmitoylcarnitine (CPT-I)
+substrates:
+- palmitoyl_coa
+- carnitine
+products:
+- palmitoylcarnitine
+cofactors_out:
+- CoA-SH
+enzyme: 'carnitine palmitoyl-
+
+  transferase I (CPT-I)'
+reversible: false
+decorate:
+  palmitoyl_coa:
+    colors: {o2: magenta, rest: magenta}
+  CoA-SH:
+    colors: {0: magenta}
+  carnitine:
+    colors:
+      2: {l: cyan}
+  palmitoylcarnitine:
+    colors: {o2: cyan, rest: cyan}
+card_zh:
+  location: 粒線體外膜
+  type: 醯基轉移（硫酯 → 酯）
+  regulation: malonyl-CoA 抑制（β 氧化的限速步驟）
+  deficiency:
+  - CPT-I 缺乏（肝）：空腹低酮性低血糖
+  - CPT-II 缺乏（肌肉）：運動後肌肉痛、肌紅素尿
+  exam_points:
+  - 中、短鏈脂肪酸不需要 carnitine 就能進粒線體
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

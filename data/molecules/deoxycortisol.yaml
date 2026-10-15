@@ -1,0 +1,16 @@
+id: deoxycortisol
+name: 11-Deoxycortisol
+label: 11-Deoxycortisol
+aliases:
+- cortodoxone
+- compound S
+smiles: C[C@]12CCC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(O)C(=O)CO
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: CYP11B1（11β-hydroxylase）→ cortisol。metyrapone 抑制此步（ACTH 儲備測試）。
+status: pending

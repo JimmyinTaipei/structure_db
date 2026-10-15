@@ -1,0 +1,26 @@
+id: pdh
+title: Pyruvate → Acetyl-CoA
+substrates: [pyruvate]
+products: [co2, acetyl_coa]
+products_layout: stack            # CO₂ 疊在 acetyl-CoA 上方（同 Lehninger）
+cofactors_in: [CoA-SH, NAD+]      # 上方彎箭頭進入
+cofactors_out: [NADH]             # 上方彎箭頭離開
+prosthetic: ["TPP,", "lipoate,", "FAD"]
+enzyme: "pyruvate dehydrogenase\ncomplex (E_1 + E_2 + E_3)"
+reversible: false
+decorate:                         # 洋紅＝有變化的部分（羧基 → CO₂；新接上的 S-CoA）
+  pyruvate: {colors: {0: magenta}}
+  co2: {colors: {0: magenta}}
+  acetyl_coa: {colors: {0: {r: magenta}}}
+card_zh:
+  location: 粒線體基質
+  type: 氧化脫羧（oxidative decarboxylation）
+  deltaG: "ΔG'° = −33.4 kJ/mol，不可逆"
+  cofactors: "5 個：TPP（B1）、lipoate、CoA（B5）、FAD（B2）、NAD⁺（B3）"
+  regulation: "產物抑制：acetyl-CoA、NADH。PDH kinase（被 ATP、NADH、acetyl-CoA 活化）磷酸化 E1 → 失活；PDH phosphatase（Ca²⁺；脂肪組織受 insulin 活化）→ 恢復活性"
+  deficiency: "Thiamine（B1）缺乏 → Wernicke–Korsakoff、乾/濕性腳氣病；PDH 缺乏症 → 乳酸中毒；砷（arsenite）與 lipoate 結合而抑制"
+  exam_points:
+    - "同機制的三兄弟：PDH、α-KG dehydrogenase、branched-chain α-keto acid dehydrogenase（皆用同樣 5 個輔因子，E3 共用）"
+    - "連接糖解與 TCA；不可逆 → 脂肪酸無法淨轉成葡萄糖"
+tags: [TCA, pyruvate]
+status: pending

@@ -1,0 +1,16 @@
+id: ketosphinganine
+name: 3-Ketosphinganine
+label: '3-Keto-
+
+  sphinganine'
+aliases:
+- 3-dehydrosphinganine
+smiles: CCCCCCCCCCCCCCCC(=O)[C@@H]([NH3+])CO
+ring:
+  coordgen: false
+  rotate: 180
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: serine palmitoyltransferase（PLP，ER，限速）：palmitoyl-CoA + Ser → 縮合並脫羧。
+status: pending

@@ -1,0 +1,29 @@
+id: fructose_1p
+name: Fructose 1-phosphate
+label: 'Fructose
+
+  1-phosphate'
+aliases:
+- F1P
+- 果糖-1-磷酸
+smiles: O=C(COP(=O)([O-])[O-])[C@@H](O)[C@H](O)[C@H](O)CO
+chain:
+- c: CH_2O{P}
+- c: C
+  r: O
+  rb: 2
+- c: C
+  l: HO
+  r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2OH
+tags:
+- carb_metabolism
+- fructose_metabolism
+notes_zh: 肝臟 fructokinase 的產物。aldolase B 缺乏（遺傳性果糖不耐症，HFI）→ F1P 累積、Pi 被困住 → ATP ↓、肝醣分解與糖質新生受抑制 → 低血糖、嘔吐、肝損傷。
+status: pending

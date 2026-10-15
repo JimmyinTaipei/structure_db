@@ -1,0 +1,33 @@
+id: methylmalonyl_coa_mutase
+title: (R)-Methylmalonyl-CoA → Succinyl-CoA (methylmalonyl-CoA mutase)
+substrates:
+- r_methylmalonyl_coa
+products:
+- succinyl_coa
+prosthetic:
+- B_{12}
+enzyme: 'methylmalonyl-CoA
+
+  mutase'
+reversible: false
+decorate:
+  r_methylmalonyl_coa:
+    colors:
+      2:
+        r: magenta
+  succinyl_coa:
+    colors:
+      3: magenta
+card_zh:
+  location: 粒線體基質
+  type: 分子內重排（自由基機制）
+  cofactors: adenosylcobalamin（B12）
+  deficiency:
+  - B12 缺乏 → methylmalonic acid ↑（尿、血），神經症狀
+  - mutase 缺乏 → methylmalonic acidemia
+  exam_points:
+  - succinyl-CoA 進入 TCA → OAA → 葡萄糖：奇數碳脂肪酸的末端可生糖
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

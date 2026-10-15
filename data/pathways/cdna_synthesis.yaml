@@ -1,0 +1,201 @@
+id: cdna_synthesis
+title: cDNA synthesis
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 1.0
+    - - 12.0
+      - 1.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: text
+    at:
+    - 12.2
+    - 1.0
+    text: AAAA
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: ion
+    at:
+    - -0.6
+    - 1.0
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 12.2
+      - 1.8
+    - - 14.0
+      - 1.8
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 15.3
+    - 1.8
+    text: oligo(dT)
+    size: 0.65
+    align: left
+    color: '#D9622B'
+  - g: arrow
+    from:
+    - 6.0
+    - 1.8
+    to:
+    - 6.0
+    - 3.4000000000000004
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 6.6
+    - 2.6
+    text: reverse transcriptase
+    size: 0.72
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 4.2
+    - - 12.0
+      - 4.2
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: text
+    at:
+    - 12.2
+    - 4.2
+    text: AAAA
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: strand
+    kind: new
+    points:
+    - - 14.0
+      - 5.0
+    - - 0.6
+      - 5.0
+    width: 0.3
+    arrow: true
+    ends:
+    - 5'
+    - ''
+  - g: arrow
+    from:
+    - 6.0
+    - 5.800000000000001
+    to:
+    - 6.0
+    - 6.6000000000000005
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 6.6
+    - 6.1000000000000005
+    text: RNase H nicks RNA
+    size: 0.72
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 1.0
+      - 7.4
+    - - 2.6
+      - 7.4
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 5.0
+      - 7.4
+    - - 6.0
+      - 7.4
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 9.0
+      - 7.4
+    - - 10.2
+      - 7.4
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0.6
+      - 8.200000000000001
+    - - 14.0
+      - 8.200000000000001
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: arrow
+    from:
+    - 6.0
+    - 9.0
+    to:
+    - 6.0
+    - 9.799999999999999
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 6.6
+    - 9.3
+    text: DNA Pol I + ligase
+    size: 0.72
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.6
+      - 10.6
+    - - 14.0
+      - 10.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0.6
+      - 11.4
+    - - 14.0
+      - 11.4
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 7.3
+    - 12.5
+    text: ds cDNA (no introns)
+    size: 0.72
+    align: center
+tags:
+- molecular_biology
+- techniques
+notes_zh: mRNA 的 poly(A) 以 oligo(dT) 為引子 → reverse transcriptase 合成第一股（RNA–DNA hybrid）→ RNase H 切 RNA 留下小段當引子 → DNA Pol I 合成第二股、ligase 接合。（另法：鹼／S1 nuclease 去除髮夾。）cDNA 沒有 intron，可在細菌表現真核蛋白；cDNA library 代表某組織當下表現的基因，genomic
+  library 代表全基因體。
+parts_png: false
+status: pending

@@ -1,0 +1,25 @@
+id: a_glucopyranose
+name: "α-D-Glucopyranose"
+label: "α-D-Glucose"
+aliases: [α-D-glucose, α-glucose]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "H", down: "OH"}
+    2: {up: "H", down: "OH"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "CH_2OH", down: "H"}
+chair:
+  ring: "pyranose"
+  subs:
+    1: {ax: "OH", eq: "H"}
+    2: {ax: "H", eq: "OH"}
+    3: {ax: "H", eq: "HO"}
+    4: {ax: "H", eq: "HO"}
+    5: {ax: "H", eq: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "α：C1-OH 在 Haworth 下方（與 CH₂OH 反側），椅式中為 axial。水溶液中約 36%。肝醣、澱粉的單元（α1→4、α1→6）。"
+status: approved

@@ -1,0 +1,136 @@
+id: tca_beta_oxidation_analogy
+title: 'Same chemistry: TCA steps 6–8 and β-oxidation'
+layout: free
+cell_size: 4.4
+nodes:
+- id: a1
+  ref: acyl_coa
+  pos:
+  - 0
+  - 0
+- id: a2
+  ref: enoyl_coa
+  pos:
+  - 2.4
+  - 0
+- id: a3
+  ref: hydroxyacyl_coa
+  pos:
+  - 4.8
+  - 0
+- id: a4
+  ref: ketoacyl_coa
+  pos:
+  - 7.2
+  - 0
+- id: b1
+  ref: succinate
+  pos:
+  - 0
+  - 1.9
+- id: b2
+  ref: fumarate
+  pos:
+  - 2.4
+  - 1.9
+- id: b3
+  ref: malate
+  pos:
+  - 4.8
+  - 1.9
+- id: b4
+  ref: oxaloacetate
+  pos:
+  - 7.2
+  - 1.9
+- id: h1
+  text: β-Oxidation
+  pos:
+  - -1.9
+  - 0
+  kind: heading
+- id: h2
+  text: TCA cycle
+  pos:
+  - -1.9
+  - 1.9
+  kind: heading
+- id: h3
+  text: 'Ile
+
+    degradation'
+  pos:
+  - -1.9
+  - 3.2
+  kind: heading
+- id: c1
+  text: '2-Methyl-
+
+    butyryl-CoA'
+  pos:
+  - 0
+  - 3.2
+  kind: name
+- id: c2
+  text: Tiglyl-CoA
+  pos:
+  - 2.4
+  - 3.2
+  kind: name
+- id: c3
+  text: '2-Methyl-3-hydroxy-
+
+    butyryl-CoA'
+  pos:
+  - 4.8
+  - 3.2
+  kind: name
+- id: c4
+  text: '2-Methyl-
+
+    acetoacetyl-CoA'
+  pos:
+  - 7.2
+  - 3.2
+  kind: name
+edges:
+- from: a1
+  to: a2
+  step: acyl_coa_dehydrogenase
+  label: FAD
+- from: a2
+  to: a3
+  step: enoyl_coa_hydratase
+  label: + H_2O
+- from: a3
+  to: a4
+  step: hydroxyacyl_coa_dehydrogenase
+  label: NAD^+
+- from: b1
+  to: b2
+  step: succinate_dehydrogenase
+  label: FAD
+- from: b2
+  to: b3
+  step: fumarase
+  label: + H_2O
+- from: b3
+  to: b4
+  step: malate_dehydrogenase
+  label: NAD^+
+- from: c1
+  to: c2
+  label: FAD
+- from: c2
+  to: c3
+  label: + H_2O
+- from: c3
+  to: c4
+  label: NAD^+
+tags:
+- TCA
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 同一組三步化學：–CH₂–CH₂– 經 FAD 脫氫成 trans 雙鍵 → 加水成 β-OH（L 型）→ NAD⁺ 脫氫成 β-酮。TCA 第 6–8 步（SDH、fumarase、MDH）＝β 氧化的 acyl-CoA DH、enoyl-CoA hydratase、3-hydroxyacyl-CoA DH ＝支鏈胺基酸（Ile、Val、Leu）分解中段。為什麼 C–C 脫氫用
+  FAD？烷→烯的 ΔE°′ 不足以還原 NAD⁺；醇→酮才用 NAD⁺。SDH 是 ETC complex II（唯一嵌在內膜的 TCA 酵素）。
+status: pending

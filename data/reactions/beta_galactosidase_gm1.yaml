@@ -1,0 +1,27 @@
+id: beta_galactosidase_gm1
+title: GM1 → GM2 + Galactose (β-galactosidase)
+substrates:
+- gm1
+products:
+- gm2
+- b_galactopyranose
+cofactors_in:
+- H2O
+enzyme: β-galactosidase (GLB1)
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  b_galactopyranose:
+    colors:
+      u1: magenta
+card_zh:
+  location: 溶小體
+  type: 醣苷鍵水解
+  deficiency:
+  - GM1 gangliosidosis：神經退化、櫻桃紅點、肝脾腫大、骨骼異常
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

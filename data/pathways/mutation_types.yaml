@@ -1,0 +1,131 @@
+id: mutation_types
+title: Types of point mutation
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.7
+    - 0.0
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Transition
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 0.0
+    text: purine ↔ purine or pyrimidine ↔ pyrimidine (A·T ↔ G·C); e.g. deamination, tautomers, 5-BU
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 1.6
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Transversion
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 1.6
+    text: purine ↔ pyrimidine (e.g. 8-oxoG pairs with A → G·C to T·A)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 3.2
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Silent
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 3.2
+    text: codon changes, same amino acid (often the 3rd / wobble position)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 4.800000000000001
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Missense
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 4.800000000000001
+    text: 'one amino acid replaced (e.g. HbS: β6 Glu → Val)'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 6.4
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Nonsense
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 6.4
+    text: 'codon → stop (UAA, UAG, UGA): truncated protein, nonsense-mediated decay'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 8.0
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Frameshift
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 8.0
+    text: 'insertion / deletion not a multiple of 3 (e.g. intercalators: acridine, ethidium)'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 9.6
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Repeat expansion
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 9.6
+    text: 'trinucleotide repeats grow by slippage: Huntington (CAG), fragile X (CGG), myotonic dystrophy (CTG)'
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- repair
+notes_zh: 鹼基替換：transition（同類嘌呤或嘧啶互換）、transversion（嘌呤↔嘧啶）。對蛋白質的影響：silent、missense、nonsense；插入／缺失非 3 的倍數 → frameshift。三核苷酸重複擴增（滑動）：Huntington（CAG，多麩醯胺）、fragile X（CGG，FMR1 甲基化沉默）、myotonic dystrophy（CTG），具
+  anticipation。
+parts_png: false
+status: pending

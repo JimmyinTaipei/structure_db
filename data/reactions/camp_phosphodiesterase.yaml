@@ -1,0 +1,31 @@
+id: camp_phosphodiesterase
+title: cAMP → AMP (cAMP phosphodiesterase)
+substrates:
+- camp
+products:
+- amp
+cofactors_in:
+- H2O
+extra_out:
+- H+
+enzyme: cAMP phosphodiesterase
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: cyan
+  amp:
+    colors:
+      u4:
+      - cyan
+      - '{P}'
+card_zh:
+  type: 水解 3′ 磷酸酯鍵（H₂O 的 O 進入磷酸，青）→ 5′-AMP；終止 cAMP 訊號
+  regulation: insulin 經 PKB 活化 PDE3B → 降低 cAMP（抗 glucagon 作用）
+  exam_points:
+  - Caffeine、theophylline 抑制 PDE → cAMP ↑（心跳、支氣管擴張）
+tags:
+- signal_transduction
+- second_messenger
+- gpcr
+status: pending

@@ -1,0 +1,23 @@
+id: vitamin_d_photolysis
+title: 7-Dehydrocholesterol → Vitamin D3 (UVB, skin)
+substrates:
+- dehydrocholesterol
+products:
+- cholecalciferol
+enzyme: ''
+conditions: UVB (skin)
+reversible: false
+decorate:
+  dehydrocholesterol:
+    highlight:
+    - atoms: [15, 20]
+      color: magenta
+card_zh:
+  location: 皮膚（表皮）
+  type: 非酵素：光解（B 環 C9–C10 斷開）→ previtamin D₃ → 熱異構化
+  exam_points:
+  - 日照不足、深膚色、高齡、防曬 → 合成減少
+tags:
+- vitamin
+- fat_soluble
+status: pending

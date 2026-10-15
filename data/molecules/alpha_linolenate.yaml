@@ -1,0 +1,9 @@
+id: alpha_linolenate
+name: "α-Linolenate"
+label: "α-Linolenate\n18:3(Δ9,12,15)"
+aliases: [ALA, α-linolenic acid, 次亞麻油酸]
+smiles: "[O-]C(=O)CCCCCCC/C=C\\C/C=C\\C/C=C\\CC"
+lipid: {type: "fatty_acid", chains: [{n: 18, cis: [9, 12, 15], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "18:3(Δ9,12,15)；ω-3。必需脂肪酸（ω-3）。可轉成 EPA、DHA（效率低）。"
+status: pending

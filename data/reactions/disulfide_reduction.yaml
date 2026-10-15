@@ -1,0 +1,42 @@
+id: disulfide_reduction
+title: Disulfide reduction (β-mercaptoethanol)
+substrates:
+- cystine
+products:
+- id: cysteine
+  n: 2
+cofactors_in:
+- 2BME
+cofactors_out:
+- BME_ox
+enzyme: (chemical) β-mercaptoethanol / DTT
+reversible: true
+decorate:
+  cystine:
+    colors:
+      s1: cyan
+      s2: cyan
+  cysteine:
+    colors:
+      3:
+        c:
+        - - cyan
+          - S
+        - - magenta
+          - H
+  2BME:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+card_zh:
+  type: 硫醇–雙硫交換：還原劑的 –SH 把 –S–S– 還原成兩個 –SH（可逆）
+  exam_points:
+  - SDS-PAGE 前加 β-ME/DTT 才會把以 –S–S– 相連的次單元分開
+  - Anfinsen（RNase A）：urea + β-ME 變性，移除後自發復性 → 一級結構決定三級結構
+  - performic acid 則把 –S–S– 氧化成 2 個 cysteic acid（–SO₃⁻，不可逆）
+tags:
+- protein
+- protein_structure
+status: pending

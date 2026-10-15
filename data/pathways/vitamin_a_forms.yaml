@@ -1,0 +1,77 @@
+id: vitamin_a_forms
+title: 'Vitamin A: carotene, retinol, retinal, retinoic acid（維生素 A 的各種形式）'
+layout: free
+cell: 0.62
+nodes:
+- id: car
+  ref: beta_carotene
+  pos:
+  - 0.9
+  - 0
+- id: ral
+  ref: retinal
+  pos:
+  - 0
+  - 1
+- id: rol
+  ref: retinol
+  pos:
+  - 1.8
+  - 1
+- id: ra
+  ref: retinoic_acid
+  pos:
+  - 0
+  - 2
+- id: cis
+  ref: cis_retinal
+  pos:
+  - 1.8
+  - 2
+- id: rho
+  text: 'Rhodopsin
+
+    (+ opsin)'
+  kind: concept
+  pos:
+  - 1.8
+  - 2.75
+- id: rar
+  text: 'RAR / RXR
+
+    (gene expression)'
+  kind: concept
+  pos:
+  - 0
+  - 2.75
+edges:
+- from: car
+  to: ral
+  step: beta_carotene_cleavage
+  label: dioxygenase
+  side_text: O_2
+- from: ral
+  to: rol
+  step: retinol_dehydrogenase
+  reversible: true
+  label: retinol DH
+- from: ral
+  to: ra
+  step: retinal_dehydrogenase
+  label: retinal DH
+  label_side: right
+- from: ral
+  to: cis
+  label: isomerase (RPE)
+  reversible: true
+- from: cis
+  to: rho
+  head: false
+- from: ra
+  to: rar
+  head: false
+tags:
+- vitamin
+- fat_soluble
+notes_zh: retinol ⇌ retinal 可逆；retinal → retinoic acid 不可逆。視覺用 retinal（11-cis），細胞分化用 retinoic acid。
+status: pending

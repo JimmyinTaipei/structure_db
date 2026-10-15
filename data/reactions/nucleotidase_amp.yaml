@@ -1,0 +1,21 @@
+id: nucleotidase_amp
+title: "AMP → Adenosine + Pᵢ (5′-nucleotidase)"
+substrates: [amp]
+products: [adenosine]
+cofactors_in: [H2O]
+cofactors_out: [Pi]
+enzyme: "5′-nucleotidase"
+reversible: false
+decorate:
+  amp:
+    colors:
+      u4: [magenta, '{P}']
+  Pi:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質、細胞膜外側（ecto-5′-nucleotidase，CD73）
+  type: "水解去磷酸"
+  exam_points:
+    - "嘌呤分解第一步：核苷酸 → 核苷；細胞外 adenosine 為重要訊號分子（血管舒張、抗發炎）"
+tags: [nucleotide, purine, degradation]
+status: pending

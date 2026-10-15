@@ -1,0 +1,15 @@
+id: dopamine
+name: Dopamine
+aliases:
+- 多巴胺
+smiles: '[NH3+]CCc1ccc(O)c(O)c1'
+chain:
+- c: CH_2
+  l: ^+H_3N
+- c: CH_2
+- ring: '[*]c1ccc(O)c(O)c1'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: DOPA decarboxylase（AADC，PLP）去掉 COO⁻。分解：MAO、COMT → homovanillic acid（HVA）。
+status: pending

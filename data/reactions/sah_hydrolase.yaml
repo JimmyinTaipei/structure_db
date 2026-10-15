@@ -1,0 +1,31 @@
+id: sah_hydrolase
+title: SAH → Homocysteine + Adenosine (SAH hydrolase)
+substrates:
+- sah
+products:
+- homocysteine
+- adenosine
+cofactors_in:
+- H2O
+enzyme: 'S-adenosylhomocysteine
+
+  hydrolase'
+reversible: true
+decorate:
+  sah:
+    highlight:
+    - atoms: [13, 14]
+      color: magenta
+  homocysteine:
+    colors: {4: magenta}
+  H2O:
+    colors: {0: cyan}
+  adenosine:
+    colors:
+      u4: [cyan, HO]
+card_zh:
+  type: 水解
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

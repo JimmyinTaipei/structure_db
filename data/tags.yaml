@@ -1,0 +1,117 @@
+# 標籤的上下層關係與中文名稱（網頁側欄用）。
+# 子標籤只在點了上層標籤之後才顯示；篩選子標籤時，條件是「上層＋子標籤」。
+tree:
+  amino_acid: [nonpolar, aromatic, polar, basic, acidic]
+  nucleotide: [purine, pyrimidine, degradation, salvage, base_pairing]
+  amino_acid_metabolism: [transamination, deamination, urea, aa_derivatives, aa_degradation, one_carbon, heme]
+  TCA: [pyruvate]
+  organic: [aldol]
+  lipid: [fatty_acid, triacylglycerol, phospholipid, sphingolipid, steroid, eicosanoid]
+  carb_metabolism: [glycolysis, gluconeogenesis, glycogen, PPP, fructose_metabolism, galactose_metabolism, polyol, glyoxylate_cycle, calvin_cycle]
+  lipid_metabolism: [beta_oxidation, fa_synthesis, ketone_bodies, cholesterol_synthesis, tag_metabolism, lipoprotein, eicosanoid_synthesis, steroid_hormone, bile_acid, sphingolipid_metabolism]
+  vitamin: [water_soluble, fat_soluble, coenzyme]
+  energy_metabolism: [etc_oxphos, shuttle, integration, ethanol, bioenergetics, detoxification]
+  enzyme: [enzyme_kinetics, inhibition, allostery, catalysis]
+  protein: [peptide, protein_structure, hemoglobin]
+  signal_transduction: [gpcr, rtk, second_messenger, apoptosis, cancer]
+  membrane: [membrane_transport, membrane_lipid]
+  molecular_biology: [dna_structure, replication, repair, recombination, transcription, rna_processing, translation, gene_regulation, techniques]
+  carbohydrate: [monosaccharide, aldose, ketose, disaccharide, polysaccharide, sugar_derivative, gag]
+labels:
+  amino_acid: 胺基酸
+  nonpolar: 非極性
+  aromatic: 芳香族
+  polar: 極性
+  basic: 鹼性
+  acidic: 酸性
+  nucleotide: 核苷酸
+  purine: 嘌呤
+  pyrimidine: 嘧啶
+  amino_acid_metabolism: 胺基酸代謝
+  urea: 尿素循環
+  glycolysis: 糖解
+  gluconeogenesis: 糖質新生
+  lipid: 脂質
+  organic: 有機
+  deamination: 脫胺
+  transamination: 轉胺
+  degradation: 分解
+  salvage: 救援途徑
+  pyruvate: 丙酮酸
+  heme: 血基質
+  carbohydrate: 醣類
+  monosaccharide: 單醣
+  aldose: 醛糖
+  ketose: 酮糖
+  disaccharide: 雙醣
+  polysaccharide: 多醣
+  sugar_derivative: 醣類衍生物
+  fatty_acid: 脂肪酸
+  triacylglycerol: 三酸甘油酯
+  phospholipid: 甘油磷脂
+  sphingolipid: 鞘脂
+  steroid: 固醇類
+  eicosanoid: 類二十烷酸
+  vitamin: 維生素
+  water_soluble: 水溶性
+  fat_soluble: 脂溶性
+  coenzyme: 輔酶
+  carb_metabolism: 醣類代謝
+  glycogen: 肝醣代謝
+  PPP: 五碳糖磷酸路徑
+  fructose_metabolism: 果糖代謝
+  galactose_metabolism: 半乳糖代謝
+  polyol: 多元醇路徑
+  lipid_metabolism: 脂質代謝
+  beta_oxidation: β 氧化
+  fa_synthesis: 脂肪酸合成
+  ketone_bodies: 酮體
+  cholesterol_synthesis: 膽固醇合成
+  tag_metabolism: 三酸甘油酯代謝
+  lipoprotein: 脂蛋白
+  aa_derivatives: 胺基酸衍生物
+  aa_degradation: 碳骨架分解
+  one_carbon: 一碳與甲硫胺酸循環
+  energy_metabolism: 能量代謝
+  etc_oxphos: 電子傳遞與氧化磷酸化
+  shuttle: 穿梭系統
+  integration: 代謝整合
+  ethanol: 酒精代謝
+  bioenergetics: 生物能量學
+  signal_transduction: 訊號傳遞
+  gpcr: GPCR／G 蛋白
+  rtk: RTK／激酶路徑
+  second_messenger: 第二傳訊者
+  apoptosis: 細胞凋亡
+  cancer: 癌基因／抑癌基因
+  membrane: 細胞膜
+  membrane_transport: 膜運輸
+  membrane_lipid: 膜脂質
+  molecular_biology: 分子生物
+  dna_structure: DNA 結構
+  replication: 複製
+  repair: DNA 修復
+  recombination: 重組
+  transcription: 轉錄
+  rna_processing: RNA 加工
+  translation: 轉譯
+  gene_regulation: 基因調控
+  techniques: 分生技術
+  detoxification: 解毒（藥物代謝）
+  eicosanoid_synthesis: 類二十烷酸合成
+  steroid_hormone: 固醇類荷爾蒙
+  bile_acid: 膽酸代謝
+  sphingolipid_metabolism: 鞘脂代謝與儲積症
+  enzyme: 酵素
+  enzyme_kinetics: 酵素動力學
+  inhibition: 抑制作用
+  allostery: 別位調節
+  protein: 蛋白質
+  peptide: 胜肽
+  protein_structure: 蛋白質結構
+  hemoglobin: Mb／Hb 與氧合
+  glyoxylate_cycle: 乙醛酸循環
+  calvin_cycle: Calvin 循環與光呼吸
+  gag: 葡萄糖胺聚醣（GAG）
+  catalysis: 催化機制
+  base_pairing: 鹼基配對

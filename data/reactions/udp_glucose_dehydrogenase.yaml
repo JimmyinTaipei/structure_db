@@ -1,0 +1,51 @@
+id: udp_glucose_dehydrogenase
+title: UDP-glucose → UDP-glucuronate (UDP-glucose dehydrogenase)
+substrates:
+- udp_glucose
+products:
+- udp_glucuronate
+cofactors_in:
+- H2O
+- 2NAD+
+cofactors_out:
+- 2NADH+2H+
+extra_out:
+- H+
+enzyme: UDP-glucose dehydrogenase
+reversible: false
+decorate:
+  udp_glucose:
+    colors:
+      u5:
+      - magenta
+      - H_2
+  2NADH+2H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  H2O:
+    colors:
+      0: cyan
+  udp_glucuronate:
+    colors:
+      u5:
+      - cyan
+      - O^-
+card_zh:
+  location: 細胞質（肝）
+  type: C6 的 –CH₂OH 經兩次 NAD⁺ 依賴氧化（醇 → 醛 → 酸）成為 –COO⁻；第二步加入 H₂O
+  exam_points:
+  - 產物 UDP-GlcA：bilirubin、藥物、類固醇的 glucuronidation（phase II，增加水溶性）
+  - GAG 的 uronic acid 來源；L-iduronate 由 GlcA 的 C5 epimerization 而來
+  - uronic acid pathway：glucuronate → L-gulonate → （人缺 gulonolactone oxidase）無法合成 vitamin C；L-xylulose 缺乏 → essential pentosuria
+tags:
+- carb_metabolism
+- carbohydrate
+- sugar_derivative
+- energy_metabolism
+- detoxification
+status: pending

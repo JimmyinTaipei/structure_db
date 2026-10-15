@@ -1,0 +1,14 @@
+id: pregnenolone
+name: Pregnenolone
+aliases:
+- 孕烯醇酮
+smiles: CC(=O)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: 所有固醇類荷爾蒙的共同前驅物（21 碳）。CYP11A1（side-chain cleavage, desmolase）在粒線體切掉膽固醇 C22–C27；ACTH（腎上腺）、LH（性腺）調控，StAR 蛋白把膽固醇送進粒線體內膜是限速步驟。
+status: pending

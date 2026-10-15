@@ -1,0 +1,22 @@
+id: ketoacyl_coa
+name: 3-Ketoacyl-CoA
+label: β-Ketoacyl-CoA
+aliases:
+- β-ketoacyl-CoA
+- 3-oxoacyl-CoA
+smiles: '[8*]C(=O)CC(=O)S[1*]'
+chain:
+- c: R
+- c: C
+  r: O
+  rb: 2
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 3-hydroxyacyl-CoA DH（NAD⁺）把 β 碳氧化成酮；thiolase 在 α–β 之間以 CoA-SH 切開。
+status: pending

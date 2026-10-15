@@ -1,0 +1,41 @@
+id: fatty_acid_synthase
+title: 'Fatty acid synthase (overall): Acetyl-CoA + 7 Malonyl-CoA → Palmitate'
+substrates:
+- acetyl_coa
+- id: malonyl_coa
+  n: 7
+products:
+- palmitate
+cofactors_in:
+- 14NADPH+H+
+cofactors_out:
+- 14NADP+
+- 7CO2
+- 8CoA-SH
+- 6H2O
+extra_in:
+- H+
+- H+
+- H+
+- H+
+- H+
+- H+
+enzyme: fatty acid synthase (7 cycles)
+reversible: false
+decorate:
+  malonyl_coa:
+    colors: {0: magenta}
+  7CO2:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質（肝、脂肪、乳腺）
+  type: 多功能酵素（同源二聚體），醯基接在 ACP 的 phosphopantetheine 上
+  mechanism: 每輪：縮合（KS，放出 CO₂）→ 還原（KR，NADPH）→ 脫水（DH）→ 還原（ER，NADPH）；與 β 氧化方向相反，中間物為 D-3-hydroxyacyl
+  exam_points:
+  - 每加 2 碳耗 2 NADPH
+  - 產物是 palmitate（16:0）；延長在 ER、去飽和（Δ9 等）也在 ER
+  - 人類不能在 Δ9 之後加雙鍵 → linoleate、α-linolenate 為必需脂肪酸
+tags:
+- lipid_metabolism
+- fa_synthesis
+status: pending

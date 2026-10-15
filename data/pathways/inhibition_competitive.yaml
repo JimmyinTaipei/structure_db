@@ -1,0 +1,135 @@
+id: inhibition_competitive
+title: Competitive inhibition
+layout: plot
+panels:
+- title: Michaelis–Menten
+  size:
+  - 12
+  - 8.5
+  params: &id001
+    Vmax: 1
+    Km: 2
+    KmI: 2.5*Km
+    VmI: Vmax
+  x:
+    min: 0
+    max: 20
+    label: '[S]'
+    marks:
+    - at: Km
+      label: K_m
+    - at: KmI
+      label: K_m^{app}
+      color: red
+  y:
+    min: 0
+    max: 1.2
+    label: v_0
+    marks:
+    - at: Vmax
+      label: V_{max}
+  hlines:
+  - y: Vmax
+    to: 11
+  curves:
+  - id: 'no'
+    y: mm(x, Vmax, Km)
+    label: No inhibitor
+    label_at: 16
+    label_off:
+    - -1.0
+    - -0.7
+  - id: inh
+    y: mm(x, VmI, KmI)
+    color: red
+    label: + Inhibitor
+    label_at: 16
+    label_off:
+    - -1.0
+    - 0.85
+  points:
+  - 'on': 'no'
+    x: Km
+    y: Vmax/2
+    drop: x
+    dot: true
+  - 'on': inh
+    x: KmI
+    y: VmI/2
+    drop: x
+    dot: true
+    color: red
+- title: Lineweaver–Burk
+  size:
+  - 12
+  - 8.5
+  params: *id001
+  x:
+    min: -0.8
+    max: 1.4
+    label: 1/[S]
+    marks:
+    - at: -1/Km
+      label: −1/K_m
+      dy: 1.0
+    - at: -1/KmI
+      label: −1/K_m^{app}
+      color: red
+      dx: -0.9
+  y:
+    min: -0.6
+    max: 6
+    label: 1/v_0
+    marks:
+    - at: 1/Vmax
+      label: 1/V_{max} (same)
+      dy: -0.75
+  curves:
+  - id: 'no'
+    y: Km/Vmax*x + 1/Vmax
+    from: -1/Km*1.3
+    to: 1.4
+    label: No inhibitor
+    label_at: 1.15
+    label_off:
+    - 0.3
+    - 0.8
+  - id: inh
+    y: KmI/VmI*x + 1/VmI
+    from: -1/KmI*1.3
+    to: 1.4
+    color: red
+    label: + Inhibitor
+    label_at: 0.85
+    label_off:
+    - -0.4
+    - 0
+    label_align: right
+  points:
+  - 'on': 'no'
+    x: -1/Km
+    y: 0
+    dot: true
+  - 'on': 'no'
+    x: 0
+    y: 1/Vmax
+    dot: true
+  - 'on': inh
+    x: -1/KmI
+    y: 0
+    dot: true
+    color: red
+  - 'on': inh
+    x: 0
+    y: 1/VmI
+    dot: true
+    color: red
+caption:
+  text: 'Competitive inhibition:  K_m ↑   V_{max} unchanged'
+  color: red
+tags:
+- enzyme
+- enzyme_kinetics
+- inhibition
+notes_zh: 競爭性抑制：抑制劑和受質搶同一個活性位（只結合 E）。K_m^app = αK_m 變大、V_{max} 不變；加大量受質可以克服。雙倒數圖：各直線交於 y 軸（1/V_{max} 相同），斜率變大。例：methotrexate（DHFR）、statin（HMG-CoA reductase）、malonate（SDH）、ethanol 治 methanol 中毒。
+status: pending

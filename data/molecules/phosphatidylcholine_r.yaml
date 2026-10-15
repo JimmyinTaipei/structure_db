@@ -1,0 +1,15 @@
+id: phosphatidylcholine_r
+name: Phosphatidylcholine (R groups)
+label: Phosphatidylcholine
+aliases:
+- PC (generic)
+- glycerophospholipid
+smiles: '[25*]C(=O)OC[C@@H](OC(=O)[26*])COP(=O)([O-])OCC[N+](C)(C)C'
+ring:
+  coordgen: true
+tags:
+- lipid
+- phospholipid
+notes_zh: 以 R₁（sn-1）、R₂（sn-2）代表脂肪酸鏈的 PC，用來標示各種 phospholipase 的切點。
+parts_png: false
+status: pending

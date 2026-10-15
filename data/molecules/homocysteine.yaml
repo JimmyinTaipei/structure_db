@@ -1,0 +1,19 @@
+id: homocysteine
+name: Homocysteine
+aliases:
+- Hcy
+- 同半胱胺酸
+smiles: SCC[C@H]([NH3+])C(=O)[O-]
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: CH_2
+- c: SH
+tags:
+- amino_acid_metabolism
+- one_carbon
+notes_zh: Met 少一個 CH₃。兩條出路：再甲基化回 Met（methionine synthase：B12 + N⁵-CH₃-THF；或肝的 betaine）；transsulfuration → Cys（CBS，B6）。Hcy ↑：B12、folate、B6 缺乏或 CBS 缺乏 → 血栓、動脈硬化。
+status: pending

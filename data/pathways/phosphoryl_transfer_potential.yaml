@@ -1,0 +1,154 @@
+id: phosphoryl_transfer_potential
+title: Phosphoryl-transfer potential
+layout: plot
+plot:
+  size:
+  - 15
+  - 11
+  x:
+    min: 0
+    max: 10
+    label: ''
+    ticks: []
+    at: -16
+  y:
+    min: -16
+    max: 0
+    label: ΔG°' of hydrolysis (kcal/mol)
+    label_pos: center
+    ticks:
+    - 0
+    - -4
+    - -8
+    - -12
+    - -16
+    at: 0
+  curves:
+  - id: pep
+    y: -14.8
+    from: 0.4
+    to: 3.2
+    color: magenta
+    width: 1.4
+  - id: bpg
+    y: -11.8
+    from: 0.4
+    to: 3.2
+    color: magenta
+    width: 1.4
+  - id: pcr
+    y: -10.3
+    from: 0.4
+    to: 3.2
+    color: magenta
+    width: 1.4
+  - id: atp
+    y: -7.3
+    from: 3.6
+    to: 6.2
+    width: 1.6
+  - id: g1p
+    y: -5.0
+    from: 6.6
+    to: 7.6
+    color: cyan
+    width: 1.4
+  - id: g6p
+    y: -3.3
+    from: 6.6
+    to: 7.6
+    color: cyan
+    width: 1.4
+  - id: g3p
+    y: -2.2
+    from: 6.6
+    to: 7.6
+    color: cyan
+    width: 1.4
+  texts:
+  - at:
+    - 1.8
+    - -14.2
+    text: PEP  −14.8
+    size: 0.85
+  - at:
+    - 1.8
+    - -11.2
+    text: 1,3-BPG  −11.8
+    size: 0.85
+  - at:
+    - 1.8
+    - -9.7
+    text: Creatine-P  −10.3
+    size: 0.85
+  - at:
+    - 5.7
+    - -8.2
+    text: ATP → ADP  −7.3
+    size: 0.9
+  - at:
+    - 7.8
+    - -5.0
+    text: Glucose 1-P  −5.0
+    size: 0.85
+    align: left
+  - at:
+    - 7.8
+    - -3.3
+    text: Glucose 6-P  −3.3
+    size: 0.85
+    align: left
+  - at:
+    - 7.8
+    - -2.2
+    text: Glycerol 3-P  −2.2
+    size: 0.85
+    align: left
+  - at:
+    - 2.0
+    - -2.5
+    text: 'High-energy
+
+      (Ⓟ donors)'
+    size: 0.9
+    color: magenta
+  - at:
+    - 8.0
+    - -12.5
+    text: 'Low-energy
+
+      (Ⓟ acceptors
+
+      form these)'
+    size: 0.9
+    color: cyan
+  arrows:
+  - from:
+    - 3.25
+    - -14.6
+    to:
+    - 3.9
+    - -7.5
+    color: magenta
+  - from:
+    - 3.25
+    - -11.6
+    to:
+    - 4.2
+    - -7.5
+    color: magenta
+  - from:
+    - 6.25
+    - -7.1
+    to:
+    - 6.6
+    - -5.3
+    color: cyan
+tags:
+- energy_metabolism
+- bioenergetics
+- carb_metabolism
+- glycolysis
+notes_zh: 水解 ΔG°′ 比 ATP 更負的化合物（PEP −14.8、1,3-BPG −11.8、phosphocreatine −10.3 kcal/mol）可把 Ⓟ 交給 ADP（受質層次磷酸化：PK、PGK、creatine kinase）；ATP（−7.3）再把 Ⓟ 交給 glucose 等形成低能磷酸酯（G6P −3.3）。ATP 位居中間 → 能量的「通貨」。PEP 特別高：水解後
+  enol → keto 互變（tautomerization）額外釋能。1,3-BPG：acyl-phosphate（混合酸酐）。ATP 高能的原因：① 磷酸間負電排斥 ② 產物的共振穩定較大 ③ 產物離子化／溶劑化（ADP³⁻ + Pi²⁻ + H⁺）。
+status: pending

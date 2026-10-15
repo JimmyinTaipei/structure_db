@@ -1,0 +1,15 @@
+id: isoleucine
+name: Isoleucine
+aliases: [Ile, I, 異白胺酸]
+smiles: "CC[C@H](C)[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: C, l: H_3C, r: H}              # (2S,3S)：CH₃ 在左；畫成 H–C–CH₃ 會變成 allo-Ile
+  - {c: CH_2}
+  - {c: CH_3}
+decorate:
+  boxes: [{rows: [2, 3, 4], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Ile / I。BCAA、必需；有兩個立體中心（2S,3S）。生糖＋生酮。"
+status: approved

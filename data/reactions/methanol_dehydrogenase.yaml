@@ -1,0 +1,41 @@
+id: methanol_dehydrogenase
+title: Methanol → Formaldehyde (alcohol dehydrogenase)
+substrates:
+- methanol
+products:
+- formaldehyde
+cofactors_in:
+- NAD+
+cofactors_out:
+- NADH+H+
+enzyme: 'alcohol dehydrogenase
+
+  (ADH)'
+reversible: false
+decorate:
+  methanol:
+    colors:
+      0:
+        u: magenta
+        r:
+        - magenta
+        - H
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+card_zh:
+  location: 肝
+  type: 氧化（NAD⁺）
+  deficiency:
+  - 治療：fomepizole（或乙醇）競爭 ADH，讓甲醇由腎與透析排除
+  exam_points:
+  - 乙二醇同樣經 ADH → glycolaldehyde → glycolate → oxalate（草酸鈣結晶 → 急性腎損傷）
+tags:
+- energy_metabolism
+- ethanol
+status: pending

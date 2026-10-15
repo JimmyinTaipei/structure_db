@@ -1,0 +1,21 @@
+id: guanine_deaminase
+title: "Guanine → Xanthine + NH₄⁺ (guanine deaminase)"
+substrates: [guanine]
+products: [xanthine]
+cofactors_in: [H2O]
+cofactors_out: [ammonium]
+cofactors_inline: true
+extra_in: [H+]          # NH₃ 接 H⁺ 成 NH₄⁺（不畫，只參與平衡）
+enzyme: "guanine deaminase\n(guanase)"
+reversible: false
+decorate:
+  guanine: {base_colors: {0: magenta}}
+  ammonium: {colors: {0: magenta}}
+  H2O: {colors: {0: cyan}}
+  xanthine: {base_colors: {4: cyan}}
+card_zh:
+  type: "水解脫胺（C2–NH₂ → C2=O）"
+  exam_points:
+    - "G 分支在 xanthine 匯入 A 分支：兩條都到 xanthine → uric acid"
+tags: [nucleotide, purine, degradation]
+status: pending

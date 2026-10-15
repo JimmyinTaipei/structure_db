@@ -1,0 +1,17 @@
+id: b_glucuronate
+name: "β-D-Glucuronate"
+label: "β-D-Glucuronate"
+aliases: [glucuronic acid, GlcA, 葡萄糖醛酸]
+smiles: "[O-]C(=O)[C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "COO^-", down: "H"}
+tags: [carbohydrate, sugar_derivative]
+notes_zh: "C6 氧化成羧酸（COO⁻）。UDP-glucuronate 用於膽紅素、藥物的 glucuronidation（肝，增加水溶性）；也是玻尿酸、heparin 等 GAG 的組成。"
+status: pending

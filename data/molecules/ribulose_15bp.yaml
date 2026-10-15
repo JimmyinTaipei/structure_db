@@ -1,0 +1,26 @@
+id: ribulose_15bp
+name: Ribulose 1,5-bisphosphate
+label: 'Ribulose
+
+  1,5-bisphosphate'
+aliases:
+- RuBP
+- 核酮糖-1,5-二磷酸
+smiles: O=C(COP(=O)([O-])[O-])[C@H](O)[C@H](O)COP(=O)([O-])[O-]
+chain:
+- c: CH_2O{P}
+- c: C
+  r: O
+  rb: 2
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- calvin_cycle
+notes_zh: RuBP：Rubisco 的受質。接上 CO₂ 後斷成 2 分子 3-phosphoglycerate（Calvin cycle）；接上 O₂ 則為光呼吸。
+status: pending

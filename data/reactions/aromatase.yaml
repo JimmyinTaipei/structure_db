@@ -1,0 +1,40 @@
+id: aromatase
+title: Testosterone → Estradiol (aromatase, CYP19A1)
+substrates:
+- testosterone
+products:
+- estradiol
+- formate
+cofactors_in:
+- 3O2
+- 3NADPH
+cofactors_out:
+- 3NADP+
+- 4H2O
+extra_in:
+- 2H+
+enzyme: 'aromatase
+
+  (CYP19A1)'
+reversible: false
+decorate:
+  testosterone:
+    highlight:
+    - smarts: '[CH3:1][C;R:2]C=C'
+      color: cyan
+  formate:
+    colors:
+      0: cyan
+  3O2:
+    colors:
+      0: magenta
+card_zh:
+  location: 顆粒細胞（FSH 誘導）、脂肪、胎盤、腦
+  type: 三次單氧化：切掉 C19（甲酸）並使 A 環芳香化
+  deficiency:
+  - aromatase 抑制劑（anastrozole、letrozole）：停經後乳癌
+  - aromatase 缺乏：女胎男性化（雄性素累積）、高個子（骨骺不閉合）
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

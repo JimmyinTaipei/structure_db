@@ -1,0 +1,8 @@
+id: uracil
+name: "Uracil"
+aliases: [U, 尿嘧啶]
+smiles: "O=c1[cH][cH][nH]c(=O)[nH]1"
+ring: {down: 4, right: 5, nh_bond: true, mirror: true}
+tags: [nucleotide, pyrimidine]
+notes_zh: "RNA 的嘧啶鹼基。5-FU 為其類似物（→ FdUMP 抑制 thymidylate synthase）。"
+status: pending

@@ -1,0 +1,18 @@
+id: doc
+name: 11-Deoxycorticosterone
+label: '11-Deoxy-
+
+  corticosterone'
+aliases:
+- DOC
+- deoxycorticosterone
+smiles: C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: 本身有礦物皮質素活性：11β-hydroxylase 缺乏時 DOC ↑ → 高血壓、低血鉀（同時男性化）。
+status: pending

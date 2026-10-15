@@ -1,0 +1,15 @@
+id: glucose_6p
+name: Glucose 6-phosphate
+label: "Glucose\n6-phosphate"
+aliases: [G6P, 葡萄糖-6-磷酸]
+smiles: "O=C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: H}}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, glycolysis, PPP]
+notes_zh: 糖解、PPP（G6PD）、肝醣合成／分解的交會點；帶負電無法離開細胞。
+status: pending

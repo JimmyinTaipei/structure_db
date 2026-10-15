@@ -1,0 +1,8 @@
+id: ceramide
+name: "Ceramide"
+aliases: [N-acylsphingosine]
+smiles: "C(O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC"
+lipid: {type: "sphingolipid", chains: [{n: 18}], head: "oh"}
+tags: [lipid, sphingolipid]
+notes_zh: "sphingosine + 脂肪酸（醯胺鍵，接在 C2 的 N）。所有 sphingolipid 的母體；也是凋亡訊息分子。（圖例：N-stearoyl；sphingosine 有 trans-Δ4 雙鍵）"
+status: pending

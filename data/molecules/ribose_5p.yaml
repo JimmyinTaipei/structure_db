@@ -1,0 +1,14 @@
+id: ribose_5p
+name: Ribose 5-phosphate
+label: "Ribose\n5-phosphate"
+aliases: [R5P, 核糖-5-磷酸]
+smiles: "O=C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: H}}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP, nucleotide]
+notes_zh: 醛糖（aldose），核苷酸合成原料（→ PRPP）；在 transketolase 中為 2C 受體。
+status: pending

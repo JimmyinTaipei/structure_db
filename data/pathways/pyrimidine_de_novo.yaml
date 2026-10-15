@@ -1,0 +1,26 @@
+id: pyrimidine_de_novo
+title: Pyrimidine de novo synthesis（嘧啶從頭合成）
+layout: free
+cell: 1.0
+nodes:
+  - {id: hco3, ref: bicarbonate, pos: [0, 0]}
+  - {id: cp, ref: carbamoyl_phosphate, pos: [1.35, 0]}
+  - {id: ca, ref: carbamoyl_aspartate, pos: [2.7, 0]}
+  - {id: dho, ref: dihydroorotate, pos: [2.7, 1.05]}
+  - {id: oro, ref: orotate, pos: [1.35, 1.05]}
+  - {id: omp, ref: omp, pos: [0, 1.05]}
+  - {id: ump, ref: ump, pos: [0, 2.1]}
+  - {id: utp, ref: utp, pos: [1.35, 2.1]}
+  - {id: ctp, ref: ctp, pos: [3.0, 2.1]}
+edges:
+  - {from: hco3, to: cp, step: cps2, label: "CPS II", side_text: "Gln + 2 ATP\n→ Glu + 2 ADP + P_i"}
+  - {from: cp, to: ca, step: atcase, label: "ATCase", side_text: "Asp → P_i"}
+  - {from: ca, to: dho, step: dihydroorotase, label: "dihydroorotase", side_text: "H_2O", reversible: true}
+  - {from: dho, to: oro, step: dhodh, label: "DHODH", side_text: "Q → QH_2"}
+  - {from: oro, to: omp, step: oprt, label: "OPRT", side_text: "PRPP → PP_i"}
+  - {from: omp, to: ump, step: omp_decarboxylase, label: "OMP\ndecarboxylase", side_text: "CO_2"}
+  - {from: ump, to: utp, label: "kinases", side_text: "2 ATP → 2 ADP"}
+  - {from: utp, to: ctp, step: ctp_synthetase, label: "CTP synthetase", side_text: "Gln + ATP\n→ Glu + ADP + P_i"}
+tags: [nucleotide, pyrimidine]
+notes_zh: "先做環（orotate）再接 PRPP。CAD（CPS II、ATCase、dihydroorotase）在細胞質；DHODH 在粒線體內膜；UMP synthase（OPRT + OMP decarboxylase）缺乏 → orotic aciduria。"
+status: pending

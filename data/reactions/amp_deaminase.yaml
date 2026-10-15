@@ -1,0 +1,23 @@
+id: amp_deaminase
+title: "AMP → IMP + NH₄⁺ (AMP deaminase)"
+substrates: [amp]
+products: [imp]
+cofactors_in: [H2O]
+cofactors_out: [ammonium]
+cofactors_inline: true
+extra_in: [H+]          # NH₃ 接 H⁺ 成 NH₄⁺（不畫，只參與平衡）
+enzyme: "AMP deaminase"
+reversible: false
+decorate:                         # 洋紅：C6 的 N 以 NH₄⁺ 離開；青藍：H₂O 的 O 成為 C6=O
+  amp: {base_colors: {6: magenta}}
+  ammonium: {colors: {0: magenta}}
+  H2O: {colors: {0: cyan}}
+  imp: {base_colors: {6: cyan}}
+card_zh:
+  location: 細胞質（骨骼肌特別多）
+  type: "水解脫胺"
+  deficiency: "肌肉 AMP deaminase（myoadenylate deaminase）缺乏 → 運動後肌肉痙攣、疲勞"
+  exam_points:
+    - "肌肉的 purine nucleotide cycle：AMP → IMP（放 NH₄⁺）→ adenylosuccinate → AMP（放 fumarate 補 TCA）"
+tags: [nucleotide, purine, degradation]
+status: pending

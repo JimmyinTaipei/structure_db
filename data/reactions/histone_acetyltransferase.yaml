@@ -1,0 +1,32 @@
+id: histone_acetyltransferase
+title: Histone acetyltransferase (HAT)
+substrates:
+- lysine
+- acetyl_coa
+products:
+- acetyllysine
+cofactors_out:
+- CoA-SH
+- H+
+enzyme: Histone acetyltransferase (HAT)
+reversible: false
+decorate:
+  acetyl_coa:
+    colors:
+      0:
+        c: magenta
+        l: magenta
+        u: magenta
+  acetyllysine:
+    colors:
+      7: magenta
+      8: magenta
+card_zh:
+  type: acetyl（洋紅）由 acetyl-CoA 轉到組蛋白 Lys 的 ε-NH₂
+  regulation: HDAC 移除（HDAC inhibitor 為抗癌藥）
+  exam_points:
+  - Lys 正電消失 → 與 DNA 結合變鬆 → euchromatin、gene on
+tags:
+- protein
+- protein_structure
+status: pending

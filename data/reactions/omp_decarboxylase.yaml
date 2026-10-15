@@ -1,0 +1,20 @@
+id: omp_decarboxylase
+title: "嘧啶 ⑥ OMP → UMP (OMP decarboxylase)"
+step: 6
+substrates: [omp]
+products: [ump]
+cofactors_out: [CO2]
+extra_in: [H+]
+enzyme: "OMP decarboxylase"
+reversible: false
+decorate:                         # 洋紅：C6 的羧基以 CO₂ 離開
+  omp: {base_colors: {4: magenta, 5: magenta}}
+  CO2: {colors: {0: magenta}}
+card_zh:
+  location: "細胞質（UMP synthase）"
+  type: "脫羧（不需任何輔因子）"
+  mechanism: "已知催化速率增益最大的酵素之一（~10¹⁷ 倍），無輔酶"
+  exam_points:
+    - "UMP 是所有嘧啶核苷酸的前驅物：UMP → UDP → UTP → CTP；UDP → dUDP → dUMP → dTMP"
+tags: [nucleotide, pyrimidine]
+status: pending

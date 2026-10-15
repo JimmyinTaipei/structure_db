@@ -1,0 +1,135 @@
+id: amino_acid_derivatives
+title: Specialized products of amino acids（胺基酸衍生物，名稱版）
+layout: free
+cell_size: 6.0
+text: false
+nodes:
+- id: his
+  ref: histidine
+  pos:
+  - 0
+  - 0
+  view: name
+- id: hist
+  ref: histamine
+  pos:
+  - 1.6
+  - 0
+  view: name
+- id: glu
+  ref: glutamate
+  pos:
+  - 0
+  - 1
+  view: name
+- id: gaba
+  ref: gaba
+  pos:
+  - 1.6
+  - 1
+  view: name
+- id: arg
+  ref: arginine
+  pos:
+  - 0
+  - 2
+  view: name
+- id: 'no'
+  ref: nitric_oxide
+  pos:
+  - 1.6
+  - 2
+  view: name
+- id: cre
+  text: 'Creatine (Gly + Arg + SAM)
+
+    → creatine-P, creatinine'
+  kind: name
+  pos:
+  - 3.6
+  - 2.5
+- id: trp
+  ref: tryptophan
+  pos:
+  - 0
+  - 3
+  view: name
+- id: sero
+  ref: serotonin
+  pos:
+  - 1.6
+  - 3
+  view: name
+- id: tyr
+  ref: tyrosine
+  pos:
+  - 0
+  - 4
+  view: name
+- id: cats
+  text: 'Catecholamines, melanin,
+
+    T_3/T_4'
+  kind: name
+  pos:
+  - 1.6
+  - 4
+- id: gly
+  ref: glycine
+  pos:
+  - 0
+  - 5
+  view: name
+- id: heme
+  ref: heme
+  pos:
+  - 1.6
+  - 5
+  view: name
+- id: gsh
+  text: Glutathione (γ-Glu–Cys–Gly)
+  kind: name
+  pos:
+  - 3.6
+  - 5.5
+- id: ser
+  text: 'Serine → sphingosine,
+
+    phosphatidylserine'
+  kind: name
+  pos:
+  - 3.6
+  - 0.5
+edges:
+- from: his
+  to: hist
+  step: histidine_decarboxylase
+  label: HDC (PLP)
+- from: glu
+  to: gaba
+  step: glutamate_decarboxylase
+  label: GAD (PLP)
+- from: arg
+  to: 'no'
+  step: nitric_oxide_synthase
+  label: NOS
+- from: arg
+  to: cre
+  bend: -0.15
+- from: trp
+  to: sero
+  label: BH_4, PLP
+- from: tyr
+  to: cats
+  label: BH_4, PLP, Cu
+- from: gly
+  to: heme
+  label: ALA synthase
+- from: gly
+  to: gsh
+  bend: 0.15
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: 胺基酸脫羧多半需要 PLP（B6）：histamine、GABA、serotonin、dopamine。Gly 是 heme、creatine、glutathione、purine 的原料；Arg → NO、creatine、urea、polyamines（經 ornithine）。
+status: pending

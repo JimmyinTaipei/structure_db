@@ -1,0 +1,27 @@
+id: galactokinase
+title: Galactose → Galactose 1-phosphate (galactokinase)
+substrates:
+- a_galactopyranose
+products:
+- a_galactose_1p
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: galactokinase
+reversible: false
+decorate:
+  a_galactose_1p:
+    colors:
+      d1: [magenta, '{P}']
+card_zh:
+  type: 磷酸化
+  deficiency: galactokinase 缺乏：galactose → galactitol 累積 → 白內障（嬰兒），其餘症狀輕
+  exam_points:
+  - 比 GALT 缺乏輕微：沒有 Gal1P 累積
+tags:
+- carb_metabolism
+- galactose_metabolism
+status: pending

@@ -1,0 +1,33 @@
+id: amidophosphoribosyltransferase
+title: "PRPP + Gln → 5-Phosphoribosylamine (Gln-PRPP amidotransferase)"
+substrates: [prpp]
+products: [pra]
+cofactors_in: [glutamine, H2O]
+cofactors_out: [glutamate, PPi]
+decorate:
+  glutamine:
+    colors: {0: magenta}
+  pra:
+    colors: {u1: magenta}
+  prpp:
+    colors:
+      d1: [cyan, '{P}–{P}']
+  PPi:
+    colors: {0: cyan}
+cofactors_inline: true
+extra_out: [H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "glutamine-PRPP\namidotransferase"
+reversible: false
+card_zh:
+  location: 細胞質
+  type: "嘌呤從頭合成第一個專一步驟（committed step）＝限速步驟"
+  mechanism: "Gln 醯胺水解出 NH₃，對 C1 做 S_N2 取代 PPi → C1 構形由 α 變 β（之後嘌呤就接在 β 位）"
+  regulation:
+    - "回饋抑制：IMP、AMP、GMP（終產物，兩組不同結合位，協同抑制）"
+    - "PRPP 活化（feed-forward）"
+  deficiency: "allopurinol → 經 HGPRT 變成 allopurinol ribonucleotide，也會回饋抑制此酵素"
+  exam_points:
+    - "嘌呤環是「在核糖上一個原子一個原子蓋起來」的（不同於嘧啶：先做環再接核糖）"
+    - "PPi 被水解 → 驅動反應不可逆"
+tags: [nucleotide, purine]
+status: pending

@@ -1,0 +1,21 @@
+id: amylose
+name: "Amylose"
+aliases: [直鏈澱粉]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O"
+free:
+  schematic: true
+  atoms:
+    m0: ["@glc", 0.0, 0]
+    m1: ["@glc", 0.62, 0]
+    m2: ["@glc", 1.24, 0]
+    m3: ["@glc", 1.86, 0]
+    m4: ["@glc", 2.48, 0]
+    m5: ["@glc", 3.1, 0]
+    m6: ["@glc", 3.72, 0]
+    m7: ["@glc", 4.34, 0]
+    m8: ["@glc", 4.96, 0]
+  bonds: [["m0", "m1"], ["m1", "m2"], ["m2", "m3"], ["m3", "m4"], ["m4", "m5"], ["m5", "m6"], ["m6", "m7"], ["m7", "m8"]]
+  notes: [["α1→4 (helix)", 2.5, -0.75, "gray"], ["reducing end", 0, 0.75, "gray"]]
+tags: [carbohydrate, polysaccharide]
+notes_zh: "示意圖。澱粉的直鏈部分：α1→4，形成螺旋（遇碘呈藍色）。另一成分 amylopectin 結構似肝醣，但每 24–30 個殘基才一個分支。"
+status: pending

@@ -1,0 +1,23 @@
+id: pfk1
+title: "Glycolysis ③ Fructose 6-phosphate → Fructose 1,6-bisphosphate"
+step: 3
+substrates: [fructose_6p]
+products: [fructose_16bp]
+cofactors_in: [ATP]
+cofactors_out: [ADP]
+extra_out: [H+]
+prosthetic: ["Mg^{2+}"]
+enzyme: "phosphofructokinase-1\n(PFK-1)"
+reversible: false
+decorate:
+  fructose_16bp: {colors: {0: {c: [magenta, "{P}"]}}}
+card_zh:
+  location: 細胞質
+  type: 磷酸化（消耗第 2 個 ATP）
+  deltaG: "ΔG'° = −14.2 kJ/mol，不可逆"
+  regulation: "糖解的 committed step 與主要速率決定步驟。活化：AMP、ADP、fructose 2,6-bisphosphate（最強，受 insulin/glucagon 經 PFK-2/FBPase-2 控制）。抑制：ATP、citrate、H⁺"
+  exam_points:
+    - "糖質新生的對應步驟由 FBPase-1 執行（F2,6BP 抑制 FBPase-1）"
+    - "PFK-1 缺乏 → Tarui disease（肝醣儲積症 VII）"
+tags: [carb_metabolism, glycolysis]
+status: pending

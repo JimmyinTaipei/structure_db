@@ -1,0 +1,16 @@
+id: sah
+name: S-Adenosylhomocysteine (SAH)
+label: 'S-Adenosyl-
+
+  homocysteine (SAH)'
+aliases:
+- SAH
+- AdoHcy
+smiles: Nc8ncnc9c8ncn9[C@@H]4O[C@H](CSCC[C@H]([NH3+])C(=O)[O-])[C@@H](O)[C@H]4O
+ring:
+  coordgen: true
+tags:
+- amino_acid_metabolism
+- one_carbon
+notes_zh: SAM 把 CH₃ 給出去之後的產物；SAH hydrolase → homocysteine + adenosine。SAH 本身是甲基轉移酶的抑制劑。
+status: pending

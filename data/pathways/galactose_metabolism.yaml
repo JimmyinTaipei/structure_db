@@ -1,0 +1,66 @@
+id: galactose_metabolism
+title: Galactose metabolism（半乳糖代謝，Leloir pathway）
+layout: free
+cell: 0.9
+nodes:
+- id: gal
+  ref: a_galactopyranose
+  pos:
+  - 0
+  - 0
+- id: gal1p
+  ref: a_galactose_1p
+  pos:
+  - 0
+  - 1.15
+- id: g1p
+  ref: a_glucose_1p
+  pos:
+  - 0
+  - 2.3
+- id: udpglc
+  ref: udp_glucose
+  pos:
+  - 1.35
+  - 1.15
+- id: udpgal
+  ref: udp_galactose
+  pos:
+  - 1.35
+  - 2.3
+- id: galol
+  ref: galactitol
+  pos:
+  - -1.2
+  - 0.2
+edges:
+- from: gal
+  to: gal1p
+  step: galactokinase
+  label: galactokinase
+  side_text: ATP → ADP
+- from: gal1p
+  to: g1p
+  step: galt
+  label: GALT
+- from: udpglc
+  to: udpgal
+  step: galt
+  label: GALT
+  label_side: right
+- from: udpgal
+  to: udpglc
+  step: udp_galactose_epimerase
+  label: epimerase
+  bend: 0.5
+- from: gal
+  to: galol
+  step: aldose_reductase_galactose
+  label: 'aldose
+
+    reductase'
+tags:
+- carb_metabolism
+- galactose_metabolism
+notes_zh: Galactose → Gal1P →（GALT 與 UDP-Glc 交換）→ G1P → G6P。GALT 缺乏（典型 galactosemia）最嚴重；galactokinase 缺乏只有白內障。兩者都有 galactitol 累積（aldose reductase）→ 白內障。
+status: pending

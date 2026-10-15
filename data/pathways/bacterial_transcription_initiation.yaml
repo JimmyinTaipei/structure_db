@@ -1,0 +1,439 @@
+id: bacterial_transcription_initiation
+title: E. coli transcription initiation (σ cycle)
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 9.5
+    - 3.0
+    w: 7.0
+    h: 3.6
+    shape: oval
+    hue: blue
+    text: RNA pol core
+    text_size: 0.6
+    text_dy: 1.3
+  - g: blob
+    at:
+    - 6.1
+    - 1.45
+    w: 3.2
+    h: 1.2
+    shape: oval
+    hue: orange
+    text: σ^{70}
+    text_size: 0.65
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 2.5
+    - - 20
+      - 2.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 3.5
+    - - 20
+      - 3.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 2.5
+    - - 4.8
+      - 2.5
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 3.5
+    - - 4.8
+      - 3.5
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.4
+      - 2.5
+    - - 8.6
+      - 2.5
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.4
+      - 3.5
+    - - 8.6
+      - 3.5
+    width: 0.3
+  - g: text
+    at:
+    - 4.2
+    - 4.25
+    text: −35
+    size: 0.7
+    align: center
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.9
+      - 3.5
+    - - 8.1
+      - 3.5
+    width: 0.3
+    label: −10
+    label_at:
+    - 7.4
+    - 5.6
+    point:
+    - 8.0
+    - 3.5
+  - g: strand
+    kind: parent
+    points:
+    - - 10.1
+      - 3.5
+    - - 10.3
+      - 3.5
+    width: 0.3
+    label: '+1'
+    label_at:
+    - 11.0
+    - 5.6
+    point:
+    - 10.2
+    - 3.5
+  - g: text
+    at:
+    - 21.2
+    - 3.0
+    text: 1. Closed complex
+    size: 0.8
+    align: left
+  - g: blob
+    at:
+    - 9.5
+    - 8.5
+    w: 7.0
+    h: 3.6
+    shape: oval
+    hue: blue
+    text: RNA pol core
+    text_size: 0.6
+    text_dy: 1.3
+  - g: blob
+    at:
+    - 6.1
+    - 6.95
+    w: 3.2
+    h: 1.2
+    shape: oval
+    hue: orange
+    text: σ^{70}
+    text_size: 0.65
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 8.0
+    - - 7.4
+      - 8.0
+    - - 8.0
+      - 7.5
+    - - 9.8
+      - 7.5
+    - - 10.4
+      - 8.0
+    - - 20
+      - 8.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 9.0
+    - - 7.4
+      - 9.0
+    - - 8.0
+      - 9.5
+    - - 9.8
+      - 9.5
+    - - 10.4
+      - 9.0
+    - - 20
+      - 9.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 8.0
+    - - 4.8
+      - 8.0
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 9.0
+    - - 4.8
+      - 9.0
+    width: 0.3
+  - g: text
+    at:
+    - 21.2
+    - 8.5
+    text: 2. Open complex (−10 → +2)
+    size: 0.8
+    align: left
+  - g: blob
+    at:
+    - 9.5
+    - 14.0
+    w: 7.0
+    h: 3.6
+    shape: oval
+    hue: blue
+    text: RNA pol core
+    text_size: 0.6
+    text_dy: 1.3
+  - g: blob
+    at:
+    - 6.1
+    - 12.45
+    w: 3.2
+    h: 1.2
+    shape: oval
+    hue: orange
+    text: σ^{70}
+    text_size: 0.65
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 13.5
+    - - 7.4
+      - 13.5
+    - - 8.0
+      - 13.0
+    - - 9.8
+      - 13.0
+    - - 10.4
+      - 13.5
+    - - 20
+      - 13.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 14.5
+    - - 7.4
+      - 14.5
+    - - 8.0
+      - 15.0
+    - - 9.8
+      - 15.0
+    - - 10.4
+      - 14.5
+    - - 20
+      - 14.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 13.5
+    - - 4.8
+      - 13.5
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 14.5
+    - - 4.8
+      - 14.5
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 9.6
+      - 14.6
+    - - 10.6
+      - 14.6
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 13.4
+      - 11.8
+    - - 14.4
+      - 12.0
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 13.9
+      - 12.6
+    - - 14.9
+      - 12.7
+    width: 0.3
+  - g: text
+    at:
+    - 21.2
+    - 14.0
+    text: 3. Abortive initiation
+    size: 0.8
+    align: left
+  - g: blob
+    at:
+    - 13.5
+    - 19.5
+    w: 7.0
+    h: 3.6
+    shape: oval
+    hue: blue
+    text: RNA pol core
+    text_size: 0.6
+    text_dy: 1.3
+  - g: blob
+    at:
+    - 2.6
+    - 17.0
+    w: 3.4
+    h: 1.2
+    shape: oval
+    hue: orange
+    text: σ^{70}
+    text_size: 0.65
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 19.0
+    - - 11.8
+      - 19.0
+    - - 12.4
+      - 18.5
+    - - 14.4
+      - 18.5
+    - - 15.0
+      - 19.0
+    - - 20
+      - 19.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 20.0
+    - - 11.8
+      - 20.0
+    - - 12.4
+      - 20.5
+    - - 14.4
+      - 20.5
+    - - 15.0
+      - 20.0
+    - - 20
+      - 20.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 19.0
+    - - 4.8
+      - 19.0
+    width: 0.3
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 3.6
+      - 20.0
+    - - 4.8
+      - 20.0
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 10.4
+      - 17.3
+    - - 11.4
+      - 18.1
+    - - 12.4
+      - 19.95
+    - - 14.6
+      - 20.05
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: text
+    at:
+    - 21.2
+    - 19.5
+    text: 4. Promoter escape; σ leaves
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - -1.9
+    - 17.6
+    to:
+    - -1.9
+    - 1.6
+    color: '#E8731A'
+    width: 1.2
+  - g: text
+    at:
+    - -2.4
+    - 10.75
+    text: 'σ
+
+      cycle'
+    size: 0.75
+    align: right
+    color: '#E8731A'
+tags:
+- molecular_biology
+- transcription
+notes_zh: 'Holoenzyme（α₂ββ′ωσ）的 σ 認 −35（TTGACA）與 −10（TATAAT，Pribnow box）→ closed complex → 不需 helicase 自行解開 −10 至 +2（open complex） → abortive initiation（反覆合成 2–9 nt 短 RNA）→ RNA 超過約 10 nt 時 promoter escape，σ
+  離開並重複使用（σ cycle），core + NusA 延長。σ⁷⁰ housekeeping、σ³² heat shock、σ⁵⁴（−24/−12，需 enhancer 活化子）。Rifampicin 結合 β 次單元。
+
+  【補充】σ factors choose the promoter: σ^{70} housekeeping (spacer 16–19 bp), σ^{32} heat shock, σ^{54} nitrogen genes (−24/−12; needs an ATP-using enhancer-binding activator). σ region 4.2 binds −35, region
+  2.4 binds −10, region 2.3 melts DNA. −10 and −35 lie on the same face of B-DNA (~10.5 bp/turn). Rifampicin binds β and blocks the exit channel (abortive stage); actinomycin D intercalates in DNA. Footprinting
+  maps the promoter (RNA pol covers 60–80 bp, including −35 and −10).'
+parts_png: false
+status: pending

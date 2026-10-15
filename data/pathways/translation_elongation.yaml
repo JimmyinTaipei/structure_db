@@ -1,0 +1,246 @@
+id: translation_elongation
+title: The elongation cycle
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0.5
+      - 6.0
+    - - 10.5
+      - 6.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 5.5
+    - 6.0
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 5.5
+    - 6.0
+    s: 0.8
+    anticodon: UAC
+    peptide: 3
+  - g: strand
+    kind: rna
+    points:
+    - - 16.5
+      - 6.0
+    - - 26.5
+      - 6.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 21.5
+    - 6.0
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 21.5
+    - 6.0
+    s: 0.8
+    anticodon: UAC
+    peptide: 3
+  - g: trna
+    shape: icon
+    at:
+    - 23.39
+    - 6.0
+    s: 0.8
+    anticodon: CGA
+    peptide: 1
+  - g: strand
+    kind: rna
+    points:
+    - - 16.5
+      - 19.5
+    - - 26.5
+      - 19.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 21.5
+    - 19.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 21.5
+    - 19.5
+    s: 0.8
+    anticodon: UAC
+    hue: '#D9D9D9'
+  - g: trna
+    shape: icon
+    at:
+    - 23.39
+    - 19.5
+    s: 0.8
+    anticodon: CGA
+    peptide: 4
+  - g: strand
+    kind: rna
+    points:
+    - - 0.5
+      - 19.5
+    - - 10.5
+      - 19.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 5.5
+    - 19.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 3.61
+    - 19.5
+    s: 0.8
+    anticodon: UAC
+    hue: '#D9D9D9'
+  - g: trna
+    shape: icon
+    at:
+    - 5.5
+    - 19.5
+    s: 0.8
+    anticodon: CGA
+    peptide: 4
+  - g: arrow
+    from:
+    - 11.0
+    - 4.8
+    to:
+    - 15.6
+    - 4.8
+    style: fat
+  - g: text
+    at:
+    - 13.3
+    - 0.40000000000000036
+    text: '1. EF-Tu·GTP·aa-tRNA
+
+      enters the A site'
+    size: 0.72
+    align: center
+  - g: trna
+    shape: icon
+    at:
+    - 12.6
+    - 3.4
+    s: 0.7
+    anticodon: CGA
+    aa: Ala
+  - g: blob
+    at:
+    - 14.2
+    - 2.9
+    w: 1.9
+    h: 1.0
+    shape: oval
+    hue: green
+    text: EF-Tu·GTP
+    text_size: 0.42
+  - g: text
+    at:
+    - 13.3
+    - 8.7
+    text: EF-Tu·GDP leaves
+    size: 0.62
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 21.5
+    - 9.0
+    to:
+    - 21.5
+    - 14.3
+    style: fat
+  - g: text
+    at:
+    - 22.9
+    - 11.75
+    text: '2. peptidyl
+
+      transfer'
+    size: 0.72
+    align: left
+  - g: arrow
+    from:
+    - 15.6
+    - 18.3
+    to:
+    - 11.0
+    - 18.3
+    style: fat
+  - g: text
+    at:
+    - 13.3
+    - 20.9
+    text: '3. EF-G·GTP:
+
+      translocation by
+
+      one codon'
+    size: 0.72
+    align: center
+  - g: blob
+    at:
+    - 13.3
+    - 16.5
+    w: 1.9
+    h: 1.0
+    shape: oval
+    hue: orange
+    text: EF-G·GTP
+    text_size: 0.42
+  - g: arrow
+    from:
+    - 5.5
+    - 14.3
+    to:
+    - 5.5
+    - 9.0
+    style: fat
+  - g: text
+    at:
+    - 4.1
+    - 11.75
+    text: '4. E-site
+
+      tRNA leaves'
+    size: 0.72
+    align: right
+tags:
+- molecular_biology
+- translation
+notes_zh: '① EF-Tu·GTP·aa-tRNA 進 A 位，密碼子正確 → GTP 水解、EF-Tu·GDP 離開（EF-Ts 換 GTP）；② peptidyl transfer：A 位胺基攻擊 P 位酯鍵（23S rRNA）；③ EF-G·GTP 轉位：P→E、A→P、mRNA 前進 3 nt；④ E 位 tRNA 離開。每個胜肽鍵 2 GTP。真核 eEF1A、eEF1B、eEF2（白喉毒素
+  ADP-ribosylation）。
+
+  【補充】Each cycle: 2 GTP (EF-Tu, EF-G) per peptide bond, ~15–20 aa/s in E. coli. EF-Ts (eEF1B) exchanges GDP for GTP on EF-Tu (eEF1A). EF-G (eEF2) mimics the EF-Tu·tRNA shape. Peptidyl transfer needs no
+  protein or energy: the ester bond of peptidyl-tRNA pays for it (23S rRNA A2451 positions the substrates). The growing chain is handed from the P-site tRNA onto the A-site aminoacyl-tRNA (head growth).
+  Fidelity: kinetic proofreading after GTP hydrolysis (accommodation). Error ~1/10^4. Diphtheria toxin ADP-ribosylates eEF2 (diphthamide).'
+parts_png: false
+status: pending

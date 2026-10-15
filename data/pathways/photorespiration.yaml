@@ -1,0 +1,139 @@
+id: photorespiration
+title: Photorespiration
+layout: free
+cell_size: 4.4
+regions:
+- kind: box
+  x0: -0.75
+  y0: -0.7
+  x1: 2.4
+  y1: 3.55
+  label: Chloroplast
+- kind: box
+  x0: 2.65
+  y0: -0.7
+  x1: 4.9
+  y1: 3.55
+  label: Peroxisome
+- kind: box
+  x0: 5.1
+  y0: -0.7
+  x1: 7.45
+  y1: 3.55
+  label: Mitochondrion
+nodes:
+- id: rubp
+  ref: ribulose_15bp
+  pos:
+  - 0
+  - 0.3
+  view: name
+- id: pgly
+  ref: phosphoglycolate_2
+  pos:
+  - 1.75
+  - 0.3
+  view: name
+- id: glyc
+  text: Glycolate
+  pos:
+  - 1.75
+  - 1.3
+  kind: name
+- id: pg3
+  ref: pg_3
+  pos:
+  - 0
+  - 1.9
+  view: name
+- id: glyc2
+  text: Glycolate
+  pos:
+  - 3.7
+  - 0.3
+  kind: name
+- id: glyox
+  ref: glyoxylate
+  pos:
+  - 3.7
+  - 1.3
+  view: name
+- id: gly
+  ref: glycine
+  pos:
+  - 3.7
+  - 2.2
+  view: name
+- id: gly2
+  text: 2 Glycine
+  pos:
+  - 6.05
+  - 2.2
+  kind: name
+- id: ser
+  ref: serine
+  pos:
+  - 6.05
+  - 3.05
+  view: name
+- id: hp
+  text: 'Hydroxypyruvate
+
+    → glycerate'
+  pos:
+  - 3.7
+  - 3.05
+  kind: name
+- id: gla
+  text: Glycerate
+  pos:
+  - 1.75
+  - 3.05
+  kind: name
+edges:
+- from: rubp
+  to: pgly
+  step: rubisco_oxygenase
+  label: Rubisco + O_2
+  color: red
+- from: rubp
+  to: pg3
+  step: rubisco_oxygenase
+- from: pgly
+  to: glyc
+  side_text: P_i
+- from: glyc
+  to: glyc2
+- from: glyc2
+  to: glyox
+  label: 'Glycolate
+
+    oxidase'
+  side_text: O_2 → H_2O_2
+- from: glyox
+  to: gly
+  label: 'Trans-
+
+    amination'
+- from: gly
+  to: gly2
+- from: gly2
+  to: ser
+  label: 'Gly cleavage
+
+    + SHMT'
+  side_text: 'CO_2 + NH_3
+
+    lost'
+- from: ser
+  to: hp
+- from: hp
+  to: gla
+- from: gla
+  to: pg3
+  side_text: ATP
+tags:
+- carb_metabolism
+- calvin_cycle
+notes_zh: 光呼吸：Rubisco 把 O₂ 加到 RuBP，產生 2-phosphoglycolate；回收路徑跨三個胞器，最後 2 個 2-PG（4 C）只換回 1 個 3-PG（3 C），損失 1 個 CO₂ 與 NH₃，消耗 ATP。高溫、乾燥（氣孔關閉 → CO₂ 低）時更嚴重；C4 與 CAM 植物用 PEP carboxylase 先固定 CO₂ 來避免。
+status: pending

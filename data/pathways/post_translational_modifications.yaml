@@ -1,0 +1,181 @@
+id: post_translational_modifications
+title: Post-translational modifications
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 4.3
+    - 0.0
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Proteolysis
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 0.0
+    text: 'signal peptide removal; proinsulin → insulin (C-peptide); zymogens: trypsinogen → trypsin, fibrinogen → fibrin'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 1.6
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: N / C terminus
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 1.6
+    text: deformylation, Met removal; N-acetylation; N-myristoylation (Gly); C-terminal prenylation of CaaX (Ras)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 3.2
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Phosphorylation
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 3.2
+    text: Ser, Thr, Tyr (kinases / phosphatases); His, Asp in bacterial two-component systems
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 4.800000000000001
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Glycosylation
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 4.800000000000001
+    text: N-linked on Asn-X-Ser/Thr (ER, dolichol-PP) · O-linked on Ser / Thr (Golgi)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 6.4
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Hydroxylation
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 6.4
+    text: Pro, Lys in collagen (vitamin C); Pro of HIF-1α (O_2 sensor → VHL → proteasome)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 8.0
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Carboxylation
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 8.0
+    text: γ-carboxy-Glu in factors II, VII, IX, X, protein C (vitamin K; warfarin blocks)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 9.6
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Methyl / acetyl
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 9.6
+    text: Lys, Arg of histones; trimethyl-Lys in calmodulin, cytochrome c
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 11.2
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Disulfides, folding
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 11.2
+    text: Cys–Cys in the ER (PDI); Pro cis–trans (PPIase); chaperones Hsp70, chaperonin GroEL / TRiC
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 12.799999999999999
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Ub, SUMO, ADP-ribose
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 12.799999999999999
+    text: ubiquitin K48 → proteasome; SUMO → localisation; toxins ADP-ribosylate eEF2, Gs α, Gi α
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 14.399999999999999
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: pink
+    text: Other
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 14.399999999999999
+    text: iodination of Tyr (thyroglobulin → T_3, T_4); biotin / lipoate / heme attachment; protein splicing (inteins)
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: 切割（signal peptide、proinsulin、zymogen）、N/C 端修飾、磷酸化、醣基化（N：Asn-X-Ser/Thr 在 ER；O：Ser/Thr 在 Golgi）、羥化（collagen，維生素 C）、γ-羧化（凝血因子，維生素 K）、甲基化／乙醯化、雙硫鍵（PDI）、prenylation、泛素化、ADP-ribosylation、碘化。
+parts_png: false
+status: pending

@@ -1,0 +1,20 @@
+id: pnp_guanosine
+title: "Guanosine + Pᵢ → Guanine + Ribose 1-P (PNP)"
+substrates: [guanosine]
+products: [guanine]
+cofactors_in: [Pi]
+cofactors_out: [R1P]
+enzyme: "purine nucleoside\nphosphorylase (PNP)"
+reversible: true
+decorate:
+  Pi:
+    colors: {0: magenta}
+  R1P:
+    colors:
+      0:
+        c:
+        - [magenta, '{P}']
+card_zh:
+  type: "磷酸解"
+tags: [nucleotide, purine, degradation]
+status: pending

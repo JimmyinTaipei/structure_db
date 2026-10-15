@@ -1,0 +1,33 @@
+id: urea_cycle
+title: Urea cycle（尿素循環總圖，名稱版）
+layout: cycle
+cell: 0.8
+radius: 1.55
+start_angle: 180            # ornithine 在左，順時針：citrulline（上）→ ASA（右）→ arginine（下）
+center_text: "Urea\ncycle"
+nodes:
+  - {id: orn, ref: ornithine, view: name}
+  - {id: cit, ref: citrulline, view: name}
+  - {id: asa, ref: argininosuccinate, view: name}
+  - {id: arg, ref: arginine, view: name}
+  - {id: nh4, text: "NH_4^+ + HCO_3^-", kind: plain, pos: [-2.3, -2.6]}
+  - {id: cp,  ref: carbamoyl_phosphate, view: name, pos: [-1.6, -1.6]}
+  - {id: asp, ref: aspartate, view: name, pos: [1.9, -1.55]}
+  - {id: fum, ref: fumarate, view: name, pos: [2.0, 1.5]}
+  - {id: tca, text: "→ malate → OAA\n(TCA / back to Asp)", kind: concept, pos: [3.3, 2.3]}
+  - {id: urea, ref: urea, view: name, pos: [-1.9, 1.5]}
+  - {id: mito, text: "Mitochondrial matrix", kind: heading, pos: [-3.5, 0.25]}
+  - {id: cyto, text: "Cytosol", kind: heading, pos: [2.4, 0.25]}
+edges:
+  - {from: nh4, to: cp, step: cps1, label: "CPS I", side_text: "2 ATP → 2 ADP + P_i", bend: 0}
+  - {from: orn, to: cit, step: otc, label: "ornithine\ntranscarbamoylase", side_text: "P_i"}
+  - {from: cp, to: "edge:orn->cit", bend: 0}
+  - {from: cit, to: asa, step: argininosuccinate_synthetase, label: "argininosuccinate\nsynthetase", side_text: "ATP → AMP + PP_i"}
+  - {from: asp, to: "edge:cit->asa", bend: 0}
+  - {from: asa, to: arg, step: argininosuccinate_lyase, label: "argininosuccinate\nlyase"}
+  - {from: "edge:asa->arg", to: fum, bend: 0}
+  - {from: fum, to: tca, bend: 0}
+  - {from: arg, to: orn, step: arginase, label: arginase, side_text: "H_2O"}
+  - {from: "edge:arg->orn", to: urea, bend: 0}
+tags: [urea, amino_acid_metabolism]
+status: pending

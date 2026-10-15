@@ -1,0 +1,68 @@
+id: dermatan_sulfate_unit
+name: Dermatan sulfate (repeating unit)
+label: Dermatan sulfate
+aliases:
+- dermatan sulfate
+- chondroitin sulfate B
+- 皮膚素硫酸
+smiles: CC(=O)N[C@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@H]2C(=O)[O-])O[C@H](CO)[C@H](OS(=O)(=O)[O-])[C@@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: NHAc
+      3:
+        up: OH
+        down: H
+      4:
+        up:
+        - ^-O_3SO
+        - 4
+        down: H
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: OH
+      3:
+        up: H
+        down: OH
+        down_len: 0.4
+      4:
+        up: link
+        down: H
+      5:
+        up: COO^-
+        down: H
+        up_len: 0.6
+        up_dx: 0.35
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: 重複雙醣：[–4)L-IdoA(α1→3)GalNAc-4-sulfate(β1–]ₙ，圖為 GalNAc4S(β1→4)IdoA。與 chondroitin 4-sulfate 只差在 GlcA 的 C5 被翻成 L-iduronate（C5 epimerase；COO⁻ 改朝下）。皮膚、血管、心瓣膜。Hurler／Hunter 症候群會累積 dermatan sulfate 與
+  heparan sulfate。
+status: pending

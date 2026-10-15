@@ -1,0 +1,12 @@
+id: bpg_13
+name: 1,3-Bisphosphoglycerate
+label: "1,3-Bisphospho-\nglycerate"
+aliases: [1,3-BPG, 1,3-二磷酸甘油酸]
+smiles: "O=C(OP(=O)([O-])[O-])[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: "O{P}"}}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, glycolysis]
+notes_zh: 含高能醯基磷酸（acyl phosphate）；紅血球中可由 BPG mutase 轉成 2,3-BPG。
+status: pending

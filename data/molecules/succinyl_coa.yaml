@@ -1,0 +1,12 @@
+id: succinyl_coa
+name: Succinyl-CoA
+aliases: [琥珀醯輔酶A]
+smiles: "[O-]C(=O)CCC(=O)S[1*]"
+chain:
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: C, l: O, lb: 2, r: S-CoA}
+tags: [amino_acid_metabolism, TCA, heme]
+notes_zh: 高能硫酯；與 glycine 合成 heme（ALA synthase）；odd-chain 脂肪酸與 Val/Ile/Met/Thr 經 propionyl-CoA → methylmalonyl-CoA（B12）→ succinyl-CoA。
+status: approved

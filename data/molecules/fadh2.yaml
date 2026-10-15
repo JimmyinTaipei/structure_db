@@ -1,0 +1,18 @@
+id: fadh2
+name: FADH2
+label: FADH_2
+aliases:
+- reduced FAD
+- 還原態FAD
+smiles: Cc1cc2Nc3c(=O)[nH]c(=O)[nH]c3N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6cnc7c(N)ncnc76)[C@H](O)[C@@H]5O)c2cc1C
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[#7:1]1~[#6:2]2~[#6:3](~[#6]~[#6]~[#6]~[#6]~2)~[#7:4]~[#6:5]~[#6:6]~1~[#7:7]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 還原態：N1、N5 各接一個 H（洋紅），中央環不再共軛 → 失去黃色。電子經 Q 進入 ETC，每對電子約 1.5 ATP（NADH 約 2.5）。
+status: pending

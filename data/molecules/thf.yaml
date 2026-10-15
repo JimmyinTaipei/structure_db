@@ -1,0 +1,21 @@
+id: thf
+name: Tetrahydrofolate
+label: Tetrahydrofolate (THF)
+aliases:
+- THF
+- H4folate
+- 四氫葉酸
+smiles: Nc1nc2NC[C@H](CNc8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])Nc2c(=O)[nH]1
+ring:
+  rotate: 0
+formula: THF
+decorate:
+  highlight:
+  - smarts: '[NH;R:1][CH;R]C[NH:2]c'
+    color: magenta
+tags:
+- vitamin
+- nucleotide
+- coenzyme
+notes_zh: 一碳單位載體（folate → DHF → THF，皆由 DHFR 還原）。洋紅：N⁵、N¹⁰，一碳單位（甲基、亞甲基、甲醯基…）接在這裡。天然為 (6S)。
+status: pending

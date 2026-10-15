@@ -1,0 +1,64 @@
+id: chondroitin_4_sulfate_unit
+name: Chondroitin 4-sulfate (repeating unit)
+label: Chondroitin 4-sulfate
+aliases:
+- chondroitin sulfate
+- 軟骨素硫酸
+smiles: CC(=O)N[C@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2C(=O)[O-])O[C@H](CO)[C@H](OS(=O)(=O)[O-])[C@@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: NHAc
+      3:
+        up: OH
+        down: H
+      4:
+        up:
+        - ^-O_3SO
+        - 4
+        down: H
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: OH
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: COO^-
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: 重複雙醣：[–4)GlcA(β1→3)GalNAc-4-sulfate(β1–]ₙ，圖為 GalNAc4S(β1→4)GlcA。軟骨中最多的 GAG（aggrecan），抗壓。GalNAc 的 C4–O 朝上（galacto），硫酸接在這裡。
+status: pending

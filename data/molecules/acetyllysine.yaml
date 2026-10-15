@@ -1,0 +1,32 @@
+id: acetyllysine
+name: N^ε-Acetyllysine
+label: N^ε-Acetyllysine
+aliases:
+- acetyl-Lys
+- Kac
+- 乙醯離胺酸
+smiles: CC(=O)NCCCC[C@H]([NH3+])C(=O)[O-]
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: CH_2
+- c: CH_2
+- c: CH_2
+- c: NH
+- c: C
+  r: O
+  rb: 2
+- c: CH_3
+decorate:
+  colors:
+    7: magenta
+    8: magenta
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: 組蛋白 Lys 的 ε-NH₃⁺ 被 HAT（histone acetyltransferase）乙醯化 → 失去正電、與 DNA 磷酸的吸引減弱 → 染色質變鬆、基因表現（gene on）。HDAC 移除。
+status: pending

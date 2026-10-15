@@ -1,0 +1,30 @@
+id: dopa_decarboxylase
+title: L-DOPA → Dopamine (aromatic L-amino acid decarboxylase)
+substrates:
+- l_dopa
+products:
+- dopamine
+- id: co2
+  view: formula
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: 'DOPA decarboxylase
+
+  (AADC)'
+reversible: false
+decorate:
+  l_dopa:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+card_zh:
+  type: 脫羧（PLP）
+  exam_points:
+  - 同一個酵素也把 5-HTP 變成 serotonin
+  - carbidopa 抑制周邊 AADC（不過 BBB）
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

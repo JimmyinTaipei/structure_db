@@ -1,0 +1,34 @@
+id: ketosphinganine_reductase
+title: 3-Ketosphinganine → Sphinganine (3-ketosphinganine reductase)
+substrates:
+- ketosphinganine
+products:
+- sphinganine
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: '3-ketosphinganine
+
+  reductase'
+reversible: false
+decorate:
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  sphinganine:
+    highlight:
+    - smarts: '[CH1][OH:1]'
+      color: magenta
+card_zh:
+  location: ER
+  type: 還原（NADPH）
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

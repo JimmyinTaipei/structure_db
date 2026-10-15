@@ -1,0 +1,14 @@
+id: corticosterone
+name: Corticosterone
+aliases:
+- 皮質酮
+smiles: C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2C(=O)CO
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: 球狀帶由 aldosterone synthase（CYP11B2）再經 18-hydroxylation、18-oxidation → aldosterone。
+status: pending

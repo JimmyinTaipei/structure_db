@@ -1,0 +1,28 @@
+id: aconitase_1
+title: "TCA ②a Citrate ⇌ cis-Aconitate"
+step: 2
+substrates: [{id: citrate, chain: explicit}]
+products: [cis_aconitate]
+cofactors_out: [H2O]
+enzyme: "aconitase"
+cofactors_inline: true          # 輔因子直接寫進方程式（Mathews）
+reversible: true
+decorate:                         # 原子追蹤：脫掉的 HO 與相鄰的 H → H₂O（洋紅）
+  citrate: {colors: {2: {l: magenta}, 3: {r: magenta}}}
+  H2O: {colors: {0: magenta}}
+variants:
+  isotope:
+    decorate:
+      citrate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      cis_aconitate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+card_zh:
+  location: 粒線體基質
+  type: 脫水 → 再水合（OH 從 C3 移到 C2，生成異構物）
+  deltaG: "整體 ΔG'° = +13.3 kJ/mol；isocitrate 被快速消耗而往右進行"
+  cofactors: "[4Fe-4S] 鐵硫中心"
+  mechanism: "cis-aconitate 是不離開酵素的中間物；aconitase 能分辨 citrate 兩個相同的 CH₂COO⁻ 臂（prochiral，三點附著）"
+  regulation: "細胞質型 aconitase 即 IRP1（鐵調控蛋白）"
+  exam_points:
+    - "Fluorocitrate 抑制 aconitase"
+tags: [TCA]
+status: pending

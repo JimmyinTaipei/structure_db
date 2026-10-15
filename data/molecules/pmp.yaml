@@ -1,0 +1,20 @@
+id: pmp
+name: Pyridoxamine phosphate (PMP)
+label: 'Pyridoxamine
+
+  phosphate (PMP)'
+aliases:
+- PMP
+- pyridoxamine 5'-phosphate
+smiles: Cc1ncc(COP(=O)([O-])[O-])c(C[NH3+])c1O
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[CH2:1][NH3+:2]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 轉胺反應的中間型：PLP 從胺基酸拿走 –NH₂ 變成 PMP（胺基酸 → α-酮酸），再把 –NH₂ 交給另一個 α-酮酸而回到 PLP（乒乓機制）。
+status: pending

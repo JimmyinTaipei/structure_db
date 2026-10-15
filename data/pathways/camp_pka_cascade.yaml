@@ -1,0 +1,428 @@
+id: camp_pka_cascade
+title: Epinephrine → cAMP → PKA cascade (amplification)
+layout: free
+cell_size: 4.4
+nodes:
+- id: epi
+  text: Epinephrine / glucagon
+  pos:
+  - 0
+  - 0
+  kind: name
+- id: rec
+  text: β-Adrenergic receptor (GPCR)
+  pos:
+  - 0
+  - 0.9
+  kind: protein
+- id: gs
+  text: G_sα–GTP
+  pos:
+  - 0
+  - 1.8
+  kind: protein
+- id: ac
+  text: Adenylyl cyclase
+  pos:
+  - 0
+  - 2.7
+  kind: protein
+- id: camp
+  ref: camp
+  pos:
+  - 0
+  - 3.6
+  view: name
+- id: pka
+  text: 'PKA: R_2C_2 + 4 cAMP
+
+    → 2 C (active)'
+  pos:
+  - 0
+  - 4.6
+  kind: protein
+- id: phk
+  text: Phosphorylase kinase
+  pos:
+  - -1.8
+  - 5.7
+  kind: protein
+- id: gp
+  text: 'Glycogen phosphorylase
+
+    b → a'
+  pos:
+  - -1.8
+  - 6.7
+  kind: protein
+- id: glc
+  text: 'Glycogen → G1P
+
+    (10^4–10^6 ×)'
+  pos:
+  - -1.8
+  - 7.7
+  kind: name
+- id: creb
+  text: 'CREB-P + CBP/p300
+
+    → gene expression
+
+    (e.g. PEPCK)'
+  pos:
+  - 1.8
+  - 5.8
+  kind: name
+- id: amp
+  ref: amp
+  pos:
+  - 2.6
+  - 3.6
+  view: name
+- id: gs2
+  text: Glycogen synthase → inactive
+  pos:
+  - 1.8
+  - 7.0
+  kind: name
+edges:
+- from: epi
+  to: rec
+- from: rec
+  to: gs
+  label: GDP → GTP
+- from: gs
+  to: ac
+- from: ac
+  to: camp
+  step: adenylyl_cyclase
+  label: ATP → PP_i
+- from: camp
+  to: pka
+- from: pka
+  to: phk
+- from: phk
+  to: gp
+- from: gp
+  to: glc
+- from: pka
+  to: creb
+  label: nucleus
+- from: pka
+  to: gs2
+- from: camp
+  to: amp
+  step: camp_phosphodiesterase
+  label: 'PDE
+
+    (+ H_2O)'
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.2
+        - 0.8
+        text: Outside
+        align: left
+        size: 0.9
+        color: gray
+      - g: text
+        at:
+        - -1.2
+        - 7.9
+        text: Cytosol
+        align: left
+        size: 0.9
+        color: gray
+      - g: membrane
+        y: 5
+        x0: -1.2
+        x1: 31
+      - id: epi
+        g: ligand
+        at:
+        - 5
+        - 1.4
+        shape: triangle
+        hue: red
+        label: Epinephrine
+        label_at:
+        - 8.6
+        - 0.6
+      - id: gpcr
+        g: gpcr
+        at:
+        - 5
+        - 5
+        hue: purple
+        label: 'β-adrenergic receptor
+
+          (GPCR, GEF)'
+        label_at:
+        - 3.4
+        - 10.4
+        point:
+        - 5.6
+        - 7.3
+      - id: gs
+        g: gprotein
+        at:
+        - 11.2
+        - 7.25
+        nucleotide: GTP
+        accent: true
+        label: 'G_s: α–GTP'
+        label_at:
+        - 10.8
+        - 10.4
+        point:
+        - 10.4
+        - 8.4
+      - id: ac
+        g: blob
+        at:
+        - 17.5
+        - 5
+        w: 2.4
+        h: 3.4
+        shape: box
+        hue: teal
+      - id: ac_cat
+        g: blob
+        at:
+        - 17.5
+        - 7.9
+        w: 2.6
+        h: 1.5
+        shape: kidney
+        hue: teal
+        accent: true
+        label: Adenylyl cyclase
+        label_at:
+        - 21.6
+        - 1.4
+        point:
+        - 18.2
+        - 3.6
+      - g: arrow
+        from:
+        - 12.6
+        - 6.6
+        to:
+        - 16.0
+        - 7.4
+        color: green
+        curve: -0.15
+      - g: ion
+        at:
+        - 15.6
+        - 10.6
+        text: ATP
+        hue: gray
+        r: 0.55
+        text_size: 0.5
+      - g: arrow
+        from:
+        - 16.3
+        - 10.6
+        to:
+        - 18.6
+        - 10.6
+      - id: camp
+        g: ion
+        at:
+        - 19.3
+        - 10.6
+        text: cAMP
+        hue: yellow
+        r: 0.62
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 20.0
+        - 10.6
+        to:
+        - 23.2
+        - 10.6
+        color: gray
+      - g: text
+        at:
+        - 21.6
+        - 9.9
+        text: PDE
+        size: 0.75
+        color: cyan
+      - g: ion
+        at:
+        - 23.9
+        - 10.6
+        text: AMP
+        hue: gray
+        r: 0.55
+        text_size: 0.45
+      - g: blob
+        at:
+        - 3.0
+        - 13.2
+        w: 1.6
+        h: 1.0
+        hue: green
+      - g: blob
+        at:
+        - 3.0
+        - 14.3
+        w: 1.6
+        h: 1.0
+        hue: green
+      - g: blob
+        at:
+        - 4.9
+        - 13.2
+        w: 2.0
+        h: 1.0
+        shape: box
+        hue: gray
+        text: R
+        text_size: 0.6
+      - g: blob
+        at:
+        - 4.9
+        - 14.3
+        w: 2.0
+        h: 1.0
+        shape: box
+        hue: gray
+        text: R
+        text_size: 0.6
+      - g: text
+        at:
+        - 4.0
+        - 16.0
+        text: 'PKA (R_2C_2): inactive'
+        size: 0.8
+      - g: arrow
+        from:
+        - 18.8
+        - 11.3
+        to:
+        - 9.6
+        - 13.0
+        curve: -0.12
+        color: black
+      - g: text
+        at:
+        - 13.6
+        - 11.9
+        text: 4 cAMP
+        size: 0.8
+      - g: blob
+        at:
+        - 12.5
+        - 13.6
+        w: 2.0
+        h: 1.0
+        shape: box
+        hue: gray
+        text: R
+        text_size: 0.6
+      - g: blob
+        at:
+        - 12.5
+        - 14.7
+        w: 2.0
+        h: 1.0
+        shape: box
+        hue: gray
+        text: R
+        text_size: 0.6
+      - g: ion
+        at:
+        - 13.8
+        - 13.35
+        r: 0.27
+        hue: yellow
+      - g: ion
+        at:
+        - 13.8
+        - 13.85
+        r: 0.27
+        hue: yellow
+      - g: ion
+        at:
+        - 13.8
+        - 14.45
+        r: 0.27
+        hue: yellow
+      - g: ion
+        at:
+        - 13.8
+        - 14.95
+        r: 0.27
+        hue: yellow
+      - g: arrow
+        from:
+        - 7.0
+        - 13.8
+        to:
+        - 10.6
+        - 13.8
+        style: fat
+      - id: c1
+        g: blob
+        at:
+        - 17.4
+        - 13.3
+        w: 1.6
+        h: 1.0
+        hue: green
+        accent: true
+        text: C
+        text_size: 0.6
+      - id: c2
+        g: blob
+        at:
+        - 17.4
+        - 14.8
+        w: 1.6
+        h: 1.0
+        hue: green
+        accent: true
+        text: C
+        text_size: 0.6
+      - g: text
+        at:
+        - 17.4
+        - 16.3
+        text: '2 C: active'
+        size: 0.8
+        color: green
+      - g: arrow
+        from:
+        - 18.6
+        - 14.0
+        to:
+        - 22.4
+        - 14.0
+      - g: text
+        at:
+        - 22.8
+        - 14.0
+        text: 'Ser/Thr-Ⓟ:
+
+          phosphorylase kinase ↑
+
+          glycogen synthase ↓
+
+          CREB → transcription'
+        align: left
+        size: 0.8
+tags:
+- signal_transduction
+- gpcr
+- second_messenger
+notes_zh: 每一層都是酵素 → 訊號放大（enzyme cascade）：一個 epinephrine 可使數百萬個 glucose 釋出。PKA = R₂C₂；每個 R 結合 2 個 cAMP（共 4 個）→ 釋出 2 個 C；AKAP 把 PKA 錨定在特定位置（localized response）。PKA 兩條路：① 直接磷酸化代謝酵素（phosphorylase kinase、glycogen
+  synthase、PFK-2/FBPase-2、HSL、ACC）② 入核磷酸化 CREB，結合 CBP/p300 → 轉錄。終止：Gα 水解 GTP、PDE 分解 cAMP、phosphatase、受體被 GRK 磷酸化後由 β-arrestin 去敏感化。
+status: pending

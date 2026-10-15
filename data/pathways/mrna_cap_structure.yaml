@@ -1,0 +1,26 @@
+id: mrna_cap_structure
+title: Structure of the 5′ cap
+layout: free
+cell_size: 18.0
+nodes:
+- id: cap
+  ref: mrna_cap
+  pos:
+  - 0
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[CH3][n+]'
+      color: magenta
+    - smarts: COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])OC
+      color: cyan
+    - smarts: '[CH3]O[CH1]'
+      color: orange
+edges: []
+text: false
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 洋紅：m⁷G 的 N7-甲基（帶正電）；青：5′–5′ 三磷酸鍵；橘：第一個核苷酸的 2′-O-甲基（cap 1）。
+parts_png: false
+status: pending

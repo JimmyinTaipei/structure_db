@@ -1,0 +1,318 @@
+id: chaperonin_groel_cycle
+title: GroEL / GroES chaperonin cycle
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 1.0
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 5.0
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 1.0
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 5.0
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: strand
+    kind: rna
+    width: 0.16
+    points:
+    - - 2.0
+      - 1.0
+    - - 2.4
+      - 0.5
+    - - 2.8
+      - 1.3
+    - - 3.2
+      - 0.5
+    - - 3.6
+      - 1.3
+    - - 4.0
+      - 0.8
+  - g: arrow
+    from:
+    - 3.0
+    - 1.6
+    to:
+    - 3.0
+    - 3.0
+    color: black
+    curve: 0
+  - g: text
+    at:
+    - 3.0
+    - 9.4
+    text: '1. hydrophobic rim
+
+      binds unfolded protein'
+    size: 0.6
+    align: center
+  - g: arrow
+    from:
+    - 6.6
+    - 5.4
+    to:
+    - 8.6
+    - 5.4
+    style: fat
+  - g: blob
+    at:
+    - 9.8
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: true
+  - g: blob
+    at:
+    - 15.0
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: true
+  - g: blob
+    at:
+    - 10.4
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 14.4
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 12.4
+    - 2.2
+    w: 5.0
+    h: 1.1
+    shape: oval
+    hue: yellow
+    text: GroES
+    text_size: 0.45
+  - g: strand
+    kind: rna
+    width: 0.16
+    points:
+    - - 11.4
+      - 4.0
+    - - 11.8
+      - 3.5
+    - - 12.200000000000001
+      - 4.3
+    - - 12.6
+      - 3.5
+    - - 13.0
+      - 4.3
+    - - 13.4
+      - 3.8
+  - g: ion
+    at:
+    - 15.8
+    - 2.2
+    r: 0.6
+    hue: pink
+    text: 7 ATP
+    text_size: 0.32
+  - g: text
+    at:
+    - 12.4
+    - 9.4
+    text: '2. 7 ATP + GroES lid:
+
+      hydrophilic cavity'
+    size: 0.6
+    align: center
+  - g: arrow
+    from:
+    - 16.8
+    - 5.4
+    to:
+    - 18.8
+    - 5.4
+    style: fat
+  - g: blob
+    at:
+    - 20.0
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: true
+  - g: blob
+    at:
+    - 25.200000000000003
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: true
+  - g: blob
+    at:
+    - 20.6
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 24.6
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 22.6
+    - 2.2
+    w: 5.0
+    h: 1.1
+    shape: oval
+    hue: yellow
+    text: GroES
+    text_size: 0.45
+  - g: blob
+    at:
+    - 22.6
+    - 4.0
+    w: 1.6
+    h: 1.4
+    shape: oval
+    hue: red
+  - g: ion
+    at:
+    - 26.0
+    - 2.2
+    r: 0.55
+    hue: gray
+    text: ADP
+    text_size: 0.34
+  - g: text
+    at:
+    - 22.6
+    - 9.4
+    text: '3. folds inside (~10 s);
+
+      ATP hydrolysed'
+    size: 0.6
+    align: center
+  - g: arrow
+    from:
+    - 27.0
+    - 5.4
+    to:
+    - 29.0
+    - 5.4
+    style: fat
+  - g: blob
+    at:
+    - 30.4
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 34.4
+    - 4.0
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 30.4
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 34.4
+    - 6.8
+    w: 1.1
+    h: 2.6
+    shape: box
+    hue: green
+    accent: false
+  - g: blob
+    at:
+    - 32.4
+    - 0.6
+    w: 1.6
+    h: 1.4
+    shape: oval
+    hue: red
+  - g: arrow
+    from:
+    - 32.4
+    - 3.0
+    to:
+    - 32.4
+    - 1.6
+    color: black
+    curve: 0
+  - g: text
+    at:
+    - 32.4
+    - 9.4
+    text: '4. ATP on trans ring:
+
+      GroES and protein leave'
+    size: 0.6
+    align: center
+tags:
+- protein
+- protein_structure
+notes_zh: GroEL（Hsp60）為兩個七聚體環背對背疊成的圓柱；GroES（Hsp10）為七聚體蓋子。① 未摺疊蛋白暴露的疏水區結合在開放環（cis）頂端的疏水內壁；② 7 ATP 與 GroES 結合 → 構形大幅改變，腔室變大、內壁變親水 → 蛋白質被推入孤立空間自行摺疊（約 10 秒）；③ ATP 水解；④ 另一端（trans）環結合 ATP 與新受質 → GroES 與摺好的蛋白質離開。尚未摺好可再進一次循環。真核胞質對應
+  TRiC（CCT），粒線體為 Hsp60/Hsp10。Hsp70（DnaK）則在轉譯中結合新生鏈的疏水片段。
+parts_png: false
+status: pending

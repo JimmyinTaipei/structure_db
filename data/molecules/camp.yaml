@@ -1,0 +1,15 @@
+id: camp
+name: cAMP
+label: cAMP (3',5'-cyclic AMP)
+aliases:
+- cyclic AMP
+- 環腺苷酸
+smiles: Nc1ncnc2c1ncn2[C@@H]1O[C@@H]2COP(=O)([O-])O[C@H]2[C@H]1O
+ring:
+  coordgen: true
+tags:
+- signal_transduction
+- second_messenger
+- nucleotide
+notes_zh: 第二傳訊者。Adenylyl cyclase 由 ATP 生成（3′-OH 攻擊 α-P，放出 PPi），phosphodiesterase 水解 3′ 酯鍵 → 5′-AMP。4 cAMP 結合 PKA 的兩個 R 次單元 → 釋出 2 個活性 C 次單元。Caffeine、theophylline 抑制 PDE → cAMP 上升。
+status: pending

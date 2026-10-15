@@ -1,0 +1,8 @@
+id: phosphatidylglycerol
+name: "Phosphatidylglycerol"
+aliases: [PG]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])OCC(O)CO"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "glycerol"}
+tags: [lipid, phospholipid]
+notes_zh: "PG：肺表面活性劑成分；cardiolipin（粒線體內膜）的前驅物。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

@@ -1,0 +1,16 @@
+id: sulfatide
+name: Sulfatide
+aliases:
+- galactocerebroside 3-sulfate
+- sulfogalactosylceramide
+smiles: C(OC1OC(CO)C(O)C(OS(=O)(=O)[O-])C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+lipid:
+  type: sphingolipid
+  chains:
+  - n: 18
+  head: sulfogalactose
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: galactocerebroside 的 Gal C3 接硫酸（PAPS 提供）。髓鞘成分。metachromatic leukodystrophy：arylsulfatase A 缺乏 → 中樞與周邊脫髓鞘。
+status: pending

@@ -1,0 +1,22 @@
+id: ctp_synthetase
+title: "UTP + Gln → CTP (CTP synthetase)"
+substrates: [utp]
+products: [ctp]
+cofactors_in: [glutamine, ATP, H2O]
+cofactors_out: [glutamate, ADP, Pi]
+extra_out: [H+, H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "CTP synthetase"
+reversible: false
+decorate:
+  glutamine:
+    colors: {0: magenta}
+  ctp:
+    base_colors: {5: magenta}
+card_zh:
+  location: 細胞質
+  type: "胺化（C4=O → C4–NH₂），作用在三磷酸層級"
+  regulation: "CTP 回饋抑制"
+  exam_points:
+    - "胞嘧啶核苷酸只能由 UTP 胺化而來（不是 UMP）"
+tags: [nucleotide, pyrimidine]
+status: pending

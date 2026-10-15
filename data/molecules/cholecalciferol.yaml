@@ -1,0 +1,15 @@
+id: cholecalciferol
+name: Cholecalciferol (vitamin D3)
+label: Cholecalciferol (D_3)
+aliases:
+- vitamin D3
+- 維生素D3
+- 膽鈣化醇
+smiles: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](CCC3=C)O)C
+ring:
+  methyls: false
+tags:
+- vitamin
+- fat_soluble
+notes_zh: secosteroid（B 環已斷開）。皮膚由 7-DHC 經 UVB 生成，或由食物（D₃ 動物、D₂ ergocalciferol 植物／菇類）取得。本身沒有活性：肝 25-hydroxylase → 25-OH-D₃ → 腎 1α-hydroxylase → calcitriol。
+status: pending

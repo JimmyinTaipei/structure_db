@@ -1,0 +1,48 @@
+id: vitamin_d_activation
+title: Vitamin D activation（維生素 D 的活化）
+layout: free
+cell: 1.0
+nodes:
+- id: dhc
+  ref: dehydrocholesterol
+  pos:
+  - 0
+  - 0
+- id: d3
+  ref: cholecalciferol
+  pos:
+  - 1.45
+  - 0
+- id: c25
+  ref: calcidiol
+  pos:
+  - 1.45
+  - 1.15
+- id: c1
+  ref: calcitriol
+  pos:
+  - 0
+  - 1.15
+edges:
+- from: dhc
+  to: d3
+  step: vitamin_d_photolysis
+  label: UVB (skin)
+- from: d3
+  to: c25
+  step: vitamin_d_25_hydroxylase
+  label: '25-hydroxylase
+
+    (liver)'
+  label_side: right
+- from: c25
+  to: c1
+  step: vitamin_d_1a_hydroxylase
+  label: '1α-hydroxylase
+
+    (kidney)'
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 皮膚（UVB）→ 肝（25-OH）→ 腎（1α-OH）。慢性腎病缺 1α-hydroxylase → 需直接給 calcitriol；肝病影響較小。
+status: pending

@@ -1,0 +1,9 @@
+id: linoleate
+name: "Linoleate"
+label: "Linoleate\n18:2(Δ9,12)"
+aliases: [linoleic acid, LA, 亞麻油酸]
+smiles: "[O-]C(=O)CCCCCCC/C=C\\C/C=C\\CCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 18, cis: [9, 12], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "18:2(Δ9,12)；ω-6。必需脂肪酸（ω-6）：人體缺 Δ12、Δ15 desaturase，不能在 C9 之後（往甲基端）加雙鍵。arachidonate 的前驅物。"
+status: pending

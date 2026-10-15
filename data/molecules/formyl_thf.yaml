@@ -1,0 +1,21 @@
+id: formyl_thf
+name: N10-Formyl-THF
+label: N^{10}-Formyl-THF
+aliases:
+- 10-formyltetrahydrofolate
+- CHO-THF
+smiles: Nc1nc2NC[C@H](CN(C=O)c8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])Nc2c(=O)[nH]1
+ring:
+  coordgen: false
+decorate:
+  highlight:
+  - smarts: '[N:1][CH:2]=[O:3]'
+    color: magenta
+tags:
+- amino_acid_metabolism
+- one_carbon
+- vitamin
+- coenzyme
+notes_zh: 最氧化的一碳單位（甲酸層級）。提供嘌呤環的 C2 與 C8；細菌起始 tRNA 的 fMet 也由它甲醯化。
+parts_png: false
+status: pending

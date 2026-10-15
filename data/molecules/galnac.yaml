@@ -1,0 +1,20 @@
+id: galnac
+name: N-Acetylgalactosamine
+label: GalNAc
+aliases:
+- GalNAc
+- β-GalNAc
+smiles: OC1OC(CO)C(O)C(O)C1NC(C)=O
+free:
+  atoms:
+    s:
+    - '@galnac'
+    - 0
+    - 0
+  bonds: []
+  schematic: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: hexosaminidase 從 GM2 切下的末端糖。（SNFG 示意圖：藍圓 Glc、黃圓 Gal、黃方 GalNAc、紫菱 NeuAc）
+status: pending

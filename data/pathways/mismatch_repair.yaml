@@ -1,0 +1,350 @@
+id: mismatch_repair
+title: Mismatch repair (E. coli)
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - -1.6
+    - 2.0
+    text: '1.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.5
+    - - 18
+      - 1.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 2.5
+    - - 18
+      - 2.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: methyl
+    at:
+    - 3.0
+    - 1.5
+    side: up
+  - g: text
+    at:
+    - 3.0
+    - -0.25
+    text: GATC (hemimethylated)
+    size: 0.72
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 12.0
+    - 0.95
+    text: G
+    size: 0.8
+    align: center
+  - g: text
+    at:
+    - 12.0
+    - 3.3
+    text: T
+    size: 0.8
+    align: center
+    color: red
+  - id: muts
+    g: blob
+    at:
+    - 12.0
+    - 2.0
+    w: 1.6
+    h: 1.0
+    shape: kidney
+    hue: blue
+    label: 'MutS: finds the mismatch'
+    label_align: left
+    label_at:
+    - 19.4
+    - 0.30000000000000004
+  - id: mutl
+    g: blob
+    at:
+    - 7.5
+    - 2.0
+    w: 2.2
+    h: 1.0
+    shape: box
+    hue: teal
+    label: 'MutL: links MutS–MutH'
+    label_align: left
+    label_at:
+    - 19.4
+    - 2.0
+    point:
+    - 8.6
+    - 2.0
+  - id: muth
+    g: blob
+    at:
+    - 3.0
+    - 2.0
+    w: 1.4
+    h: 1.2
+    shape: round
+    hue: orange
+    label: 'MutH nicks the
+
+      unmethylated (new) strand'
+    label_align: left
+    label_at:
+    - 19.4
+    - 4.0
+    point:
+    - 3.6
+    - 2.5
+  - g: mark
+    kind: cut
+    at:
+    - 3.7
+    - 2.5
+    side: down
+  - g: arrow
+    from:
+    - 16.5
+    - 4.1
+    to:
+    - 16.5
+    - 5.1
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 6.5
+    text: '2.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 6.0
+    - - 18
+      - 6.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 7.0
+    - - 3.7
+      - 7.0
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: new
+    points:
+    - - 13.2
+      - 7.0
+    - - 18
+      - 7.0
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: mark
+    kind: methyl
+    at:
+    - 3.0
+    - 6.0
+    side: up
+  - g: strand
+    kind: gray
+    points:
+    - - 4.4
+      - 8.2
+    - - 12.6
+      - 8.2
+    width: 0.22
+  - g: text
+    at:
+    - 8.5
+    - 9.0
+    text: UvrD + exonuclease
+    size: 0.75
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 16.5
+    - 9.5
+    to:
+    - 16.5
+    - 9.6
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 11.0
+    text: '3.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 10.5
+    - - 18
+      - 10.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 11.5
+    - - 18
+      - 11.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#2E9E4F'
+    points:
+    - - 3.7
+      - 11.5
+    - - 13.2
+      - 11.5
+    width: 0.3
+  - g: mark
+    kind: methyl
+    at:
+    - 3.0
+    - 10.5
+    side: up
+  - g: text
+    at:
+    - 12.0
+    - 12.1
+    text: C
+    size: 0.8
+    align: center
+    color: '#2E9E4F'
+  - id: pol3
+    g: blob
+    at:
+    - 13.4
+    - 11.0
+    w: 1.8
+    h: 1.4
+    shape: hand
+    hue: blue
+    label: Pol III + ligase
+    label_align: left
+    label_at:
+    - 19.4
+    - 11.0
+  - g: arrow
+    from:
+    - 16.5
+    - 12.5
+    to:
+    - 16.5
+    - 13.6
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 15.0
+    text: '4.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 14.5
+    - - 18
+      - 14.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 15.5
+    - - 18
+      - 15.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: methyl
+    at:
+    - 3.0
+    - 14.5
+    side: up
+  - g: mark
+    kind: methyl
+    at:
+    - 3.0
+    - 15.5
+    side: down
+  - g: text
+    at:
+    - 12.0
+    - 13.95
+    text: G
+    size: 0.8
+    align: center
+  - g: text
+    at:
+    - 12.0
+    - 16.1
+    text: C
+    size: 0.8
+    align: center
+    color: '#2E9E4F'
+  - g: text
+    at:
+    - 19.4
+    - 15.0
+    text: Dam methylates new GATC
+    size: 0.8
+    align: left
+tags:
+- molecular_biology
+- repair
+notes_zh: '複製錯誤（錯配、小插入／缺失）。E. coli 以 Dam 甲基化區分新舊股：新合成股的 GATC 暫時未甲基化（半甲基化）。MutS 認錯配 → MutL 連接 → MutH 切開最近的半甲基化 GATC 的未甲基化（新）股 → UvrD + 外切酶從切口移除到錯配之後 → Pol III 補、ligase 封口 → Dam 甲基化新股。真核：MSH2–MSH6、MLH1–PMS2，以切口辨識新股；缺陷
+  → Lynch syndrome（HNPCC，微衛星不穩定）。
+
+  【補充】Eukaryotes: MSH2–MSH6 (MutSα) / MSH2–MSH3, MLH1–PMS2 (MutLα, endonuclease); strand signal = nicks / Okazaki ends (no MutH). Defect → Lynch syndrome (HNPCC): microsatellite instability, colorectal
+  / endometrial cancer.'
+parts_png: false
+status: pending

@@ -1,0 +1,21 @@
+id: cellulose
+name: "Cellulose"
+aliases: [纖維素]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O"
+free:
+  schematic: true
+  atoms:
+    m0: ["@glc", 0.0, 0]
+    m1: ["@glc", 0.62, 0]
+    m2: ["@glc", 1.24, 0]
+    m3: ["@glc", 1.86, 0]
+    m4: ["@glc", 2.48, 0]
+    m5: ["@glc", 3.1, 0]
+    m6: ["@glc", 3.72, 0]
+    m7: ["@glc", 4.34, 0]
+    m8: ["@glc", 4.96, 0]
+  bonds: [["m0", "m1"], ["m1", "m2"], ["m2", "m3"], ["m3", "m4"], ["m4", "m5"], ["m5", "m6"], ["m6", "m7"], ["m7", "m8"]]
+  notes: [["β1→4 (straight chains)", 2.5, -0.75, "gray"], ["reducing end", 0, 0.75, "gray"]]
+tags: [carbohydrate, polysaccharide]
+notes_zh: "示意圖。β1→4 直鏈（重複單元 cellobiose），鏈間大量氫鍵 → 纖維。人類缺 cellulase → 膳食纖維。"
+status: pending

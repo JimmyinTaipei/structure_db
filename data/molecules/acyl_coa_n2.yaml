@@ -1,0 +1,19 @@
+id: acyl_coa_n2
+name: Fatty acyl-CoA (n−2)
+label: 'Fatty acyl-CoA
+
+  (2 C shorter)'
+aliases:
+- shortened acyl-CoA
+smiles: '[8*]C(=O)S[1*]'
+chain:
+- c: R
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 原本的 β 碳變成新的硫酯羰基；少兩個碳，回到第一步再循環。
+status: pending

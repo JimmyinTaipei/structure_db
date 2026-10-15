@@ -1,0 +1,30 @@
+id: glutamate_decarboxylase
+title: Glutamate → GABA (glutamate decarboxylase)
+substrates:
+- glutamate
+products:
+- gaba
+- id: co2
+  view: formula
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: 'glutamate
+
+  decarboxylase (GAD)'
+reversible: false
+decorate:
+  glutamate:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+card_zh:
+  location: GABA 神經元、胰島 β 細胞
+  type: 脫羧（PLP）
+  exam_points:
+  - anti-GAD 抗體：第 1 型糖尿病、stiff-person syndrome
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

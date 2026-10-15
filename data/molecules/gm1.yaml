@@ -1,0 +1,50 @@
+id: gm1
+name: Ganglioside GM1
+label: GM1
+aliases:
+- GM1
+smiles: C(OC1OC(CO)C(OC2OC(CO)C(OC4OC(CO)C(O)C(OC5OC(CO)C(O)C(O)C5O)C4NC(C)=O)C(OC9(C(=O)[O-])CC(O)C(NC(C)=O)C(O9)C(O)C(O)CO)C2O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+free:
+  atoms:
+    cer:
+    - Ceramide
+    - 0
+    - 0
+    - 7
+    s0:
+    - '@glc'
+    - 0.95
+    - 0
+    s1:
+    - '@gal'
+    - 1.75
+    - 0
+    s2:
+    - '@galnac'
+    - 2.55
+    - 0
+    s3:
+    - '@gal'
+    - 3.3500000000000005
+    - 0
+    b:
+    - '@neu5ac'
+    - 1.75
+    - 0.8
+  bonds:
+  - - cer
+    - s0
+  - - s0
+    - s1
+  - - s1
+    - s2
+  - - s2
+    - s3
+  - - s1
+    - b
+  schematic: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: GM2 的 GalNAc 再接 Gal。cholera toxin 的受體。GM1 gangliosidosis：β-galactosidase 缺乏。（SNFG 示意圖：藍圓 Glc、黃圓 Gal、黃方 GalNAc、紫菱 NeuAc）
+status: pending

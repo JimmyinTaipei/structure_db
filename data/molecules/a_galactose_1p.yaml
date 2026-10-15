@@ -1,0 +1,34 @@
+id: a_galactose_1p
+name: α-D-Galactose 1-phosphate
+label: 'Galactose
+
+  1-phosphate'
+aliases:
+- Gal1P
+- galactose 1-phosphate
+- 半乳糖-1-磷酸
+smiles: C([C@@H]1[C@@H]([C@@H]([C@H]([C@H](O1)OP(=O)([O-])[O-])O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: O{P}
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: HO
+      down: H
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- galactose_metabolism
+notes_zh: GALT 缺乏（典型 galactosemia）時累積 → 肝損傷、黃疸、智能障礙、E. coli 敗血症；同時 galactitol 累積 → 白內障。
+status: pending

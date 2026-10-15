@@ -1,0 +1,29 @@
+id: lipoxygenase_5
+title: Arachidonate → 5-HPETE (5-lipoxygenase)
+substrates:
+- arachidonate
+products:
+- hpete5
+cofactors_in:
+- O2
+enzyme: '5-lipoxygenase
+
+  (5-LOX + FLAP)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  hpete5:
+    highlight:
+    - smarts: '[O:1][OH:2]'
+      color: magenta
+card_zh:
+  location: 白血球（嗜中性球、肥大細胞、嗜酸性球）
+  type: 雙氧化
+  deficiency:
+  - zileuton 抑制 5-LOX（氣喘）
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

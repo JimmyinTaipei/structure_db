@@ -1,0 +1,16 @@
+id: sedoheptulose_7p
+name: Sedoheptulose 7-phosphate
+label: "Sedoheptulose\n7-phosphate"
+aliases: [S7P, 景天庚酮糖-7-磷酸]
+smiles: "C(O)C(=O)[C@@H](O)[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: CH_2OH}
+  - {c: C, r: O, rb: 2}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP]
+notes_zh: 7 碳酮糖；transketolase 第一步產物，再交給 transaldolase。
+status: pending

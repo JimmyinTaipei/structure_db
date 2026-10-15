@@ -1,0 +1,29 @@
+id: fad_synthetase
+title: FMN → FAD (FAD synthetase)
+substrates:
+- fmn
+- atp_n
+products:
+- fad
+cofactors_out:
+- PPi
+extra_in:
+- H+
+enzyme: 'FAD synthetase
+
+  (FMN adenylyltransferase)'
+reversible: false
+decorate:
+  atp_n:
+    colors:
+      u4: [magenta, '{P}–{P}']
+  PPi:
+    colors: {0: magenta}
+card_zh:
+  type: 腺苷酸化：ATP 的 AMP 部分接到 FMN 的磷酸上，放出 PPi
+  exam_points:
+  - FAD = FMN + AMP（兩個核苷酸以焦磷酸相連 → dinucleotide）
+tags:
+- vitamin
+- coenzyme
+status: pending

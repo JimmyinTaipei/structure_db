@@ -1,0 +1,37 @@
+id: xgal_hydrolysis
+title: X-gal hydrolysis (β-galactosidase)
+substrates:
+- xgal
+products:
+- b_galactopyranose
+- bromochloroindoxyl
+cofactors_in:
+- H2O
+cofactors_out: []
+enzyme: β-galactosidase (lacZ)
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  b_galactopyranose:
+    colors:
+      u1: magenta
+  xgal:
+    highlight:
+    - smarts: '[O:1]c1c[nH]c2ccc(Br)c(Cl)c12'
+      color: cyan
+  bromochloroindoxyl:
+    highlight:
+    - smarts: '[OH:1]c'
+      color: cyan
+card_zh:
+  type: 水解 β-糖苷鍵：indoxyl 的 O（青）留在 indoxyl 上；H₂O（洋紅）的 OH 接到 galactose C1
+  exam_points:
+  - 藍白篩選：lacZα 完整 → 有 β-gal 活性 → 藍；插入片段破壞 lacZα → 白（含重組質體）
+  - 需 IPTG 解除 LacI 抑制；α-complementation：宿主提供 lacZΔM15
+tags:
+- molecular_biology
+- techniques
+parts_png: false
+status: pending

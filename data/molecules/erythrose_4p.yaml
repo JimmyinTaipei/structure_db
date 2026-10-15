@@ -1,0 +1,13 @@
+id: erythrose_4p
+name: Erythrose 4-phosphate
+label: "Erythrose\n4-phosphate"
+aliases: [E4P, 赤藻糖-4-磷酸]
+smiles: "O=C[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: H}}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP]
+notes_zh: 4 碳醛糖；transketolase 第二步的 2C 受體；也是芳香族胺基酸（shikimate 途徑，植物/微生物）的原料。
+status: pending

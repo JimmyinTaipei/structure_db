@@ -1,0 +1,15 @@
+id: glucose
+name: D-Glucose
+label: "D-Glucose"
+aliases: [Glc, 葡萄糖, dextrose]
+smiles: "O=C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: H}}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: CH_2OH}
+tags: [carb_metabolism, glycolysis, carbohydrate, monosaccharide, aldose]
+notes_zh: 以開鏈 Fischer 表示；水溶液中 >99% 為環狀（β-D-glucopyranose 約 64%、α 約 36%），見 β-/α-D-Glucopyranose。
+status: pending

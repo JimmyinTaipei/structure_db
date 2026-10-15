@@ -1,0 +1,10 @@
+id: phosphocholine
+name: Phosphocholine
+aliases:
+- phosphorylcholine
+smiles: C[N+](C)(C)CCOP(=O)([O-])[O-]
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: sphingomyelinase 的產物；合成 sphingomyelin 時則由 PC 提供（ceramide + PC → SM + DAG）。
+status: pending

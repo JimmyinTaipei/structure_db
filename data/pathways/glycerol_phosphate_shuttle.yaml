@@ -1,0 +1,226 @@
+id: glycerol_phosphate_shuttle
+title: Glycerol 3-phosphate shuttle（甘油磷酸穿梭）
+layout: free
+cell_size: 3.4
+regions:
+- kind: membrane
+  y: 0
+  x0: -3.8
+  x1: 4.6
+  label: 'Inner
+
+    mitochondrial
+
+    membrane'
+nodes:
+- id: cy
+  text: Cytosol / intermembrane space
+  kind: heading
+  pos:
+  - -3.8
+  - -4.2
+- id: mx
+  text: Matrix
+  kind: heading
+  pos:
+  - -3.8
+  - 2.4
+- id: dhap
+  ref: dhap
+  pos:
+  - -2.2
+  - -2.2
+  view: name
+- id: g3p
+  ref: glycerol_3p
+  pos:
+  - 2.2
+  - -2.2
+  view: name
+- id: gpd2
+  text: 'mitochondrial
+
+    G3P DH (FAD)'
+  kind: protein
+  pos:
+  - 0
+  - -0.3
+  w: 3.0
+  h: 2.0
+- id: q
+  text: Q → QH_2
+  kind: carrier
+  pos:
+  - 2.3
+  - 0.2
+- id: c3
+  text: III
+  kind: protein
+  pos:
+  - 4.0
+  - 0
+  w: 1.6
+  h: 3.0
+edges:
+- from: dhap
+  to: g3p
+  step: glycerol_3p_dehydrogenase
+  label: cytosolic G3P DH (GPD1)
+  side_text: NADH + H^+ → NAD^+
+  bend: 0.35
+- from: g3p
+  to: gpd2
+  step: mito_glycerol_3p_dehydrogenase
+- from: gpd2
+  to: dhap
+- from: gpd2
+  to: q
+  color: orange
+- from: q
+  to: c3
+  color: orange
+tags:
+- energy_metabolism
+- shuttle
+notes_zh: 細胞質 NADH 把 DHAP 還原成 glycerol 3-phosphate；位在內膜外側的 mitochondrial G3P DH（FAD）把它氧化回 DHAP，電子直接給 Q，跳過 Complex I → 每個細胞質 NADH 只得約 1.5 ATP。骨骼肌（白肌）、腦、棕色脂肪常用；不可逆（單向）。所以葡萄糖完全氧化：malate–aspartate shuttle 32
+  ATP，glycerol 3-P shuttle 30 ATP。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.0
+        - 0.6
+        text: Cytosol / IMS
+        size: 0.75
+        align: left
+        color: gray
+      - g: text
+        at:
+        - -1.0
+        - 12.4
+        text: Matrix
+        size: 0.75
+        align: left
+        color: gray
+      - g: membrane
+        y: 7.0
+        x0: -1.0
+        x1: 27.0
+        lipids: true
+      - g: ion
+        at:
+        - 4.0
+        - 2.6
+        r: 0.8
+        hue: orange
+        text: DHAP
+        text_size: 0.38
+      - g: ion
+        at:
+        - 14.0
+        - 2.6
+        r: 0.8
+        hue: yellow
+        text: G3P
+        text_size: 0.38
+      - g: arrow
+        from:
+        - 4.9
+        - 2.2
+        to:
+        - 13.1
+        - 2.2
+        color: black
+        curve: -0.1
+      - g: text
+        at:
+        - 9.0
+        - 0.6
+        text: NADH → NAD^+
+        size: 0.6
+        align: center
+        color: cyan
+      - g: blob
+        at:
+        - 15.4
+        - 5.0
+        w: 2.8
+        h: 1.3
+        shape: oval
+        hue: teal
+        accent: true
+        text: mGPDH
+        text_size: 0.45
+      - g: ion
+        at:
+        - 17.2
+        - 5.0
+        r: 0.45
+        hue: yellow
+        text: FAD
+        text_size: 0.32
+      - g: arrow
+        from:
+        - 13.6
+        - 3.4
+        to:
+        - 13.0
+        - 4.4
+        color: black
+        curve: 0
+      - g: arrow
+        from:
+        - 13.0
+        - 4.4
+        to:
+        - 4.6
+        - 3.4
+        color: black
+        curve: -0.1
+      - g: ion
+        at:
+        - 19.6
+        - 7.0
+        r: 0.55
+        hue: yellow
+        text: Q
+        text_size: 0.5
+      - g: arrow
+        from:
+        - 17.8
+        - 5.6
+        to:
+        - 19.0
+        - 6.6
+        color: '#E07B1A'
+        curve: 0
+      - g: blob
+        at:
+        - 24.0
+        - 7.0
+        w: 3.0
+        h: 3.4
+        shape: box
+        hue: purple
+        text: III
+        text_size: 0.8
+      - g: arrow
+        from:
+        - 20.2
+        - 7.0
+        to:
+        - 22.4
+        - 7.0
+        color: '#E07B1A'
+        curve: 0
+      - g: text
+        at:
+        - 13.0
+        - 11.0
+        text: bypasses complex I → 1.5 ATP
+        size: 0.62
+        align: center

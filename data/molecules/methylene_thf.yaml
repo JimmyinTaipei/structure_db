@@ -1,0 +1,20 @@
+id: methylene_thf
+name: N5,N10-Methylene-THF
+label: N^5,N^{10}-Methylene-THF
+aliases:
+- CH2-THF
+- 5,10-methylene-tetrahydrofolate
+smiles: Nc1nc2NC[C@@H]3CN(c8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])CN3c2c(=O)[nH]1
+ring:
+  coordgen: false
+formula: N^5,N^{10}-CH_2-THF
+decorate:
+  highlight:
+  - smarts: '[#7:1][CH2;r5:2][#7:3]'
+    color: magenta
+tags:
+- vitamin
+- nucleotide
+- coenzyme
+notes_zh: 洋紅：N⁵–CH₂–N¹⁰ 橋。thymidylate synthase 的甲基（＋還原力）來源；由 serine hydroxymethyltransferase（Ser → Gly）生成。
+status: pending

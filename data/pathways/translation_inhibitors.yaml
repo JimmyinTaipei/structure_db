@@ -1,0 +1,155 @@
+id: translation_inhibitors
+title: Antibiotics and toxins that act on the ribosome
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 7.0
+      - 10.0
+    - - 21.0
+      - 10.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 14.0
+    - 10.0
+    w: 9.0
+    sites: true
+    large: 50S
+    small: 30S
+  - g: trna
+    shape: icon
+    at:
+    - 11.57
+    - 10.0
+    s: 0.8
+    anticodon: ''
+    hue: '#D9D9D9'
+  - g: trna
+    shape: icon
+    at:
+    - 14.0
+    - 10.0
+    s: 0.8
+    anticodon: UAC
+    peptide: 3
+  - g: trna
+    shape: icon
+    at:
+    - 16.43
+    - 10.0
+    s: 0.8
+    anticodon: CGA
+    aa: Ala
+  - g: region
+    x0: 14.0
+    y0: 4.5
+    x1: 14.0
+    y1: 4.5
+    opacity: 0
+    outline: false
+    label: Macrolides (exit tunnel)
+    label_at:
+    - 23.0
+    - 3.2
+    point:
+    - 14.0
+    - 4.5
+    label_size: 0.75
+    label_align: left
+  - g: region
+    x0: 15.0
+    y0: 6.7
+    x1: 15.0
+    y1: 6.7
+    opacity: 0
+    outline: false
+    label: Chloramphenicol (PTC)
+    label_at:
+    - 23.0
+    - 6.1
+    point:
+    - 15.0
+    - 6.7
+    label_size: 0.75
+    label_align: left
+  - g: region
+    x0: 16.73
+    y0: 7.7
+    x1: 16.73
+    y1: 7.7
+    opacity: 0
+    outline: false
+    label: Puromycin (A site)
+    label_at:
+    - 23.0
+    - 9.0
+    point:
+    - 16.73
+    - 7.7
+    label_size: 0.75
+    label_align: left
+  - g: region
+    x0: 17.03
+    y0: 9.4
+    x1: 17.03
+    y1: 9.4
+    opacity: 0
+    outline: false
+    label: Tetracyclines (30S A site)
+    label_at:
+    - 23.0
+    - 11.9
+    point:
+    - 17.03
+    - 9.4
+    label_size: 0.75
+    label_align: left
+  - g: region
+    x0: 9.7
+    y0: 7.8
+    x1: 9.7
+    y1: 7.8
+    opacity: 0
+    outline: false
+    label: Fusidic acid (EF-G)
+    label_at:
+    - -2.0
+    - 4.0
+    point:
+    - 9.7
+    - 7.8
+    label_size: 0.75
+    label_align: left
+  - g: region
+    x0: 11.6
+    y0: 12.0
+    x1: 11.6
+    y1: 12.0
+    opacity: 0
+    outline: false
+    label: Aminoglycosides (30S)
+    label_at:
+    - -2.0
+    - 14.0
+    point:
+    - 11.6
+    - 12.0
+    label_size: 0.75
+    label_align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: '原核：streptomycin（30S，誤讀、高濃度阻斷起始）、tetracycline（30S A 位）、chloramphenicol（50S peptidyl transferase，也抑制粒線體）、erythromycin（50S 出口通道）、linezolid、clindamycin、fusidic acid（EF-G）。兩者：puromycin（仿 Tyr-tRNA，提早終止）。真核：cycloheximide（60S）、白喉毒素（eEF2
+  ADP-ribosylation）、ricin（28S rRNA 去嘌呤）。
+
+  【補充】Eukaryotic-only: cycloheximide (60S); diphtheria toxin and Pseudomonas exotoxin A ADP-ribosylate diphthamide (modified His) of eEF2 (NAD⁺ → nicotinamide); ricin and Shiga toxin are N-glycosidases
+  that depurinate one A in 28S rRNA (sarcin–ricin loop). Chloramphenicol also hits mitochondrial ribosomes (gray baby syndrome). Aminoglycosides bind 16S rRNA near A1492/A1493 (decoding); tetracycline binds
+  16S; macrolides, chloramphenicol, linezolid bind 23S.'
+parts_png: false
+status: pending

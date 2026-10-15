@@ -1,0 +1,433 @@
+id: sanger_sequencing
+title: Sanger (dideoxy) sequencing
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.0
+    text: ddNTP chain termination
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 0.4
+    - - 11.0
+      - 0.4
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 2.4
+    - 1.05
+    text: T
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 3.3499999999999996
+    - 1.05
+    text: A
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 4.3
+    - 1.05
+    text: C
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 5.25
+    - 1.05
+    text: G
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 6.199999999999999
+    - 1.05
+    text: G
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 7.15
+    - 1.05
+    text: T
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 8.1
+    - 1.05
+    text: C
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 9.049999999999999
+    - 1.05
+    text: A
+    size: 0.6
+    align: center
+    color: gray
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 2.2
+    - - 2.0
+      - 2.2
+    width: 0.3
+  - g: ion
+    at:
+    - 2.35
+    - 2.2
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 3.1500000000000004
+    - - 2.95
+      - 3.1500000000000004
+    width: 0.3
+  - g: ion
+    at:
+    - 3.3
+    - 3.1500000000000004
+    r: 0.3
+    hue: red
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 4.1
+    - - 3.9
+      - 4.1
+    width: 0.3
+  - g: ion
+    at:
+    - 4.25
+    - 4.1
+    r: 0.3
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 5.05
+    - - 4.85
+      - 5.05
+    width: 0.3
+  - g: ion
+    at:
+    - 5.199999999999999
+    - 5.05
+    r: 0.3
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 6.0
+    - - 5.8
+      - 6.0
+    width: 0.3
+  - g: ion
+    at:
+    - 6.15
+    - 6.0
+    r: 0.3
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 6.95
+    - - 6.75
+      - 6.95
+    width: 0.3
+  - g: ion
+    at:
+    - 7.1
+    - 6.95
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 7.8999999999999995
+    - - 7.699999999999999
+      - 7.8999999999999995
+    width: 0.3
+  - g: ion
+    at:
+    - 8.049999999999999
+    - 7.8999999999999995
+    r: 0.3
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 8.85
+    - - 8.649999999999999
+      - 8.85
+    width: 0.3
+  - g: ion
+    at:
+    - 9.0
+    - 8.85
+    r: 0.3
+    hue: red
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 1.0
+    - 10.6
+    text: primer
+    size: 0.65
+    align: center
+    color: '#D9622B'
+  - g: text
+    at:
+    - 14.0
+    - -1.0
+    text: gel
+    size: 0.85
+    align: left
+  - g: region
+    x0: 14.0
+    y0: 0.2
+    x1: 22.6
+    y1: 14.4
+    hue: gray
+    opacity: 0.18
+  - g: text
+    at:
+    - 15.2
+    - 0.9
+    text: ddA
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 17.2
+    - 0.9
+    text: ddC
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 19.2
+    - 0.9
+    text: ddG
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 21.2
+    - 0.9
+    text: ddT
+    size: 0.68
+    align: center
+  - g: region
+    x0: 14.45
+    y0: 13.459999999999999
+    x1: 15.95
+    y1: 13.74
+    hue: '#5BB55B'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 20.45
+    y0: 12.409999999999998
+    x1: 21.95
+    y1: 12.69
+    hue: '#E2574C'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 18.45
+    y0: 11.36
+    x1: 19.95
+    y1: 11.64
+    hue: '#E0A100'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 16.45
+    y0: 10.309999999999999
+    x1: 17.95
+    y1: 10.59
+    hue: '#4C8BD6'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 16.45
+    y0: 9.259999999999998
+    x1: 17.95
+    y1: 9.54
+    hue: '#4C8BD6'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 14.45
+    y0: 8.209999999999999
+    x1: 15.95
+    y1: 8.49
+    hue: '#5BB55B'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 18.45
+    y0: 7.159999999999999
+    x1: 19.95
+    y1: 7.439999999999999
+    hue: '#E0A100'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 20.45
+    y0: 6.109999999999999
+    x1: 21.95
+    y1: 6.389999999999999
+    hue: '#E2574C'
+    opacity: 1.0
+    outline: false
+  - g: arrow
+    from:
+    - 23.6
+    - 13.6
+    to:
+    - 23.6
+    - 5.829999999999999
+    color: black
+    width: 1.0
+  - g: text
+    at:
+    - 24.4
+    - 13.6
+    text: A
+    size: 0.75
+    align: left
+    color: '#5BB55B'
+  - g: text
+    at:
+    - 24.4
+    - 12.549999999999999
+    text: T
+    size: 0.75
+    align: left
+    color: '#E2574C'
+  - g: text
+    at:
+    - 24.4
+    - 11.5
+    text: G
+    size: 0.75
+    align: left
+    color: '#E0A100'
+  - g: text
+    at:
+    - 24.4
+    - 10.45
+    text: C
+    size: 0.75
+    align: left
+    color: '#4C8BD6'
+  - g: text
+    at:
+    - 24.4
+    - 9.399999999999999
+    text: C
+    size: 0.75
+    align: left
+    color: '#4C8BD6'
+  - g: text
+    at:
+    - 24.4
+    - 8.35
+    text: A
+    size: 0.75
+    align: left
+    color: '#5BB55B'
+  - g: text
+    at:
+    - 24.4
+    - 7.299999999999999
+    text: G
+    size: 0.75
+    align: left
+    color: '#E0A100'
+  - g: text
+    at:
+    - 24.4
+    - 6.249999999999999
+    text: T
+    size: 0.75
+    align: left
+    color: '#E2574C'
+  - g: text
+    at:
+    - 25.4
+    - 13.7
+    text: 5'
+    size: 0.62
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 25.4
+    - 6.249999999999999
+    text: 3'
+    size: 0.62
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 18.3
+    - 15.2
+    text: short fragments run farthest
+    size: 0.65
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- techniques
+notes_zh: Primer + DNA polymerase + 4 種 dNTP + 少量 ddNTP（缺 3′-OH）→ 隨機在各位置終止 → 一組長度差 1 nt 的片段。四管（ddA、ddC、ddG、ddT）各跑一道膠，由下（短）往上讀 = 新股 5′→3′；與模板互補。現代用四色螢光 ddNTP + 毛細管電泳。Maxam–Gilbert 為化學切割法；NGS（如 pyrosequencing：PPi
+  → ATP sulfurylase → luciferase 發光）。
+parts_png: false
+status: pending

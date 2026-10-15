@@ -1,0 +1,13 @@
+id: oxygen
+name: Oxygen
+aliases:
+- O2
+- dioxygen
+- 氧
+smiles: O=O
+formula: O_2
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: 電子傳遞鏈最終的電子接受者（Complex IV：O₂ + 4 e⁻ + 4 H⁺ → 2 H₂O）。
+status: pending

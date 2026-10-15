@@ -1,0 +1,73 @@
+id: lysozyme_ph_profile
+title: Lysozyme activity vs pH
+layout: plot
+plot:
+  size:
+  - 14
+  - 9
+  params:
+    pKa: 4.5
+    pKb: 5.9
+  x:
+    min: 2
+    max: 9
+    label: pH
+    ticks:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+  y:
+    min: 0
+    max: 1.15
+    label: Fraction / activity
+  curves:
+  - id: asp
+    y: 1/(1+10**(pKa-x))
+    color: cyan
+    dash: true
+  - id: glu
+    y: 1/(1+10**(x-pKb))
+    color: magenta
+    dash: true
+  - id: act
+    y: (1/(1+10**(pKa-x)))*(1/(1+10**(x-pKb)))/0.7
+    width: 1.2
+  points:
+  - 'on': asp
+    x: pKa
+    y: 0.5
+    color: cyan
+    drop: x
+  - 'on': glu
+    x: pKb
+    y: 0.5
+    color: magenta
+    drop: x
+  vlines:
+  - x: (pKa+pKb)/2
+    label: pH_{opt} ≈ (4.5 + 5.9)/2 = 5.2
+    label_off:
+    - 3.2
+    - 0
+  legend:
+    at:
+    - 6.3
+    - 0.72
+    items:
+    - curve: asp
+      text: Asp52 as COO^- (pK_a 4.5)
+    - curve: glu
+      text: Glu35 as COOH (pK_a 5.9)
+    - curve: act
+      text: activity ~ product of both
+tags:
+- enzyme
+- enzyme_kinetics
+- catalysis
+notes_zh: Lysozyme：Glu35 需保持質子化（COOH，general acid 給 H⁺ 給醣苷鍵 O），Asp52 需去質子化（COO⁻，穩定 oxocarbenium 離子）。兩者同時成立的比例在兩個 pK_a 中點最大 → 最適 pH ≈ (4.5 + 5.9)/2 ≈ 5.2。同理：活性位兩個可解離基團 → 鐘形 pH 曲線。
+status: pending

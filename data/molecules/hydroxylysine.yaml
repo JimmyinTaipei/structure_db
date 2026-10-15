@@ -1,0 +1,28 @@
+id: hydroxylysine
+name: 5-Hydroxylysine
+aliases:
+- Hyl
+- 羥離胺酸
+smiles: '[NH3+]C[C@H](O)CC[C@H]([NH3+])C(=O)[O-]'
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: CH_2
+- c: C
+  l: HO
+  r: H
+- c: CH_2
+- c: ^+NH_3
+decorate:
+  colors:
+    4:
+      l: magenta
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: Collagen 中 lysyl hydroxylase（同樣需 vitamin C、Fe²⁺、α-KG）產物；Hyl 的 OH 可接 Gal／Glc（O-linked glycosylation），且 lysyl oxidase（含 Cu²⁺）把 Lys／Hyl 氧化成醛 → 交聯。Ehlers–Danlos（部分型）為 lysyl hydroxylase 缺陷。
+status: pending

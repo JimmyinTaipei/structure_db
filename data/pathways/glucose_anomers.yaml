@@ -1,0 +1,16 @@
+id: glucose_anomers
+title: "Mutarotation of D-glucose（α/β 互變）"
+layout: free
+cell: 1.0
+nodes:
+  - {id: a, ref: a_glucopyranose, pos: [0, 0], decorate: {colors: {d1: magenta}}}
+  - {id: open, ref: glucose, pos: [1.25, 0], decorate: {colors: {0: magenta}}}
+  - {id: b, ref: b_glucopyranose, pos: [2.5, 0], decorate: {colors: {u1: magenta}}}
+  - {id: pa, text: "≈ 36 %", kind: plain, pos: [0, 0.45]}
+  - {id: pb, text: "≈ 64 %", kind: plain, pos: [2.5, 0.45]}
+edges:
+  - {from: a, to: open, reversible: true, bend: 0}
+  - {from: open, to: b, reversible: true, bend: 0}
+tags: [carbohydrate, monosaccharide]
+notes_zh: "C5-OH 攻擊 C1 醛基形成半縮醛（hemiacetal）→ 產生新的立體中心 C1（anomeric carbon）。α、β 互為 anomer，經開鏈互變（mutarotation）。β 較多：椅式中所有大基團 equatorial。"
+status: pending

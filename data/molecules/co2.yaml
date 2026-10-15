@@ -1,0 +1,7 @@
+id: co2
+name: Carbon dioxide
+aliases: [CO2, 二氧化碳]
+smiles: "O=C=O"
+formula: CO_2
+tags: [TCA, pyruvate]
+status: approved

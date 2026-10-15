@@ -1,0 +1,16 @@
+id: beta_carotene
+name: β-Carotene
+label: β-Carotene
+aliases:
+- beta-carotene
+- provitamin A
+- β-胡蘿蔔素
+smiles: CC1=C(C(C)(C)CCC1)/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C2=C(C)CCCC2(C)C
+ring:
+  methyls: false
+  rotate: 0
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 40 碳（類胡蘿蔔素，8 個異戊二烯單位）。腸道的 β-carotene 15,15′-dioxygenase 從正中間的雙鍵切開 → 2 分子 retinal。
+status: pending

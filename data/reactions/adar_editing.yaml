@@ -1,0 +1,42 @@
+id: adar_editing
+title: A → I RNA editing (ADAR)
+substrates:
+- adenine_rib
+products:
+- hypoxanthine_rib
+cofactors_in:
+- H2O
+cofactors_out:
+- ammonium
+cofactors_inline: true
+extra_in:
+- H+
+enzyme: 'ADAR
+
+  (adenosine deaminase acting on RNA)'
+reversible: false
+decorate:
+  adenine_rib:
+    highlight:
+    - smarts: '[NH2:1]c'
+      color: magenta
+  hypoxanthine_rib:
+    highlight:
+    - smarts: '[O:1]=c'
+      color: cyan
+  H2O:
+    colors:
+      0: cyan
+  ammonium:
+    colors:
+      0: magenta
+card_zh:
+  type: 水解脫胺：C6 的 NH₂（洋紅）離開，H₂O 的 O（青）成為 C6=O → inosine 鹼基 hypoxanthine
+  exam_points:
+  - 只作用於雙股 RNA；I 被讀成 G（CAG Gln → CIG 讀作 Arg：GluR-B Q/R 位）
+  - 與 adenosine deaminase（ADA，游離核苷，SCID）同一化學反應、不同受質
+tags:
+- molecular_biology
+- rna_processing
+parts_png: false
+status: pending

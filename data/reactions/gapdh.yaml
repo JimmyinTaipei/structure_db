@@ -1,0 +1,34 @@
+id: gapdh
+title: "Glycolysis ⑥ Glyceraldehyde 3-phosphate → 1,3-Bisphosphoglycerate"
+step: 6
+substrates: [glyceraldehyde_3p]
+products: [bpg_13]
+cofactors_in: [Pi, NAD+]
+cofactors_out: [NADH+H+]
+enzyme: "glyceraldehyde 3-phosphate\ndehydrogenase"
+reversible: true
+decorate:
+  glyceraldehyde_3p:
+    colors:
+      0: {fork_r: magenta}
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+  Pi:
+    colors: {0: cyan}
+  bpg_13:
+    colors:
+      0: {fork_r: cyan}
+card_zh:
+  location: 細胞質
+  type: 氧化＋磷酸化（醛 → 醯基磷酸）
+  deltaG: "ΔG'° = +6.3 kJ/mol，可逆"
+  cofactors: "NAD⁺（B3）；無機磷酸 Pi（不是 ATP）"
+  mechanism: "活性區 Cys–SH 攻擊醛基形成 thiohemiacetal → 被 NAD⁺ 氧化成 thioester → Pi 攻擊釋出 1,3-BPG"
+  deficiency: "砷酸（arsenate）取代 Pi → 1-arseno-3-phosphoglycerate 自發水解 → 下一步 PGK 不產 ATP"
+  exam_points:
+    - "糖解唯一的氧化步驟；NAD⁺ 需靠 LDH（無氧）或穿梭系統（有氧）再生"
+tags: [carb_metabolism, glycolysis]
+status: pending

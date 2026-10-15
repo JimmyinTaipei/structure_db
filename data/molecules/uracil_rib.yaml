@@ -1,0 +1,13 @@
+id: uracil_rib
+name: Uracil (in RNA)
+label: Uracil (in RNA)
+aliases: []
+smiles: '[19*]n1ccc(=O)[nH]c1=O'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: RNA 中的 uracil（Rib = 核糖與骨架）。
+parts_png: false
+status: pending

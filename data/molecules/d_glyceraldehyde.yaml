@@ -1,0 +1,11 @@
+id: d_glyceraldehyde
+name: "D-Glyceraldehyde"
+aliases: [Glyceraldehyde]
+smiles: "O=C[C@H](O)CO"
+chain:
+  - {c: "C", fork: {l: "O", lb: 2, r: "H"}}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "醛糖（aldotriose）。D/L 的參考分子：OH 在右 = D。（aldotriose）"
+status: pending

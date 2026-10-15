@@ -1,0 +1,36 @@
+id: serine_hydroxymethyltransferase
+title: Serine + THF ⇌ Glycine + N5,N10-Methylene-THF (SHMT)
+substrates:
+- serine
+- id: thf
+  view: formula
+products:
+- glycine
+- id: methylene_thf
+  view: formula
+cofactors_out:
+- H2O
+prosthetic:
+- PLP
+enzyme: 'serine hydroxymethyl-
+
+  transferase (SHMT)'
+reversible: true
+decorate:
+  serine:
+    colors: {2: magenta, 3: cyan}
+  methylene_thf:
+    colors:
+      0:
+        c:
+        - [magenta, CH_2]
+  H2O:
+    colors: {0: cyan}
+card_zh:
+  type: 一碳單位轉移（PLP）
+  exam_points:
+  - THF 一碳單位的主要來源（Ser 的 β 碳）
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

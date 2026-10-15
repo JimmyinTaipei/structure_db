@@ -1,0 +1,18 @@
+id: gaba
+name: GABA
+aliases:
+- γ-aminobutyrate
+- 4-aminobutanoate
+- γ-胺基丁酸
+smiles: '[NH3+]CCCC(=O)[O-]'
+chain:
+- c: CH_2
+  l: ^+H_3N
+- c: CH_2
+- c: CH_2
+- c: COO^-
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: glutamate decarboxylase（PLP）去掉 Glu 的 α-COO⁻。中樞主要抑制性神經傳導物質；B6 缺乏 → GABA ↓ → 抽搐。
+status: pending

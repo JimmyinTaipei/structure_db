@@ -1,0 +1,49 @@
+id: glucose_oxidation_products
+title: 'Glucose: oxidation and reduction products'
+layout: free
+cell_size: 7.5
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 1.3
+  - 0
+- id: gna
+  ref: d_gluconate
+  pos:
+  - -0.1
+  - 1.95
+- id: gua
+  ref: d_glucuronate_open
+  pos:
+  - 1.3
+  - 1.95
+- id: sor
+  ref: sorbitol
+  pos:
+  - 2.7
+  - 1.95
+edges:
+- from: glc
+  to: gna
+  label: 'C1 oxidation
+
+    (glucose oxidase)'
+  label_side: right
+- from: glc
+  to: gua
+  label: 'C6 oxidation
+
+    (via UDP-Glc DH)'
+  label_side: right
+- from: glc
+  to: sor
+  label: 'C1 reduction
+
+    (aldose reductase)'
+molecule_deco: default
+tags:
+- carbohydrate
+- sugar_derivative
+notes_zh: Aldonic acid（C1 → COOH，如 gluconate）；uronic acid（C6 → COOH，如 glucuronate）；alditol（C1 醛 → CH₂OH，如 sorbitol，注意是「還原」）。Glucuronate → 膽紅素結合、L-ascorbate（人類不能）。
+status: pending

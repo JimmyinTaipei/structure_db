@@ -1,0 +1,20 @@
+id: vitamin_k_epoxide
+name: Vitamin K 2,3-epoxide
+label: 'Vitamin K
+
+  2,3-epoxide'
+aliases:
+- vitamin K epoxide
+- KO
+smiles: CC12OC1(C/C=C(\C)CCC[C@H](C)CCC[C@H](C)CCCC(C)C)C(=O)c1ccccc1C2=O
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: '[#6;r3:1]1[O;r3:2][#6;r3:3]1'
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 洋紅：C2–C3 環氧（epoxide）。由 VKOR（vitamin K epoxide reductase）還原回醌；warfarin 抑制 VKOR → 無法再生 KH₂ → 凝血因子 γ-羧化不足（PT/INR ↑）。解藥：vitamin K、急性出血給 FFP／PCC。
+status: pending

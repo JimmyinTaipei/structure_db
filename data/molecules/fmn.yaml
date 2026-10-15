@@ -1,0 +1,18 @@
+id: fmn
+name: Flavin mononucleotide (FMN)
+label: FMN
+aliases:
+- flavin mononucleotide
+- 黃素單核苷酸
+smiles: Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[#7:1]1~[#6:2]2~[#6:3](~[#6]~[#6]~[#6]~[#6]~2)~[#7:4]~[#6:5]~[#6:6]~1~[#7:7]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: riboflavin kinase（flavokinase）+ ATP → FMN。洋紅：中央環與 N1、N5，接受 2 個 H（2 e⁻ + 2 H⁺）的位置；可一次接 1 個 e⁻（semiquinone），所以能銜接 2e⁻ 與 1e⁻ 載體。Complex I 的輔基。
+status: pending

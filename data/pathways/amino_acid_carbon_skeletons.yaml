@@ -1,0 +1,166 @@
+id: amino_acid_carbon_skeletons
+title: Amino acid carbon skeletons → TCA（胺基酸碳骨架的去路）
+layout: free
+cell_size: 5.6
+text: false
+nodes:
+- id: pyr
+  ref: pyruvate
+  pos:
+  - 0
+  - 0
+  view: name
+- id: acc
+  ref: acetyl_coa
+  pos:
+  - 1.6
+  - 0
+  view: name
+- id: aacoa
+  text: Acetoacetyl-CoA
+  kind: name
+  pos:
+  - 3.4
+  - 0
+- id: oaa
+  ref: oxaloacetate
+  pos:
+  - 0
+  - 1.6
+  view: name
+- id: cit
+  ref: citrate
+  pos:
+  - 1.6
+  - 1.0
+  view: name
+- id: akg
+  ref: alpha_kg
+  pos:
+  - 3.0
+  - 2.0
+  view: name
+- id: suc
+  ref: succinyl_coa
+  pos:
+  - 2.4
+  - 3.3
+  view: name
+- id: fum
+  ref: fumarate
+  pos:
+  - 0.8
+  - 3.3
+  view: name
+- id: tca
+  text: 'TCA
+
+    cycle'
+  kind: plain
+  pos:
+  - 1.6
+  - 2.1
+- id: a_pyr
+  text: 'Ala, Cys, Gly,
+
+    Ser, Thr, Trp'
+  kind: plain
+  pos:
+  - -1.8
+  - 0
+- id: a_ac
+  text: Ile, Leu, Thr, Trp
+  kind: plain
+  pos:
+  - 1.6
+  - -0.9
+- id: a_aac
+  text: 'Leu, Lys, Phe,
+
+    Trp, Tyr'
+  kind: plain
+  pos:
+  - 3.4
+  - -0.9
+- id: a_oaa
+  text: Asn, Asp
+  kind: plain
+  pos:
+  - -1.6
+  - 1.6
+- id: a_akg
+  text: 'Arg, Glu, Gln,
+
+    His, Pro'
+  kind: plain
+  pos:
+  - 4.8
+  - 2.0
+- id: a_suc
+  text: 'Ile, Met,
+
+    Thr, Val'
+  kind: plain
+  pos:
+  - 3.6
+  - 4.2
+- id: a_fum
+  text: Phe, Tyr
+  kind: plain
+  pos:
+  - -0.6
+  - 4.2
+- id: ket
+  text: 'Ketogenic only: Leu, Lys'
+  kind: concept
+  pos:
+  - 3.4
+  - 5.2
+- id: both
+  text: 'Both: Ile, Phe, Thr, Trp, Tyr'
+  kind: concept
+  pos:
+  - 0.0
+  - 5.2
+edges:
+- from: a_pyr
+  to: pyr
+- from: a_ac
+  to: acc
+- from: a_aac
+  to: aacoa
+- from: aacoa
+  to: acc
+- from: pyr
+  to: acc
+  step: pdh
+- from: pyr
+  to: oaa
+  step: pyruvate_carboxylase
+- from: a_oaa
+  to: oaa
+- from: a_akg
+  to: akg
+- from: a_suc
+  to: suc
+- from: a_fum
+  to: fum
+- from: oaa
+  to: cit
+  step: citrate_synthase
+- from: acc
+  to: cit
+- from: cit
+  to: akg
+- from: akg
+  to: suc
+  step: alpha_kg_dehydrogenase
+- from: suc
+  to: fum
+- from: fum
+  to: oaa
+tags:
+- amino_acid_metabolism
+- aa_degradation
+notes_zh: 生糖（glucogenic）：進入 pyruvate 或 TCA 中間物 → OAA → 葡萄糖。生酮（ketogenic）：只進 acetyl-CoA／acetoacetyl-CoA。只生酮：Leu、Lys。兩者皆是：Ile、Phe、Thr、Trp、Tyr。其餘只生糖。
+status: pending

@@ -1,0 +1,12 @@
+id: nitric_oxide
+name: Nitric oxide
+aliases:
+- 'NO'
+- 一氧化氮
+smiles: '[N]=O'
+formula: 'NO'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: NOS（NADPH、FAD、FMN、BH4、heme）由 Arg 的胍基 N 生成，副產物 citrulline。內皮 NO → 平滑肌 guanylyl cyclase → cGMP ↑ → 血管擴張（nitroglycerin、sildenafil 的機制相關）。
+status: pending

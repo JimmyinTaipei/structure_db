@@ -1,0 +1,47 @@
+id: glycogen
+name: "Glycogen"
+aliases: [肝醣]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O"
+free:
+  schematic: true
+  atoms:
+    m0: ["@glc", 0.0, 0]
+    m1: ["@glc", 0.62, 0]
+    m2: ["@glc", 1.24, 0]
+    m3: ["@glc", 1.86, 0]
+    m4: ["@glc", 2.48, 0]
+    m5: ["@glc", 3.1, 0]
+    m6: ["@glc", 3.72, 0]
+    m7: ["@glc", 4.34, 0]
+    m8: ["@glc", 4.96, 0]
+    m9: ["@glc", 5.58, 0]
+    m10: ["@glc", 6.2, 0]
+    m11: ["@glc", 6.82, 0]
+    m12: ["@glc", 7.44, 0]
+    a0: ["@glc", 1.86, -1.0]
+    a1: ["@glc", 2.48, -1.0]
+    a2: ["@glc", 3.1, -1.0]
+    a3: ["@glc", 3.72, -1.0]
+    b0: ["@glc", 4.96, -1.0]
+    b1: ["@glc", 5.58, -1.0]
+    b2: ["@glc", 6.2, -1.0]
+    b3: ["@glc", 6.82, -1.0]
+    c0: ["@glc", 3.1, 1.0]
+    c1: ["@glc", 3.72, 1.0]
+    c2: ["@glc", 4.34, 1.0]
+    c3: ["@glc", 4.96, 1.0]
+    c4: ["@glc", 5.58, 1.0]
+    d0: ["@glc", 6.82, 1.0]
+    d1: ["@glc", 7.44, 1.0]
+    d2: ["@glc", 8.06, 1.0]
+    e0: ["@glc", 3.72, -2.0]
+    e1: ["@glc", 4.34, -2.0]
+    e2: ["@glc", 4.96, -2.0]
+    f0: ["@glc", 4.34, 2.0]
+    f1: ["@glc", 4.96, 2.0]
+    f2: ["@glc", 5.58, 2.0]
+  bonds: [["m0", "m1"], ["m1", "m2"], ["m2", "m3"], ["m3", "m4"], ["m4", "m5"], ["m5", "m6"], ["m6", "m7"], ["m7", "m8"], ["m8", "m9"], ["m9", "m10"], ["m10", "m11"], ["m11", "m12"], ["a0", "a1"], ["a1", "a2"], ["a2", "a3"], ["m2", "a0"], ["b0", "b1"], ["b1", "b2"], ["b2", "b3"], ["m7", "b0"], ["c0", "c1"], ["c1", "c2"], ["c2", "c3"], ["c3", "c4"], ["m4", "c0"], ["d0", "d1"], ["d1", "d2"], ["m10", "d0"], ["e0", "e1"], ["e1", "e2"], ["a2", "e0"], ["f0", "f1"], ["f1", "f2"], ["c1", "f0"]]
+  notes: [["Glycogenin", -1.55, 0, "black"], ["reducing end", -1.55, 0.62, "gray"], ["α1→4", 8.3, 0, "gray"], ["α1→6\nbranch", 0.55, -1.0, "magenta"], ["nonreducing ends", 7.5, -2.0, "gray"]]
+tags: [carbohydrate, polysaccharide]
+notes_zh: "示意圖（SNFG：藍色圓 = glucose）。α1→4 直鏈，每 8–12 個殘基一個 α1→6 分支；分支多 → 非還原端多，合成（glycogen synthase + branching enzyme）與分解（glycogen phosphorylase + debranching enzyme）都在非還原端進行。核心為 glycogenin（Tyr-OH 接第一個 glucose）。SMILES 僅以 α-glucose 代表單元。"
+status: pending

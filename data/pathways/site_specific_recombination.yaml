@@ -1,0 +1,281 @@
+id: site_specific_recombination
+title: Site-specific recombination
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.6
+    text: Integration / excision (λ)
+    size: 0.95
+    align: left
+  - g: plasmid
+    at:
+    - 4.0
+    - 3.5
+    kind: relaxed
+    r: 1.8
+  - g: region
+    x0: 3.3
+    y0: 5.0
+    x1: 4.7
+    y1: 5.8
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 4.0
+    - 6.6
+    text: attP (λ)
+    size: 0.75
+    align: center
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 8.5
+    - - 9.0
+      - 8.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 9.5
+    - - 9.0
+      - 9.5
+    width: 0.3
+  - g: region
+    x0: 3.9
+    y0: 8.3
+    x1: 5.1
+    y1: 9.7
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 4.5
+    - 10.6
+    text: attB (E. coli)
+    size: 0.75
+    align: center
+  - g: arrow
+    from:
+    - 10.0
+    - 5.0
+    to:
+    - 12.6
+    - 5.0
+    style: fat
+  - g: text
+    at:
+    - 11.3
+    - 3.4
+    text: Int + IHF
+    size: 0.75
+    align: center
+    color: '#2E6E9E'
+  - g: arrow
+    from:
+    - 12.6
+    - 7.0
+    to:
+    - 10.0
+    - 7.0
+    style: fat
+  - g: text
+    at:
+    - 11.3
+    - 8.6
+    text: 'Int + Xis
+
+      (+ IHF)'
+    size: 0.75
+    align: center
+    color: '#2E6E9E'
+  - g: strand
+    kind: parent
+    points:
+    - - 13.5
+      - 5.5
+    - - 30.0
+      - 5.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 13.5
+      - 6.5
+    - - 30.0
+      - 6.5
+    width: 0.3
+  - g: region
+    x0: 15.5
+    y0: 5.3
+    x1: 16.7
+    y1: 6.7
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: region
+    x0: 16.7
+    y0: 5.3
+    x1: 26.8
+    y1: 6.7
+    hue: teal
+    opacity: 0.35
+    outline: false
+  - g: region
+    x0: 26.8
+    y0: 5.3
+    x1: 28.0
+    y1: 6.7
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 16.1
+    - 4.4
+    text: attL
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 27.4
+    - 4.4
+    text: attR
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 21.8
+    - 7.6
+    text: prophage (lysogeny)
+    size: 0.8
+    align: center
+  - g: text
+    at:
+    - 0.0
+    - 13.0
+    text: Inversion (Hin)
+    size: 0.95
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 15.5
+    - - 12
+      - 15.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 16.5
+    - - 12
+      - 16.5
+    width: 0.3
+  - g: ligand
+    at:
+    - 3.0
+    - 16.0
+    shape: triangle
+    hue: red
+    r: 0.55
+  - g: region
+    x0: 4.0
+    y0: 15.3
+    x1: 8.0
+    y1: 16.7
+    hue: green
+    opacity: 0.7
+    outline: false
+  - g: text
+    at:
+    - 6.0
+    - 16.0
+    text: A → B
+    size: 0.75
+    align: center
+  - g: ligand
+    at:
+    - 9.0
+    - 16.0
+    shape: triangle
+    hue: red
+    r: 0.55
+  - g: arrow
+    from:
+    - 13.0
+    - 16.0
+    to:
+    - 15.6
+    - 16.0
+    style: fat
+  - g: text
+    at:
+    - 14.3
+    - 14.5
+    text: recombinase
+    size: 0.75
+    align: center
+    color: '#2E6E9E'
+  - g: strand
+    kind: parent
+    points:
+    - - 16.6
+      - 15.5
+    - - 28.6
+      - 15.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 16.6
+      - 16.5
+    - - 28.6
+      - 16.5
+    width: 0.3
+  - g: ligand
+    at:
+    - 19.6
+    - 16.0
+    shape: triangle
+    hue: red
+    r: 0.55
+  - g: region
+    x0: 20.6
+    y0: 15.3
+    x1: 24.6
+    y1: 16.7
+    hue: green
+    opacity: 0.7
+    outline: false
+  - g: text
+    at:
+    - 22.6
+    - 16.0
+    text: B ← A
+    size: 0.75
+    align: center
+  - g: ligand
+    at:
+    - 25.6
+    - 16.0
+    shape: triangle
+    hue: red
+    r: 0.55
+tags:
+- molecular_biology
+- recombination
+notes_zh: 'Recombinase 在短的特定序列切開再接回，不需 DNA 合成與 RecA。直接重複 → 整合或切除（λ phage：attP × attB 由 integrase + IHF 整合成溶源，attL/attR；切除需 Xis）；反向重複 → 倒轉（Salmonella 鞭毛相變異 Hin）。Cre–loxP（P1 phage）用於條件式基因剔除。
+
+  【補充】Recombinase (Tyr or Ser family) cuts and rejoins at short specific sites, no DNA synthesis, no RecA. Direct repeats → excision / integration; inverted repeats → inversion. Cre–loxP (P1 phage) is used
+  for conditional knock-outs.'
+parts_png: false
+status: pending

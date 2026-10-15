@@ -1,0 +1,16 @@
+id: pyruvate
+name: Pyruvate
+aliases: [pyruvic acid, 丙酮酸]
+smiles: "[O-]C(=O)C(=O)C"          # 從鏈頂端（羧基碳）開始寫
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: "O^-"}}
+  - {c: C, r: O, rb: 2}
+  - {c: CH_3}
+chains:
+  aa:                               # 轉胺作用用：O= 在左，對應胺基酸的 H₃N⁺ 在左
+    - {c: "COO^-"}
+    - {c: C, l: O, lb: 2}
+    - {c: CH_3}
+tags: [carb_metabolism, glycolysis, TCA, pyruvate]
+notes_zh: 糖解作用終產物；有氧時進粒線體由 PDH 轉成 acetyl-CoA，缺氧時由 LDH 還原成 lactate。
+status: approved

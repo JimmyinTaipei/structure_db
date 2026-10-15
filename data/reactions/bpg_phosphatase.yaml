@@ -1,0 +1,34 @@
+id: bpg_phosphatase
+title: 2,3-BPG phosphatase
+substrates:
+- bpg_23
+products:
+- pg_3
+cofactors_in:
+- H2O
+cofactors_out:
+- Pi
+enzyme: 2,3-BPG phosphatase
+reversible: false
+decorate:
+  bpg_23:
+    colors:
+      1:
+        r:
+        - magenta
+        - '{P}'
+  H2O:
+    colors:
+      0: cyan
+  Pi:
+    colors:
+      0: magenta
+card_zh:
+  location: RBC
+  type: 水解 C2 磷酸 → 回到糖解的 3-PG（與 mutase 為同一雙功能酵素）
+tags:
+- carb_metabolism
+- glycolysis
+- protein
+- hemoglobin
+status: pending

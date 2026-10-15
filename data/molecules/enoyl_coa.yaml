@@ -1,0 +1,21 @@
+id: enoyl_coa
+name: trans-Δ2-Enoyl-CoA
+label: trans-Δ^2-Enoyl-CoA
+aliases:
+- enoyl-CoA
+- 烯醯輔酶A
+smiles: '[8*]/C=C/C(=O)S[1*]'
+chain:
+- c: R
+- c: CH
+  down: 2
+- c: CH
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: acyl-CoA DH（FAD）在 α、β 碳之間形成 trans 雙鍵（此直式畫法看不出 trans，名稱標明）。天然不飽和脂肪酸是 cis，需要 isomerase 才能進入此步。
+status: pending

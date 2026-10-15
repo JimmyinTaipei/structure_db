@@ -1,0 +1,47 @@
+id: glycosaminoglycans
+title: 'Glycosaminoglycans: repeating units'
+layout: free
+cell_size: 17
+nodes:
+- id: ha
+  ref: hyaluronate_unit
+  pos:
+  - 0
+  - 0
+- id: cs
+  ref: chondroitin_4_sulfate_unit
+  pos:
+  - 1.12
+  - 0
+- id: ds
+  ref: dermatan_sulfate_unit
+  pos:
+  - 0
+  - 0.62
+- id: hep
+  ref: heparin_unit
+  pos:
+  - 1.12
+  - 0.62
+- id: ks
+  ref: keratan_sulfate_unit
+  pos:
+  - 0
+  - 1.24
+- id: note
+  text: 'Drawn: the β1→4 (heparin α1→4) half
+
+    of each repeating disaccharide'
+  kind: name
+  pos:
+  - 1
+  - 1.24
+edges: []
+text: false
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: GAG：由「胺基糖（GlcNAc／GalNAc／GlcN）＋ uronic acid（GlcA／IdoA）」的雙醣重複組成，多數帶硫酸 → 高負電、高度水合、潤滑抗壓。例外：hyaluronate 無硫酸、不接蛋白；keratan sulfate 以 galactose 代替 uronic acid。除 hyaluronate 外，GAG 以 Ser–Xyl–Gal–Gal–GlcA
+  連接區共價接在 core protein 上 → proteoglycan。
+status: pending

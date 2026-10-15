@@ -1,0 +1,13 @@
+id: squalene
+name: Squalene
+aliases:
+- 鯊烯
+- 角鯊烯
+smiles: CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C=C(\C)CC/C=C(\C)CCC=C(C)C
+ring:
+  methyls: false
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+notes_zh: 30 碳直鏈三萜（6 個異戊二烯單位，中間尾對尾）。squalene epoxidase → 環化成 lanosterol（第一個固醇）→（約 19 步）→ cholesterol。
+status: pending

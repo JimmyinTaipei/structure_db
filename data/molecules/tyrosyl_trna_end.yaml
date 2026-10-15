@@ -1,0 +1,15 @@
+id: tyrosyl_trna_end
+name: Tyrosyl-tRNA 3′ end
+label: Tyrosyl-tRNA (3′ end)
+aliases:
+- Tyr-tRNA
+smiles: N[C@@H](Cc1ccc(O)cc1)C(=O)O[C@@H]1[C@H](O)[C@@H](n2cnc3c(N)ncnc32)O[C@H]1COP(=O)([O-])O[20*]
+ring:
+  coordgen: true
+  rotate: 180
+tags:
+- molecular_biology
+- translation
+notes_zh: tRNA 3′ 端的 A76 與酯鍵連接的 Tyr（tRNA = 其餘 tRNA）。與 puromycin 對照。
+parts_png: false
+status: pending

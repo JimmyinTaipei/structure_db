@@ -1,0 +1,13 @@
+id: ltb4
+name: Leukotriene B4
+label: LTB_4
+aliases:
+- LTB₄
+smiles: CCCCC/C=C\C[C@@H](O)/C=C/C=C/C=C\[C@@H](O)CCCC(=O)[O-]
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: LTA₄ hydrolase 產生：嗜中性球趨化（chemotaxis）。
+status: pending

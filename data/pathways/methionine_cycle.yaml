@@ -1,0 +1,128 @@
+id: methionine_cycle
+title: Methionine cycle & one-carbon metabolism（甲硫胺酸循環與一碳代謝）
+layout: free
+cell: 0.5
+nodes:
+- id: met
+  ref: methionine
+  pos:
+  - 0
+  - 0
+  view: name
+- id: sam
+  ref: sam
+  pos:
+  - 2.0
+  - 0
+  view: name
+- id: sah
+  ref: sah
+  pos:
+  - 2.0
+  - 1.4
+  view: name
+- id: hcy
+  ref: homocysteine
+  pos:
+  - 0
+  - 1.4
+  view: name
+- id: cth
+  ref: cystathionine
+  pos:
+  - 0
+  - 2.6
+  view: name
+- id: cys
+  ref: cysteine
+  pos:
+  - -0.8
+  - 3.7
+  view: name
+- id: akb
+  ref: alpha_ketobutyrate
+  pos:
+  - 0.8
+  - 3.7
+  view: name
+- id: mthf
+  ref: methyl_thf
+  pos:
+  - -1.6
+  - 0.7
+  view: formula
+- id: thf
+  ref: thf
+  pos:
+  - -1.6
+  - -0.5
+  view: formula
+- id: ch2
+  ref: methylene_thf
+  pos:
+  - -3.1
+  - 0.1
+  view: formula
+- id: acc
+  text: 'Acceptor → CH_3–acceptor
+
+    (DNA, NE → Epi, creatine…)'
+  kind: plain
+  pos:
+  - 3.6
+  - 0.7
+edges:
+- from: met
+  to: sam
+  step: methionine_adenosyltransferase
+  label: MAT
+  side_text: ATP → PP_i + P_i
+- from: sam
+  to: sah
+  label: methyltransferases
+  label_side: right
+- from: sah
+  to: hcy
+  step: sah_hydrolase
+  label: SAH hydrolase
+  side_text: → adenosine
+- from: hcy
+  to: met
+  step: methionine_synthase
+  label: 'methionine synthase
+
+    (B_{12})'
+- from: mthf
+  to: edge:hcy->met
+- from: edge:hcy->met
+  to: thf
+- from: thf
+  to: ch2
+  step: serine_hydroxymethyltransferase
+  label: SHMT
+  side_text: Ser → Gly
+- from: ch2
+  to: mthf
+  step: mthfr
+  label: MTHFR
+  side_text: NADPH
+- from: hcy
+  to: cth
+  step: cystathionine_beta_synthase
+  label: CBS (B_6)
+  side_text: Ser
+- from: cth
+  to: cys
+  step: cystathionase
+  label: γ-lyase (B_6)
+- from: cth
+  to: akb
+  step: cystathionase
+- from: sam
+  to: acc
+  head: false
+tags:
+- amino_acid_metabolism
+- one_carbon
+notes_zh: Met → SAM（甲基供體）→ SAH → Hcy。Hcy 再甲基化（methionine synthase：B12 + CH₃-THF）或經 transsulfuration（CBS、γ-lyase：B6）變成 Cys。Hcy ↑：B12、folate、B6 缺乏、CBS 或 MTHFR 缺陷。B12 缺乏 → methyl-folate trap。
+status: pending

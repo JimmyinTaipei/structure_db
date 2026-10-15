@@ -1,0 +1,29 @@
+id: dihydroorotase
+title: "嘧啶 ③ Carbamoyl aspartate → Dihydroorotate (dihydroorotase)"
+step: 3
+substrates: [carbamoyl_aspartate]
+products: [dihydroorotate]
+cofactors_out: [H2O]
+extra_in: [H+]          # 閉環的羧基需要先質子化（不畫，只參與平衡）
+enzyme: "dihydroorotase"
+reversible: true
+decorate:
+  carbamoyl_aspartate:
+    highlight:
+    - atoms: [0, 6, 7]
+      color: cyan
+    - atoms: [8]
+      color: magenta
+  dihydroorotate:
+    highlight:
+    - atoms: [5, 6, 7]
+      color: cyan
+  H2O:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質（CAD）
+  type: "脫水閉環"
+  exam_points:
+    - "嘧啶「先做環、再接核糖」（與嘌呤相反）"
+tags: [nucleotide, pyrimidine]
+status: pending

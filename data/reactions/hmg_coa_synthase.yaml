@@ -1,0 +1,32 @@
+id: hmg_coa_synthase
+title: Acetoacetyl-CoA + Acetyl-CoA → HMG-CoA (HMG-CoA synthase)
+substrates:
+- acetoacetyl_coa
+- acetyl_coa
+products:
+- hmg_coa
+cofactors_in:
+- H2O
+cofactors_out:
+- CoA-SH
+extra_out:
+- H+
+enzyme: HMG-CoA synthase
+reversible: false
+decorate:
+  acetyl_coa:
+    colors:
+      0: {c: magenta, l: magenta, u: magenta, r: cyan}
+  CoA-SH:
+    colors: {0: cyan}
+  hmg_coa:
+    colors: {0: magenta, 1: magenta}
+card_zh:
+  location: 粒線體（肝，酮體）；細胞質同功酶（膽固醇）
+  type: 縮合＋硫酯水解
+  regulation: 粒線體型是酮體合成的限速酵素（glucagon、飢餓誘導）
+tags:
+- lipid_metabolism
+- ketone_bodies
+- cholesterol_synthesis
+status: pending

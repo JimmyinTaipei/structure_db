@@ -1,0 +1,16 @@
+id: retinoic_acid
+name: Retinoic acid
+label: Retinoic acid
+aliases:
+- tretinoin
+- all-trans-retinoic acid
+- ATRA
+- 視黃酸
+smiles: CC1=C(C(C)(C)CCC1)/C=C/C(C)=C/C=C/C(C)=C/C(=O)O
+ring:
+  methyls: false
+tags:
+- vitamin
+- fat_soluble
+notes_zh: retinal 不可逆氧化而成（所以 retinoic acid 不能恢復視覺功能）。作用於核受體 RAR／RXR，調控上皮分化與胚胎發育。ATRA 治療 APL（t(15;17)，PML-RARA）。
+status: pending

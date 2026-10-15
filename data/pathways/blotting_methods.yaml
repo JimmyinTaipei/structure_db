@@ -1,0 +1,415 @@
+id: blotting_methods
+title: Southern, Northern and Western blotting
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.6
+    text: 1. gel
+    size: 0.85
+    align: left
+  - g: region
+    x0: 0.0
+    y0: 0.2
+    x1: 5.4
+    y1: 6.0
+    hue: gray
+    opacity: 0.18
+  - g: region
+    x0: 0.8
+    y0: 1.2899999999999998
+    x1: 1.8
+    y1: 1.51
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 0.8
+    y0: 2.39
+    x1: 1.8
+    y1: 2.61
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 0.8
+    y0: 3.49
+    x1: 1.8
+    y1: 3.71
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 0.8
+    y0: 4.59
+    x1: 1.8
+    y1: 4.8100000000000005
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 2.2
+    y0: 1.2899999999999998
+    x1: 3.2
+    y1: 1.51
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 2.2
+    y0: 2.39
+    x1: 3.2
+    y1: 2.61
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 2.2
+    y0: 3.49
+    x1: 3.2
+    y1: 3.71
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 2.2
+    y0: 4.59
+    x1: 3.2
+    y1: 4.8100000000000005
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 3.5999999999999996
+    y0: 1.2899999999999998
+    x1: 4.6
+    y1: 1.51
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 3.5999999999999996
+    y0: 2.39
+    x1: 4.6
+    y1: 2.61
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 3.5999999999999996
+    y0: 3.49
+    x1: 4.6
+    y1: 3.71
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 3.5999999999999996
+    y0: 4.59
+    x1: 4.6
+    y1: 4.8100000000000005
+    hue: '#9A9A9A'
+    opacity: 1.0
+    outline: false
+  - g: arrow
+    from:
+    - 5.9
+    - 3.0
+    to:
+    - 7.7
+    - 3.0
+    style: fat
+  - g: text
+    at:
+    - 8.2
+    - -0.6
+    text: 2. transfer
+    size: 0.85
+    align: left
+  - g: region
+    x0: 8.2
+    y0: 0.2
+    x1: 13.6
+    y1: 6.0
+    hue: yellow
+    opacity: 0.25
+  - g: region
+    x0: 9.0
+    y0: 1.2899999999999998
+    x1: 10.0
+    y1: 1.51
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 9.0
+    y0: 2.39
+    x1: 10.0
+    y1: 2.61
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 9.0
+    y0: 3.49
+    x1: 10.0
+    y1: 3.71
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 9.0
+    y0: 4.59
+    x1: 10.0
+    y1: 4.8100000000000005
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 10.4
+    y0: 1.2899999999999998
+    x1: 11.4
+    y1: 1.51
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 10.4
+    y0: 2.39
+    x1: 11.4
+    y1: 2.61
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 10.4
+    y0: 3.49
+    x1: 11.4
+    y1: 3.71
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 10.4
+    y0: 4.59
+    x1: 11.4
+    y1: 4.8100000000000005
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 11.8
+    y0: 1.2899999999999998
+    x1: 12.8
+    y1: 1.51
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 11.8
+    y0: 2.39
+    x1: 12.8
+    y1: 2.61
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 11.8
+    y0: 3.49
+    x1: 12.8
+    y1: 3.71
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 11.8
+    y0: 4.59
+    x1: 12.8
+    y1: 4.8100000000000005
+    hue: '#BDBDBD'
+    opacity: 1.0
+    outline: false
+  - g: arrow
+    from:
+    - 14.1
+    - 3.0
+    to:
+    - 15.9
+    - 3.0
+    style: fat
+  - g: text
+    at:
+    - 16.4
+    - -0.6
+    text: 3. probe
+    size: 0.85
+    align: left
+  - g: strand
+    kind: new
+    points:
+    - - 16.6
+      - 2.0
+    - - 19.0
+      - 2.0
+    width: 0.3
+  - g: mark
+    kind: lesion
+    at:
+    - 19.4
+    - 2.0
+    r: 0.3
+    color: orange
+  - g: strand
+    kind: '#7B4FC0'
+    points:
+    - - 17.6
+      - 4.9
+    - - 17.6
+      - 4.0
+    width: 0.22
+  - g: strand
+    kind: '#7B4FC0'
+    points:
+    - - 17.6
+      - 4.0
+    - - 17.1
+      - 3.4
+    width: 0.22
+  - g: strand
+    kind: '#7B4FC0'
+    points:
+    - - 17.6
+      - 4.0
+    - - 18.1
+      - 3.4
+    width: 0.22
+  - g: mark
+    kind: lesion
+    at:
+    - 17.6
+    - 5.2
+    r: 0.3
+    color: orange
+  - g: arrow
+    from:
+    - 20.3
+    - 3.0
+    to:
+    - 22.1
+    - 3.0
+    style: fat
+  - g: text
+    at:
+    - 22.6
+    - -0.6
+    text: 4. detect
+    size: 0.85
+    align: left
+  - g: region
+    x0: 22.6
+    y0: 0.2
+    x1: 28.0
+    y1: 6.0
+    hue: gray
+    opacity: 0.12
+  - g: region
+    x0: 23.4
+    y0: 2.35
+    x1: 24.4
+    y1: 2.65
+    hue: '#222222'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 24.8
+    y0: 2.35
+    x1: 25.8
+    y1: 2.65
+    hue: '#222222'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 26.2
+    y0: 4.55
+    x1: 27.2
+    y1: 4.8500000000000005
+    hue: '#222222'
+    opacity: 1.0
+    outline: false
+  - g: blob
+    at:
+    - 3.0
+    - 8.4
+    w: 6.0
+    h: 1.0
+    shape: box
+    hue: blue
+    text: Southern
+    text_size: 0.7
+  - g: text
+    at:
+    - 6.6
+    - 8.4
+    text: DNA ← DNA probe
+    size: 0.75
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 9.9
+    w: 6.0
+    h: 1.0
+    shape: box
+    hue: pink
+    text: Northern
+    text_size: 0.7
+  - g: text
+    at:
+    - 6.6
+    - 9.9
+    text: RNA ← DNA probe
+    size: 0.75
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 11.4
+    w: 6.0
+    h: 1.0
+    shape: box
+    hue: purple
+    text: Western
+    text_size: 0.7
+  - g: text
+    at:
+    - 6.6
+    - 11.4
+    text: protein ← antibody (SDS-PAGE)
+    size: 0.75
+    align: left
+  - g: blob
+    at:
+    - 19.0
+    - 8.4
+    w: 6.0
+    h: 1.0
+    shape: box
+    hue: teal
+    text: Southwestern
+    text_size: 0.7
+  - g: text
+    at:
+    - 22.6
+    - 8.4
+    text: protein ← DNA probe
+    size: 0.75
+    align: left
+tags:
+- molecular_biology
+- techniques
+notes_zh: 電泳分離 → 轉漬到膜（nitrocellulose / nylon）→ 以標記探針或抗體雜交 → 偵測（放射自顯影、化學發光）。Southern（DNA；E. Southern）：限制酶切 → 電泳 → 鹼變性 → 轉漬 → DNA 探針；考題順序：切割 → 電泳 → 轉漬 → 雜交 → 自顯影。Northern：RNA（不需限制酶）。Western：SDS-PAGE 分離蛋白質
+  → 一級、二級抗體。Southwestern：蛋白質以 DNA 探針偵測（DNA 結合蛋白）。
+parts_png: false
+status: pending

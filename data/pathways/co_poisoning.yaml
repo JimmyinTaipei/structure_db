@@ -1,0 +1,70 @@
+id: co_poisoning
+title: Carbon monoxide vs anemia
+layout: plot
+plot:
+  size:
+  - 18
+  - 10
+  params:
+    n: 2.8
+    P50: 26
+  x:
+    min: 0
+    max: 130
+    label: pO_2 (mmHg)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+    - 120
+  y:
+    min: 0
+    max: 1.12
+    label: O_2 content (× normal capacity)
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  curves:
+  - id: normal
+    y: hill(x, P50, n)
+  - id: anemia
+    y: 0.5*hill(x, P50, n)
+    color: cyan
+  - id: co
+    y: 0.5*hill(x, 10, 1.6)
+    color: red
+  points:
+  - 'on': anemia
+    x: P50
+    y: 0.25
+    color: cyan
+    dot: true
+  - 'on': co
+    x: 10
+    y: 0.25
+    color: red
+    dot: true
+  legend:
+    at:
+    - 52
+    - 0.36
+    items:
+    - curve: normal
+      text: Normal Hb
+    - curve: anemia
+      text: Anemia, 50 % Hb (same P_{50})
+    - curve: co
+      text: 50 % COHb (capacity ↓ + left shift)
+caption:
+  text: 'CO: less O_2 carried AND the rest is released less easily → worse than anemia'
+  color: red
+tags:
+- protein
+- hemoglobin
+notes_zh: CO 與 heme 的親和力約為 O₂ 的 200–250 倍：50 % COHb 時攜氧量減半，且剩下的 heme 對 O₂ 親和力上升（左移、曲線變得較不 S 形），組織更難取得 O₂ —— 比同樣減半的貧血更危險。曲線為示意（O₂ content 以正常最大攜氧量為 1）。
+status: pending

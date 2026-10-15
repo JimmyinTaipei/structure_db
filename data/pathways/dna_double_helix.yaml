@@ -1,0 +1,106 @@
+id: dna_double_helix
+title: B-DNA double helix
+layout: scene
+scene:
+  items:
+  - id: helix
+    g: helix
+    from:
+    - 0
+    - 5
+    to:
+    - 25.2
+    - 5
+    pitch: 8.4
+    amp: 1.7
+    groove: 0.36
+  - g: text
+    at:
+    - 13.0
+    - 0.6
+    text: Minor groove
+    size: 0.9
+  - g: arrow
+    from:
+    - 13.0
+    - 1.2
+    to:
+    - 12.012
+    - 3.5999999999999996
+    color: gray
+    width: 0.8
+  - g: text
+    at:
+    - 20.6
+    - 0.6
+    text: Major groove
+    size: 0.9
+  - g: arrow
+    from:
+    - 20.6
+    - 1.2
+    to:
+    - 16.212
+    - 3.5999999999999996
+    color: gray
+    width: 0.8
+  - g: arrow
+    from:
+    - 2.1
+    - 8.4
+    to:
+    - 10.5
+    - 8.4
+    color: black
+    width: 0.8
+  - g: arrow
+    from:
+    - 10.5
+    - 8.4
+    to:
+    - 2.1
+    - 8.4
+    color: black
+    width: 0.8
+  - g: text
+    at:
+    - 6.300000000000001
+    - 9.3
+    text: one turn = 3.4 nm (10.5 bp)
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 26.6
+    - 3.3
+    to:
+    - 26.6
+    - 6.7
+    color: black
+    width: 0.8
+  - g: arrow
+    from:
+    - 26.6
+    - 6.7
+    to:
+    - 26.6
+    - 3.3
+    color: black
+    width: 0.8
+  - g: text
+    at:
+    - 27.2
+    - 5
+    text: 2 nm
+    size: 0.85
+    align: left
+tags:
+- molecular_biology
+- dna_structure
+notes_zh: 'Watson–Crick B-DNA：右手、反平行雙股；糖–磷酸骨架在外、鹼基在內堆疊（stacking 是主要穩定力，H-bond 給專一性）。每圈 3.4 nm、10.5 bp，直徑 2 nm；大溝與小溝交替，序列專一的 DNA 結合蛋白（HTH、zinc finger、leucine zipper）多讀大溝。Chargaff：A = T、G = C（雙股）；GC 越多 T_m
+  越高。A-DNA 較寬短（11 bp/turn，RNA–DNA hybrid、dsRNA）；Z-DNA 左手鋸齒（12 bp/turn，嘌呤嘧啶交替、甲基化 CpG）。
+
+  【補充】B-DNA: right-handed, antiparallel; bases stacked 0.34 nm apart, perpendicular to the axis; A–T 2 H-bonds, G≡C 3 H-bonds; proteins read the sequence mainly in the major groove. A-DNA: right-handed,
+  wider, 11 bp/turn (dehydrated; RNA–DNA hybrids, dsRNA). Z-DNA: left-handed zigzag, 12 bp/turn (alternating GC, methylated).'
+parts_png: false
+status: pending

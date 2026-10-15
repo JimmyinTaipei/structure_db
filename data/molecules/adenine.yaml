@@ -1,0 +1,8 @@
+id: adenine
+name: "Adenine"
+aliases: [A, 腺嘌呤]
+smiles: "Nc1n[cH]nc2[nH][cH]nc12"
+ring: {axis: [5, 9], right: 1, h_down: 6, nh_bond: true, mirror: true}
+tags: [nucleotide, purine]
+notes_zh: "嘌呤鹼基（6-胺基嘌呤）。A 與 T/U 以 2 個氫鍵配對。"
+status: pending

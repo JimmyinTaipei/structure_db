@@ -1,0 +1,455 @@
+id: homologous_recombination
+title: Homologous recombination repair (RecBCD → Holliday junction)
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - -1.6
+    - 2.0
+    text: '1.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.5
+    - - 7.5
+      - 1.5
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 2.5
+    - - 7.5
+      - 2.5
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 8.5
+      - 1.5
+    - - 16
+      - 1.5
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 8.5
+      - 2.5
+    - - 16
+      - 2.5
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 4.1
+    - - 16
+      - 4.1
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 5.1
+    - - 16
+      - 5.1
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 8.0
+    - 0.5
+    text: double-strand break
+    size: 0.75
+    align: center
+    color: red
+  - id: recbcd
+    g: blob
+    at:
+    - 7.3
+    - 2.0
+    w: 1.7
+    h: 1.7
+    shape: bilobe
+    hue: purple
+    label: RecBCD resects to chi
+    label_at:
+    - 19.4
+    - 2.0
+    label_align: left
+  - g: text
+    at:
+    - 8.0
+    - 6.1
+    text: homologous sister duplex
+    size: 0.75
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 14.0
+    - 6.5
+    to:
+    - 14.0
+    - 6.6000000000000005
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 8.9
+    text: '2.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 8.4
+    - - 7.0
+      - 8.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 9.4
+    - - 4.0
+      - 9.4
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 11.0
+    - - 16
+      - 11.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 12.0
+    - - 16
+      - 12.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: blob
+    at:
+    - 4.51
+    - 8.35
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 5.13
+    - 8.35
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 5.75
+    - 8.35
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 6.369999999999999
+    - 8.35
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - id: reca
+    g: text
+    at:
+    - 5.6
+    - 7.300000000000001
+    text: RecA filament on the 3' overhang
+    size: 0.75
+  - g: text
+    at:
+    - 19.4
+    - 8.9
+    text: RecA (Rad51) filament
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - 14.0
+    - 12.8
+    to:
+    - 14.0
+    - 13.4
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 14.9
+    text: '3.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 14.4
+    - - 5.0
+      - 14.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 15.4
+    - - 4.0
+      - 15.4
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 17.0
+    - - 5.4
+      - 17.0
+    - - 6.4
+      - 16.1
+    - - 11.6
+      - 16.1
+    - - 12.6
+      - 17.0
+    - - 16
+      - 17.0
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 18.0
+    - - 16
+      - 18.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 5.0
+      - 14.4
+    - - 6.0
+      - 16.8
+    - - 10.0
+      - 17.0
+    width: 0.3
+    arrow: true
+  - g: text
+    at:
+    - 19.4
+    - 16.4
+    text: strand invasion → D-loop
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - 14.0
+    - 18.7
+    to:
+    - 14.0
+    - 19.2
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 20.9
+    text: '4.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 20.4
+    - - 7.0
+      - 20.4
+    - - 8.0
+      - 21.7
+    - - 16
+      - 21.7
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 21.7
+    - - 7.0
+      - 21.7
+    - - 8.0
+      - 20.4
+    - - 16
+      - 20.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 19.4
+    - - 16
+      - 19.4
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 22.7
+    - - 16
+      - 22.7
+    width: 0.3
+  - id: ruvab
+    g: blob
+    at:
+    - 7.5
+    - 21.049999999999997
+    w: 1.1
+    h: 1.1
+    shape: round
+    hue: teal
+    label: 'Holliday junction: RuvAB'
+    label_at:
+    - 19.4
+    - 21.049999999999997
+    label_align: left
+  - g: arrow
+    from:
+    - 14.0
+    - 23.599999999999998
+    to:
+    - 14.0
+    - 24.9
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 26.4
+    text: '5.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 25.9
+    - - 8.0
+      - 25.9
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 8.0
+      - 25.9
+    - - 16
+      - 25.9
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 26.9
+    - - 8.0
+      - 26.9
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 8.0
+      - 26.9
+    - - 16
+      - 26.9
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 28.5
+    - - 8.0
+      - 28.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 8.0
+      - 28.5
+    - - 16
+      - 28.5
+    width: 0.3
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 29.5
+    - - 8.0
+      - 29.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 8.0
+      - 29.5
+    - - 16
+      - 29.5
+    width: 0.3
+  - g: text
+    at:
+    - 19.4
+    - 27.7
+    text: RuvC resolves
+    size: 0.8
+    align: left
+tags:
+- molecular_biology
+- repair
+- recombination
+notes_zh: '雙股斷裂（或停住的複製叉）以同源姊妹染色分體為模板，無誤修復。E. coli：RecBCD（helicase + nuclease）處理斷端直到 chi 序列 → 留下 3′ 單股尾端 → RecA 包覆並搜尋同源 → 股入侵形成 D-loop → 延伸 → Holliday junction → RuvA（認 HJ）＋RuvB（ATP，branch migration）→ RuvC（resolvase）切開。真核：MRN、CtIP、BRCA1、BRCA2–Rad51。RecA
+  也是 SOS 的共蛋白酶。減數分裂交換也走 HR。
+
+  【補充】Error-free repair of DSBs and stalled forks (S/G2: needs the sister chromatid). Eukaryotes: MRN (Mre11–Rad50–Nbs1) + CtIP resect, BRCA1, BRCA2–Rad51. Defects: BRCA1/2 (breast / ovarian cancer; PARP
+  inhibitors), ataxia telangiectasia (ATM), Bloom (BLM helicase), Werner (WRN).'
+parts_png: false
+status: pending

@@ -1,0 +1,86 @@
+id: cori_cycle
+title: Cori cycle（乳酸循環）
+layout: free
+cell_size: 6.0
+text: false
+nodes:
+- id: hm
+  text: Muscle / RBC
+  kind: heading
+  pos:
+  - 0
+  - -0.7
+- id: hl
+  text: Liver
+  kind: heading
+  pos:
+  - 2.6
+  - -0.7
+- id: glc_m
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  view: name
+- id: pyr_m
+  ref: pyruvate
+  pos:
+  - 0
+  - 1
+  view: name
+- id: lac_m
+  ref: lactate
+  pos:
+  - 0
+  - 2
+  view: name
+- id: lac_l
+  ref: lactate
+  pos:
+  - 2.6
+  - 2
+  view: name
+- id: pyr_l
+  ref: pyruvate
+  pos:
+  - 2.6
+  - 1
+  view: name
+- id: glc_l
+  ref: glucose
+  pos:
+  - 2.6
+  - 0
+  view: name
+edges:
+- from: glc_m
+  to: pyr_m
+  label: glycolysis
+  side_text: +2 ATP
+- from: pyr_m
+  to: lac_m
+  step: ldh
+  label: LDH
+  side_text: NADH → NAD^+
+- from: lac_m
+  to: lac_l
+  label: blood
+- from: lac_l
+  to: pyr_l
+  step: ldh
+  label: LDH
+  label_side: right
+- from: pyr_l
+  to: glc_l
+  label: gluconeogenesis
+  side_text: −6 ATP
+  label_side: right
+- from: glc_l
+  to: glc_m
+  label: blood
+tags:
+- carb_metabolism
+- gluconeogenesis
+- glycolysis
+notes_zh: 肌肉（劇烈運動）與紅血球產生的乳酸送到肝臟做回葡萄糖：肝臟淨付出 4 ATP（6 − 2），代價由肝的脂肪酸氧化支付。類似的 glucose–alanine cycle 則同時把肌肉的胺基送去肝臟做尿素。
+status: pending

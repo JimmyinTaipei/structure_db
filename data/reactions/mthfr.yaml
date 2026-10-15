@@ -1,0 +1,34 @@
+id: mthfr
+title: N5,N10-Methylene-THF → N5-Methyl-THF (MTHFR)
+substrates:
+- id: methylene_thf
+  view: formula
+products:
+- id: methyl_thf
+  view: formula
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: 'methylene-THF reductase
+
+  (MTHFR)'
+reversible: false
+decorate:
+  methylene_thf:
+    colors:
+      0:
+        c:
+        - [magenta, CH_2]
+  methyl_thf:
+    colors:
+      0:
+        c:
+        - [magenta, CH_3]
+card_zh:
+  type: 還原（不可逆）
+  deficiency: MTHFR C677T 多型 → 輕度高同半胱胺酸血症
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

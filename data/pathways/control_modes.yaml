@@ -1,0 +1,508 @@
+id: control_modes
+title: Modes of transcriptional control
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 6.0
+    - -2.2
+    text: Negative control
+    size: 0.95
+    align: center
+  - g: text
+    at:
+    - 21.0
+    - -2.2
+    text: Positive control
+    size: 0.95
+    align: center
+  - g: text
+    at:
+    - -1.0
+    - 3.0
+    text: Induction
+    size: 0.9
+    align: right
+  - g: text
+    at:
+    - -1.0
+    - 11.0
+    text: Repression
+    size: 0.9
+    align: right
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 2.5
+    - - 12.0
+      - 2.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 3.5
+    - - 12.0
+      - 3.5
+    width: 0.3
+  - g: region
+    x0: 1.0
+    y0: 2.3
+    x1: 2.6
+    y1: 3.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 1.8
+    - 3.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 2.6
+    y0: 2.3
+    x1: 4.2
+    y1: 3.7
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 3.4000000000000004
+    - 3.0
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 4.8
+    y0: 2.3
+    x1: 11.4
+    y1: 3.7
+    hue: blue
+    opacity: 0.5
+    outline: false
+  - g: text
+    at:
+    - 8.1
+    - 3.0
+    text: genes
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 3.4
+    - -0.3999999999999999
+    w: 2.0
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: R
+    text_size: 0.7
+  - g: ion
+    at:
+    - 4.65
+    - -0.95
+    r: 0.35
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 5.0
+    - 1.3
+    to:
+    - 11.0
+    - 1.3
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 6.0
+    - 4.9
+    text: 'lac: LacI + allolactose'
+    size: 0.7
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 15.0
+      - 2.5
+    - - 27.0
+      - 2.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 15.0
+      - 3.5
+    - - 27.0
+      - 3.5
+    width: 0.3
+  - g: region
+    x0: 16.0
+    y0: 2.3
+    x1: 17.6
+    y1: 3.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 16.8
+    - 3.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 17.6
+    y0: 2.3
+    x1: 19.2
+    y1: 3.7
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 18.4
+    - 3.0
+    text: A
+    size: 0.62
+    align: center
+  - g: region
+    x0: 19.8
+    y0: 2.3
+    x1: 26.4
+    y1: 3.7
+    hue: blue
+    opacity: 0.5
+    outline: false
+  - g: text
+    at:
+    - 23.1
+    - 3.0
+    text: genes
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 18.4
+    - 1.75
+    w: 2.0
+    h: 1.3
+    shape: kidney
+    hue: dkgreen
+    text: A
+    text_size: 0.7
+  - g: ion
+    at:
+    - 19.65
+    - 1.2
+    r: 0.35
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 20.0
+    - 1.3
+    to:
+    - 26.0
+    - 1.3
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 21.0
+    - 4.9
+    text: 'ara: AraC + arabinose'
+    size: 0.7
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 10.5
+    - - 12.0
+      - 10.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 11.5
+    - - 12.0
+      - 11.5
+    width: 0.3
+  - g: region
+    x0: 1.0
+    y0: 10.3
+    x1: 2.6
+    y1: 11.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 1.8
+    - 11.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 2.6
+    y0: 10.3
+    x1: 4.2
+    y1: 11.7
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 3.4000000000000004
+    - 11.0
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 4.8
+    y0: 10.3
+    x1: 11.4
+    y1: 11.7
+    hue: blue
+    opacity: 0.5
+    outline: false
+  - g: text
+    at:
+    - 8.1
+    - 11.0
+    text: genes
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 3.4
+    - 9.75
+    w: 2.0
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: R
+    text_size: 0.7
+  - g: ion
+    at:
+    - 4.65
+    - 9.2
+    r: 0.35
+    hue: red
+    text: ''
+    text_size: 0.5
+  - g: mark
+    kind: x
+    at:
+    - 8.0
+    - 9.2
+  - g: text
+    at:
+    - 6.0
+    - 12.9
+    text: 'trp: TrpR + Trp'
+    size: 0.7
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 15.0
+      - 10.5
+    - - 27.0
+      - 10.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 15.0
+      - 11.5
+    - - 27.0
+      - 11.5
+    width: 0.3
+  - g: region
+    x0: 16.0
+    y0: 10.3
+    x1: 17.6
+    y1: 11.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 16.8
+    - 11.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 17.6
+    y0: 10.3
+    x1: 19.2
+    y1: 11.7
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 18.4
+    - 11.0
+    text: A
+    size: 0.62
+    align: center
+  - g: region
+    x0: 19.8
+    y0: 10.3
+    x1: 26.4
+    y1: 11.7
+    hue: blue
+    opacity: 0.5
+    outline: false
+  - g: text
+    at:
+    - 23.1
+    - 11.0
+    text: genes
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 18.4
+    - 7.6
+    w: 2.0
+    h: 1.3
+    shape: kidney
+    hue: dkgreen
+    text: A
+    text_size: 0.7
+  - g: ion
+    at:
+    - 19.65
+    - 7.05
+    r: 0.35
+    hue: red
+    text: ''
+    text_size: 0.5
+  - g: mark
+    kind: x
+    at:
+    - 23.0
+    - 9.2
+  - g: text
+    at:
+    - 21.0
+    - 12.9
+    text: (rare)
+    size: 0.7
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 1.0
+    - 15.2
+    w: 1.4
+    h: 0.9
+    shape: kidney
+    hue: purple
+    text: R
+    text_size: 0.55
+  - g: text
+    at:
+    - 2.0
+    - 15.2
+    text: repressor
+    size: 0.7
+    align: left
+  - g: blob
+    at:
+    - 6.6
+    - 15.2
+    w: 1.4
+    h: 0.9
+    shape: kidney
+    hue: dkgreen
+    text: A
+    text_size: 0.55
+  - g: text
+    at:
+    - 7.6
+    - 15.2
+    text: activator
+    size: 0.7
+    align: left
+  - g: ion
+    at:
+    - 12.0
+    - 15.2
+    r: 0.33
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 12.6
+    - 15.2
+    text: inducer
+    size: 0.7
+    align: left
+  - g: ion
+    at:
+    - 16.6
+    - 15.2
+    r: 0.33
+    hue: red
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 17.2
+    - 15.2
+    text: corepressor
+    size: 0.7
+    align: left
+  - g: arrow
+    from:
+    - 21.4
+    - 15.2
+    to:
+    - 23.0
+    - 15.2
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 23.3
+    - 15.2
+    text: 'on'
+    size: 0.7
+    align: left
+  - g: mark
+    kind: x
+    at:
+    - 25.4
+    - 15.2
+  - g: text
+    at:
+    - 26.0
+    - 15.2
+    text: 'off'
+    size: 0.7
+    align: left
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: 依調節蛋白結合 DNA 後的效果：結合即關 = negative control（repressor），結合即開 = positive control（activator）。依小分子：存在使基因開 = induction（inducer），存在使基因關 = repression（corepressor）。Negative inducible：lac（allolactose 使 LacI
+  離開）；negative repressible：trp（Trp 使 TrpR 結合）；positive inducible：CAP–cAMP、AraC–arabinose。沒有調節 = constitutive（如 lac O^c 突變、管家基因）。
+parts_png: false
+status: pending

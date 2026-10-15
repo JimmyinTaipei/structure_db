@@ -1,0 +1,20 @@
+id: alpha_kg
+name: α-Ketoglutarate
+aliases: [α-KG, 2-oxoglutarate, alpha-ketoglutarate, α-酮戊二酸]
+smiles: "[O-]C(=O)CCC(=O)C(=O)[O-]"
+chain:                              # O 在左：對應 isocitrate 的 HO 在左
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: C, l: O, lb: 2}
+  - {c: "COO^-"}
+chains:
+  aa:                               # 轉胺作用用：與 glutamate 同一排法（COO⁻ / O=C / CH₂ / CH₂ / COO⁻）
+    - {c: "COO^-"}
+    - {c: C, l: O, lb: 2}
+    - {c: CH_2}
+    - {c: CH_2}
+    - {c: "COO^-"}
+tags: [TCA, amino_acid]
+notes_zh: 轉胺作用的胺基受體（→ glutamate）；連接胺基酸代謝與 TCA。
+status: approved

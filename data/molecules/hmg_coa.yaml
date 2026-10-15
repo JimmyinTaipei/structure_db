@@ -1,0 +1,28 @@
+id: hmg_coa
+name: HMG-CoA
+label: HMG-CoA
+aliases:
+- 3-hydroxy-3-methylglutaryl-CoA
+- β-hydroxy-β-methylglutaryl-CoA
+smiles: '[O-]C(=O)C[C@](C)(O)CC(=O)S[1*]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  l: H_3C
+  r: OH
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- ketone_bodies
+- cholesterol_synthesis
+notes_zh: (S)-HMG-CoA。粒線體：HMG-CoA lyase → acetoacetate（酮體）；細胞質（ER）：HMG-CoA reductase → mevalonate（膽固醇）。
+status: pending

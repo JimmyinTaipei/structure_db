@@ -1,0 +1,12 @@
+id: pep
+name: Phosphoenolpyruvate
+label: "Phosphoenol-\npyruvate"
+aliases: [PEP, 磷酸烯醇丙酮酸]
+smiles: "[O-]C(=O)C(OP(=O)([O-])[O-])=C"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: "O^-"}}
+  - {c: C, r: "O{P}", down: 2}
+  - {c: CH_2}
+tags: [carb_metabolism, glycolysis]
+notes_zh: 磷酸基轉移勢能最高的糖解中間物（ΔG'° 水解 −61.9 kJ/mol）。
+status: pending

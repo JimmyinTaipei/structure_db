@@ -1,0 +1,35 @@
+id: udp_glucuronate
+name: UDP-glucuronate
+label: UDP-glucuronate
+aliases:
+- UDP-GlcA
+- UDP-葡萄糖醛酸
+smiles: '[O-]C(=O)[C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)OP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6ccc(=O)[nH]c6=O)[C@H](O)[C@@H]5O)O)O)O'
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: O–UDP
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: COO^-
+      down: H
+tags:
+- carb_metabolism
+- carbohydrate
+- sugar_derivative
+- energy_metabolism
+- detoxification
+notes_zh: UDP-glucose 的 C6 被 UDP-glucose dehydrogenase 氧化成羧酸。活化的 glucuronate 供體：bilirubin、藥物、類固醇的 phase II 結合（UDP-glucuronosyltransferase），以及 GAG（hyaluronate、chondroitin、heparin）的 GlcA 單元。植物與多數動物再經 uronic
+  acid pathway 合成 vitamin C；人缺 L-gulonolactone oxidase。
+status: pending

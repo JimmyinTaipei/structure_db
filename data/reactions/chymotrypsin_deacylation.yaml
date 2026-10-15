@@ -1,0 +1,43 @@
+id: chymotrypsin_deacylation
+title: 'Serine protease step 2: deacylation (chymotrypsin)'
+substrates:
+- acyl_enzyme
+products:
+- peptide_n_fragment
+cofactors_in:
+- H2O
+cofactors_out:
+- EnzSer
+enzyme: chymotrypsin (His57 activates water)
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H_2O
+  acyl_enzyme:
+    highlight:
+    - smarts: C(=O)[O:1]C[#0]
+      color: cyan
+  peptide_n_fragment:
+    highlight:
+    - smarts: C(=O)[OH:1]
+      color: magenta
+  EnzSer:
+    colors:
+      0:
+        c:
+        - - cyan
+          - Ser^{195}–OH (enzyme)
+card_zh:
+  type: His57 活化水，水的 O（洋紅）攻擊醯基-酵素酯鍵 → 第二個四面體中間物 → 羧酸產物；Ser195–OH（青）復原
+  exam_points:
+  - DFP（diisopropyl fluorophosphate）共價修飾 Ser195 → 不可逆抑制（找出活性 Ser）
+  - TPCK 烷化 His57（chymotrypsin），TLCK 對 trypsin
+tags:
+- enzyme
+- catalysis
+parts_png: false
+status: pending

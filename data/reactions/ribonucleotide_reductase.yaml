@@ -1,0 +1,25 @@
+id: ribonucleotide_reductase
+title: "NDP → dNDP (ribonucleotide reductase)"
+substrates: [ndp]
+products: [dndp]
+cofactors_in: [Trx(SH)2]
+cofactors_out: [Trx(S-S), H2O]
+enzyme: "ribonucleotide\nreductase"
+reversible: false
+decorate:                         # 洋紅：2′-OH 以 H₂O 離開
+  ndp: {colors: {d2: magenta}}
+  H2O: {colors: {0: magenta}}
+card_zh:
+  location: 細胞質（S 期大增）
+  type: "還原：2′-OH → 2′-H，作用在二磷酸層級（ADP、GDP、CDP、UDP）"
+  mechanism: "自由基機制（tyrosyl radical）；電子 NADPH → thioredoxin reductase（FAD）→ thioredoxin → RNR"
+  regulation:
+    - "活性位（activity site）：ATP 活化、dATP 抑制全部"
+    - "專一性位（specificity site）：ATP／dATP → 還原 CDP、UDP；dTTP → GDP；dGTP → ADP"
+  deficiency:
+    - "hydroxyurea 抑制 RNR（清除 tyrosyl radical）→ 鐮刀型貧血、CML"
+    - "ADA 缺乏 → dATP 累積抑制 RNR → 淋巴球無法複製 → SCID"
+  exam_points:
+    - "所有 dNTP 的唯一來源（dTMP 另經 thymidylate synthase）"
+tags: [nucleotide]
+status: pending

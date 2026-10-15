@@ -1,0 +1,35 @@
+id: vitamin_d_1a_hydroxylase
+title: Calcidiol → Calcitriol (1α-hydroxylase, kidney)
+substrates:
+- calcidiol
+products:
+- calcitriol
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: '1α-hydroxylase
+
+  (CYP27B1, kidney)'
+reversible: false
+decorate:
+  O2:
+    colors: {0: magenta}
+  calcitriol:
+    highlight:
+    - {smarts: 'C(=[CH2])[CH][OH:1]', color: magenta}
+card_zh:
+  location: 腎近曲小管（粒線體）
+  type: 羥化（cytochrome P450 單氧酶）
+  regulation: PTH、低血磷 → 活化；calcitriol、FGF23 → 抑制
+  deficiency:
+  - 慢性腎病 → calcitriol ↓ → 低血鈣、次發性副甲狀腺亢進（腎性骨病變）
+  - sarcoidosis 等肉芽腫的巨噬細胞也有 1α-hydroxylase（不受 PTH 調控）→ 高血鈣
+  exam_points:
+  - 限速、受調控的一步
+tags:
+- vitamin
+- fat_soluble
+status: pending

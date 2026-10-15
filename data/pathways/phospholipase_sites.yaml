@@ -1,0 +1,54 @@
+id: phospholipase_sites
+title: Where phospholipases cut
+layout: free
+cell_size: 16.0
+nodes:
+- id: pc
+  ref: phosphatidylcholine_r
+  pos:
+  - 0
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[25#0][C:1](=O)[O:2]'
+      color: cyan
+    - smarts: '[26#0][C:1](=O)[O:2]'
+      color: magenta
+    - smarts: '[CH2][O:1][P:2]'
+      color: green
+    - smarts: P[O:1][CH2:2]C[N+]
+      color: orange
+- id: a1
+  text: 'PLA_1 (cyan): sn-1 ester → lyso-PC'
+  kind: concept
+  pos:
+  - 1.25
+  - -0.45
+- id: a2
+  text: 'PLA_2 (magenta): sn-2 ester → arachidonate'
+  kind: concept
+  pos:
+  - 1.25
+  - -0.15
+- id: c
+  text: 'PLC (green): → DAG + phosphocholine'
+  kind: concept
+  pos:
+  - 1.25
+  - 0.15
+- id: d
+  text: 'PLD (orange): → phosphatidate + choline'
+  kind: concept
+  pos:
+  - 1.25
+  - 0.45
+edges: []
+text: false
+tags:
+- lipid
+- phospholipid
+- eicosanoid
+notes_zh: PLA₁ 水解 sn-1 酯鍵；PLA₂ 水解 sn-2 酯鍵（釋出 arachidonate → eicosanoid；corticosteroid 經 lipocortin/annexin 抑制；蛇毒、胰臟 PLA₂）；PLC 切甘油 O–P 之間 → DAG + 磷酸頭基（PIP₂ → DAG + IP₃，Gq 訊號；細菌 α-toxin 為 PLC）；PLD 切 P–O（頭基一側）→
+  phosphatidate + choline。Lysophospholipid 有清潔劑性質（溶血）。
+parts_png: false
+status: pending

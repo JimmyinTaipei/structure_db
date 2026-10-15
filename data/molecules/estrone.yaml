@@ -1,0 +1,15 @@
+id: estrone
+name: Estrone
+aliases:
+- E1
+- 雌酮
+smiles: C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CCC2=O
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: aromatase 作用於 androstenedione；停經後主要的 estrogen（脂肪組織）。
+status: pending

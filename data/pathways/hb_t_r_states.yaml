@@ -1,0 +1,83 @@
+id: hb_t_r_states
+title: Hb switches from T to R state
+layout: plot
+plot:
+  size:
+  - 16
+  - 10
+  params:
+    KR: 1.5
+    KT: 250
+    L: 85000.0
+  x:
+    min: 0
+    max: 110
+    label: pO_2 (mmHg)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+  y:
+    min: 0
+    max: 1.12
+    label: Fractional saturation (Y)
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  bands:
+  - x0: 20
+    x1: 40
+    label: Tissues
+    color: cyan
+  - x0: 90
+    x1: 105
+    label: Lungs
+    color: magenta
+  curves:
+  - id: r
+    y: hill(x, KR, 1)
+    color: gray
+    dash: true
+  - id: t
+    y: hill(x, KT, 1)
+    color: gray
+    dash: true
+  - id: hb
+    y: mwc(x, KR, KT, L)
+    color: red
+    width: 1.2
+  arrows:
+  - from:
+    - 24
+    - 0.12
+    to:
+    - 34
+    - 0.62
+    color: red
+    label: T → R switch
+    label_off:
+    - 1.6
+    - 0.3
+  legend:
+    at:
+    - 54
+    - 0.5
+    items:
+    - curve: r
+      text: R state (strong binding, ≈ Mb)
+    - curve: t
+      text: T state (weak binding)
+    - curve: hb
+      text: 'Hb: starts on T, ends on R → sigmoid'
+tags:
+- protein
+- hemoglobin
+- enzyme
+- allostery
+notes_zh: 若 Hb 只有 R 態（≈ Mb）：肺能吸 O₂ 但組織放不出；只有 T 態：組織放得出但肺吸不到。實際 Hb 在低 pO₂ 時沿 T 曲線，結合 O₂ 後逐步轉成 R 態 → S 形曲線，同時兼顧肺部攝取與組織卸氧（MWC 模型計算）。
+status: pending

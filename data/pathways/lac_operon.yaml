@@ -1,0 +1,722 @@
+id: lac_operon
+title: 'The lac operon: glucose and lactose'
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 1.0
+    - - 26.0
+      - 1.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 2.0
+    - - 26.0
+      - 2.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: region
+    x0: 0.6
+    y0: 0.8
+    x1: 3.6
+    y1: 2.2
+    hue: purple
+    opacity: 0.6
+    outline: false
+  - g: text
+    at:
+    - 2.1
+    - 1.5
+    text: lacI
+    size: 0.62
+    align: center
+  - g: region
+    x0: 5.0
+    y0: 0.8
+    x1: 6.4
+    y1: 2.2
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 5.7
+    - 1.5
+    text: CAP
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.4
+    y0: 0.8
+    x1: 8.0
+    y1: 2.2
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 7.2
+    - 1.5
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.0
+    y0: 0.8
+    x1: 9.2
+    y1: 2.2
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 8.6
+    - 1.5
+    text: O_1
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.8
+    y0: 0.8
+    x1: 16.6
+    y1: 2.2
+    hue: blue
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 13.200000000000001
+    - 1.5
+    text: lacZ
+    size: 0.62
+    align: center
+  - g: region
+    x0: 16.6
+    y0: 0.8
+    x1: 20.6
+    y1: 2.2
+    hue: teal
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 18.6
+    - 1.5
+    text: lacY
+    size: 0.62
+    align: center
+  - g: region
+    x0: 20.6
+    y0: 0.8
+    x1: 24.6
+    y1: 2.2
+    hue: orange
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 22.6
+    - 1.5
+    text: lacA
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 13.2
+    - 3.0
+    text: β-galactosidase
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 18.6
+    - 3.0
+    text: permease
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 22.6
+    - 3.0
+    text: transacetylase
+    size: 0.62
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 6.2
+    - - 22.0
+      - 6.2
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 7.2
+    - - 22.0
+      - 7.2
+    width: 0.3
+  - g: region
+    x0: 5.0
+    y0: 6.0
+    x1: 6.4
+    y1: 7.4
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 5.7
+    - 6.7
+    text: CAP
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.4
+    y0: 6.0
+    x1: 8.0
+    y1: 7.4
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 7.2
+    - 6.7
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.0
+    y0: 6.0
+    x1: 9.2
+    y1: 7.4
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 8.6
+    - 6.7
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.8
+    y0: 6.0
+    x1: 21.6
+    y1: 7.4
+    hue: blue
+    opacity: 0.45
+    outline: false
+  - g: text
+    at:
+    - 15.700000000000001
+    - 6.7
+    text: lacZ  lacY  lacA
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 8.6
+    - 5.45
+    w: 1.9
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: LacI
+    text_size: 0.55
+  - g: mark
+    kind: x
+    at:
+    - 15.0
+    - 5.2
+  - g: text
+    at:
+    - 2.8
+    - 6.7
+    text: 'glucose +
+
+      lactose −'
+    size: 0.68
+    align: right
+  - g: text
+    at:
+    - 23.0
+    - 6.7
+    text: 'off'
+    size: 0.8
+    align: left
+    color: '#D62828'
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 10.4
+    - - 22.0
+      - 10.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 11.4
+    - - 22.0
+      - 11.4
+    width: 0.3
+  - g: region
+    x0: 5.0
+    y0: 10.200000000000001
+    x1: 6.4
+    y1: 11.6
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 5.7
+    - 10.9
+    text: CAP
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.4
+    y0: 10.200000000000001
+    x1: 8.0
+    y1: 11.6
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 7.2
+    - 10.9
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.0
+    y0: 10.200000000000001
+    x1: 9.2
+    y1: 11.6
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 8.6
+    - 10.9
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.8
+    y0: 10.200000000000001
+    x1: 21.6
+    y1: 11.6
+    hue: blue
+    opacity: 0.45
+    outline: false
+  - g: text
+    at:
+    - 15.700000000000001
+    - 10.9
+    text: lacZ  lacY  lacA
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 5.7
+    - 9.6
+    w: 1.6
+    h: 1.2
+    shape: kidney
+    hue: dkgreen
+    text: CAP
+    text_size: 0.5
+  - g: ion
+    at:
+    - 5.0
+    - 8.8
+    r: 0.26
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 6.4
+    - 8.8
+    r: 0.26
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: blob
+    at:
+    - 8.6
+    - 9.65
+    w: 1.9
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: LacI
+    text_size: 0.55
+  - g: mark
+    kind: x
+    at:
+    - 15.0
+    - 9.4
+  - g: text
+    at:
+    - 2.8
+    - 10.9
+    text: 'glucose −
+
+      lactose −'
+    size: 0.68
+    align: right
+  - g: text
+    at:
+    - 23.0
+    - 10.9
+    text: 'off'
+    size: 0.8
+    align: left
+    color: '#D62828'
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 14.6
+    - - 22.0
+      - 14.6
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 15.6
+    - - 22.0
+      - 15.6
+    width: 0.3
+  - g: region
+    x0: 5.0
+    y0: 14.4
+    x1: 6.4
+    y1: 15.799999999999999
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 5.7
+    - 15.1
+    text: CAP
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.4
+    y0: 14.4
+    x1: 8.0
+    y1: 15.799999999999999
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 7.2
+    - 15.1
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.0
+    y0: 14.4
+    x1: 9.2
+    y1: 15.799999999999999
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 8.6
+    - 15.1
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.8
+    y0: 14.4
+    x1: 21.6
+    y1: 15.799999999999999
+    hue: blue
+    opacity: 0.45
+    outline: false
+  - g: text
+    at:
+    - 15.700000000000001
+    - 15.1
+    text: lacZ  lacY  lacA
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 7.6
+    - 13.65
+    w: 2.6
+    h: 1.5
+    shape: oval
+    hue: blue
+    text: pol
+    text_size: 0.55
+  - g: blob
+    at:
+    - 17.6
+    - 12.85
+    w: 1.9
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: LacI
+    text_size: 0.55
+  - g: ion
+    at:
+    - 18.7
+    - 12.35
+    r: 0.3
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 10.0
+    - 14.049999999999999
+    to:
+    - 14.0
+    - 14.049999999999999
+    color: '#2E9E4F'
+    width: 1.0
+    dashed: true
+  - g: text
+    at:
+    - 2.8
+    - 15.1
+    text: 'glucose +
+
+      lactose +'
+    size: 0.68
+    align: right
+  - g: text
+    at:
+    - 23.0
+    - 15.1
+    text: low
+    size: 0.8
+    align: left
+    color: '#2E9E4F'
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 18.8
+    - - 22.0
+      - 18.8
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 4.0
+      - 19.8
+    - - 22.0
+      - 19.8
+    width: 0.3
+  - g: region
+    x0: 5.0
+    y0: 18.6
+    x1: 6.4
+    y1: 20.0
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 5.7
+    - 19.3
+    text: CAP
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.4
+    y0: 18.6
+    x1: 8.0
+    y1: 20.0
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 7.2
+    - 19.3
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.0
+    y0: 18.6
+    x1: 9.2
+    y1: 20.0
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 8.6
+    - 19.3
+    text: O
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.8
+    y0: 18.6
+    x1: 21.6
+    y1: 20.0
+    hue: blue
+    opacity: 0.45
+    outline: false
+  - g: text
+    at:
+    - 15.700000000000001
+    - 19.3
+    text: lacZ  lacY  lacA
+    size: 0.62
+    align: center
+  - g: blob
+    at:
+    - 7.6
+    - 17.85
+    w: 2.6
+    h: 1.5
+    shape: oval
+    hue: blue
+    text: pol
+    text_size: 0.55
+  - g: blob
+    at:
+    - 5.7
+    - 18.0
+    w: 1.6
+    h: 1.2
+    shape: kidney
+    hue: dkgreen
+    text: CAP
+    text_size: 0.5
+  - g: ion
+    at:
+    - 5.0
+    - 17.2
+    r: 0.26
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 6.4
+    - 17.2
+    r: 0.26
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: blob
+    at:
+    - 17.6
+    - 17.05
+    w: 1.9
+    h: 1.3
+    shape: kidney
+    hue: purple
+    text: LacI
+    text_size: 0.55
+  - g: ion
+    at:
+    - 18.7
+    - 16.55
+    r: 0.3
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 10.0
+    - 18.25
+    to:
+    - 21.0
+    - 18.25
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 2.8
+    - 19.3
+    text: 'glucose −
+
+      lactose +'
+    size: 0.68
+    align: right
+  - g: text
+    at:
+    - 23.0
+    - 19.3
+    text: high
+    size: 0.8
+    align: left
+    color: '#2E9E4F'
+  - g: ion
+    at:
+    - 5.0
+    - 21.6
+    r: 0.26
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 5.5
+    - 21.6
+    text: cAMP
+    size: 0.68
+    align: left
+  - g: ion
+    at:
+    - 9.0
+    - 21.6
+    r: 0.3
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 9.5
+    - 21.6
+    text: allolactose
+    size: 0.68
+    align: left
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: lacI（repressor，四聚體）、CAP site、P、O、lacZ（β-galactosidase）、lacY（permease）、lacA（transacetylase）。Lactose → allolactose（β1→6）結合 LacI → 離開 operator（O1；O2、O3 形成 DNA 環加強抑制）。葡萄糖低 → cAMP 高 → CAP–cAMP 結合 CAP
+  site、彎曲 DNA、招募 RNA pol（catabolite repression / positive control）。只有「葡萄糖低 + 乳糖有」時大量表現。突變：lacI⁻、O^c 為組成性表現；I^s（不受 inducer 影響）恆關。IPTG 為 gratuitous inducer。
+parts_png: false
+status: pending

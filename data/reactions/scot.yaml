@@ -1,0 +1,29 @@
+id: scot
+title: Acetoacetate + Succinyl-CoA → Acetoacetyl-CoA + Succinate (SCOT)
+substrates:
+- acetoacetate
+- succinyl_coa
+products:
+- acetoacetyl_coa
+- succinate
+enzyme: 'succinyl-CoA:3-ketoacid
+
+  CoA transferase (thiophorase)'
+reversible: false
+decorate:
+  succinyl_coa:
+    colors:
+      3: {r: magenta}
+  acetoacetyl_coa:
+    colors:
+      3: {r: magenta}
+card_zh:
+  location: 肝外組織粒線體（心、腦、肌肉、腎）
+  type: CoA 轉移
+  exam_points:
+  - 肝臟沒有 SCOT → 肝製造酮體但不能利用
+  - 接著 thiolase → 2 acetyl-CoA → TCA
+tags:
+- lipid_metabolism
+- ketone_bodies
+status: pending

@@ -1,0 +1,35 @@
+id: dna_methyltransferase
+title: CpG methylation (DNA methyltransferase)
+substrates:
+- cytosine_dr
+products:
+- methylcytosine_dr
+cofactors_in:
+- SAM
+cofactors_out:
+- SAH
+extra_out:
+- H+
+enzyme: 'DNA methyltransferase
+
+  (DNMT1, DNMT3A/B)'
+reversible: false
+decorate:
+  SAM:
+    colors:
+      0: magenta
+  methylcytosine_dr:
+    highlight:
+    - smarts: '[CH3:1]c'
+      color: magenta
+card_zh:
+  type: SAM 的甲基（洋紅）轉到 cytosine 的 C5；酵素 Cys 先暫時加成到 C6 活化 C5，H⁺ 從 C5 離開
+  exam_points:
+  - DNMT3A/B：de novo 甲基化（胚胎、imprinting）；DNMT1：維持型，辨識半甲基化 CpG，複製後照樣甲基化
+  - 去甲基化：TET 氧化 5mC → 5hmC → … → BER
+  - 5-azacytidine / decitabine 抑制 DNMT（MDS 治療）
+tags:
+- molecular_biology
+- gene_regulation
+parts_png: false
+status: pending

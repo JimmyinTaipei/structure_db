@@ -1,0 +1,33 @@
+id: fructose_26bp
+name: Fructose 2,6-bisphosphate
+label: 'Fructose
+
+  2,6-bisphosphate'
+aliases:
+- F2,6BP
+- F-2,6-BP
+- 果糖-2,6-二磷酸
+smiles: C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)OP(=O)([O-])[O-])O)O)OP(=O)([O-])[O-]
+haworth:
+  ring: furanose
+  numbers: true
+  start: 2
+  subs:
+    2:
+      up: O{P}
+      down: CH_2OH
+    3:
+      up: HO
+      down: H
+    4:
+      up: H
+      down: OH
+    5:
+      up: '{P}OCH_2'
+      down: H
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+notes_zh: 不是代謝中間物，而是訊號分子：活化 PFK-1、抑制 FBPase-1。胰島素 → F2,6BP ↑ → 糖解；glucagon（PKA 磷酸化 PFK-2/FBPase-2）→ F2,6BP ↓ → 糖質新生（肝）。
+status: pending

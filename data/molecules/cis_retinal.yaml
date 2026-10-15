@@ -1,0 +1,19 @@
+id: cis_retinal
+name: 11-cis-Retinal
+label: 11-cis-Retinal
+aliases:
+- 11-cis-retinaldehyde
+smiles: CC1=C(C(C)(C)CCC1)/C=C/C(C)=C/C=C\C(C)=C\C=O
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - atoms:
+    - 14
+    - 15
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 洋紅：C11=C12 的 cis 雙鍵。醛基與 opsin 的 Lys 形成 Schiff base → rhodopsin；吸收光子後變成 all-trans（唯一的光化學步驟）。
+status: pending

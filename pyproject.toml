@@ -1,0 +1,13 @@
+[project]
+name = "sdb"
+version = "0.1.0"
+description = "生化／有機結構式與反應資料庫"
+requires-python = ">=3.11"
+dependencies = ["rdkit", "pyyaml", "resvg-py", "fonttools"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,20 @@
+id: tocopherol
+name: α-Tocopherol (vitamin E)
+label: α-Tocopherol (E)
+aliases:
+- vitamin E
+- alpha-tocopherol
+- 維生素E
+- 生育醇
+smiles: Cc1c(C)c2O[C@](C)(CCC[C@H](C)CCC[C@H](C)CCCC(C)C)CCc2c(C)c1O
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: c[OH:1]
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: chromanol 環＋飽和的 phytyl 尾巴（嵌在膜中）。洋紅：酚 OH，把 H· 給脂質過氧自由基 → 中斷脂質過氧化連鎖反應；生成的 tocopheryl 自由基由 vitamin C 還原回來。缺乏（脂肪吸收不良）：溶血性貧血、棘狀紅血球、脊髓小腦退化（類似 B12 缺乏但無巨球性貧血）。
+status: pending

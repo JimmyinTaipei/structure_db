@@ -1,0 +1,12 @@
+id: sphinganine
+name: Sphinganine
+aliases:
+- dihydrosphingosine
+smiles: CCCCCCCCCCCCCCC[C@@H](O)[C@@H]([NH3+])CO
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: 3-ketosphinganine reductase（NADPH）。接著 ceramide synthase 接上脂肪醯基（N-acyl）→ dihydroceramide → desaturase 產生 trans-Δ4 → ceramide。
+status: pending

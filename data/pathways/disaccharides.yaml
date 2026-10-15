@@ -1,0 +1,13 @@
+id: disaccharides
+title: "Disaccharides（雙醣）"
+layout: free
+cell: 1.0
+nodes:
+  - {id: malt, ref: maltose, pos: [0, 0]}
+  - {id: lac, ref: lactose, pos: [1.05, 0]}
+  - {id: suc, ref: sucrose, pos: [0, 0.82]}
+  - {id: cel, ref: cellobiose, pos: [1.05, 0.82]}
+edges: []
+tags: [carbohydrate, disaccharide]
+notes_zh: "還原糖：maltose、lactose、cellobiose（右側單元的 anomeric C 自由）。非還原糖：sucrose（α1↔β2，兩個 anomeric C 都用掉）、trehalose。消化酵素：maltase、lactase、sucrase-isomaltase（都在小腸刷狀緣）。"
+status: pending

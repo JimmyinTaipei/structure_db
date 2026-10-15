@@ -1,0 +1,115 @@
+id: polysaccharide_classes
+title: Homo- vs heteropolysaccharides
+layout: free
+cell_size: 4.5
+regions:
+- kind: box
+  x0: -1.45
+  y0: 1.55
+  x1: 1.45
+  y1: 3.2
+- kind: box
+  x0: 1.6
+  y0: 1.55
+  x1: 6.15
+  y1: 3.2
+nodes:
+- id: root
+  text: Polysaccharides
+  pos:
+  - 2.05
+  - -0.1
+  kind: concept
+- id: homo
+  text: 'Homopolysaccharides
+
+    (one kind of monomer)'
+  pos:
+  - 0
+  - 0.9
+  kind: concept
+- id: hetero
+  text: 'Heteropolysaccharides
+
+    (two or more kinds)'
+  pos:
+  - 3.85
+  - 0.9
+  kind: concept
+- id: amy
+  ref: amylose
+  pos:
+  - -0.7
+  - 2.0
+  view: name
+- id: glyg
+  ref: glycogen
+  pos:
+  - 0.7
+  - 2.0
+  view: name
+- id: cel
+  ref: cellulose
+  pos:
+  - -0.7
+  - 2.75
+  view: name
+- id: chi
+  ref: chitin_unit
+  pos:
+  - 0.7
+  - 2.75
+  view: name
+- id: ha
+  ref: hyaluronate_unit
+  pos:
+  - 2.65
+  - 2.0
+  view: name
+- id: hep
+  ref: heparin_unit
+  pos:
+  - 4.95
+  - 2.0
+  view: name
+- id: cs
+  ref: chondroitin_4_sulfate_unit
+  pos:
+  - 2.65
+  - 2.75
+  view: name
+- id: pg
+  ref: peptidoglycan_unit
+  pos:
+  - 4.95
+  - 2.75
+  view: name
+- id: hnote
+  text: 'Glc α1→4 / α1→6: energy storage
+
+    Glc β1→4, GlcNAc β1→4: structure'
+  pos:
+  - 0
+  - 3.7
+  kind: name
+- id: tnote
+  text: 'GAGs: amino sugar + uronic acid (± sulfate)
+
+    Peptidoglycan: NAG–NAM + peptide'
+  pos:
+  - 3.65
+  - 3.7
+  kind: name
+edges:
+- from: root
+  to: homo
+  head: false
+- from: root
+  to: hetero
+  head: false
+tags:
+- carbohydrate
+- polysaccharide
+notes_zh: 同元多醣：starch（amylose、amylopectin）、glycogen、cellulose、chitin、dextran、inulin（fructose）。雜多醣：GAG（hyaluronate、chondroitin、dermatan、heparin、keratan）、peptidoglycan、agarose。考點：玻尿酸是 GAG（雜多醣），本身不是 proteoglycan；chitin
+  是同元多醣（只有 GlcNAc）。
+status: pending

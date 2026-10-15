@@ -1,0 +1,21 @@
+id: sam
+name: S-Adenosylmethionine (SAM)
+label: 'S-Adenosyl-
+
+  methionine (SAM)'
+aliases:
+- SAM
+- AdoMet
+- S-腺苷甲硫胺酸
+smiles: Nc8ncnc9c8ncn9[C@@H]4O[C@H](C[S+](C)CC[C@H]([NH3+])C(=O)[O-])[C@@H](O)[C@H]4O
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[CH3][S+]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: Met + ATP → SAM（三個磷酸全部離開）。洋紅：鋶離子（S⁺）上的 CH₃，是體內主要的甲基供體 → SAH → homocysteine。例：norepinephrine → epinephrine（PNMT）、guanidinoacetate → creatine、DNA／組蛋白甲基化、PC 合成。
+status: pending

@@ -1,0 +1,125 @@
+id: dna_polymerase_mechanism
+title: 'DNA polymerase: adding a nucleotide'
+layout: scene
+scene:
+  items:
+  - id: pol
+    g: blob
+    at:
+    - 8.0
+    - 5.0
+    w: 11.0
+    h: 8.0
+    shape: hand
+    hue: blue
+    accent: false
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 6.1
+    - - 10.6
+      - 6.1
+    bases: left
+    base_len: 0.5
+    ends:
+    - 3'
+    - 5'
+    seq: TACGGC
+  - g: strand
+    kind: new
+    points:
+    - - 0.0
+      - 4.6
+    - - 8.2
+      - 4.6
+    bases: right
+    base_len: 0.5
+    ends:
+    - 5'
+    - ''
+    seq: ATGCCG
+  - id: dntp
+    g: text
+    at:
+    - 14.3
+    - 5.0
+    text: 'dNTP: base–sugar–{P}α–{P}β–{P}γ'
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - 9.3
+    - 4.2
+    to:
+    - 15.6
+    - 4.4
+    curve: -0.18
+    color: magenta
+  - g: text
+    at:
+    - 14.3
+    - 2.8
+    text: 3'-OH attacks Pα
+    size: 0.75
+    align: left
+    color: magenta
+  - g: ion
+    at:
+    - 10.4
+    - 5.0
+    text: Mg^{2+}
+    hue: green
+    r: 0.5
+    text_size: 0.4
+  - g: ion
+    at:
+    - 11.6
+    - 5.0
+    text: Mg^{2+}
+    hue: green
+    r: 0.5
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 19.2
+    - 5.7
+    to:
+    - 20.4
+    - 7.4
+    color: gray
+  - g: text
+    at:
+    - 20.6
+    - 8.4
+    text: 'PP_i → 2 P_i
+
+      (drives reaction)'
+    size: 0.75
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 0.0
+    - 10.6
+    text: palm · fingers · thumb
+    size: 0.8
+    align: left
+  - g: text
+    at:
+    - 4.0
+    - 0.4
+    text: 'Polymerase site: 5''→3'''
+    size: 0.85
+    align: center
+    color: '#2E6E9E'
+tags:
+- molecular_biology
+- replication
+notes_zh: 'DNA polymerase 外形如右手（palm、fingers、thumb）。Palm 上的 Asp 抓住兩個 Mg²⁺：一個活化引子的 3′-OH，另一個穩定 dNTP 的三磷酸。3′-OH 攻擊進來 dNTP 的 α-磷酸 → 形成 3′,5′-磷酸二酯鍵，釋出 PPi；pyrophosphatase 水解 PPi 使反應不可逆。需要引子（3′-OH），新股只能 5′→3′。校對：3′→5′
+  exonuclease；DNA pol α、β、反轉錄酶、Taq 沒有。E. coli Pol I 另有 5′→3′ exonuclease（去除引子、nick translation）；Klenow fragment 去掉了這段。
+
+  【補充】New strand grows 5''→3'' only; template read 3''→5''. A primer with a free 3''-OH is required (no de novo start; primase/RNA pol can start). Proofreading: mismatch → 3'' end shifts to the 3''→5''
+  exonuclease site (Pol I, III, δ, ε; absent in Pol α, β, RT, Taq). Error ~10^{-9} with MMR.'
+parts_png: false
+status: pending

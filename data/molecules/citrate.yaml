@@ -1,0 +1,20 @@
+id: citrate
+name: Citrate
+aliases: [檸檬酸, citric acid]
+smiles: "C(C(=O)[O-])C(O)(C(=O)[O-])CC(=O)[O-]"
+chain:                              # 老師的直線畫法：上兩列來自 acetyl-CoA，中心碳＝OAA 的 C=O 碳
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: C, l: HO, r: "COO^-"}
+  - {c: CH_2}
+  - {c: "COO^-"}
+chains:
+  explicit:                         # aconitase 用：第 3 列的兩個 H 明確畫出
+    - {c: "COO^-"}
+    - {c: CH_2}
+    - {c: C, l: HO, r: "COO^-"}
+    - {c: C, l: H, r: H}
+    - {c: "COO^-"}
+tags: [TCA, lipid]
+notes_zh: 對稱但 prochiral，aconitase 能分辨兩臂；運到細胞質可提供脂肪酸合成所需的 acetyl-CoA（ATP-citrate lyase），並活化 ACC、抑制 PFK-1。
+status: approved

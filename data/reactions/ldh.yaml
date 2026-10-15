@@ -1,0 +1,38 @@
+id: ldh
+title: Pyruvate ⇌ Lactate (lactate dehydrogenase)
+substrates:
+- pyruvate
+products:
+- lactate
+cofactors_in:
+- NADH+H+
+cofactors_out:
+- NAD+
+enzyme: 'lactate
+
+  dehydrogenase'
+reversible: true
+decorate:
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  lactate:
+    colors:
+      1:
+        l: [magenta, H]
+        r: magenta
+card_zh:
+  location: 細胞質
+  type: 氧化還原（可逆）
+  exam_points:
+  - 無氧時再生 NAD⁺ 給 GAPDH
+  - 肝臟反向：lactate → pyruvate → 糖質新生（Cori cycle）
+  - 血中 LDH ↑：組織損傷（溶血、心肌梗塞、腫瘤）
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+status: pending

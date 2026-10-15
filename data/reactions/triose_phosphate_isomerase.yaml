@@ -1,0 +1,20 @@
+id: triose_phosphate_isomerase
+title: "Glycolysis ⑤ DHAP ⇌ Glyceraldehyde 3-phosphate"
+step: 5
+substrates: [dhap]
+products: [glyceraldehyde_3p]
+enzyme: "triose phosphate\nisomerase"
+reversible: true
+decorate:
+  dhap: {colors: {1: magenta, 2: magenta}}
+  glyceraldehyde_3p: {colors: {0: magenta, 1: magenta}}
+card_zh:
+  location: 細胞質
+  type: 異構化（酮糖 → 醛糖）
+  deltaG: "ΔG'° = +7.5 kJ/mol，可逆；G3P 被下一步持續消耗而往右進行"
+  exam_points:
+    - "完成後 1 個 glucose → 2 個 G3P，準備期（消耗 2 ATP）結束"
+    - "TPI 是「催化完美（diffusion-limited）」酵素的經典例子"
+    - "TPI 缺乏 → 溶血性貧血＋神經退化"
+tags: [carb_metabolism, glycolysis]
+status: pending

@@ -1,0 +1,15 @@
+id: histamine
+name: Histamine
+aliases:
+- 組織胺
+smiles: '[NH3+]CCc1c[nH]cn1'
+chain:
+- c: CH_2
+  l: ^+H_3N
+- c: CH_2
+- ring: '[*]c1c[nH]cn1'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: histidine decarboxylase（PLP）。肥大細胞、嗜鹼性球（過敏）、胃 ECL 細胞（H2 → 胃酸）、腦。
+status: pending

@@ -1,0 +1,32 @@
+id: adenylosuccinate_synthetase
+title: "IMP + Aspartate → Adenylosuccinate (adenylosuccinate synthetase)"
+substrates: [imp, aspartate]
+products: [adenylosuccinate]
+cofactors_in: [GTP]
+cofactors_out: [GDP, Pi]
+extra_out: [H+, H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "adenylosuccinate\nsynthetase"
+reversible: false
+decorate:
+  aspartate:
+    colors:
+      0: cyan
+      1: {c: cyan, r: cyan, l: magenta}
+      2: cyan
+      3: cyan
+  imp:
+    base_colors: {6: magenta}
+  Pi:
+    colors: {0: magenta}
+  adenylosuccinate:
+    base_colors: {6: magenta, 7: cyan, 8: cyan, 9: cyan, 10: cyan, 11: cyan, 12: cyan, 13: cyan, 14: cyan}
+card_zh:
+  location: 細胞質
+  type: "IMP → AMP 第一步：Asp 胺基取代 C6=O"
+  cofactors: "GTP（不是 ATP！）"
+  regulation: "AMP 回饋抑制自己這一支"
+  exam_points:
+    - "做 AMP 要花 GTP、做 GMP 要花 ATP → 兩種嘌呤互相平衡"
+    - "與尿素循環 ASS／ASL 同一套路：Asp 帶 N 進來、以 fumarate 離開"
+tags: [nucleotide, purine]
+status: pending

@@ -1,0 +1,116 @@
+id: fed_state
+title: Fed (absorptive) state — insulin（進食狀態）
+layout: free
+cell_size: 3.4
+regions:
+- kind: box
+  x0: -6.6
+  y0: -3.4
+  x1: -1.2
+  y1: 2.2
+  label: Liver
+- kind: box
+  x0: 2.6
+  y0: -3.4
+  x1: 7.8
+  y1: -0.4
+  label: Muscle
+- kind: box
+  x0: 2.6
+  y0: 0.2
+  x1: 7.8
+  y1: 3.6
+  label: Adipose tissue
+- kind: box
+  x0: -6.6
+  y0: 2.8
+  x1: -1.2
+  y1: 4.6
+  label: Brain, RBC
+nodes:
+- id: ins
+  text: Insulin ↑, glucagon ↓
+  kind: heading
+  pos:
+  - -6.6
+  - -4.4
+- id: bg
+  text: 'Blood glucose
+
+    (GLUT2 → liver;
+
+    GLUT4 → muscle, fat)'
+  kind: concept
+  pos:
+  - 0.7
+  - 0.4
+- id: l1
+  text: Glucose → glycogen
+  kind: name
+  pos:
+  - -3.9
+  - -2.2
+- id: l2
+  text: 'Glucose → acetyl-CoA
+
+    → fatty acids → TAG'
+  kind: name
+  pos:
+  - -3.9
+  - -0.8
+- id: l3
+  text: TAG → VLDL
+  kind: name
+  pos:
+  - -3.9
+  - 0.9
+- id: m1
+  text: Glucose → glycogen
+  kind: name
+  pos:
+  - 5.2
+  - -2.4
+- id: m2
+  text: Amino acids → protein
+  kind: name
+  pos:
+  - 5.2
+  - -1.3
+- id: a1
+  text: Glucose → glycerol 3-P
+  kind: name
+  pos:
+  - 5.2
+  - 1.2
+- id: a2
+  text: 'Chylomicron / VLDL TAG
+
+    (LPL) → FA → TAG'
+  kind: name
+  pos:
+  - 5.2
+  - 2.6
+- id: b1
+  text: Glucose → CO_2 (brain); lactate (RBC)
+  kind: name
+  pos:
+  - -3.9
+  - 3.9
+edges:
+- from: bg
+  to: l1
+- from: bg
+  to: m1
+- from: bg
+  to: a1
+- from: bg
+  to: b1
+- from: l3
+  to: a2
+  label: VLDL
+  bend: -0.15
+tags:
+- energy_metabolism
+- integration
+notes_zh: 胰島素（去磷酸化）：肝 glucokinase、PFK-2、pyruvate kinase、PDH、ACC、glycogen synthase、HMG-CoA reductase 活性 ↑；肌肉與脂肪 GLUT4 上膜；脂肪 LPL ↑、HSL ↓。合成作用為主：肝醣、脂肪酸、TAG、蛋白質。腦與 RBC 不依賴胰島素攝取葡萄糖（GLUT1/3）。
+status: pending

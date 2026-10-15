@@ -1,0 +1,103 @@
+id: glycogen_enzyme_phosphorylation
+title: 'Glycogen phosphorylase and synthase: reciprocal phosphorylation'
+layout: free
+cell_size: 4.6
+nodes:
+- id: gpb
+  text: 'Phosphorylase b
+
+    (less active)'
+  pos:
+  - 0
+  - 0
+  kind: protein
+- id: gpa
+  text: 'Phosphorylase a–Ⓟ
+
+    (active)'
+  pos:
+  - 2.8
+  - 0
+  kind: protein
+- id: gsa
+  text: 'Glycogen synthase a
+
+    (active)'
+  pos:
+  - 0
+  - 2.6
+  kind: protein
+- id: gsb
+  text: 'Glycogen synthase b–Ⓟ
+
+    (inactive)'
+  pos:
+  - 2.8
+  - 2.6
+  kind: protein
+- id: glu
+  text: Glucagon / epinephrine → cAMP → PKA;   insulin → PP1
+  pos:
+  - 1.4
+  - 4.0
+  kind: concept
+- id: ampb
+  text: + AMP (muscle)
+  pos:
+  - -1.6
+  - 0
+  kind: name
+- id: glca
+  text: '− glucose (liver),
+
+    − ATP, G6P'
+  pos:
+  - 4.5
+  - 0
+  kind: name
+- id: g6pb
+  text: + G6P
+  pos:
+  - 4.4
+  - 2.6
+  kind: name
+edges:
+- from: gpb
+  to: gpa
+  bend: 0.4
+  label: 'phosphorylase kinase
+
+    (PKA; Ca^{2+} in muscle)'
+  side_text: ATP → ADP
+- from: gpa
+  to: gpb
+  bend: 0.4
+  label: PP1
+  side_text: → P_i
+  color: green
+- from: gsa
+  to: gsb
+  bend: 0.4
+  label: PKA, GSK3
+  side_text: ATP → ADP
+- from: gsb
+  to: gsa
+  bend: 0.4
+  label: PP1
+  side_text: → P_i
+  color: green
+- from: ampb
+  to: gpb
+- from: glca
+  to: gpa
+  inhibit: true
+- from: g6pb
+  to: gsb
+tags:
+- carb_metabolism
+- glycogen
+- energy_metabolism
+- integration
+notes_zh: 同一個訊號相反作用：glucagon（肝）／epinephrine（肝、肌）→ cAMP → PKA → phosphorylase kinase → 磷酸化 phosphorylase（b → a，活化）；PKA 與 GSK3 同時磷酸化 glycogen synthase（a → b，失活）→ 分解開、合成關。Insulin → PP1 去磷酸化兩者 → 合成開、分解關（insulin
+  也經 Akt 抑制 GSK3）。別構：AMP 活化肌肉 phosphorylase b（運動時不需激素）；肝 phosphorylase a 被 glucose 抑制（血糖感測）；G6P 活化 synthase b。記法：磷酸化 → 分解酵素活化、合成酵素失活（ACC、PFK-2 亦同）。
+status: pending

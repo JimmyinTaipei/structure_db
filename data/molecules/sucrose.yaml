@@ -1,0 +1,26 @@
+id: sucrose
+name: "Sucrose"
+aliases: [蔗糖, table sugar]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@@]1(CO)[C@@H](O)[C@H](O)[C@@H](CO)O1)O)O)O)O"
+haworth:
+  units:
+    - ring: pyranose
+      subs:
+        1: {up: "H", down: "link"}
+        2: {up: "H", down: "OH"}
+        3: {up: "OH", down: "H"}
+        4: {up: "H", down: "HO"}
+        5: {up: "CH_2OH", down: "H"}
+    - ring: furanose
+      start: 2
+      mirror: true
+      subs:
+        2: {up: "HOCH_2", down: "link"}
+        3: {up: "H", down: "OH"}
+        4: {up: "OH", down: "H"}
+        5: {up: "H", down: "CH_2OH"}
+      at: [4.7, 0.1]
+  links: [{from: [0, 1, "down"], to: [1, 2, "down"]}]
+tags: [carbohydrate, disaccharide]
+notes_zh: "Glc(α1↔β2)Fru。蔗糖；兩個 anomeric carbon 互相連結 → 非還原糖。小腸 sucrase 分解。右側 fructose 依 Lehninger 慣例在平面內轉 180°（C2 在左）。"
+status: pending

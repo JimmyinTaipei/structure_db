@@ -1,0 +1,13 @@
+id: isocitrate
+name: Isocitrate
+aliases: [異檸檬酸]
+smiles: "C(C(=O)[O-])[C@H](C(=O)[O-])[C@@H](O)C(=O)[O-]"
+chain:                              # 與 citrate 同一排法：OH 從第 2 列「下移」到第 3 列
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: C, l: H, r: "COO^-"}
+  - {c: C, l: HO, r: H}
+  - {c: "COO^-"}
+tags: [TCA]
+notes_zh: (2R,3S)-isocitrate；isocitrate DH 是 TCA 的主要調控點之一。
+status: approved

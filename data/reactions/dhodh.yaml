@@ -1,0 +1,31 @@
+id: dhodh
+title: "嘧啶 ④ Dihydroorotate → Orotate (DHODH)"
+step: 4
+substrates: [dihydroorotate]
+products: [orotate]
+cofactors_in: [Q]
+cofactors_out: [QH2]
+enzyme: "dihydroorotate\ndehydrogenase"
+reversible: false
+decorate:
+  dihydroorotate:
+    highlight:
+    - atoms: [3, 4]
+      color: magenta
+  orotate:
+    highlight:
+    - atoms: [3, 4]
+      color: magenta
+  QH2:
+    colors:
+      0:
+        c:
+        - [magenta, H_2]
+card_zh:
+  location: "粒線體內膜外側（唯一不在細胞質的步驟）"
+  type: "氧化（C5–C6 形成雙鍵），電子經 FMN 交給 CoQ → 電子傳遞鏈"
+  deficiency: "leflunomide（teriflunomide）抑制 DHODH → 類風濕性關節炎、MS 的免疫調節藥"
+  exam_points:
+    - "嘧啶合成需要粒線體電子傳遞鏈（CoQ）"
+tags: [nucleotide, pyrimidine]
+status: pending

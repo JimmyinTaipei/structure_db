@@ -1,0 +1,67 @@
+id: allosteric_kinetics
+title: Allosteric enzyme kinetics (sigmoid)
+layout: plot
+plot:
+  size:
+  - 15
+  - 10
+  params:
+    Vmax: 1
+    K: 6
+    n: 2.8
+  x:
+    min: 0
+    max: 24
+    label: '[S]'
+    marks:
+    - at: K
+      label: K_{0.5}
+  y:
+    min: 0
+    max: 1.32
+    label: v_0
+    marks:
+    - at: Vmax
+      label: V_{max}
+    - at: Vmax/2
+      label: V_{max}/2
+  hlines:
+  - y: Vmax
+  curves:
+  - id: act
+    y: Vmax*hill(x, K/2.2, n)
+    color: cyan
+  - id: none
+    y: Vmax*hill(x, K, n)
+  - id: inh
+    y: Vmax*hill(x, K*2, n)
+    color: red
+  - id: mm
+    y: mm(x, Vmax, K)
+    color: gray
+    dash: true
+  points:
+  - 'on': none
+    x: K
+    y: Vmax/2
+    drop: x
+    dot: true
+  legend:
+    at:
+    - 25.5
+    - 1.05
+    items:
+    - curve: act
+      text: + Activator (K_{0.5} ↓)
+    - curve: none
+      text: No effector (sigmoid)
+    - curve: inh
+      text: + Inhibitor (K_{0.5} ↑)
+    - curve: mm
+      text: Hyperbolic (M–M), same K
+tags:
+- enzyme
+- enzyme_kinetics
+- allostery
+notes_zh: 別位酵素（如 ATCase、PFK-1）的 v₀–[S] 是 S 形（協同性），不遵守 M–M；用 K_{0.5} 代替 K_m。正向調節劑（activator）讓曲線左移、K_{0.5} 下降；負向調節劑（inhibitor）讓曲線右移。K 系統改變 K_{0.5}（本圖），V 系統改變 V_{max}。灰色虛線為同 K 的雙曲線作對照。
+status: pending

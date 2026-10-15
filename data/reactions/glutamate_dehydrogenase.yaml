@@ -1,0 +1,23 @@
+id: glutamate_dehydrogenase
+title: "Oxidative deamination: Glutamate ⇌ α-Ketoglutarate + NH₄⁺"
+substrates: [glutamate]
+products: [{id: alpha_kg, chain: aa}, ammonium]
+cofactors_in: [H2O, NAD(P)+]
+cofactors_out: [NAD(P)H+H+]
+enzyme: "glutamate\ndehydrogenase"
+reversible: true
+decorate:                         # 洋紅：N → NH₄⁺；青藍：Cα 上的 H → NAD(P)H
+  glutamate: {colors: {1: {l: magenta, r: cyan}}}
+  ammonium: {colors: {0: magenta}}
+  "NAD(P)H+H+": {colors: {0: {c: [cyan, "H"]}}}
+card_zh:
+  location: 粒線體基質（肝）
+  type: 氧化脫胺（oxidative deamination）
+  deltaG: "可逆；在肝中主要往釋出 NH₄⁺ 的方向（NH₄⁺ 隨即進入尿素循環）"
+  cofactors: "NAD⁺ 或 NADP⁺ 都可以用（少數兩者皆可的酵素）"
+  regulation: "活化：ADP、GDP（能量低時加速分解胺基酸）。抑制：ATP、GTP"
+  deficiency: "GDH 功能增強突變（GTP 抑制失效）→ 高胰島素血症–高血氨症候群（HI/HA）"
+  exam_points:
+    - "轉胺作用 ＋ GDH ＝ transdeamination：把各種胺基酸的 N 匯集成 NH₄⁺"
+tags: [amino_acid_metabolism, deamination]
+status: approved

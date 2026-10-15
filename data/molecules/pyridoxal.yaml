@@ -1,0 +1,13 @@
+id: pyridoxal
+name: Pyridoxal
+label: Pyridoxal
+aliases:
+- 吡哆醛
+smiles: Cc1ncc(CO)c(C=O)c1O
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: C4′ 為醛基。pyridoxal kinase + ATP → PLP。
+status: pending

@@ -1,0 +1,17 @@
+id: atp_n
+name: "ATP"
+aliases: [adenosine triphosphate]
+smiles: "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}–{P}–{P}–OCH_2", down: "H"}
+  base: "[*]n1cnc2c(N)ncnc21"
+  base_right: 5     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, purine]
+notes_zh: "三磷酸核苷酸的結構範例：α、β、γ 磷酸。（輔因子表中的 ATP 是另一個簡寫項目）"
+status: pending

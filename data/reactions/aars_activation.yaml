@@ -1,0 +1,51 @@
+id: aars_activation
+title: Amino acid activation (aminoacyl-tRNA synthetase, step 1)
+substrates:
+- alanine
+products:
+- alanyl_adenylate
+cofactors_in:
+- ATP
+cofactors_out:
+- PPi
+extra_in:
+- H+
+enzyme: alanyl-tRNA synthetase
+reversible: false
+decorate:
+  alanine:
+    colors:
+      0:
+        c:
+        - - black
+          - CO
+        - - magenta
+          - O^-
+  alanyl_adenylate:
+    highlight:
+    - smarts: C(=O)[O:1]P
+      color: magenta
+    - smarts: C(=O)[O]-[P:1](=[O:2])([O-:3])[O:4][#0]
+      color: cyan
+  ATP:
+    colors:
+      0:
+        c:
+        - - cyan
+          - ATP
+  PPi:
+    colors:
+      0:
+        c:
+        - - cyan
+          - PP_i
+card_zh:
+  type: 羧酸根的 O（洋紅）攻擊 ATP 的 α-P → 混合酸酐 aa~AMP；β、γ 磷酸以 PPi 離開（青）
+  exam_points:
+  - PPi 再被 pyrophosphatase 水解 → 每個胺基酸耗 2 個高能鍵
+  - aa~AMP 不離開酵素，直接進行第二步
+tags:
+- molecular_biology
+- translation
+parts_png: false
+status: pending

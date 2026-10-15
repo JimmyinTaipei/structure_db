@@ -1,0 +1,19 @@
+id: aldol_condensation
+title: Aldol condensation（2 CH₃CHO → crotonaldehyde + H₂O）
+substrates: [{id: acetaldehyde, n: 2, view: skeletal}]
+products: [crotonaldehyde, water]
+prosthetic: ["NaOH"]
+conditions: "heat"
+reversible: false
+decorate:
+  crotonaldehyde: {smarts: '[CH]=[CH]'}
+  water:
+    colors: {0: magenta}
+card_zh:
+  type: 有機反應：C–C 鍵形成 + 脫水
+  mechanism: "① OH⁻ 拔 α-H 形成 enolate ② enolate 親核攻擊另一分子的羰基碳 → β-hydroxy aldehyde（aldol，3-hydroxybutanal）③ 加熱經 E1cB 脫水 → α,β-不飽和醛"
+  exam_points:
+    - "需要 α-H 才能形成 enolate"
+    - "生化對應：aldolase（糖解，反向 aldol 裂解 F1,6BP；class I 用 Schiff base）、citrate synthase（acetyl-CoA 的 enol 攻擊 OAA）"
+tags: [organic, aldol]
+status: pending

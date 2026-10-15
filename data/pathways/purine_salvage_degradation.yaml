@@ -1,0 +1,33 @@
+id: purine_salvage_degradation
+title: Purine degradation & salvage（嘌呤分解與救援）
+layout: free
+cell: 0.95
+nodes:
+  - {id: amp, ref: amp, view: name, pos: [0, 0]}
+  - {id: imp, ref: imp, view: name, pos: [1.6, 0]}
+  - {id: gmp, ref: gmp, view: name, pos: [3.6, 0]}
+  - {id: ado, ref: adenosine, view: name, pos: [0, 1.05]}
+  - {id: ino, ref: inosine, view: name, pos: [1.6, 1.05]}
+  - {id: guo, ref: guanosine, view: name, pos: [3.6, 1.05]}
+  - {id: hx, ref: hypoxanthine, pos: [1.6, 2.15]}
+  - {id: gua, ref: guanine, pos: [3.6, 2.15]}
+  - {id: xan, ref: xanthine, pos: [2.6, 3.2]}
+  - {id: uric, ref: uric_acid, pos: [2.6, 4.35]}
+  - {id: allo, text: "Allopurinol\nFebuxostat", kind: drug, pos: [4.0, 3.8]}
+edges:
+  - {from: amp, to: imp, step: amp_deaminase, label: "AMP\ndeaminase", side_text: "→ NH_4^+"}
+  - {from: amp, to: ado, step: nucleotidase_amp, label: "5′-nucleotidase", side_text: "→ P_i", label_side: right}
+  - {from: ado, to: ino, step: ada, label: "ADA", side_text: "→ NH_4^+"}
+  - {from: imp, to: ino, label: "5′-nucleotidase", label_side: right}
+  - {from: gmp, to: guo, step: nucleotidase_gmp, label: "5′-nucleotidase", label_side: right}
+  - {from: ino, to: hx, step: pnp, label: "PNP", side_text: "P_i → ribose 1-{P}", label_side: left}
+  - {from: guo, to: gua, step: pnp_guanosine, label: "PNP", side_text: "P_i → ribose 1-{P}", label_side: right}
+  - {from: hx, to: xan, step: xanthine_oxidase_1, label: "xanthine\noxidase", label_side: left}
+  - {from: gua, to: xan, step: guanine_deaminase, label: "guanase", side_text: "→ NH_4^+"}
+  - {from: xan, to: uric, step: xanthine_oxidase_2, label: "xanthine\noxidase", label_side: left}
+  - {from: hx, to: imp, step: hgprt, label: "HGPRT\n(+ PRPP)", bend: -0.3, label_side: right}
+  - {from: gua, to: gmp, step: hgprt, label: "HGPRT\n(+ PRPP)", bend: -0.3}
+  - {from: allo, to: "edge:xan->uric", inhibit: true}
+tags: [nucleotide, purine, degradation, salvage]
+notes_zh: "A、G 兩支都匯流到 xanthine → uric acid（xanthine oxidase）。救援：HGPRT（hypoxanthine → IMP、guanine → GMP；缺乏 = Lesch-Nyhan）、APRT（adenine → AMP）。ADA 缺乏 → SCID；PNP 缺乏 → T 細胞缺陷。"
+status: pending

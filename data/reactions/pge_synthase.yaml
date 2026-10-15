@@ -1,0 +1,27 @@
+id: pge_synthase
+title: PGH₂ → PGE₂ (PGE synthase)
+substrates:
+- pgh2
+products:
+- pge2
+enzyme: PGE synthase
+reversible: false
+decorate:
+  pgh2:
+    highlight:
+    - smarts: '[OX2:1][OX2:2]'
+      color: magenta
+  pge2:
+    highlight:
+    - smarts: '[C;R]=[O:1]'
+      color: magenta
+    - smarts: '[C;R][OH:1]'
+      color: magenta
+card_zh:
+  type: 異構化
+  exam_points:
+  - PGE₂：發燒（下視丘）、疼痛、血管擴張、胃黏液 ↑ 胃酸 ↓、維持 PDA 開放（indomethacin 關閉 PDA）
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

@@ -1,0 +1,9 @@
+id: oleate
+name: "Oleate"
+label: "Oleate\n18:1(Δ9)"
+aliases: [oleic acid, 油酸]
+smiles: "[O-]C(=O)CCCCCCC/C=C\\CCCCCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 18, cis: [9], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "18:1(Δ9)；ω-9。單元不飽和、cis-Δ9（ω-9）。cis 雙鍵使鏈彎折 → 熔點降低、膜流動性增加。人體可自行合成（Δ9 desaturase）。"
+status: pending

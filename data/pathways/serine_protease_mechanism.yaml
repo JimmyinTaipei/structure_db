@@ -1,0 +1,262 @@
+id: serine_protease_mechanism
+title: 'Serine proteases: catalytic triad and S1 pocket'
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.4
+    text: Catalytic triad
+    size: 0.85
+    align: left
+  - g: blob
+    at:
+    - 2.0
+    - 6.0
+    w: 2.8
+    h: 1.5
+    shape: oval
+    hue: red
+    text: Asp^{102}
+    text_size: 0.55
+  - g: blob
+    at:
+    - 7.0
+    - 6.0
+    w: 2.8
+    h: 1.5
+    shape: oval
+    hue: blue
+    text: His^{57}
+    text_size: 0.55
+  - g: blob
+    at:
+    - 12.0
+    - 6.0
+    w: 2.8
+    h: 1.5
+    shape: oval
+    hue: green
+    accent: true
+    text: Ser^{195}
+    text_size: 0.55
+  - g: arrow
+    from:
+    - 3.5
+    - 6.0
+    to:
+    - 5.5
+    - 6.0
+    color: gray
+    curve: 0
+    dashed: true
+  - g: text
+    at:
+    - 4.5
+    - 5.0
+    text: H-bond
+    size: 0.55
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 10.6
+    - 6.6
+    to:
+    - 8.5
+    - 6.6
+    color: cyan
+    curve: 0.0
+  - g: text
+    at:
+    - 9.6
+    - 7.6
+    text: H^+
+    size: 0.6
+    align: center
+    color: cyan
+  - g: blob
+    at:
+    - 12.0
+    - 2.0
+    w: 3.4
+    h: 1.4
+    shape: oval
+    hue: gray
+    text: C=O (peptide)
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 12.0
+    - 5.2
+    to:
+    - 12.0
+    - 2.8
+    color: magenta
+    curve: 0
+  - g: text
+    at:
+    - 12.6
+    - 3.9
+    text: O^- attacks
+    size: 0.55
+    align: left
+    color: magenta
+  - g: blob
+    at:
+    - 16.6
+    - 0.8
+    w: 2.2
+    h: 1.0
+    shape: oval
+    hue: yellow
+    text: Gly^{193} NH
+    text_size: 0.4
+  - g: blob
+    at:
+    - 16.6
+    - 3.2
+    w: 2.2
+    h: 1.0
+    shape: oval
+    hue: yellow
+    text: Ser^{195} NH
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 15.4
+    - 1.0
+    to:
+    - 13.8
+    - 1.8
+    color: gray
+    curve: 0
+    dashed: true
+  - g: arrow
+    from:
+    - 15.4
+    - 3.0
+    to:
+    - 13.8
+    - 2.3
+    color: gray
+    curve: 0
+    dashed: true
+  - g: text
+    at:
+    - 16.6
+    - 4.6
+    text: oxyanion hole
+    size: 0.6
+    align: center
+  - g: text
+    at:
+    - 21.0
+    - -0.4
+    text: S1 pocket
+    size: 0.85
+    align: left
+  - g: blob
+    at:
+    - 23.0
+    - 3.0
+    w: 3.4
+    h: 3.0
+    shape: oval
+    hue: teal
+  - g: ion
+    at:
+    - 23.0
+    - 3.6
+    r: 0.75
+    hue: yellow
+  - g: text
+    at:
+    - 23.0
+    - 6.0
+    text: Chymotrypsin
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 23.0
+    - 7.0
+    text: Phe, Trp, Tyr
+    size: 0.6
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 28.0
+    - 3.0
+    w: 3.4
+    h: 3.0
+    shape: oval
+    hue: blue
+  - g: ion
+    at:
+    - 28.0
+    - 3.6
+    r: 0.55
+    hue: yellow
+  - g: ion
+    at:
+    - 28.0
+    - 4.5
+    r: 0.3
+    hue: red
+    text: –
+    text_size: 0.45
+  - g: text
+    at:
+    - 28.0
+    - 6.0
+    text: Trypsin
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 28.0
+    - 7.0
+    text: Lys, Arg (Asp^{189})
+    size: 0.6
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 33.0
+    - 3.0
+    w: 3.4
+    h: 3.0
+    shape: oval
+    hue: purple
+  - g: ion
+    at:
+    - 33.0
+    - 3.4
+    r: 0.3
+    hue: yellow
+  - g: text
+    at:
+    - 33.0
+    - 6.0
+    text: Elastase
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 33.0
+    - 7.0
+    text: Ala, Gly (Val, Thr)
+    size: 0.6
+    align: center
+    color: gray
+tags:
+- enzyme
+- catalysis
+notes_zh: 催化三聯體（chymotrypsin 編號）：Asp102 以氫鍵（低障壁氫鍵）定位並穩定 His57 → His57 當廣義鹼拔取 Ser195 –OH 的質子 → Ser195 O⁻ 親核攻擊胜肽鍵的羰基碳 → 四面體中間物，O⁻ 嵌入氧陰離子洞（Gly193 與 Ser195 主鏈 NH 兩個氫鍵穩定過渡態）→ His57（此時為廣義酸）把質子給離去的胺 → 醯基-酵素；第二步由
+  His57 活化水進行去醯化。兩步反應見 chymotrypsin_acylation、chymotrypsin_deacylation。S1 口袋決定專一性：chymotrypsin 深而疏水（Phe、Trp、Tyr）；trypsin 底部 Asp189（Lys、Arg）；elastase 被 Val216、Thr226 填淺（Ala、Gly 等小側鏈）。共同點：都由 zymogen 活化（trypsinogen
+  由 enteropeptidase 切）；DFP 共價修飾 Ser195 而不可逆抑制。Subtilisin 為趨同演化的例子（不同摺疊、同樣三聯體）。
+parts_png: false
+status: pending

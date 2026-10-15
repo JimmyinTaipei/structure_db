@@ -1,0 +1,35 @@
+id: acyl_coa_synthetase
+title: Palmitate → Palmitoyl-CoA (acyl-CoA synthetase)
+substrates:
+- palmitate
+products:
+- palmitoyl_coa
+cofactors_in:
+- CoA-SH
+- ATP
+cofactors_out:
+- AMP
+- PPi
+enzyme: 'acyl-CoA synthetase
+
+  (thiokinase)'
+reversible: false
+decorate:
+  palmitate:
+    colors: {o2: magenta}
+  AMP:
+    colors: {0: magenta}
+  CoA-SH:
+    colors: {0: cyan}
+  palmitoyl_coa:
+    colors: {o2: cyan, rest: cyan}
+card_zh:
+  location: 粒線體外膜、ER（細胞質側）
+  type: 活化：先形成 acyl-adenylate，再接上 CoA
+  exam_points:
+  - 耗 2 個高能磷酸鍵（ATP → AMP + PPi，PPi 再水解）
+  - 算 ATP 收支時，活化記為 −2 ATP
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

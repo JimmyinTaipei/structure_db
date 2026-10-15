@@ -1,0 +1,30 @@
+id: cps2
+title: "嘧啶 ① HCO₃⁻ + Gln → Carbamoyl phosphate (CPS II)"
+step: 1
+substrates: [bicarbonate]
+products: [carbamoyl_phosphate]
+cofactors_in: [glutamine, 2ATP, H2O]
+cofactors_out: [glutamate, 2ADP, Pi]
+extra_out: [H+, H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "carbamoyl phosphate\nsynthetase II"
+reversible: false
+decorate:
+  glutamine:
+    colors: {0: magenta}
+  bicarbonate:
+    colors: {0: cyan}
+  carbamoyl_phosphate:
+    colors:
+      0: {l: magenta, c: cyan, u: cyan}
+card_zh:
+  location: "細胞質（CAD 多功能酵素的一部分：CPS II + ATCase + dihydroorotase）"
+  type: "嘧啶從頭合成限速步驟（動物）"
+  cofactors: "N 來自 Gln（不是 NH₄⁺）；消耗 2 ATP"
+  regulation:
+    - "UTP 抑制（終產物）"
+    - "PRPP、ATP 活化"
+  exam_points:
+    - "CPS I vs CPS II：粒線體／細胞質；NH₄⁺／Gln；NAG 活化／UTP 抑制；尿素循環／嘧啶合成"
+    - "細菌的限速酵素是 ATCase（CTP 抑制、ATP 活化的別構酵素經典例）"
+tags: [nucleotide, pyrimidine]
+status: pending

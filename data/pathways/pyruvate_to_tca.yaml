@@ -1,0 +1,12 @@
+id: pyruvate_to_tca
+title: Pyruvate 進入 TCA
+layout: linear
+nodes:
+  - {id: pyr, ref: pyruvate, view: chain}
+  - {id: accoa, ref: acetyl_coa, view: chain}
+  - {id: tca, text: "TCA cycle", kind: concept}
+edges:
+  - {from: pyr, to: accoa, step: pdh, label: "PDH complex"}
+  - {from: accoa, to: tca, label: "citrate synthase"}
+tags: [TCA, pyruvate]
+status: pending

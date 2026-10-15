@@ -1,0 +1,22 @@
+id: oprt
+title: "嘧啶 ⑤ Orotate + PRPP → OMP (OPRT)"
+step: 5
+substrates: [orotate, prpp]
+products: [omp]
+cofactors_out: [PPi]
+enzyme: "orotate phosphoribosyl-\ntransferase"
+reversible: false
+decorate:
+  prpp:
+    colors:
+      d1: [magenta, '{P}–{P}']
+  PPi:
+    colors: {0: magenta}
+card_zh:
+  location: "細胞質（UMP synthase 的一部分，與 OMP decarboxylase 同一條多肽）"
+  type: "接上核糖-5-磷酸（PRPP 提供），釋出 PPi"
+  deficiency: "UMP synthase 缺乏 → 遺傳性 orotic aciduria：尿中 orotate ↑、巨母紅血球性貧血（對 B12／葉酸無反應）、生長遲緩；治療：補充 uridine"
+  exam_points:
+    - "orotic aciduria 鑑別：OTC 缺乏也有 orotic acid ↑ 但伴隨高血氨；UMP synthase 缺乏則無高血氨"
+tags: [nucleotide, pyrimidine]
+status: pending

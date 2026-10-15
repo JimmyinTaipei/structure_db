@@ -1,0 +1,13 @@
+id: d_ribulose
+name: "D-Ribulose"
+aliases: [Ribulose]
+smiles: "O=C(CO)[C@H](O)[C@H](O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", r: "O", rb: 2}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "酮五碳糖。ribulose 5-phosphate 是 PPP 氧化相的產物；RuBisCO 的受質為 ribulose 1,5-bisphosphate。（ketopentose）"
+status: pending

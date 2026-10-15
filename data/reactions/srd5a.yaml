@@ -1,0 +1,38 @@
+id: srd5a
+title: Testosterone → DHT (5α-reductase)
+substrates:
+- testosterone
+products:
+- dht
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: 5α-reductase
+reversible: false
+decorate:
+  testosterone:
+    highlight:
+    - smarts: '[C;R:1]=[CH1;R:2]C=O'
+      color: magenta
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  dht:
+    highlight:
+    - smarts: '[CH1;R:2][CH2;R:1]C=O'
+      color: magenta
+card_zh:
+  location: 前列腺、皮膚、毛囊、外生殖器
+  type: 還原 C4=C5
+  deficiency:
+  - finasteride（5α-R2）、dutasteride（1 + 2）：BPH、雄性禿
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

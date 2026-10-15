@@ -1,0 +1,88 @@
+id: membrane_fluidity
+title: Membrane fluidity and phase transition
+layout: plot
+plot:
+  size:
+  - 15
+  - 9.5
+  x:
+    min: 0
+    max: 70
+    label: Temperature (°C)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+  y:
+    min: 0
+    max: 1.15
+    label: Fluidity (disorder)
+    label_pos: center
+    ticks: []
+  curves:
+  - id: sat
+    y: 1/(1+exp(-(x-41)*0.7))
+    width: 1.2
+    color: magenta
+  - id: uns
+    y: 1/(1+exp(-(x-12)*0.7))
+    width: 1.2
+    color: cyan
+  - id: chol
+    y: 1/(1+exp(-(x-41)*0.12))
+    width: 1.2
+    dash: true
+  points:
+  - 'on': sat
+    x: 41
+    y: 0.5
+    drop: x
+    color: magenta
+  texts:
+  - at:
+    - 15
+    - 0.62
+    text: 'Unsaturated (cis kinks):
+
+      T_m low → fluid'
+    align: left
+    color: cyan
+    size: 0.85
+  - at:
+    - 46
+    - 0.18
+    text: 'Saturated (16:0):
+
+      T_m ~ 41 °C'
+    align: left
+    color: magenta
+    size: 0.85
+  - at:
+    - 50
+    - 0.58
+    text: '+ Cholesterol:
+
+      same T_m, broad
+
+      (fluidity buffer)'
+    align: left
+    size: 0.85
+  - at:
+    - 26
+    - 0.42
+    text: Gel (ordered)
+    size: 0.85
+    color: gray
+  - at:
+    - 60
+    - 1.08
+    text: Liquid-disordered
+    size: 0.85
+    color: gray
+tags:
+- membrane
+- membrane_lipid
+notes_zh: 加熱使膜由有序的 gel 相轉成流動的 liquid-disordered 相，轉換溫度 T_m。飽和、長鏈脂肪酸 → T_m 高；不飽和（cis 彎折）、短鏈 → T_m 低、較流動。膽固醇是流動性緩衝劑（fluidity buffer）：T_m 不變但轉換變寬；高溫時限制運動（降低流動性），低溫時阻止鏈緊密排列（維持流動性）。冷環境下動物細胞靠增加不飽和脂肪酸與膽固醇維持流動性（homeoviscous
+  adaptation）。
+status: pending

@@ -1,0 +1,40 @@
+id: bile_7a_dehydroxylation_cdca
+title: Chenodeoxycholate → Lithocholate (bacterial 7α-dehydroxylation)
+substrates:
+- chenodeoxycholate
+products:
+- lithocholate
+cofactors_in:
+- NADH+H+
+cofactors_out:
+- NAD+
+- H2O
+enzyme: 'gut bacteria
+
+  (7α-dehydroxylase)'
+reversible: false
+decorate:
+  chenodeoxycholate:
+    highlight:
+    - smarts: '[OH:1][CH1;R]([CH2;R])[CH1;R]'
+      color: magenta
+  H2O:
+    colors:
+      0: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - cyan
+          - H
+        - - cyan
+          - H^+
+card_zh:
+  location: 大腸（腸道菌）
+  type: 去羥
+  exam_points:
+  - lithocholate 有肝毒性，大部分隨糞便排出
+tags:
+- lipid_metabolism
+- bile_acid
+status: pending

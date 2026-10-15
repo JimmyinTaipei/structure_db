@@ -1,0 +1,187 @@
+id: second_messengers
+title: 'Second messengers: source → target'
+layout: free
+cell_size: 5.0
+nodes:
+- id: h1
+  text: Source
+  pos:
+  - 0
+  - -0.7
+  kind: heading
+- id: h2
+  text: Messenger
+  pos:
+  - 2.4
+  - -0.7
+  kind: heading
+- id: h3
+  text: Target
+  pos:
+  - 4.6
+  - -0.7
+  kind: heading
+- id: s1
+  text: Adenylyl cyclase
+  pos:
+  - 0
+  - 0
+  kind: protein
+- id: m1
+  ref: camp
+  pos:
+  - 2.4
+  - 0
+  view: name
+- id: e1
+  text: PKA, Epac
+  pos:
+  - 4.6
+  - 0
+  kind: protein
+- id: s2
+  text: Guanylyl cyclase
+  pos:
+  - 0
+  - 0.8
+  kind: protein
+- id: m2
+  ref: cgmp
+  pos:
+  - 2.4
+  - 0.8
+  view: name
+- id: e2
+  text: PKG, CNG channel
+  pos:
+  - 4.6
+  - 0.8
+  kind: protein
+- id: s3
+  text: PLC on PIP_2
+  pos:
+  - 0
+  - 1.6
+  kind: protein
+- id: m3
+  text: IP_3
+  pos:
+  - 2.4
+  - 1.6
+  kind: name
+- id: e3
+  text: IP_3 receptor (ER)
+  pos:
+  - 4.6
+  - 1.6
+  kind: protein
+- id: m4
+  text: DAG
+  pos:
+  - 2.4
+  - 2.4
+  kind: name
+- id: e4
+  text: PKC
+  pos:
+  - 4.6
+  - 2.4
+  kind: protein
+- id: s5
+  text: ER / channels
+  pos:
+  - 0
+  - 3.2
+  kind: protein
+- id: m5
+  text: Ca^{2+}
+  pos:
+  - 2.4
+  - 3.2
+  kind: ion
+- id: e5
+  text: 'Calmodulin (4 Ca^{2+}, EF hand),
+
+    PKC, CaM kinase'
+  pos:
+  - 4.6
+  - 3.2
+  kind: protein
+- id: s6
+  text: NO synthase
+  pos:
+  - 0
+  - 4.0
+  kind: protein
+- id: m6
+  ref: nitric_oxide
+  pos:
+  - 2.4
+  - 4.0
+  view: name
+- id: e6
+  text: Soluble guanylyl cyclase
+  pos:
+  - 4.6
+  - 4.0
+  kind: protein
+- id: s7
+  text: Sphingomyelinase
+  pos:
+  - 0
+  - 4.8
+  kind: protein
+- id: m7
+  ref: ceramide
+  pos:
+  - 2.4
+  - 4.8
+  view: name
+- id: e7
+  text: Protein kinases / phosphatases
+  pos:
+  - 4.6
+  - 4.8
+  kind: protein
+edges:
+- from: s1
+  to: m1
+  step: adenylyl_cyclase
+- from: m1
+  to: e1
+- from: s2
+  to: m2
+  step: guanylyl_cyclase
+- from: m2
+  to: e2
+- from: s3
+  to: m3
+- from: s3
+  to: m4
+- from: m3
+  to: e3
+- from: m4
+  to: e4
+- from: e3
+  to: m5
+  color: gray
+- from: s5
+  to: m5
+- from: m5
+  to: e5
+- from: s6
+  to: m6
+  step: nitric_oxide_synthase
+- from: m6
+  to: e6
+- from: s7
+  to: m7
+  step: sphingomyelinase
+- from: m7
+  to: e7
+tags:
+- signal_transduction
+- second_messenger
+notes_zh: 第二傳訊者：cAMP、cGMP、IP₃、DAG、Ca²⁺、NO（可兼第一與第二傳訊者）、ceramide、cADP-ribose；GTP、ATP、insulin 不是。Ser/Thr kinase 家族與活化物：PKA（cAMP）、PKB/Akt（PIP₃）、PKC（DAG、PS、Ca²⁺；phorbol ester TPA 活化 → 腫瘤促進劑）、PKG（cGMP）、CaMK（Ca²⁺–calmodulin）。PKC
+  三類：conventional（PS、DAG、Ca²⁺）、novel（PS、DAG）、atypical（都不需）。Calmodulin：4 個 Ca²⁺ 結合 EF hand（helix-loop-helix）；也是 phosphorylase kinase 的 δ 次單元。
+status: pending

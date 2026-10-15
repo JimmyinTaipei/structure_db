@@ -1,0 +1,12 @@
+id: sphingosine
+name: Sphingosine
+aliases:
+- 鞘胺醇
+smiles: CCCCCCCCCCCCC/C=C/[C@@H](O)[C@@H]([NH3+])CO
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: ceramidase 分解 ceramide 的產物（Farber disease：acid ceramidase 缺乏）。磷酸化 → S1P（淋巴球移出、血管新生；fingolimod 作用點）。
+status: pending

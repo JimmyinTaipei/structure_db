@@ -1,0 +1,20 @@
+id: calcidiol
+name: 25-Hydroxycholecalciferol (calcidiol)
+label: 25-OH-D_3 (calcidiol)
+aliases:
+- calcidiol
+- 25-hydroxyvitamin D3
+- 25(OH)D
+- 骨化二醇
+smiles: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](CCC3=C)O)C
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: '[CX4](C)(C)(C)[OH:1]'
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 肝的 25-hydroxylase（CYP2R1）。洋紅：新加的 25-OH。血中主要的循環形式、半衰期長 → 臨床用來評估 vitamin D 狀態。
+status: pending

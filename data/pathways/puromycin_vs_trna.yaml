@@ -1,0 +1,31 @@
+id: puromycin_vs_trna
+title: Puromycin mimics the 3′ end of tyrosyl-tRNA
+layout: free
+cell_size: 15.0
+nodes:
+- id: pur
+  ref: puromycin
+  pos:
+  - 0
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[C:1](=[O:2])[N:3][C;R]'
+      color: magenta
+- id: tyr
+  ref: tyrosyl_trna_end
+  pos:
+  - 1.25
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[C:1](=[O:2])[O:3][C;R]'
+      color: magenta
+edges: []
+text: false
+tags:
+- molecular_biology
+- translation
+notes_zh: 洋紅：puromycin 的醯胺鍵 vs tyrosyl-tRNA 的酯鍵。Puromycin 進 A 位接受胜肽後，醯胺鍵不能再轉移 → 胜肽-puromycin 脫落（提早終止）；只與 P 位的 peptidyl-tRNA 反應，因此用來定義 A、P 位。
+parts_png: false
+status: pending

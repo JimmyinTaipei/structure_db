@@ -1,0 +1,28 @@
+id: galt
+title: Galactose 1-phosphate + UDP-glucose → UDP-galactose + Glucose 1-phosphate (GALT)
+substrates:
+- a_galactose_1p
+- udp_glucose
+products:
+- udp_galactose
+- a_glucose_1p
+enzyme: 'galactose 1-phosphate
+
+  uridylyltransferase (GALT)'
+reversible: false
+decorate:
+  udp_glucose:
+    colors:
+      d1: [cyan, UDP]
+  udp_galactose:
+    colors:
+      d1: [cyan, UDP]
+card_zh:
+  type: 核苷酸交換（UMP 從 glucose 換到 galactose）
+  deficiency: 典型 galactosemia（GALT 缺乏，體染色體隱性）：餵奶後嘔吐、黃疸、肝腫大、白內障、智能障礙、E. coli 敗血症；治療：去除乳糖與半乳糖
+  exam_points:
+  - 新生兒篩檢項目
+tags:
+- carb_metabolism
+- galactose_metabolism
+status: pending

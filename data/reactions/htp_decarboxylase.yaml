@@ -1,0 +1,27 @@
+id: htp_decarboxylase
+title: 5-Hydroxytryptophan → Serotonin (AADC)
+substrates:
+- five_htp
+products:
+- serotonin
+- id: co2
+  view: formula
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: 'aromatic L-amino acid
+
+  decarboxylase'
+reversible: false
+decorate:
+  five_htp:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+card_zh:
+  type: 脫羧（PLP）
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

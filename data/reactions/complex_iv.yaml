@@ -1,0 +1,55 @@
+id: complex_iv
+title: 'Complex IV: 4 cyt c (Fe²⁺) + O₂ + 4 H⁺ → 4 cyt c (Fe³⁺) + 2 H₂O'
+substrates:
+- oxygen
+products:
+- id: water
+  n: 2
+cofactors_in:
+- 4cytc_red
+- 4H+
+cofactors_out:
+- 4cytc_ox
+prosthetic:
+- Cu_A, heme a,
+- heme a_3–Cu_B
+enzyme: 'Complex IV
+
+  (cytochrome c oxidase)'
+conditions: 4 H^+ pumped per O_2
+reversible: false
+decorate:
+  oxygen:
+    colors:
+      0: magenta
+  4cytc_red:
+    colors:
+      0:
+        c:
+        - - cyan
+          - Fe^{2+}
+  4H+:
+    colors:
+      0: cyan
+  water:
+    colors:
+      0:
+        c:
+        - - cyan
+          - H_2
+        - - magenta
+          - O
+card_zh:
+  location: 粒線體內膜
+  type: O₂ 還原成水＋質子幫浦
+  mechanism: 4 個 e⁻ 依序經 Cu_A → heme a → heme a₃–Cu_B 雙核中心，O₂ 在 a₃–Cu_B 一次接受 4 e⁻，不放出 ROS。另有 4 個「化學」H⁺ 從基質端進來生成水
+  deficiency:
+  - CN⁻、N₃⁻（azide）、H₂S 結合 Fe³⁺（a₃）；CO 結合 Fe²⁺ → 細胞缺氧、乳酸中毒
+  - 氰化物中毒治療：hydroxocobalamin；或 nitrite（形成 methemoglobin 抓 CN⁻）＋thiosulfate（rhodanese → SCN⁻）
+  exam_points:
+  - 含 heme 與 Cu
+  - 基質端消耗 H⁺ 也讓梯度變大
+tags:
+- energy_metabolism
+- etc_oxphos
+status: pending

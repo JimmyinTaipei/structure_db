@@ -1,0 +1,17 @@
+id: heme
+name: Heme
+aliases:
+- heme b
+- Fe-protoporphyrin IX
+- 血基質
+smiles: C=CC1=C(C)C2=Cc3c(C=C)c(C)c4[n]3[Fe-2]35[n]6c(c(C)c(CCC(=O)[O-])c6=CC1=[N+]23)=CC1=[N+]5C(=C4)C(C)=C1CCC(=O)[O-]
+ring:
+  methyls: false
+  hide_charges:
+  - N
+  - Fe
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: Fe²⁺–protoporphyrin IX（圖中略去形式電荷）。Hb、Mb、cytochrome、catalase、NOS 的輔基。Fe 另外兩個配位：近端 His（F8）與 O₂。
+status: pending

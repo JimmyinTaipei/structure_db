@@ -1,0 +1,99 @@
+id: ubiquinol
+name: Ubiquinol (QH2)
+label: Ubiquinol (QH_2)
+aliases:
+- QH2
+- reduced coenzyme Q
+- 還原態輔酶 Q
+smiles: COc1c(O)c(C)c(C[10*])c(O)c1OC
+free:
+  atoms:
+    c1:
+    - ''
+    - 0
+    - -0.82
+    c2:
+    - ''
+    - 0.71
+    - -0.41
+    c3:
+    - ''
+    - 0.71
+    - 0.41
+    c4:
+    - ''
+    - 0
+    - 0.82
+    c5:
+    - ''
+    - -0.71
+    - 0.41
+    c6:
+    - ''
+    - -0.71
+    - -0.41
+    o1:
+    - OH
+    - 0
+    - -1.62
+    o4:
+    - OH
+    - 0
+    - 1.62
+    m6:
+    - H_3CO
+    - -1.5
+    - -0.86
+    - 3
+    m5:
+    - H_3CO
+    - -1.5
+    - 0.86
+    - 3
+    me:
+    - CH_3
+    - 1.5
+    - -0.86
+    r:
+    - R
+    - 1.5
+    - 0.86
+  bonds:
+  - - c1
+    - c2
+    - 2
+  - - c2
+    - c3
+  - - c3
+    - c4
+    - 2
+  - - c4
+    - c5
+  - - c5
+    - c6
+    - 2
+  - - c6
+    - c1
+  - - c1
+    - o1
+  - - c4
+    - o4
+  - - c6
+    - m6
+  - - c5
+    - m5
+  - - c2
+    - me
+  - - c3
+    - r
+  schematic: true
+  notes:
+  - - R = (CH_2CH=C(CH_3)CH_2)_{10}H
+    - 0
+    - 2.55
+    - gray
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: Q 接受 2 e⁻ + 2 H⁺ 後的還原態。Complex III 以 Q cycle 把 QH₂ 的兩個電子分開：一個經 Rieske Fe-S → cyt c₁ → cyt c，另一個經 cyt b 回到 Q。
+status: pending

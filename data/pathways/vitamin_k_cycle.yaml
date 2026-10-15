@@ -1,0 +1,52 @@
+id: vitamin_k_cycle
+title: Vitamin K cycle（維生素 K 循環）
+layout: free
+cell: 0.85
+nodes:
+- id: k
+  ref: phylloquinone
+  pos:
+  - 0
+  - 0
+- id: kh2
+  ref: phylloquinol
+  pos:
+  - 1.25
+  - 1
+- id: ko
+  ref: vitamin_k_epoxide
+  pos:
+  - 0
+  - 2
+- id: war
+  text: Warfarin
+  kind: drug
+  pos:
+  - -0.75
+  - 1
+edges:
+- from: k
+  to: kh2
+  label: 'VKOR /
+
+    quinone reductase'
+  side_text: NAD(P)H
+- from: kh2
+  to: ko
+  label: 'γ-glutamyl
+
+    carboxylase'
+  side_text: 'Glu → Gla
+
+    (CO_2, O_2)'
+- from: ko
+  to: k
+  label: VKOR
+- from: war
+  to: edge:ko->k
+  inhibit: true
+tags:
+- vitamin
+- fat_soluble
+notes_zh: KH₂ 是 γ-carboxylase 真正的輔因子（因子 II、VII、IX、X、protein C、S 的 Glu → Gla）。warfarin 擋 VKOR（epoxide → K），使 KH₂ 無法再生；大量 vitamin K 可經另一個不受 warfarin 抑制的還原酶（NAD(P)H 依賴）恢復凝血。
+status: pending

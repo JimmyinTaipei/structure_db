@@ -1,0 +1,385 @@
+id: mrna_capping
+title: 5′ capping of pre-mRNA
+layout: scene
+scene:
+  items:
+  - g: ion
+    at:
+    - 6.0
+    - 1.0
+    r: 0.4
+    hue: blue
+    text: N
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 6.45
+      - 1.0
+    - - 13.5
+      - 1.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ion
+    at:
+    - 5.1
+    - 1.0
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.15
+    - 1.0
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.2
+    - 1.0
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: text
+    at:
+    - 3.2
+    - 0.15000000000000002
+    text: γ
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 4.15
+    - 0.15000000000000002
+    text: β
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 5.1
+    - 0.15000000000000002
+    text: α
+    size: 0.6
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 8.4
+    - 1.7
+    to:
+    - 8.4
+    - 3.8999999999999995
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 9.0
+    - 2.8
+    text: RNA triphosphatase (− P_i)
+    size: 0.78
+    align: left
+  - g: ion
+    at:
+    - 6.0
+    - 4.6
+    r: 0.4
+    hue: blue
+    text: N
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 6.45
+      - 4.6
+    - - 13.5
+      - 4.6
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ion
+    at:
+    - 5.1
+    - 4.6
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.15
+    - 4.6
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: arrow
+    from:
+    - 8.4
+    - 5.3
+    to:
+    - 8.4
+    - 7.499999999999999
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 9.0
+    - 6.3999999999999995
+    text: guanylyltransferase (GTP → PP_i)
+    size: 0.78
+    align: left
+  - g: ion
+    at:
+    - 6.0
+    - 8.2
+    r: 0.4
+    hue: blue
+    text: N
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 6.45
+      - 8.2
+    - - 13.5
+      - 8.2
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ion
+    at:
+    - 5.1
+    - 8.2
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.15
+    - 8.2
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.2
+    - 8.2
+    r: 0.38
+    hue: teal
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 2.1
+    - 8.2
+    r: 0.55
+    hue: green
+    text: G
+    text_size: 0.5
+  - g: text
+    at:
+    - 4.15
+    - 9.149999999999999
+    text: 5′–5′ triphosphate
+    size: 0.62
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 8.4
+    - 8.899999999999999
+    to:
+    - 8.4
+    - 11.100000000000001
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 9.0
+    - 10.0
+    text: guanine-N7-methyltransferase (SAM → SAH)
+    size: 0.78
+    align: left
+  - g: ion
+    at:
+    - 6.0
+    - 11.8
+    r: 0.4
+    hue: blue
+    text: N
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 6.45
+      - 11.8
+    - - 13.5
+      - 11.8
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ion
+    at:
+    - 5.1
+    - 11.8
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.15
+    - 11.8
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.2
+    - 11.8
+    r: 0.38
+    hue: teal
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 2.1
+    - 11.8
+    r: 0.55
+    hue: green
+    text: m^7G
+    text_size: 0.42
+  - g: mark
+    kind: methyl
+    at:
+    - 2.1
+    - 11.25
+    side: up
+    color: magenta
+  - g: text
+    at:
+    - 14.6
+    - 11.8
+    text: cap 0
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - 8.4
+    - 12.5
+    to:
+    - 8.4
+    - 14.700000000000001
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 9.0
+    - 13.600000000000001
+    text: 2′-O-methyltransferase (SAM)
+    size: 0.78
+    align: left
+  - g: ion
+    at:
+    - 6.0
+    - 15.4
+    r: 0.4
+    hue: blue
+    text: N
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 6.45
+      - 15.4
+    - - 13.5
+      - 15.4
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ion
+    at:
+    - 5.1
+    - 15.4
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 4.15
+    - 15.4
+    r: 0.38
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 3.2
+    - 15.4
+    r: 0.38
+    hue: teal
+    text: P
+    text_size: 0.5
+  - g: ion
+    at:
+    - 2.1
+    - 15.4
+    r: 0.55
+    hue: green
+    text: m^7G
+    text_size: 0.42
+  - g: mark
+    kind: methyl
+    at:
+    - 2.1
+    - 14.85
+    side: up
+    color: magenta
+  - g: mark
+    kind: methyl
+    at:
+    - 6.0
+    - 15.0
+    side: up
+    color: magenta
+  - g: text
+    at:
+    - 14.6
+    - 15.4
+    text: cap 1
+    size: 0.8
+    align: left
+  - g: text
+    at:
+    - 15.2
+    - 1.05
+    text: pppN… (transcript 5′ end)
+    size: 0.72
+    align: left
+    color: gray
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'RNA triphosphatase 去 γ-P → guanylyltransferase 由 GTP 加上 GMP（5′–5′ 三磷酸鍵，放出 PPi）→ guanine-N7-methyltransferase（SAM）→ cap 0；2′-O-methyltransferase 甲基化第 1（cap 1）、第 2（cap 2）個核苷酸的核糖 2′-OH。酵素結合在 Ser5
+  磷酸化的 CTD，RNA 約 25 nt 時加上。
+
+  【補充】Added co-transcriptionally (RNA ~25 nt) by enzymes bound to the Ser5-phosphorylated CTD of Pol II; only Pol II transcripts are capped. Functions: blocks 5′→3′ exonucleases, nuclear export (cap-binding
+  complex CBC), translation initiation (eIF4E binds the cap), splicing of the first intron. Decapping (Dcp1/Dcp2) → Xrn1 degrades the mRNA 5′→3′. teal = from GTP.'
+parts_png: false
+status: pending

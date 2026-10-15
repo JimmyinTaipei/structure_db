@@ -1,0 +1,229 @@
+id: steroidogenesis
+title: Adrenal steroidogenesis & CAH（腎上腺固醇類荷爾蒙合成與 CAH）
+layout: free
+cell_size: 3.6
+nodes:
+- id: hg
+  text: 'Zona glomerulosa
+
+    (mineralocorticoid)'
+  kind: name
+  pos:
+  - -3.0
+  - -2.0
+- id: hf
+  text: 'Zona fasciculata
+
+    (glucocorticoid)'
+  kind: name
+  pos:
+  - 0.5
+  - -2.0
+- id: hr
+  text: 'Zona reticularis / gonads
+
+    (androgens, estrogens)'
+  kind: name
+  pos:
+  - 4.6
+  - -2.0
+- id: chol
+  ref: cholesterol
+  pos:
+  - -3.0
+  - -0.9
+  view: name
+- id: preg
+  ref: pregnenolone
+  pos:
+  - -3.0
+  - 0.8
+  view: name
+- id: ohpreg
+  ref: oh_pregnenolone
+  pos:
+  - 0.5
+  - 0.8
+  view: name
+- id: dhea
+  ref: dhea
+  pos:
+  - 4.0
+  - 0.8
+  view: name
+- id: prog
+  ref: progesterone
+  pos:
+  - -3.0
+  - 2.3
+  view: name
+- id: ohprog
+  ref: oh_progesterone
+  pos:
+  - 0.5
+  - 2.3
+  view: name
+- id: andro
+  ref: androstenedione
+  pos:
+  - 4.0
+  - 2.3
+  view: name
+- id: doc
+  ref: doc
+  pos:
+  - -3.0
+  - 3.8
+  view: name
+- id: dcort
+  ref: deoxycortisol
+  pos:
+  - 0.5
+  - 3.8
+  view: name
+- id: testo
+  ref: testosterone
+  pos:
+  - 4.0
+  - 3.8
+  view: name
+- id: cortico
+  ref: corticosterone
+  pos:
+  - -3.0
+  - 5.3
+  view: name
+- id: cort
+  ref: cortisol
+  pos:
+  - 0.5
+  - 5.3
+  view: name
+- id: e2
+  ref: estradiol
+  pos:
+  - 4.0
+  - 5.3
+  view: name
+- id: aldo
+  ref: aldosterone
+  pos:
+  - -3.0
+  - 6.8
+  view: name
+- id: dht
+  ref: dht
+  pos:
+  - 6.4
+  - 3.8
+  view: name
+- id: estrone
+  ref: estrone
+  pos:
+  - 6.4
+  - 2.3
+  view: name
+- id: d21
+  text: 21-OH deficiency (~90% CAH)
+  kind: drug
+  pos:
+  - -5.3
+  - 3.0
+- id: d11
+  text: 11β-OH deficiency
+  kind: drug
+  pos:
+  - -5.3
+  - 4.5
+- id: d17
+  text: 17α-OH deficiency
+  kind: drug
+  pos:
+  - -1.2
+  - -0.2
+- id: acth
+  text: ACTH ↑ in CAH (cortisol ↓)
+  kind: concept
+  pos:
+  - 0.5
+  - 7.0
+edges:
+- from: chol
+  to: preg
+  step: cyp11a1
+  label: CYP11A1 (desmolase)
+- from: preg
+  to: ohpreg
+  label: 17α-hydroxylase
+  label_side: right
+- from: ohpreg
+  to: dhea
+  step: cyp17_lyase
+  label: 17,20-lyase
+- from: preg
+  to: prog
+  step: hsd3b
+  label: 3β-HSD
+- from: ohpreg
+  to: ohprog
+  label: 3β-HSD
+- from: dhea
+  to: andro
+  label: 3β-HSD
+- from: prog
+  to: ohprog
+  step: cyp17_hydroxylase
+  label: 17α-hydroxylase
+- from: ohprog
+  to: andro
+  label: 17,20-lyase
+- from: prog
+  to: doc
+  step: cyp21_doc
+  label: 21-hydroxylase
+- from: ohprog
+  to: dcort
+  step: cyp21_deoxycortisol
+  label: 21-hydroxylase
+- from: andro
+  to: testo
+  step: hsd17b
+  label: 17β-HSD
+- from: doc
+  to: cortico
+  step: cyp11b_corticosterone
+  label: 11β-hydroxylase
+- from: dcort
+  to: cort
+  step: cyp11b1
+  label: 11β-hydroxylase
+- from: testo
+  to: e2
+  step: aromatase
+  label: aromatase
+- from: andro
+  to: estrone
+  label: aromatase
+- from: testo
+  to: dht
+  step: srd5a
+  label: 5α-reductase
+- from: cortico
+  to: aldo
+  step: aldosterone_synthase
+  label: aldosterone synthase
+- from: d21
+  to: edge:prog->doc
+  inhibit: true
+- from: d11
+  to: edge:doc->cortico
+  inhibit: true
+- from: d17
+  to: edge:preg->ohpreg
+  inhibit: true
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: CAH 三型比較（新生兒、皆 cortisol ↓ → ACTH ↑ → 腎上腺增生）：21-hydroxylase 缺乏（90%）：aldosterone ↓（失鹽、低血壓、高血鉀）、17-OHP ↑、雄性素 ↑（女嬰男性化）；11β-hydroxylase 缺乏：DOC ↑ → 高血壓、低血鉀＋雄性素 ↑；17α-hydroxylase 缺乏：性荷爾蒙與 cortisol ↓、DOC
+  ↑ → 高血壓、低血鉀、性徵不發育。口訣：數字以 1 開頭（11β、17α）→ 高血壓；以 1 結尾（21、11）→ 男性化。
+status: pending

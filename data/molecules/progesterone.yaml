@@ -1,0 +1,8 @@
+id: progesterone
+name: "Progesterone"
+aliases: [黃體素]
+smiles: "CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C"
+ring: {letters: true, orient: "steroid", methyls: false}
+tags: [lipid, steroid]
+notes_zh: "progestin（21 碳）；pregnenolone → progesterone，是 corticosteroid 的前驅物。"
+status: pending

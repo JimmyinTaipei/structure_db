@@ -1,0 +1,258 @@
+id: base_excision_repair
+title: Base-excision repair
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - -1.6
+    - 2.0
+    text: '1.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.5
+    - - 16
+      - 1.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 2.5
+    - - 16
+      - 2.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 8.0
+    - 3.1
+    text: U
+    size: 0.85
+    align: center
+    color: red
+  - id: udg
+    g: blob
+    at:
+    - 8.0
+    - 1.95
+    w: 1.8
+    h: 1.4
+    shape: kidney
+    hue: orange
+    label: DNA glycosylase
+    label_align: left
+    label_at:
+    - 17.4
+    - 2.0
+  - g: arrow
+    from:
+    - 8.0
+    - 3.9
+    to:
+    - 8.0
+    - 4.699999999999999
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 6.1
+    text: '2.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 5.6
+    - - 16
+      - 5.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 6.6
+    - - 16
+      - 6.6
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 8.0
+    - 7.199999999999999
+    text: AP site
+    size: 0.75
+    align: center
+    color: red
+  - g: mark
+    kind: cut
+    at:
+    - 7.7
+    - 6.6
+    side: up
+  - id: ape
+    g: blob
+    at:
+    - 7.0
+    - 6.05
+    w: 1.4
+    h: 1.0
+    shape: round
+    hue: purple
+    label: AP endonuclease (APE1)
+    label_align: left
+    label_at:
+    - 17.4
+    - 6.1
+  - g: arrow
+    from:
+    - 8.0
+    - 8.0
+    to:
+    - 8.0
+    - 8.799999999999999
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 10.2
+    text: '3.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 9.7
+    - - 16
+      - 9.7
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 10.7
+    - - 16
+      - 10.7
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#2E9E4F'
+    points:
+    - - 7.7
+      - 10.7
+    - - 8.3
+      - 10.7
+    width: 0.3
+  - id: polb
+    g: blob
+    at:
+    - 8.9
+    - 10.149999999999999
+    w: 1.8
+    h: 1.4
+    shape: hand
+    hue: blue
+    rot: 180
+    label: Pol β / Pol I
+    label_align: left
+    label_at:
+    - 17.4
+    - 10.2
+  - g: arrow
+    from:
+    - 8.0
+    - 12.1
+    to:
+    - 8.0
+    - 12.9
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 14.3
+    text: '4.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 13.8
+    - - 16
+      - 13.8
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 14.8
+    - - 16
+      - 14.8
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#2E9E4F'
+    points:
+    - - 7.7
+      - 14.8
+    - - 8.3
+      - 14.8
+    width: 0.3
+  - g: text
+    at:
+    - 8.0
+    - 15.4
+    text: C
+    size: 0.85
+    align: center
+    color: '#2E9E4F'
+  - g: text
+    at:
+    - 17.4
+    - 14.3
+    text: DNA ligase III–XRCC1 seals
+    size: 0.8
+    align: left
+tags:
+- molecular_biology
+- repair
+notes_zh: '單一受損鹼基（不扭曲雙螺旋）：DNA glycosylase 切斷 N-醣苷鍵 → AP（無嘌呤／無嘧啶）位 → APE1 在 5′ 端切開 → Pol β 補 1 nt 並移除 dRP → ligase III–XRCC1。Glycosylase 例：UNG（uracil，來自 C 去胺）、OGG1（8-oxoG）、TDG（T·G，來自 5mC 去胺）、AAG（烷化）。自發去嘌呤每細胞每天約上萬次。DNA
+  用 T 而不用 U：C 去胺成 U 才能被辨認為錯誤。
+
+  【補充】Small, non-distorting lesions: deaminated bases (U from C, hypoxanthine from A), 8-oxoG (OGG1), alkylated bases, AP sites (depurination). 5-methyl-C → T gives a T·G mismatch: removed by TDG (thymine-DNA
+  glycosylase) — CpG sites are mutation hot spots.'
+parts_png: false
+status: pending

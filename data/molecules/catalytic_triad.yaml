@@ -1,0 +1,137 @@
+id: catalytic_triad
+name: Catalytic triad (serine protease)
+label: Catalytic triad
+aliases:
+- Ser-His-Asp
+- chymotrypsin active site
+- 催化三元組
+smiles: CC(=O)[O-].Cc1c[nH]cn1.CCO
+free:
+  schematic: true
+  atoms:
+    acb:
+    - CH_2
+    - -5.2
+    - 0.55
+    acg:
+    - C
+    - -4.1
+    - 0
+    ao1:
+    - O
+    - -4.1
+    - -1.05
+    ao2:
+    - O^-
+    - -3.0
+    - 0.55
+    hc:
+    - CH_2
+    - -0.55
+    - 2.1
+    hcg:
+    - ''
+    - -0.55
+    - 1.15
+    hnd:
+    - N
+    - -1.45
+    - 0.6
+    hd:
+    - H
+    - -2.15
+    - 0.6
+    hce:
+    - ''
+    - -1.0
+    - -0.35
+    hne:
+    - N
+    - 0.05
+    - -0.35
+    hcd:
+    - ''
+    - 0.35
+    - 0.65
+    sh:
+    - H
+    - 1.05
+    - -0.35
+    so:
+    - O
+    - 1.95
+    - -0.35
+    scb:
+    - CH_2
+    - 2.9
+    - 0.2
+  bonds:
+  - - acb
+    - acg
+  - - acg
+    - ao1
+    - 2
+  - - acg
+    - ao2
+  - - ao2
+    - hd
+    - hb
+  - - hd
+    - hnd
+  - - hc
+    - hcg
+  - - hcg
+    - hnd
+  - - hnd
+    - hce
+    - 2
+  - - hce
+    - hne
+  - - hne
+    - hcd
+  - - hcd
+    - hcg
+    - 2
+  - - hne
+    - sh
+    - hb
+  - - sh
+    - so
+  - - so
+    - scb
+  notes:
+  - - Asp102
+    - -4.4
+    - 1.5
+    - red
+  - - His57
+    - -0.45
+    - 2.95
+    - cyan
+  - - Ser195
+    - 2.9
+    - 1.15
+    - magenta
+  - - general base
+    - -0.1
+    - -1.3
+    - cyan
+  - - nucleophile
+    - 2.95
+    - -1.3
+    - magenta
+  - - orients His
+    - -4.1
+    - -1.9
+    - red
+decorate:
+  colors:
+    so: magenta
+    sh: magenta
+    hne: cyan
+tags:
+- enzyme
+- catalysis
+notes_zh: Chymotrypsin／trypsin／elastase 的催化三元組：Asp102 的 COO⁻ 固定 His57 方向並穩定其正電；His57 當 general base 拉走 Ser195 的 H⁺；Ser195 的 O⁻ 親核攻擊受質羰基 C → 四面體中間物（oxyanion hole：Gly193、Ser195 主鏈 NH 穩定 O⁻）→ acyl-enzyme（burst）→
+  水解（慢）。DIFP 共價修飾 Ser195、TPCK 修飾 His57。專一性口袋：trypsin（Asp189，切 Lys/Arg 後）、chymotrypsin（疏水大，切 Phe/Tyr/Trp 後）、elastase（Val/Thr 填塞，切小 AA 後）。
+status: pending

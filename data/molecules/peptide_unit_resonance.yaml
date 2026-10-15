@@ -1,0 +1,55 @@
+id: peptide_unit_resonance
+name: Peptide bond (resonance form)
+label: Resonance form
+aliases:
+- peptide bond resonance
+- 胜肽鍵共振式
+smiles: C/C([O-])=[NH+]/C
+free:
+  schematic: true
+  atoms:
+    ca1:
+    - C_α
+    - -1.1
+    - 0.55
+    c:
+    - C
+    - 0
+    - 0
+    o:
+    - O^-
+    - 0
+    - -1.05
+    n:
+    - N^+
+    - 1.1
+    - 0.55
+    h:
+    - H
+    - 1.1
+    - 1.55
+    ca2:
+    - C_α
+    - 2.2
+    - 1.1
+  bonds:
+  - - ca1
+    - c
+  - - c
+    - o
+  - - c
+    - n
+    - 2
+  - - n
+    - h
+  - - n
+    - ca2
+decorate:
+  colors:
+    o: red
+    n: cyan
+tags:
+- protein
+- peptide
+notes_zh: 胜肽鍵的共振式：N 的孤對電子推向 C=O，使 C–N 帶部分雙鍵性質（約 40 %）。
+status: pending

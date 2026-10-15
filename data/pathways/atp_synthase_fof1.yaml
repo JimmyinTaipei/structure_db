@@ -1,0 +1,642 @@
+id: atp_synthase_fof1
+title: 'ATP synthase F_oF_1: structure and binding change（ATP 合成酶 F_oF_1）'
+layout: free
+cell_size: 3.4
+regions:
+- kind: membrane
+  y: 0
+  x0: -6.4
+  x1: 11.6
+  label: 'Inner
+
+    mitochondrial
+
+    membrane'
+- kind: box
+  x0: -2.8
+  y0: -1.1
+  x1: 2.4
+  y1: 1.1
+  label: F_o
+- kind: box
+  x0: -0.7
+  y0: 1.5
+  x1: 2.5
+  y1: 6.5
+  label: F_1
+nodes:
+- id: ims
+  text: Intermembrane space (P side, high [H^+])
+  kind: heading
+  pos:
+  - -6.4
+  - -3.0
+- id: mat
+  text: Matrix (N side)
+  kind: heading
+  pos:
+  - -6.4
+  - 6.6
+- id: hin
+  text: H^+
+  kind: ion
+  pos:
+  - -1.6
+  - -2.4
+- id: a
+  text: 'a
+
+    (H^+ half-
+
+    channels)'
+  kind: protein
+  pos:
+  - -1.6
+  - 0
+  w: 2.4
+  h: 4.4
+- id: c
+  text: 'c ring
+
+    (8 c subunits)'
+  kind: protein
+  pos:
+  - 0.9
+  - 0
+  w: 3.2
+  h: 3.4
+- id: hout
+  text: H^+
+  kind: ion
+  pos:
+  - 3.0
+  - 1.8
+- id: g
+  text: 'γ ε
+
+    (central stalk)'
+  kind: protein
+  pos:
+  - 0.9
+  - 2.4
+  w: 2.6
+  h: 1.8
+- id: f1
+  text: 'α_3β_3
+
+    (F_1 head, 3 catalytic β)'
+  kind: protein
+  pos:
+  - 0.9
+  - 4.3
+  w: 5.6
+  h: 2.4
+- id: d
+  text: δ (OSCP)
+  kind: protein
+  pos:
+  - 0.9
+  - 5.9
+  w: 2.8
+  h: 1.2
+- id: b
+  text: 'b_2
+
+    (peripheral
+
+    stalk)'
+  kind: protein
+  pos:
+  - -3.6
+  - 3.2
+  w: 2.0
+  h: 4.0
+- id: adp
+  text: ADP + P_i
+  kind: ion
+  pos:
+  - 4.6
+  - 3.6
+- id: atp
+  text: ATP
+  kind: ion
+  pos:
+  - 4.6
+  - 5.0
+- id: oligo
+  text: 'Oligomycin
+
+    (binds F_o)'
+  kind: drug
+  pos:
+  - -4.4
+  - -1.9
+- id: rotor
+  text: 'Rotor: c ring + γ + ε
+
+    Stator: a + b_2 + δ + α_3β_3'
+  kind: concept
+  pos:
+  - -3.6
+  - 8.0
+- id: ant
+  text: 'ANT
+
+    (ATP^{4-} out, ADP^{3-} in)'
+  kind: protein
+  pos:
+  - 7.0
+  - 0
+  w: 5.0
+  h: 3.0
+- id: pic
+  text: 'PiC
+
+    (H^+ + P_i in)'
+  kind: protein
+  pos:
+  - 10.2
+  - 0
+  w: 3.0
+  h: 3.0
+- id: atr
+  text: 'Atractyloside,
+
+    bongkrekic acid'
+  kind: drug
+  pos:
+  - 7.0
+  - -2.3
+- id: bc
+  text: 'Binding change (Boyer): each β cycles O → L → T'
+  kind: heading
+  pos:
+  - 6.2
+  - 2.6
+- id: o
+  text: 'O (open)
+
+    ATP leaves'
+  kind: concept
+  pos:
+  - 9.0
+  - 3.6
+- id: l
+  text: 'L (loose)
+
+    ADP + P_i bind'
+  kind: concept
+  pos:
+  - 10.6
+  - 5.8
+- id: tt
+  text: 'T (tight)
+
+    ATP forms (ΔG ≈ 0)'
+  kind: concept
+  pos:
+  - 7.4
+  - 5.8
+- id: note
+  text: Energy is used to release ATP, not to make it
+  kind: plain
+  pos:
+  - 9.0
+  - 7.4
+edges:
+- from: hin
+  to: a
+  color: magenta
+- from: a
+  to: c
+  color: magenta
+- from: c
+  to: hout
+  color: magenta
+- from: c
+  to: g
+  head: false
+- from: g
+  to: f1
+  head: false
+- from: a
+  to: b
+  head: false
+- from: b
+  to: d
+  head: false
+  bend: -0.25
+- from: d
+  to: f1
+  head: false
+- from: adp
+  to: f1
+- from: f1
+  to: atp
+- from: oligo
+  to: a
+  inhibit: true
+- from: atr
+  to: ant
+  inhibit: true
+- from: o
+  to: l
+  label: γ turns 120°
+- from: l
+  to: tt
+  label: γ turns 120°
+- from: tt
+  to: o
+  label: γ turns 120°
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: F_o（o = oligomycin-sensitive）在膜內：H⁺ 由 a 次單元的膜間腔側半通道進入，與 c 次單元的 Asp/Glu 結合，c ring 轉約一圈後由基質側半通道放出。c ring、γ、ε 一起轉動（rotor）；a、b₂、δ、α₃β₃ 固定（stator），b₂ 與 δ 防止 α₃β₃ 跟著轉。γ 每轉 120°，三個 β 各自改變構形：O（空）→ L（鬆，ADP＋Pi
+  結合）→ T（緊，ATP 在活性位自發生成）→ O（釋放 ATP）。耗能的是 ATP 的釋放。哺乳類 c ring 有 8 個 c → 每轉一圈 8 H⁺ 產生 3 ATP（約 2.7 H⁺/ATP），加上 PiC 的 1 H⁺ → 約 3.7 ≈ 4 H⁺/ATP。ANT 由膜電位驅動（ATP⁴⁻ 出、ADP³⁻ 進），atractyloside 與 bongkrekic acid 抑制。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.0
+        - 0.4
+        text: IMS (H^+ high)
+        size: 0.75
+        align: left
+        color: gray
+      - g: text
+        at:
+        - -1.0
+        - 16.4
+        text: Matrix
+        size: 0.75
+        align: left
+        color: gray
+      - g: membrane
+        y: 4.0
+        x0: -1.0
+        x1: 31.0
+        lipids: true
+      - g: blob
+        at:
+        - 5.0
+        - 4.0
+        w: 1.6
+        h: 3.0
+        shape: box
+        hue: orange
+        text: a
+        text_size: 0.6
+      - g: blob
+        at:
+        - 6.6
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 7.22
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 7.84
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 8.459999999999999
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 9.08
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 9.7
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 10.32
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: blob
+        at:
+        - 10.94
+        - 4.0
+        w: 0.56
+        h: 2.8
+        shape: box
+        hue: yellow
+      - g: text
+        at:
+        - 8.8
+        - 2.0
+        text: c ring (8 c)
+        size: 0.6
+        align: center
+      - g: blob
+        at:
+        - 4.4
+        - 9.8
+        w: 0.6
+        h: 8.8
+        shape: box
+        hue: orange
+      - g: blob
+        at:
+        - 6.6
+        - 14.2
+        w: 4.8
+        h: 0.9
+        shape: oval
+        hue: orange
+        text: δ
+        text_size: 0.5
+      - g: blob
+        at:
+        - 8.8
+        - 7.6
+        w: 0.9
+        h: 4.6
+        shape: box
+        hue: purple
+        text: γ
+        text_size: 0.5
+      - g: blob
+        at:
+        - 9.8
+        - 5.9
+        w: 0.8
+        h: 0.7
+        shape: oval
+        hue: purple
+        text: ε
+        text_size: 0.42
+      - g: blob
+        at:
+        - 7.0
+        - 11.8
+        w: 1.8
+        h: 3.6
+        shape: oval
+        hue: pink
+        text: α
+        text_size: 0.55
+      - g: blob
+        at:
+        - 8.8
+        - 11.8
+        w: 1.8
+        h: 3.6
+        shape: oval
+        hue: green
+        accent: true
+        text: β
+        text_size: 0.55
+      - g: blob
+        at:
+        - 10.6
+        - 11.8
+        w: 1.8
+        h: 3.6
+        shape: oval
+        hue: pink
+        text: α
+        text_size: 0.55
+      - g: ion
+        at:
+        - 6.0
+        - 0.2
+        r: 0.4
+        hue: pink
+        text: H^+
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 6.0
+        - 0.8
+        to:
+        - 6.0
+        - 2.4
+        color: magenta
+        curve: 0
+      - g: arrow
+        from:
+        - 11.6
+        - 5.2
+        to:
+        - 12.8
+        - 7.6
+        color: magenta
+        curve: 0
+      - g: ion
+        at:
+        - 13.2
+        - 8.2
+        r: 0.4
+        hue: pink
+        text: H^+
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 7.0
+        - 5.9
+        to:
+        - 11.2
+        - 5.9
+        color: gray
+        curve: -0.3
+      - g: text
+        at:
+        - 8.0
+        - 7.4
+        text: rotor
+        size: 0.6
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 12.6
+        - 11.2
+        text: ADP + P_i → ATP
+        size: 0.65
+        align: left
+      - g: text
+        at:
+        - -1.0
+        - 7.0
+        text: oligomycin
+        size: 0.6
+        align: left
+        color: red
+      - g: text
+        at:
+        - 26.0
+        - 8.4
+        text: binding change (β)
+        size: 0.7
+        align: center
+      - g: ion
+        at:
+        - 26.0
+        - 10.4
+        r: 0.8
+        hue: gray
+        text: O
+        text_size: 0.6
+      - g: ion
+        at:
+        - 29.0
+        - 14.6
+        r: 0.8
+        hue: yellow
+        text: L
+        text_size: 0.6
+      - g: ion
+        at:
+        - 23.0
+        - 14.6
+        r: 0.8
+        hue: green
+        text: T
+        text_size: 0.6
+      - g: arrow
+        from:
+        - 27.0
+        - 10.9
+        to:
+        - 28.6
+        - 13.4
+        color: cyan
+        curve: -0.2
+      - g: arrow
+        from:
+        - 28.0
+        - 15.2
+        to:
+        - 24.0
+        - 15.2
+        color: cyan
+        curve: -0.2
+      - g: arrow
+        from:
+        - 23.4
+        - 13.6
+        to:
+        - 25.0
+        - 10.9
+        color: cyan
+        curve: -0.2
+      - g: text
+        at:
+        - 30.0
+        - 12.0
+        text: ADP + P_i bind
+        size: 0.55
+        align: left
+      - g: text
+        at:
+        - 22.0
+        - 12.0
+        text: ATP forms
+        size: 0.55
+        align: right
+      - g: text
+        at:
+        - 26.0
+        - 17.0
+        text: ATP released (needs energy)
+        size: 0.6
+        align: center
+      - g: transporter
+        at:
+        - 17.0
+        - 4.0
+        hue: blue
+      - g: text
+        at:
+        - 17.0
+        - 1.0
+        text: ANT
+        size: 0.6
+        align: center
+      - g: arrow
+        from:
+        - 16.2
+        - 6.2
+        to:
+        - 16.2
+        - 1.8
+        color: black
+        curve: 0
+      - g: arrow
+        from:
+        - 17.8
+        - 1.8
+        to:
+        - 17.8
+        - 6.2
+        color: gray
+        curve: 0
+      - g: text
+        at:
+        - 17.0
+        - 7.0
+        text: ATP out · ADP in
+        size: 0.55
+        align: center
+      - g: transporter
+        at:
+        - 23.0
+        - 4.0
+        hue: teal
+      - g: text
+        at:
+        - 23.0
+        - 1.0
+        text: PiC
+        size: 0.6
+        align: center
+      - g: arrow
+        from:
+        - 23.0
+        - 1.6
+        to:
+        - 23.0
+        - 6.2
+        color: gray
+        curve: 0
+      - g: text
+        at:
+        - 23.0
+        - 7.0
+        text: P_i + H^+ in
+        size: 0.55
+        align: center

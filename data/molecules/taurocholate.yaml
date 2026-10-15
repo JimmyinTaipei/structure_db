@@ -1,0 +1,14 @@
+id: taurocholate
+name: Taurocholate
+aliases:
+- taurocholic acid
+smiles: C[C@H](CCC(=O)NCCS(=O)(=O)[O-])[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- bile_acid
+notes_zh: 與 taurine 結合的膽鹽（磺酸根，pKa 更低）。
+status: pending

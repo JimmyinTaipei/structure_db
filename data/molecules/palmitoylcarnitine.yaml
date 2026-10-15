@@ -1,0 +1,16 @@
+id: palmitoylcarnitine
+name: Palmitoylcarnitine
+aliases:
+- acylcarnitine
+- 棕櫚醯肉鹼
+smiles: C[N+](C)(C)C[C@@H](CC(=O)[O-])OC(=O)CCCCCCCCCCCCCCC
+lipid:
+  type: fatty_acid
+  chains:
+  - n: 16
+  end: carnitine
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: CPT-I（外膜）生成 → carnitine–acylcarnitine translocase（內膜）→ CPT-II（基質側）換回 acyl-CoA。CPT-I 被 malonyl-CoA 抑制：合成與分解不會同時進行。
+status: pending

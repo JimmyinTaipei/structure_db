@@ -1,0 +1,17 @@
+id: serotonin
+name: Serotonin
+aliases:
+- 5-hydroxytryptamine
+- 5-HT
+- 血清素
+smiles: '[NH3+]CCc1c[nH]c2ccc(O)cc12'
+chain:
+- c: CH_2
+  l: ^+H_3N
+- c: CH_2
+- ring: '[*]c1c[nH]c2ccc(O)cc12'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: AADC（PLP）脫羧。腸嗜鉻細胞、血小板、腦。分解：MAO → 5-HIAA（carcinoid 時尿 5-HIAA ↑；Trp 被耗用 → pellagra）。松果體 → N-acetylserotonin → melatonin（SAM）。
+status: pending

@@ -1,0 +1,50 @@
+id: complex_iii
+title: 'Complex III: QH₂ + 2 cyt c (Fe³⁺) → Q + 2 cyt c (Fe²⁺) + 2 H⁺'
+substrates:
+- ubiquinol
+products:
+- ubiquinone
+cofactors_in:
+- 2cytc_ox
+cofactors_out:
+- 2cytc_red
+- 2H+
+prosthetic:
+- cyt b, Fe-S,
+- cyt c_1
+enzyme: 'Complex III
+
+  (cytochrome bc_1)'
+conditions: 'Q cycle: 4 H^+ to IMS per 2 e^-'
+reversible: false
+decorate:
+  ubiquinol:
+    colors:
+      o1:
+      - magenta
+      - H
+      o4:
+      - magenta
+      - H
+  2H+:
+    colors:
+      0: magenta
+  2cytc_red:
+    colors:
+      0:
+        c:
+        - - cyan
+          - Fe^{2+}
+card_zh:
+  location: 粒線體內膜；cyt c 在膜間腔側
+  type: 氧化還原＋質子轉移（Q cycle）
+  mechanism: Q cycle：QH₂ 在外側（Qo）放出 2 H⁺ 到膜間腔；一個 e⁻ 經 Rieske Fe-S → cyt c₁ → cyt c，另一個經 cyt b_L → b_H 到內側（Qi）把 Q 還原。兩輪合計：2 QH₂ 氧化、1 Q 還原，4 H⁺ 到膜間腔、2 個 cyt c 被還原
+  deficiency:
+  - antimycin A 抑制 Qi 位；myxothiazol 抑制 Qo 位
+  exam_points:
+  - 把 2 e⁻ 載體（QH₂）轉成 1 e⁻ 載體（cyt c）
+  - cyt c 是水溶性周邊蛋白；釋放到細胞質 → 活化 caspase-9（內在性凋亡）
+tags:
+- energy_metabolism
+- etc_oxphos
+status: pending

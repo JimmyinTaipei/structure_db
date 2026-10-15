@@ -1,0 +1,199 @@
+id: g_protein_cycle
+title: G protein cycle
+layout: cycle
+radius: 2.1
+cell_size: 5.2
+start_angle: -90
+center_text: 'Gα
+
+  GTPase
+
+  switch'
+nodes:
+- id: gdp
+  text: 'Gαβγ–GDP
+
+    (inactive)'
+  kind: protein
+- id: ex
+  text: 'Receptor (GPCR) + ligand
+
+    GDP → GTP exchange'
+  kind: name
+- id: gtp
+  text: 'Gα–GTP + βγ
+
+    (active)'
+  kind: protein
+- id: eff
+  text: 'Effector: adenylyl cyclase
+
+    (cAMP), PLC-β …'
+  kind: name
+- id: hyd
+  text: 'GTP → GDP + P_i
+
+    (intrinsic GTPase, RGS)'
+  kind: name
+edges:
+- from: gdp
+  to: ex
+- from: ex
+  to: gtp
+- from: gtp
+  to: eff
+- from: eff
+  to: hyd
+- from: hyd
+  to: gdp
+tags:
+- enzyme
+- allostery
+notes_zh: GPCR 活化 → 促使 Gα 釋出 GDP、結合 GTP（GEF 作用）→ Gα–GTP 與 βγ 分開並各自作用（Gs 活化、Gi 抑制 adenylyl cyclase；Gq 活化 PLC-β）。Gα 本身的 GTPase 把 GTP 水解成 GDP → 回到三聚體（關閉）。霍亂毒素：Gs ADP-ribosylation → GTPase 失效 → 持續活化；百日咳毒素：Gi
+  無法活化。PKA：4 cAMP 結合 2 個 R 次單元 → 釋出 2 個活性 C 次單元。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 35.0
+        - 2.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 35.0
+        - 6.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 4.0
+        x0: -1.0
+        x1: 35.0
+        lipids: true
+      - g: gpcr
+        at:
+        - 2.4
+        - 4.0
+        hue: purple
+      - g: gprotein
+        at:
+        - 6.0
+        - 6.3
+        nucleotide: GDP
+        hue: green
+      - g: text
+        at:
+        - 5.6
+        - 9.6
+        text: 1. inactive
+        size: 0.75
+        align: center
+      - g: arrow
+        from:
+        - 9.0
+        - 6.4
+        to:
+        - 11.6
+        - 6.4
+        style: fat
+      - g: ligand
+        at:
+        - 14.0
+        - 0.4
+        shape: triangle
+        hue: red
+        r: 0.45
+      - g: gpcr
+        at:
+        - 14.0
+        - 4.0
+        hue: purple
+        accent: true
+      - g: gprotein
+        at:
+        - 17.6
+        - 6.3
+        nucleotide: GTP
+        hue: green
+        accent: true
+      - g: text
+        at:
+        - 17.2
+        - 9.6
+        text: 2. GDP → GTP
+        size: 0.75
+        align: center
+      - g: arrow
+        from:
+        - 20.4
+        - 6.4
+        to:
+        - 22.0
+        - 6.4
+        style: fat
+      - g: gprotein
+        at:
+        - 29.0
+        - 6.3
+        nucleotide: GTP
+        hue: green
+        accent: true
+        split: true
+      - g: blob
+        at:
+        - 23.6
+        - 4.0
+        w: 1.8
+        h: 3.4
+        shape: box
+        hue: teal
+      - g: blob
+        at:
+        - 23.6
+        - 6.3
+        w: 1.8
+        h: 1.0
+        shape: oval
+        hue: teal
+        text: AC
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 25.6
+        - 6.4
+        to:
+        - 24.7
+        - 6.4
+        color: green
+        curve: 0
+      - g: text
+        at:
+        - 27.0
+        - 9.6
+        text: 3. α–GTP and βγ act
+        size: 0.75
+        align: center
+      - g: arrow
+        from:
+        - 26.0
+        - 11.0
+        to:
+        - 6.0
+        - 11.0
+        color: black
+        curve: -0.12
+      - g: text
+        at:
+        - 16.0
+        - 15.0
+        text: 4. GTP → GDP + P_i (GTPase, RGS)
+        size: 0.75
+        align: center

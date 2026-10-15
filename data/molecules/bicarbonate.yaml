@@ -1,0 +1,7 @@
+id: bicarbonate
+name: Bicarbonate
+aliases: [HCO3-, 碳酸氫根]
+smiles: "OC(=O)[O-]"
+formula: "HCO_3^-"
+tags: [urea]
+status: pending

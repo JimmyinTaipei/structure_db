@@ -1,0 +1,26 @@
+id: hgprt
+title: "Hypoxanthine + PRPP → IMP (HGPRT, salvage)"
+substrates: [hypoxanthine, prpp]
+products: [imp]
+cofactors_out: [PPi]
+enzyme: "hypoxanthine-guanine\nphosphoribosyltransferase"
+reversible: false
+decorate:
+  prpp:
+    colors:
+      d1: [magenta, '{P}–{P}']
+  PPi:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質（腦、基底核特別依賴）
+  type: "救援途徑（salvage）：鹼基 + PRPP → 核苷酸 + PPi"
+  cofactors: "同一酵素也催化 guanine + PRPP → GMP"
+  deficiency:
+    - "完全缺乏 → Lesch-Nyhan 症候群（X-linked）：高尿酸、痛風、自殘行為、舞蹈徐動、智能障礙"
+    - "機轉：救援失敗 → PRPP 累積、IMP/GMP ↓ → 從頭合成失去回饋抑制 → 嘌呤過度合成 → 尿酸 ↑"
+    - "部分缺乏 → Kelley-Seegmiller（只有痛風）"
+  exam_points:
+    - "allopurinol 經 HGPRT 活化；Lesch-Nyhan 用 allopurinol 只能降尿酸、不改善神經症狀"
+    - "6-MP、6-TG（抗癌／免疫抑制）也需 HGPRT 活化"
+tags: [nucleotide, purine, salvage]
+status: pending

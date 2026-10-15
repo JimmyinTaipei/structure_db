@@ -1,0 +1,28 @@
+id: histidine_decarboxylase
+title: Histidine → Histamine (histidine decarboxylase)
+substrates:
+- histidine
+products:
+- histamine
+- id: co2
+  view: formula
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: 'histidine
+
+  decarboxylase'
+reversible: false
+decorate:
+  histidine:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+card_zh:
+  location: 肥大細胞、嗜鹼性球、胃 ECL 細胞
+  type: 脫羧（PLP）
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

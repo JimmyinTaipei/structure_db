@@ -1,0 +1,41 @@
+id: malate_synthase
+title: Malate synthase
+substrates:
+- glyoxylate
+- acetyl_coa
+products:
+- malate
+cofactors_in:
+- H2O
+cofactors_out:
+- CoA-SH
+- H+
+enzyme: Malate synthase
+reversible: false
+decorate:
+  glyoxylate:
+    colors:
+      0: magenta
+      1: magenta
+  acetyl_coa:
+    colors:
+      0:
+        c: cyan
+        l: cyan
+        u: cyan
+  malate:
+    colors:
+      0: magenta
+      1: magenta
+      2: cyan
+      3: cyan
+card_zh:
+  location: Glyoxysome；動物沒有
+  type: Claisen 縮合（同 citrate synthase）：acetyl-CoA 的甲基碳接到 glyoxylate 的醛基
+  exam_points:
+  - 2 acetyl-CoA → 1 succinate（4 碳）淨合成 → 可走糖質新生
+  - 動物缺此酵素與 isocitrate lyase → 偶數碳脂肪酸無法淨合成葡萄糖
+tags:
+- carb_metabolism
+- glyoxylate_cycle
+status: pending

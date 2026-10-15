@@ -1,0 +1,24 @@
+id: pyridoxal_kinase
+title: Pyridoxal → PLP (pyridoxal kinase)
+substrates:
+- pyridoxal
+products:
+- plp
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: pyridoxal kinase
+reversible: false
+decorate:
+  plp:
+    highlight:
+    - {smarts: 'C[O:1][P:2](=[O:3])([O-:4])[O-:5]', color: magenta}
+card_zh:
+  type: 磷酸化（C5′-CH₂OH）
+tags:
+- vitamin
+- coenzyme
+status: pending

@@ -1,0 +1,22 @@
+id: calcitriol
+name: 1,25-Dihydroxycholecalciferol (calcitriol)
+label: 1,25-(OH)_2-D_3 (calcitriol)
+aliases:
+- calcitriol
+- 1,25-dihydroxyvitamin D3
+- 活性維生素D
+- 骨化三醇
+smiles: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: C(=[CH2])[CH][OH:1]
+    color: magenta
+  - smarts: '[CX4](C)(C)(C)[OH:1]'
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 活性形式。腎近曲小管的 1α-hydroxylase（CYP27B1）：PTH ↑、低磷 → 活化；calcitriol 本身與 FGF23 → 抑制。洋紅：1α-OH 與 25-OH。作用於核受體 VDR：腸道吸收 Ca²⁺ 與磷 ↑。缺乏：佝僂病（兒童）、骨軟化症（成人）；肉芽腫（sarcoidosis）的巨噬細胞也有 1α-hydroxylase → 高血鈣。
+status: pending

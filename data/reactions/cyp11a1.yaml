@@ -1,0 +1,50 @@
+id: cyp11a1
+title: Cholesterol → Pregnenolone (CYP11A1, side-chain cleavage)
+substrates:
+- cholesterol
+products:
+- pregnenolone
+- isocaproaldehyde
+cofactors_in:
+- 3O2
+- 3NADPH
+cofactors_out:
+- 3NADP+
+- 4H2O
+extra_in:
+- 3H+
+enzyme: 'CYP11A1 (desmolase,
+
+  side-chain cleavage)'
+reversible: false
+decorate:
+  cholesterol:
+    highlight:
+    - atoms:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      color: cyan
+  isocaproaldehyde:
+    smarts: CC(C)CCC=O
+    color: cyan
+  3O2:
+    colors:
+      0: magenta
+  pregnenolone:
+    highlight:
+    - smarts: '[CX3]=[O:1]'
+      color: magenta
+card_zh:
+  location: 粒線體內膜（adrenodoxin 傳電子）
+  type: 三次單氧化：22R-OH、20,22-diOH，再切斷 C20–C22
+  regulation: ACTH（腎上腺）、LH（Leydig、黃體）經 cAMP；真正的限速是 StAR 把膽固醇送到粒線體內膜
+  deficiency:
+  - StAR 或 CYP11A1 缺乏 → lipoid CAH：所有固醇類荷爾蒙 ↓，腎上腺充滿膽固醇
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

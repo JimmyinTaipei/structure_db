@@ -1,0 +1,693 @@
+id: alternative_splicing
+title: Alternative splicing and trans-splicing
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.6
+    text: Constitutive splicing
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.10000000000000003
+      - 1.8
+    - - 8.500000000000002
+      - 1.8
+    width: 0.3
+  - g: blob
+    at:
+    - 1.3
+    - 1.8
+    w: 1.8000000000000003
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.3
+    - 1.8
+    w: 1.8000000000000003
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 7.300000000000001
+    - 1.8
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: green
+    text: '3'
+    text_size: 0.62
+  - g: strand
+    kind: gray
+    points:
+    - - 2.2
+      - 1.35
+    - - 2.8
+      - 0.7
+    - - 3.4
+      - 1.35
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.2
+      - 1.35
+    - - 5.800000000000001
+      - 0.7
+    - - 6.4
+      - 1.35
+    width: 0.08
+  - g: arrow
+    from:
+    - 4.6
+    - 2.6
+    to:
+    - 4.6
+    - 4.0
+    color: gray
+    width: 1.0
+  - g: ion
+    at:
+    - 0.6
+    - 4.9
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 0.95
+      - 4.9
+    - - 6.550000000000001
+      - 4.9
+    width: 0.3
+  - g: blob
+    at:
+    - 1.85
+    - 4.9
+    w: 1.8
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 3.65
+    - 4.9
+    w: 1.7999999999999998
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.449999999999999
+    - 4.9
+    w: 1.7999999999999998
+    h: 0.75
+    shape: box
+    hue: green
+    text: '3'
+    text_size: 0.62
+  - g: text
+    at:
+    - 6.750000000000001
+    - 4.9
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 16.0
+    - -0.6
+    text: Alternative splicing (exon skipping)
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 16.099999999999998
+      - 1.8
+    - - 24.5
+      - 1.8
+    width: 0.3
+  - g: blob
+    at:
+    - 17.299999999999997
+    - 1.8
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 20.299999999999997
+    - 1.8
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 23.299999999999997
+    - 1.8
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: green
+    text: '3'
+    text_size: 0.62
+  - g: strand
+    kind: gray
+    points:
+    - - 18.2
+      - 1.35
+    - - 18.799999999999997
+      - 0.7
+    - - 19.4
+      - 1.35
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 21.2
+      - 1.35
+    - - 21.799999999999997
+      - 0.7
+    - - 22.4
+      - 1.35
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 18.2
+      - 2.25
+    - - 20.299999999999997
+      - 3.05
+    - - 22.4
+      - 2.25
+    width: 0.08
+  - g: ion
+    at:
+    - 16.6
+    - 4.9
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 16.950000000000003
+      - 4.9
+    - - 22.55
+      - 4.9
+    width: 0.3
+  - g: blob
+    at:
+    - 17.85
+    - 4.9
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 19.650000000000006
+    - 4.9
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 21.450000000000003
+    - 4.9
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: green
+    text: '3'
+    text_size: 0.62
+  - g: text
+    at:
+    - 22.75
+    - 4.9
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 24.4
+    - 4.9
+    text: isoform A
+    size: 0.7
+    align: left
+  - g: ion
+    at:
+    - 16.6
+    - 6.4
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 16.950000000000003
+      - 6.4
+    - - 20.750000000000004
+      - 6.4
+    width: 0.3
+  - g: blob
+    at:
+    - 17.85
+    - 6.4
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 19.650000000000006
+    - 6.4
+    w: 1.8000000000000007
+    h: 0.75
+    shape: box
+    hue: green
+    text: '3'
+    text_size: 0.62
+  - g: text
+    at:
+    - 20.950000000000003
+    - 6.4
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 24.4
+    - 6.4
+    text: isoform B (exon 2 skipped)
+    size: 0.7
+    align: left
+  - g: text
+    at:
+    - 0.0
+    - 9.0
+    text: Calcitonin / CGRP gene
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.10000000000000003
+      - 11.2
+    - - 13.9
+      - 11.2
+    width: 0.3
+  - g: blob
+    at:
+    - 1.05
+    - 11.2
+    w: 1.3000000000000003
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 3.25
+    - 11.2
+    w: 1.3000000000000003
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.450000000000001
+    - 11.2
+    w: 1.2999999999999998
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '3'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 7.800000000000001
+    - 11.2
+    w: 1.6000000000000005
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '4'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 10.3
+    - 11.2
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: purple
+    text: '5'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 12.8
+    - 11.2
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: purple
+    text: '6'
+    text_size: 0.62
+  - g: text
+    at:
+    - 9.05
+    - 12.1
+    text: pA1
+    size: 0.6
+    align: center
+    color: '#C2338A'
+  - g: text
+    at:
+    - 14.049999999999999
+    - 12.1
+    text: pA2
+    size: 0.6
+    align: center
+    color: '#C2338A'
+  - g: ion
+    at:
+    - 0.6
+    - 14.2
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 0.95
+      - 14.2
+    - - 6.65
+      - 14.2
+    width: 0.3
+  - g: blob
+    at:
+    - 1.6
+    - 14.2
+    w: 1.3
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 2.9
+    - 14.2
+    w: 1.2999999999999998
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.199999999999999
+    - 14.2
+    w: 1.2999999999999998
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '3'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.6499999999999995
+    - 14.2
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: orange
+    text: '4'
+    text_size: 0.62
+  - g: text
+    at:
+    - 6.8500000000000005
+    - 14.2
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 7.6
+    - 14.2
+    text: thyroid C cells → calcitonin
+    size: 0.72
+    align: left
+  - g: ion
+    at:
+    - 0.6
+    - 15.8
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 0.95
+      - 15.8
+    - - 8.25
+      - 15.8
+    width: 0.3
+  - g: blob
+    at:
+    - 1.6
+    - 15.8
+    w: 1.3
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 2.9
+    - 15.8
+    w: 1.2999999999999998
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.199999999999999
+    - 15.8
+    w: 1.2999999999999998
+    h: 0.75
+    shape: box
+    hue: blue
+    text: '3'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.6499999999999995
+    - 15.8
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: purple
+    text: '5'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 7.249999999999999
+    - 15.8
+    w: 1.5999999999999996
+    h: 0.75
+    shape: box
+    hue: purple
+    text: '6'
+    text_size: 0.62
+  - g: text
+    at:
+    - 8.450000000000001
+    - 15.8
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 9.2
+    - 15.8
+    text: neurons → CGRP (vasodilator)
+    size: 0.72
+    align: left
+  - g: text
+    at:
+    - 19.0
+    - 9.0
+    text: trans-splicing (trypanosomes, nematodes)
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 19.2
+      - 10.8
+    - - 22.6
+      - 10.8
+    width: 0.3
+  - g: blob
+    at:
+    - 20.0
+    - 10.8
+    w: 1.6000000000000014
+    h: 0.75
+    shape: box
+    hue: pink
+    text: SL
+    text_size: 0.62
+  - g: text
+    at:
+    - 23.0
+    - 10.8
+    text: spliced-leader RNA
+    size: 0.65
+    align: left
+    color: gray
+  - g: strand
+    kind: rna
+    points:
+    - - 20.8
+      - 12.4
+    - - 25.0
+      - 12.4
+    width: 0.3
+  - g: blob
+    at:
+    - 26.2
+    - 12.4
+    w: 2.3999999999999986
+    h: 0.75
+    shape: box
+    hue: green
+    text: exon
+    text_size: 0.62
+  - g: text
+    at:
+    - 28.0
+    - 12.4
+    text: pre-mRNA
+    size: 0.65
+    align: left
+    color: gray
+  - g: arrow
+    from:
+    - 23.2
+    - 13.2
+    to:
+    - 23.2
+    - 14.7
+    color: gray
+    width: 1.0
+  - g: ion
+    at:
+    - 19.6
+    - 15.6
+    r: 0.3
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: strand
+    kind: rna
+    points:
+    - - 19.950000000000003
+      - 15.6
+    - - 24.150000000000002
+      - 15.6
+    width: 0.3
+  - g: blob
+    at:
+    - 20.750000000000004
+    - 15.6
+    w: 1.6000000000000014
+    h: 0.75
+    shape: box
+    hue: pink
+    text: SL
+    text_size: 0.62
+  - g: blob
+    at:
+    - 22.750000000000004
+    - 15.6
+    w: 2.3999999999999986
+    h: 0.75
+    shape: box
+    hue: green
+    text: exon
+    text_size: 0.62
+  - g: text
+    at:
+    - 24.35
+    - 15.6
+    text: A_n
+    size: 0.7
+    align: left
+    color: '#C2338A'
+  - g: text
+    at:
+    - 24.6
+    - 16.7
+    text: + Y-shaped intron (not a lariat)
+    size: 0.62
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'Constitutive：所有 exon 都保留。Alternative：exon skipping、互斥 exon、替代 5′/3′ 剪接位、intron retention；calcitonin 基因在甲狀腺 C 細胞產生 calcitonin，在神經產生 CGRP（替代 poly(A) 位 + 剪接）。Trans-splicing：兩條不同 RNA 接合（錐蟲 SL RNA），intron
+  為 Y 形。SR protein 促進、hnRNP 抑制。
+
+  【補充】~95 % of human multi-exon genes are alternatively spliced: exon skipping, mutually exclusive exons, alternative 5′ / 3′ sites, intron retention. Chosen by SR proteins (bind exonic splicing enhancers)
+  vs hnRNPs (silencers). Drosophila Dscam: > 38 000 possible isoforms. Sex lethal / transformer: sex determination.'
+parts_png: false
+status: pending

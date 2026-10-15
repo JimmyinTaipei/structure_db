@@ -1,0 +1,33 @@
+id: lta4_hydrolase
+title: LTA₄ → LTB₄ (LTA₄ hydrolase)
+substrates:
+- lta4
+products:
+- ltb4
+cofactors_in:
+- H2O
+enzyme: LTA_4 hydrolase
+reversible: false
+decorate:
+  lta4:
+    highlight:
+    - smarts: '[O;R:1]'
+      color: cyan
+  H2O:
+    colors:
+      0: magenta
+  ltb4:
+    highlight:
+    - smarts: '[OH:1][CH1]([CH2][CH1]=[CH1])[CH1]=[CH1]'
+      color: magenta
+    - smarts: '[OH:1][CH1]([CH2][CH2])[CH1]=[CH1]'
+      color: cyan
+card_zh:
+  location: 嗜中性球
+  type: 環氧化物水解
+  exam_points:
+  - LTB₄：嗜中性球趨化、黏附
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

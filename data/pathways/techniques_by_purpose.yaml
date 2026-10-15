@@ -1,0 +1,147 @@
+id: techniques_by_purpose
+title: Molecular techniques by purpose
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.4
+    - 0.0
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: DNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 0.0
+    text: Southern, PCR, Sanger / NGS (pyrosequencing), RFLP, FISH (location), microarray
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 1.6
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: RNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 1.6
+    text: Northern, RT-PCR, qRT-PCR, nuclease S1 / RNase protection, microarray, RNA-seq
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 3.2
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Protein
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 3.2
+    text: Western, ELISA, immunoprecipitation; GST / His-tag purification
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 4.800000000000001
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: DNA–protein
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 4.800000000000001
+    text: filter binding, EMSA, DNase I footprinting, ChIP, yeast one-hybrid
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 6.4
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Protein–protein
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 6.4
+    text: co-IP, yeast two-hybrid, FRET (GFP variants), pull-down
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 8.0
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: RNA–protein
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 8.0
+    text: yeast three-hybrid, CLIP
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 9.6
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Gene function
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 9.6
+    text: knock-in (HR), knock-out (Cre–loxP, CRISPR), knock-down (siRNA / miRNA)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 11.2
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: purple
+    text: DNA delivery
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 11.2
+    text: transformation (CaCl_2), electroporation, microinjection, lipofection, viral vectors, Ti plasmid (plants)
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- techniques
+notes_zh: 記法：Southern-DNA、Northern-RNA、Western-蛋白質（SNoW DRoP）。交互作用：DNA–蛋白（EMSA、footprint、ChIP、one-hybrid）、蛋白–蛋白（co-IP、Y2H、FRET）。基因功能：knock-in（同源重組）、knock-out（Cre–loxP、CRISPR）、knock-down（RNAi）。
+parts_png: false
+status: pending

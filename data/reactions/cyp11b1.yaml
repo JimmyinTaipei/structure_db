@@ -1,0 +1,35 @@
+id: cyp11b1
+title: 11-Deoxycortisol → Cortisol (CYP11B1, 11β-hydroxylase)
+substrates:
+- deoxycortisol
+products:
+- cortisol
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: 'CYP11B1
+
+  (11β-hydroxylase)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  cortisol:
+    highlight:
+    - smarts: '[CH1;R][OH:1]'
+      color: magenta
+card_zh:
+  location: 粒線體（束狀帶）
+  type: 單氧化（C11）
+  deficiency:
+  - 11β-hydroxylase 缺乏：cortisol ↓、11-deoxycortisol 與 DOC ↑ → 高血壓、低血鉀＋男性化
+  exam_points:
+  - metyrapone 抑制
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

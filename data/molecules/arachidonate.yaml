@@ -1,0 +1,9 @@
+id: arachidonate
+name: "Arachidonate"
+label: "Arachidonate\n20:4(Δ5,8,11,14)"
+aliases: [arachidonic acid, AA, 花生四烯酸]
+smiles: "[O-]C(=O)CCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 20, cis: [5, 8, 11, 14], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "20:4(Δ5,8,11,14)；ω-6。ω-6，由 linoleate 延長與去飽和而來。phospholipase A₂ 從膜磷脂 sn-2 釋出 → COX（prostaglandin、thromboxane）、LOX（leukotriene）→ eicosanoids。"
+status: pending

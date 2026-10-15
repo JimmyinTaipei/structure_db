@@ -1,0 +1,13 @@
+id: valine
+name: Valine
+aliases: [Val, V, 纈胺酸]
+smiles: "CC(C)[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH, dfork: {l: CH_3, r: CH_3}}
+decorate:
+  boxes: [{rows: [2], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Val / V。支鏈胺基酸（BCAA）、必需。生糖（→ succinyl-CoA）。BCKDH 缺乏 → 楓糖尿症（MSUD）。"
+status: approved

@@ -1,0 +1,15 @@
+id: retinol
+name: Retinol (vitamin A)
+label: Retinol (A)
+aliases:
+- vitamin A
+- 維生素A
+- 視黃醇
+smiles: CC1=C(C(C)(C)CCC1)/C=C/C(C)=C/C=C/C(C)=C/CO
+ring:
+  methyls: false
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 20 碳，β-ionone 環＋全反式多烯側鏈，末端 CH₂OH。以 retinyl ester 存於肝 stellate（Ito）細胞，血中由 retinol-binding protein 運送。缺乏：夜盲、乾眼症（xerophthalmia）、Bitot spots、免疫力下降；過量：顱內壓上升、肝毒性、致畸胎（isotretinoin）。
+status: pending

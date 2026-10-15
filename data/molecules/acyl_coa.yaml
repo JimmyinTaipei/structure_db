@@ -1,0 +1,21 @@
+id: acyl_coa
+name: Fatty acyl-CoA
+label: Fatty acyl-CoA
+aliases:
+- acyl-CoA
+- 脂醯輔酶A
+smiles: '[8*]CCC(=O)S[1*]'
+chain:
+- c: R
+- c: CH_2
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+- fa_synthesis
+notes_zh: β 氧化的受質（R = 其餘的脂肪酸碳鏈）。由上而下：β 碳（C3）、α 碳（C2）、硫酯羰基（C1）。
+status: pending

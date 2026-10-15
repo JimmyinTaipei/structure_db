@@ -1,0 +1,30 @@
+id: glycolysis_overview
+title: Glycolysis 10 步總覽（名稱版）
+layout: free
+cell: 0.62
+nodes:
+  - {id: glc,  ref: glucose,           view: name, pos: [0, 0]}
+  - {id: g6p,  ref: glucose_6p,        view: name, pos: [0, 1]}
+  - {id: f6p,  ref: fructose_6p,       view: name, pos: [0, 2]}
+  - {id: fbp,  ref: fructose_16bp,     view: name, pos: [0, 3]}
+  - {id: dhap, ref: dhap,              view: name, pos: [-2.1, 4]}
+  - {id: g3p,  ref: glyceraldehyde_3p, view: name, pos: [0, 4]}
+  - {id: bpg,  ref: bpg_13,            view: name, pos: [0, 5]}
+  - {id: pg3,  ref: pg_3,              view: name, pos: [0, 6]}
+  - {id: pg2,  ref: pg_2,              view: name, pos: [0, 7]}
+  - {id: pep,  ref: pep,               view: name, pos: [0, 8]}
+  - {id: pyr,  ref: pyruvate,          view: name, pos: [0, 9]}
+edges:
+  - {from: glc, to: g6p, step: hexokinase, label: "hexokinase", side_text: "ATP → ADP"}
+  - {from: g6p, to: f6p, step: phosphoglucose_isomerase, label: "phosphohexose isomerase", reversible: true}
+  - {from: f6p, to: fbp, step: pfk1, label: "PFK-1", side_text: "ATP → ADP"}
+  - {from: fbp, to: g3p, step: aldolase, label: "aldolase", reversible: true}
+  - {from: fbp, to: dhap, step: aldolase}
+  - {from: dhap, to: g3p, step: triose_phosphate_isomerase, reversible: true}
+  - {from: g3p, to: bpg, step: gapdh, label: "GAPDH", side_text: "P_i, NAD^+ → NADH", reversible: true}
+  - {from: bpg, to: pg3, step: phosphoglycerate_kinase, label: "phosphoglycerate kinase", side_text: "ADP → ATP", reversible: true}
+  - {from: pg3, to: pg2, step: phosphoglycerate_mutase, label: "phosphoglycerate mutase", reversible: true}
+  - {from: pg2, to: pep, step: enolase, label: "enolase", side_text: "H_2O", reversible: true}
+  - {from: pep, to: pyr, step: pyruvate_kinase, label: "pyruvate kinase", side_text: "ADP → ATP"}
+tags: [carb_metabolism, glycolysis]
+status: pending

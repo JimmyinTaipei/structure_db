@@ -1,0 +1,20 @@
+id: enolase
+title: "Glycolysis ⑨ 2-Phosphoglycerate ⇌ Phosphoenolpyruvate"
+step: 9
+substrates: [pg_2]
+products: [pep]
+cofactors_out: [H2O]
+prosthetic: ["Mg^{2+}"]
+enzyme: "enolase"
+reversible: true
+decorate:
+  pg_2: {colors: {1: {l: magenta}, 2: {c: [magenta, "OH"]}}}
+  pep: {colors: {1: {c: magenta}, 2: {c: magenta}}}
+card_zh:
+  location: 細胞質
+  type: 脫水
+  deltaG: "ΔG'° = +7.5 kJ/mol，可逆"
+  mechanism: "脫水使磷酸基被鎖在 enol 形式 → PEP 磷酸基轉移勢能大幅升高（−61.9 kJ/mol）"
+  deficiency: "Fluoride 抑制 enolase（血糖檢體用 NaF 管防止紅血球持續消耗葡萄糖）"
+tags: [carb_metabolism, glycolysis]
+status: pending

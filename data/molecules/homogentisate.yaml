@@ -1,0 +1,15 @@
+id: homogentisate
+name: Homogentisate
+aliases:
+- homogentisic acid
+- 尿黑酸
+smiles: '[O-]C(=O)Cc1cc(O)ccc1O'
+chain:
+- c: COO^-
+- c: CH_2
+- ring: '[*]c1cc(O)ccc1O'
+tags:
+- amino_acid_metabolism
+- aa_degradation
+notes_zh: HPP dioxygenase（Fe²⁺、vitamin C）同時做脫羧、羥化、側鏈移位。homogentisate oxidase 缺乏 → alkaptonuria：尿放置變黑、褐黃病（ochronosis，結締組織發黑）、關節炎。
+status: pending

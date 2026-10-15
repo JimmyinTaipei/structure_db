@@ -1,0 +1,28 @@
+id: isocitrate_lyase
+title: Isocitrate lyase
+substrates:
+- isocitrate
+products:
+- succinate
+- glyoxylate
+enzyme: Isocitrate lyase
+reversible: false
+decorate:
+  isocitrate:
+    colors:
+      3: magenta
+      4: magenta
+  glyoxylate:
+    colors:
+      0: magenta
+      1: magenta
+card_zh:
+  location: Glyoxysome（植物種子）、細菌、真菌；動物沒有
+  type: 醛醇裂解（retro-aldol）：C2–C3 斷開
+  exam_points:
+  - 乙醛酸循環的兩個獨特酵素之一（另一個是 malate synthase）
+  - 跳過 TCA 中兩個脫羧步驟（IDH、α-KGDH），碳不以 CO₂ 流失
+tags:
+- carb_metabolism
+- glyoxylate_cycle
+status: pending

@@ -1,0 +1,23 @@
+id: transketolase_1
+title: Transketolase（第一步）X5P + R5P ⇌ G3P + S7P
+substrates: [xylulose_5p, ribose_5p]
+products: [glyceraldehyde_3p, sedoheptulose_7p]
+prosthetic: [TPP]
+prosthetic_font: sans
+enzyme: transketolase
+reversible: true
+decorate:                         # 洋紅 = 被轉移的 2C 片段；青藍 = 追蹤供體剩下的部分
+  xylulose_5p: {colors: {0: magenta, 1: magenta, 2: cyan, 3: cyan, 4: cyan}}
+  glyceraldehyde_3p: {colors: {0: cyan, 1: cyan, 2: cyan}}
+  sedoheptulose_7p: {colors: {0: magenta, 1: magenta}}
+card_zh:
+  location: 細胞質（PPP 非氧化期）
+  deltaG: "接近平衡，可逆"
+  cofactors: "TPP（B1）、Mg²⁺"
+  mechanism: "把酮糖供體的 C1–C2（2 碳 ketol 單位）轉給醛糖受體的 C1"
+  exam_points:
+    - "Transketolase 轉 2C、需 TPP；transaldolase 轉 3C、不需 TPP（Schiff base）"
+    - "紅血球 transketolase 活性（加 TPP 前後比較）可評估 thiamine 狀態"
+    - "非氧化期可逆：細胞可依需求在 R5P 與 F6P/G3P 之間互換"
+tags: [carb_metabolism, PPP]
+status: pending

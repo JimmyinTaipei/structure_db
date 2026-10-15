@@ -1,0 +1,49 @@
+id: complex_i
+title: 'Complex I: NADH + Q → NAD⁺ + QH₂ (NADH:ubiquinone oxidoreductase)'
+substrates:
+- ubiquinone
+products:
+- ubiquinol
+cofactors_in:
+- NADH+H+
+cofactors_out:
+- NAD+
+prosthetic:
+- FMN,
+- Fe-S
+enzyme: 'Complex I
+
+  (NADH dehydrogenase)'
+conditions: 4 H^+ pumped (matrix → IMS)
+reversible: false
+decorate:
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+        - - magenta
+          - H^+
+  ubiquinol:
+    colors:
+      o1:
+      - magenta
+      - H
+      o4:
+      - magenta
+      - H
+card_zh:
+  location: 粒線體內膜
+  type: 氧化還原＋質子幫浦（每 2 e⁻ 打出 4 H⁺）
+  cofactors: FMN → 一串 Fe-S cluster → Q
+  deficiency:
+  - rotenone（殺蟲劑、魚藤酮）、amytal（amobarbital）、piericidin A 抑制 → NADH 無法氧化，但 succinate 仍可經 Complex II 進來
+  - Leber hereditary optic neuropathy（LHON）：粒線體 DNA 的 Complex I 基因突變，母系遺傳
+  exam_points:
+  - NADH 的 P/O ≈ 2.5（10 H⁺ / 4 H⁺ per ATP）
+  - Complex I、III、IV 是三個質子幫浦，II 不是
+tags:
+- energy_metabolism
+- etc_oxphos
+status: pending

@@ -1,0 +1,8 @@
+id: xanthine
+name: "Xanthine"
+aliases: [黃嘌呤]
+smiles: "O=c1[nH]c(=O)[nH]c2[nH][cH]nc12"
+ring: {axis: [6, 10], right: 1, h_down: 7, nh_bond: true, mirror: true}
+tags: [nucleotide, purine]
+notes_zh: "XMP 的鹼基。xanthine oxidase：hypoxanthine → xanthine → uric acid（allopurinol 抑制）。"
+status: pending

@@ -1,0 +1,348 @@
+id: rrna_processing
+title: rRNA processing
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.6
+    text: 'E. coli: 30S pre-rRNA'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: gray
+    points:
+    - - 0.0
+      - 1.5
+    - - 21.6
+      - 1.5
+    width: 0.3
+  - g: blob
+    at:
+    - 3.8
+    - 1.5
+    w: 6.0
+    h: 0.8
+    shape: box
+    hue: blue
+    text: 16S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 8.2
+    - 1.5
+    w: 1.7999999999999998
+    h: 0.8
+    shape: box
+    hue: yellow
+    text: tRNA
+    text_size: 0.62
+  - g: blob
+    at:
+    - 14.100000000000001
+    - 1.5
+    w: 9.000000000000002
+    h: 0.8
+    shape: box
+    hue: green
+    text: 23S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 20.1
+    - 1.5
+    w: 1.4000000000000021
+    h: 0.8
+    shape: box
+    hue: orange
+    text: 5S
+    text_size: 0.62
+  - g: mark
+    kind: cut
+    at:
+    - 0.8
+    - 1.1
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 6.8
+    - 1.1
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 9.6
+    - 1.1
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 18.6
+    - 1.1
+    side: up
+  - g: text
+    at:
+    - 22.4
+    - 1.5
+    text: 'RNase III, E, P
+
+      + trimming'
+    size: 0.68
+    align: left
+    color: gray
+  - g: arrow
+    from:
+    - 10.5
+    - 2.2
+    to:
+    - 10.5
+    - 3.8999999999999995
+    color: gray
+    width: 1.0
+  - g: blob
+    at:
+    - 3.8
+    - 4.6
+    w: 6.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: 16S
+    text_size: 0.62
+  - g: text
+    at:
+    - 3.8
+    - 5.6
+    text: → 30S subunit (+21 proteins)
+    size: 0.68
+    align: center
+  - g: blob
+    at:
+    - 14.100000000000001
+    - 4.6
+    w: 9.000000000000002
+    h: 0.85
+    shape: box
+    hue: green
+    text: 23S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 19.7
+    - 4.6
+    w: 1.3999999999999986
+    h: 0.85
+    shape: box
+    hue: orange
+    text: 5S
+    text_size: 0.62
+  - g: text
+    at:
+    - 15.0
+    - 5.6
+    text: → 50S subunit (+ ~33 proteins)
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 22.4
+    - 4.6
+    text: 30S + 50S = 70S
+    size: 0.75
+    align: left
+  - g: text
+    at:
+    - 0.0
+    - 7.9
+    text: 'Eukaryotes: 45S pre-rRNA (Pol I) + 5S (Pol III)'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: gray
+    points:
+    - - 0.0
+      - 10.6
+    - - 21.4
+      - 10.6
+    width: 0.3
+  - g: blob
+    at:
+    - 4.3
+    - 10.6
+    w: 5.4
+    h: 0.8
+    shape: box
+    hue: blue
+    text: 18S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 8.8
+    - 10.6
+    w: 1.200000000000001
+    h: 0.8
+    shape: box
+    hue: yellow
+    text: 5.8S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 15.3
+    - 10.6
+    w: 9.4
+    h: 0.8
+    shape: box
+    hue: green
+    text: 28S
+    text_size: 0.62
+  - g: mark
+    kind: cut
+    at:
+    - 1.6
+    - 10.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 7.0
+    - 10.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 8.2
+    - 10.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 9.4
+    - 10.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 10.6
+    - 10.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 20.0
+    - 10.2
+    side: up
+  - g: text
+    at:
+    - 0.8
+    - 11.45
+    text: 5′ETS
+    size: 0.58
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 7.6
+    - 11.45
+    text: ITS1
+    size: 0.58
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 10.0
+    - 11.45
+    text: ITS2
+    size: 0.58
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 20.7
+    - 11.45
+    text: 3′ETS
+    size: 0.58
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 10.5
+    - 11.9
+    to:
+    - 10.5
+    - 13.100000000000001
+    color: gray
+    width: 1.0
+  - g: blob
+    at:
+    - 4.3
+    - 13.8
+    w: 5.4
+    h: 0.85
+    shape: box
+    hue: blue
+    text: 18S
+    text_size: 0.62
+  - g: text
+    at:
+    - 4.3
+    - 14.8
+    text: → 40S (+ ~33 proteins)
+    size: 0.68
+    align: center
+  - g: blob
+    at:
+    - 8.8
+    - 13.8
+    w: 1.200000000000001
+    h: 0.85
+    shape: box
+    hue: yellow
+    text: 5.8S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 15.3
+    - 13.8
+    w: 9.4
+    h: 0.85
+    shape: box
+    hue: green
+    text: 28S
+    text_size: 0.62
+  - g: blob
+    at:
+    - 21.1
+    - 13.8
+    w: 1.4000000000000021
+    h: 0.85
+    shape: box
+    hue: orange
+    text: 5S
+    text_size: 0.62
+  - g: text
+    at:
+    - 15.0
+    - 14.8
+    text: → 60S (+ ~47 proteins; 5S from Pol III)
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 22.4
+    - 13.8
+    text: 40S + 60S = 80S
+    size: 0.75
+    align: left
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'E. coli：rrn operon 產生 30S pre-rRNA（16S、tRNA、23S、5S），由 RNase III 等切開 → 30S、50S → 70S。真核：Pol I 在核仁產生 45S pre-rRNA（18S、5.8S、28S，夾 ETS 與 ITS），5S 由 Pol III 另外轉錄 → 40S、60S → 80S。修飾：C/D box snoRNA →
+  2′-O-甲基化；H/ACA box snoRNA → pseudouridylation（dyskerin，dyskeratosis congenita）。
+
+  【補充】Modification guided by snoRNPs (snoRNA + enzyme): C/D-box snoRNA → 2′-O-methylation (fibrillarin); H/ACA-box snoRNA → pseudouridylation (dyskerin; mutated in dyskeratosis congenita). E. coli modifies
+  rRNA with enzymes alone (no snoRNA). U3 snoRNA guides 5′ETS cleavage; RNase MRP cuts ITS1. Ribosomes are assembled in the nucleolus and exported as subunits. The rRNA (23S / 28S) catalyses peptide bonds:
+  a ribozyme.'
+parts_png: false
+status: pending

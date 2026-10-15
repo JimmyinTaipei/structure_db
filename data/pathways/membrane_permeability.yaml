@@ -1,0 +1,229 @@
+id: membrane_permeability
+title: Permeability of the lipid bilayer
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 31.0
+    - 4.0
+    text: Outside
+    size: 0.7
+    align: right
+    color: gray
+  - g: text
+    at:
+    - 31.0
+    - 8.0
+    text: Cytosol
+    size: 0.7
+    align: right
+    color: gray
+  - g: membrane
+    y: 6.0
+    x0: -1.0
+    x1: 31.0
+    lipids: true
+  - g: ion
+    at:
+    - 1.4
+    - 1.6
+    r: 0.55
+    hue: gray
+    text: O_2
+    text_size: 0.36
+  - g: ion
+    at:
+    - 3.6
+    - 1.6
+    r: 0.55
+    hue: gray
+    text: CO_2
+    text_size: 0.36
+  - g: ion
+    at:
+    - 5.800000000000001
+    - 1.6
+    r: 0.55
+    hue: gray
+    text: N_2
+    text_size: 0.36
+  - g: arrow
+    from:
+    - 3.6
+    - 2.4
+    to:
+    - 3.6
+    - 10.4
+    color: black
+    curve: 0
+    width: 1.8
+  - g: text
+    at:
+    - 3.6
+    - 12.2
+    text: gases, hydrophobic
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 3.6
+    - 13.4
+    text: free
+    size: 0.62
+    align: center
+    color: green
+  - g: ion
+    at:
+    - 9.6
+    - 1.6
+    r: 0.6
+    hue: blue
+    text: H_2O
+    text_size: 0.32
+  - g: ion
+    at:
+    - 11.8
+    - 1.6
+    r: 0.6
+    hue: blue
+    text: urea
+    text_size: 0.32
+  - g: ion
+    at:
+    - 14.0
+    - 1.6
+    r: 0.6
+    hue: blue
+    text: glyc
+    text_size: 0.32
+  - g: arrow
+    from:
+    - 11.8
+    - 2.4
+    to:
+    - 11.8
+    - 10.4
+    color: black
+    curve: 0
+    dashed: true
+  - g: text
+    at:
+    - 11.8
+    - 12.2
+    text: small polar
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 11.8
+    - 13.4
+    text: slight
+    size: 0.62
+    align: center
+    color: orange
+  - g: ion
+    at:
+    - 19.0
+    - 1.6
+    r: 0.65
+    hue: orange
+    text: Glc
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 19.0
+    - 2.4
+    to:
+    - 19.0
+    - 4.4
+    color: black
+    curve: 0
+  - g: mark
+    kind: x
+    at:
+    - 19.0
+    - 3.6
+  - g: text
+    at:
+    - 19.0
+    - 12.2
+    text: large polar
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 19.0
+    - 13.4
+    text: 'no'
+    size: 0.62
+    align: center
+    color: red
+  - g: ion
+    at:
+    - 24.0
+    - 1.6
+    r: 0.5
+    hue: purple
+    text: Na^+
+    text_size: 0.34
+  - g: ion
+    at:
+    - 25.8
+    - 1.6
+    r: 0.5
+    hue: green
+    text: K^+
+    text_size: 0.34
+  - g: ion
+    at:
+    - 27.6
+    - 1.6
+    r: 0.5
+    hue: teal
+    text: Cl^-
+    text_size: 0.34
+  - g: ion
+    at:
+    - 29.4
+    - 1.6
+    r: 0.5
+    hue: pink
+    text: ATP
+    text_size: 0.34
+  - g: arrow
+    from:
+    - 26.6
+    - 2.4
+    to:
+    - 26.6
+    - 4.4
+    color: black
+    curve: 0
+  - g: mark
+    kind: x
+    at:
+    - 26.6
+    - 3.6
+  - g: text
+    at:
+    - 26.6
+    - 12.2
+    text: ions, charged
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 26.6
+    - 13.4
+    text: 'no'
+    size: 0.62
+    align: center
+    color: red
+tags:
+- membrane
+- membrane_transport
+notes_zh: 脂雙層的通透性取決於大小與極性：氣體（O₂、CO₂、N₂、NO）與疏水小分子（steroid、乙醇）自由擴散；小的不帶電極性分子（H₂O、urea、glycerol）緩慢通過（水另經 aquaporin）；較大的極性分子（glucose、fructose）幾乎不能通過，需 transporter；所有離子（Na⁺、K⁺、Ca²⁺、Cl⁻、H⁺）與帶電分子（胺基酸、ATP、核苷酸）不能通過，需
+  channel、transporter 或 pump。
+parts_png: false
+status: pending

@@ -1,0 +1,45 @@
+id: mgmt
+title: O6-Methylguanine → Guanine (MGMT, direct repair)
+substrates:
+- o6_methylguanine
+products:
+- guanine_dr
+cofactors_in:
+- MGMT-SH
+cofactors_out:
+- MGMT-SCH3
+enzyme: O^6-methylguanine-DNA methyltransferase (MGMT)
+reversible: false
+decorate:
+  o6_methylguanine:
+    highlight:
+    - smarts: '[CH3:1]Oc'
+      color: magenta
+  MGMT-SCH3:
+    colors:
+      0:
+        c:
+        - - magenta
+          - CH_3
+  MGMT-SH:
+    colors:
+      0:
+        c:
+        - - cyan
+          - H
+  guanine_dr:
+    highlight:
+    - smarts: '[nH:1]1c(N)nc2c(c1=O)nc[n]2'
+      color: cyan
+card_zh:
+  type: 直接修復：O6 上的甲基（洋紅）轉移到酵素自身的 Cys–S；N1 由 Cys 的 H 補上
+  mechanism: Suicide enzyme：每個 MGMT 只能用一次（甲基化後被泛素化分解），不需要切除或合成 DNA
+  exam_points:
+  - MGMT 啟動子甲基化（基因沉默）的膠質母細胞瘤對 temozolomide 較敏感
+  - E. coli 對應：Ada 蛋白（亦為轉錄活化子）
+  - 其他直接修復：photolyase（T=T，人類沒有）、AlkB 家族（ALKBH2/3，氧化去甲基）
+tags:
+- molecular_biology
+- repair
+parts_png: false
+status: pending

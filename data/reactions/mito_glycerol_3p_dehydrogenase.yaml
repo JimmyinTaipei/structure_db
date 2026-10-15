@@ -1,0 +1,40 @@
+id: mito_glycerol_3p_dehydrogenase
+title: Glycerol 3-phosphate + Q → DHAP + QH₂ (mitochondrial G3P dehydrogenase)
+substrates:
+- glycerol_3p
+products:
+- dhap
+cofactors_in:
+- Q
+cofactors_out:
+- QH2
+prosthetic:
+- FAD
+enzyme: 'mitochondrial glycerol 3-phosphate
+
+  dehydrogenase (GPD2)'
+reversible: false
+decorate:
+  glycerol_3p:
+    colors:
+      1:
+        l:
+        - magenta
+        - H
+        r: magenta
+  QH2:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H_2
+card_zh:
+  location: 粒線體內膜外側（面向膜間腔）
+  type: 氧化（FAD → Q）
+  exam_points:
+  - glycerol 3-phosphate shuttle 的第二步：細胞質 NADH 的電子以 FADH₂ 的形式進入 → 只得約 1.5 ATP
+  - 骨骼肌、腦常用；比 malate–aspartate shuttle 快但少 1 ATP
+tags:
+- energy_metabolism
+- shuttle
+status: pending

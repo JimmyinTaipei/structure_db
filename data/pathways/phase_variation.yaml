@@ -1,0 +1,306 @@
+id: phase_variation
+title: Salmonella phase variation (Hin inversion)
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 2.5
+    - - 26.0
+      - 2.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 3.5
+    - - 26.0
+      - 3.5
+    width: 0.3
+  - g: ligand
+    at:
+    - 1.2
+    - 3.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 8.2
+    - 3.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: region
+    x0: 1.8
+    y0: 2.3
+    x1: 6.0
+    y1: 3.7
+    hue: orange
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 3.9
+    - 3.0
+    text: hin
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.2
+    y0: 2.3
+    x1: 7.6
+    y1: 3.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 6.9
+    - 3.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.8
+    y0: 2.3
+    x1: 13.0
+    y1: 3.7
+    hue: teal
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 10.9
+    - 3.0
+    text: fljB
+    size: 0.62
+    align: center
+  - g: region
+    x0: 13.0
+    y0: 2.3
+    x1: 16.4
+    y1: 3.7
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 14.7
+    - 3.0
+    text: fljA
+    size: 0.62
+    align: center
+  - g: region
+    x0: 20.0
+    y0: 2.3
+    x1: 25.0
+    y1: 3.7
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 22.5
+    - 3.0
+    text: fliC
+    size: 0.62
+    align: center
+  - g: arrow
+    from:
+    - 7.0
+    - 1.6
+    to:
+    - 16.2
+    - 1.6
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 11.0
+    - 4.7
+    text: FljB flagellin (H2)
+    size: 0.68
+    align: center
+    color: '#2E9E4F'
+  - g: text
+    at:
+    - 22.5
+    - 4.7
+    text: repressed by FljA
+    size: 0.68
+    align: center
+    color: '#D62828'
+  - g: arrow
+    from:
+    - 16.2
+    - 0.7
+    to:
+    - 21.0
+    - 1.7
+    inhibit: true
+    color: '#D62828'
+    width: 1.2
+    curve: -0.2
+  - g: arrow
+    from:
+    - 4.6
+    - 4.8
+    to:
+    - 4.6
+    - 7.7
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 5.2
+    - 6.6
+    text: Hin inverts (hix)
+    size: 0.7
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 9.5
+    - - 26.0
+      - 9.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 10.5
+    - - 26.0
+      - 10.5
+    width: 0.3
+  - g: ligand
+    at:
+    - 1.2
+    - 10.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 8.2
+    - 10.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: region
+    x0: 1.8
+    y0: 9.3
+    x1: 6.0
+    y1: 10.7
+    hue: orange
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 3.9
+    - 10.0
+    text: hin
+    size: 0.62
+    align: center
+  - g: region
+    x0: 6.2
+    y0: 9.3
+    x1: 7.6
+    y1: 10.7
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 6.9
+    - 10.0
+    text: P
+    size: 0.62
+    align: center
+  - g: region
+    x0: 8.8
+    y0: 9.3
+    x1: 13.0
+    y1: 10.7
+    hue: teal
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 10.9
+    - 10.0
+    text: fljB
+    size: 0.62
+    align: center
+  - g: region
+    x0: 13.0
+    y0: 9.3
+    x1: 16.4
+    y1: 10.7
+    hue: pink
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 14.7
+    - 10.0
+    text: fljA
+    size: 0.62
+    align: center
+  - g: region
+    x0: 20.0
+    y0: 9.3
+    x1: 25.0
+    y1: 10.7
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 22.5
+    - 10.0
+    text: fliC
+    size: 0.62
+    align: center
+  - g: arrow
+    from:
+    - 6.8
+    - 8.6
+    to:
+    - 1.6
+    - 8.6
+    color: '#2E9E4F'
+    width: 1.8
+  - g: mark
+    kind: x
+    at:
+    - 11.0
+    - 8.5
+  - g: arrow
+    from:
+    - 20.2
+    - 8.6
+    to:
+    - 24.8
+    - 8.6
+    color: '#2E9E4F'
+    width: 1.8
+  - g: text
+    at:
+    - 22.5
+    - 11.7
+    text: FliC flagellin (H1)
+    size: 0.68
+    align: center
+    color: '#2E9E4F'
+tags:
+- molecular_biology
+- gene_regulation
+- recombination
+notes_zh: Hin recombinase 在兩個 hix 反向重複間倒轉一段 DNA（含 hin 與 fljB 的啟動子）。順向：fljB（H2 flagellin）與 fljA（fliC 的 repressor）表現 → fliC 關。倒轉：fljB/fljA 不表現 → fliC（H1 flagellin）開。約每 1000 代切換一次，逃避宿主免疫。其他：phage Mu Gin、酵母
+  mating-type（HO）、錐蟲 VSG（基因轉換）。
+parts_png: false
+status: pending

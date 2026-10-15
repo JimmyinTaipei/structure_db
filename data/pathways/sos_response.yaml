@@ -1,0 +1,338 @@
+id: sos_response
+title: SOS response and translesion synthesis
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 2.0
+    - - 14
+      - 2.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 3.0
+    - - 14
+      - 3.0
+    width: 0.3
+  - g: region
+    x0: 6.0
+    y0: 1.4
+    x1: 9.0
+    y1: 3.6
+    hue: orange
+    opacity: 0.45
+    outline: false
+  - id: lexa
+    g: blob
+    at:
+    - 7.5
+    - 1.0
+    w: 2.4
+    h: 1.3
+    shape: bilobe
+    hue: purple
+    label: 'LexA dimer (repressor)
+
+      on SOS boxes'
+    label_at:
+    - 3.0
+    - -1.2
+    point:
+    - 7.0
+    - 0.7
+  - g: blob
+    at:
+    - 11.6
+    - 1.0
+    w: 2.6
+    h: 1.8
+    shape: oval
+    hue: gray
+  - g: mark
+    kind: x
+    at:
+    - 10.0
+    - 0.4
+  - g: text
+    at:
+    - 12.2
+    - -1.3
+    text: RNA polymerase blocked
+    size: 0.75
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 7.0
+    - 5.0
+    text: SOS genes OFF
+    size: 0.75
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 15.5
+    - 2.5
+    to:
+    - 17.5
+    - 2.5
+    style: fat
+  - g: text
+    at:
+    - 16.5
+    - 1.0
+    text: DNA damage
+    size: 0.8
+    align: center
+    color: red
+  - g: strand
+    kind: parent
+    points:
+    - - 19.0
+      - 0.6
+    - - 27.0
+      - 0.6
+    width: 0.3
+  - g: blob
+    at:
+    - 19.509999999999998
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 20.13
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 20.749999999999996
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 21.369999999999997
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 21.99
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 22.61
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 23.229999999999997
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 23.849999999999998
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 24.47
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 25.089999999999996
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 25.709999999999997
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: blob
+    at:
+    - 26.33
+    - 0.55
+    w: 0.6
+    h: 0.6
+    shape: round
+    hue: orange
+  - g: text
+    at:
+    - 23.0
+    - -0.8
+    text: ssDNA + RecA → RecA* (activated)
+    size: 0.8
+    align: center
+  - g: blob
+    at:
+    - 21.4
+    - 3.2
+    w: 1.2
+    h: 1.2
+    shape: round
+    hue: purple
+  - g: blob
+    at:
+    - 23.4
+    - 3.2
+    w: 1.2
+    h: 1.2
+    shape: round
+    hue: purple
+  - g: mark
+    kind: cut
+    at:
+    - 22.4
+    - 3.2
+    side: down
+  - g: text
+    at:
+    - 23.0
+    - 5.0
+    text: LexA self-cleaves → ON
+    size: 0.8
+    align: center
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 9.0
+    - - 7.0
+      - 9.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 10.0
+    - - 13
+      - 10.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: lesion
+    at:
+    - 7.6
+    - 10.0
+  - g: blob
+    at:
+    - 6.4
+    - 9.0
+    w: 1.8
+    h: 1.4
+    shape: hand
+    hue: blue
+    label: Pol III stalls
+    label_at:
+    - 3.0
+    - 12.4
+  - g: arrow
+    from:
+    - 14.0
+    - 9.5
+    to:
+    - 16.0
+    - 9.5
+    style: fat
+  - g: text
+    at:
+    - 15.0
+    - 8.0
+    text: 'polymerase
+
+      switch'
+    size: 0.72
+    align: center
+    color: gray
+  - g: strand
+    kind: new
+    points:
+    - - 17
+      - 9.0
+    - - 25.0
+      - 9.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 17
+      - 10.0
+    - - 30
+      - 10.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: lesion
+    at:
+    - 24.6
+    - 10.0
+  - g: blob
+    at:
+    - 24.6
+    - 9.0
+    w: 2.0
+    h: 1.5
+    shape: hand
+    hue: orange
+    label: 'Pol V / IV: error-prone'
+    label_at:
+    - 23.5
+    - 12.8
+tags:
+- molecular_biology
+- repair
+notes_zh: '平時 LexA 二聚體壓住 SOS 基因。DNA 損傷產生單股 DNA → RecA 結合成 RecA*（活化）→ 作為共蛋白酶促使 LexA 自我切割 → SOS 基因表現：recA、lexA、uvrA/B（NER）、sulA（暫停分裂）、Pol II、Pol IV（dinB）、Pol V（UmuD′₂C；活性形式為 UmuD′₂C–RecA–ATP，UmuD 需 RecA*
+  協助自切成 UmuD′）。TLS：Pol III 在損傷前停住 → 換成 Pol IV/V 越過損傷（無校對，易錯）→ 再換回 Pol III。真核 TLS：Pol η（可正確越過 T=T；缺陷 → XP variant）、Pol ζ、Rev1。
+
+  【補充】SOS = last-resort, error-prone survival response. Eukaryotic TLS polymerases: Pol η (accurate across T=T; defect → XP variant), Pol ζ, Rev1, Pol κ, Pol ι. Stalled forks can also restart by recombination
+  (Pol II, RecA; "chicken-foot" fork regression).'
+parts_png: false
+status: pending

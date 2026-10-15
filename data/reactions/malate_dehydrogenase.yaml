@@ -1,0 +1,22 @@
+id: malate_dehydrogenase
+title: "TCA ⑧ L-Malate ⇌ Oxaloacetate"
+step: 8
+substrates: [malate]
+products: [oxaloacetate]
+cofactors_in: [NAD+]
+cofactors_out: [NADH+H+]
+enzyme: "L-malate\ndehydrogenase"
+cofactors_inline: true          # 輔因子直接寫進方程式（Mathews）
+reversible: true
+decorate:                         # Mathews：HO 的 H 與 C–H 的 H → NADH 的 H 與 H⁺（洋紅）
+  malate: {colors: {1: {l: [magenta, "H"], r: magenta}}}
+  "NADH+H+": {colors: {0: {c: [[magenta, "H"], [magenta, "H^+"]]}}}
+card_zh:
+  location: 粒線體基質（細胞質另有一型，用於 malate–aspartate shuttle）
+  type: 脫氫（第 3 個 NADH）
+  deltaG: "ΔG'° = +29.7 kJ/mol；因 citrate synthase 快速消耗 OAA（濃度極低）而往右進行"
+  exam_points:
+    - "每圈 TCA：3 NADH、1 FADH₂、1 GTP、2 CO₂"
+    - "以 ETC 計算約 10 ATP／acetyl-CoA（NADH 2.5、FADH₂ 1.5）"
+tags: [TCA]
+status: pending

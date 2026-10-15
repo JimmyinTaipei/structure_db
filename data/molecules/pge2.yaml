@@ -1,0 +1,9 @@
+id: pge2
+name: "Prostaglandin E2"
+label: "PGE_2"
+aliases: [PGE₂, dinoprostone]
+smiles: "CCCCC[C@@H](/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1C/C=C\\CCCC(=O)[O-])O)O"
+ring: {rotate: 0}
+tags: [lipid, eicosanoid]
+notes_zh: "PGE₂：arachidonate 經 COX（cyclooxygenase）→ PGH₂ → PGE₂。發燒、疼痛、發炎；保護胃黏膜。NSAID（aspirin 不可逆乙醯化 COX）抑制。"
+status: pending

@@ -1,0 +1,102 @@
+id: cobalamin
+name: Cobalamin (vitamin B12)
+label: Cobalamin (B_{12})
+aliases:
+- vitamin B12
+- cobalamin
+- methylcobalamin
+- adenosylcobalamin
+- 維生素B12
+- 鈷胺素
+smiles: '[Co]'
+free:
+  schematic: true
+  atoms:
+    co:
+    - Co
+    - 0
+    - 0
+    na:
+    - N
+    - -1.9
+    - 0.25
+    nb:
+    - N
+    - -0.75
+    - -0.6
+    nc:
+    - N
+    - 1.9
+    - -0.25
+    nd:
+    - N
+    - 0.75
+    - 0.6
+    p1:
+    - ''
+    - -3.0
+    - 0.7
+    p2:
+    - ''
+    - -1.2
+    - -1.0
+    p3:
+    - ''
+    - 3.0
+    - -0.7
+    p4:
+    - ''
+    - 1.2
+    - 1.0
+    r:
+    - R
+    - 0
+    - -2.0
+    dmb:
+    - DMB
+    - 0
+    - 2.0
+  bonds:
+  - - p1
+    - p2
+  - - p2
+    - p3
+  - - p3
+    - p4
+  - - p4
+    - p1
+  - - co
+    - na
+  - - co
+    - nb
+  - - co
+    - nc
+  - - co
+    - nd
+  - - co
+    - r
+  - - co
+    - dmb
+  notes:
+  - - Corrin ring
+    - 4.1
+    - 0
+    - gray
+  - - "R = CH_3 (methylcobalamin)\n      5'-deoxyadenosyl (adenosylcobalamin)\n      CN (cyanocobalamin), OH"
+    - 0
+    - -3.3
+    - magenta
+  - - 5,6-dimethylbenzimidazole
+    - 0
+    - 2.7
+    - gray
+decorate:
+  colors:
+    r: magenta
+tags:
+- vitamin
+- water_soluble
+- coenzyme
+notes_zh: 示意圖（只驗證 SMILES 格式，不檢查原子數）：corrin 環中央一個 Co，下方配位 DMB，上方配位 R（洋紅）決定功能。methylcobalamin：methionine synthase（Hcy → Met，同時 N⁵-CH₃-THF → THF；缺乏 → methyl-folate trap）。adenosylcobalamin：methylmalonyl-CoA
+  mutase（→ succinyl-CoA；缺乏 → MMA ↑、神經症狀）。吸收需胃壁細胞的 intrinsic factor、迴腸末端。缺乏：巨球性貧血 + 亞急性聯合變性；Hcy ↑ 且 MMA ↑。
+status: pending

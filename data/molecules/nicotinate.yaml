@@ -1,0 +1,17 @@
+id: nicotinate
+name: Nicotinate (niacin, vitamin B3)
+label: Nicotinate (niacin)
+aliases:
+- niacin
+- nicotinic acid
+- vitamin B3
+- 菸鹼酸
+smiles: '[O-]C(=O)c1cccnc1'
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: 可由 Trp 合成（約 60 mg Trp → 1 mg niacin，需 B6、B2）。缺乏：pellagra（3D：dermatitis、diarrhea、dementia，可再加 death）；Hartnup 病（中性胺基酸吸收障礙）、carcinoid（Trp 被拿去做 serotonin）、isoniazid（耗 B6）也會造成。大劑量 niacin 降血脂（副作用：潮紅，可用
+  aspirin 預防）。
+status: pending

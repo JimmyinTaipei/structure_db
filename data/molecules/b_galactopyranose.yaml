@@ -1,0 +1,17 @@
+id: b_galactopyranose
+name: "β-D-Galactopyranose"
+label: "β-D-Galactose"
+aliases: [β-D-galactose]
+smiles: "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "OH", down: "H"}
+    4: {up: "HO", down: "H"}
+    5: {up: "CH_2OH", down: "H"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "glucose 的 C4 epimer：Haworth 中 C4-OH 在上。乳糖、醣脂（cerebroside）、血型抗原的成分。"
+status: pending

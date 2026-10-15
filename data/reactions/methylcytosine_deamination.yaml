@@ -1,0 +1,35 @@
+id: methylcytosine_deamination
+title: 5-Methylcytosine deamination
+substrates:
+- methylcytosine
+products:
+- thymine
+- ammonium
+cofactors_in:
+- H2O
+- H+
+enzyme: spontaneous deamination
+reversible: false
+decorate:
+  methylcytosine:
+    highlight:
+    - smarts: '[NH2:1]c1nc(=O)[nH]cc1C'
+      color: magenta
+  ammonium:
+    colors:
+      0: magenta
+  H2O:
+    colors:
+      0: cyan
+  thymine:
+    highlight:
+    - smarts: '[O:1]=c1[nH]c(=O)[nH]cc1C'
+      color: cyan
+card_zh:
+  type: 5mC 去胺基直接得到 thymine（洋紅 NH₂ → NH₄⁺；青 O 來自 H₂O）
+  exam_points:
+  - T 是正常鹼基，只能靠 T:G mismatch 修復辨認 → CpG 為突變熱點
+tags:
+- nucleotide
+- degradation
+status: pending

@@ -1,0 +1,32 @@
+id: b_fructose_6p
+name: β-D-Fructose 6-phosphate
+label: 'Fructose
+
+  6-phosphate'
+aliases:
+- β-F6P
+- fructose 6-phosphate (ring)
+smiles: C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)([O-])[O-]
+haworth:
+  ring: furanose
+  numbers: true
+  start: 2
+  subs:
+    2:
+      up: OH
+      down: CH_2OH
+    3:
+      up: HO
+      down: H
+    4:
+      up: H
+      down: OH
+    5:
+      up: '{P}OCH_2'
+      down: H
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+notes_zh: 環狀 F6P（β-furanose），PFK-2 在 C2 加磷酸 → F2,6BP。開鏈畫法見 Fructose 6-phosphate。
+status: pending

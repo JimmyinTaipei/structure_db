@@ -1,0 +1,378 @@
+id: replication_fork
+title: The bacterial replication fork
+layout: scene
+scene:
+  size:
+  - 34
+  - 15
+  items:
+  - g: dsdna
+    from:
+    - 23
+    - 9
+    to:
+    - 33.5
+    - 9
+    width: 1.3
+    seq: GATCCGTAAGCT
+  - g: text
+    at:
+    - 34.4
+    - 8.35
+    text: 5'
+    size: 0.62
+    color: '#3F4F6B'
+  - g: text
+    at:
+    - 34.4
+    - 9.65
+    text: 3'
+    size: 0.62
+    color: '#3F4F6B'
+  - id: gyrase
+    g: blob
+    at:
+    - 29
+    - 9
+    w: 1.9
+    h: 2.6
+    shape: oval
+    hue: purple
+    label: Gyrase
+    label_at:
+    - 29
+    - 3.4
+  - g: strand
+    kind: parent
+    points:
+    - - 23
+      - 8.35
+    - - 18
+      - 5.2
+    - - 1
+      - 5.2
+    bases: left
+    base_len: 0.45
+    ends:
+    - ''
+    - 3'
+    seq: CTAGGCATTCGA
+  - g: strand
+    kind: parent
+    points:
+    - - 23
+      - 9.65
+    - - 18
+      - 12.8
+    - - 1
+      - 12.8
+    bases: right
+    base_len: 0.45
+    ends:
+    - ''
+    - 5'
+    seq: ATGCCTAGGATC
+  - g: strand
+    kind: primer
+    points:
+    - - 1.2
+      - 6.2
+    - - 2.2
+      - 6.2
+    bases: left
+    base_len: 0.45
+    seq: GAUC
+  - g: strand
+    kind: new
+    points:
+    - - 2.2
+      - 6.2
+    - - 16.6
+      - 6.2
+    bases: left
+    base_len: 0.45
+    arrow: true
+    ends:
+    - ''
+    - ''
+    seq: GATCCGTAAGCT
+  - g: text
+    at:
+    - 0.25
+    - 6.2
+    text: 5'
+    size: 0.62
+    color: '#C2338A'
+  - id: clamp_lead
+    g: ring
+    at:
+    - 16.2
+    - 5.7
+    w: 0.8
+    h: 2.4
+    hue: green
+  - id: pol_lead
+    g: blob
+    at:
+    - 18.0
+    - 6.3
+    w: 2.6
+    h: 2.1
+    shape: hand
+    hue: blue
+    accent: true
+    label: 'DNA polymerase III
+
+      + β sliding clamp'
+    label_at:
+    - 17.6
+    - 1.6
+    point:
+    - 18.0
+    - 5.4
+  - id: helicase
+    g: ring
+    kind: hexamer
+    at:
+    - 21.7
+    - 10.3
+    r: 0.75
+    hue: orange
+    accent: true
+    label: 'Helicase (DnaB)
+
+      ATP'
+    label_at:
+    - 25.5
+    - 13.6
+  - id: ssb1
+    g: blob
+    at:
+    - 19.7
+    - 11.7
+    w: 0.9
+    h: 0.75
+    shape: round
+    hue: yellow
+  - id: ssb2
+    g: blob
+    at:
+    - 18.9
+    - 12.35
+    w: 0.9
+    h: 0.75
+    shape: round
+    hue: yellow
+    label: SSB
+    label_at:
+    - 19.3
+    - 14.6
+    point:
+    - 19.2
+    - 12.6
+  - id: primase
+    g: blob
+    at:
+    - 17.6
+    - 11.3
+    w: 1.6
+    h: 1.1
+    shape: kidney
+    hue: pink
+    label: 'Primase
+
+      (DnaG)'
+    label_at:
+    - 18.4
+    - 8.6
+    point:
+    - 17.6
+    - 10.9
+    label_size: 0.8
+  - g: strand
+    kind: new
+    points:
+    - - 4.4
+      - 11.8
+    - - 1.0
+      - 11.8
+    bases: left
+    base_len: 0.45
+    arrow: false
+    ends:
+    - ''
+    - 3'
+    seq: TACGGATC
+  - g: strand
+    kind: primer
+    points:
+    - - 9.3
+      - 11.8
+    - - 8.6
+      - 11.8
+    bases: left
+    base_len: 0.45
+    seq: GCAU
+  - g: strand
+    kind: new
+    points:
+    - - 8.6
+      - 11.8
+    - - 4.55
+      - 11.8
+    bases: left
+    base_len: 0.45
+    arrow: false
+    ends:
+    - ''
+    - ''
+    seq: TACGGATC
+  - g: strand
+    kind: primer
+    points:
+    - - 13.4
+      - 11.8
+    - - 12.6
+      - 11.8
+    bases: left
+    base_len: 0.45
+    seq: GCAU
+  - g: strand
+    kind: new
+    points:
+    - - 12.6
+      - 11.8
+    - - 9.75
+      - 11.8
+    bases: left
+    base_len: 0.45
+    arrow: false
+    ends:
+    - ''
+    - ''
+    seq: TACGGATC
+  - g: strand
+    kind: primer
+    points:
+    - - 16.8
+      - 11.8
+    - - 16.0
+      - 11.8
+    bases: left
+    base_len: 0.45
+    seq: GCAU
+  - g: strand
+    kind: new
+    points:
+    - - 16.0
+      - 11.8
+    - - 15.0
+      - 11.8
+    bases: left
+    base_len: 0.45
+    arrow: true
+    ends:
+    - ''
+    - ''
+    seq: TACGGATC
+  - id: ligase
+    g: blob
+    at:
+    - 4.5
+    - 10.85
+    w: 1.3
+    h: 0.95
+    shape: round
+    hue: teal
+    label: DNA ligase
+    label_at:
+    - 3.6
+    - 8.9
+    point:
+    - 4.4
+    - 10.5
+    label_size: 0.8
+  - id: pol1
+    g: blob
+    at:
+    - 9.5
+    - 10.85
+    w: 1.5
+    h: 1.05
+    shape: kidney
+    hue: gray
+    label: 'Pol I removes
+
+      RNA primer'
+    label_at:
+    - 8.9
+    - 8.9
+    point:
+    - 9.4
+    - 10.4
+    label_size: 0.8
+  - id: pol_lag
+    g: blob
+    at:
+    - 13.9
+    - 11.45
+    w: 2.0
+    h: 1.7
+    shape: hand
+    rot: 180
+    hue: blue
+    accent: true
+    label: 'Pol III
+
+      + clamp'
+    label_at:
+    - 13.8
+    - 8.9
+    point:
+    - 13.9
+    - 10.7
+    label_size: 0.8
+  - id: clamp_lag
+    g: ring
+    at:
+    - 15.25
+    - 11.7
+    w: 0.6
+    h: 1.8
+    hue: green
+  - g: text
+    at:
+    - 7.5
+    - 3.8
+    text: Leading strand (continuous)
+    color: '#D9622B'
+    size: 0.95
+  - g: text
+    at:
+    - 8
+    - 14.6
+    text: Lagging strand (Okazaki fragments)
+    color: '#D9622B'
+    size: 0.95
+  - g: arrow
+    from:
+    - 26.5
+    - 15.8
+    to:
+    - 32.5
+    - 15.8
+    style: fat
+  - g: text
+    at:
+    - 29.5
+    - 17.0
+    text: Fork movement
+    size: 0.85
+    color: gray
+tags:
+- molecular_biology
+- replication
+notes_zh: E. coli 複製叉：helicase（DnaB，六聚體，ATP）在 5′→3′ 方向沿延遲股模板解開雙股；SSB 保護單股；gyrase（topo II）在前方解除正超螺旋。Primase（DnaG）合成 RNA 引子 → Pol III（β clamp 增加持續性）延伸。領先股連續合成；延遲股以 Okazaki 片段（原核 1000–2000 nt，真核 100–200 nt）不連續合成。Pol
+  I 以 5′→3′ exonuclease 移除引子並補上 DNA（nick translation），DNA ligase（E. coli 用 NAD⁺，真核用 ATP）封閉切口。新股一律 5′→3′ 延伸（3′-OH 攻擊 dNTP 的 α-P）；模板 3′→5′ 讀取。
+parts_png: false
+status: pending

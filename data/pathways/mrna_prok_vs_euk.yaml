@@ -1,0 +1,451 @@
+id: mrna_prok_vs_euk
+title: Prokaryotic vs eukaryotic mRNA
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.9
+    text: 'Prokaryote: polycistronic'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 0.6
+    - - 26
+      - 0.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.6
+    - - 26
+      - 1.6
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 0.5
+      - 0.6
+    - - 2.3
+      - 0.6
+    width: 0.3
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 0.5
+      - 1.6
+    - - 2.3
+      - 1.6
+    width: 0.3
+  - g: region
+    x0: 3.0
+    y0: 0.4
+    x1: 9.0
+    y1: 1.8
+    hue: blue
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 6.0
+    - 1.1
+    text: gene A
+    size: 0.7
+    align: center
+  - g: region
+    x0: 9.6
+    y0: 0.4
+    x1: 15.6
+    y1: 1.8
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 12.6
+    - 1.1
+    text: gene B
+    size: 0.7
+    align: center
+  - g: region
+    x0: 16.2
+    y0: 0.4
+    x1: 22.2
+    y1: 1.8
+    hue: orange
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 19.2
+    - 1.1
+    text: gene C
+    size: 0.7
+    align: center
+  - g: text
+    at:
+    - 1.4
+    - 2.5
+    text: promoter
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 23.6
+    - 2.5
+    text: terminator
+    size: 0.65
+    align: center
+    color: gray
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 22.8
+      - 0.6
+    - - 24.4
+      - 0.6
+    width: 0.3
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 22.8
+      - 1.6
+    - - 24.4
+      - 1.6
+    width: 0.3
+  - g: arrow
+    from:
+    - 27.4
+    - 1.0
+    to:
+    - 27.4
+    - 4.0
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 27.9
+    - 2.6
+    text: transcription
+    size: 0.7
+    align: left
+    color: gray
+  - g: strand
+    kind: rna
+    points:
+    - - 2.2
+      - 5.0
+    - - 24.0
+      - 5.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 6.0
+    - 5.0
+    w: 4.800000000000001
+    h: 0.85
+    shape: box
+    hue: blue
+    text: ORF A
+    text_size: 0.62
+  - g: blob
+    at:
+    - 12.6
+    - 5.0
+    w: 4.800000000000001
+    h: 0.85
+    shape: box
+    hue: green
+    text: ORF B
+    text_size: 0.62
+  - g: blob
+    at:
+    - 19.200000000000003
+    - 5.0
+    w: 4.800000000000001
+    h: 0.85
+    shape: box
+    hue: orange
+    text: ORF C
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.6
+    - 4.1
+    w: 1.5
+    h: 0.9
+    shape: oval
+    hue: purple
+    text: ''
+    text_size: 0.62
+  - g: blob
+    at:
+    - 11.3
+    - 4.1
+    w: 1.5
+    h: 0.9
+    shape: oval
+    hue: purple
+    text: ''
+    text_size: 0.62
+  - g: text
+    at:
+    - 0.0
+    - 9.0
+    text: 'Eukaryote: monocistronic'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 10.4
+    - - 26
+      - 10.4
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 11.4
+    - - 26
+      - 11.4
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 0.5
+      - 10.4
+    - - 2.3
+      - 10.4
+    width: 0.3
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 0.5
+      - 11.4
+    - - 2.3
+      - 11.4
+    width: 0.3
+  - g: region
+    x0: 3.0
+    y0: 10.2
+    x1: 6.0
+    y1: 11.6
+    hue: blue
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 4.5
+    - 10.9
+    text: exon 1
+    size: 0.7
+    align: center
+  - g: region
+    x0: 6.0
+    y0: 10.2
+    x1: 9.0
+    y1: 11.6
+    hue: gray
+    opacity: 0.3
+    outline: false
+  - g: text
+    at:
+    - 7.5
+    - 10.9
+    text: intron
+    size: 0.65
+    align: center
+    color: gray
+  - g: region
+    x0: 9.0
+    y0: 10.2
+    x1: 12.5
+    y1: 11.6
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 10.75
+    - 10.9
+    text: exon 2
+    size: 0.7
+    align: center
+  - g: region
+    x0: 12.5
+    y0: 10.2
+    x1: 16.0
+    y1: 11.6
+    hue: gray
+    opacity: 0.3
+    outline: false
+  - g: text
+    at:
+    - 14.25
+    - 10.9
+    text: intron
+    size: 0.65
+    align: center
+    color: gray
+  - g: region
+    x0: 16.0
+    y0: 10.2
+    x1: 20.0
+    y1: 11.6
+    hue: orange
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 18.0
+    - 10.9
+    text: exon 3
+    size: 0.7
+    align: center
+  - g: arrow
+    from:
+    - 27.4
+    - 10.8
+    to:
+    - 27.4
+    - 13.8
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 27.9
+    - 11.6
+    text: 'transcription +
+
+      capping, splicing,
+
+      poly(A)'
+    size: 0.7
+    align: left
+    color: gray
+  - g: ion
+    at:
+    - 2.6
+    - 15.0
+    r: 0.55
+    hue: green
+    text: m^7G
+    text_size: 0.42
+  - g: strand
+    kind: rna
+    points:
+    - - 3.15
+      - 15.0
+    - - 19.8
+      - 15.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: blob
+    at:
+    - 4.2
+    - 15.0
+    w: 1.6
+    h: 0.85
+    shape: box
+    hue: gray
+    text: 5'UTR
+    text_size: 0.5
+  - g: blob
+    at:
+    - 6.5
+    - 15.0
+    w: 3.0
+    h: 0.85
+    shape: box
+    hue: blue
+    text: '1'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 9.75
+    - 15.0
+    w: 3.5
+    h: 0.85
+    shape: box
+    hue: green
+    text: '2'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 13.5
+    - 15.0
+    w: 4.0
+    h: 0.85
+    shape: box
+    hue: orange
+    text: '3'
+    text_size: 0.62
+  - g: blob
+    at:
+    - 16.45
+    - 15.0
+    w: 1.8999999999999986
+    h: 0.85
+    shape: box
+    hue: gray
+    text: 3'UTR
+    text_size: 0.5
+  - g: text
+    at:
+    - 5.0
+    - 13.9
+    text: AUG
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 15.5
+    - 13.9
+    text: stop
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 17.8
+    - 15.85
+    text: AAAA…A_n (~250)
+    size: 0.7
+    align: left
+    color: '#C2338A'
+tags:
+- molecular_biology
+- transcription
+- rna_processing
+notes_zh: '原核：polycistronic（一條 mRNA 多個 ORF，各有 SD + AUG）、無核膜 → 轉錄與轉譯偶聯、無 intron、無 5′ cap、無 poly(A)。真核：monocistronic、核內加工（5′ cap、剪接、3′ poly(A) ~250 A）後出核轉譯。兩者都有 5′UTR、3′UTR。
+
+  【補充】Prokaryotic mRNA: no cap, no introns, no poly(A) tail; 5′-ppp end; half-life of minutes. Both have 5′ and 3′ UTRs. Eukaryotic mRNA: 5′ m⁷G cap, introns removed, 3′ poly(A); exported through nuclear
+  pores before translation.
+
+  【補充】each ORF has its own Shine–Dalgarno + AUG; ribosomes (purple) load before transcription ends'
+parts_png: false
+status: pending

@@ -1,0 +1,15 @@
+id: puromycin
+name: Puromycin
+label: Puromycin
+aliases:
+- 嘌呤黴素
+smiles: COc1ccc(C[C@H](N)C(=O)N[C@@H]2[C@H](O)[C@@H](n3cnc4c(N(C)C)ncnc43)O[C@H]2CO)cc1
+ring:
+  coordgen: true
+  rotate: 180
+tags:
+- molecular_biology
+- translation
+notes_zh: 模仿 tyrosyl-tRNA 的 3′ 端（O-甲基酪胺酸 + N6,N6-二甲基腺苷），但以醯胺鍵（不可水解）取代酯鍵。進入 A 位接下胜肽後脫落 → 提早終止；原核、真核都抑制。
+parts_png: false
+status: pending

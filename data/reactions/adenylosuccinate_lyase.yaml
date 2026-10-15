@@ -1,0 +1,22 @@
+id: adenylosuccinate_lyase
+title: "Adenylosuccinate → AMP + Fumarate (adenylosuccinate lyase)"
+substrates: [adenylosuccinate]
+products: [amp, fumarate]
+enzyme: "adenylosuccinate\nlyase"
+reversible: false
+decorate:
+  adenylosuccinate:
+    base_colors: {6: magenta, 7: cyan, 8: cyan, 9: cyan, 10: cyan, 11: cyan, 12: cyan, 13: cyan, 14: cyan}
+  amp:
+    base_colors: {6: magenta}
+  fumarate:
+    colors: {0: cyan, 1: cyan, 2: cyan, 3: cyan}
+card_zh:
+  location: 細胞質
+  type: "消除反應（裂解出 fumarate）"
+  deficiency: "adenylosuccinate lyase 缺乏 → 自閉、癲癇、發展遲緩（尿中出現 succinylaminoimidazole carboxamide riboside）"
+  exam_points:
+    - "同一個酵素也催化嘌呤從頭合成的第 9 步（SAICAR → AICAR + fumarate）"
+    - "fumarate 回 TCA → 與尿素循環 ASL 類比"
+tags: [nucleotide, purine]
+status: pending

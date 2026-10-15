@@ -1,0 +1,95 @@
+id: reaction_coordinate
+title: 'Reaction coordinate: enzyme lowers ΔG‡'
+layout: plot
+plot:
+  size:
+  - 15
+  - 10
+  params:
+    G0: 0
+    G1: -1.4
+    Ea: 4.2
+    Ec: 2.0
+  x:
+    min: 0
+    max: 10
+    label: Reaction coordinate
+    at: -2.6
+  y:
+    min: -2.6
+    max: 5.2
+    label: Free energy, G
+    label_pos: center
+    at: 0
+  curves:
+  - id: un
+    y: G0 + (G1-G0)/(1+exp(-(x-5)*1.6)) + (Ea - (G1-G0)/2)*exp(-((x-5)/1.25)**2)
+    width: 1.1
+  - id: cat
+    y: G0 + (G1-G0)/(1+exp(-(x-5)*1.6)) + (Ec - (G1-G0)/2)*exp(-((x-5)/1.25)**2)
+    color: cyan
+  hlines:
+  - y: G0
+    to: 4.2
+  - y: G1
+    from: 5.8
+    to: 10
+  arrows:
+  - from:
+    - 3.3
+    - G0
+    to:
+    - 3.3
+    - Ea + (G1-G0)/2 + G0 - 0.05
+    color: red
+    label: ΔG^‡ (uncatalyzed)
+    label_off:
+    - 0.2
+    - -2.9
+    label_align: right
+  - from:
+    - 4.2
+    - G0
+    to:
+    - 4.2
+    - Ec + (G1-G0)/2 + G0 - 0.05
+    color: cyan
+  - from:
+    - 8.6
+    - G0
+    to:
+    - 8.6
+    - G1
+    color: magenta
+    label: ΔG (unchanged)
+    label_off:
+    - 0.35
+    - 0
+    label_align: left
+  texts:
+  - at:
+    - 0.6
+    - -0.5
+    text: S
+    size: 1.2
+  - at:
+    - 9.7
+    - -1.95
+    text: P
+    size: 1.2
+  - at:
+    - 5
+    - 4.55
+    text: Transition state (‡)
+    size: 0.9
+  - at:
+    - 0.3
+    - 3.0
+    text: ΔG^‡ (enzyme)
+    color: cyan
+    align: left
+tags:
+- enzyme
+- catalysis
+notes_zh: 酵素降低活化能 ΔG‡（穩定過渡態、binding energy）→ 正逆反應都加快；但不改變 ΔG、K_eq 或平衡方向。ΔG < 0 自發 S → P；ΔG°′ = −RT ln K′_eq（ΔG°′ < 0 ⇔ K_eq > 1）。
+status: pending

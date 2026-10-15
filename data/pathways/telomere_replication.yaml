@@ -1,0 +1,133 @@
+id: telomere_replication
+title: Telomeres and telomerase
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0.5
+      - 3.0
+    - - 13.0
+      - 3.0
+    ends:
+    - ''
+    - 3'
+    bases: right
+    base_len: 0.45
+    seq: TTAGGG
+  - g: strand
+    kind: parent
+    points:
+    - - 8.8
+      - 4.0
+    - - 0.5
+      - 4.0
+    ends:
+    - 5'
+    - ''
+    bases: right
+    base_len: 0.45
+    seq: AATCCC
+  - g: text
+    at:
+    - 6.0
+    - 0.9
+    text: G-rich strand (TTAGGG)_n, 3' overhang
+    size: 0.8
+    align: center
+  - g: text
+    at:
+    - 4.5
+    - 6.0
+    text: end-replication problem
+    size: 0.75
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 14.2
+    - 3.5
+    to:
+    - 16.0
+    - 3.5
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 17.0
+      - 3.0
+    - - 27.0
+      - 3.0
+    bases: right
+    base_len: 0.45
+    seq: TTAGGG
+  - g: strand
+    kind: new
+    points:
+    - - 27.0
+      - 3.0
+    - - 31.2
+      - 3.0
+    bases: right
+    base_len: 0.45
+    seq: TTAGGG
+    arrow: true
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 25.3
+      - 4.0
+    - - 17.0
+      - 4.0
+    bases: right
+    base_len: 0.45
+    seq: AATCCC
+  - id: telomerase
+    g: blob
+    at:
+    - 28.6
+    - 3.85
+    w: 3.6
+    h: 2.4
+    shape: oval
+    hue: teal
+    accent: true
+    label: Telomerase
+    label_at:
+    - 26.0
+    - 8.0
+  - g: strand
+    kind: rna
+    points:
+    - - 27.4
+      - 3.75
+    - - 30.0
+      - 3.75
+    width: 0.2
+    bases: left
+    base_len: 0.35
+    seq: CCCAAU
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 24.0
+    - 0.9
+    text: extends the 3' end
+    size: 0.8
+    align: center
+tags:
+- molecular_biology
+- replication
+notes_zh: '末端複製問題：延遲股最後的 RNA 引子移除後無法補齊 → 每次分裂端粒變短（並留下 3′ overhang）。Telomerase：TERT（反轉錄酶）＋ 自帶 RNA 模板（人 3′-AAUCCC-5′），把 3′ 端延長 TTAGGG 重複；之後 Pol α–primase 補上 C-rich 股。端粒 10–20 kb，3′ overhang > 100 nt，折成 T-loop（overhang
+  侵入雙股形成 D-loop）或 G-quadruplex（K⁺ 穩定），由 shelterin（TRF1、TRF2、POT1）保護。生殖細胞、幹細胞與多數癌細胞有 telomerase 活性；體細胞沒有 → 老化。
+
+  【補充】Then Pol α–primase fills in the C-rich strand; the end folds into a T-loop (D-loop) or G-quadruplex, protected by shelterin (TRF1/2, POT1). Telomerase active in germ cells, stem cells and ~90 % of
+  cancers; somatic cells lack it → senescence. Telomere 10–20 kb, overhang > 100 nt.'
+parts_png: false
+status: pending

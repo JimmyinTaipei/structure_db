@@ -1,0 +1,18 @@
+id: epinephrine
+name: Epinephrine
+aliases:
+- adrenaline
+- 腎上腺素
+smiles: C[NH2+]C[C@H](O)c1ccc(O)c(O)c1
+chain:
+- c: CH_2
+  l: CH_3NH_2^+
+- c: C
+  l: H
+  r: OH
+- ring: '[*]c1ccc(O)c(O)c1'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: PNMT（SAM 提供 CH₃）在腎上腺髓質；cortisol 誘導 PNMT（皮質的血液流經髓質）。
+status: pending

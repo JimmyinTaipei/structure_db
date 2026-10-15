@@ -1,0 +1,9 @@
+id: triacylglycerol
+name: "Triacylglycerol"
+label: "Triacylglycerol"
+aliases: [TAG, triglyceride, 三酸甘油酯]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCCCCCCCCCCCC)COC(=O)CCCCCCC/C=C\\CCCCCCCC"
+lipid: {type: "tag", numbers: false, chains: [{n: 16}, {n: 18}, {n: 18, cis: [9]}]}
+tags: [lipid, triacylglycerol]
+notes_zh: "例：1-palmitoyl-2-stearoyl-3-oleoyl-glycerol（不飽和鏈畫在 sn-3，彎折才不會穿過其他鏈；天然 TAG 的 sn-2 多為不飽和）。三個脂肪酸以酯鍵接在 glycerol 上，中性、疏水 → 能量儲存（脂肪組織）。hormone-sensitive lipase／ATGL 水解；腸道由 pancreatic lipase 分解。"
+status: pending

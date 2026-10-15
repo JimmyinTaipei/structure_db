@@ -1,0 +1,18 @@
+id: formate
+name: Formate
+aliases:
+- methanoate
+- 甲酸根
+smiles: O=C[O-]
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+  d: H
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: 甲醇中毒的毒性產物：抑制 Complex IV（cytochrome c oxidase），視網膜與視神經最敏感。由 folate（N¹⁰-formyl-THF）途徑緩慢清除。
+status: pending

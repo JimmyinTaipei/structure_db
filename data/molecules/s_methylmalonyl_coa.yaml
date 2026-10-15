@@ -1,0 +1,24 @@
+id: s_methylmalonyl_coa
+name: (S)-Methylmalonyl-CoA
+label: (S)-Methylmalonyl-CoA
+aliases:
+- D-methylmalonyl-CoA
+smiles: '[O-]C(=O)[C@H](C)C(=O)S[1*]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: C
+  l: H
+  r: CH_3
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: propionyl-CoA carboxylase（biotin）的產物。
+status: pending

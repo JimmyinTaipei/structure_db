@@ -1,0 +1,96 @@
+id: substrate_inhibition
+title: Substrate inhibition
+layout: plot
+panels:
+- title: Substrate inhibition
+  size:
+  - 12
+  - 8
+  params:
+    Vmax: 1
+    Km: 1
+    Ki: 12
+  x:
+    min: 0
+    max: 30
+    label: '[S]'
+  y:
+    min: 0
+    max: 1.05
+    label: v_0
+  curves:
+  - id: si
+    y: Vmax*x/(Km + x + x*x/Ki)
+    width: 1.1
+  - id: mm
+    y: mm(x, Vmax, Km)
+    color: gray
+    dash: true
+  vlines:
+  - x: sqrt(Km*Ki)
+  points:
+  - 'on': si
+    x: sqrt(Km*Ki)
+    label: optimum [S]
+    label_off:
+    - 0.4
+    - -0.55
+  texts:
+  - at:
+    - 20
+    - 0.17
+    text: 'excess S binds a second
+
+      (inhibitory) site'
+    color: red
+    size: 0.95
+  - at:
+    - 21
+    - 0.83
+    text: M–M (no inhibition)
+    color: gray
+    size: 0.9
+- title: PFK-1 vs [ATP]
+  size:
+  - 12
+  - 8
+  params:
+    K: 0.4
+    Ki: 3.2
+  x:
+    min: 0
+    max: 6
+    label: '[ATP]'
+  y:
+    min: 0
+    max: 1.05
+    label: PFK-1 activity
+  curves:
+  - id: pfk
+    y: 1.25*x/(K + x) / (1 + (x/Ki)**4)
+    width: 1.1
+    color: magenta
+  texts:
+  - at:
+    - 1.15
+    - 0.3
+    text: 'ATP as substrate
+
+      (active site)'
+    size: 0.85
+    align: left
+    color: cyan
+  - at:
+    - 4.6
+    - 0.88
+    text: 'ATP as allosteric
+
+      inhibitor (high energy)'
+    size: 0.9
+    color: red
+tags:
+- enzyme
+- enzyme_kinetics
+- inhibition
+notes_zh: 受質抑制：[S] 過高時第二個 S 結合在抑制位（或形成無生產力的 ESS）→ 速率下降，v₀ 有最佳 [S]（≈ √(K_m K_i)）。PFK-1：ATP 在低濃度是受質（活性位），高濃度時結合別位當抑制劑（能量充足時減慢糖解）。
+status: pending

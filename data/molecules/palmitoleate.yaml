@@ -1,0 +1,9 @@
+id: palmitoleate
+name: "Palmitoleate"
+label: "Palmitoleate\n16:1(Δ9)"
+aliases: [palmitoleic acid]
+smiles: "[O-]C(=O)CCCCCCC/C=C\\CCCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 16, cis: [9], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "16:1(Δ9)；ω-7。單元不飽和（ω-7）。"
+status: pending

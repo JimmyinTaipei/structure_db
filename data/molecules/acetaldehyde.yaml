@@ -1,0 +1,20 @@
+id: acetaldehyde
+name: Acetaldehyde
+aliases:
+- ethanal
+- 乙醛
+smiles: CC=O
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: H
+- c: CH_3
+tags:
+- organic
+- aldol
+- energy_metabolism
+- ethanol
+notes_zh: 乙醇經 ADH（或 CYP2E1）氧化的產物，再由 ALDH2 氧化成 acetate；毒性與宿醉、臉紅有關。
+status: pending

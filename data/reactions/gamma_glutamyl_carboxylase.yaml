@@ -1,0 +1,35 @@
+id: gamma_glutamyl_carboxylase
+title: γ-Glutamyl carboxylase
+substrates:
+- glutamate
+- phylloquinol
+products:
+- gla
+- vitamin_k_epoxide
+cofactors_in:
+- CO2
+- O2
+cofactors_out:
+- H2O
+- H+
+enzyme: γ-Glutamyl carboxylase
+reversible: false
+decorate:
+  CO2:
+    colors:
+      0: magenta
+  gla:
+    colors:
+      3:
+        r: magenta
+card_zh:
+  location: 肝細胞 ER（凝血因子 II、VII、IX、X，protein C、S）
+  type: Vitamin K hydroquinone 被氧化成 epoxide，提供能量拔除 Glu γ-H；CO₂（洋紅）接上成第二個 COO⁻
+  regulation: Warfarin 抑制 VKOR → KO 無法還原回 KH₂
+  exam_points:
+  - Gla 的兩個 COO⁻ 螯合 Ca²⁺ → 因子結合磷脂膜
+  - 新生兒缺 vitamin K → 出血（出生時注射）
+tags:
+- protein
+- protein_structure
+status: pending

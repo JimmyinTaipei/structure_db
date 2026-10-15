@@ -1,0 +1,35 @@
+id: cyp7a1
+title: Cholesterol → 7α-Hydroxycholesterol (CYP7A1)
+substrates:
+- cholesterol
+products:
+- oh7_cholesterol
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: 'cholesterol 7α-hydroxylase
+
+  (CYP7A1)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  oh7_cholesterol:
+    highlight:
+    - smarts: '[CH1;R]([OH:1])C=C'
+      color: magenta
+card_zh:
+  location: 肝 ER
+  type: 單氧化（膽酸合成的限速步驟）
+  regulation: 膽酸 → FXR → SHP 抑制 CYP7A1；膽固醇（LXR）在囓齒類誘導
+  exam_points:
+  - 每天約 0.5 g 膽固醇轉成膽酸 → 排出膽固醇的主要途徑
+  - 膽酸結合劑（cholestyramine）→ CYP7A1 ↑ → LDL ↓
+tags:
+- lipid_metabolism
+- bile_acid
+status: pending

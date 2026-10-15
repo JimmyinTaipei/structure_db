@@ -1,0 +1,130 @@
+id: peptide_backbone
+name: Polypeptide backbone (φ, ψ)
+label: Peptide planes (φ, ψ)
+aliases:
+- phi psi
+- dihedral angle
+- 二面角
+- peptide plane
+smiles: CC(=O)NC(C)C(=O)NC
+free:
+  schematic: true
+  atoms:
+    ca1:
+    - C_α
+    - -3.3
+    - 0.55
+    c1:
+    - C
+    - -2.2
+    - 0
+    o1:
+    - O
+    - -2.2
+    - -1.05
+    n1:
+    - N
+    - -1.1
+    - 0.55
+    h1:
+    - H
+    - -1.1
+    - 1.55
+    ca2:
+    - C_α
+    - 0
+    - 0
+    r:
+    - R
+    - 0
+    - -1.05
+    c2:
+    - C
+    - 1.1
+    - 0.55
+    o2:
+    - O
+    - 1.1
+    - 1.6
+    n2:
+    - N
+    - 2.2
+    - 0
+    h2:
+    - H
+    - 2.2
+    - -1.0
+    ca3:
+    - C_α
+    - 3.3
+    - 0.55
+  bonds:
+  - - ca1
+    - c1
+  - - c1
+    - o1
+    - 2
+  - - c1
+    - n1
+  - - n1
+    - h1
+  - - n1
+    - ca2
+  - - ca2
+    - r
+  - - ca2
+    - c2
+  - - c2
+    - o2
+    - 2
+  - - c2
+    - n2
+  - - n2
+    - h2
+  - - n2
+    - ca3
+  notes:
+  - - φ
+    - -0.62
+    - -0.05
+    - magenta
+  - - ψ
+    - 0.62
+    - -0.05
+    - cyan
+  - - Peptide plane
+    - -2.2
+    - 2.45
+    - gray
+  - - Peptide plane
+    - 2.75
+    - -1.95
+    - gray
+  - - C–N 1.32 Å (partial double bond)
+    - 0
+    - 3.3
+    - gray
+decorate:
+  boxes:
+  - atoms:
+    - ca1
+    - c1
+    - o1
+    - n1
+    - h1
+    name: plane
+    color: '#E3F1FA'
+  - atoms:
+    - c2
+    - o2
+    - n2
+    - h2
+    - ca3
+    name: plane
+    color: '#E3F1FA'
+tags:
+- protein
+- peptide
+- protein_structure
+notes_zh: 多肽主鏈：每個胜肽鍵連同兩側 Cα 共平面（剛性、幾乎都是 trans）。只有 Cα 兩側的單鍵可旋轉：φ（N–Cα）與 ψ（Cα–C）。允許的 φ/ψ 組合見 Ramachandran plot。C–N 1.32 Å，介於單鍵 1.49 Å 與雙鍵 1.27 Å 之間。
+status: pending

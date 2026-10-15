@@ -1,0 +1,63 @@
+id: peptidoglycan_unit
+name: Peptidoglycan (glycan unit)
+label: Peptidoglycan (NAG–NAM)
+aliases:
+- peptidoglycan
+- murein
+- NAG-NAM
+- 肽聚醣
+smiles: CC(=O)N[C@@H]1[C@@H](O[C@H](C)C(=O)[O-])[C@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H](CO)O[C@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: NHAc
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: HO
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: NHAc
+        down: H
+      3:
+        up: H
+        down: OR
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: CH_2OH
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+notes_zh: 細菌細胞壁：NAG(β1→4)NAM 交替（雜多醣）。NAM = GlcNAc 的 C3–O 接 D-lactyl（圖中 OR，R = –CH(CH₃)COO⁻），lactyl 的 COO⁻ 再接四胜肽（L-Ala–D-Glu–L-Lys/DAP–D-Ala），胜肽之間交聯。Lysozyme 切 NAM–NAG 的 β1→4 鍵；penicillin 抑制交聯的 transpeptidase。
+status: pending

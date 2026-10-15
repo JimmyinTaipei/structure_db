@@ -1,0 +1,12 @@
+id: glycine
+name: Glycine
+aliases: [Gly, G, 甘胺酸]
+smiles: "[NH3+]CC(=O)[O-]"
+chain:                              # Lehninger：R = H 畫在 C 的正下方
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H, d: H}
+decorate:
+  boxes: [{parts: ["1.d"], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Gly / G。唯一非手性胺基酸（R = H）；體積最小，常見於 collagen（Gly-X-Y）與需要彎折的位置。生糖。"
+status: approved

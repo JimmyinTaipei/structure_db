@@ -1,0 +1,16 @@
+id: mrna_cap
+name: 5′ Cap (m7GpppNm, cap 1)
+label: 5' Cap (m^7GpppAm)
+aliases:
+- m7G cap
+- 5′ cap
+- 帽子結構
+smiles: C[n+]1cn([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OC)[C@@H]3O[19*])[C@@H](O)[C@H]2O)c2nc(N)[nH]c(=O)c21
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 7-甲基鳥苷（m⁷G，N7 帶正電）以 5′–5′ 三磷酸鍵接在 mRNA 第一個核苷酸（此處為 A）上。Cap 0 只有 m⁷G；cap 1 第一個核苷酸 2′-O-甲基化（如圖）；cap 2 第二個也甲基化。甲基都來自 SAM。功能：抗 5′ 外切酶、出核（CBC）、轉譯起始（eIF4E）、第一個 intron 的剪接。Rib = 其餘 RNA。
+parts_png: false
+status: pending

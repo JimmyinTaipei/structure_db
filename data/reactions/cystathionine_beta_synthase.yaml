@@ -1,0 +1,33 @@
+id: cystathionine_beta_synthase
+title: Homocysteine + Serine → Cystathionine (cystathionine β-synthase)
+substrates:
+- homocysteine
+- serine
+products:
+- cystathionine
+cofactors_out:
+- H2O
+prosthetic:
+- PLP
+enzyme: 'cystathionine
+
+  β-synthase'
+reversible: false
+decorate:
+  homocysteine:
+    colors: {4: magenta}
+  cystathionine:
+    colors: {4: magenta}
+  serine:
+    colors: {3: cyan}
+  H2O:
+    colors: {0: cyan}
+card_zh:
+  location: 肝
+  type: 縮合（PLP）
+  regulation: SAM 活化（Met 多時把 Hcy 導向分解）
+  deficiency: homocystinuria（最常見的型）：水晶體向下脫位、類 Marfan、智能障礙、血栓；部分對 B6 有反應
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

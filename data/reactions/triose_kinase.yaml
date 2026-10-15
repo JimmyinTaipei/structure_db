@@ -1,0 +1,26 @@
+id: triose_kinase
+title: Glyceraldehyde → Glyceraldehyde 3-phosphate (triose kinase)
+substrates:
+- d_glyceraldehyde
+products:
+- glyceraldehyde_3p
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: triose kinase
+reversible: false
+decorate:
+  glyceraldehyde_3p:
+    colors:
+      2:
+        c: [magenta, '{P}']
+card_zh:
+  location: 肝
+  type: 磷酸化
+tags:
+- carb_metabolism
+- fructose_metabolism
+status: pending

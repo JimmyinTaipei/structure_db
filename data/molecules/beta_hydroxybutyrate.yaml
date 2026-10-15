@@ -1,0 +1,24 @@
+id: beta_hydroxybutyrate
+name: D-β-Hydroxybutyrate
+label: D-β-Hydroxybutyrate
+aliases:
+- 3-hydroxybutyrate
+- BHB
+- β-羥丁酸
+smiles: '[O-]C(=O)C[C@@H](C)O'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  l: H
+  r: OH
+- c: CH_3
+tags:
+- lipid_metabolism
+- ketone_bodies
+notes_zh: '血中最多的酮體（DKA 時 β-HB : AcAc 可達 10 : 1）。尿液試紙（nitroprusside）只測 acetoacetate，所以會低估。'
+status: pending

@@ -1,0 +1,9 @@
+id: stearate
+name: "Stearate"
+label: "Stearate\n18:0"
+aliases: [stearic acid, 硬脂酸]
+smiles: "[O-]C(=O)CCCCCCCCCCCCCCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 18, cis: [], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "18:0。飽和脂肪酸。可被 Δ9 desaturase 轉成 oleate。"
+status: pending

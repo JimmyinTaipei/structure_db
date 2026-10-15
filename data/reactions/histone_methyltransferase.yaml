@@ -1,0 +1,40 @@
+id: histone_methyltransferase
+title: Histone methyltransferase (HMT)
+substrates:
+- lysine
+products:
+- trimethyllysine
+cofactors_in:
+- 3SAM
+cofactors_out:
+- 3SAH
+- 3H+
+enzyme: Histone methyltransferase (HMT)
+reversible: false
+decorate:
+  3SAM:
+    colors:
+      0: magenta
+  trimethyllysine:
+    colors:
+      6:
+        l: magenta
+        r: magenta
+      7: magenta
+  lysine:
+    colors:
+      6:
+      - cyan
+      - H_3
+  3H+:
+    colors:
+      0: cyan
+card_zh:
+  type: SAM 的甲基（洋紅）轉到 Lys ε-N；可 mono/di/tri（圖為 tri）；離開的 H（青）以 H⁺ 釋出
+  exam_points:
+  - 甲基化不改變電荷
+  - H3K4me3 活化；H3K9me3、H3K27me3 抑制（heterochromatin）
+tags:
+- protein
+- protein_structure
+status: pending

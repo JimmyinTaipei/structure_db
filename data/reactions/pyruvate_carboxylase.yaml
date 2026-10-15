@@ -1,0 +1,39 @@
+id: pyruvate_carboxylase
+title: Gluconeogenesis ① Pyruvate → Oxaloacetate (pyruvate carboxylase)
+substrates:
+- pyruvate
+- id: bicarbonate
+  view: formula
+products:
+- oxaloacetate
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+- Pi
+extra_out:
+- H+
+prosthetic:
+- biotin
+enzyme: pyruvate carboxylase
+reversible: false
+decorate:
+  bicarbonate:
+    colors: {0: magenta}
+  oxaloacetate:
+    colors: {3: magenta}
+card_zh:
+  location: 粒線體基質
+  type: 羧化（消耗 1 ATP）
+  cofactors: biotin（B7）、Mg²⁺
+  regulation: acetyl-CoA 活化（β 氧化旺盛 → 把 pyruvate 導向糖質新生而非 PDH）
+  mechanism: ATP + HCO₃⁻ 先形成 carboxybiotin，再把 CO₂ 轉到 pyruvate 的 CH₃
+  deficiency: pyruvate carboxylase 缺乏 → 乳酸中毒、低血糖、發展遲緩
+  exam_points:
+  - 糖質新生第一個繞道：PC（粒線體）+ PEPCK
+  - 也是 TCA 的 anaplerotic 反應（補 OAA）
+tags:
+- carb_metabolism
+- gluconeogenesis
+- TCA
+status: pending

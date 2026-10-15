@@ -1,0 +1,291 @@
+id: nhej
+title: Non-homologous end joining (NHEJ)
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 2.0
+    - - 5.4
+      - 2.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 3.0
+    - - 5.4
+      - 3.0
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 6.6
+      - 2.0
+    - - 12
+      - 2.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 6.6
+      - 3.0
+    - - 12
+      - 3.0
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: text
+    at:
+    - 6.0
+    - 0.8
+    text: DSB (radiation, ROS)
+    size: 0.75
+    align: center
+    color: red
+  - g: arrow
+    from:
+    - 13.0
+    - 2.5
+    to:
+    - 15.0
+    - 2.5
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 16
+      - 2.0
+    - - 21.0
+      - 2.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 16
+      - 3.0
+    - - 21.0
+      - 3.0
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 23.0
+      - 2.0
+    - - 28
+      - 2.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 23.0
+      - 3.0
+    - - 28
+      - 3.0
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: ring
+    at:
+    - 20.6
+    - 2.5
+    w: 0.9
+    h: 2.4
+    hue: dkgreen
+  - id: ku
+    g: ring
+    at:
+    - 23.4
+    - 2.5
+    w: 0.9
+    h: 2.4
+    hue: dkgreen
+    label: 'Ku70/80 rings
+
+      bind the ends'
+    label_at:
+    - 22.0
+    - 6.4
+    point:
+    - 22.4
+    - 3.5
+  - id: pkcs
+    g: blob
+    at:
+    - 22.0
+    - 0.6000000000000001
+    w: 3.4
+    h: 1.3
+    shape: box
+    hue: yellow
+    label: DNA-PKcs bridges the ends
+    label_at:
+    - 22.0
+    - -1.4
+  - g: arrow
+    from:
+    - 22.0
+    - 8.0
+    to:
+    - 22.0
+    - 9.6
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 16
+      - 11.0
+    - - 21.4
+      - 11.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 16
+      - 12.0
+    - - 21.4
+      - 12.0
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 22.6
+      - 11.0
+    - - 28
+      - 11.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 22.6
+      - 12.0
+    - - 28
+      - 12.0
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - id: artemis
+    g: blob
+    at:
+    - 20.2
+    - 10.0
+    w: 1.3
+    h: 1.0
+    shape: kidney
+    hue: red
+    label: Artemis trims
+    label_at:
+    - 17.0
+    - 9.0
+  - id: polmu
+    g: blob
+    at:
+    - 22.0
+    - 12.9
+    w: 1.6
+    h: 1.0
+    shape: hand
+    hue: blue
+    label: Pol μ / λ fill
+    label_at:
+    - 18.0
+    - 14.6
+  - id: lig4
+    g: blob
+    at:
+    - 24.0
+    - 12.9
+    w: 1.8
+    h: 1.0
+    shape: box
+    hue: teal
+    label: Ligase IV–XRCC4
+    label_at:
+    - 26.8
+    - 14.6
+  - g: arrow
+    from:
+    - 15.0
+    - 11.5
+    to:
+    - 13.0
+    - 11.5
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 11.0
+    - - 12
+      - 11.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 12.0
+    - - 12
+      - 12.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: lesion
+    at:
+    - 6.0
+    - 10.6
+    r: 0.3
+  - g: text
+    at:
+    - 6.0
+    - 9.2
+    text: 'joined — a few nt may be lost
+
+      (error-prone)'
+    size: 0.75
+    align: center
+tags:
+- molecular_biology
+- repair
+- recombination
+notes_zh: '雙股斷裂直接接回，不需同源模板（G1 期、哺乳類主要途徑），可能丟失幾個核苷酸 → 易錯。Ku70/80 環套在斷端 → 招募 DNA-PKcs（kinase，與 Ku 合稱 DNA-PK）→ Artemis（核酸酶）修整 → Pol μ/λ 補 → ligase IV–XRCC4（–XLF）連接。也用於 V(D)J 重組與類別轉換；缺陷 → 放射線敏感型 SCID。
+
+  【補充】NHEJ: main DSB pathway in G1 and in mammals; no homologous template. Also joins RAG-cut ends in V(D)J recombination and class switching. Defects in Artemis, DNA-PKcs or ligase IV → SCID (radiosensitive).'
+parts_png: false
+status: pending

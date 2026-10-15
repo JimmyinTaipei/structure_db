@@ -1,0 +1,153 @@
+id: glucose_carbon_fate
+title: Fate of glucose carbons in glycolysis
+layout: free
+cell_size: 5.2
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  decorate:
+    marks:
+      0:
+        c: '1'
+      1:
+        c: '2'
+      2:
+        c: '3'
+      3:
+        c: '4'
+      4:
+        c: '5'
+      5:
+        c: '6'
+- id: dhap
+  ref: dhap
+  pos:
+  - -1.4
+  - 1.85
+  decorate:
+    marks:
+      0:
+        c: '1'
+      1:
+        c: '2'
+      2:
+        c: '3'
+- id: gap2
+  ref: glyceraldehyde_3p
+  pos:
+  - 1.4
+  - 1.85
+  decorate:
+    marks:
+      0:
+        c: '4'
+      1:
+        c: '5'
+      2:
+        c: '6'
+- id: gap1
+  ref: glyceraldehyde_3p
+  pos:
+  - -1.4
+  - 3.95
+  decorate:
+    marks:
+      0:
+        c: '3'
+      1:
+        c: '2'
+      2:
+        c: '1'
+- id: pyr1
+  ref: pyruvate
+  pos:
+  - -1.4
+  - 5.95
+  decorate:
+    marks:
+      0:
+        c: '3'
+      1:
+        c: '2'
+      2:
+        c: '1'
+- id: pyr2
+  ref: pyruvate
+  pos:
+  - 1.4
+  - 5.95
+  decorate:
+    marks:
+      0:
+        c: '4'
+      1:
+        c: '5'
+      2:
+        c: '6'
+- id: ac1
+  ref: acetyl_coa
+  pos:
+  - -1.4
+  - 7.4
+  decorate:
+    marks:
+      0:
+        l: '1'
+        c: '2'
+- id: ac2
+  ref: acetyl_coa
+  pos:
+  - 1.4
+  - 7.4
+  decorate:
+    marks:
+      0:
+        l: '6'
+        c: '5'
+- id: co2
+  text: CO_2 (PDH) from C3 and C4
+  pos:
+  - 0
+  - 8.05
+  kind: name
+edges:
+- from: glc
+  to: dhap
+  label: 'steps 1–4
+
+    (aldolase)'
+  label_side: right
+- from: glc
+  to: gap2
+  label: aldolase
+- from: dhap
+  to: gap1
+  step: triose_phosphate_isomerase
+  label: TPI
+  reversible: true
+- from: gap1
+  to: pyr1
+  label: steps 6–10
+- from: gap2
+  to: pyr2
+  label: steps 6–10
+  label_side: right
+- from: pyr1
+  to: ac1
+  step: pdh
+  label: PDH
+- from: pyr2
+  to: ac2
+  step: pdh
+  label: PDH
+  label_side: right
+tags:
+- carb_metabolism
+- glycolysis
+- TCA
+notes_zh: 葡萄糖碳原子去向（¹⁴C 追蹤）：aldolase 把 C1–C3 分到 DHAP、C4–C6 分到 GAP；TPI 把 DHAP 的 C1（CH₂OⓅ）變成 GAP 的 C3。因此 pyruvate：CH₃ = glucose C1／C6，C=O = C2／C5，COO⁻ = C3／C4。PDH（或酵母的 pyruvate decarboxylase）放出的 CO₂ 來自 glucose
+  C3、C4；acetyl-CoA 的 CH₃ 來自 C1／C6。例：1-¹⁴C-glucose → ¹⁴CH₃–CH₂OH（酒精發酵）、¹⁴CH₃–CO–SCoA。糖質新生反向：pyruvate C3（CH₃）→ glucose C1 與 C6；C2 → C2、C5；C1（COO⁻）→ C3、C4（PC 加入的 CO₂ 會在 PEPCK 離開）。
+status: pending

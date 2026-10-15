@@ -1,0 +1,19 @@
+id: coa
+name: Coenzyme A (CoA-SH)
+label: CoA-SH
+aliases:
+- CoA
+- coenzyme A
+- 輔酶A
+smiles: SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2OP(=O)([O-])[O-]
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: '[SH1:1]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: β-mercaptoethylamine – pantothenate – 3′-phospho-ADP。洋紅：末端 –SH，與醯基形成高能硫酯（acetyl-CoA、succinyl-CoA、acyl-CoA）。由 pantothenate、Cys、ATP 合成。
+status: pending

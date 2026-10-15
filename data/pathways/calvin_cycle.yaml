@@ -1,0 +1,82 @@
+id: calvin_cycle
+title: Calvin cycle (overview)
+layout: cycle
+radius: 1.85
+start_angle: -90
+cell_size: 4.4
+label_side: left
+center_text: 'Calvin
+
+  cycle'
+nodes:
+- id: rubp
+  ref: ribulose_15bp
+  view: name
+- id: pg3
+  ref: pg_3
+  view: name
+- id: bpg
+  ref: bpg_13
+  view: name
+- id: g3p
+  ref: glyceraldehyde_3p
+  view: name
+- id: ru5p
+  ref: ribulose_5p
+  view: name
+- id: out
+  text: '1 G3P exported
+
+    → sucrose, starch'
+  kind: name
+  pos:
+  - -0.2
+  - 2.75
+- id: sum
+  text: 3 CO_2 + 9 ATP + 6 NADPH → 1 G3P
+  kind: heading
+  pos:
+  - -2.9
+  - -2.55
+edges:
+- from: rubp
+  to: pg3
+  step: rubisco_carboxylase
+  label: Rubisco
+  side_text: 3 CO_2 + 3 H_2O
+- from: pg3
+  to: bpg
+  label: PG kinase
+  side_text: '6 ATP
+
+    → 6 ADP'
+- from: bpg
+  to: g3p
+  label: G3P DH (NADP^+)
+  side_text: '6 NADPH
+
+    → 6 NADP^+'
+- from: g3p
+  to: ru5p
+  label: 'Regeneration
+
+    (aldolase,
+
+    transketolase …)'
+  side_text: 5 G3P
+- from: ru5p
+  to: rubp
+  label: 'Phosphoribulo-
+
+    kinase'
+  side_text: '3 ATP
+
+    → 3 ADP'
+- from: g3p
+  to: out
+  bend: 0
+tags:
+- carb_metabolism
+- calvin_cycle
+notes_zh: Calvin cycle（暗反應，stroma）：3 CO₂ + 9 ATP + 6 NADPH → 1 G3P。三階段：固定（Rubisco：3 RuBP → 6 3-PG）、還原（類似糖質新生的 PGK、GAPDH，但用 NADPH）、再生（與 PPP 非氧化相同的 transketolase／aldolase 重排：5 G3P → 3 Ru5P）。ATP 與 NADPH 來自光反應。
+status: pending

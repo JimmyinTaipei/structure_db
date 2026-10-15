@@ -1,0 +1,47 @@
+id: aldehyde_dehydrogenase
+title: Acetaldehyde → Acetate (aldehyde dehydrogenase, ALDH2)
+substrates:
+- acetaldehyde
+products:
+- acetate
+cofactors_in:
+- NAD+
+- H2O
+cofactors_out:
+- NADH+H+
+extra_out:
+- H+
+enzyme: 'aldehyde dehydrogenase
+
+  (ALDH2, mitochondrial)'
+reversible: false
+decorate:
+  acetaldehyde:
+    colors:
+      0:
+        fork_r: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+  H2O:
+    colors:
+      0: cyan
+  acetate:
+    colors:
+      0:
+        fork_r: cyan
+card_zh:
+  location: 肝細胞粒線體（ALDH2）
+  type: 氧化（NAD⁺）
+  deficiency:
+  - ALDH2*2（Glu504Lys，東亞人常見）：乙醛堆積 → 臉紅、心悸、噁心（亞洲紅臉）；也增加食道癌風險
+  - disulfiram 抑制 ALDH → 喝酒即出現類似反應（戒酒藥）；metronidazole、某些 cephalosporin、sulfonylurea 也會
+  exam_points:
+  - 乙醛有毒：與蛋白質形成 adduct → 肝損傷
+tags:
+- energy_metabolism
+- ethanol
+status: pending

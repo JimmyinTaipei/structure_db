@@ -1,0 +1,14 @@
+id: xylulose_5p
+name: Xylulose 5-phosphate
+label: "Xylulose\n5-phosphate"
+aliases: [X5P, Xu5P, 木酮糖-5-磷酸]
+smiles: "C(O)C(=O)[C@@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: CH_2OH}
+  - {c: C, r: O, rb: 2}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP]
+notes_zh: 酮糖（ketose），transketolase 的 2C 供體；在肝臟也是訊號分子：活化 PP2A → 去磷酸化 PFK-2/FBPase-2（↑F2,6BP）與 ChREBP（↑脂肪生成基因）。
+status: pending

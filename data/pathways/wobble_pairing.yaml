@@ -1,0 +1,255 @@
+id: wobble_pairing
+title: Codon–anticodon pairing and wobble
+layout: scene
+scene:
+  items:
+  - g: trna
+    at:
+    - 4.5
+    - 1.6
+    s: 0.9
+  - g: blob
+    at:
+    - 3.6000000000000005
+    - 5.4
+    w: 0.8400000000000003
+    h: 0.8
+    shape: box
+    hue: teal
+    text: C
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.5
+    - 5.4
+    w: 0.8399999999999999
+    h: 0.8
+    shape: box
+    hue: teal
+    text: G
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.4
+    - 5.4
+    w: 0.8399999999999999
+    h: 0.8
+    shape: box
+    hue: orange
+    text: I
+    text_size: 0.62
+  - g: strand
+    kind: gray
+    points:
+    - - 3.6
+      - 5.85
+    - - 3.6
+      - 6.75
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 4.5
+      - 5.85
+    - - 4.5
+      - 6.75
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.4
+      - 5.85
+    - - 5.4
+      - 6.75
+    width: 0.08
+  - g: strand
+    kind: rna
+    points:
+    - - 0.6
+      - 7.2
+    - - 8.4
+      - 7.2
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 3.6000000000000005
+    - 7.2
+    w: 0.8400000000000003
+    h: 0.8
+    shape: box
+    hue: teal
+    text: G
+    text_size: 0.62
+  - g: blob
+    at:
+    - 4.5
+    - 7.2
+    w: 0.8399999999999999
+    h: 0.8
+    shape: box
+    hue: teal
+    text: C
+    text_size: 0.62
+  - g: blob
+    at:
+    - 5.4
+    - 7.2
+    w: 0.8399999999999999
+    h: 0.8
+    shape: box
+    hue: orange
+    text: U
+    text_size: 0.62
+  - g: text
+    at:
+    - 2.9
+    - 5.4
+    text: anticodon 3′
+    size: 0.62
+    align: right
+    color: gray
+  - g: text
+    at:
+    - 6.1
+    - 5.4
+    text: 5′
+    size: 0.62
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 6.3
+    - 6.3
+    text: wobble
+    size: 0.68
+    align: left
+    color: '#E8731A'
+  - g: text
+    at:
+    - 4.5
+    - 8.6
+    text: anticodon IGC reads GCU, GCC and GCA (Ala)
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 11.5
+    - -0.6
+    text: Wobble rules (Crick)
+    size: 0.9
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 0.9
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: gray
+    text: anticodon 5′ base
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 0.9
+    text: pairs with codon 3′ base
+    size: 0.72
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 2.15
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: teal
+    text: C
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 2.15
+    text: G only
+    size: 0.72
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 3.4
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: teal
+    text: A
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 3.4
+    text: U only
+    size: 0.72
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 4.65
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: teal
+    text: G
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 4.65
+    text: C or U
+    size: 0.72
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 5.9
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: teal
+    text: U
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 5.9
+    text: A or G
+    size: 0.72
+    align: left
+  - g: blob
+    at:
+    - 14.0
+    - 7.15
+    w: 4.6
+    h: 1.0
+    shape: box
+    hue: teal
+    text: I (inosine)
+    text_size: 0.62
+  - g: text
+    at:
+    - 17.0
+    - 7.15
+    text: U, C or A
+    size: 0.72
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: '密碼子第 3 位與反密碼子第 1 位（5′ 端）可擺動：G–C/U、U–A/G、I–U/C/A；C、A 只認一種。前兩位嚴格配對。≥ 32 種 tRNA 即可讀 61 個密碼子；同一胺基酸的不同 tRNA = isoaccepting tRNA。
+
+  【補充】The first two codon positions pair strictly (Watson–Crick); the third is loose, so one tRNA reads several codons. ≥ 32 tRNAs (31 + initiator) read 61 codons. Isoaccepting tRNAs: different tRNAs for
+  the same amino acid (e.g. tRNA^{Ala}_1 anticodon IGC reads GCU/GCC/GCA; tRNA^{Ala}_2 CGC reads GCG). Inosine at the wobble position comes from A → I editing by ADAT. Two codons differing only at the third
+  base (pyrimidine-ending) always code the same amino acid.'
+parts_png: false
+status: pending

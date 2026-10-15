@@ -1,0 +1,255 @@
+id: rflp_sickle_cell
+title: 'RFLP: sickle cell (MstII)'
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.0
+    text: MstII sites (CCTNAGG)
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 2.0
+    - - 16.0
+      - 2.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 3.0
+    - - 16.0
+      - 3.0
+    width: 0.3
+  - g: region
+    x0: 5.4
+    y0: 1.8
+    x1: 10.4
+    y1: 3.2
+    hue: teal
+    opacity: 0.4
+    outline: false
+  - g: text
+    at:
+    - 7.9
+    - 2.5
+    text: β-globin
+    size: 0.62
+    align: center
+  - g: region
+    x0: 2.0
+    y0: 3.5
+    x1: 6.0
+    y1: 3.8
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - -0.6
+    - 2.5
+    text: β^A
+    size: 0.75
+    align: right
+  - g: mark
+    kind: cut
+    at:
+    - 1.0
+    - 2.0
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 6.6
+    - 2.0
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 8.6
+    - 2.0
+    side: up
+  - g: text
+    at:
+    - 3.8
+    - 0.8
+    text: 1.15 kb
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 7.6
+    - 0.8
+    text: 0.2 kb
+    size: 0.65
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 6.5
+    - - 16.0
+      - 6.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 7.5
+    - - 16.0
+      - 7.5
+    width: 0.3
+  - g: region
+    x0: 5.4
+    y0: 6.3
+    x1: 10.4
+    y1: 7.7
+    hue: teal
+    opacity: 0.4
+    outline: false
+  - g: text
+    at:
+    - 7.9
+    - 7.0
+    text: β-globin
+    size: 0.62
+    align: center
+  - g: region
+    x0: 2.0
+    y0: 8.0
+    x1: 6.0
+    y1: 8.3
+    hue: orange
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - -0.6
+    - 7.0
+    text: β^S
+    size: 0.75
+    align: right
+  - g: mark
+    kind: cut
+    at:
+    - 1.0
+    - 6.5
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 8.6
+    - 6.5
+    side: up
+  - g: text
+    at:
+    - 4.8
+    - 5.3
+    text: '1.35 kb (site lost: GAG → GTG)'
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 4.0
+    - 9.1
+    text: probe
+    size: 0.65
+    align: center
+    color: '#B5651F'
+  - g: text
+    at:
+    - 19.0
+    - -1.0
+    text: Southern blot
+    size: 0.85
+    align: left
+  - g: region
+    x0: 19.0
+    y0: 0.0
+    x1: 27.0
+    y1: 9.0
+    hue: gray
+    opacity: 0.18
+  - g: text
+    at:
+    - 20.4
+    - 0.7
+    text: AA
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 23.0
+    - 0.7
+    text: AS
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 25.599999999999998
+    - 0.7
+    text: SS
+    size: 0.65
+    align: center
+  - g: text
+    at:
+    - 18.6
+    - 3.0
+    text: '1.35'
+    size: 0.62
+    align: right
+    color: gray
+  - g: text
+    at:
+    - 18.6
+    - 4.4
+    text: '1.15'
+    size: 0.62
+    align: right
+    color: gray
+  - g: region
+    x0: 19.599999999999998
+    y0: 4.260000000000001
+    x1: 21.2
+    y1: 4.54
+    hue: '#3F4F6B'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 22.2
+    y0: 2.86
+    x1: 23.8
+    y1: 3.14
+    hue: '#3F4F6B'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 22.2
+    y0: 4.260000000000001
+    x1: 23.8
+    y1: 4.54
+    hue: '#3F4F6B'
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 24.8
+    y0: 2.86
+    x1: 26.400000000000002
+    y1: 3.14
+    hue: '#3F4F6B'
+    opacity: 1.0
+    outline: false
+tags:
+- molecular_biology
+- techniques
+notes_zh: HbS：β-globin 第 6 個密碼子 GAG（Glu）→ GTG（Val），破壞 MstII 位點（CCTNAGG）。以 β-globin 探針做 Southern：正常 1.15 kb（+ 0.2 kb），鐮刀 1.35 kb；AA 一條 1.15、SS 一條 1.35、AS 兩條。RFLP 也用於連鎖分析與親子鑑定；現多以 PCR 加 STR 取代。
+parts_png: false
+status: pending

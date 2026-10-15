@@ -1,0 +1,15 @@
+id: prpp
+name: "PRPP"
+aliases: [5-phosphoribosyl 1-pyrophosphate]
+smiles: "[O-]P(=O)([O-])OP(=O)([O-])O[C@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "H", down: "O–{P}–{P}"}
+    2: {up: "H", down: "OH"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  numbers: true
+tags: [nucleotide]
+notes_zh: "5-Phosphoribosyl-1-pyrophosphate（α）。R5P + ATP（PRPP synthetase）。嘌呤、嘧啶從頭合成與救援途徑都需要；PRPP 過多 → 嘌呤過度合成 → 痛風。"
+status: pending

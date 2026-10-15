@@ -1,0 +1,24 @@
+id: acetoacetate_decarboxylation
+title: Acetoacetate → Acetone + CO₂ (spontaneous)
+substrates:
+- acetoacetate
+products:
+- acetone
+- id: co2
+  view: formula
+extra_in:
+- H+
+enzyme: ''
+conditions: spontaneous
+reversible: false
+decorate:
+  acetoacetate:
+    colors: {0: magenta}
+  co2:
+    colors: {0: magenta}
+card_zh:
+  type: 非酵素性脫羧
+tags:
+- lipid_metabolism
+- ketone_bodies
+status: pending

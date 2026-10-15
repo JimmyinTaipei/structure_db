@@ -1,0 +1,9 @@
+id: palmitate
+name: "Palmitate"
+label: "Palmitate\n16:0"
+aliases: [palmitic acid, 棕櫚酸]
+smiles: "[O-]C(=O)CCCCCCCCCCCCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 16, cis: [], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "16:0。飽和脂肪酸。fatty acid synthase 的產物（7 次循環，消耗 7 ATP + 14 NADPH）；人體最常見的飽和脂肪酸之一。"
+status: pending

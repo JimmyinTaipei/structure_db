@@ -1,0 +1,119 @@
+id: pufa_synthesis
+title: 'PUFA synthesis: desaturases and elongases'
+layout: free
+cell_size: 5.4
+nodes:
+- id: ole
+  ref: oleate
+  pos:
+  - 0
+  - 0
+  view: name
+- id: la
+  ref: linoleate
+  pos:
+  - 0
+  - 1.2
+  view: name
+- id: ala
+  ref: alpha_linolenate
+  pos:
+  - 0
+  - 2.4
+  view: name
+- id: gla
+  text: 'γ-Linolenate
+
+    18:3 (ω6)'
+  pos:
+  - 1.55
+  - 1.2
+  kind: name
+- id: dgla
+  text: 'Dihomo-γ-
+
+    linolenate
+
+    20:3 (ω6)'
+  pos:
+  - 3.1
+  - 1.2
+  kind: name
+- id: aa
+  ref: arachidonate
+  pos:
+  - 4.75
+  - 1.2
+  view: name
+- id: sda
+  text: 18:4 (ω3)
+  pos:
+  - 1.55
+  - 2.4
+  kind: name
+- id: eta
+  text: 20:4 (ω3)
+  pos:
+  - 3.1
+  - 2.4
+  kind: name
+- id: epa
+  ref: epa
+  pos:
+  - 4.75
+  - 2.4
+  view: name
+- id: dha
+  ref: dha
+  pos:
+  - 4.75
+  - 3.6
+  view: name
+- id: plants
+  text: plants only
+  pos:
+  - -1.1
+  - 0.6
+  kind: name
+edges:
+- from: ole
+  to: la
+  label: Δ12
+  color: green
+- from: la
+  to: ala
+  label: Δ15
+  color: green
+- from: la
+  to: gla
+  label: 'Δ6
+
+    desaturase'
+- from: gla
+  to: dgla
+  label: elongase
+- from: dgla
+  to: aa
+  label: 'Δ5
+
+    desaturase'
+- from: ala
+  to: sda
+  label: Δ6
+- from: sda
+  to: eta
+  label: elongase
+- from: eta
+  to: epa
+  label: Δ5
+- from: epa
+  to: dha
+  label: 'elongase, Δ4
+
+    (+ β-oxidation)'
+  label_side: right
+tags:
+- lipid
+- fatty_acid
+notes_zh: 人體去飽和酶只能在 C9 與羧基之間加雙鍵（Δ9、Δ6、Δ5、Δ4），沒有 Δ12、Δ15（綠色，只有植物）→ linoleate（ω6）與 α-linolenate（ω3）為必需脂肪酸。延長與去飽和保留 ω 位置：ω6 → arachidonate；ω3 → EPA → DHA（魚油）。ω 編號：從甲基端數第一個雙鍵；n−x 同義。
+status: pending

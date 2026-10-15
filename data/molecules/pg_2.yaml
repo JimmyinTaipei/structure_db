@@ -1,0 +1,11 @@
+id: pg_2
+name: 2-Phosphoglycerate
+label: "2-Phospho-\nglycerate"
+aliases: [2PG, 2-磷酸甘油酸]
+smiles: "[O-]C(=O)[C@H](OP(=O)([O-])[O-])CO"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: "O^-"}}
+  - {c: C, l: H, r: "O{P}"}
+  - {c: CH_2OH}
+tags: [carb_metabolism, glycolysis]
+status: pending

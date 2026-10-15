@@ -1,0 +1,31 @@
+id: beta_ketothiolase
+title: β-Oxidation ④ 3-Ketoacyl-CoA → Acyl-CoA (n−2) + Acetyl-CoA (thiolase)
+substrates:
+- ketoacyl_coa
+products:
+- acyl_coa_n2
+- acetyl_coa
+cofactors_in:
+- CoA-SH
+enzyme: β-ketothiolase
+reversible: false
+decorate:
+  ketoacyl_coa:
+    colors: {2: magenta, 3: magenta}
+  acetyl_coa:
+    colors: {0: magenta}
+  CoA-SH:
+    colors: {0: cyan}
+  acyl_coa_n2:
+    colors:
+      1: {r: cyan}
+card_zh:
+  location: 粒線體基質
+  type: 硫解（thiolysis）：CoA-SH 在 α–β 碳之間切開
+  exam_points:
+  - palmitate（16C）：7 輪 → 8 acetyl-CoA + 7 FADH₂ + 7 NADH
+  - 淨 ATP：8×10 + 7×1.5 + 7×2.5 − 2 = 106
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

@@ -1,0 +1,20 @@
+id: imp_dehydrogenase
+title: "IMP → XMP (IMP dehydrogenase)"
+substrates: [imp]
+products: [xmp]
+cofactors_in: [NAD+, H2O]
+cofactors_out: [NADH+H+]
+enzyme: "IMP\ndehydrogenase"
+reversible: false
+decorate:                         # 洋紅：C2 新加上的 O（來自 H₂O，經 NAD⁺ 氧化）
+  xmp: {base_colors: {9: magenta}}
+  H2O: {colors: {0: magenta}}
+card_zh:
+  location: 細胞質
+  type: "氧化（C2 加 O）"
+  regulation: "GMP 回饋抑制"
+  deficiency: "藥物：mycophenolic acid（mycophenolate mofetil）、ribavirin 抑制 IMPDH → 淋巴球缺 GMP → 免疫抑制／抗病毒"
+  exam_points:
+    - "淋巴球特別依賴從頭合成（救援途徑弱）→ IMPDH 抑制劑選擇性抑制 T、B 細胞增生"
+tags: [nucleotide, purine]
+status: pending

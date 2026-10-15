@@ -1,0 +1,33 @@
+id: pyruvate_kinase
+title: "Glycolysis ⑩ Phosphoenolpyruvate → Pyruvate"
+step: 10
+substrates: [pep]
+products: [pyruvate]
+cofactors_in: [ADP]
+cofactors_out: [ATP]
+extra_in: [H+]
+prosthetic: ["Mg^{2+}, K^+"]
+enzyme: "pyruvate kinase"
+reversible: false
+decorate:
+  pep:
+    colors:
+      1:
+        r: [magenta, '{P}']
+  pyruvate:
+    colors:
+      1: {r: magenta}
+  ATP:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: 受質層次磷酸化（第 2 次產 ATP）
+  deltaG: "ΔG'° = −31.4 kJ/mol，不可逆（調控點）"
+  mechanism: "產物先是 enolpyruvate，自發 tautomerize 成 keto 型 pyruvate（這一步提供大部分自由能）"
+  regulation: "活化：F1,6BP（feed-forward）。抑制：ATP、alanine、acetyl-CoA、長鏈脂肪酸。肝臟 L 型：glucagon → PKA 磷酸化 → 失活"
+  deficiency: "PK 缺乏 → 溶血性貧血（紅血球最常見的糖解酵素缺乏），2,3-BPG ↑"
+  exam_points:
+    - "糖解淨產：2 ATP、2 NADH、2 pyruvate／glucose"
+    - "糖質新生需繞道：pyruvate carboxylase ＋ PEPCK"
+tags: [carb_metabolism, glycolysis, pyruvate]
+status: pending

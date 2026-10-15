@@ -1,0 +1,16 @@
+id: citrulline
+name: Citrulline
+aliases: [Cit, 瓜胺酸]
+smiles: "NC(=O)NCCC[C@H]([NH3+])C(=O)[O-]"
+chain:
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: NH}
+  - {c: C, r: O, rb: 2}
+  - {c: NH_2}
+tags: [urea]
+notes_zh: 在粒線體由 OTC 生成，運到細胞質。缺 ASS → citrullinemia。
+status: pending

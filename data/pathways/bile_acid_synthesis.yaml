@@ -1,0 +1,143 @@
+id: bile_acid_synthesis
+title: Bile acid synthesis & enterohepatic circulation（膽酸合成與腸肝循環）
+layout: free
+cell_size: 3.4
+regions:
+- kind: box
+  x0: -4.2
+  y0: -0.9
+  x1: 4.4
+  y1: 5.2
+  label: Liver
+- kind: box
+  x0: -4.2
+  y0: 6.0
+  x1: 4.4
+  y1: 9.6
+  label: Intestine (bacteria)
+nodes:
+- id: chol
+  ref: cholesterol
+  pos:
+  - 0
+  - 0.2
+  view: name
+- id: oh7
+  ref: oh7_cholesterol
+  pos:
+  - 0
+  - 1.6
+  view: name
+- id: ca
+  ref: cholate
+  pos:
+  - -2.2
+  - 3.0
+  view: name
+- id: cdca
+  ref: chenodeoxycholate
+  pos:
+  - 2.2
+  - 3.0
+  view: name
+- id: gca
+  ref: glycocholate
+  pos:
+  - -3.0
+  - 4.4
+  view: name
+- id: tca
+  ref: taurocholate
+  pos:
+  - -0.6
+  - 4.4
+  view: name
+- id: cdcac
+  text: glyco-/tauro-CDCA
+  kind: name
+  pos:
+  - 2.4
+  - 4.4
+- id: dca
+  ref: deoxycholate
+  pos:
+  - -2.2
+  - 7.6
+  view: name
+- id: lca
+  ref: lithocholate
+  pos:
+  - 2.2
+  - 7.6
+  view: name
+- id: ileum
+  text: '~95% reabsorbed (terminal ileum, ASBT)
+
+    → portal vein → liver'
+  kind: concept
+  pos:
+  - 6.8
+  - 4.0
+- id: feces
+  text: ~5% (≈ 0.5 g/day) lost in feces
+  kind: name
+  pos:
+  - 0
+  - 9.0
+- id: fxr
+  text: FXR (bile acids)
+  kind: drug
+  pos:
+  - -3.6
+  - 0.9
+- id: chol_res
+  text: 'Cholestyramine
+
+    (sequestrant)'
+  kind: drug
+  pos:
+  - 6.8
+  - 7.4
+edges:
+- from: chol
+  to: oh7
+  step: cyp7a1
+  label: CYP7A1 (rate-limiting)
+- from: oh7
+  to: ca
+  label: CYP8B1
+- from: oh7
+  to: cdca
+- from: ca
+  to: gca
+- from: ca
+  to: tca
+- from: cdca
+  to: cdcac
+- from: ca
+  to: dca
+  step: bile_7a_dehydroxylation
+  bend: 0.12
+- from: cdca
+  to: lca
+  step: bile_7a_dehydroxylation_cdca
+  bend: -0.12
+  label: 'gut bacteria: deconjugate,
+
+    remove 7α-OH'
+  label_side: left
+- from: fxr
+  to: edge:chol->oh7
+  inhibit: true
+- from: ileum
+  to: chol
+  bend: 0.15
+- from: chol_res
+  to: ileum
+  inhibit: true
+tags:
+- lipid_metabolism
+- bile_acid
+notes_zh: 初級膽酸（肝）：cholate（3α,7α,12α）、chenodeoxycholate（3α,7α）；與 glycine 或 taurine 結合 → 膽鹽（兩性、乳化脂質、形成 micelle、吸收脂溶性維生素）。腸道細菌去結合並去掉 7α-OH → 次級膽酸 deoxycholate、lithocholate。約 95% 在迴腸末端回收（腸肝循環，每天 6–10 次）。迴腸切除或
+  Crohn → 膽酸流失 → 脂肪瀉、膽結石（膽固醇過飽和）。ursodeoxycholate 治療膽固醇結石、PBC。
+status: pending

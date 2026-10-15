@@ -1,0 +1,15 @@
+id: alanyl_trna
+name: Alanyl-tRNA
+label: Ala-tRNA^{Ala}
+aliases:
+- aminoacyl-tRNA
+- charged tRNA
+smiles: C[C@H]([NH3+])C(=O)O[20*]
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- translation
+notes_zh: 胺醯-tRNA：胺基酸以酯鍵接在 tRNA 3′ 端 A76 的 3′-OH（class I 先接 2′-OH 再轉位）。tRNA = 其餘 tRNA。
+parts_png: false
+status: pending

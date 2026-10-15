@@ -1,0 +1,15 @@
+id: pyridoxine
+name: Pyridoxine (vitamin B6)
+label: Pyridoxine (B_6)
+aliases:
+- vitamin B6
+- 維生素B6
+- 吡哆醇
+smiles: Cc1ncc(CO)c(CO)c1O
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: B6 三種形式：pyridoxine（醇，C4′ = CH₂OH）、pyridoxal（醛）、pyridoxamine（胺）。isoniazid 會耗竭 B6（周邊神經病變，需同時補充）；缺乏 → 鐵粒母細胞性貧血（ALA synthase 需要 PLP）、抽搐。
+status: pending

@@ -1,0 +1,18 @@
+id: glycolysis_payoff
+title: Glycolysis — payoff phase（獲利期，每個 glucose 走 2 次）
+layout: free
+nodes:
+  - {id: g3p, ref: glyceraldehyde_3p, pos: [0, 0]}
+  - {id: bpg, ref: bpg_13,            pos: [0, 1.5]}
+  - {id: pg3, ref: pg_3,              pos: [0, 3]}
+  - {id: pg2, ref: pg_2,              pos: [0, 4.5]}
+  - {id: pep, ref: pep,               pos: [0, 6]}
+  - {id: pyr, ref: pyruvate,          pos: [0, 7.5]}
+edges:
+  - {from: g3p, to: bpg, step: gapdh, label: "6. glyceraldehyde 3-phosphate\ndehydrogenase", side_text: "P_i, NAD^+ → NADH + H^+", reversible: true}
+  - {from: bpg, to: pg3, step: phosphoglycerate_kinase, label: "7. phosphoglycerate\nkinase", side_text: "ADP → ATP", reversible: true}
+  - {from: pg3, to: pg2, step: phosphoglycerate_mutase, label: "8. phosphoglycerate\nmutase", reversible: true}
+  - {from: pg2, to: pep, step: enolase, label: "9. enolase", side_text: "H_2O", reversible: true}
+  - {from: pep, to: pyr, step: pyruvate_kinase, label: "10. pyruvate kinase", side_text: "ADP → ATP"}
+tags: [carb_metabolism, glycolysis]
+status: pending

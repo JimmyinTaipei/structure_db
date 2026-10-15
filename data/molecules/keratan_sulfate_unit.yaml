@@ -1,0 +1,62 @@
+id: keratan_sulfate_unit
+name: Keratan sulfate (repeating unit)
+label: Keratan sulfate
+aliases:
+- keratan sulfate
+- 角質素硫酸
+smiles: CC(=O)N[C@@H]1[C@@H](O)[C@H](O[C@@H]2O[C@H](CO)[C@H](O)[C@H](O)[C@H]2O)[C@@H](COS(=O)(=O)[O-])O[C@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: H
+        down: OH
+      3:
+        up: OH
+        down: H
+      4:
+        up: HO
+        down: H
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: OH
+      2:
+        up: NHAc
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: link
+        down: H
+      5:
+        up: H
+        down: CH_2OSO_3^-
+    at:
+    - 4.9
+    - -0.2
+    flip: true
+  links:
+  - from:
+    - 0
+    - 1
+    - up
+    to:
+    - 1
+    - 4
+    - up
+tags:
+- carbohydrate
+- polysaccharide
+- gag
+notes_zh: Gal(β1→4)GlcNAc-6-sulfate，單元間 β1→3。唯一不含 uronic acid 的 GAG（以 galactose 代替）。角膜（透明度）、軟骨、骨。Morquio 症候群（MPS IV）累積 keratan sulfate。
+status: pending

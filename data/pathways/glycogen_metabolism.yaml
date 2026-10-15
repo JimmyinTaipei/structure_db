@@ -1,0 +1,90 @@
+id: glycogen_metabolism
+title: Glycogen synthesis & degradation（肝醣合成與分解）
+layout: free
+cell: 0.62
+nodes:
+- id: glc
+  ref: a_glucopyranose
+  pos:
+  - 0
+  - 0
+- id: g6p
+  ref: a_glucose_6p
+  pos:
+  - 0
+  - 1.15
+- id: g1p
+  ref: a_glucose_1p
+  pos:
+  - 1.25
+  - 1.15
+- id: udpg
+  ref: udp_glucose
+  pos:
+  - 2.5
+  - 0.3
+- id: gly
+  ref: glycogen
+  pos:
+  - 2.5
+  - 2.0
+- id: gk
+  text: 'Glycolysis
+
+    (muscle)'
+  kind: plain
+  pos:
+  - 0
+  - 2.1
+edges:
+- from: glc
+  to: g6p
+  step: hexokinase
+  label: 'hexokinase /
+
+    glucokinase'
+  side_text: ATP
+  bend: 0.25
+- from: g6p
+  to: glc
+  step: g6pase
+  label: 'G6Pase
+
+    (liver)'
+  side_text: P_i
+  bend: 0.25
+- from: g6p
+  to: g1p
+  step: phosphoglucomutase
+  reversible: true
+  label: PGM
+- from: g1p
+  to: udpg
+  step: udp_glucose_pyrophosphorylase
+  label: 'UDP-glucose
+
+    pyrophosphorylase'
+  side_text: UTP → PP_i
+- from: udpg
+  to: gly
+  step: glycogen_synthase
+  label: 'glycogen synthase
+
+    + branching enzyme'
+  side_text: → UDP
+- from: gly
+  to: g1p
+  step: glycogen_phosphorylase
+  label: 'glycogen phosphorylase
+
+    + debranching enzyme'
+  side_text: P_i
+  label_side: right
+- from: g6p
+  to: gk
+tags:
+- carb_metabolism
+- glycogen
+notes_zh: 合成：G6P → G1P → UDP-Glc → 肝醣（synthase 限速，insulin 活化）。分解：phosphorylase（PLP，限速，glucagon／epinephrine 活化）→ G1P → G6P；肝有 G6Pase 可釋出葡萄糖，肌肉沒有。GSD：0 synthase、Ia von Gierke（G6Pase）、II Pompe（溶小體 acid α-glucosidase）、III
+  Cori（debranching）、IV Andersen（branching）、V McArdle（肌 phosphorylase）、VI Hers（肝 phosphorylase）。
+status: pending

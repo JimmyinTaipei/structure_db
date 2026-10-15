@@ -1,0 +1,17 @@
+id: dtmp
+name: "dTMP"
+aliases: [thymidylate]
+smiles: "Cc1cn([C@@H]2O[C@H](COP(=O)([O-])[O-])[C@@H](O)C2)c(=O)[nH]c1=O"
+haworth:
+  ring: furanose
+  subs:
+    1: {up: "base", down: "H"}
+    2: {up: "H", down: "H"}
+    3: {up: "H", down: "OH"}
+    4: {up: "{P}OCH_2", down: "H"}
+  base: "[*]n1cc(C)c(=O)[nH]c1=O"
+  base_right: 8     # 這個原子放右邊（嘧啶 C2；OMP 為 C6，讓 COO⁻ 避開糖）
+  numbers: true
+tags: [nucleotide, pyrimidine]
+notes_zh: "Deoxythymidine monophosphate。5-FU（FdUMP）抑制 thymidylate synthase；methotrexate 抑制 DHFR 使 THF 耗竭。"
+status: pending

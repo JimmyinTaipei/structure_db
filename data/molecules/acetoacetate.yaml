@@ -1,0 +1,21 @@
+id: acetoacetate
+name: Acetoacetate
+aliases:
+- 乙醯乙酸
+smiles: '[O-]C(=O)CC(C)=O'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  r: O
+  rb: 2
+- c: CH_3
+tags:
+- lipid_metabolism
+- ketone_bodies
+notes_zh: 酮體。肝臟製造但不能使用（缺 SCOT）；腦（長期飢餓）、心、肌肉、腎皮質用它。自發脫羧 → acetone（呼氣水果味）。
+status: pending

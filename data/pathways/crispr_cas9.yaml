@@ -1,0 +1,195 @@
+id: crispr_cas9
+title: CRISPR–Cas9 genome editing
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 8.0
+    - 2.9000000000000004
+    w: 9.0
+    h: 4.4
+    shape: bilobe
+    hue: '#C9C3DD'
+    text: ''
+    text_size: 0.7
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 3.2
+    - - 16.0
+      - 3.2
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 4.2
+    - - 16.0
+      - 4.2
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: blob
+    at:
+    - 12.0
+    - 3.7
+    w: 1.6000000000000014
+    h: 1.5
+    shape: box
+    hue: yellow
+    text: NGG
+    text_size: 0.6
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 5.0
+      - 3.7
+    - - 10.6
+      - 3.7
+    width: 0.26
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 10.6
+      - 3.7
+    - - 11.6
+      - 2.2
+    - - 10.8
+      - 1.2000000000000002
+    - - 9.6
+      - 1.6
+    - - 8.4
+      - 1.1
+    width: 0.26
+  - g: text
+    at:
+    - -0.2
+    - -1.0999999999999996
+    text: Cas9 + sgRNA
+    size: 0.8
+    align: left
+    color: '#5F4A8C'
+  - g: text
+    at:
+    - 7.8
+    - 6.1
+    text: 20-nt guide
+    size: 0.68
+    align: center
+    color: '#C2338A'
+  - g: text
+    at:
+    - 12.0
+    - 6.1
+    text: PAM
+    size: 0.68
+    align: center
+    color: '#B08F10'
+  - g: mark
+    kind: cut
+    at:
+    - 10.2
+    - 3.2
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 10.2
+    - 4.2
+    side: down
+  - g: text
+    at:
+    - 0.0
+    - 8.2
+    text: NHEJ
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 9.4
+    - - 7.0
+      - 9.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 10.4
+    - - 7.0
+      - 10.4
+    width: 0.3
+  - g: mark
+    kind: lesion
+    at:
+    - 3.5
+    - 9.9
+    r: 0.35
+  - g: text
+    at:
+    - 3.5
+    - 11.4
+    text: indel → knock-out
+    size: 0.72
+    align: center
+    color: '#D62828'
+  - g: text
+    at:
+    - 9.0
+    - 8.2
+    text: HDR + donor
+    size: 0.85
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 9.0
+      - 9.4
+    - - 16.0
+      - 9.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 9.0
+      - 10.4
+    - - 16.0
+      - 10.4
+    width: 0.3
+  - g: region
+    x0: 11.6
+    y0: 9.200000000000001
+    x1: 13.4
+    y1: 10.6
+    hue: green
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 12.5
+    - 9.9
+    text: new
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 12.5
+    - 11.4
+    text: precise edit / knock-in
+    size: 0.72
+    align: center
+    color: '#2E9E4F'
+tags:
+- molecular_biology
+- techniques
+notes_zh: 細菌的適應性免疫（spacer 記住噬菌體序列）。Cas9 + sgRNA（20 nt 引導 + scaffold）找到互補 DNA，緊鄰 PAM（NGG）時，在 PAM 上游 3 bp 切斷雙股（HNH、RuvC）。NHEJ → 插入／缺失 → frameshift 剔除（knock-out）；有 donor 模板時 HDR → 精確修改或嵌入（knock-in）。dCas9（無切割）+
+  抑制子 = CRISPRi（knock-down 轉錄）、+ 活化子 = CRISPRa。比較：Cre–loxP（條件式剔除）、siRNA / miRNA（mRNA 層次 knock-down）。
+parts_png: false
+status: pending

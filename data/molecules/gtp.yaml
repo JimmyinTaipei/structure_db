@@ -1,0 +1,29 @@
+id: gtp
+name: GTP
+aliases:
+- guanosine triphosphate
+- 鳥苷三磷酸
+smiles: O=c1[nH]c(N)nc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O
+haworth:
+  ring: furanose
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: OH
+    3:
+      up: H
+      down: OH
+    4:
+      up: '{P}–{P}–{P}–OCH_2'
+      down: H
+  base: '[*]n1cnc2c(=O)[nH]c(N)nc21'
+  base_right: 5
+  numbers: true
+tags:
+- nucleotide
+- purine
+notes_zh: G 蛋白與小 GTPase 的開關分子（結合 GTP = on）；轉譯（IF2、EF-Tu、EF-G、RF3）、糖質新生 PEPCK、TCA succinyl-CoA synthetase 的產物；guanylyl cyclase 的受質。
+status: pending

@@ -1,0 +1,32 @@
+id: glycogen_n
+name: Glycogen (n residues)
+label: 'Glycogen
+
+  (n residues)'
+aliases:
+- glycogen chain
+smiles: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[9*])O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: OR
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- glycogen
+notes_zh: 肝醣鏈的非還原端（C4-OH 自由）；R = 肝醣其餘部分（[9*]，平衡檢查視為不變的 R 基）。
+status: pending

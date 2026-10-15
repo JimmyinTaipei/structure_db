@@ -1,0 +1,13 @@
+id: d_arabinose
+name: "D-Arabinose"
+aliases: [Arabinose]
+smiles: "O=C[C@@H](O)[C@H](O)[C@H](O)CO"
+chain:
+  - {c: "C", fork: {l: "O", lb: 2, r: "H"}}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "ribose 的 C2 epimer。（aldopentose）"
+status: pending

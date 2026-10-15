@@ -1,0 +1,392 @@
+id: transposition
+title: Transposable elements
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.8
+    text: Bacterial transposons
+    size: 0.95
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 0.5
+    - - 9
+      - 0.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.5
+    - - 9
+      - 1.5
+    width: 0.3
+  - g: region
+    x0: 2.0
+    y0: 0.3
+    x1: 7.0
+    y1: 1.7
+    hue: pink
+    opacity: 0.75
+    outline: false
+  - g: ligand
+    at:
+    - 2.35
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 6.65
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: text
+    at:
+    - 4.5
+    - 1.0
+    text: transposase
+    size: 0.7
+    align: center
+  - g: text
+    at:
+    - 4.5
+    - 2.6
+    text: IS element (insertion sequence)
+    size: 0.75
+    align: center
+  - g: strand
+    kind: parent
+    points:
+    - - 10.5
+      - 0.5
+    - - 29
+      - 0.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 10.5
+      - 1.5
+    - - 29
+      - 1.5
+    width: 0.3
+  - g: region
+    x0: 11.5
+    y0: 0.3
+    x1: 16.0
+    y1: 1.7
+    hue: pink
+    opacity: 0.75
+    outline: false
+  - g: ligand
+    at:
+    - 11.85
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 15.65
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: text
+    at:
+    - 13.75
+    - 1.0
+    text: IS
+    size: 0.7
+    align: center
+  - g: region
+    x0: 16.0
+    y0: 0.3
+    x1: 23.5
+    y1: 1.7
+    hue: orange
+    opacity: 0.75
+    outline: false
+  - g: text
+    at:
+    - 19.75
+    - 1.0
+    text: drug resistance
+    size: 0.7
+    align: center
+  - g: region
+    x0: 23.5
+    y0: 0.3
+    x1: 28.0
+    y1: 1.7
+    hue: pink
+    opacity: 0.75
+    outline: false
+  - g: ligand
+    at:
+    - 23.85
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 27.65
+    - 1.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: text
+    at:
+    - 25.75
+    - 1.0
+    text: IS
+    size: 0.7
+    align: center
+  - g: text
+    at:
+    - 19.8
+    - 2.6
+    text: composite transposon (e.g. Tn10, Tn5)
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 0.0
+    - 4.8
+    text: Two modes of transposition
+    size: 0.95
+    align: left
+  - g: plasmid
+    at:
+    - 3.0
+    - 8.6
+    kind: relaxed
+    r: 1.6
+  - g: region
+    x0: 2.2
+    y0: 9.9
+    x1: 3.8
+    y1: 10.6
+    hue: pink
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 3.0
+    - 11.4
+    text: donor
+    size: 0.75
+    align: center
+  - g: strand
+    kind: parent
+    points:
+    - - 6.0
+      - 8.0
+    - - 12.5
+      - 8.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 6.0
+      - 9.0
+    - - 12.5
+      - 9.0
+    width: 0.3
+  - g: text
+    at:
+    - 9.2
+    - 10.1
+    text: target
+    size: 0.75
+    align: center
+  - g: arrow
+    from:
+    - 13.4
+    - 7.0
+    to:
+    - 15.6
+    - 6.0
+    style: fat
+  - g: arrow
+    from:
+    - 13.4
+    - 10.0
+    to:
+    - 15.6
+    - 11.0
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 16.4
+      - 5.5
+    - - 27
+      - 5.5
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 16.4
+      - 6.5
+    - - 27
+      - 6.5
+    width: 0.3
+  - g: region
+    x0: 18.4
+    y0: 5.3
+    x1: 19.2
+    y1: 6.7
+    hue: yellow
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 19.2
+    y0: 5.3
+    x1: 23.6
+    y1: 6.7
+    hue: pink
+    opacity: 0.75
+    outline: false
+  - g: ligand
+    at:
+    - 19.55
+    - 6.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 23.25
+    - 6.0
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: region
+    x0: 23.6
+    y0: 5.3
+    x1: 24.400000000000002
+    y1: 6.7
+    hue: yellow
+    opacity: 1.0
+    outline: false
+  - g: plasmid
+    at:
+    - 29.6
+    - 6.0
+    kind: relaxed
+    r: 1.2
+  - g: mark
+    kind: x
+    at:
+    - 29.6
+    - 4.8
+  - g: text
+    at:
+    - 22.0
+    - 3.9
+    text: cut-and-paste
+    size: 0.75
+    align: center
+  - g: strand
+    kind: parent
+    points:
+    - - 16.4
+      - 11.0
+    - - 27
+      - 11.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 16.4
+      - 12.0
+    - - 27
+      - 12.0
+    width: 0.3
+  - g: region
+    x0: 18.4
+    y0: 10.8
+    x1: 19.2
+    y1: 12.2
+    hue: yellow
+    opacity: 1.0
+    outline: false
+  - g: region
+    x0: 19.2
+    y0: 10.8
+    x1: 23.6
+    y1: 12.2
+    hue: pink
+    opacity: 0.75
+    outline: false
+  - g: ligand
+    at:
+    - 19.55
+    - 11.5
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: ligand
+    at:
+    - 23.25
+    - 11.5
+    shape: triangle
+    hue: purple
+    r: 0.35
+  - g: region
+    x0: 23.6
+    y0: 10.8
+    x1: 24.400000000000002
+    y1: 12.2
+    hue: yellow
+    opacity: 1.0
+    outline: false
+  - g: plasmid
+    at:
+    - 29.6
+    - 11.5
+    kind: relaxed
+    r: 1.2
+  - g: region
+    x0: 28.9
+    y0: 12.5
+    x1: 30.3
+    y1: 13.1
+    hue: pink
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 22.0
+    - 13.6
+    text: copy-and-paste
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 21.0
+    - 15.0
+    text: yellow = target-site duplication
+    size: 0.72
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- recombination
+notes_zh: 'Transposon（跳躍基因、mobile element）。細菌：IS（只有 transposase，兩端反向重複）、composite（IS–抗藥基因–IS，Tn10、Tn5）、Tn3（transposase + resolvase + 抗藥基因）、phage Mu。非複製型（cut-and-paste）：轉位子離開原處；複製型（copy-and-paste）：原處保留一份。插入處兩側產生短的直接重複（target-site
+  duplication）。真核以 retrotransposon 為主：RNA → 反轉錄酶 → cDNA 再插入；LTR 型（似反轉錄病毒）、LINE（L1，自主，有 RT）、SINE（Alu，約 300 bp，需借 L1 的 RT）。
+
+  【補充】Retrotransposons (eukaryotes) copy via RNA → reverse transcriptase → cDNA: LTR type (retrovirus-like) and non-LTR LINEs (L1, autonomous, encode RT) and SINEs (Alu ~300 bp, non-autonomous, use L1''s
+  RT). ~45 % of the human genome is transposon-derived; only ~1–2 % codes for protein.'
+parts_png: false
+status: pending

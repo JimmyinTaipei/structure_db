@@ -1,0 +1,9 @@
+id: dha
+name: "Docosahexaenoate"
+label: "Docosahexaenoate\n22:6(Δ4,7,10,13,16,19)"
+aliases: [DHA, docosahexaenoic acid]
+smiles: "[O-]C(=O)CC/C=C\\C/C=C\\C/C=C\\C/C=C\\C/C=C\\C/C=C\\CC"
+lipid: {type: "fatty_acid", chains: [{n: 22, cis: [4, 7, 10, 13, 16, 19], trans: []}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "22:6(Δ4,7,10,13,16,19)；ω-3。DHA，ω-3（魚油），視網膜與腦的膜脂大量含有。"
+status: pending

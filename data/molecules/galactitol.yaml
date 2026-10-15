@@ -1,0 +1,14 @@
+id: galactitol
+name: "Galactitol"
+aliases: [dulcitol, 半乳糖醇]
+smiles: "OC[C@@H](O)[C@H](O)[C@H](O)[C@@H](O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, sugar_derivative]
+notes_zh: "dulcitol。galactosemia 時 galactose 經 aldose reductase 還原成 galactitol → 白內障。分子有對稱面（meso），無光學活性。"
+status: pending

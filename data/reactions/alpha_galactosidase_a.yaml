@@ -1,0 +1,27 @@
+id: alpha_galactosidase_a
+title: Gb3 → Lactosylceramide + Galactose (α-galactosidase A)
+substrates:
+- globotriaosylceramide
+products:
+- lactosylceramide
+- a_galactopyranose
+cofactors_in:
+- H2O
+enzyme: α-galactosidase A
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  a_galactopyranose:
+    colors:
+      d1: magenta
+card_zh:
+  location: 溶小體
+  type: 醣苷鍵水解（α1→4）
+  deficiency:
+  - Fabry disease（X-linked 隱性，唯一 X-linked 的鞘脂儲積症＋Hunter）：肢端疼痛、angiokeratoma、少汗、角膜混濁、蛋白尿 → 腎衰竭、心肌病、中風；治療 agalsidase
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

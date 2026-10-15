@@ -1,0 +1,16 @@
+id: folate
+name: Folate (vitamin B9)
+label: Folate (B_9)
+aliases:
+- folic acid
+- vitamin B9
+- pteroylglutamate
+- 葉酸
+smiles: Nc1nc2ncc(CNc8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])nc2c(=O)[nH]1
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: pteridine + p-aminobenzoate（PABA）+ Glu。人類不能合成 PABA → 必須攝取（細菌自己合成：sulfonamide 抑制）。folate → DHF → THF 兩步都由 DHFR（NADPH）還原。缺乏：巨球性貧血（無神經症狀，與 B12 區分）、懷孕早期缺乏 → 神經管缺陷；homocysteine ↑，MMA 正常。
+status: pending

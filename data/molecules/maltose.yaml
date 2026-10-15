@@ -1,0 +1,25 @@
+id: maltose
+name: "Maltose"
+aliases: [麥芽糖]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O[C@@H]1[C@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O1)O"
+haworth:
+  units:
+    - ring: pyranose
+      subs:
+        1: {up: "H", down: "link"}
+        2: {up: "H", down: "OH"}
+        3: {up: "OH", down: "H"}
+        4: {up: "H", down: "HO"}
+        5: {up: "CH_2OH", down: "H"}
+    - ring: pyranose
+      subs:
+        1: {up: "OH", down: "H"}
+        2: {up: "H", down: "OH"}
+        3: {up: "OH", down: "H"}
+        4: {up: "H", down: "link"}
+        5: {up: "CH_2OH", down: "H"}
+      at: [4.9, 0]
+  links: [{from: [0, 1, "down"], to: [1, 4, "down"]}]
+tags: [carbohydrate, disaccharide]
+notes_zh: "Glc(α1→4)Glc。澱粉、肝醣經 α-amylase 分解的產物；還原糖（右側 glucose 的 C1 自由）。小腸 maltase 分解。"
+status: pending

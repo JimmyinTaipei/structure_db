@@ -1,0 +1,113 @@
+id: protein_purification
+title: 'Protein purification: what each method separates by'
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.2
+    - 0.0
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Charge
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 0.0
+    text: ion exchange (CM = cation, DEAE = anion) · isoelectric focusing · isoelectric precipitation
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 1.6
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Size
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 1.6
+    text: gel filtration (large elute first) · dialysis · SDS-PAGE (mass) · ultracentrifugation (S)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 3.2
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Solubility
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 3.2
+    text: salting out ((NH_4)_2SO_4) · organic solvents · pH at pI
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 4.800000000000001
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Affinity
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 4.800000000000001
+    text: ligand / antibody columns · His-tag (Ni^{2+}) · GST (glutathione)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 6.4
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Hydrophobicity
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 6.4
+    text: hydrophobic interaction · reverse-phase HPLC
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 8.0
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Check purity
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 8.0
+    text: specific activity ↑ (units/mg) · one band on SDS-PAGE · 2-D gel (pI × mass)
+    size: 0.82
+    align: left
+tags:
+- protein
+- protein_structure
+notes_zh: 依性質選方法：電荷（離子交換、等電聚焦、等電點沉澱）、大小（膠體過濾大分子先出、透析、SDS-PAGE 依質量、超高速離心）、溶解度（硫酸銨鹽析）、親和力（配體、抗體、His-tag–Ni²⁺、GST–glutathione）、疏水性（HIC、RP-HPLC）。純化表：總蛋白質下降、比活性（units/mg）上升，回收率下降。
+parts_png: false
+status: pending

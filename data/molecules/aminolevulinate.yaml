@@ -1,0 +1,23 @@
+id: aminolevulinate
+name: δ-Aminolevulinate (ALA)
+label: 'δ-Aminolevulinate
+
+  (ALA)'
+aliases:
+- ALA
+- 5-aminolevulinate
+- δ-胺基乙醯丙酸
+smiles: '[O-]C(=O)CCC(=O)C[NH3+]'
+chain:
+- c: COO^-
+- c: CH_2
+- c: CH_2
+- c: C
+  r: O
+  rb: 2
+- c: CH_2NH_3^+
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: ALA synthase（粒線體，PLP）由 succinyl-CoA + Gly 縮合並脫羧 → heme 合成的限速步驟（heme 回饋抑制；藥物、酒精誘導 ALAS1）。
+status: pending

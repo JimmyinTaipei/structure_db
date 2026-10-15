@@ -1,0 +1,46 @@
+id: cyp17_lyase
+title: 17α-Hydroxypregnenolone → DHEA (CYP17A1, 17,20-lyase)
+substrates:
+- oh_pregnenolone
+products:
+- dhea
+- acetate
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+extra_out:
+- H+
+enzyme: 'CYP17A1
+
+  (17,20-lyase)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  oh_pregnenolone:
+    highlight:
+    - smarts: '[CH3:1][C:2](=[O:3])'
+      color: cyan
+    - smarts: '[C;R](C(C)=O)[OH:1]'
+      color: magenta
+  dhea:
+    highlight:
+    - smarts: '[C;R]=[O:1]'
+      color: magenta
+  acetate:
+    colors:
+      0: cyan
+      1: cyan
+card_zh:
+  location: ER（網狀帶、性腺）
+  type: 切斷 C17–C20（需 cytochrome b5）
+  exam_points:
+  - 人類主要走 Δ5 路徑：17-OH pregnenolone → DHEA
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

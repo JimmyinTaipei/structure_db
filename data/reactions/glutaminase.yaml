@@ -1,0 +1,21 @@
+id: glutaminase
+title: "Glutamine + H₂O → Glutamate + NH₄⁺ (glutaminase)"
+substrates: [glutamine]
+products: [glutamate, ammonium]
+cofactors_in: [H2O]
+cofactors_inline: true
+enzyme: "glutaminase"
+reversible: false
+decorate:
+  glutamine: {colors: {4: {dfork_l: magenta}}}
+  ammonium: {colors: {0: magenta}}
+  H2O: {colors: {0: cyan}}
+  glutamate: {colors: {4: {c: [cyan, "O^-"]}}}
+card_zh:
+  location: 粒線體（肝、腎、腸）
+  type: 水解脫胺
+  exam_points:
+    - "腎臟：代謝性酸中毒時 glutaminase ↑ → 排出 NH₄⁺、回收 HCO₃⁻"
+    - "肝：把 glutamine 帶來的 N 釋放給尿素循環"
+tags: [amino_acid_metabolism, deamination]
+status: approved

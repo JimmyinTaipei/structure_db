@@ -1,0 +1,31 @@
+id: d_glucuronate_open
+name: D-Glucuronate (open chain)
+label: D-Glucuronate
+aliases:
+- glucuronic acid (Fischer)
+- 葡萄糖醛酸（開鏈）
+smiles: O=C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)C(=O)[O-]
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: HO
+  r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: COO^-
+tags:
+- carbohydrate
+- sugar_derivative
+notes_zh: C6（一級醇）氧化成羧酸：uronic acid，C1 醛基保留。UDP-glucuronate → 膽紅素、藥物 glucuronidation；GAG 的組成；植物與多數動物可由它合成 L-ascorbate（人類缺 gulonolactone oxidase）。
+status: pending

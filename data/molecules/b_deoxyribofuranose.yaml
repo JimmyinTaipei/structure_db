@@ -1,0 +1,16 @@
+id: b_deoxyribofuranose
+name: "2-Deoxy-β-D-ribofuranose"
+label: "2-Deoxy-β-D-ribose"
+aliases: [β-D-deoxyribose, deoxyribose]
+smiles: "C1[C@@H]([C@H](O[C@H]1O)CO)O"
+haworth:
+  ring: "furanose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "H"}
+    3: {up: "H", down: "OH"}
+    4: {up: "HOCH_2", down: "H"}
+tags: [carbohydrate, monosaccharide, aldose, sugar_derivative]
+notes_zh: "DNA 的去氧核糖：C2 沒有 OH（只有兩個 H）。由 ribonucleotide reductase 在 NDP 層級還原產生。"
+status: pending

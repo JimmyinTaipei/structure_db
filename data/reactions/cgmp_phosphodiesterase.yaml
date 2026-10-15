@@ -1,0 +1,30 @@
+id: cgmp_phosphodiesterase
+title: cGMP → GMP (cGMP phosphodiesterase, PDE5)
+substrates:
+- cgmp
+products:
+- gmp
+cofactors_in:
+- H2O
+extra_out:
+- H+
+enzyme: cGMP phosphodiesterase (PDE5)
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: cyan
+  gmp:
+    colors:
+      u4:
+      - cyan
+      - '{P}'
+card_zh:
+  type: 水解 cGMP 的 3′ 酯鍵 → 5′-GMP；終止 NO 訊號
+  exam_points:
+  - Sildenafil（Viagra）抑制 PDE5 → cGMP 持續 → 海綿體平滑肌放鬆
+  - 視網膜 PDE6 由 transducin 活化（光訊號）
+tags:
+- signal_transduction
+- second_messenger
+status: pending

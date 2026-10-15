@@ -1,0 +1,33 @@
+id: iptg
+name: Isopropyl β-D-1-thiogalactopyranoside (IPTG)
+label: IPTG
+aliases:
+- isopropylthiogalactoside
+smiles: CC(C)S[C@@H]1O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up:
+      - S–CH(CH_3)_2
+      - 0
+      down: H
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: HO
+      down: H
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: Gratuitous inducer：與 LacI 結合使其離開 operator，但 C1 是硫醚（S-糖苷鍵），β-galactosidase 不能水解 → 濃度不會下降；實驗與藍白篩選常用。
+parts_png: false
+status: pending

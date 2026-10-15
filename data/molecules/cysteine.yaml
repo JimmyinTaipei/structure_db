@@ -1,0 +1,14 @@
+id: cysteine
+name: Cysteine
+aliases: [Cys, C, 半胱胺酸]
+smiles: "SC[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: SH}
+decorate:
+  boxes: [{rows: [2, 3], name: R}, {parts: ["3.c"], color: yellow, name: S}]
+tags: [amino_acid, polar]
+notes_zh: "Cys / C。SH pKa ≈ 8.2；兩個 Cys 氧化成 cystine（雙硫鍵）。L-Cys 的 CIP 是 R（S 的優先序較高）。生糖。"
+status: approved

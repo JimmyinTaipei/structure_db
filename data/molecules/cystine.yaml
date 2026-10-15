@@ -1,0 +1,83 @@
+id: cystine
+name: Cystine
+aliases:
+- Cys-S-S-Cys
+- 胱胺酸
+- disulfide
+smiles: '[NH3+][C@@H](CSSC[C@H]([NH3+])C(=O)[O-])C(=O)[O-]'
+free:
+  atoms:
+    n1:
+    - ^+H_3N
+    - -3.95
+    - 0.55
+    ca1:
+    - CH
+    - -2.75
+    - 0
+    a1:
+    - COO^-
+    - -2.75
+    - -1.1
+    cb1:
+    - CH_2
+    - -1.6
+    - 0.55
+    s1:
+    - S
+    - -0.55
+    - 0
+    s2:
+    - S
+    - 0.55
+    - 0.55
+    cb2:
+    - CH_2
+    - 1.6
+    - 0
+    ca2:
+    - CH
+    - 2.75
+    - 0.55
+    a2:
+    - COO^-
+    - 2.75
+    - 1.65
+    n2:
+    - NH_3^+
+    - 3.95
+    - 0
+  bonds:
+  - - n1
+    - ca1
+  - - ca1
+    - a1
+  - - ca1
+    - cb1
+  - - cb1
+    - s1
+  - - s1
+    - s2
+  - - s2
+    - cb2
+  - - cb2
+    - ca2
+  - - ca2
+    - a2
+  - - ca2
+    - n2
+  notes:
+  - - disulfide bond
+    - 0
+    - -0.75
+    - orange
+decorate:
+  colors:
+    s1: orange
+    s2: orange
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: 兩個 Cys 的 –SH 氧化成 –S–S–（disulfide bond，共價，穩定三級／四級結構，多見於分泌蛋白）。β-mercaptoethanol、DTT 還原打斷（可逆）；performic acid 氧化成 cysteic acid（不可逆）；iodoacetate 封住 –SH 防止重接。
+status: pending

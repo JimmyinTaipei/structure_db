@@ -1,0 +1,38 @@
+id: meos_cyp2e1
+title: Ethanol → Acetaldehyde (MEOS, CYP2E1)
+substrates:
+- ethanol
+products:
+- acetaldehyde
+cofactors_in:
+- NADPH+H+
+- O2
+cofactors_out:
+- NADP+
+- 2H2O
+enzyme: CYP2E1 (MEOS)
+reversible: false
+decorate:
+  ethanol:
+    colors:
+      0:
+        u: magenta
+        r:
+        - magenta
+        - H
+  O2:
+    colors:
+      0: cyan
+card_zh:
+  location: 肝細胞平滑內質網（微粒體）
+  type: 單氧酶（cytochrome P450）
+  regulation: 慢性飲酒誘導 CYP2E1 → 酒量變好（代謝耐受）
+  deficiency:
+  - CYP2E1 也把 acetaminophen 變成 NAPQI → 酗酒者 acetaminophen 肝毒性 ↑
+  - 產生 ROS → 肝損傷
+  exam_points:
+  - 高濃度乙醇時才重要（Km 高）
+tags:
+- energy_metabolism
+- ethanol
+status: pending

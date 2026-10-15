@@ -1,0 +1,31 @@
+id: g6pase
+title: Gluconeogenesis ④ Glucose 6-phosphate → Glucose (glucose 6-phosphatase)
+substrates:
+- glucose_6p
+products:
+- glucose
+cofactors_in:
+- H2O
+cofactors_out:
+- Pi
+enzyme: glucose 6-phosphatase
+reversible: false
+decorate:
+  glucose_6p:
+    colors:
+      5:
+        c: [magenta, '{P}']
+  Pi:
+    colors: {0: magenta}
+card_zh:
+  location: 內質網腔（G6P 經 G6P translocase 進入）；只有肝、腎（腸）有
+  type: 水解
+  deficiency:
+  - von Gierke（GSD Ia：G6Pase；Ib：translocase）→ 嚴重空腹低血糖、乳酸 ↑、尿酸 ↑、TG ↑、肝腫大
+  exam_points:
+  - 肌肉沒有 G6Pase → 肌肝醣只能自己用，不能補血糖
+tags:
+- carb_metabolism
+- gluconeogenesis
+- glycogen
+status: pending

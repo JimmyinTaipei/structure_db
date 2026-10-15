@@ -1,0 +1,40 @@
+id: dna_damage_structures
+title: Damaged bases
+layout: free
+cell_size: 12.0
+nodes:
+- id: td
+  ref: thymine_dimer
+  pos:
+  - 0
+  - 0
+  decorate:
+    highlight:
+    - smarts: C1(C)C(N)C(N)C1(C)
+      color: magenta
+- id: og
+  ref: oxoguanine
+  pos:
+  - 1.05
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[nH]c(=O)n'
+      color: magenta
+- id: mg
+  ref: o6_methylguanine
+  pos:
+  - 2.0
+  - 0
+  decorate:
+    highlight:
+    - smarts: '[CH3]O'
+      color: magenta
+edges: []
+text: false
+tags:
+- molecular_biology
+- repair
+notes_zh: 常見 DNA 損傷：UV → 環丁烷嘧啶雙體（NER；photolyase）；ROS → 8-oxoG（BER，OGG1）；烷化 → O⁶-methyl-G（MGMT）；自發 → 去嘌呤（AP 位）、去胺（C→U、A→hypoxanthine、G→xanthine、5mC→T）。洋紅為受損部位；dR = DNA 中的去氧核糖。
+parts_png: false
+status: pending

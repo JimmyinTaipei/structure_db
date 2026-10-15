@@ -1,0 +1,18 @@
+id: phosphoglycerate_mutase
+title: "Glycolysis ⑧ 3-Phosphoglycerate ⇌ 2-Phosphoglycerate"
+step: 8
+substrates: [pg_3]
+products: [pg_2]
+prosthetic: ["Mg^{2+}"]
+enzyme: "phosphoglycerate\nmutase"
+reversible: true
+decorate:
+  pg_3: {colors: {2: {c: [magenta, "{P}"]}}}
+  pg_2: {colors: {1: {r: [magenta, "{P}"]}}}
+card_zh:
+  location: 細胞質
+  type: 磷酸基分子內轉移（C3 → C2）
+  deltaG: "ΔG'° = +4.4 kJ/mol，可逆"
+  mechanism: "活性區 His 先帶磷酸（phosphohistidine）→ 生成 2,3-BPG 中間物 → 再把 C3 磷酸轉回 His"
+tags: [carb_metabolism, glycolysis]
+status: pending

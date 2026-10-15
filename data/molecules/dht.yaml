@@ -1,0 +1,15 @@
+id: dht
+name: Dihydrotestosterone (DHT)
+label: DHT
+aliases:
+- 5α-dihydrotestosterone
+smiles: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: 5α-reductase（NADPH）還原 C4=C5；比 testosterone 強的雄性素：外生殖器、前列腺、毛囊。finasteride、dutasteride 抑制（BPH、雄性禿）。5α-reductase 缺乏 → 出生時外生殖器似女性，青春期男性化。
+status: pending

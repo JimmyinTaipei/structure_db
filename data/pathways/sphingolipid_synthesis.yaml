@@ -1,0 +1,129 @@
+id: sphingolipid_synthesis
+title: Sphingolipid synthesis（鞘脂合成）
+layout: free
+cell_size: 3.4
+nodes:
+- id: pal
+  ref: palmitoyl_coa
+  pos:
+  - -2.2
+  - 0
+  view: name
+- id: ser
+  ref: serine
+  pos:
+  - 2.2
+  - 0
+  view: name
+- id: ks
+  ref: ketosphinganine
+  pos:
+  - 0
+  - 1.4
+  view: name
+- id: sa
+  ref: sphinganine
+  pos:
+  - 0
+  - 2.8
+  view: name
+- id: dhc
+  text: Dihydroceramide
+  kind: name
+  pos:
+  - 0
+  - 4.2
+- id: cer
+  ref: ceramide
+  pos:
+  - 0
+  - 5.6
+  view: name
+- id: sm
+  ref: sphingomyelin
+  pos:
+  - -4.4
+  - 7.4
+  view: name
+- id: glccer
+  ref: glucocerebroside
+  pos:
+  - 0
+  - 7.4
+  view: name
+- id: galcer
+  ref: galactocerebroside
+  pos:
+  - 4.4
+  - 7.4
+  view: name
+- id: sulf
+  ref: sulfatide
+  pos:
+  - 4.4
+  - 9.0
+  view: name
+- id: lac
+  ref: lactosylceramide
+  pos:
+  - 0
+  - 9.0
+  view: name
+- id: gang
+  text: 'Gangliosides (GM3 → GM2 → GM1 …),
+
+    globosides (Gb3)'
+  kind: name
+  pos:
+  - 0
+  - 10.6
+edges:
+- from: pal
+  to: ks
+  step: serine_palmitoyltransferase
+  label: 'serine palmitoyltransferase
+
+    (PLP, rate-limiting)'
+- from: ser
+  to: ks
+  step: serine_palmitoyltransferase
+  side_text: CO_2 + CoA
+- from: ks
+  to: sa
+  step: ketosphinganine_reductase
+  side_text: NADPH
+- from: sa
+  to: dhc
+  label: ceramide synthase
+  side_text: acyl-CoA
+- from: dhc
+  to: cer
+  label: desaturase (trans-Δ4)
+- from: cer
+  to: sm
+  label: 'SM synthase
+
+    (PC → DAG)'
+  label_side: right
+- from: cer
+  to: glccer
+  label: + UDP-Glc
+  label_side: right
+- from: cer
+  to: galcer
+  label: + UDP-Gal
+  label_side: left
+- from: galcer
+  to: sulf
+  label: + PAPS
+- from: glccer
+  to: lac
+  label: + UDP-Gal
+- from: lac
+  to: gang
+  label: + CMP-NeuAc, UDP-sugars
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: 在 ER 合成 ceramide，到 Golgi 加頭基。sphingomyelin 的 phosphocholine 來自 PC（不是 CDP-choline）。醣基由 UDP-sugar 提供，sialic acid 由 CMP-NeuAc 提供；sulfatide 的硫酸來自 PAPS。
+status: pending

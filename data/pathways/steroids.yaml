@@ -1,0 +1,17 @@
+id: steroids
+title: "Steroids（固醇類：膽固醇與固醇類荷爾蒙）"
+layout: free
+cell: 1.0
+text: false
+nodes:
+  - {id: cho, ref: cholesterol, pos: [0.5, 0]}
+  - {id: pro, ref: progesterone, pos: [0, 1.05]}
+  - {id: cor, ref: cortisol, pos: [1.05, 1.05]}
+  - {id: ald, ref: aldosterone, pos: [2.1, 1.05]}
+  - {id: tes, ref: testosterone, pos: [0, 2.1]}
+  - {id: est, ref: estradiol, pos: [1.05, 2.1]}
+  - {id: cha, ref: cholate, pos: [2.1, 2.1]}
+edges: []
+tags: [lipid, steroid]
+notes_zh: "共同骨架：A–D 四環（cyclopentanoperhydrophenanthrene）。碳數：cholesterol 27 → progestin／corticoid 21 → androgen 19 → estrogen 18（A 環芳香化）；膽酸 24。立體化學（楔形鍵）目前未畫出。"
+status: pending

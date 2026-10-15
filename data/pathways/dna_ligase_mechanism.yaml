@@ -1,0 +1,45 @@
+id: dna_ligase_mechanism
+title: 'DNA ligase: sealing a nick in three steps'
+layout: linear
+nodes:
+- id: s0
+  text: 'Ligase–Lys–NH_2
+
+    + ATP (eukaryotes)
+
+    or NAD^+ (E. coli)'
+  kind: protein
+- id: s1
+  text: 'Ligase–Lys–AMP
+
+    (adenylylated enzyme)'
+  kind: protein
+- id: s2
+  text: 'AMP–{P}–5'' of the nick
+
+    (activated 5''-phosphate)'
+  kind: name
+- id: s3
+  text: '3''-OH attacks →
+
+    phosphodiester bond'
+  kind: name
+edges:
+- from: s0
+  to: s1
+  label: 1. PP_i (or NMN) out
+- from: s1
+  to: s2
+  label: '2. AMP moves
+
+    to 5''-P'
+- from: s2
+  to: s3
+  label: 3. AMP out
+tags:
+- molecular_biology
+- replication
+notes_zh: Ligase 封閉 nick：需要相鄰的 3′-OH 與 5′-磷酸（雙股 DNA 中）。① 酵素的 Lys 與 ATP（真核、T4）或 NAD⁺（E. coli）反應形成 Lys–AMP，放出 PPi（或 NMN）；② AMP 轉到 nick 的 5′-磷酸上（5′-5′ 焦磷酸鍵，活化）；③ 3′-OH 攻擊活化的磷酸形成磷酸二酯鍵，放出 AMP。用途：延遲股 Okazaki
+  片段、修復最後一步、重組 DNA（T4 ligase 可接平端）。
+parts_png: false
+status: pending

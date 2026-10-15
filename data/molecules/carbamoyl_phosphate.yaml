@@ -1,0 +1,10 @@
+id: carbamoyl_phosphate
+name: Carbamoyl phosphate
+label: "Carbamoyl\nphosphate"
+aliases: [胺甲醯磷酸, carbamyl phosphate]
+smiles: "NC(=O)OP(=O)([O-])[O-]"
+chain:
+  - {c: C, l: H_2N, r: "O{P}", u: O, ub: 2}
+tags: [urea]
+notes_zh: 高能（酸酐鍵）。粒線體 CPS I（尿素循環，用 NH₄⁺）與細胞質 CPS II（嘧啶合成，用 glutamine）都會產生。
+status: pending

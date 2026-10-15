@@ -1,0 +1,201 @@
+id: sphingolipidoses
+title: 'Sphingolipidoses: lysosomal degradation（鞘脂儲積症）'
+layout: free
+cell_size: 3.6
+nodes:
+- id: gm1
+  ref: gm1
+  pos:
+  - 0
+  - 0
+  view: name
+- id: gm2
+  ref: gm2
+  pos:
+  - 0
+  - 1.7
+  view: name
+- id: gm3
+  ref: gm3
+  pos:
+  - 0
+  - 3.4
+  view: name
+- id: gb3
+  ref: globotriaosylceramide
+  pos:
+  - 4.6
+  - 3.4
+  view: name
+- id: lac
+  ref: lactosylceramide
+  pos:
+  - 2.3
+  - 5.1
+  view: name
+- id: glc
+  ref: glucocerebroside
+  pos:
+  - 2.3
+  - 6.8
+  view: name
+- id: sulf
+  ref: sulfatide
+  pos:
+  - -4.6
+  - 5.1
+  view: name
+- id: gal
+  ref: galactocerebroside
+  pos:
+  - -4.6
+  - 6.8
+  view: name
+- id: sm
+  ref: sphingomyelin
+  pos:
+  - -1.2
+  - 6.8
+  view: name
+- id: cer
+  ref: ceramide
+  pos:
+  - 0
+  - 8.6
+  view: name
+- id: sph
+  ref: sphingosine
+  pos:
+  - 0
+  - 10.3
+  view: name
+- id: d1
+  text: GM1 gangliosidosis
+  kind: drug
+  pos:
+  - -3.4
+  - 0.85
+- id: d2
+  text: 'Tay-Sachs (Hex A),
+
+    Sandhoff (Hex A + B)'
+  kind: drug
+  pos:
+  - -3.6
+  - 2.55
+- id: d3
+  text: Fabry (X-linked)
+  kind: drug
+  pos:
+  - 6.0
+  - 4.6
+- id: d4
+  text: Gaucher
+  kind: drug
+  pos:
+  - 5.0
+  - 7.8
+- id: d5
+  text: 'Metachromatic
+
+    leukodystrophy'
+  kind: drug
+  pos:
+  - -7.4
+  - 5.95
+- id: d6
+  text: Krabbe
+  kind: drug
+  pos:
+  - -6.4
+  - 8.0
+- id: d7
+  text: 'Niemann-Pick A/B
+
+    (sphingomyelinase)'
+  kind: drug
+  pos:
+  - -2.8
+  - 9.9
+- id: d8
+  text: Farber
+  kind: drug
+  pos:
+  - 2.6
+  - 9.45
+edges:
+- from: gm1
+  to: gm2
+  step: beta_galactosidase_gm1
+  label: β-galactosidase
+  label_side: right
+- from: gm2
+  to: gm3
+  step: hexosaminidase_a
+  label: β-hexosaminidase A
+  label_side: right
+- from: gm3
+  to: lac
+  label: neuraminidase
+  label_side: left
+- from: gb3
+  to: lac
+  step: alpha_galactosidase_a
+  label: α-galactosidase A
+  label_side: left
+- from: lac
+  to: glc
+  label: β-galactosidase
+  label_side: right
+- from: glc
+  to: cer
+  step: glucocerebrosidase
+  label: glucocerebrosidase
+  label_side: left
+- from: sulf
+  to: gal
+  step: arylsulfatase_a
+  label: arylsulfatase A
+  label_side: left
+- from: gal
+  to: cer
+  step: galactocerebrosidase
+  label: galactocerebrosidase
+  label_side: left
+- from: sm
+  to: cer
+  step: sphingomyelinase
+- from: cer
+  to: sph
+  label: ceramidase
+  label_side: right
+- from: d1
+  to: edge:gm1->gm2
+  inhibit: true
+- from: d2
+  to: edge:gm2->gm3
+  inhibit: true
+- from: d3
+  to: edge:gb3->lac
+  inhibit: true
+- from: d4
+  to: edge:glc->cer
+  inhibit: true
+- from: d5
+  to: edge:sulf->gal
+  inhibit: true
+- from: d6
+  to: edge:gal->cer
+  inhibit: true
+- from: d7
+  to: edge:sm->cer
+  inhibit: true
+- from: d8
+  to: edge:cer->sph
+  inhibit: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: 溶小體由非還原端逐一切下糖。全部體染色體隱性，只有 Fabry 是 X-linked。櫻桃紅點：Tay-Sachs、Niemann-Pick（＋GM1、Sandhoff）。肝脾腫大：Gaucher、Niemann-Pick（Tay-Sachs 沒有）。Ashkenazi Jews：Tay-Sachs、Niemann-Pick A、Gaucher。脫髓鞘：Krabbe（globoid
+  cell）、metachromatic leukodystrophy（sulfatide）。Gaucher 治療：酵素替代（imiglucerase）或受質減少（miglustat、eliglustat）。
+status: pending

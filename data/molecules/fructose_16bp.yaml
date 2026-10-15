@@ -1,0 +1,15 @@
+id: fructose_16bp
+name: Fructose 1,6-bisphosphate
+label: "Fructose\n1,6-bisphosphate"
+aliases: [F1,6BP, FBP, 果糖-1,6-二磷酸]
+smiles: "O=P([O-])([O-])OCC(=O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: "CH_2O{P}"}
+  - {c: C, r: O, rb: 2}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, glycolysis]
+notes_zh: PFK-1 的產物；活化 pyruvate kinase（feed-forward）。
+status: pending

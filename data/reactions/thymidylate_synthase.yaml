@@ -1,0 +1,20 @@
+id: thymidylate_synthase
+title: "dUMP → dTMP (thymidylate synthase)"
+substrates: [dump, {id: methylene_thf, view: formula}]
+products: [dtmp, {id: dhf, view: formula}]
+enzyme: "thymidylate\nsynthase"
+reversible: false
+decorate:                         # 洋紅：CH₂ 由 THF 轉到 C5 成為 CH₃
+  dtmp: {base_colors: {4: magenta}}
+  methylene_thf: {colors: {0: {c: [magenta, "CH_2"]}}}
+card_zh:
+  location: 細胞質
+  type: "甲基化：N⁵,N¹⁰-methylene-THF 同時提供 CH₂ 與還原力（H⁻）→ 產生 DHF"
+  deficiency:
+    - "5-FU → FdUMP：與酵素及 CH₂-THF 形成共價三元複合體（自殺抑制劑）"
+    - "葉酸／B12 缺乏 → dTMP 不足 → DNA 合成受阻 → 巨母紅血球性貧血"
+  exam_points:
+    - "dTMP 由 dUMP 甲基化而來（不是 TMP 還原）"
+    - "THF 再生：DHF ─DHFR（NADPH）→ THF ─SHMT（Ser → Gly）→ CH₂-THF"
+tags: [nucleotide, pyrimidine]
+status: pending

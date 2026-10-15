@@ -1,0 +1,18 @@
+id: glycerol
+name: Glycerol
+aliases:
+- 甘油
+- glycerin
+smiles: OCC(O)CO
+chain:
+- c: CH_2OH
+- c: C
+  l: HO
+  r: H
+- c: CH_2OH
+tags:
+- carb_metabolism
+- gluconeogenesis
+- lipid
+notes_zh: TAG 水解後的骨架。只有肝（與腎）有 glycerol kinase → 脂肪組織不能直接再利用 glycerol，要送回肝臟做糖質新生。
+status: pending

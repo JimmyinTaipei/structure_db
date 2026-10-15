@@ -1,0 +1,15 @@
+id: glutamine
+name: Glutamine
+aliases: [Gln, Q, 麩醯胺酸]
+smiles: "NC(=O)CC[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: C, dfork: {l: H_2N, r: O, rb: 2}}
+decorate:
+  boxes: [{rows: [2, 3, 4], name: R}]
+tags: [amino_acid, polar]
+notes_zh: "Gln / Q。血中最多的胺基酸、NH₃ 的主要運送形式（glutamine synthetase／glutaminase）。生糖。"
+status: approved

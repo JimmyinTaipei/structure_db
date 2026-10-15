@@ -1,0 +1,18 @@
+id: glyoxylate
+name: Glyoxylate
+aliases:
+- 乙醛酸
+- glyoxylic acid
+smiles: O=CC(=O)[O-]
+chain:
+- c: COO^-
+- c: C
+  l: H
+  r: O
+  rb: 2
+tags:
+- carb_metabolism
+- glyoxylate_cycle
+notes_zh: 乙醛酸：isocitrate lyase 把 isocitrate 切成 succinate + glyoxylate；malate synthase 再把它和 acetyl-CoA 接成 malate。人體內 glyoxylate 由 glycine／hydroxyproline 代謝產生，經 AGT 轉成 glycine；AGT 缺乏（primary hyperoxaluria
+  type 1）→ oxalate 腎結石。
+status: pending

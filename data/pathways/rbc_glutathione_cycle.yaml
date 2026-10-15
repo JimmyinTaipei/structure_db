@@ -1,0 +1,210 @@
+id: rbc_glutathione_cycle
+title: NADPH and glutathione in the red cell
+layout: scene
+scene:
+  items:
+  - g: ion
+    at:
+    - 2.0
+    - 2.0
+    r: 0.75
+    hue: orange
+    text: G6P
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 2.8
+    - 2.0
+    to:
+    - 6.6
+    - 2.0
+    color: black
+    curve: 0
+  - g: ion
+    at:
+    - 7.6
+    - 2.0
+    r: 0.85
+    hue: orange
+    text: 6-PGL
+    text_size: 0.34
+  - g: text
+    at:
+    - 4.7
+    - 0.8
+    text: G6PD
+    size: 0.6
+    align: center
+    color: red
+  - g: ion
+    at:
+    - 3.4
+    - 5.6
+    r: 0.75
+    hue: gray
+    text: NADP^+
+    text_size: 0.32
+  - g: ion
+    at:
+    - 6.2
+    - 5.6
+    r: 0.75
+    hue: pink
+    text: NADPH
+    text_size: 0.32
+  - g: arrow
+    from:
+    - 3.8
+    - 4.8
+    to:
+    - 4.6
+    - 2.8
+    color: gray
+    curve: 0.2
+  - g: arrow
+    from:
+    - 5.4
+    - 2.8
+    to:
+    - 5.8
+    - 4.8
+    color: black
+    curve: 0.2
+  - g: arrow
+    from:
+    - 6.2
+    - 6.4
+    to:
+    - 7.4
+    - 10.4
+    color: black
+    curve: 0
+  - g: arrow
+    from:
+    - 6.0
+    - 10.4
+    to:
+    - 3.6
+    - 6.4
+    color: gray
+    curve: 0
+  - g: blob
+    at:
+    - 7.0
+    - 11.2
+    w: 4.6
+    h: 1.2
+    shape: oval
+    hue: teal
+    text: GSH reductase (FAD)
+    text_size: 0.42
+  - g: ion
+    at:
+    - 9.6
+    - 9.4
+    r: 0.75
+    hue: yellow
+    text: GSSG
+    text_size: 0.36
+  - g: ion
+    at:
+    - 9.6
+    - 13.0
+    r: 0.8
+    hue: green
+    text: 2 GSH
+    text_size: 0.36
+  - g: arrow
+    from:
+    - 9.6
+    - 10.2
+    to:
+    - 9.6
+    - 12.2
+    color: black
+    curve: 0
+  - g: blob
+    at:
+    - 14.4
+    - 11.2
+    w: 4.6
+    h: 1.2
+    shape: oval
+    hue: purple
+    text: GSH peroxidase (Se)
+    text_size: 0.42
+  - g: arrow
+    from:
+    - 10.4
+    - 12.8
+    to:
+    - 12.6
+    - 11.9
+    color: black
+    curve: 0
+  - g: arrow
+    from:
+    - 12.6
+    - 10.5
+    to:
+    - 10.4
+    - 9.6
+    color: black
+    curve: 0
+  - g: ion
+    at:
+    - 18.6
+    - 9.4
+    r: 0.7
+    hue: red
+    text: H_2O_2
+    text_size: 0.36
+  - g: arrow
+    from:
+    - 18.0
+    - 9.8
+    to:
+    - 16.6
+    - 10.6
+    color: black
+    curve: 0
+  - g: ion
+    at:
+    - 18.6
+    - 13.0
+    r: 0.75
+    hue: blue
+    text: 2 H_2O
+    text_size: 0.34
+  - g: arrow
+    from:
+    - 16.6
+    - 11.8
+    to:
+    - 18.0
+    - 12.6
+    color: black
+    curve: 0
+  - g: text
+    at:
+    - 18.6
+    - 7.6
+    text: oxidant drugs, fava beans
+    size: 0.58
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 9.0
+    - 15.0
+    text: G6PD deficiency → GSH ↓ → hemolysis
+    size: 0.6
+    align: center
+    color: red
+tags:
+- carb_metabolism
+- PPP
+notes_zh: 紅血球沒有粒線體，NADPH 只能來自 PPP 的 G6PD。NADPH → glutathione reductase（FAD）把 GSSG 還原成 2 GSH → glutathione peroxidase（含 selenocysteine）用 GSH 把 H₂O₂ 還原成水。G6PD 缺乏（X 性聯、最常見酵素缺陷；抗瘧疾）：遇氧化壓力（primaquine、sulfonamide、dapsone、蠶豆的
+  divicine、感染）→ GSH 不足 → Hb 氧化沉澱（Heinz bodies）、膜受損 → 溶血（bite cells）。NADPH 其他用途：脂肪酸與固醇合成、P450、NOS、吞噬細胞 NADPH oxidase（呼吸爆發；缺陷 → 慢性肉芽腫病）。
+parts_png: false
+status: pending

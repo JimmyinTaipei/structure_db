@@ -1,0 +1,113 @@
+id: heme_degradation
+title: Heme degradation & bilirubin（血基質分解與膽紅素）
+layout: free
+cell: 0.62
+nodes:
+- id: hs
+  text: Spleen / macrophage
+  kind: heading
+  pos:
+  - -0.2
+  - -0.7
+- id: heme
+  ref: heme
+  pos:
+  - 0
+  - 0
+  view: name
+- id: bv
+  text: Biliverdin (green)
+  kind: name
+  pos:
+  - 0
+  - 1
+- id: br
+  ref: bilirubin
+  pos:
+  - 0
+  - 2
+  view: name
+- id: alb
+  text: 'Blood: bilirubin–albumin
+
+    (unconjugated, indirect)'
+  kind: name
+  pos:
+  - 0
+  - 3.1
+- id: hl
+  text: Liver
+  kind: heading
+  pos:
+  - 2.6
+  - 2.4
+- id: dg
+  text: 'Bilirubin diglucuronide
+
+    (conjugated, direct)'
+  kind: name
+  pos:
+  - 2.6
+  - 3.1
+- id: hi
+  text: Intestine
+  kind: heading
+  pos:
+  - 2.6
+  - 4.3
+- id: ubg
+  text: Urobilinogen
+  kind: name
+  pos:
+  - 2.6
+  - 5.0
+- id: ster
+  text: Stercobilin (feces, brown)
+  kind: name
+  pos:
+  - 4.6
+  - 5.9
+- id: urob
+  text: Urobilin (urine, yellow)
+  kind: name
+  pos:
+  - 0.6
+  - 5.9
+- id: gil
+  text: Gilbert, Crigler–Najjar
+  kind: drug
+  pos:
+  - 4.8
+  - 2.4
+edges:
+- from: heme
+  to: bv
+  label: heme oxygenase
+  side_text: O_2, NADPH → CO + Fe^{2+}
+- from: bv
+  to: br
+  label: biliverdin reductase
+  side_text: NADPH
+- from: br
+  to: alb
+- from: alb
+  to: dg
+  label: UGT1A1
+  side_text: 2 UDP-glucuronate
+- from: dg
+  to: ubg
+  label: bile → bacteria
+  label_side: right
+- from: ubg
+  to: ster
+- from: ubg
+  to: urob
+  label: kidney
+- from: gil
+  to: edge:alb->dg
+  inhibit: true
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: 間接（未結合）膽紅素 ↑：溶血、新生兒、Gilbert（UGT1A1 ↓，壓力或空腹時輕度黃疸）、Crigler–Najjar（I 型完全缺乏 → 核黃疸）。直接（結合）膽紅素 ↑：Dubin–Johnson（MRP2，肝色黑）、Rotor、膽道阻塞（灰白便、茶色尿、尿 urobilinogen ↓）。heme oxygenase 是體內 CO 的唯一來源。
+status: pending

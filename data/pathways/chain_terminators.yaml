@@ -1,0 +1,48 @@
+id: chain_terminators
+title: Chain terminators lack a 3'-OH
+layout: free
+cell_size: 14.5
+nodes:
+- id: d
+  ref: datp
+  pos:
+  - 0
+  - 0
+  decorate:
+    colors:
+      d3: cyan
+- id: dd
+  ref: ddatp
+  pos:
+  - 1
+  - 0
+  decorate:
+    colors:
+      d3: magenta
+- id: z
+  ref: azt
+  pos:
+  - 2
+  - 0
+  decorate:
+    colors:
+      d3: magenta
+- id: a
+  ref: acyclovir
+  pos:
+  - 2.85
+  - 0
+  decorate:
+    highlight:
+    - smarts: n[CH2]OCC[OH]
+      color: magenta
+edges: []
+text: false
+tags:
+- molecular_biology
+- replication
+- techniques
+notes_zh: DNA 聚合需要引子末端的 3′-OH 攻擊下一個 dNTP。沒有 3′-OH 的類似物一旦接上就終止延長：ddNTP（Sanger 定序）、AZT（HIV 反轉錄酶）、acyclovir（皰疹，需病毒 TK 活化）、ganciclovir（CMV）。對照：cytarabine（ara-C，阿拉伯糖）、gemcitabine 屬於抗代謝物；5-FU、methotrexate 抑制
+  dTMP 合成。
+parts_png: false
+status: pending

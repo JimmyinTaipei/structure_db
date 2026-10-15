@@ -1,0 +1,32 @@
+id: udp_glucose_pyrophosphorylase
+title: Glucose 1-phosphate + UTP → UDP-glucose (UDP-glucose pyrophosphorylase)
+substrates:
+- a_glucose_1p
+- id: utp
+  view: formula
+products:
+- udp_glucose
+cofactors_out:
+- PPi
+extra_in:
+- H+
+enzyme: 'UDP-glucose
+
+  pyrophosphorylase'
+reversible: false
+decorate:
+  utp:
+    colors: {0: magenta}
+  udp_glucose:
+    colors:
+      d1: [magenta, UDP]
+card_zh:
+  location: 細胞質
+  type: 核苷酸轉移（活化葡萄糖）
+  exam_points:
+  - PPi → 2 Pi（inorganic pyrophosphatase）把反應拉向合成
+  - 肝醣每加一個葡萄糖耗 1 UTP（≈ 1 ATP）
+tags:
+- carb_metabolism
+- glycogen
+status: pending

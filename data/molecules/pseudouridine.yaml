@@ -1,0 +1,31 @@
+id: pseudouridine
+name: Pseudouridine
+label: Pseudouridine (Ψ)
+aliases:
+- Ψ
+- 假尿苷
+smiles: O=c1[nH]cc([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1
+haworth:
+  ring: furanose
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: OH
+    3:
+      up: H
+      down: OH
+    4:
+      up: HOCH_2
+      down: H
+  base: '[*]c1c[nH]c(=O)[nH]c1=O'
+  base_right: 6
+  numbers: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: Uridine 的異構物：鹼基轉 180°，改以 C5 接 C1′（C-醣苷鍵），多出一個 N1–H 氫鍵供體。H/ACA snoRNA + dyskerin（真核）或 pseudouridine synthase 催化，不需要能量、分子量不變。最常見的 RNA 修飾：tRNA 的 TΨC 環、rRNA、snRNA。
+parts_png: false
+status: pending

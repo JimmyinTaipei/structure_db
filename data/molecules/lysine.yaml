@@ -1,0 +1,18 @@
+id: lysine
+name: Lysine
+aliases: [Lys, K, 離胺酸]
+smiles: "[NH3+]CCCC[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: "^+NH_3"}
+decorate:
+  boxes: [{rows: [2, 3, 4, 5, 6], name: R}]
+  colors: {6: cyan}
+tags: [amino_acid, basic]
+notes_zh: "Lys / K。必需；純生酮；ε-NH₃⁺ pKa ≈ 10.5。collagen 的 hydroxylysine 需 vitamin C。"
+status: approved

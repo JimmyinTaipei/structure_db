@@ -1,0 +1,18 @@
+id: norepinephrine
+name: Norepinephrine
+aliases:
+- noradrenaline
+- 正腎上腺素
+smiles: '[NH3+]C[C@H](O)c1ccc(O)c(O)c1'
+chain:
+- c: CH_2
+  l: ^+H_3N
+- c: C
+  l: H
+  r: OH
+- ring: '[*]c1ccc(O)c(O)c1'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: (R)-norepinephrine。dopamine β-hydroxylase（Cu²⁺、vitamin C、O₂）在 β 碳加 OH（在儲存囊泡內）。分解 → vanillylmandelic acid（VMA；嗜鉻細胞瘤時 ↑）。
+status: pending

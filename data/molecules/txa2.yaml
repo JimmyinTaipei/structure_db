@@ -1,0 +1,13 @@
+id: txa2
+name: Thromboxane A2
+label: Thromboxane A_2
+aliases:
+- TXA₂
+smiles: CCCCC[C@H](O)/C=C/[C@H]1O[C@H]2C[C@H](O2)[C@@H]1C/C=C\CCCC(=O)[O-]
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: 血小板（COX-1）產生：血管收縮、促進血小板凝集。極不穩定（半衰期約 30 秒）→ TXB₂。低劑量 aspirin 不可逆抑制血小板 COX-1（血小板無核，無法再合成）→ 抗血栓。
+status: pending

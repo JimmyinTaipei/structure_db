@@ -1,0 +1,8 @@
+id: uric_acid
+name: "Uric acid"
+aliases: [尿酸, urate]
+smiles: "O=c1[nH]c(=O)[nH]c2[nH]c(=O)[nH]c12"
+ring: {axis: [6, 11], right: 1, h_down: 7, nh_bond: true, mirror: true}
+tags: [nucleotide, purine]
+notes_zh: "人類嘌呤分解終產物（缺 urate oxidase）。過多 → 痛風（gout）、Lesch-Nyhan。生理 pH 下主要為 urate。"
+status: pending

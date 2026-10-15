@@ -1,0 +1,13 @@
+id: alanine
+name: Alanine
+aliases: [Ala, A, 丙胺酸]
+smiles: "C[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_3}
+decorate:
+  boxes: [{rows: [2], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Ala / A。ALT 把 Ala ⇌ pyruvate；肌肉經 glucose–alanine cycle 把 N 運到肝臟。生糖。"
+status: approved

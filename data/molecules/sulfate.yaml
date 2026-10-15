@@ -1,0 +1,11 @@
+id: sulfate
+name: Sulfate
+aliases:
+- SO4 2-
+smiles: '[O-]S(=O)(=O)[O-]'
+formula: SO_4^{2-}
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: arylsulfatase A 從 sulfatide 切下。
+status: pending

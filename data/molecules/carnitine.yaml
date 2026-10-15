@@ -1,0 +1,24 @@
+id: carnitine
+name: L-Carnitine
+aliases:
+- carnitine
+- 肉鹼
+smiles: '[O-]C(=O)C[C@@H](O)C[N+](C)(C)C'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  l: HO
+  r: H
+- c: CH_2
+- c: N^+(CH_3)_3
+  anchor: 0
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 由 Lys + Met 合成（需 vitamin C）。長鏈 acyl-CoA 以 acylcarnitine 的形式穿過粒線體內膜。缺乏（原發或 CPT-II 缺乏）→ 空腹低酮性低血糖、肌肉無力、肌紅素尿。
+status: pending

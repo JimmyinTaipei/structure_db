@@ -1,0 +1,14 @@
+id: tyrosine
+name: Tyrosine
+aliases: [Tyr, Y, 酪胺酸]
+smiles: "[NH3+][C@@H](Cc1ccc(O)cc1)C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {ring: "[*]c1ccc(O)cc1"}
+decorate:
+  boxes: [{rows: [2, 3], name: R}]
+tags: [amino_acid, aromatic]
+notes_zh: "Tyr / Y。非必需（由 Phe 合成）；側鏈 OH pKa ≈ 10.1。→ 兒茶酚胺、甲狀腺素、黑色素。生糖＋生酮。"
+status: approved

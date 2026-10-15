@@ -1,0 +1,141 @@
+id: inhibition_mixed
+title: Mixed inhibition
+layout: plot
+panels:
+- title: Mixed, α > α' (common)
+  size:
+  - 12
+  - 8.5
+  params:
+    Vmax: 1
+    Km: 2
+    KmI: 1.8*Km
+    VmI: Vmax/1.8*0.9
+  x:
+    min: -1.0
+    max: 1.4
+    label: 1/[S]
+  y:
+    min: -0.6
+    max: 6
+    label: 1/v_0
+  curves:
+  - id: 'no'
+    y: Km/Vmax*x + 1/Vmax
+    from: -1.0
+    to: 1.4
+    label: No inhibitor
+    label_at: 1.15
+    label_off:
+    - 0.3
+    - 0.8
+  - id: inh
+    y: KmI/VmI*x + 1/VmI
+    from: -1.0
+    to: 1.4
+    color: red
+    label: + Inhibitor
+    label_at: 0.25
+    label_off:
+    - 0.4
+    - 0.2
+    label_align: left
+  points:
+  - 'on': 'no'
+    x: 0
+    y: 1/Vmax
+  - 'on': inh
+    x: 0
+    y: 1/VmI
+    color: red
+  - 'on': 'no'
+    x: -1/Km
+    y: 0
+  - 'on': inh
+    x: -1/KmI
+    y: 0
+    color: red
+  texts:
+  - at:
+    - -0.95
+    - 5.0
+    text: 'K_m ↑  V_{max} ↓
+
+      lines cross left of y axis,
+
+      above x axis'
+    color: red
+    size: 0.9
+    align: left
+- title: Mixed, α < α' (rare)
+  size:
+  - 12
+  - 8.5
+  params:
+    Vmax: 1
+    Km: 2
+    KmI: Km/1.6
+    VmI: Vmax/2.6
+  x:
+    min: -1.7
+    max: 1.4
+    label: 1/[S]
+  y:
+    min: -2.1
+    max: 6
+    label: 1/v_0
+  curves:
+  - id: 'no'
+    y: Km/Vmax*x + 1/Vmax
+    from: -1.7
+    to: 1.4
+    label: No inhibitor
+    label_at: 1.15
+    label_off:
+    - 0.3
+    - 0.8
+  - id: inh
+    y: KmI/VmI*x + 1/VmI
+    from: -1.7
+    to: 1.4
+    color: red
+    label: + Inhibitor
+    label_at: 0.55
+    label_off:
+    - 0.35
+    - 0.45
+    label_align: left
+  points:
+  - 'on': 'no'
+    x: 0
+    y: 1/Vmax
+  - 'on': inh
+    x: 0
+    y: 1/VmI
+    color: red
+  - 'on': 'no'
+    x: -1/Km
+    y: 0
+  - 'on': inh
+    x: -1/KmI
+    y: 0
+    color: red
+  texts:
+  - at:
+    - -1.65
+    - 5.0
+    text: 'K_m ↓  V_{max} ↓
+
+      lines cross below the x axis'
+    color: red
+    size: 0.9
+    align: left
+caption:
+  text: 'Mixed inhibition: I binds E (α) and ES (α'') with different affinity → V_{max} ↓, K_m ↑ or ↓'
+  color: red
+tags:
+- enzyme
+- enzyme_kinetics
+- inhibition
+notes_zh: Mixed inhibition：抑制劑可結合 E 與 ES，但親和力不同（α ≠ α'）。V_max^app = V_max/α' 一定下降；α > α'（較偏好 E）→ K_m 上升，雙倒數直線交在 y 軸左側、x 軸上方（常見）；α < α'（較偏好 ES）→ K_m 下降，交點在 x 軸下方（少見）。α = α' 即為 pure noncompetitive。
+status: pending

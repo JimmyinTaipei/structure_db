@@ -1,0 +1,13 @@
+id: acyclovir
+name: Acyclovir
+aliases:
+- aciclovir
+smiles: Nc1nc2c(ncn2COCCO)c(=O)[nH]1
+ring:
+  down: 6
+tags:
+- molecular_biology
+- replication
+notes_zh: 無環的 guanosine 類似物（沒有完整的糖、沒有 3′-OH）。只有皰疹病毒的 thymidine kinase 能做第一次磷酸化 → 選擇性；acyclo-GTP 抑制病毒 DNA pol 並終止鏈。
+parts_png: false
+status: pending

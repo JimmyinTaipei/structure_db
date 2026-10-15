@@ -1,0 +1,13 @@
+id: cytosine_rib
+name: Cytosine (in RNA)
+label: Cytosine (in RNA)
+aliases: []
+smiles: '[19*]n1ccc(N)nc1=O'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: RNA 中的 cytosine（Rib = 核糖與骨架）。
+parts_png: false
+status: pending

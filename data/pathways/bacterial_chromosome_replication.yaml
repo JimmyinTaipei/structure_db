@@ -1,0 +1,164 @@
+id: bacterial_chromosome_replication
+title: Replicating a circular bacterial chromosome
+layout: scene
+scene:
+  items:
+  - g: plasmid
+    at:
+    - 2.0
+    - 3
+    kind: relaxed
+    r: 1.7
+  - g: text
+    at:
+    - 2.0
+    - 6.0
+    text: Relaxed circle
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 4.2
+    - 3
+    to:
+    - 6.0
+    - 3
+    style: fat
+  - g: text
+    at:
+    - 5.1
+    - 1.0
+    text: 'Gyrase
+
+      (ATP)'
+    size: 0.75
+    align: center
+    color: '#5F4A8C'
+  - g: plasmid
+    at:
+    - 7.6
+    - 3
+    kind: supercoiled
+    r: 1.8
+    twists: 3
+  - g: text
+    at:
+    - 7.6
+    - 7.4
+    text: 'Negatively
+
+      supercoiled'
+    size: 0.8
+    align: center
+  - g: arrow
+    from:
+    - 9.3
+    - 3
+    to:
+    - 11.1
+    - 3
+    style: fat
+  - g: text
+    at:
+    - 10.2
+    - 1.0
+    text: 'DnaA
+
+      at oriC'
+    size: 0.75
+    align: center
+    color: '#2F6A33'
+  - g: plasmid
+    at:
+    - 13.4
+    - 3
+    kind: theta
+    r: 1.8
+    bubble:
+    - -70
+    - 70
+  - g: text
+    at:
+    - 13.4
+    - 6.0
+    text: 'θ replication:
+
+      2 forks'
+    size: 0.8
+    align: center
+  - g: arrow
+    from:
+    - 15.7
+    - 3
+    to:
+    - 17.5
+    - 3
+    style: fat
+  - g: text
+    at:
+    - 16.6
+    - -0.2
+    text: 'Ter / Tus
+
+      (forks meet)'
+    size: 0.75
+    align: center
+  - g: plasmid
+    at:
+    - 20.4
+    - 3
+    kind: catenane
+    r: 1.5
+  - g: text
+    at:
+    - 20.4
+    - 6.0
+    text: 'Catenanes
+
+      (interlinked)'
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 23.0
+    - 3
+    to:
+    - 24.8
+    - 3
+    style: fat
+  - g: text
+    at:
+    - 23.9
+    - 1.0
+    text: Topo IV
+    size: 0.75
+    align: center
+    color: '#5F4A8C'
+  - g: plasmid
+    at:
+    - 26.8
+    - 3
+    kind: relaxed
+    r: 1.3
+  - g: plasmid
+    at:
+    - 30.0
+    - 3
+    kind: relaxed
+    r: 1.3
+  - g: text
+    at:
+    - 28.4
+    - 6.0
+    text: '2 daughter
+
+      chromosomes'
+    size: 0.85
+    align: center
+tags:
+- molecular_biology
+- replication
+- dna_structure
+notes_zh: Gyrase（topo II，耗 ATP）引入負超螺旋（ΔLk = −2），讓 oriC 容易解開。雙向複製形成 θ 結構，兩個複製叉在終點區（Ter 序列＋Tus 蛋白阻擋）會合。複製完成的兩個環互相套住（catenane），由 topo IV 切開分離。E. coli 複製叉 ~1000 nt/s，真核 ~50 nt/s。
+parts_png: false
+status: pending

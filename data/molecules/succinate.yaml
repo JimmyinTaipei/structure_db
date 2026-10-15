@@ -1,0 +1,17 @@
+id: succinate
+name: Succinate
+aliases: [琥珀酸]
+smiles: "[O-]C(=O)CCC(=O)[O-]"
+chain:
+  - {c: "COO^-"}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: "COO^-"}
+chains:
+  explicit:                         # SDH 用：會被拿走的 H 明確畫出
+    - {c: "COO^-"}
+    - {c: C, l: H, r: H}
+    - {c: C, l: H, r: H}
+    - {c: "COO^-"}
+tags: [TCA]
+status: approved

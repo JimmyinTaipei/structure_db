@@ -1,0 +1,26 @@
+id: ribulose_5p
+name: Ribulose 5-phosphate
+label: 'Ribulose
+
+  5-phosphate'
+aliases:
+- Ru5P
+- 核酮糖-5-磷酸
+smiles: O=C(CO)[C@H](O)[C@H](O)COP(=O)([O-])[O-]
+chain:
+- c: CH_2OH
+- c: C
+  r: O
+  rb: 2
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- PPP
+notes_zh: 氧化期的終產物。isomerase → R5P（核苷酸）；epimerase → X5P（非氧化期，transketolase 的供體）。
+status: pending

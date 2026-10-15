@@ -1,0 +1,26 @@
+id: aconitase_2
+title: "TCA ②b cis-Aconitate ⇌ Isocitrate"
+step: 2
+substrates: [cis_aconitate]
+products: [isocitrate]
+cofactors_in: [H2O]
+enzyme: "aconitase"
+cofactors_inline: true          # 輔因子直接寫進方程式（Mathews）
+reversible: true
+decorate:                         # 原子追蹤：另一個水分子加回來（青藍）
+  H2O: {colors: {0: cyan}}
+  isocitrate: {colors: {2: {l: cyan}, 3: {l: cyan}}}
+variants:
+  isotope:
+    decorate:
+      cis_aconitate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      isocitrate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+card_zh:
+  location: 粒線體基質
+  type: 水合
+  deltaG: "整體（citrate → isocitrate）ΔG'° = +13.3 kJ/mol"
+  cofactors: "[4Fe-4S] 鐵硫中心"
+  exam_points:
+    - "產物為 (2R,3S)-isocitrate"
+tags: [TCA]
+status: pending

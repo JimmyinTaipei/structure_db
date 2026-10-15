@@ -1,0 +1,24 @@
+id: r_methylmalonyl_coa
+name: (R)-Methylmalonyl-CoA
+label: (R)-Methylmalonyl-CoA
+aliases:
+- L-methylmalonyl-CoA
+smiles: '[O-]C(=O)[C@@H](C)C(=O)S[1*]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: C
+  l: H_3C
+  r: H
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: epimerase 轉成 (R)，才是 methylmalonyl-CoA mutase（adenosylcobalamin）的受質。B12 缺乏 → methylmalonic acid ↑（與 folate 缺乏的鑑別）。
+status: pending

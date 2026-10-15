@@ -1,0 +1,449 @@
+id: chromatin_epigenetics
+title: Chromatin states, DNA methylation and imprinting
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.8
+    text: 'Euchromatin: on'
+    size: 0.9
+    align: left
+  - g: text
+    at:
+    - 16.0
+    - -0.8
+    text: 'Heterochromatin: off'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 4.0
+    - - 13.0
+      - 4.0
+    width: 0.3
+  - g: nucleosome
+    at:
+    - 2.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 1.6
+    - 2.3
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: ion
+    at:
+    - 2.5
+    - 2.2
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: nucleosome
+    at:
+    - 6.4
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 6.0
+    - 2.3
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: ion
+    at:
+    - 6.9
+    - 2.2
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: nucleosome
+    at:
+    - 10.8
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 10.4
+    - 2.3
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: ion
+    at:
+    - 11.3
+    - 2.2
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 4.0
+    - 5.6
+    to:
+    - 11.0
+    - 5.6
+    color: '#2E9E4F'
+    width: 1.8
+  - g: strand
+    kind: parent
+    points:
+    - - 16.0
+      - 4.0
+    - - 26.0
+      - 4.0
+    width: 0.3
+  - g: nucleosome
+    at:
+    - 17.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 17.0
+    - 2.2
+    r: 0.3
+    hue: purple
+    text: Me
+    text_size: 0.38
+  - g: nucleosome
+    at:
+    - 19.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 19.0
+    - 2.2
+    r: 0.3
+    hue: purple
+    text: Me
+    text_size: 0.38
+  - g: nucleosome
+    at:
+    - 21.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 21.0
+    - 2.2
+    r: 0.3
+    hue: purple
+    text: Me
+    text_size: 0.38
+  - g: nucleosome
+    at:
+    - 23.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 23.0
+    - 2.2
+    r: 0.3
+    hue: purple
+    text: Me
+    text_size: 0.38
+  - g: nucleosome
+    at:
+    - 25.0
+    - 3.7
+    r: 0.9
+  - g: ion
+    at:
+    - 25.0
+    - 2.2
+    r: 0.3
+    hue: purple
+    text: Me
+    text_size: 0.38
+  - g: mark
+    kind: methyl
+    at:
+    - 17.9
+    - 4.15
+    side: down
+    color: magenta
+  - g: mark
+    kind: methyl
+    at:
+    - 19.9
+    - 4.15
+    side: down
+    color: magenta
+  - g: mark
+    kind: methyl
+    at:
+    - 21.9
+    - 4.15
+    side: down
+    color: magenta
+  - g: mark
+    kind: methyl
+    at:
+    - 23.9
+    - 4.15
+    side: down
+    color: magenta
+  - g: mark
+    kind: x
+    at:
+    - 27.2
+    - 4.2
+  - g: arrow
+    from:
+    - 13.6
+    - 2.6
+    to:
+    - 15.6
+    - 2.6
+    color: black
+    width: 1.1
+  - g: arrow
+    from:
+    - 15.6
+    - 4.6
+    to:
+    - 13.6
+    - 4.6
+    color: black
+    width: 1.1
+  - g: text
+    at:
+    - 14.6
+    - 1.7000000000000002
+    text: HDAC, HMT, DNMT
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 14.6
+    - 5.5
+    text: HAT
+    size: 0.62
+    align: center
+  - g: text
+    at:
+    - 6.5
+    - 6.6
+    text: H3/H4 Lys acetylated · CpG unmethylated
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 21.0
+    - 6.6
+    text: H3K9 / K27 methylated · CpG 5mC
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 0.0
+    - 9.6
+    text: Genomic imprinting
+    size: 0.9
+    align: left
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 11.4
+    - - 12.0
+      - 11.4
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 12.4
+    - - 12.0
+      - 12.4
+    width: 0.3
+  - g: region
+    x0: 0.6
+    y0: 11.200000000000001
+    x1: 4.4
+    y1: 12.6
+    hue: blue
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 2.5
+    - 11.9
+    text: IGF2
+    size: 0.62
+    align: center
+  - g: region
+    x0: 5.6
+    y0: 11.200000000000001
+    x1: 7.4
+    y1: 12.6
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 6.5
+    - 11.9
+    text: ICR
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.4
+    y0: 11.200000000000001
+    x1: 11.4
+    y1: 12.6
+    hue: yellow
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 10.4
+    - 11.9
+    text: enh
+    size: 0.62
+    align: center
+  - g: arrow
+    from:
+    - 0.8
+    - 10.4
+    to:
+    - 4.2
+    - 10.4
+    color: '#2E9E4F'
+    width: 1.8
+  - g: mark
+    kind: methyl
+    at:
+    - 6.5
+    - 11.4
+    side: up
+    color: magenta
+  - g: text
+    at:
+    - -0.4
+    - 11.9
+    text: paternal
+    size: 0.7
+    align: right
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 14.6
+    - - 12.0
+      - 14.6
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 15.6
+    - - 12.0
+      - 15.6
+    width: 0.3
+  - g: region
+    x0: 0.6
+    y0: 14.4
+    x1: 4.4
+    y1: 15.799999999999999
+    hue: blue
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 2.5
+    - 15.1
+    text: IGF2
+    size: 0.62
+    align: center
+  - g: region
+    x0: 5.6
+    y0: 14.4
+    x1: 7.4
+    y1: 15.799999999999999
+    hue: gray
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 6.5
+    - 15.1
+    text: ICR
+    size: 0.62
+    align: center
+  - g: region
+    x0: 9.4
+    y0: 14.4
+    x1: 11.4
+    y1: 15.799999999999999
+    hue: yellow
+    opacity: 0.85
+    outline: false
+  - g: text
+    at:
+    - 10.4
+    - 15.1
+    text: enh
+    size: 0.62
+    align: center
+  - g: mark
+    kind: x
+    at:
+    - 2.5
+    - 13.6
+  - g: blob
+    at:
+    - 6.5
+    - 13.7
+    w: 1.6
+    h: 0.8
+    shape: round
+    hue: teal
+    text: CTCF
+    text_size: 0.5
+  - g: text
+    at:
+    - -0.4
+    - 15.1
+    text: maternal
+    size: 0.7
+    align: right
+  - g: text
+    at:
+    - 15.0
+    - 12.0
+    text: 'Prader–Willi: paternal 15q11 lost'
+    size: 0.7
+    align: left
+  - g: text
+    at:
+    - 15.0
+    - 13.4
+    text: 'Angelman: maternal 15q11 (UBE3A) lost'
+    size: 0.7
+    align: left
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: Euchromatin（開）：H3/H4 Lys 乙醯化（HAT，中和正電、鬆開），CpG island 低甲基化。Heterochromatin（關）：去乙醯化（HDAC）、H3K9me3 / H3K27me3（HMT；HP1、Polycomb）、CpG 5mC（DNMT；MeCP2 結合）。H3K4me3 則與活化相關。Imprinting：親源特異的甲基化使單一 allele
+  表現（IGF2 父源、H19 母源）。IGF2/H19：父源 ICR（insulator）被甲基化 → CTCF 無法結合 → 下游 enhancer 可活化 IGF2；母源 ICR 未甲基化 → CTCF 結合隔絕 → IGF2 關、H19 開（甲基化在此反而促成表現；Alberts 7e p.438）。15q11–13 缺失：父源 → Prader–Willi；母源（UBE3A）→ Angelman。X
+  不活化（Xist）也屬表觀遺傳。
+parts_png: false
+status: pending

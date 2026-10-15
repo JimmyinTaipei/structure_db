@@ -1,0 +1,216 @@
+id: transcription_elongation
+title: 'Transcription elongation: bubble, hybrid and twin supercoils'
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 12.2
+    - 4.5
+    w: 9.6
+    h: 5.2
+    shape: oval
+    hue: blue
+    text: RNA polymerase
+    text_size: 0.7
+    text_dy: 2.0
+    accent: true
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 4.0
+    - - 8.2
+      - 4.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 5.0
+    - - 8.2
+      - 5.0
+    width: 0.3
+    ends:
+    - 3'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 16.2
+      - 4.0
+    - - 26
+      - 4.0
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 16.2
+      - 5.0
+    - - 26
+      - 5.0
+    width: 0.3
+    ends:
+    - ''
+    - 5'
+  - g: strand
+    kind: parent
+    points:
+    - - 8.2
+      - 4.0
+    - - 9.0
+      - 4.0
+    - - 9.9
+      - 3.0
+    - - 14.5
+      - 3.0
+    - - 15.4
+      - 4.0
+    - - 16.2
+      - 4.0
+    width: 0.3
+  - g: strand
+    kind: parent
+    points:
+    - - 8.2
+      - 5.0
+    - - 9.0
+      - 5.0
+    - - 9.9
+      - 6.0
+    - - 14.5
+      - 6.0
+    - - 15.4
+      - 5.0
+    - - 16.2
+      - 5.0
+    width: 0.3
+  - g: strand
+    kind: rna
+    points:
+    - - 10.0
+      - 0.8
+    - - 10.5
+      - 2.0
+    - - 11.1
+      - 4.9
+    - - 11.9
+      - 5.5
+    - - 14.6
+      - 5.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 3.2
+    - 4.5
+    w: 1.6
+    h: 1.5
+    shape: round
+    hue: green
+    text: topo I
+    text_size: 0.5
+  - g: blob
+    at:
+    - 21.6
+    - 4.5
+    w: 2.4
+    h: 1.6
+    shape: bilobe
+    hue: purple
+    text: gyrase
+    text_size: 0.5
+  - g: text
+    at:
+    - 3.6
+    - 0.6
+    text: 'behind: underwound
+
+      (−) supercoils'
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 21.6
+    - 0.6
+    text: 'ahead: overwound
+
+      (+) supercoils'
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - -0.4
+    - 3.25
+    text: coding strand
+    size: 0.62
+    align: left
+    color: gray
+  - g: text
+    at:
+    - -0.4
+    - 5.75
+    text: template strand
+    size: 0.62
+    align: left
+    color: gray
+  - id: hybrid
+    g: strand
+    kind: rna
+    points:
+    - - 12.0
+      - 5.5
+    - - 14.6
+      - 5.5
+    width: 0.3
+    label: RNA–DNA hybrid ~8 bp
+    label_at:
+    - 18.0
+    - 7.3
+    label_align: left
+    point:
+    - 13.6
+    - 5.6
+    label_size: 0.8
+  - g: text
+    at:
+    - 12.2
+    - 8.0
+    text: transcription bubble ~17 bp
+    size: 0.72
+    align: center
+  - g: arrow
+    from:
+    - 0.5
+    - 8.6
+    to:
+    - 6.5
+    - 8.6
+    style: fat
+  - g: text
+    at:
+    - 3.5
+    - 10.2
+    text: direction of transcription
+    size: 0.72
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- transcription
+notes_zh: 'Transcription bubble ~17 bp，RNA–DNA hybrid ~8 bp。RNA 5′→3′ 合成，與 template 反向平行、序列同 coding strand（U 取代 T）；不需 primer。無 3′→5′ 外切校對，但可 backtrack 由 GreA/B（原核）或 TFIIS（真核）切除錯誤 3′ 端。Twin-supercoiling
+  domain：前方 (+) 超螺旋由 gyrase 解、後方 (−) 由 topo I 解。延長因子：NusA；TFIIS、P-TEFb、elongin。
+
+  【補充】RNA is made 5′→3′, antiparallel to the template; its sequence equals the coding (sense) strand with U for T. No primer is needed. E. coli ~50–90 nt/s. No 3′→5′ proofreading exonuclease (error ~10^{-4}–10^{-5});
+  a misincorporation makes the enzyme backtrack and GreA/B (E. coli) or TFIIS (eukaryotes) cleave the 3′ end. Twin-domain model: topo I removes (−) behind, gyrase removes (+) ahead. Elongation factors:
+  NusA (E. coli); TFIIS, P-TEFb (CTD Ser2 kinase), elongin (eukaryotes).'
+parts_png: false
+status: pending

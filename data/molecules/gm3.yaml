@@ -1,0 +1,38 @@
+id: gm3
+name: Ganglioside GM3
+label: GM3
+aliases:
+- GM3
+smiles: C(OC1OC(CO)C(OC2OC(CO)C(O)C(OC9(C(=O)[O-])CC(O)C(NC(C)=O)C(O9)C(O)C(O)CO)C2O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+free:
+  atoms:
+    cer:
+    - Ceramide
+    - 0
+    - 0
+    - 7
+    s0:
+    - '@glc'
+    - 0.95
+    - 0
+    s1:
+    - '@gal'
+    - 1.75
+    - 0
+    b:
+    - '@neu5ac'
+    - 1.75
+    - 0.8
+  bonds:
+  - - cer
+    - s0
+  - - s0
+    - s1
+  - - s1
+    - b
+  schematic: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: ceramide–Glc–Gal(–NeuAc)。最簡單的 ganglioside。（SNFG 示意圖：藍圓 Glc、黃圓 Gal、黃方 GalNAc、紫菱 NeuAc）
+status: pending

@@ -1,0 +1,23 @@
+id: ribose_5p_isomerase
+title: PPP ④ Ribulose 5-phosphate ⇌ Ribose 5-phosphate (isomerase)
+substrates:
+- ribulose_5p
+products:
+- ribose_5p
+enzyme: 'ribose 5-phosphate
+
+  isomerase'
+reversible: true
+decorate:
+  ribulose_5p:
+    colors: {0: magenta, 1: magenta}
+  ribose_5p:
+    colors: {0: magenta, 1: magenta}
+card_zh:
+  type: 異構化（酮糖 ⇌ 醛糖，經 enediol）
+  exam_points:
+  - R5P → PRPP → 核苷酸
+tags:
+- carb_metabolism
+- PPP
+status: pending

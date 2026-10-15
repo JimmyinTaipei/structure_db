@@ -1,0 +1,29 @@
+id: dhfr
+title: "DHF → THF (dihydrofolate reductase)"
+substrates: [dhf]
+products: [thf]
+cofactors_in: [NADPH+H+]
+cofactors_out: [NADP+]
+enzyme: "dihydrofolate\nreductase"
+reversible: false
+decorate:
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  thf:
+    highlight:
+    - atoms: [6, 27]
+      color: magenta
+card_zh:
+  location: 細胞質
+  type: "還原（NADPH）"
+  deficiency:
+    - "methotrexate（人類 DHFR，癌症、RA）、trimethoprim（細菌）、pyrimethamine（瘧原蟲）"
+    - "methotrexate 中毒解藥：leucovorin（folinic acid，N⁵-formyl-THF，繞過 DHFR）"
+  exam_points:
+    - "抑制 DHFR → THF 耗竭 → dTMP 與嘌呤合成（需 N¹⁰-formyl-THF）都停擺"
+tags: [nucleotide]
+status: pending

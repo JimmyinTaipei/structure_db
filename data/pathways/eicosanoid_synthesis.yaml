@@ -1,0 +1,202 @@
+id: eicosanoid_synthesis
+title: Eicosanoid synthesis（類二十烷酸合成：COX 與 LOX）
+layout: free
+cell_size: 3.4
+nodes:
+- id: pl
+  text: 'Membrane phospholipid
+
+    (arachidonate at sn-2)'
+  kind: name
+  pos:
+  - 0
+  - -1.6
+- id: aa
+  ref: arachidonate
+  pos:
+  - 0
+  - 0
+  view: name
+- id: ster
+  text: Corticosteroids
+  kind: drug
+  pos:
+  - -3.6
+  - -0.8
+- id: pgg2
+  ref: pgg2
+  pos:
+  - -3.0
+  - 1.5
+  view: name
+- id: pgh2
+  ref: pgh2
+  pos:
+  - -3.0
+  - 3.0
+  view: name
+- id: pgi2
+  ref: pgi2
+  pos:
+  - -6.2
+  - 4.6
+  view: name
+- id: txa2
+  ref: txa2
+  pos:
+  - -3.9
+  - 4.6
+  view: name
+- id: pge2
+  ref: pge2
+  pos:
+  - -1.8
+  - 4.6
+  view: name
+- id: pgf2a
+  ref: pgf2a
+  pos:
+  - 0.1
+  - 4.6
+  view: name
+- id: pgi2e
+  text: 'endothelium: vasodilation,
+
+    platelet aggregation ↓'
+  kind: name
+  pos:
+  - -6.2
+  - 5.7
+- id: txa2e
+  text: 'platelets: vasoconstriction,
+
+    aggregation ↑'
+  kind: name
+  pos:
+  - -3.5
+  - 6.6
+- id: pge2e
+  text: 'fever, pain, PDA open,
+
+    gastric mucus ↑'
+  kind: name
+  pos:
+  - -0.9
+  - 5.7
+- id: nsaid
+  text: 'Aspirin (irreversible),
+
+    NSAIDs, celecoxib (COX-2)'
+  kind: drug
+  pos:
+  - -6.0
+  - 1.0
+- id: hpete
+  ref: hpete5
+  pos:
+  - 3.2
+  - 1.5
+  view: name
+- id: lta4
+  ref: lta4
+  pos:
+  - 3.2
+  - 3.0
+  view: name
+- id: ltb4
+  ref: ltb4
+  pos:
+  - 1.9
+  - 4.6
+  view: name
+- id: ltc4
+  ref: ltc4
+  pos:
+  - 4.6
+  - 4.6
+  view: name
+- id: ltb4e
+  text: neutrophil chemotaxis
+  kind: name
+  pos:
+  - 1.9
+  - 5.6
+- id: ltc4e
+  text: 'LTC_4 → LTD_4 → LTE_4:
+
+    bronchoconstriction'
+  kind: name
+  pos:
+  - 4.6
+  - 5.7
+- id: zil
+  text: Zileuton
+  kind: drug
+  pos:
+  - 5.8
+  - 1.0
+- id: mon
+  text: 'Montelukast,
+
+    zafirlukast (receptor)'
+  kind: drug
+  pos:
+  - 6.9
+  - 4.6
+edges:
+- from: pl
+  to: aa
+  label: phospholipase A_2
+- from: ster
+  to: edge:pl->aa
+  inhibit: true
+- from: aa
+  to: pgg2
+  step: cyclooxygenase
+  label: COX
+  side_text: 2 O_2
+- from: pgg2
+  to: pgh2
+  step: cox_peroxidase
+  label: peroxidase
+- from: pgh2
+  to: pgi2
+  step: prostacyclin_synthase
+- from: pgh2
+  to: txa2
+  step: thromboxane_synthase
+- from: pgh2
+  to: pge2
+  step: pge_synthase
+- from: pgh2
+  to: pgf2a
+- from: nsaid
+  to: edge:aa->pgg2
+  inhibit: true
+- from: aa
+  to: hpete
+  step: lipoxygenase_5
+  label: 5-LOX
+  side_text: O_2
+- from: hpete
+  to: lta4
+  step: lta4_synthase
+- from: lta4
+  to: ltb4
+  step: lta4_hydrolase
+- from: lta4
+  to: ltc4
+  step: ltc4_synthase
+  side_text: GSH
+- from: zil
+  to: edge:aa->hpete
+  inhibit: true
+- from: mon
+  to: ltc4
+  inhibit: true
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: cPLA₂ 從膜磷脂 sn-2 釋出 arachidonate（20:4 ω-6）。COX 路徑 → prostanoid（PG、TX）；LOX 路徑 → leukotriene、lipoxin。PGI₂（內皮）與 TXA₂（血小板）作用相反。aspirin 不可逆乙醯化 COX；低劑量時只有無核的血小板無法再生 COX-1 → 選擇性 TXA₂ ↓。aspirin-exacerbated
+  respiratory disease：COX 被抑制 → 更多 arachidonate 走 LOX → cysteinyl LT ↑。
+status: pending

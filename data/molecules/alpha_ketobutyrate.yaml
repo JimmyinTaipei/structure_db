@@ -1,0 +1,19 @@
+id: alpha_ketobutyrate
+name: α-Ketobutyrate
+aliases:
+- 2-oxobutanoate
+- α-酮丁酸
+smiles: CCC(=O)C(=O)[O-]
+chain:
+- c: COO^-
+- c: C
+  l: O
+  lb: 2
+- c: CH_2
+- c: CH_3
+tags:
+- amino_acid_metabolism
+- one_carbon
+- aa_degradation
+notes_zh: cystathionase 的另一產物（homocysteine 的碳骨架）→ propionyl-CoA → succinyl-CoA。Thr 分解也會產生。
+status: pending

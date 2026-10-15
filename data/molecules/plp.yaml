@@ -1,0 +1,22 @@
+id: plp
+name: Pyridoxal phosphate (PLP)
+label: 'Pyridoxal
+
+  phosphate (PLP)'
+aliases:
+- PLP
+- pyridoxal 5'-phosphate
+- 磷酸吡哆醛
+smiles: Cc1ncc(COP(=O)([O-])[O-])c(C=O)c1O
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[CH1]=O'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 洋紅：C4′ 醛基，平時與酵素的 Lys 形成 Schiff base（internal aldimine），受質胺基酸進來後換成 external aldimine；吡啶環當「電子槽」。反應：轉胺（ALT、AST）、胺基酸脫羧（GABA、serotonin、dopamine、histamine）、ALA synthase（heme）、glycogen phosphorylase、cystathionine
+  β-synthase。
+status: pending

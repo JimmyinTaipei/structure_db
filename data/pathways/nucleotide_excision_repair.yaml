@@ -1,0 +1,273 @@
+id: nucleotide_excision_repair
+title: Nucleotide-excision repair
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - -1.6
+    - 2.0
+    text: '1.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 1.5
+    - - 18
+      - 1.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 2.5
+    - - 18
+      - 2.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: lesion
+    at:
+    - 9.0
+    - 1.45
+  - id: uvra
+    g: blob
+    at:
+    - 8.0
+    - 2.0
+    w: 2.0
+    h: 1.5
+    shape: bilobe
+    hue: green
+    label: UvrA_2B recognises
+    label_align: left
+    label_at:
+    - 19.4
+    - 2.0
+    point:
+    - 7.5
+    - 2.6
+  - g: text
+    at:
+    - 9.0
+    - 0.3999999999999999
+    text: T=T dimer (UV), bulky adduct
+    size: 0.72
+    align: center
+    color: red
+  - g: arrow
+    from:
+    - 16.5
+    - 3.9
+    to:
+    - 16.5
+    - 4.8999999999999995
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 6.3
+    text: '2.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 5.8
+    - - 18
+      - 5.8
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 6.8
+    - - 18
+      - 6.8
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: mark
+    kind: lesion
+    at:
+    - 9.0
+    - 5.75
+  - g: mark
+    kind: cut
+    at:
+    - 6.0
+    - 5.8
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 11.0
+    - 5.8
+    side: up
+  - id: uvrc
+    g: blob
+    at:
+    - 9.0
+    - 6.3
+    w: 1.6
+    h: 1.2
+    shape: kidney
+    hue: pink
+    label: 'UvrC: dual incision'
+    label_align: left
+    label_at:
+    - 19.4
+    - 6.3
+    point:
+    - 9.6
+    - 6.6
+  - g: arrow
+    from:
+    - 16.5
+    - 8.2
+    to:
+    - 16.5
+    - 9.2
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 10.6
+    text: '3.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 10.1
+    - - 6.0
+      - 10.1
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: parent
+    points:
+    - - 11.0
+      - 10.1
+    - - 18
+      - 10.1
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 11.1
+    - - 18
+      - 11.1
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: parent
+    points:
+    - - 6.3
+      - 9.1
+    - - 10.7
+      - 9.1
+    width: 0.3
+  - g: mark
+    kind: lesion
+    at:
+    - 9.0
+    - 9.049999999999999
+    r: 0.35
+  - g: text
+    at:
+    - 19.4
+    - 10.4
+    text: UvrD removes 12–13-mer
+    size: 0.8
+    align: left
+  - g: arrow
+    from:
+    - 16.5
+    - 12.5
+    to:
+    - 16.5
+    - 13.5
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - -1.6
+    - 14.9
+    text: '4.'
+    size: 0.95
+    align: center
+    color: gray
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 14.4
+    - - 18
+      - 14.4
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: new
+    points:
+    - - 0
+      - 15.4
+    - - 18
+      - 15.4
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: '#2E9E4F'
+    points:
+    - - 6.0
+      - 14.4
+    - - 11.0
+      - 14.4
+    width: 0.3
+  - g: text
+    at:
+    - 19.4
+    - 14.9
+    text: DNA Pol I fills, ligase seals
+    size: 0.8
+    align: left
+tags:
+- molecular_biology
+- repair
+notes_zh: '扭曲雙螺旋的大型損傷（UV 嘧啶雙體、6-4 光產物、苯并芘加成物、cisplatin 交聯）。E. coli：UvrA₂B 偵測 → UvrC 雙切（5′ 端 8 nt、3′ 端 4–5 nt）→ UvrD 移走 12–13-mer → Pol I、ligase。真核：GG-NER（XPC）與 TC-NER（停住的 Pol II + CSA/CSB）；TFIIH（XPB、XPD
+  解旋）打開，XPG 與 XPF–ERCC1 切除 24–32 nt。XP（xeroderma pigmentosum）：日光敏感、皮膚癌；Cockayne syndrome：TC-NER 缺陷。TFIIH 同時參與轉錄（CTD kinase 只用於轉錄）。
+
+  【補充】Eukaryotes: XPC (global genome) or stalled RNA Pol II + CSA/CSB (transcription-coupled) recognise the lesion; TFIIH helicases XPB/XPD open it; XPG (3'') and XPF–ERCC1 (5'') cut out 24–32 nt; Pol δ/ε
+  fill. Defects: xeroderma pigmentosum (UV-sensitive skin cancer), Cockayne syndrome.'
+parts_png: false
+status: pending

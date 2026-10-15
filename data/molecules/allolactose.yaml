@@ -1,0 +1,14 @@
+id: allolactose
+name: Allolactose
+label: Allolactose
+aliases:
+- Gal β(1→6) Glc
+smiles: OC[C@H]1O[C@@H](OC[C@H]2O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@H]1O
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: Lac operon 的天然 inducer：β-galactosidase 的轉糖苷副反應把 lactose 的 β(1→4) 改成 β(1→6)。結合 LacI 四聚體 → 構形改變、離開 operator。
+parts_png: false
+status: pending

@@ -1,0 +1,39 @@
+id: guanylyl_cyclase
+title: GTP → cGMP + PPi (guanylyl cyclase)
+substrates:
+- gtp
+products:
+- cgmp
+cofactors_out:
+- PPi
+prosthetic:
+- Mg^{2+}
+enzyme: guanylyl cyclase
+reversible: false
+decorate:
+  gtp:
+    colors:
+      d3:
+      - cyan
+      - O
+      u4:
+      - magenta
+      - '{P}–{P}'
+  PPi:
+    colors:
+      0: magenta
+  cgmp:
+    highlight:
+    - smarts: P1(=O)([O-])OCC2OC(n)C(O)C2[O:1]1
+      color: cyan
+card_zh:
+  location: 膜型（ANF / natriuretic peptide 受體本身）；可溶型（細胞質，含 heme，NO 受體）
+  type: 同 adenylyl cyclase：3′-OH 攻擊 α-P，放出 PPi
+  regulation: NO 結合可溶型 GC 的 heme Fe²⁺ → 活化（nitroglycerin、nitroprusside 放出 NO）
+  exam_points:
+  - NO–cGMP–PKG → 平滑肌放鬆、血管擴張
+  - ANF → 膜型 GC → 排鈉利尿、血管擴張
+tags:
+- signal_transduction
+- second_messenger
+status: pending

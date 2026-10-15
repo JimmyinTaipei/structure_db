@@ -1,0 +1,35 @@
+id: cyp17_hydroxylase
+title: Progesterone → 17α-Hydroxyprogesterone (CYP17A1, 17α-hydroxylase)
+substrates:
+- progesterone
+products:
+- oh_progesterone
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: 'CYP17A1
+
+  (17α-hydroxylase)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  oh_progesterone:
+    highlight:
+    - smarts: '[C;R](C(C)=O)[OH:1]'
+      color: magenta
+card_zh:
+  location: ER（束狀帶、網狀帶、性腺）
+  type: 單氧化
+  deficiency:
+  - 17α-hydroxylase 缺乏：cortisol 與性荷爾蒙 ↓，DOC ↑ → 高血壓、低血鉀；男性外生殖器女性化、女性青春期不發育
+  exam_points:
+  - ketoconazole、abiraterone（前列腺癌）抑制 CYP17
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

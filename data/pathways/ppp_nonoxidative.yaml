@@ -1,0 +1,126 @@
+id: ppp_nonoxidative
+title: 'Pentose phosphate pathway: non-oxidative phase'
+layout: free
+cell_size: 4.4
+nodes:
+- id: x5p
+  ref: xylulose_5p
+  pos:
+  - 0
+  - 0
+  view: name
+- id: r5p
+  ref: ribose_5p
+  pos:
+  - 0
+  - 1.2
+  view: name
+- id: s7p
+  ref: sedoheptulose_7p
+  pos:
+  - 2.2
+  - 0
+  view: name
+- id: gap
+  ref: glyceraldehyde_3p
+  pos:
+  - 2.2
+  - 1.2
+  view: name
+- id: f6p
+  ref: fructose_6p
+  pos:
+  - 4.4
+  - 0
+  view: name
+- id: e4p
+  ref: erythrose_4p
+  pos:
+  - 4.4
+  - 1.2
+  view: name
+- id: x5p2
+  ref: xylulose_5p
+  pos:
+  - 4.4
+  - 2.4
+  view: name
+- id: f6p2
+  ref: fructose_6p
+  pos:
+  - 6.6
+  - 1.2
+  view: name
+- id: gap2
+  ref: glyceraldehyde_3p
+  pos:
+  - 6.6
+  - 2.4
+  view: name
+- id: c1
+  text: C_5 + C_5
+  pos:
+  - 0
+  - -0.75
+  kind: plain
+- id: c2
+  text: C_7 + C_3
+  pos:
+  - 2.2
+  - -0.75
+  kind: plain
+- id: c3
+  text: C_6 + C_4
+  pos:
+  - 4.4
+  - -0.75
+  kind: plain
+- id: c4
+  text: C_6 + C_3
+  pos:
+  - 6.6
+  - 0.45
+  kind: plain
+- id: net
+  text: 'Net: 3 C_5 → 2 C_6 + C_3
+
+    (3 Ru5P → 2 F6P + GAP)'
+  pos:
+  - 1.1
+  - 3.0
+  kind: concept
+edges:
+- from: r5p
+  to: gap
+  step: transketolase_1
+  label: 'transketolase
+
+    (TPP, 2C)'
+  label_side: right
+- from: x5p
+  to: s7p
+  step: transketolase_1
+- from: s7p
+  to: f6p
+  step: transaldolase
+  label: 'transaldolase
+
+    (3C)'
+- from: gap
+  to: e4p
+  step: transaldolase
+- from: e4p
+  to: f6p2
+  step: transketolase_2
+  label: 'transketolase
+
+    (2C)'
+- from: x5p2
+  to: gap2
+  step: transketolase_2
+tags:
+- carb_metabolism
+- PPP
+notes_zh: 非氧化期：Ru5P 經 isomerase → R5P（核苷酸）或 3-epimerase → Xu5P。Transketolase（TPP）把酮糖供體（Xu5P）的 C1–C2 轉給醛糖受體；transaldolase 轉 C1–C3（不需 TPP，Schiff base）。口訣：酮糖（上盤）供、醛糖（底座）受；TK「左 2」、TA「右 3」。全部可逆：需 NADPH 多於 R5P
+  時 → 轉成 F6P、GAP 回糖解；需 R5P 多於 NADPH（分裂中細胞）→ 由 F6P、GAP 逆向生成 R5P，不經氧化期。¹⁴C：glucose C1 在 6PG DH 以 CO₂ 離開。紅血球 transketolase 活性可評估 thiamine（B₁）狀態（Wernicke）。
+status: pending

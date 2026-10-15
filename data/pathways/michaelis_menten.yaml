@@ -1,0 +1,64 @@
+id: michaelis_menten
+title: Michaelis–Menten kinetics
+layout: plot
+plot:
+  size:
+  - 15
+  - 9.5
+  params:
+    Vmax: 1
+    Km: 2
+  x:
+    min: 0
+    max: 20
+    label: '[S]'
+    marks:
+    - at: Km
+      label: K_m
+  y:
+    min: 0
+    max: 1.2
+    label: v_0
+    marks:
+    - at: Vmax
+      label: V_{max}
+    - at: Vmax/2
+      label: V_{max}/2
+  hlines:
+  - y: Vmax
+  curves:
+  - id: mm
+    y: mm(x, Vmax, Km)
+    width: 1.1
+  points:
+  - 'on': mm
+    x: Km
+    y: Vmax/2
+    drop: true
+    dot: true
+  texts:
+  - at:
+    - 3.0
+    - 0.16
+    text: 'First order (low [S])
+
+      v_0 ≈ (V_{max}/K_m)[S]'
+    align: left
+    color: cyan
+  - at:
+    - 15.5
+    - 0.7
+    text: 'Zero order (saturated)
+
+      v_0 ≈ V_{max}'
+    color: magenta
+  - at:
+    - 12.5
+    - 0.38
+    text: v_0 = V_{max}[S] / (K_m + [S])
+    size: 1.05
+tags:
+- enzyme
+- enzyme_kinetics
+notes_zh: Michaelis–Menten：v₀ = V_{max}[S]/(K_m + [S])。K_m 是 v₀ = ½V_{max} 時的 [S]（K_m 小 → 親和力高）。[S] ≪ K_m 時近似一級反應（v₀ ∝ [S]），[S] ≫ K_m 時近似零級（v₀ ≈ V_{max}，酵素飽和）。V_{max} = k_cat[E]_t；催化效率 = k_cat/K_m。
+status: pending

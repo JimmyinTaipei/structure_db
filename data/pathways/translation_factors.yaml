@@ -1,0 +1,147 @@
+id: translation_factors
+title: 'Translation factors: bacteria vs eukaryotes'
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.2
+    - 0.0
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Initiation
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 0.0
+    text: bacteria IF1, IF2·GTP, IF3  ·  eukaryotes eIF1, 1A, 2·GTP, 2B (GEF), 3, 4F (4E cap-binding, 4G scaffold, 4A helicase), 5, 5B
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 1.6
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Elongation
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 1.6
+    text: EF-Tu·GTP brings aa-tRNA (eEF1A) · EF-Ts exchanges GDP (eEF1B) · EF-G·GTP translocation (eEF2)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 3.2
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Termination
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 3.2
+    text: RF1 (UAA, UAG), RF2 (UAA, UGA), RF3·GTP  ·  eRF1 (all three stops), eRF3·GTP
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 4.800000000000001
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Recycling
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 4.800000000000001
+    text: RRF + EF-G  ·  ABCE1
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 6.4
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Start signal
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 6.4
+    text: Shine–Dalgarno (AGGAGG) pairs with 16S rRNA  ·  5′ cap + scanning to a Kozak AUG (gccRccAUGG)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 8.0
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Initiator
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 8.0
+    text: fMet-tRNA_{fMet}; start AUG (GUG, UUG)  ·  Met-tRNA_i; AUG only
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 9.6
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: mRNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 9.6
+    text: polycistronic, coupled to transcription  ·  monocistronic, exported first; circular polysome (cap–eIF4G–PABP)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.2
+    - 11.2
+    w: 6.4
+    h: 1.3
+    shape: box
+    hue: purple
+    text: Ribosome
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.0
+    - 11.2
+    text: 70S = 30S + 50S  ·  80S = 40S + 60S
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: 起始 IF1-3 vs eIF1、1A、2、2B、3、4F、5、5B；延長 EF-Tu/EF-Ts/EF-G vs eEF1A/eEF1B/eEF2；終止 RF1/RF2/RF3 vs eRF1/eRF3；回收 RRF vs ABCE1。SD vs cap + Kozak；fMet vs Met；70S vs 80S。
+parts_png: false
+status: pending

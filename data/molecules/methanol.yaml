@@ -1,0 +1,17 @@
+id: methanol
+name: Methanol
+aliases:
+- MeOH
+- 甲醇
+smiles: CO
+chain:
+- c: C
+  l: H
+  r: OH
+  u: H
+  d: H
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: 經 ADH → formaldehyde → formate；formate 抑制 cytochrome c oxidase → 視神經損傷（失明）、代謝性酸中毒（高陰離子間隙）。治療：fomepizole（ADH 抑制劑）或乙醇（競爭 ADH）、血液透析、folate。
+status: pending

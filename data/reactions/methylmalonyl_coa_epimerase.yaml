@@ -1,0 +1,23 @@
+id: methylmalonyl_coa_epimerase
+title: (S)-Methylmalonyl-CoA ⇌ (R)-Methylmalonyl-CoA (epimerase)
+substrates:
+- s_methylmalonyl_coa
+products:
+- r_methylmalonyl_coa
+enzyme: 'methylmalonyl-CoA
+
+  epimerase'
+reversible: true
+decorate:
+  s_methylmalonyl_coa:
+    colors:
+      1: {l: magenta, r: cyan}
+  r_methylmalonyl_coa:
+    colors:
+      1: {l: cyan, r: magenta}
+card_zh:
+  type: 差向異構化
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

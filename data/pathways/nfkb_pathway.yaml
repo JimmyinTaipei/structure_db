@@ -1,0 +1,309 @@
+id: nfkb_pathway
+title: NF-κB pathway
+layout: free
+cell_size: 4.4
+nodes:
+- id: sig
+  text: 'TNF-α → TNF receptor
+
+    LPS → Toll-like receptor
+
+    UV, virus'
+  pos:
+  - 0
+  - 0
+  kind: name
+- id: ikk
+  text: IκB kinase (IKK)
+  pos:
+  - 0
+  - 1.15
+  kind: protein
+- id: cx
+  text: NF-κB · IκB (cytosol, inactive)
+  pos:
+  - 0
+  - 2.15
+  kind: protein
+- id: ib
+  text: 'IκB-P → ubiquitin
+
+    → proteasome'
+  pos:
+  - -1.6
+  - 3.2
+  kind: name
+- id: nf
+  text: Free NF-κB → nucleus
+  pos:
+  - 1.6
+  - 3.2
+  kind: protein
+- id: gene
+  text: 'Inflammatory cytokines,
+
+    anti-apoptotic genes'
+  pos:
+  - 1.6
+  - 4.2
+  kind: name
+edges:
+- from: sig
+  to: ikk
+- from: ikk
+  to: cx
+  label: IκB-P
+- from: cx
+  to: ib
+- from: cx
+  to: nf
+- from: nf
+  to: gene
+tags:
+- signal_transduction
+notes_zh: NF-κB 平時被 IκB 留在細胞質。TNF-α、TLR（細菌 LPS、病毒）、UV → IKK 磷酸化 IκB → 泛素化 → proteasome 分解 → NF-κB 露出 NLS 入核 → 發炎細胞激素、抗凋亡基因。Glucocorticoid 誘導 IκB 合成 → 抗發炎；aspirin（高劑量）抑制 IKK。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 32.0
+        - 2.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 32.0
+        - 6.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 4.0
+        x0: -1.0
+        x1: 32.0
+        lipids: true
+      - g: ligand
+        at:
+        - 4.0
+        - 0.0
+        shape: triangle
+        hue: red
+        r: 0.5
+      - g: text
+        at:
+        - 5.4
+        - 0.0
+        text: TNF-α
+        size: 0.65
+        align: left
+      - g: blob
+        at:
+        - 3.4
+        - 1.6
+        w: 0.9
+        h: 1.4
+        shape: oval
+        hue: purple
+      - g: blob
+        at:
+        - 4.6
+        - 1.6
+        w: 0.9
+        h: 1.4
+        shape: oval
+        hue: purple
+      - g: blob
+        at:
+        - 3.4
+        - 4.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: purple
+      - g: blob
+        at:
+        - 4.6
+        - 4.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: purple
+      - g: blob
+        at:
+        - 4.0
+        - 7.4
+        w: 2.0
+        h: 1.3
+        shape: oval
+        hue: purple
+        accent: true
+        text: IKK
+        text_size: 0.5
+      - g: arrow
+        from:
+        - 4.0
+        - 6.0
+        to:
+        - 4.0
+        - 6.6
+        color: black
+        curve: 0
+      - g: arrow
+        from:
+        - 5.2
+        - 7.6
+        to:
+        - 8.6
+        - 8.6
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 10.4
+        - 9.2
+        w: 2.6
+        h: 1.6
+        shape: oval
+        hue: blue
+        text: NF-κB
+        text_size: 0.45
+      - g: blob
+        at:
+        - 11.6
+        - 10.6
+        w: 1.6
+        h: 0.9
+        shape: oval
+        hue: red
+        text: IκB
+        text_size: 0.4
+      - g: ion
+        at:
+        - 12.6
+        - 11.2
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 11.8
+        - 11.4
+        to:
+        - 12.6
+        - 13.0
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 12.4
+        - 13.6
+        r: 0.26
+        hue: yellow
+      - g: ion
+        at:
+        - 12.9
+        - 13.5
+        r: 0.26
+        hue: yellow
+      - g: ion
+        at:
+        - 13.4
+        - 13.4
+        r: 0.26
+        hue: yellow
+      - g: ion
+        at:
+        - 13.9
+        - 13.299999999999999
+        r: 0.26
+        hue: yellow
+      - g: text
+        at:
+        - 14.8
+        - 13.2
+        text: Ub
+        size: 0.6
+        align: left
+      - g: blob
+        at:
+        - 13.6
+        - 15.6
+        w: 1.4
+        h: 2.4
+        shape: box
+        hue: gray
+      - g: blob
+        at:
+        - 13.6
+        - 15.6
+        w: 1.8
+        h: 0.5
+        shape: box
+        hue: gray
+      - g: text
+        at:
+        - 15.0
+        - 15.8
+        text: proteasome
+        size: 0.62
+        align: left
+        color: gray
+      - g: arrow
+        from:
+        - 12.0
+        - 8.8
+        to:
+        - 18.6
+        - 8.8
+        color: black
+        curve: 0
+      - g: region
+        x0: 19.0
+        y0: 7.0
+        x1: 31.0
+        y1: 15.0
+        hue: blue
+        opacity: 0.18
+        dashed: true
+      - g: text
+        at:
+        - 30.6
+        - 7.6
+        text: nucleus
+        size: 0.65
+        align: right
+        color: gray
+      - g: dsdna
+        from:
+        - 20.0
+        - 12.8
+        to:
+        - 30.2
+        - 12.8
+        width: 1.0
+      - g: blob
+        at:
+        - 24.4
+        - 11.2
+        w: 2.6
+        h: 1.4
+        shape: oval
+        hue: blue
+        accent: true
+        text: NF-κB
+        text_size: 0.45
+      - g: text
+        at:
+        - 25.0
+        - 8.8
+        text: inflammation, anti-apoptosis
+        size: 0.62
+        align: center

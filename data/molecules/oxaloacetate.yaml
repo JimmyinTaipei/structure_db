@@ -1,0 +1,17 @@
+id: oxaloacetate
+name: Oxaloacetate
+aliases: [OAA, 草醯乙酸]
+smiles: "[O-]C(=O)C(=O)CC(=O)[O-]"
+chain:                              # O 在左：對應 malate 的 HO 在左（MDH 用）
+  - {c: "COO^-"}
+  - {c: C, l: O, lb: 2}
+  - {c: CH_2}
+  - {c: "COO^-"}
+chains:
+  cs:                               # 老師的畫法（citrate synthase 用）：C=O 碳在最上，變成 citrate 的中心碳
+    - {c: C, l: O, lb: 2, r: "COO^-"}
+    - {c: CH_2}
+    - {c: "COO^-"}
+tags: [carb_metabolism, TCA, gluconeogenesis]
+notes_zh: TCA 起點與終點；也是糖質新生（PC → OAA → PEPCK）的中間物；無法直接穿過粒線體內膜（malate／aspartate 穿梭）。
+status: approved

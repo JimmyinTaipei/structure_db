@@ -1,0 +1,13 @@
+id: protoporphyrin
+name: Protoporphyrin IX
+aliases:
+- protoporphyrin
+- 原紫質
+smiles: C=CC1=C(C)C2=CC3=NC(=CC4=C(C)C(CCC(=O)[O-])=C(N4)C=C4N=C(C=C1N2)C(C)=C4C=C)C(CCC(=O)[O-])=C3C
+ring:
+  methyls: false
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: 4 個吡咯以 =CH– 相連成共軛大環；側鏈：4 CH₃、2 乙烯基、2 丙酸。ferrochelatase（粒線體，鉛抑制）放入 Fe²⁺ → heme。
+status: pending

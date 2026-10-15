@@ -1,0 +1,19 @@
+id: phosphoglucose_isomerase
+title: "Glycolysis ② Glucose 6-phosphate ⇌ Fructose 6-phosphate"
+step: 2
+substrates: [glucose_6p]
+products: [fructose_6p]
+enzyme: "phosphohexose\nisomerase"
+reversible: true
+decorate:
+  glucose_6p: {colors: {0: magenta, 1: magenta}}
+  fructose_6p: {colors: {0: magenta, 1: magenta}}
+card_zh:
+  location: 細胞質
+  type: 異構化（醛糖 → 酮糖）
+  deltaG: "ΔG'° = +1.7 kJ/mol，可逆"
+  mechanism: "經 enediol 中間物；C1 醛基變成 C2 酮基，為下一步在 C1 磷酸化做準備"
+  exam_points:
+    - "又稱 phosphoglucose isomerase（PGI）"
+tags: [carb_metabolism, glycolysis]
+status: pending

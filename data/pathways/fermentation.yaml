@@ -1,0 +1,92 @@
+id: fermentation
+title: 'Fermentation: regenerating NAD+'
+layout: free
+cell_size: 4.6
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  view: name
+- id: pyr
+  ref: pyruvate
+  pos:
+  - 0
+  - 1.3
+  view: name
+- id: lac
+  ref: lactate
+  pos:
+  - -1.4
+  - 2.5
+  view: name
+- id: acal
+  ref: acetaldehyde
+  pos:
+  - 1.4
+  - 2.5
+  view: name
+- id: etoh
+  ref: ethanol
+  pos:
+  - 1.4
+  - 3.7
+  view: name
+- id: hom
+  text: 'Muscle (anaerobic), RBC,
+
+    lactic acid bacteria'
+  pos:
+  - -1.4
+  - 3.2
+  kind: name
+- id: yeast
+  text: Yeast (alcoholic fermentation)
+  pos:
+  - 1.4
+  - 4.3
+  kind: name
+- id: aer
+  text: 'O_2 present: NADH → ETC,
+
+    pyruvate → acetyl-CoA (PDH)'
+  pos:
+  - -2.2
+  - 1.3
+  kind: name
+edges:
+- from: glc
+  to: pyr
+  label: 'glycolysis
+
+    (GAPDH)'
+  side_text: 2 NAD^+ → 2 NADH
+  label_side: left
+- from: pyr
+  to: lac
+  step: ldh
+  label: lactate DH
+  side_text: NADH → NAD^+
+- from: pyr
+  to: acal
+  step: pyruvate_decarboxylase
+  label: 'pyruvate
+
+    decarboxylase (TPP)'
+  side_text: → CO_2
+  label_side: left
+- from: acal
+  to: etoh
+  step: alcohol_dehydrogenase
+  label: alcohol DH
+  side_text: NADH → NAD^+
+  label_side: right
+tags:
+- carb_metabolism
+- glycolysis
+- energy_metabolism
+- ethanol
+notes_zh: 無氧時 NADH 無法經 ETC 氧化，GAPDH 需要的 NAD⁺ 必須在細胞質再生：乳酸發酵（LDH）或酒精發酵（PDC + ADH）。兩者都淨得 2 ATP／glucose，沒有淨氧化還原（GAPDH 產生的 NADH 在最後一步用掉）。Pasteur effect：有氧時葡萄糖消耗速率下降（每分子產 ~30–32 ATP，ATP、citrate 抑制 PFK-1）。人體沒有
+  pyruvate decarboxylase；肝的 ADH 方向相反（ethanol → acetaldehyde）。
+status: pending

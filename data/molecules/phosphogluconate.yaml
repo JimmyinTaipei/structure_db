@@ -1,0 +1,33 @@
+id: phosphogluconate
+name: 6-Phosphogluconate
+label: '6-Phospho-
+
+  gluconate'
+aliases:
+- 6PG
+- 6-磷酸葡萄糖酸
+smiles: '[O-]C(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: HO
+  r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- PPP
+notes_zh: 醛糖酸（C1 為 COO⁻）。6-phosphogluconate DH 把 C3 氧化並脫去 C1 → Ru5P + CO₂ + 第二個 NADPH。
+status: pending

@@ -1,0 +1,67 @@
+id: hydroxyproline
+name: 4-Hydroxyproline
+aliases:
+- Hyp
+- trans-4-hydroxy-L-proline
+- 羥脯胺酸
+smiles: '[O-]C(=O)[C@@H]1C[C@@H](O)C[NH2+]1'
+free:
+  atoms:
+    a:
+    - COO^-
+    - 0
+    - -0.15
+    ca:
+    - C
+    - 0
+    - 1
+    h:
+    - H
+    - 0.72
+    - 0.5
+    n:
+    - ^+H_2N
+    - -1.15
+    - 1
+    cb:
+    - CH_2
+    - 1.15
+    - 1
+    cg:
+    - CH
+    - 1.15
+    - 2
+    oh:
+    - OH
+    - 2.3
+    - 2
+    cd:
+    - H_2C
+    - -1.15
+    - 2
+  bonds:
+  - - a
+    - ca
+  - - ca
+    - h
+  - - ca
+    - n
+  - - ca
+    - cb
+  - - cb
+    - cg
+  - - cg
+    - oh
+  - - cg
+    - cd
+  - - cd
+    - n
+decorate:
+  colors:
+    oh: magenta
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: Collagen 的 Gly-X-Y 中 Y 位常為 Hyp：prolyl 4-hydroxylase 在 ER 內修飾（轉譯後），需 Fe²⁺、α-KG、O₂ 與 vitamin C（維持 Fe²⁺）。Hyp 的 OH 形成氫鍵穩定三股螺旋；缺 vitamin C → scurvy（牙齦出血、傷口難癒）。HIF-1α 的 Pro 羥化則標記它被降解。
+status: pending

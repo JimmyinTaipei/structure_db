@@ -1,0 +1,22 @@
+id: hydroxyacyl_coa
+name: L-3-Hydroxyacyl-CoA
+label: L-3-Hydroxyacyl-CoA
+aliases:
+- β-hydroxyacyl-CoA
+- 3-羥醯輔酶A
+smiles: '[8*][C@H](O)CC(=O)S[1*]'
+chain:
+- c: R
+- c: C
+  l: H
+  r: OH
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: enoyl-CoA hydratase 加水，OH 在 β 碳（L 型；合成時的中間物則是 D 型，接在 ACP 上）。
+status: pending

@@ -1,0 +1,36 @@
+id: amino_acids
+title: 20 種胺基酸（依 R 基分組，Lehninger）
+layout: free
+text: false                 # 結構總表，不需要文字版
+cell_size: 7.2              # 一格 = 7.2 S
+node_anchor: top            # pos 是節點的頂端中點 → 同一列的 COO⁻ 對齊
+molecule_deco: default      # 顯示各胺基酸自己的 R 基底色與元素配色
+nodes:
+  - {id: h1, text: "Nonpolar, aliphatic R groups", kind: heading, pos: [-0.5, -0.45]}
+  - {id: gly, ref: glycine,       pos: [0, 0]}
+  - {id: ala, ref: alanine,       pos: [1, 0]}
+  - {id: pro, ref: proline,       pos: [2.15, 0]}
+  - {id: val, ref: valine,        pos: [3.35, 0]}
+  - {id: leu, ref: leucine,       pos: [4.5, 0]}
+  - {id: ile, ref: isoleucine,    pos: [5.6, 0]}
+  - {id: met, ref: methionine,    pos: [6.65, 0]}
+  - {id: h2, text: "Aromatic R groups", kind: heading, pos: [-0.5, 2.15]}
+  - {id: phe, ref: phenylalanine, pos: [0.1, 2.6]}
+  - {id: tyr, ref: tyrosine,      pos: [1.35, 2.6]}
+  - {id: trp, ref: tryptophan,    pos: [2.85, 2.6]}
+  - {id: h5, text: "Negatively charged R groups", kind: heading, pos: [4.4, 2.15]}
+  - {id: asp, ref: aspartate,     pos: [4.9, 2.6]}
+  - {id: glu, ref: glutamate,     pos: [6.1, 2.6]}
+  - {id: h3, text: "Polar, uncharged R groups", kind: heading, pos: [-0.5, 4.75]}
+  - {id: ser, ref: serine,        pos: [0, 5.2]}
+  - {id: thr, ref: threonine,     pos: [1.1, 5.2]}
+  - {id: cys, ref: cysteine,      pos: [2.2, 5.2]}
+  - {id: asn, ref: asparagine,    pos: [3.3, 5.2]}
+  - {id: gln, ref: glutamine,     pos: [4.45, 5.2]}
+  - {id: h4, text: "Positively charged R groups", kind: heading, pos: [-0.5, 7.35]}
+  - {id: lys, ref: lysine,        pos: [0, 7.8]}
+  - {id: arg, ref: arginine,      pos: [1.2, 7.8]}
+  - {id: his, ref: histidine,     pos: [2.45, 7.8]}
+edges: []
+tags: [amino_acid]
+status: pending

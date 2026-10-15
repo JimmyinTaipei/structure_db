@@ -1,0 +1,13 @@
+id: guanine_dr
+name: Guanine (in DNA)
+label: Guanine (in DNA)
+aliases: []
+smiles: '[17*]n1cnc2c(=O)[nH]c(N)nc21'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- repair
+notes_zh: DNA 中的 guanine（dR = 去氧核糖與骨架）。
+parts_png: false
+status: pending

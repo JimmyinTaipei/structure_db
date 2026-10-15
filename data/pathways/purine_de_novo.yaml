@@ -1,0 +1,38 @@
+id: purine_de_novo
+title: Purine de novo synthesis（嘌呤從頭合成，名稱版）
+layout: free
+cell_size: 3.6                # 一格 = 3.6 S
+nodes:
+  - {id: prpp, ref: prpp, view: name, pos: [0, 0]}
+  - {id: pra, ref: pra, view: name, pos: [0, 1.3]}
+  - {id: gar, text: GAR, kind: name, pos: [0, 2.6]}
+  - {id: fgar, text: FGAR, kind: name, pos: [0, 3.85]}
+  - {id: fgam, text: FGAM, kind: name, pos: [0, 5.1]}
+  - {id: air, text: AIR, kind: name, pos: [0, 6.35]}
+  - {id: cair, text: CAIR, kind: name, pos: [5.6, 6.35]}
+  - {id: saicar, text: SAICAR, kind: name, pos: [5.6, 5.1]}
+  - {id: aicar, text: AICAR, kind: name, pos: [5.6, 3.85]}
+  - {id: faicar, text: FAICAR, kind: name, pos: [5.6, 2.6]}
+  - {id: imp, ref: imp, view: name, pos: [5.6, 1.3]}
+  - {id: samp, ref: adenylosuccinate, view: name, pos: [10, -0.2]}
+  - {id: amp, ref: amp, view: name, pos: [14.4, -0.2]}
+  - {id: xmp, ref: xmp, view: name, pos: [10, 2.8]}
+  - {id: gmp, ref: gmp, view: name, pos: [14.4, 2.8]}
+edges:
+  - {from: prpp, to: pra, step: amidophosphoribosyltransferase, label: "Gln-PRPP amidotransferase", side_text: "Gln + H_2O → Glu + PP_i", label_side: left}
+  - {from: pra, to: gar, label: "GAR synthetase", side_text: "Gly + ATP → ADP + P_i", label_side: left}
+  - {from: gar, to: fgar, label: "GAR transformylase", side_text: "N^{10}-formyl-THF → THF", label_side: left}
+  - {from: fgar, to: fgam, label: "FGAM synthetase", side_text: "Gln + ATP → Glu + ADP + P_i", label_side: left}
+  - {from: fgam, to: air, label: "AIR synthetase", side_text: "ATP → ADP + P_i", label_side: left}
+  - {from: air, to: cair, label: "AIR carboxylase", side_text: "CO_2"}
+  - {from: cair, to: saicar, label: "SAICAR synthetase", side_text: "Asp + ATP → ADP + P_i", label_side: left}
+  - {from: saicar, to: aicar, label: "adenylosuccinate lyase", side_text: "→ fumarate", label_side: left}
+  - {from: aicar, to: faicar, label: "AICAR transformylase", side_text: "N^{10}-formyl-THF → THF", label_side: left}
+  - {from: faicar, to: imp, label: "IMP cyclohydrolase", side_text: "→ H_2O", label_side: left}
+  - {from: imp, to: samp, step: adenylosuccinate_synthetase, label: "adenylosuccinate\nsynthetase", side_text: "Asp + GTP → GDP + P_i"}
+  - {from: samp, to: amp, step: adenylosuccinate_lyase, label: "lyase", side_text: "→ fumarate"}
+  - {from: imp, to: xmp, step: imp_dehydrogenase, label: "IMP DH", side_text: "NAD^+ + H_2O → NADH", label_side: left}
+  - {from: xmp, to: gmp, step: gmp_synthetase, label: "GMP\nsynthetase", side_text: "Gln + ATP → Glu + AMP + PP_i"}
+tags: [nucleotide, purine]
+notes_zh: "10 步由 PRPP 蓋到 IMP（嘌呤環直接蓋在核糖上）。原子來源見「嘌呤環原子來源」。限速：Gln-PRPP amidotransferase（IMP/AMP/GMP 回饋抑制、PRPP 活化）。做 AMP 用 GTP、做 GMP 用 ATP。"
+status: pending

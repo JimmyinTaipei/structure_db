@@ -1,0 +1,187 @@
+id: base_pair_at
+name: A=T base pair
+label: A=T (2 H-bonds)
+aliases:
+- A-T pair
+- Watson-Crick AT
+smiles: Nc1ncnc2[nH]cnc12.Cc1c[nH]c(=O)[nH]c1=O
+free:
+  schematic: true
+  atoms:
+    l_n1:
+    - N
+    - -1.082
+    - -0.246
+    l_c6:
+    - ''
+    - -1.754
+    - -0.918
+    l_c5:
+    - ''
+    - -2.672
+    - -0.672
+    l_c4:
+    - ''
+    - -2.918
+    - 0.246
+    l_n3:
+    - N
+    - -2.246
+    - 0.918
+    l_c2:
+    - ''
+    - -1.328
+    - 0.672
+    l_n7:
+    - N
+    - -3.469
+    - -1.19
+    l_c8:
+    - ''
+    - -4.207
+    - -0.591
+    l_n9:
+    - N
+    - -3.867
+    - 0.296
+    l_n6:
+    - N
+    - -1.508
+    - -1.835
+    l_h6a:
+    - H
+    - -0.735
+    - -2.042
+    l_h6b:
+    - H
+    - -2.074
+    - -2.401
+    l_s1:
+    - Sugar
+    - -4.724
+    - 0.896
+    - 0
+    r_n3:
+    - N
+    - 1.082
+    - -0.246
+    r_c4:
+    - ''
+    - 1.754
+    - -0.918
+    r_c5:
+    - ''
+    - 2.672
+    - -0.672
+    r_c6:
+    - ''
+    - 2.918
+    - 0.246
+    r_n1:
+    - N
+    - 2.246
+    - 0.918
+    r_c2:
+    - ''
+    - 1.328
+    - 0.672
+    r_o2:
+    - O
+    - 0.656
+    - 1.344
+    r_o4:
+    - O
+    - 1.508
+    - -1.835
+    r_h3:
+    - H
+    - 0.309
+    - -0.453
+    r_me:
+    - CH_3
+    - 3.344
+    - -1.344
+    - 0
+    r_s2:
+    - Sugar
+    - 2.984
+    - 1.657
+    - 0
+  bonds:
+  - - l_c6
+    - l_n1
+    - 2
+  - - l_n1
+    - l_c2
+  - - l_c2
+    - l_n3
+    - 2
+  - - l_n3
+    - l_c4
+  - - l_c4
+    - l_c5
+    - 2
+  - - l_c5
+    - l_c6
+  - - l_c5
+    - l_n7
+  - - l_n7
+    - l_c8
+    - 2
+  - - l_c8
+    - l_n9
+  - - l_n9
+    - l_c4
+  - - l_c6
+    - l_n6
+  - - l_n6
+    - l_h6a
+  - - l_n6
+    - l_h6b
+  - - l_n9
+    - l_s1
+  - - r_n1
+    - r_c2
+  - - r_c2
+    - r_o2
+    - 2
+  - - r_c5
+    - r_c6
+    - 2
+  - - r_c6
+    - r_n1
+  - - r_c2
+    - r_n3
+  - - r_n3
+    - r_c4
+  - - r_c4
+    - r_c5
+  - - r_c4
+    - r_o4
+    - 2
+  - - r_n3
+    - r_h3
+  - - r_c5
+    - r_me
+  - - r_n1
+    - r_s2
+  - - l_h6a
+    - r_o4
+    - hb
+  - - l_n1
+    - r_h3
+    - hb
+  notes:
+  - - Major groove
+    - 0
+    - -2.85
+    - gray
+  - - Minor groove
+    - 0
+    - 2.75
+    - gray
+tags:
+- nucleotide
+- base_pairing
+notes_zh: Watson–Crick A=T：2 個氫鍵（A 的 N6–H⋯O4，A 的 N1⋯H–N3）。糖接在同一側 → 上方大溝、下方小溝。A=U 在 RNA 中相同。
+status: pending

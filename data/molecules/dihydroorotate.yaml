@@ -1,0 +1,8 @@
+id: dihydroorotate
+name: "Dihydroorotate"
+aliases: [DHO]
+smiles: "O=C([O-])[C@@H]1CC(=O)NC(=O)[NH]1"
+ring: {down: 10, right: 8}
+tags: [nucleotide, pyrimidine]
+notes_zh: "L-dihydroorotate。dihydroorotase 環化產物；DHODH（粒線體內膜，接 CoQ）氧化成 orotate。"
+status: pending

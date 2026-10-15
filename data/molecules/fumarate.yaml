@@ -1,0 +1,12 @@
+id: fumarate
+name: Fumarate
+aliases: [延胡索酸, 反丁烯二酸]
+smiles: "[O-]C(=O)/C=C/C(=O)[O-]"
+chain:                              # trans：兩個 H 分在左右兩側（Mathews 的畫法）
+  - {c: "COO^-"}
+  - {c: C, r: H, down: 2}
+  - {c: C, l: H}
+  - {c: "COO^-"}
+tags: [TCA, urea]
+notes_zh: trans 異構物；尿素循環（argininosuccinate lyase）也會產生 fumarate。
+status: approved

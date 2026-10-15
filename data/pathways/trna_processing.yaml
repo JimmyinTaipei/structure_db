@@ -1,0 +1,126 @@
+id: trna_processing
+title: tRNA processing
+layout: scene
+scene:
+  items:
+  - g: trna
+    at:
+    - 5.0
+    - 6.2
+    leader: 2.4
+    trailer: 2.4
+    cca: false
+    intron: true
+  - g: mark
+    kind: cut
+    at:
+    - 4.78
+    - 3.7
+    side: up
+  - g: mark
+    kind: cut
+    at:
+    - 5.22
+    - 3.7
+    side: up
+  - g: text
+    at:
+    - 0.6
+    - 0.2
+    text: 'RNase P (ribozyme)
+
+      cuts off the 5′ leader'
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 7.0
+    - 0.2
+    text: RNase Z / RNase D
+    size: 0.72
+    align: left
+  - g: text
+    at:
+    - 5.0
+    - 11.4
+    text: intron (eukaryotes)
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 2.6
+    - 2.3
+    text: 5′ leader
+    size: 0.62
+    align: right
+    color: gray
+  - g: text
+    at:
+    - 7.4
+    - 2.5
+    text: 3′ trailer (…UUU, La)
+    size: 0.62
+    align: left
+    color: gray
+  - g: arrow
+    from:
+    - 10.4
+    - 6.6
+    to:
+    - 13.4
+    - 6.6
+    style: fat
+  - g: trna
+    at:
+    - 18.0
+    - 6.2
+    anticodon: anticodon
+  - g: text
+    at:
+    - 15.6
+    - 4.65
+    text: D loop
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 20.5
+    - 4.65
+    text: TΨC loop
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 17.4
+    - 3.2
+    text: 5′
+    size: 0.62
+    align: center
+    color: '#C2338A'
+  - g: text
+    at:
+    - 20.0
+    - 2.6
+    text: CCA added
+    size: 0.72
+    align: left
+  - g: text
+    at:
+    - 21.5
+    - 8.2
+    text: modified bases (D, Ψ, T, I)
+    size: 0.72
+    align: left
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'Pol III 轉錄（內部啟動子 A、B box）。RNase P（核酶）切 5′ leader；3′ trailer：E. coli 由 RNase D 等外切酶、真核由 RNase Z（內切）；CCA 由 tRNA nucleotidyltransferase 加上（E. coli 基因已編碼）；真核部分 pre-tRNA 在反密碼子環有 intron（endonuclease
+  + ligase）；鹼基修飾：D、Ψ、T、I、m¹G。
+
+  【補充】Pol III transcribes tRNA genes (internal promoter: A and B boxes). Order: RNase P (5′) and RNase Z / exonucleases (3′) → CCA → splicing → modifications → export. E. coli: tRNAs also come out of rRNA
+  operons; CCA is encoded (nucleotidyltransferase only repairs it). RNase P = protein + catalytic M1 RNA. The amino acid is attached to the 3′-terminal A (2′- or 3′-OH) by aminoacyl-tRNA synthetase (round
+  21).'
+parts_png: false
+status: pending

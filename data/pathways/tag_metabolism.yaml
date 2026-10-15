@@ -1,0 +1,150 @@
+id: tag_metabolism
+title: TAG synthesis & lipolysis（三酸甘油酯合成與分解，名稱版）
+layout: free
+cell_size: 6.2
+text: false
+nodes:
+- id: hs
+  text: Synthesis (liver, adipose)
+  kind: heading
+  pos:
+  - 0
+  - -0.7
+- id: hl
+  text: Lipolysis (adipose)
+  kind: heading
+  pos:
+  - 2.6
+  - -0.7
+- id: g3p
+  ref: glycerol_3p
+  pos:
+  - 0
+  - 0
+  view: name
+- id: lpa
+  text: Lysophosphatidate
+  kind: name
+  pos:
+  - 0
+  - 1
+- id: pa
+  ref: phosphatidate
+  pos:
+  - 0
+  - 2
+  view: name
+- id: dag
+  text: Diacylglycerol
+  kind: name
+  pos:
+  - 0
+  - 3
+- id: tag
+  ref: triacylglycerol
+  pos:
+  - 0
+  - 4
+  view: name
+- id: tag2
+  ref: triacylglycerol
+  pos:
+  - 2.6
+  - 0
+  view: name
+- id: dag2
+  text: Diacylglycerol
+  kind: name
+  pos:
+  - 2.6
+  - 1
+- id: mag
+  text: Monoacylglycerol
+  kind: name
+  pos:
+  - 2.6
+  - 2
+- id: gol
+  ref: glycerol
+  pos:
+  - 2.6
+  - 3
+  view: name
+- id: fa
+  text: '3 Fatty acids
+
+    (→ albumin)'
+  kind: plain
+  pos:
+  - 3.9
+  - 1.5
+- id: dhap
+  ref: dhap
+  pos:
+  - -1.3
+  - -0.6
+  view: name
+- id: gol0
+  ref: glycerol
+  pos:
+  - -1.3
+  - 0.6
+  view: name
+- id: pl
+  text: 'Phospholipids
+
+    (PC, PE, PS, PI…)'
+  kind: plain
+  pos:
+  - -1.4
+  - 2.5
+edges:
+- from: dhap
+  to: g3p
+  step: glycerol_3p_dehydrogenase
+  label: G3P DH
+  label_side: right
+- from: gol0
+  to: g3p
+  step: glycerol_kinase
+  label: 'glycerol kinase
+
+    (liver only)'
+- from: g3p
+  to: lpa
+  label: acyltransferase
+  side_text: acyl-CoA
+- from: lpa
+  to: pa
+  label: acyltransferase
+  side_text: acyl-CoA
+- from: pa
+  to: dag
+  label: PA phosphatase
+  side_text: P_i
+- from: dag
+  to: tag
+  label: DGAT
+  side_text: acyl-CoA
+- from: pa
+  to: pl
+- from: dag
+  to: pl
+- from: tag2
+  to: dag2
+  label: ATGL
+- from: dag2
+  to: mag
+  label: 'HSL
+
+    (PKA ↑, insulin ↓)'
+- from: mag
+  to: gol
+  label: MGL
+- from: dag2
+  to: fa
+tags:
+- lipid_metabolism
+- tag_metabolism
+notes_zh: 合成：glycerol-3-P（脂肪組織只能由 DHAP 來；肝也可用 glycerol kinase）＋ 3 acyl-CoA。PA 與 DAG 也是磷脂的前驅物。分解：ATGL → HSL（epinephrine／glucagon → PKA 活化；insulin 抑制）→ MGL；脂肪酸接 albumin 運送，glycerol 回肝做糖質新生。
+status: pending

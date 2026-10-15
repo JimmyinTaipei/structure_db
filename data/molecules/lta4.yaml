@@ -1,0 +1,13 @@
+id: lta4
+name: Leukotriene A4
+label: LTA_4
+aliases:
+- LTA₄
+smiles: CCCCC/C=C\C\C=C/C=C/C=C/[C@@H]1O[C@H]1CCCC(=O)[O-]
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: 5-LOX 的第二個活性把 5-HPETE 脫水成環氧化物（5,6-epoxide），共軛三烯。
+status: pending

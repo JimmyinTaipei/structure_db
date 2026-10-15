@@ -1,0 +1,37 @@
+id: ala_synthase
+title: Glycine + Succinyl-CoA → δ-Aminolevulinate (ALA synthase)
+substrates:
+- succinyl_coa
+- glycine
+products:
+- aminolevulinate
+- id: co2
+  view: formula
+cofactors_out:
+- CoA-SH
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: ALA synthase
+reversible: false
+decorate:
+  glycine:
+    colors: {0: cyan, 1: magenta}
+  aminolevulinate:
+    colors: {4: magenta}
+  co2:
+    colors: {0: cyan}
+card_zh:
+  location: 粒線體基質
+  type: 縮合＋脫羧（PLP）
+  regulation: 限速。heme（與 hemin）抑制合成與運入粒線體；ALAS1（肝）受藥物、酒精、低醣誘導；ALAS2（紅血球前驅）受鐵調控
+  deficiency:
+  - B6 缺乏、isoniazid → 鐵粒母細胞性貧血
+  - ALAS2 突變 → X 性聯鐵粒母細胞性貧血
+  exam_points:
+  - 治療急性紫質症：給 hemin 與葡萄糖（抑制 ALAS1）
+tags:
+- amino_acid_metabolism
+- heme
+status: pending

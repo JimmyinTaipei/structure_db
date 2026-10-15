@@ -1,0 +1,19 @@
+id: nad
+name: NAD+
+label: NAD^+
+aliases:
+- nicotinamide adenine dinucleotide
+- NAD
+- 菸鹼醯胺腺嘌呤二核苷酸
+smiles: NC(=O)c1ccc[n+](c1)[C@@H]4O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6cnc7c(N)ncnc76)[C@H](O)[C@@H]5O)[C@@H](O)[C@H]4O
+ring:
+  flip: true
+decorate:
+  highlight:
+  - smarts: NC(=O)c1ccc[n+]c1
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 洋紅：nicotinamide 環，C4（醯胺的對位）接受 hydride（H⁻ = 2 e⁻ + H⁺），另一個 H⁺ 釋入溶液 → NADH + H⁺。可溶性輔酶（不是輔基），主要用在分解代謝的氧化反應（NAD⁺/NADH 比值高）。
+status: pending

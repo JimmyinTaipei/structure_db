@@ -1,0 +1,15 @@
+id: riboflavin
+name: Riboflavin (vitamin B2)
+label: Riboflavin (B_2)
+aliases:
+- vitamin B2
+- 維生素B2
+- 核黃素
+smiles: Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)CO)c2cc1C
+ring:
+  methyls: true
+tags:
+- vitamin
+- water_soluble
+notes_zh: isoalloxazine 環（黃色、可吸光）＋ ribityl（糖醇，不是 ribose）。缺乏：口角炎（angular cheilitis）、舌炎、角膜血管增生。
+status: pending

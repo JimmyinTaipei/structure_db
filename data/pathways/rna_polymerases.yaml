@@ -1,0 +1,114 @@
+id: rna_polymerases
+title: RNA polymerases compared
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 4.3
+    - 0.0
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: E. coli RNA pol
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 0.0
+    text: one enzyme for all RNAs · core α_2ββ'ω + σ = holoenzyme · rifampicin binds β
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 1.6
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Pol I (nucleolus)
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 1.6
+    text: 45S pre-rRNA → 28S, 18S, 5.8S rRNA · α-amanitin resistant · ~50 % of transcription
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 3.2
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Pol II (nucleoplasm)
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 3.2
+    text: pre-mRNA, most snRNAs, miRNA, lncRNA · α-amanitin very sensitive · CTD heptad repeats
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 4.800000000000001
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Pol III (nucleoplasm)
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 4.800000000000001
+    text: tRNA, 5S rRNA, U6 snRNA, 7SL RNA · α-amanitin moderately sensitive · internal promoter (A, B boxes)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 6.4
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Mitochondrial
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 6.4
+    text: single subunit, T7-phage-like · transcribes mtDNA (both strands, polycistronic)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.3
+    - 8.0
+    w: 8.6
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Shared features
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.2
+    - 8.0
+    text: no primer, no proofreading exonuclease; 5′→3′; Mg^{2+}; actinomycin D (intercalator) blocks all
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- transcription
+notes_zh: E. coli 一種 RNA pol 合成所有 RNA。真核：Pol I（核仁，45S pre-rRNA → 28S、18S、5.8S）、Pol II（mRNA、多數 snRNA、miRNA）、Pol III（tRNA、5S rRNA、U6 snRNA、7SL）。α-amanitin（毒蕈）：Pol II 最敏感、Pol III 中度、Pol I 不敏感。粒線體 RNA pol 為單一次單元（似
+  T7）。
+parts_png: false
+status: pending

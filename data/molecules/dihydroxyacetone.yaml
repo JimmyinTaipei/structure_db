@@ -1,0 +1,11 @@
+id: dihydroxyacetone
+name: "Dihydroxyacetone"
+aliases: [DHA]
+smiles: "OCC(=O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", r: "O", rb: 2}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "最簡單的酮糖（ketotriose），沒有立體中心。DHAP 是 aldolase 的產物之一。"
+status: pending

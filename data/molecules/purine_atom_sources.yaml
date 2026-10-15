@@ -1,0 +1,31 @@
+id: purine_atom_sources
+name: Purine ring — atom sources
+label: "Purine ring: atom sources"
+aliases: [purine origin, 嘌呤環來源]
+smiles: "c1ncc2[nH]cnc2n1"
+free:                                  # 座標以主鏈列距為單位；六員環在左、咪唑環在右（N9 接核糖）
+  schematic: true
+  atoms:
+    n1: [N, -1.04, -0.6]
+    c2: [C, -1.04, 0.6]
+    n3: [N, 0, 1.2]
+    c4: [C, 1.04, 0.6]
+    c5: [C, 1.04, -0.6]
+    c6: [C, 0, -1.2]
+    n7: [N, 2.2, -0.95]
+    c8: [C, 2.9, 0]
+    n9: [N, 2.2, 0.95]
+  bonds: [[n1, c2], [c2, n3], [n3, c4], [c4, c5], [c5, c6], [c6, n1], [c5, n7], [n7, c8], [c8, n9], [n9, c4]]
+  notes:
+    - ["CO_2", 0, -2.05, green]
+    - ["Aspartate", -2.45, -1.05, cyan]
+    - ["Glycine", 1.75, -2.05, magenta]
+    - ["N^{10}-Formyl-THF", 5.35, 0, orange]
+    - ["N^{10}-Formyl-THF", -2.95, 0.95, orange]
+    - ["Glutamine\n(amide N)", -0.4, 2.45, purple]
+    - ["Glutamine\n(amide N)", 3.0, 2.15, purple]
+decorate:
+  colors: {n1: cyan, c2: orange, n3: purple, c4: magenta, c5: magenta, c6: green, n7: magenta, c8: orange, n9: purple}
+tags: [nucleotide, purine]
+notes_zh: "嘌呤環 9 個原子：Gly 提供 C4、C5、N7（整個分子嵌入）；Asp → N1；Gln 醯胺 N → N3、N9；N¹⁰-formyl-THF → C2、C8；CO₂ → C6。口訣「Gly 給中間一整塊、兩個 Gln 在下面、兩個 formyl 在兩邊」。"
+status: pending

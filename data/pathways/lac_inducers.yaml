@@ -1,0 +1,28 @@
+id: lac_inducers
+title: Lactose, allolactose and IPTG
+layout: free
+cell_size: 13.0
+nodes:
+- id: lac
+  ref: lactose
+  pos:
+  - 0
+  - 0
+- id: allo
+  ref: allolactose
+  pos:
+  - 1.2
+  - 0
+- id: iptg
+  ref: iptg
+  pos:
+  - 2.2
+  - 0
+edges: []
+text: false
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: Lactose（Gal β1→4 Glc）經 β-galactosidase 轉糖苷成 allolactose（Gal β1→6 Glc），後者才是真正的 inducer。IPTG 的 C1 為 S-異丙基（硫糖苷），可誘導但不被水解（gratuitous inducer）。
+parts_png: false
+status: pending

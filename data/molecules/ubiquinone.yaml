@@ -1,0 +1,102 @@
+id: ubiquinone
+name: Ubiquinone (Q)
+label: Ubiquinone (Q)
+aliases:
+- coenzyme Q
+- CoQ10
+- Q
+- 輔酶 Q
+smiles: COC1=C(OC)C(=O)C(C[10*])=C(C)C1=O
+free:
+  atoms:
+    c1:
+    - ''
+    - 0
+    - -0.82
+    c2:
+    - ''
+    - 0.71
+    - -0.41
+    c3:
+    - ''
+    - 0.71
+    - 0.41
+    c4:
+    - ''
+    - 0
+    - 0.82
+    c5:
+    - ''
+    - -0.71
+    - 0.41
+    c6:
+    - ''
+    - -0.71
+    - -0.41
+    o1:
+    - O
+    - 0
+    - -1.62
+    o4:
+    - O
+    - 0
+    - 1.62
+    m6:
+    - H_3CO
+    - -1.5
+    - -0.86
+    - 3
+    m5:
+    - H_3CO
+    - -1.5
+    - 0.86
+    - 3
+    me:
+    - CH_3
+    - 1.5
+    - -0.86
+    r:
+    - R
+    - 1.5
+    - 0.86
+  bonds:
+  - - c1
+    - c2
+  - - c2
+    - c3
+    - 2
+  - - c3
+    - c4
+  - - c4
+    - c5
+  - - c5
+    - c6
+    - 2
+  - - c6
+    - c1
+  - - c1
+    - o1
+    - 2
+  - - c4
+    - o4
+    - 2
+  - - c6
+    - m6
+  - - c5
+    - m5
+  - - c2
+    - me
+  - - c3
+    - r
+  schematic: true
+  notes:
+  - - R = (CH_2CH=C(CH_3)CH_2)_{10}H
+    - 0
+    - 2.55
+    - gray
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: 脂溶性的電子載體，在內膜中自由擴散。收集 Complex I、II、mitochondrial G3P DH、ETF:Q oxidoreductase（脂肪酸 β 氧化）、DHODH 的電子，交給 Complex III。可一次收 1 個電子（semiquinone •Q⁻）或 2 個電子＋2 H⁺（QH₂）。statin 也會減少 CoQ 合成（共用 mevalonate 路徑）。圖中
+  R 是類異戊二烯尾巴（人類 10 個單位），以示意圖繪製。
+status: pending

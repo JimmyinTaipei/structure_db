@@ -1,0 +1,25 @@
+id: b_glucopyranose
+name: "β-D-Glucopyranose"
+label: "β-D-Glucose"
+aliases: [β-D-glucose, β-glucose]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "OH"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "CH_2OH", down: "H"}
+chair:
+  ring: "pyranose"
+  subs:
+    1: {ax: "H", eq: "OH"}
+    2: {ax: "H", eq: "OH"}
+    3: {ax: "H", eq: "HO"}
+    4: {ax: "H", eq: "HO"}
+    5: {ax: "H", eq: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "β：C1-OH 與 C5 的 CH₂OH 同側（Haworth 都在上）。椅式中所有大基團都在 equatorial → 最穩定，水溶液中約 64%。纖維素的單元。"
+status: pending

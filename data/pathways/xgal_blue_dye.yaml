@@ -1,0 +1,23 @@
+id: xgal_blue_dye
+title: X-gal → blue dye
+layout: free
+cell_size: 13.0
+nodes:
+- id: ind
+  ref: bromochloroindoxyl
+  pos:
+  - 0
+  - 0
+- id: dye
+  ref: dibromodichloroindigo
+  pos:
+  - 1.2
+  - 0
+edges: []
+text: false
+tags:
+- molecular_biology
+- techniques
+notes_zh: β-galactosidase 水解 X-gal 得到無色 indoxyl；兩分子 indoxyl 經空氣氧化二聚成不溶的藍色靛藍染料（5,5′-dibromo-4,4′-dichloro-indigo）。
+parts_png: false
+status: pending

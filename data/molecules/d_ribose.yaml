@@ -1,0 +1,13 @@
+id: d_ribose
+name: "D-Ribose"
+aliases: [Ribose]
+smiles: "O=C[C@H](O)[C@H](O)[C@H](O)CO"
+chain:
+  - {c: "C", fork: {l: "O", lb: 2, r: "H"}}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "醛五碳糖。RNA、ATP、NAD⁺、FAD、CoA 的五碳糖；由 PPP 產生（ribose 5-phosphate）。（aldopentose）"
+status: pending

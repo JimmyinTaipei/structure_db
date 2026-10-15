@@ -1,0 +1,520 @@
+id: transcription_termination
+title: Transcription termination in E. coli
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -1.8
+    text: ρ-independent (intrinsic) terminator
+    size: 0.95
+    align: left
+  - g: blob
+    at:
+    - 9.6
+    - 5.0
+    w: 5.6
+    h: 3.4
+    shape: oval
+    hue: blue
+    text: RNA pol
+    text_size: 0.6
+    text_dy: -1.15
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 4.5
+    - - 14
+      - 4.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 5.5
+    - - 14
+      - 5.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: rna
+    points:
+    - - 0.4
+      - 2.5
+    - - 3.4
+      - 2.5
+    - - 4.9
+      - 2.5
+    - - 5.09
+      - 2.5
+    - - 5.09
+      - 0.5
+    - - 5.095704275117204
+      - 0.5029579610421175
+    - - 5.245158795467684
+      - 0.548650793395947
+    - - 5.401227974454739
+      - 0.5404715543107079
+    - - 5.545087565756762
+      - 0.4794067807327928
+    - - 5.659385979521281
+      - 0.3728217855757737
+    - - 5.730337140183366
+      - 0.23357229228258355
+    - - 5.749383290639558
+      - 0.07845384484802727
+    - - 5.714227184053598
+      - -0.0738239826628212
+    - - 5.629109165728627
+      - -0.20489423687077235
+    - - 5.5042957248827955
+      - -0.29894791072741356
+    - - 5.354841204532316
+      - -0.34464074308124293
+    - - 5.198772025545261
+      - -0.3364615039960039
+    - - 5.054912434243238
+      - -0.2753967304180888
+    - - 4.940614020478718
+      - -0.16881173526106968
+    - - 4.869662859816634
+      - -0.029562241967879488
+    - - 4.850616709360442
+      - 0.1255562054666766
+    - - 4.885772815946401
+      - 0.27783403297752507
+    - - 4.970890834271373
+      - 0.4089042871854763
+    - - 5.095704275117203
+      - 0.5029579610421175
+    - - 5.245158795467684
+      - 0.548650793395947
+    - - 5.401227974454739
+      - 0.5404715543107079
+    - - 5.51
+      - 0.5
+    - - 5.51
+      - 2.5
+    - - 5.7
+      - 2.5
+    - - 6.9
+      - 2.9
+    - - 8.0
+      - 4.8
+    - - 8.9
+      - 5.05
+    - - 10.4
+      - 5.05
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: gray
+    points:
+    - - 5.09
+      - 2.1
+    - - 5.51
+      - 2.1
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.09
+      - 1.7
+    - - 5.51
+      - 1.7
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.09
+      - 1.3
+    - - 5.51
+      - 1.3
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.09
+      - 0.8999999999999999
+    - - 5.51
+      - 0.8999999999999999
+    width: 0.08
+  - g: text
+    at:
+    - 4.6
+    - 0.6
+    text: GC-rich stem-loop
+    size: 0.72
+    align: right
+  - id: urun
+    g: strand
+    kind: rna
+    points:
+    - - 8.9
+      - 5.05
+    - - 10.4
+      - 5.05
+    width: 0.3
+    label: 'U-run: weak rU·dA hybrid'
+    label_at:
+    - 11.0
+    - 1.2
+    point:
+    - 9.8
+    - 4.9
+    label_size: 0.75
+  - g: text
+    at:
+    - 10.6
+    - 7.9
+    text: RNA released
+    size: 0.72
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - -1.0
+    - 6.9
+    to:
+    - -1.0
+    - 11.2
+    color: gray
+    width: 1.0
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 13.0
+    - - 14
+      - 13.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 0
+      - 14.0
+    - - 14
+      - 14.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: rna
+    points:
+    - - 0.4
+      - 11.1
+    - - 4.2
+      - 11.1
+    - - 4.39
+      - 11.1
+    - - 4.39
+      - 9.1
+    - - 4.395704275117204
+      - 9.102957961042117
+    - - 4.5451587954676835
+      - 9.148650793395946
+    - - 4.7012279744547385
+      - 9.140471554310707
+    - - 4.845087565756762
+      - 9.079406780732793
+    - - 4.959385979521281
+      - 8.972821785575773
+    - - 5.030337140183366
+      - 8.833572292282582
+    - - 5.0493832906395575
+      - 8.678453844848027
+    - - 5.014227184053598
+      - 8.526176017337178
+    - - 4.929109165728626
+      - 8.395105763129227
+    - - 4.804295724882795
+      - 8.301052089272586
+    - - 4.654841204532316
+      - 8.255359256918757
+    - - 4.498772025545261
+      - 8.263538496003996
+    - - 4.3549124342432375
+      - 8.32460326958191
+    - - 4.240614020478718
+      - 8.43118826473893
+    - - 4.169662859816634
+      - 8.57043775803212
+    - - 4.150616709360442
+      - 8.725556205466676
+    - - 4.185772815946401
+      - 8.877834032977525
+    - - 4.2708908342713725
+      - 9.008904287185477
+    - - 4.395704275117203
+      - 9.102957961042117
+    - - 4.5451587954676835
+      - 9.148650793395946
+    - - 4.7012279744547385
+      - 9.140471554310707
+    - - 4.81
+      - 9.1
+    - - 4.81
+      - 11.1
+    - - 5.0
+      - 11.1
+    - - 7.8
+      - 11.1
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: text
+    at:
+    - 6.8
+    - 11.85
+    text: …UUUU-OH
+    size: 0.65
+    align: center
+    color: '#C2338A'
+  - g: strand
+    kind: gray
+    points:
+    - - 4.39
+      - 10.7
+    - - 4.81
+      - 10.7
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 4.39
+      - 10.299999999999999
+    - - 4.81
+      - 10.299999999999999
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 4.39
+      - 9.9
+    - - 4.81
+      - 9.9
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 4.39
+      - 9.5
+    - - 4.81
+      - 9.5
+    width: 0.08
+  - g: blob
+    at:
+    - 12.2
+    - 11.1
+    w: 3.2
+    h: 1.9
+    shape: oval
+    hue: blue
+    text: RNA pol
+    text_size: 0.55
+  - g: text
+    at:
+    - 0.0
+    - 15.4
+    text: inverted repeat (palindrome) in DNA
+    size: 0.7
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 17.0
+    - -1.8
+    text: ρ-dependent terminator
+    size: 0.95
+    align: left
+  - g: blob
+    at:
+    - 27.4
+    - 5.0
+    w: 5.6
+    h: 3.4
+    shape: oval
+    hue: blue
+    text: RNA pol
+    text_size: 0.6
+    text_dy: -1.15
+  - g: strand
+    kind: parent
+    points:
+    - - 17
+      - 4.5
+    - - 31
+      - 4.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 17
+      - 5.5
+    - - 31
+      - 5.5
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: rna
+    points:
+    - - 17.6
+      - 1.6
+    - - 24.2
+      - 1.6
+    - - 25.4
+      - 2.4
+    - - 26.4
+      - 5.05
+    - - 28.2
+      - 5.05
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 18.4
+      - 1.6
+    - - 20.8
+      - 1.6
+    width: 0.55
+  - g: ring
+    kind: hexamer
+    at:
+    - 22.4
+    - 1.6
+    r: 0.62
+    hue: purple
+    text: ρ
+  - g: text
+    at:
+    - 19.6
+    - -0.25
+    text: rut site (C-rich, G-poor)
+    size: 0.72
+    align: center
+  - g: arrow
+    from:
+    - 23.6
+    - 0.2
+    to:
+    - 26.0
+    - 0.2
+    color: '#E8731A'
+    width: 1.1
+  - g: text
+    at:
+    - 24.0
+    - 7.9
+    text: ρ moves 5′→3′ (ATP)
+    size: 0.72
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 16.0
+    - 6.9
+    to:
+    - 16.0
+    - 11.2
+    color: gray
+    width: 1.0
+  - g: strand
+    kind: parent
+    points:
+    - - 17
+      - 13.0
+    - - 31
+      - 13.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: parent
+    points:
+    - - 17
+      - 14.0
+    - - 31
+      - 14.0
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: strand
+    kind: rna
+    points:
+    - - 17.6
+      - 11.1
+    - - 25.0
+      - 11.1
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 18.4
+      - 11.1
+    - - 20.8
+      - 11.1
+    width: 0.55
+  - g: ring
+    kind: hexamer
+    at:
+    - 24.2
+    - 11.1
+    r: 0.62
+    hue: purple
+    text: ρ
+  - g: blob
+    at:
+    - 28.6
+    - 11.1
+    w: 3.2
+    h: 1.9
+    shape: oval
+    hue: blue
+    text: RNA pol
+    text_size: 0.55
+  - g: text
+    at:
+    - 17.0
+    - 15.4
+    text: ρ unwinds the RNA–DNA hybrid
+    size: 0.7
+    align: left
+    color: gray
+tags:
+- molecular_biology
+- transcription
+notes_zh: 'ρ-independent（intrinsic）：DNA 的反向重複（palindrome）使 RNA 形成 GC-rich 莖環，接著 6–8 個 U；聚合酶停頓、rU·dA 雜合弱 → 釋放。ρ-dependent：ρ 六聚體（RNA–DNA helicase，ATP）結合 rut site（C 多 G 少、無二級結構），沿 RNA 5′→3′ 追上聚合酶、拆開雜合。Bicyclomycin
+  抑制 ρ。真核 Pol II：poly(A) 位切開後 Xrn2 torpedo；Pol III：模板上一串 T。
+
+  【補充】Intrinsic: GC-rich stem (stable) followed by 6–8 U; the polymerase stalls and the A=U hybrid melts. ρ-dependent: no hairpin needed; inhibited by bicyclomycin; NusA helps intrinsic termination, NusG
+  helps ρ. Eukaryotes: Pol II — cleavage at the poly(A) site, then the 5′→3′ exonuclease Xrn2 (''torpedo'') catches the polymerase; Pol III — a run of T in the template (no hairpin); Pol I — terminator
+  protein (TTF-I).'
+parts_png: false
+status: pending

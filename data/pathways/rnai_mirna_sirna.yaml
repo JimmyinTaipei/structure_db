@@ -1,0 +1,534 @@
+id: rnai_mirna_sirna
+title: 'RNA interference: miRNA and siRNA'
+layout: scene
+scene:
+  items:
+  - g: region
+    x0: -0.6
+    y0: -1.6
+    x1: 9.6
+    y1: 6.6
+    hue: blue
+    opacity: 0.12
+    outline: true
+    dashed: true
+  - g: text
+    at:
+    - 0.0
+    - -1.0
+    text: nucleus
+    size: 0.65
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 10.4
+    - -1.0
+    text: miRNA
+    size: 0.9
+    align: left
+  - g: text
+    at:
+    - 0.0
+    - 9.6
+    text: siRNA
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.2
+      - 3.0
+    - - 3.2
+      - 3.0
+    - - 3.2
+      - 3.0
+    - - 3.2855050358314175
+      - 3.015076844803523
+    - - 3.360696902421635
+      - 3.0584888892202553
+    - - 3.41650635094611
+      - 3.125
+    - - 3.446201938253052
+      - 3.2065879555832675
+    - - 3.446201938253052
+      - 3.2934120444167325
+    - - 3.41650635094611
+      - 3.375
+    - - 3.360696902421635
+      - 3.4415111107797447
+    - - 3.2855050358314175
+      - 3.484923155196477
+    - - 3.2
+      - 3.5
+    - - 3.2
+      - 3.5
+    - - 0.2
+      - 3.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: gray
+    points:
+    - - 0.6000000000000001
+      - 3.12
+    - - 0.6000000000000001
+      - 3.38
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 1.05
+      - 3.12
+    - - 1.05
+      - 3.38
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 1.5
+      - 3.12
+    - - 1.5
+      - 3.38
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 1.9500000000000002
+      - 3.12
+    - - 1.9500000000000002
+      - 3.38
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 2.4000000000000004
+      - 3.12
+    - - 2.4000000000000004
+      - 3.38
+    width: 0.06
+  - g: text
+    at:
+    - 1.7
+    - 2.1
+    text: pri-miRNA
+    size: 0.62
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 4.2
+    - 3.25
+    w: 1.6
+    h: 1.4
+    shape: kidney
+    hue: orange
+    text: Drosha
+    text_size: 0.42
+  - g: arrow
+    from:
+    - 5.2
+    - 3.25
+    to:
+    - 6.4
+    - 3.25
+    color: black
+    width: 1.0
+  - g: strand
+    kind: rna
+    points:
+    - - 6.6
+      - 3.0
+    - - 8.4
+      - 3.0
+    - - 8.4
+      - 3.0
+    - - 8.485505035831418
+      - 3.015076844803523
+    - - 8.560696902421634
+      - 3.0584888892202553
+    - - 8.61650635094611
+      - 3.125
+    - - 8.646201938253052
+      - 3.2065879555832675
+    - - 8.646201938253052
+      - 3.2934120444167325
+    - - 8.61650635094611
+      - 3.375
+    - - 8.560696902421634
+      - 3.4415111107797447
+    - - 8.485505035831418
+      - 3.484923155196477
+    - - 8.4
+      - 3.5
+    - - 8.4
+      - 3.5
+    - - 6.6
+      - 3.5
+    width: 0.3
+    ends:
+    - ''
+    - ''
+  - g: strand
+    kind: gray
+    points:
+    - - 7.0
+      - 3.12
+    - - 7.0
+      - 3.38
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 7.45
+      - 3.12
+    - - 7.45
+      - 3.38
+    width: 0.06
+  - g: text
+    at:
+    - 7.5
+    - 2.1
+    text: pre-miRNA
+    size: 0.62
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 9.6
+    - 3.25
+    w: 1.6
+    h: 1.2
+    shape: oval
+    hue: teal
+    text: Exp5
+    text_size: 0.42
+  - g: arrow
+    from:
+    - 10.6
+    - 3.25
+    to:
+    - 11.8
+    - 3.25
+    color: black
+    width: 1.0
+  - g: blob
+    at:
+    - 13.0
+    - 3.25
+    w: 1.9
+    h: 1.4
+    shape: kidney
+    hue: purple
+    text: Dicer
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 14.2
+    - 3.25
+    to:
+    - 15.2
+    - 3.25
+    color: black
+    width: 1.0
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 15.4
+      - 3.0
+    - - 17.6
+      - 3.0
+    width: 0.3
+  - g: strand
+    kind: '#E7A9C9'
+    points:
+    - - 15.55
+      - 3.4
+    - - 17.75
+      - 3.4
+    width: 0.3
+  - g: text
+    at:
+    - 16.5
+    - 2.2
+    text: 21–23 nt
+    size: 0.6
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 18.0
+    - 3.25
+    to:
+    - 19.0
+    - 3.25
+    color: black
+    width: 1.0
+  - g: blob
+    at:
+    - 20.6
+    - 3.1
+    w: 2.6
+    h: 1.8
+    shape: oval
+    hue: green
+    text: RISC (Ago)
+    text_size: 0.45
+  - g: strand
+    kind: rna
+    points:
+    - - 19.0
+      - 5.6
+    - - 30.0
+      - 5.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 27.5
+    - 5.6
+    w: 3.0
+    h: 0.7
+    shape: box
+    hue: gray
+    text: 3′UTR
+    text_size: 0.5
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 26.4
+      - 5.0
+    - - 28.4
+      - 5.0
+    width: 0.3
+  - g: strand
+    kind: gray
+    points:
+    - - 26.7
+      - 5.1
+    - - 26.7
+      - 5.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 27.1
+      - 5.1
+    - - 27.1
+      - 5.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 27.5
+      - 5.1
+    - - 27.5
+      - 5.5
+    width: 0.06
+  - g: text
+    at:
+    - 27.5
+    - 6.6
+    text: partial pairing (seed)
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 24.0
+    - 8.0
+    text: translation ↓, deadenylation
+    size: 0.7
+    align: center
+    color: '#D62828'
+  - g: arrow
+    from:
+    - 21.6
+    - 4.0
+    to:
+    - 25.8
+    - 4.9
+    color: gray
+    width: 1.0
+    curve: -0.2
+  - g: strand
+    kind: '#3F4F6B'
+    points:
+    - - 0.2
+      - 12.0
+    - - 6.2
+      - 12.0
+    width: 0.3
+  - g: strand
+    kind: '#8A8A8A'
+    points:
+    - - 0.35
+      - 12.4
+    - - 6.3500000000000005
+      - 12.4
+    width: 0.3
+  - g: text
+    at:
+    - 3.2
+    - 11.2
+    text: long dsRNA (virus, experiment)
+    size: 0.62
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 7.0
+    - 12.25
+    to:
+    - 11.8
+    - 12.25
+    color: black
+    width: 1.0
+  - g: blob
+    at:
+    - 13.0
+    - 12.25
+    w: 1.9
+    h: 1.4
+    shape: kidney
+    hue: purple
+    text: Dicer
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 14.2
+    - 12.25
+    to:
+    - 15.2
+    - 12.25
+    color: black
+    width: 1.0
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 15.4
+      - 12.0
+    - - 17.6
+      - 12.0
+    width: 0.3
+  - g: strand
+    kind: '#E7A9C9'
+    points:
+    - - 15.55
+      - 12.4
+    - - 17.75
+      - 12.4
+    width: 0.3
+  - g: arrow
+    from:
+    - 18.0
+    - 12.25
+    to:
+    - 19.0
+    - 12.25
+    color: black
+    width: 1.0
+  - g: blob
+    at:
+    - 20.6
+    - 12.1
+    w: 2.6
+    h: 1.8
+    shape: oval
+    hue: green
+    text: RISC (Ago2)
+    text_size: 0.45
+  - g: strand
+    kind: rna
+    points:
+    - - 19.0
+      - 14.6
+    - - 30.0
+      - 14.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: '#C2338A'
+    points:
+    - - 23.4
+      - 14.0
+    - - 25.8
+      - 14.0
+    width: 0.3
+  - g: strand
+    kind: gray
+    points:
+    - - 23.7
+      - 14.1
+    - - 23.7
+      - 14.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 24.1
+      - 14.1
+    - - 24.1
+      - 14.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 24.5
+      - 14.1
+    - - 24.5
+      - 14.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 24.9
+      - 14.1
+    - - 24.9
+      - 14.5
+    width: 0.06
+  - g: strand
+    kind: gray
+    points:
+    - - 25.3
+      - 14.1
+    - - 25.3
+      - 14.5
+    width: 0.06
+  - g: mark
+    kind: cut
+    at:
+    - 24.6
+    - 14.6
+    side: down
+  - g: text
+    at:
+    - 24.6
+    - 16.0
+    text: perfect pairing → mRNA cleaved
+    size: 0.7
+    align: center
+    color: '#D62828'
+  - g: arrow
+    from:
+    - 21.6
+    - 13.0
+    to:
+    - 23.2
+    - 13.9
+    color: gray
+    width: 1.0
+    curve: -0.2
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: miRNA：Pol II 轉錄 pri-miRNA（有 cap、poly(A)）→ 核內 Drosha–DGCR8 切成 ~70 nt pre-miRNA → Exportin-5（Ran-GTP）出核 → Dicer 切成 21–23 nt 雙股 → guide strand 進 RISC（Argonaute）→ seed（2–8）與 3′UTR 部分配對 → 抑制轉譯、去 poly(A)、分解（P
+  bodies）。siRNA：外來長 dsRNA → Dicer → RISC（Ago2 slicer）→ 完全配對 → 切斷 mRNA（RNAi，基因 knock-down；Fire & Mello）。piRNA：PIWI，生殖細胞抑制轉位子。
+parts_png: false
+status: pending

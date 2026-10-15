@@ -1,0 +1,323 @@
+id: translation_termination
+title: Termination, ribosome recycling and tmRNA rescue
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 5.5
+    - - 10.0
+      - 5.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 5.0
+    - 5.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 5.0
+    - 5.5
+    s: 0.8
+    anticodon: CGA
+    peptide: 5
+  - g: blob
+    at:
+    - 6.890000000000001
+    - 4.15
+    w: 0.95
+    h: 2.4
+    shape: box
+    hue: orange
+    text: RF1
+    text_size: 0.42
+  - g: text
+    at:
+    - 6.890000000000001
+    - 8.5
+    text: UAA in A site
+    size: 0.68
+    align: center
+    color: red
+  - g: arrow
+    from:
+    - 10.6
+    - 4.5
+    to:
+    - 12.6
+    - 4.5
+    style: fat
+  - g: strand
+    kind: rna
+    points:
+    - - 13.0
+      - 5.5
+    - - 23.0
+      - 5.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 18.0
+    - 5.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 18.0
+    - 5.5
+    s: 0.8
+    anticodon: CGA
+    hue: '#D9D9D9'
+  - g: blob
+    at:
+    - 19.89
+    - 4.15
+    w: 0.95
+    h: 2.4
+    shape: box
+    hue: orange
+    text: RF1
+    text_size: 0.42
+  - g: ion
+    at:
+    - 20.4
+    - 0.09999999999999964
+    r: 0.27
+    hue: orange
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 20.95
+    - 0.39999999999999963
+    r: 0.27
+    hue: green
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 21.5
+    - 0.09999999999999964
+    r: 0.27
+    hue: blue
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 22.049999999999997
+    - 0.39999999999999963
+    r: 0.27
+    hue: pink
+    text: ''
+    text_size: 0.5
+  - g: ion
+    at:
+    - 22.599999999999998
+    - 0.09999999999999964
+    r: 0.27
+    hue: yellow
+    text: ''
+    text_size: 0.5
+  - g: text
+    at:
+    - 23.4
+    - 0.20000000000000018
+    text: polypeptide (COO⁻) released
+    size: 0.68
+    align: left
+  - g: text
+    at:
+    - 18.0
+    - 8.5
+    text: H_2O hydrolyses peptidyl-tRNA
+    size: 0.68
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 23.6
+    - 4.5
+    to:
+    - 25.6
+    - 4.5
+    style: fat
+  - g: strand
+    kind: rna
+    points:
+    - - 26.0
+      - 6.1
+    - - 35.0
+      - 6.1
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 30.0
+    - 3.1
+    w: 6.4
+    h: 3.2
+    shape: oval
+    hue: purple
+    text: 50S
+    text_size: 0.6
+  - g: blob
+    at:
+    - 30.5
+    - 7.1
+    w: 5.4
+    h: 1.6
+    shape: oval
+    hue: '#C9BEDF'
+    text: 30S
+    text_size: 0.55
+  - g: text
+    at:
+    - 30.0
+    - 8.8
+    text: RRF + EF-G·GTP split the ribosome
+    size: 0.68
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 0.0
+    - 12.5
+    text: tmRNA rescue (bacteria)
+    size: 0.95
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 18.5
+    - - 6.2
+      - 18.5
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 5.0
+    - 18.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 5.0
+    - 18.5
+    s: 0.8
+    anticodon: ''
+    peptide: 4
+  - g: trna
+    shape: icon
+    at:
+    - 6.890000000000001
+    - 18.5
+    s: 0.8
+    anticodon: ''
+    hue: '#F2C46D'
+    aa: Ala
+  - g: text
+    at:
+    - 8.8
+    - 15.1
+    text: 'tmRNA·SmpB
+
+      (Ala-charged)'
+    size: 0.68
+    align: left
+    color: '#B5651F'
+  - g: text
+    at:
+    - 4.0
+    - 21.4
+    text: mRNA without stop codon
+    size: 0.62
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 10.6
+    - 17.5
+    to:
+    - 12.6
+    - 17.5
+    style: fat
+  - g: strand
+    kind: rna
+    points:
+    - - 13.0
+      - 18.5
+    - - 19.0
+      - 18.5
+    - - 23.0
+      - 18.5
+    width: 0.3
+    ends:
+    - ''
+    - ''
+  - g: strand
+    kind: '#E0A100'
+    points:
+    - - 19.0
+      - 18.5
+    - - 23.0
+      - 18.5
+    width: 0.3
+  - g: ribosome
+    at:
+    - 18.5
+    - 18.5
+    w: 7.0
+    sites: true
+  - g: trna
+    shape: icon
+    at:
+    - 18.5
+    - 18.5
+    s: 0.8
+    anticodon: ''
+    aa_hue: red
+    peptide: 6
+  - g: text
+    at:
+    - 23.6
+    - 18.5
+    text: ssrA tag added
+    size: 0.68
+    align: left
+  - g: text
+    at:
+    - 23.6
+    - 15.9
+    text: protein + mRNA degraded
+    size: 0.68
+    align: left
+    color: gray
+tags:
+- molecular_biology
+- translation
+notes_zh: '終止密碼子進 A 位 → RF1（UAA、UAG）或 RF2（UAA、UGA）結合（eRF1 讀全部），GGQ 使水攻擊 → 胜肽釋出；RF3·GTP（eRF3）移除 RF1/2；RRF + EF-G 拆開核糖體（真核 ABCE1）。RF 與 tRNA、EF-G 與 EF-Tu·tRNA 為分子擬態。tmRNA·SmpB 拯救停在無終止密碼子 mRNA 上的核糖體：加 11-aa
+  ssrA tag → ClpXP 分解；mRNA 被分解。合成 N 個胺基酸至少 4N−1 個高能鍵。
+
+  【補充】Energy for a protein of N amino acids: 2N (aminoacylation, ATP → AMP + PP_i) + 1 (IF2) + (N−1) (EF-Tu) + (N−1) (EF-G) = 4N − 1 high-energy bonds; counting RF3 as well gives 4N. Eukaryotes: nonsense-mediated
+  decay (premature stop before an exon junction complex), no-go and non-stop decay.
+
+  【補充】RF1 reads UAA, UAG; RF2 reads UAA, UGA (eRF1 reads all three). Its GGQ motif puts water into the peptidyl transferase centre. RF3·GTP (eRF3) removes RF1/2.'
+parts_png: false
+status: pending

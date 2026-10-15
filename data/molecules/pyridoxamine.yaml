@@ -1,0 +1,13 @@
+id: pyridoxamine
+name: Pyridoxamine
+label: Pyridoxamine
+aliases:
+- 吡哆胺
+smiles: Cc1ncc(CO)c(C[NH3+])c1O
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: C4′ 為 CH₂NH₃⁺。
+status: pending

@@ -1,0 +1,14 @@
+id: nicotinamide
+name: Nicotinamide
+label: Nicotinamide
+aliases:
+- niacinamide
+- 菸鹼醯胺
+smiles: NC(=O)c1cccnc1
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: NAD⁺ 分解（sirtuin、PARP、ADP-ribosylation）後的產物，可經 salvage 重新合成 NAD⁺。不會造成潮紅。
+status: pending

@@ -1,0 +1,19 @@
+id: lipoate
+name: Lipoate
+label: Lipoate
+aliases:
+- lipoic acid
+- α-lipoic acid
+- 硫辛酸
+smiles: '[O-]C(=O)CCCC[C@@H]1CCSS1'
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: SS
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 不是維生素（人體可合成）。以醯胺鍵接在 E2 的 Lys 上（lipoamide，長擺臂）。洋紅：雙硫鍵，接受醯基並被還原成二硫醇，再由 E3（FAD）氧化回來。PDH、α-KGDH、BCKDH 的 E2。砷（arsenite）會與還原態的二硫醇結合。
+status: pending

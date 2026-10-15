@@ -1,0 +1,413 @@
+id: no_cgmp_relaxation
+title: 'Acetylcholine → NO → cGMP: vascular relaxation'
+layout: free
+cell_size: 4.4
+nodes:
+- id: endo
+  text: Endothelial cell
+  pos:
+  - -1.2
+  - -0.7
+  kind: heading
+- id: smc
+  text: Smooth muscle cell
+  pos:
+  - 2.6
+  - -0.7
+  kind: heading
+- id: ach
+  text: Acetylcholine → M_3 (GPCR, G_q)
+  pos:
+  - 0
+  - 0
+  kind: protein
+- id: plc
+  text: 'PLC-β: PIP_2 → IP_3 + DAG'
+  pos:
+  - 0
+  - 1.0
+  kind: protein
+- id: ca
+  text: 'IP_3 receptor (ER)
+
+    → Ca^{2+} ↑ → Ca^{2+}–calmodulin'
+  pos:
+  - 0
+  - 2.0
+  kind: protein
+- id: nos
+  text: eNOS
+  pos:
+  - -0.3
+  - 3.0
+  kind: protein
+- id: 'no'
+  ref: nitric_oxide
+  pos:
+  - 1.3
+  - 3.0
+  view: name
+- id: sgc
+  text: 'Soluble guanylyl cyclase
+
+    (heme)'
+  pos:
+  - 3.5
+  - 3.0
+  kind: protein
+- id: cgmp
+  ref: cgmp
+  pos:
+  - 3.5
+  - 4.1
+  view: name
+- id: pkg
+  text: 'PKG → Ca^{2+} ↓
+
+    → relaxation'
+  pos:
+  - 3.5
+  - 5.2
+  kind: name
+- id: gmp
+  ref: gmp
+  pos:
+  - 5.4
+  - 5.2
+  view: name
+- id: vi
+  text: Sildenafil
+  pos:
+  - 5.6
+  - 4.1
+  kind: drug
+- id: ntg
+  text: 'Nitroglycerin
+
+    (NO donor)'
+  pos:
+  - 5.4
+  - 2.0
+  kind: drug
+- id: arg
+  text: Arg → citrulline
+  pos:
+  - -0.3
+  - 3.75
+  kind: name
+edges:
+- from: ach
+  to: plc
+- from: plc
+  to: ca
+- from: ca
+  to: nos
+  label: +
+- from: nos
+  to: 'no'
+  step: nitric_oxide_synthase
+  label: O_2, NADPH
+- from: 'no'
+  to: sgc
+  label: diffuses
+- from: sgc
+  to: cgmp
+  step: guanylyl_cyclase
+  label: GTP → PP_i
+- from: cgmp
+  to: pkg
+- from: cgmp
+  to: gmp
+  step: cgmp_phosphodiesterase
+  label: PDE5
+- from: vi
+  to: edge:cgmp->gmp
+  inhibit: true
+- from: ntg
+  to: sgc
+regions:
+- kind: membrane
+  x: 2.15
+  y0: -1.0
+  y1: 5.8
+  label: ''
+tags:
+- signal_transduction
+- second_messenger
+notes_zh: 內皮細胞：ACh → M₃（Gq）→ PLC-β → IP₃ → ER 釋出 Ca²⁺ → Ca²⁺–calmodulin 活化 eNOS（Arg + O₂ + NADPH → citrulline + NO）。NO 為氣體，擴散進平滑肌，結合可溶型 guanylyl cyclase 的 heme → cGMP ↑ → PKG → 細胞內 Ca²⁺ 下降、myosin light
+  chain 去磷酸 → 放鬆、血管擴張。PDE5 把 cGMP → GMP 終止訊號；sildenafil 抑制 PDE5。Nitroglycerin、nitroprusside 為 NO donor。氣體傳訊分子（gasotransmitters）：NO（NOS）、CO（heme oxygenase）、H₂S（cystathionine γ-lyase）。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: region
+        x0: -1.0
+        y0: 2.0
+        x1: 13.6
+        y1: 16.0
+        hue: yellow
+        opacity: 0.15
+      - g: region
+        x0: 15.6
+        y0: 2.0
+        x1: 33.0
+        y1: 16.0
+        hue: pink
+        opacity: 0.15
+      - g: text
+        at:
+        - -0.6
+        - 15.2
+        text: Endothelial cell
+        size: 0.75
+        align: left
+        color: gray
+      - g: text
+        at:
+        - 32.6
+        - 15.2
+        text: Smooth muscle cell
+        size: 0.75
+        align: right
+        color: gray
+      - g: membrane
+        y: 2.0
+        x0: -1.0
+        x1: 13.6
+        lipids: true
+      - g: ligand
+        at:
+        - 3.0
+        - -1.2
+        shape: triangle
+        hue: red
+        r: 0.45
+      - g: text
+        at:
+        - 4.2
+        - -1.2
+        text: ACh
+        size: 0.65
+        align: left
+      - g: gpcr
+        at:
+        - 3.0
+        - 2.0
+        hue: purple
+      - g: gprotein
+        at:
+        - 6.6
+        - 4.3
+        nucleotide: GTP
+        hue: blue
+      - g: text
+        at:
+        - 5.8
+        - 6.4
+        text: M_3 · G_q
+        size: 0.6
+        align: center
+      - g: arrow
+        from:
+        - 7.6
+        - 5.6
+        to:
+        - 7.6
+        - 7.6
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 7.6
+        - 8.4
+        r: 0.45
+        hue: green
+        text: Ca^{2+}
+        text_size: 0.36
+      - g: blob
+        at:
+        - 9.6
+        - 8.4
+        w: 1.8
+        h: 1.0
+        shape: oval
+        hue: yellow
+        text: CaM
+        text_size: 0.42
+      - g: arrow
+        from:
+        - 9.0
+        - 9.0
+        to:
+        - 7.6
+        - 10.4
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 6.6
+        - 11.2
+        w: 2.4
+        h: 1.4
+        shape: oval
+        hue: orange
+        accent: true
+        text: eNOS
+        text_size: 0.55
+      - g: text
+        at:
+        - 6.6
+        - 13.2
+        text: Arg → citrulline
+        size: 0.6
+        align: center
+        color: gray
+      - g: ion
+        at:
+        - 10.6
+        - 11.2
+        r: 0.45
+        hue: gray
+        text: 'NO'
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 11.2
+        - 11.2
+        to:
+        - 17.0
+        - 11.2
+        color: gray
+        curve: 0
+        dashed: true
+      - g: ion
+        at:
+        - 17.6
+        - 11.2
+        r: 0.45
+        hue: gray
+        text: 'NO'
+        text_size: 0.4
+      - g: blob
+        at:
+        - 20.4
+        - 11.2
+        w: 2.8
+        h: 1.6
+        shape: oval
+        hue: green
+        accent: true
+        text: sGC
+        text_size: 0.55
+      - g: ion
+        at:
+        - 21.6
+        - 12.0
+        r: 0.3
+        hue: red
+        text: Fe
+        text_size: 0.32
+      - g: text
+        at:
+        - 20.4
+        - 9.4
+        text: GTP → cGMP
+        size: 0.6
+        align: center
+      - g: ion
+        at:
+        - 24.4
+        - 11.2
+        r: 0.6
+        hue: yellow
+        text: cGMP
+        text_size: 0.38
+      - g: arrow
+        from:
+        - 25.1
+        - 11.2
+        to:
+        - 26.6
+        - 11.2
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 28.4
+        - 11.2
+        w: 2.4
+        h: 1.4
+        shape: oval
+        hue: teal
+        text: PKG
+        text_size: 0.55
+      - g: text
+        at:
+        - 28.4
+        - 13.2
+        text: Ca^{2+} ↓ → relaxation
+        size: 0.62
+        align: center
+      - g: arrow
+        from:
+        - 24.4
+        - 10.4
+        to:
+        - 24.4
+        - 7.8
+        color: gray
+        curve: 0
+      - g: ion
+        at:
+        - 24.4
+        - 7.2
+        r: 0.5
+        hue: gray
+        text: GMP
+        text_size: 0.36
+      - g: text
+        at:
+        - 23.8
+        - 9.0
+        text: PDE5
+        size: 0.6
+        align: right
+        color: cyan
+      - g: arrow
+        from:
+        - 28.6
+        - 8.4
+        to:
+        - 24.7
+        - 9.0
+        inhibit: true
+        color: red
+        width: 1.2
+        curve: 0
+      - g: text
+        at:
+        - 28.8
+        - 8.2
+        text: sildenafil
+        size: 0.62
+        align: left
+        color: red
+      - g: text
+        at:
+        - 17.6
+        - 6.0
+        text: nitroglycerin
+        size: 0.62
+        align: center
+        color: red
+      - g: arrow
+        from:
+        - 17.6
+        - 6.8
+        to:
+        - 17.6
+        - 10.4
+        color: red
+        curve: 0

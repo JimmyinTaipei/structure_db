@@ -1,0 +1,45 @@
+id: nitric_oxide_synthase
+title: 2 Arginine → 2 Citrulline + 2 NO (nitric oxide synthase)
+substrates:
+- id: arginine
+  n: 2
+products:
+- id: citrulline
+  n: 2
+- id: nitric_oxide
+  n: 2
+cofactors_in:
+- 3NADPH
+- 4O2
+cofactors_out:
+- 3NADP+
+- 4H2O
+extra_in:
+- H+
+enzyme: nitric oxide synthase
+reversible: false
+decorate:
+  arginine:
+    colors:
+      6: {r: magenta}
+  nitric_oxide:
+    colors:
+      0:
+        c:
+        - [magenta, N]
+        - [cyan, O]
+  citrulline:
+    colors:
+      6: {r: cyan}
+  4O2:
+    colors: {0: cyan}
+card_zh:
+  type: 五電子氧化（FAD、FMN、BH4、heme；NADPH、O₂）
+  regulation: eNOS、nNOS：Ca²⁺–calmodulin 活化；iNOS：細胞激素誘導（巨噬細胞，殺菌）
+  exam_points:
+  - NO 的 N 來自 Arg 的胍基（guanidino）
+  - NO → guanylyl cyclase → cGMP → 血管擴張
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

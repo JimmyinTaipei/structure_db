@@ -1,0 +1,23 @@
+id: mevalonate
+name: Mevalonate
+aliases:
+- mevalonic acid
+- 甲羥戊酸
+smiles: '[O-]C(=O)C[C@](C)(O)CCO'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  l: H_3C
+  r: OH
+- c: CH_2
+- c: CH_2OH
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+notes_zh: (R)-mevalonate。HMG-CoA reductase（限速、statin 標的）的產物；硫酯被 2 NADPH 還原成一級醇。
+status: pending

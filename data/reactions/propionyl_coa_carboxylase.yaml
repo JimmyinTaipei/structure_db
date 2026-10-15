@@ -1,0 +1,34 @@
+id: propionyl_coa_carboxylase
+title: Propionyl-CoA → (S)-Methylmalonyl-CoA (propionyl-CoA carboxylase)
+substrates:
+- propionyl_coa
+- id: bicarbonate
+  view: formula
+products:
+- s_methylmalonyl_coa
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+- Pi
+extra_out:
+- H+
+prosthetic:
+- biotin
+enzyme: 'propionyl-CoA
+
+  carboxylase'
+reversible: false
+decorate:
+  bicarbonate:
+    colors: {0: magenta}
+  s_methylmalonyl_coa:
+    colors: {0: magenta}
+card_zh:
+  location: 粒線體基質
+  type: 羧化（biotin、ATP）
+  deficiency: propionic acidemia：propionyl-CoA carboxylase 缺乏 → 代謝性酸中毒、高血氨
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

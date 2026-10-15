@@ -1,0 +1,28 @@
+id: thiamine_pyrophosphokinase
+title: Thiamine → TPP (thiamine pyrophosphokinase)
+substrates:
+- thiamine
+products:
+- tpp
+cofactors_in:
+- ATP
+cofactors_out:
+- AMP
+extra_out:
+- H+
+enzyme: 'thiamine
+
+  pyrophosphokinase'
+reversible: false
+decorate:
+  tpp:
+    highlight:
+    - {smarts: 'P(=O)([O-])OP(=O)([O-])[O-]', color: magenta}
+card_zh:
+  type: 活化：轉移焦磷酸（ATP 的 β,γ-磷酸，AMP 離開）
+  exam_points:
+  - TPP 是 thiamine 的活性形式；酒精抑制 thiamine 吸收與活化
+tags:
+- vitamin
+- coenzyme
+status: pending

@@ -1,0 +1,32 @@
+id: isocitrate_dehydrogenase
+title: "TCA ③ Isocitrate → α-Ketoglutarate"
+step: 3
+substrates: [isocitrate]
+products: [alpha_kg]
+cofactors_in: [NAD+]
+cofactors_out: [NADH+H+, CO2]
+extra_in: [H+]                    # 脫羧時消耗一個 H⁺（不畫）
+prosthetic: ["Mn^{2+}"]
+enzyme: "isocitrate\ndehydrogenase"
+reversible: false
+decorate:                         # 青藍：兩個 H → NADH + H⁺；洋紅：COO⁻ → CO₂（Mathews）
+  isocitrate: {colors: {2: {r: magenta}, 3: {l: [cyan, "H"], r: cyan}}}
+  "NADH+H+": {colors: {0: {c: [[cyan, "H"], [cyan, "H^+"]]}}}
+  CO2: {colors: {0: magenta}}
+variants:
+  isotope:                        # ① 氧化點（HO–C）② 帶 COO⁻ 的碳 ③ 以 CO₂ 離開的 COO⁻
+    note_zh: "① HO–C 被氧化成 C=O（氧化點）；② 是它旁邊帶 COO⁻ 的碳；③ 這個 COO⁻ 位在新形成酮基的 β 位置，以 CO₂ 離開（β-keto acid 脫羧）"
+    decorate:
+      isocitrate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: [tri, "2"], r: "3"}, 3: {c: "1"}}}
+      alpha_kg: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: [tri, "2"]}, 3: {c: "1"}}}
+card_zh:
+  location: 粒線體基質（NAD⁺ 型）；細胞質與粒線體另有 NADP⁺ 型
+  type: 氧化脫羧（第 1 個 CO₂、第 1 個 NADH）
+  deltaG: "ΔG'° = −20.9 kJ/mol，不可逆"
+  mechanism: "C2-OH 被氧化成酮 → oxalosuccinate（β-keto acid，不離開酵素）→ 脫羧"
+  regulation: "活化：ADP、Ca²⁺。抑制：ATP、NADH"
+  deficiency: "IDH1/IDH2 突變 → 產生 2-hydroxyglutarate（oncometabolite），見於 glioma、AML"
+  exam_points:
+    - "TCA 主要速率限制步驟之一"
+tags: [TCA]
+status: pending

@@ -1,0 +1,96 @@
+id: translation_energy_cost
+title: Energy cost of protein synthesis
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.7
+    - 0.0
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: orange
+    text: Aminoacylation
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 0.0
+    text: aa + ATP + tRNA → aa-tRNA + AMP + PP_i (2 high-energy bonds)  ×  N  =  2N
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 1.6
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: orange
+    text: Initiation
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 1.6
+    text: IF2·GTP (bacteria) / eIF2·GTP  =  1
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 3.2
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: orange
+    text: 'Elongation: EF-Tu'
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 3.2
+    text: one GTP per aa-tRNA delivered  =  N − 1
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 4.800000000000001
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: orange
+    text: 'Elongation: EF-G'
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 4.800000000000001
+    text: one GTP per translocation  =  N − 1
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.7
+    - 6.4
+    w: 7.4
+    h: 1.3
+    shape: box
+    hue: orange
+    text: Total
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.0
+    - 6.4
+    text: '4N − 1; 4N if RF3·GTP is counted (lecture). Lehninger: ≥ 4 per peptide bond'
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: N 個胺基酸的蛋白質：活化 2N + 起始 1 + EF-Tu (N−1) + EF-G (N−1) = 4N − 1 個高能磷酸鍵；講義另計 RF3 為 4N。Lehninger 只寫「每個胜肽鍵至少 4 個高能磷酸當量」（6e p.1139）。
+parts_png: false
+status: pending

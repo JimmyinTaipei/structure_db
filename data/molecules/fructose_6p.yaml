@@ -1,0 +1,15 @@
+id: fructose_6p
+name: Fructose 6-phosphate
+label: "Fructose\n6-phosphate"
+aliases: [F6P, 果糖-6-磷酸]
+smiles: "C(O)C(=O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: CH_2OH}
+  - {c: C, r: O, rb: 2}
+  - {c: C, l: HO, r: H}
+  - {c: C, l: H, r: OH}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, PPP, glycolysis]
+notes_zh: 糖解中間物；PFK-1 磷酸化成 F1,6BP（糖解速率決定步驟）。
+status: pending

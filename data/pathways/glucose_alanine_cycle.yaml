@@ -1,0 +1,25 @@
+id: glucose_alanine_cycle
+title: Glucose–alanine cycle（名稱版）
+layout: free
+cell: 0.85
+nodes:
+  - {id: hm, text: "Muscle", kind: heading, pos: [-0.55, -0.85]}
+  - {id: hb, text: "Blood", kind: heading, pos: [1.15, -0.85]}
+  - {id: hl, text: "Liver", kind: heading, pos: [2.85, -0.85]}
+  - {id: m_glc, ref: glucose, view: name, pos: [0, 0]}
+  - {id: m_pyr, ref: pyruvate, view: name, pos: [0, 1.3]}
+  - {id: m_ala, ref: alanine, view: name, pos: [0, 2.6]}
+  - {id: l_ala, ref: alanine, view: name, pos: [3.4, 2.6]}
+  - {id: l_pyr, ref: pyruvate, view: name, pos: [3.4, 1.3]}
+  - {id: l_glc, ref: glucose, view: name, pos: [3.4, 0]}
+  - {id: urea, text: "NH_4^+ → urea cycle", kind: concept, pos: [5.0, 2.6]}
+edges:
+  - {from: m_glc, to: m_pyr, label: glycolysis}
+  - {from: m_pyr, to: m_ala, step: alt, label: ALT, side_text: "Glu → α-KG"}
+  - {from: m_ala, to: l_ala, label: "via blood"}
+  - {from: l_ala, to: l_pyr, step: alt, label: ALT, side_text: "α-KG → Glu", label_side: right}
+  - {from: l_ala, to: urea, bend: 0}
+  - {from: l_pyr, to: l_glc, label: gluconeogenesis, label_side: right}
+  - {from: l_glc, to: m_glc, label: "via blood"}
+tags: [amino_acid_metabolism, transamination]
+status: pending

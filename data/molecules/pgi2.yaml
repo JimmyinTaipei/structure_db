@@ -1,0 +1,14 @@
+id: pgi2
+name: Prostacyclin (PGI2)
+label: Prostacyclin (PGI_2)
+aliases:
+- PGI₂
+- epoprostenol
+smiles: CCCCC[C@H](O)/C=C/[C@@H]1[C@H]2C/C(=C/CCCC(=O)[O-])O[C@H]2C[C@H]1O
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: 血管內皮產生：血管擴張、抑制血小板凝集（與 TXA₂ 相反）。epoprostenol 治療肺動脈高壓。
+status: pending

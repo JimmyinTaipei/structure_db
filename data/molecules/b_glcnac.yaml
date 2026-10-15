@@ -1,0 +1,17 @@
+id: b_glcnac
+name: "N-Acetyl-β-D-glucosamine"
+label: "N-Acetyl-β-D-\nglucosamine"
+aliases: [GlcNAc, N-乙醯葡萄糖胺]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)NC(C)=O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "OH", down: "H"}
+    2: {up: "H", down: "NHAc"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "CH_2OH", down: "H"}
+tags: [carbohydrate, sugar_derivative]
+notes_zh: "GlcNAc：C2 為乙醯胺基（NHAc = –NH–CO–CH₃）。玻尿酸、幾丁質、N-連結醣蛋白核心的成分；O-GlcNAc 修飾（營養感測）。"
+status: pending

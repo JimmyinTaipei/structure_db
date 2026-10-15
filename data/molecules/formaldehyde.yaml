@@ -1,0 +1,18 @@
+id: formaldehyde
+name: Formaldehyde
+aliases:
+- methanal
+- 甲醛
+smiles: C=O
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: H
+  d: H
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: 甲醇中毒的中間物，很快被 aldehyde dehydrogenase 氧化成 formate。
+status: pending

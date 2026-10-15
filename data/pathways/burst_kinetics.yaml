@@ -1,0 +1,69 @@
+id: burst_kinetics
+title: Burst kinetics (chymotrypsin)
+layout: plot
+plot:
+  size:
+  - 14
+  - 9
+  params:
+    A: 1
+    k: 2.2
+    s: 0.18
+  x:
+    min: 0
+    max: 10
+    label: Time
+  y:
+    min: 0
+    max: 3.2
+    label: '[P_1] (p-nitrophenolate)'
+  curves:
+  - id: p
+    y: A*(1 - exp(-k*x)) + s*x
+    width: 1.1
+  - id: ss
+    y: A + s*x
+    color: gray
+    dash: true
+    from: 0
+    to: 10
+  points:
+  - 'on': ss
+    x: 0
+    y: A
+    color: gray
+  texts:
+  - at:
+    - 0.3
+    - 2.7
+    text: 'Burst phase:
+
+      fast acylation
+
+      (1 P_1 per enzyme)'
+    align: left
+    size: 0.9
+    color: magenta
+  - at:
+    - 7.0
+    - 1.15
+    text: 'Steady state:
+
+      slow deacylation
+
+      (rate-limiting)'
+    size: 0.9
+    color: cyan
+  - at:
+    - 2.0
+    - 0.55
+    text: y intercept = [E]_T
+    size: 0.85
+    color: gray
+    align: left
+tags:
+- enzyme
+- enzyme_kinetics
+- catalysis
+notes_zh: Chymotrypsin 水解 p-nitrophenyl acetate：開始時快速釋出一當量 p-nitrophenolate（burst，acylation 快），之後速率由慢的 deacylation（水解 acyl-enzyme）決定 → 雙相曲線。外推直線的 y 截距 = 活性酵素濃度 [E]_T，證明有 covalent acyl-enzyme 中間物（ping-pong）。
+status: pending

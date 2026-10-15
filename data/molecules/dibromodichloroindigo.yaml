@@ -1,0 +1,13 @@
+id: dibromodichloroindigo
+name: 5,5′-Dibromo-4,4′-dichloro-indigo
+label: Blue dye (dibromo-dichloro-indigo)
+aliases: []
+smiles: O=C1/C(=C2\Nc3ccc(Br)c(Cl)c3C2=O)Nc2ccc(Br)c(Cl)c21
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- techniques
+notes_zh: 藍白篩選的藍色來源：不溶於水，沉積在菌落中。
+parts_png: false
+status: pending

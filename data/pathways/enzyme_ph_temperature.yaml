@@ -1,0 +1,128 @@
+id: enzyme_ph_temperature
+title: Enzyme activity vs pH and temperature
+layout: plot
+panels:
+- title: pH optimum
+  size:
+  - 12
+  - 7.5
+  x:
+    min: 0
+    max: 12
+    label: pH
+    ticks:
+    - 0
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+  y:
+    min: 0
+    max: 1.25
+    label: Activity
+  curves:
+  - id: pepsin
+    y: bell(x, 1.8, 0.9)
+    color: magenta
+    label: Pepsin
+    label_at: 1.8
+    label_off:
+    - 0
+    - -0.7
+    label_align: center
+  - id: amylase
+    y: bell(x, 6.8, 1.0)
+    color: green
+    label: Salivary amylase
+    label_at: 5.6
+    label_off:
+    - -0.3
+    - -0.3
+    label_align: right
+  - id: trypsin
+    y: bell(x, 8.0, 1.0)
+    color: cyan
+    label: Trypsin
+    label_at: 8
+    label_off:
+    - 0
+    - -0.7
+    label_align: center
+  - id: alp
+    y: bell(x, 10.0, 0.9)
+    color: purple
+    label: Alkaline phosphatase
+    label_at: 10.9
+    label_off:
+    - 0.3
+    - -0.2
+  points:
+  - 'on': pepsin
+    x: 1.8
+    y: 1
+    dot: false
+- title: Temperature
+  size:
+  - 12
+  - 7.5
+  params:
+    T0: 37
+  x:
+    min: 0
+    max: 70
+    label: Temperature (°C)
+    ticks:
+    - 0
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
+    - 60
+    - 70
+  y:
+    min: 0
+    max: 1.25
+    label: Activity
+  curves:
+  - id: t
+    y: 2**((x-T0)/10) / (1 + exp((x-44)/2.6)) / 0.935
+  arrows:
+  - from:
+    - 55
+    - 0.95
+    to:
+    - 50.5
+    - 0.55
+    color: red
+    label: Denaturation
+    label_off:
+    - 1.2
+    - -1.0
+  - from:
+    - 8
+    - 0.62
+    to:
+    - 24
+    - 0.5
+    color: cyan
+    label: Rate ×2 per 10 °C (Q_{10})
+    label_off:
+    - -1.0
+    - -0.9
+  points:
+  - 'on': t
+    x: 37
+    drop: x
+    label: ≈ 37 °C
+    label_off:
+    - -0.4
+    - -0.75
+    label_align: right
+tags:
+- enzyme
+- enzyme_kinetics
+notes_zh: pH：每個酵素有最適 pH（pepsin ≈ 1.5–2、唾液 amylase ≈ 6.8、trypsin ≈ 8、alkaline phosphatase ≈ 10），反映活性位殘基的解離狀態。溫度：先依 Q₁₀ ≈ 2 上升，過最適溫度（人體約 37 °C）後因變性快速下降。曲線為示意。
+status: pending

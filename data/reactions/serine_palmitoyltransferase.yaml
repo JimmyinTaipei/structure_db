@@ -1,0 +1,42 @@
+id: serine_palmitoyltransferase
+title: Palmitoyl-CoA + Serine → 3-Ketosphinganine (serine palmitoyltransferase)
+substrates:
+- palmitoyl_coa
+- serine
+products:
+- ketosphinganine
+- id: co2
+  view: formula
+cofactors_out:
+- CoA-SH
+extra_in:
+- H+
+prosthetic:
+- PLP
+enzyme: 'serine
+
+  palmitoyltransferase'
+reversible: false
+decorate:
+  serine:
+    colors:
+      0: magenta
+  co2:
+    colors:
+      0: magenta
+  palmitoyl_coa:
+    colors:
+      o2: cyan
+      rest: cyan
+  CoA-SH:
+    colors:
+      0: cyan
+card_zh:
+  location: ER 細胞質面
+  type: 縮合＋脫羧（PLP）；鞘脂合成的限速步驟
+  deficiency:
+  - SPTLC1 突變 → 遺傳性感覺神經病變（HSAN1）
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

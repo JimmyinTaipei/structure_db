@@ -1,0 +1,118 @@
+id: lipoproteins
+title: Lipoproteins（脂蛋白代謝，概念圖）
+layout: free
+cell_size: 6.4
+text: false
+nodes:
+- id: gut
+  text: Intestine
+  kind: heading
+  pos:
+  - 0
+  - 0
+- id: liv
+  text: Liver
+  kind: heading
+  pos:
+  - 0
+  - 2.2
+- id: cm
+  text: 'Chylomicron
+
+    (apoB-48, apoC-II, apoE)'
+  kind: name
+  pos:
+  - 0.6
+  - 0.6
+- id: cmr
+  text: Chylomicron remnant
+  kind: name
+  pos:
+  - 2.6
+  - 0.6
+- id: vldl
+  text: 'VLDL
+
+    (apoB-100, apoC-II, apoE)'
+  kind: name
+  pos:
+  - 0.6
+  - 2.8
+- id: idl
+  text: IDL
+  kind: name
+  pos:
+  - 2.6
+  - 2.8
+- id: ldl
+  text: 'LDL
+
+    (apoB-100)'
+  kind: name
+  pos:
+  - 4.2
+  - 2.8
+- id: rec
+  text: 'LDL receptor
+
+    (liver, tissues)'
+  kind: name
+  pos:
+  - 4.2
+  - 4.0
+- id: hdl
+  text: 'HDL (apoA-I)
+
+    LCAT, CETP'
+  kind: name
+  pos:
+  - 2.6
+  - 4.6
+- id: tis
+  text: 'Peripheral cells
+
+    (ABCA1)'
+  kind: name
+  pos:
+  - 0.6
+  - 4.6
+- id: lpl
+  text: 'LPL (capillary wall)
+
+    TAG → FA + glycerol'
+  kind: concept
+  pos:
+  - 1.6
+  - 1.7
+edges:
+- from: cm
+  to: cmr
+  label: LPL (apoC-II)
+- from: liv
+  to: vldl
+- from: cmr
+  to: liv
+  label: apoE receptor
+  bend: -0.2
+- from: vldl
+  to: idl
+  label: LPL
+- from: idl
+  to: ldl
+  label: hepatic lipase
+- from: ldl
+  to: rec
+  label: apoB-100
+- from: tis
+  to: hdl
+  label: cholesterol efflux
+- from: hdl
+  to: liv
+  label: SR-BI (reverse transport)
+  bend: -0.45
+tags:
+- lipid_metabolism
+- lipoprotein
+notes_zh: 外源：乳糜微粒（腸，apoB-48）→ LPL（需 apoC-II）→ 殘餘物由肝經 apoE 回收。內源：VLDL（肝，apoB-100）→ IDL → LDL → LDL receptor（家族性高膽固醇血症：受體缺陷）。HDL：apoA-I、LCAT 酯化，逆向膽固醇運輸；CETP 把膽固醇酯換到 VLDL／LDL。Ⅰ型（LPL 或 apoC-II 缺乏）→ 乳糜微粒血症、胰臟炎；Ⅲ型
+  apoE2；Tangier（ABCA1）HDL 極低；abetalipoproteinemia（MTP）。
+status: pending

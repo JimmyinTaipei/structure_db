@@ -1,0 +1,38 @@
+id: pepck
+title: Gluconeogenesis ② Oxaloacetate → PEP (PEP carboxykinase)
+substrates:
+- oxaloacetate
+products:
+- pep
+- id: co2
+  view: formula
+cofactors_in:
+- GTP
+cofactors_out:
+- GDP
+enzyme: 'PEP carboxykinase
+
+  (PEPCK)'
+reversible: false
+decorate:
+  oxaloacetate:
+    colors: {3: magenta}
+  co2:
+    colors: {0: magenta}
+  GTP:
+    colors: {0: cyan}
+  pep:
+    colors:
+      1:
+        r: [cyan, '{P}']
+card_zh:
+  location: 細胞質與粒線體（人類兩種都有）
+  type: 脫羧＋磷酸化（消耗 1 GTP）
+  regulation: 轉錄調控：glucagon、cortisol → ↑；insulin → ↓
+  exam_points:
+  - 剛加上去的 CO₂ 又被拿掉：羧化只是為了活化
+  - OAA 不能穿過粒線體內膜：先變成 malate（或 Asp）再出來
+tags:
+- carb_metabolism
+- gluconeogenesis
+status: pending

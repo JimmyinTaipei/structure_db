@@ -1,0 +1,23 @@
+id: ipp_isomerase
+title: IPP ⇌ DMAPP (isopentenyl-diphosphate isomerase)
+substrates:
+- ipp
+products:
+- dmapp
+enzyme: IPP isomerase
+reversible: true
+decorate:
+  ipp:
+    colors:
+      0: magenta
+      1: magenta
+  dmapp:
+    colors:
+      0: magenta
+      1: magenta
+card_zh:
+  type: 異構化（雙鍵移位）
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+status: pending

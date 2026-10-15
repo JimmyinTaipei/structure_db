@@ -1,0 +1,34 @@
+id: a_galactopyranose
+name: α-D-Galactopyranose
+label: α-D-Galactose
+aliases:
+- α-D-galactose
+- α-galactose
+smiles: C([C@@H]1[C@@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: OH
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: HO
+      down: H
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- carbohydrate
+- monosaccharide
+- aldose
+- galactose_metabolism
+notes_zh: 與 glucose 只差 C4（C4 epimer：Haworth 中 C4-OH 朝上）。galactokinase 作用於 α 異構物。
+status: pending

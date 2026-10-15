@@ -1,0 +1,45 @@
+id: aars_transfer
+title: Aminoacyl transfer to tRNA (aminoacyl-tRNA synthetase, step 2)
+substrates:
+- alanyl_adenylate
+products:
+- alanyl_trna
+cofactors_in:
+- tRNA
+cofactors_out:
+- AMP
+extra_out:
+- H+
+enzyme: alanyl-tRNA synthetase (class II)
+reversible: false
+decorate:
+  alanyl_adenylate:
+    highlight:
+    - smarts: C(=O)[O:5]-[P:1](=[O:2])([O-:3])[O:4][#0]
+      color: magenta
+  AMP:
+    colors:
+      0:
+        c:
+        - - magenta
+          - AMP
+  tRNA:
+    colors:
+      0:
+        c:
+        - - cyan
+          - tRNA
+  alanyl_trna:
+    highlight:
+    - smarts: C(=O)[O:1]*
+      color: cyan
+card_zh:
+  type: tRNA 3′-OH 的 O（青）攻擊醯基碳，形成胺醯-tRNA 酯鍵；AMP 離開
+  exam_points:
+  - class I（如 Ile、Val、Leu、Met）接 2′-OH，class II（如 Ala、Gly、Ser、Phe）接 3′-OH
+  - tRNA^{Ala} 的 G3·U70 是 AlaRS 的辨識要素（second genetic code）
+tags:
+- molecular_biology
+- translation
+parts_png: false
+status: pending

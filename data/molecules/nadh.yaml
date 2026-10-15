@@ -1,0 +1,17 @@
+id: nadh
+name: NADH
+label: NADH
+aliases:
+- reduced NAD
+smiles: NC(=O)C1=CN(C=CC1)[C@@H]4O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6cnc7c(N)ncnc76)[C@H](O)[C@@H]5O)[C@@H](O)[C@H]4O
+ring:
+  flip: true
+decorate:
+  highlight:
+  - smarts: NC(=O)C1=CNC=CC1
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 還原態：nicotinamide 環的 C4 變成 CH₂（多一個 H），環不再芳香 → 340 nm 吸光（酵素活性測定的依據）。電子經 Complex I 進入 ETC。
+status: pending

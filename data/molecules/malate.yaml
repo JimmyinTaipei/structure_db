@@ -1,0 +1,19 @@
+id: malate
+name: L-Malate
+label: Malate
+aliases: [malate, 蘋果酸]
+smiles: "[O-]C(=O)[C@@H](O)CC(=O)[O-]"
+chain:
+  - {c: "COO^-"}
+  - {c: C, l: HO, r: H}
+  - {c: CH_2}
+  - {c: "COO^-"}
+chains:
+  explicit:                         # fumarase 用（Mathews）：第 2 列的兩個 H 明確畫出
+    - {c: "COO^-"}
+    - {c: C, l: HO, r: H}
+    - {c: C, l: H, r: H}
+    - {c: "COO^-"}
+tags: [carb_metabolism, TCA, gluconeogenesis]
+notes_zh: Malate–aspartate shuttle 的載體；糖質新生時 OAA 以 malate 形式出粒線體。
+status: approved

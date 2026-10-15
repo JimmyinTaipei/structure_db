@@ -1,0 +1,69 @@
+id: catecholamine_synthesis
+title: Catecholamine synthesis（兒茶酚胺合成）
+layout: free
+cell: 0.85
+nodes:
+- id: phe
+  ref: phenylalanine
+  pos:
+  - 0
+  - 0
+- id: tyr
+  ref: tyrosine
+  pos:
+  - 1.15
+  - 0
+- id: dopa
+  ref: l_dopa
+  pos:
+  - 2.3
+  - 0
+- id: da
+  ref: dopamine
+  pos:
+  - 2.3
+  - 1.4
+- id: ne
+  ref: norepinephrine
+  pos:
+  - 1.15
+  - 1.4
+- id: epi
+  ref: epinephrine
+  pos:
+  - 0
+  - 1.4
+edges:
+- from: phe
+  to: tyr
+  step: phenylalanine_hydroxylase
+  label: PAH
+  side_text: BH_4
+- from: tyr
+  to: dopa
+  step: tyrosine_hydroxylase
+  label: 'tyrosine hydroxylase
+
+    (rate-limiting)'
+  side_text: BH_4
+- from: dopa
+  to: da
+  step: dopa_decarboxylase
+  label: AADC
+  side_text: PLP, −CO_2
+  label_side: right
+- from: da
+  to: ne
+  step: dopamine_beta_hydroxylase
+  label: DBH
+  side_text: vit C, Cu
+- from: ne
+  to: epi
+  step: pnmt
+  label: PNMT
+  side_text: SAM
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: Phe → Tyr（PAH）→ DOPA（TH，限速，BH4）→ dopamine（AADC，B6）→ NE（DBH，Cu、vit C）→ Epi（PNMT，SAM；cortisol 誘導）。分解：MAO、COMT → HVA（dopamine）、VMA（NE、Epi）。
+status: pending

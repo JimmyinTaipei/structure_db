@@ -1,0 +1,23 @@
+id: enoyl_coa_hydratase
+title: β-Oxidation ② trans-Δ²-Enoyl-CoA → L-3-Hydroxyacyl-CoA (enoyl-CoA hydratase)
+substrates:
+- enoyl_coa
+products:
+- hydroxyacyl_coa
+cofactors_in:
+- H2O
+enzyme: enoyl-CoA hydratase
+reversible: true
+decorate:
+  H2O:
+    colors: {0: magenta}
+  hydroxyacyl_coa:
+    colors:
+      1: {r: magenta}
+card_zh:
+  location: 粒線體基質
+  type: 加水（只產生 L 型）
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

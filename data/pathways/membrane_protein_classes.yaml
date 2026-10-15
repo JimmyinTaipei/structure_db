@@ -1,0 +1,191 @@
+id: membrane_protein_classes
+title: Classes of membrane proteins
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 33.0
+    - 3.0
+    text: Outside
+    size: 0.7
+    align: right
+    color: gray
+  - g: text
+    at:
+    - 33.0
+    - 7.0
+    text: Cytosol
+    size: 0.7
+    align: right
+    color: gray
+  - g: membrane
+    y: 5.0
+    x0: -1.0
+    x1: 33.0
+    lipids: true
+  - g: blob
+    at:
+    - 2.0
+    - 2.6
+    w: 1.8
+    h: 1.4
+    shape: oval
+    hue: blue
+  - g: blob
+    at:
+    - 2.0
+    - 5.0
+    w: 0.6
+    h: 3.6
+    shape: box
+    hue: blue
+  - g: blob
+    at:
+    - 2.0
+    - 7.4
+    w: 1.6
+    h: 1.2
+    shape: oval
+    hue: blue
+  - g: text
+    at:
+    - 2.0
+    - 10.4
+    text: single-pass
+    size: 0.75
+    align: center
+  - g: gpcr
+    at:
+    - 7.6
+    - 5.0
+    hue: purple
+  - g: text
+    at:
+    - 7.6
+    - 10.4
+    text: multipass
+    size: 0.75
+    align: center
+  - g: channel
+    at:
+    - 13.0
+    - 5.0
+    hue: teal
+    open: true
+  - g: text
+    at:
+    - 13.0
+    - 10.4
+    text: channel / barrel
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 7.6
+    - 12.0
+    text: 'integral: detergent to remove'
+    size: 0.6
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 18.6
+    - 5.0
+    w: 1.0
+    h: 3.2
+    shape: box
+    hue: orange
+  - g: blob
+    at:
+    - 18.6
+    - 7.1
+    w: 2.2
+    h: 1.2
+    shape: oval
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: text
+    at:
+    - 20.6
+    - 10.4
+    text: peripheral
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 20.6
+    - 12.0
+    text: salt / pH releases
+    size: 0.6
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 22.6
+    - 6.9
+    w: 2.0
+    h: 1.2
+    shape: oval
+    hue: yellow
+    text: P
+    text_size: 0.5
+  - g: blob
+    at:
+    - 26.0
+    - 1.4
+    w: 2.0
+    h: 1.3
+    shape: oval
+    hue: green
+    text: GPI
+    text_size: 0.42
+  - g: strand
+    kind: gray
+    points:
+    - - 26.0
+      - 2.1
+    - - 26.0
+      - 3.94
+    width: 0.12
+  - g: blob
+    at:
+    - 28.8
+    - 8.6
+    w: 1.8
+    h: 1.2
+    shape: oval
+    hue: pink
+    text: Ras
+    text_size: 0.42
+  - g: strand
+    kind: gray
+    points:
+    - - 28.8
+      - 8.0
+    - - 28.8
+      - 6.0600000000000005
+    width: 0.12
+  - g: text
+    at:
+    - 27.4
+    - 10.4
+    text: lipid-anchored
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 27.4
+    - 12.0
+    text: 'GPI: PI-PLC · prenyl, acyl'
+    size: 0.6
+    align: center
+    color: gray
+tags:
+- membrane
+- membrane_lipid
+notes_zh: Integral（內在）：穿過疏水核心，單次跨膜（α 螺旋約 20 個疏水胺基酸）、多次跨膜（GPCR 7 次）、β-barrel（porin、外膜）；需界面活性劑（SDS、Triton X-100）才能取出。Peripheral（周邊）：以離子鍵、氫鍵結合在膜表面或其他膜蛋白上（如 cytochrome c、spectrin），高鹽、改變 pH 或 EDTA 即可洗下。Amphitropic：可逆地結合在膜上。Lipid-anchored：GPI（膜外側，PI-PLC
+  可切下）；內側的 myristoyl（N 端 Gly）、palmitoyl（Cys）、prenyl（farnesyl／geranylgeranyl，C 端 CaaX，如 Ras）。Hydropathy plot 找出約 20 個疏水胺基酸的區段可預測跨膜螺旋。
+parts_png: false
+status: pending

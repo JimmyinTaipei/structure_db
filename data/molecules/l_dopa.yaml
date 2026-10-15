@@ -1,0 +1,19 @@
+id: l_dopa
+name: L-DOPA
+aliases:
+- levodopa
+- 3,4-dihydroxyphenylalanine
+- 左旋多巴
+smiles: '[NH3+][C@@H](Cc1ccc(O)c(O)c1)C(=O)[O-]'
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- ring: '[*]c1ccc(O)c(O)c1'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: tyrosine hydroxylase（BH4，兒茶酚胺合成的限速步驟）的產物。Parkinson 治療：L-DOPA 能過血腦屏障，dopamine 不能；併用 carbidopa（周邊 AADC 抑制劑）。也是黑色素的前驅物（tyrosinase）。
+status: pending

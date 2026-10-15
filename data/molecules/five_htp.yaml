@@ -1,0 +1,20 @@
+id: five_htp
+name: 5-Hydroxytryptophan
+label: '5-Hydroxy-
+
+  tryptophan'
+aliases:
+- 5-HTP
+smiles: '[NH3+][C@@H](Cc1c[nH]c2ccc(O)cc12)C(=O)[O-]'
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- ring: '[*]c1c[nH]c2ccc(O)cc12'
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+notes_zh: tryptophan hydroxylase（BH4）的產物，serotonin 合成的限速步驟。
+status: pending

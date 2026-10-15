@@ -1,0 +1,13 @@
+id: adenine_rib
+name: Adenine (in RNA)
+label: Adenine (in RNA)
+aliases: []
+smiles: '[19*]n1cnc2c(N)ncnc21'
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: RNA 中的 adenine（Rib = 核糖與骨架）。
+parts_png: false
+status: pending

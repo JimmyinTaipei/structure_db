@@ -1,0 +1,35 @@
+id: a_glucose_1p
+name: α-D-Glucose 1-phosphate
+label: 'Glucose
+
+  1-phosphate'
+aliases:
+- G1P
+- glucose 1-phosphate
+- 葡萄糖-1-磷酸
+smiles: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)OP(=O)([O-])[O-])O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: O{P}
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- glycogen
+- galactose_metabolism
+notes_zh: glycogen phosphorylase 的產物（磷酸解，不耗 ATP）；也是肝醣合成的起點（→ UDP-glucose）。PGM ⇌ G6P。
+status: pending

@@ -1,0 +1,20 @@
+id: argininosuccinate
+name: Argininosuccinate
+label: "Arginino-\nsuccinate"
+aliases: [ASA, 精胺基琥珀酸]
+smiles: "[O-]C(=O)C[C@H](NC(=[NH2+])NCCC[C@H]([NH3+])C(=O)[O-])C(=O)[O-]"
+chain:                              # 上半是 citrulline 的骨架，第 7 列起來自 aspartate
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: NH}
+  - {c: C, r: "^+NH_2", rb: 2}
+  - {c: NH}
+  - {c: C, l: H, r: "COO^-"}
+  - {c: CH_2}
+  - {c: "COO^-"}
+tags: [urea]
+notes_zh: 由 citrulline 與 aspartate 縮合（消耗 ATP → AMP + PPᵢ）。缺 ASL → argininosuccinic aciduria。
+status: pending

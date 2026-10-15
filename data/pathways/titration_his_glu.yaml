@@ -1,0 +1,162 @@
+id: titration_his_glu
+title: 'Titration curves: histidine and glutamate'
+layout: plot
+panels:
+- title: Histidine
+  size:
+  - 12
+  - 9.5
+  params:
+    pK1: 1.82
+    pK2: 6.0
+    pK3: 9.17
+    pI: (pK2+pK3)/2
+  x:
+    min: 0
+    max: 3.15
+    label: OH^- (equivalents)
+    ticks:
+    - 0
+    - 1
+    - 2
+    - 3
+  y:
+    min: 0
+    max: 13.5
+    label: pH
+    ticks:
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+  curves:
+  - id: c
+    t:
+    - 0.3
+    - 13.2
+    x: 1/(1+10**(pK1-t)) + 1/(1+10**(pK2-t)) + 1/(1+10**(pK3-t))
+    y: t
+    width: 1.1
+  points:
+  - 'on': c
+    x: 0.5
+    y: pK1
+    drop: y
+    label: pK_1 1.8 (α-COOH)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    x: 1.5
+    y: pK2
+    drop: y
+    label: pK_R 6.0 (imidazole)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    x: 2.5
+    y: pK3
+    drop: y
+    label: pK_2 9.2 (α-NH_3^+)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    y: pI
+    color: magenta
+    label: pI = 7.58
+    label_off:
+    - -0.4
+    - -0.5
+    label_align: right
+  texts:
+  - at:
+    - 0.1
+    - 12.6
+    text: +2 → +1 → 0 → −1
+    align: left
+    size: 0.85
+    color: gray
+- title: Glutamate
+  size:
+  - 12
+  - 9.5
+  params:
+    pK1: 2.19
+    pK2: 4.25
+    pK3: 9.67
+    pI: (pK1+pK2)/2
+  x:
+    min: 0
+    max: 3.15
+    label: OH^- (equivalents)
+    ticks:
+    - 0
+    - 1
+    - 2
+    - 3
+  y:
+    min: 0
+    max: 13.5
+    label: pH
+    ticks:
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+  curves:
+  - id: c
+    t:
+    - 0.3
+    - 13.2
+    x: 1/(1+10**(pK1-t)) + 1/(1+10**(pK2-t)) + 1/(1+10**(pK3-t))
+    y: t
+    width: 1.1
+  points:
+  - 'on': c
+    x: 0.5
+    y: pK1
+    drop: y
+    label: pK_1 2.2 (α-COOH)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    x: 1.5
+    y: pK2
+    drop: y
+    label: pK_R 4.3 (γ-COOH)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    x: 2.5
+    y: pK3
+    drop: y
+    label: pK_2 9.7 (α-NH_3^+)
+    label_off:
+    - 0.4
+    - 0.55
+  - 'on': c
+    y: pI
+    color: magenta
+    label: pI = 3.22
+    label_off:
+    - -0.4
+    - -0.5
+    label_align: right
+  texts:
+  - at:
+    - 0.1
+    - 12.6
+    text: +1 → 0 → −1 → −2
+    align: left
+    size: 0.85
+    color: gray
+tags:
+- amino_acid
+notes_zh: 三個可解離基團 → 三個緩衝區。pI = 淨電荷 0 那一型兩側的 pK 平均：His（鹼性）pI = (6.0 + 9.2)/2 ≈ 7.6；Glu（酸性）pI = (2.2 + 4.3)/2 ≈ 3.2。His 的 pK_R ≈ 6 接近生理 pH → 蛋白中的緩衝（如 Hb His146 的 Bohr effect）、酵素 general acid/base。
+status: pending

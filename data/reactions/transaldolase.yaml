@@ -1,0 +1,25 @@
+id: transaldolase
+title: Transaldolase S7P + G3P ⇌ E4P + F6P
+substrates:
+- sedoheptulose_7p
+- glyceraldehyde_3p
+products:
+- erythrose_4p
+- fructose_6p
+enzyme: transaldolase
+reversible: true
+decorate:
+  sedoheptulose_7p:
+    colors: {0: magenta, 1: magenta, 2: magenta}
+  fructose_6p:
+    colors: {0: magenta, 1: magenta, 2: magenta}
+card_zh:
+  location: 細胞質（PPP 非氧化期）
+  type: 轉移 3 碳（dihydroxyacetone 單位）
+  mechanism: 酵素 Lys 與酮糖 C2 形成 Schiff base（不需 TPP）
+  exam_points:
+  - transketolase 轉 2C（TPP）；transaldolase 轉 3C
+tags:
+- carb_metabolism
+- PPP
+status: pending

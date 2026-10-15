@@ -1,0 +1,130 @@
+id: ribosome_structure
+title: 'The ribosome: subunits and E / P / A sites'
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 7.0
+    - - 11.0
+      - 7.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: ribosome
+    at:
+    - 5.5
+    - 7.0
+    w: 7.0
+    sites: true
+    large: 50S
+    small: 30S
+  - g: trna
+    shape: icon
+    at:
+    - 3.61
+    - 7.0
+    s: 0.8
+    anticodon: ''
+    hue: '#D9D9D9'
+  - g: trna
+    shape: icon
+    at:
+    - 5.5
+    - 7.0
+    s: 0.8
+    anticodon: UAC
+    peptide: 3
+  - g: trna
+    shape: icon
+    at:
+    - 7.390000000000001
+    - 7.0
+    s: 0.8
+    anticodon: CGA
+    aa: Ala
+  - g: text
+    at:
+    - 13.0
+    - 1.6
+    text: 'E site: deacylated tRNA leaves'
+    size: 0.78
+    align: left
+  - g: text
+    at:
+    - 13.0
+    - 2.8
+    text: 'P: peptidyl-tRNA'
+    size: 0.78
+    align: left
+  - g: text
+    at:
+    - 13.0
+    - 4.0
+    text: 'A site: incoming aminoacyl-tRNA'
+    size: 0.78
+    align: left
+  - g: text
+    at:
+    - 13.0
+    - 8.0
+    text: mRNA read 5′→3′; protein made N → C terminus
+    size: 0.78
+    align: left
+  - g: blob
+    at:
+    - 17.0
+    - 11.4
+    w: 8.0
+    h: 1.1
+    shape: box
+    hue: purple
+    text: 70S (bacteria)
+    text_size: 0.7
+  - g: text
+    at:
+    - 21.5
+    - 11.4
+    text: 30S (16S rRNA + 21 proteins) + 50S (23S + 5S rRNA + 33 proteins)
+    size: 0.75
+    align: left
+  - g: blob
+    at:
+    - 17.0
+    - 12.9
+    w: 8.0
+    h: 1.1
+    shape: box
+    hue: pink
+    text: 80S (eukaryotes)
+    text_size: 0.7
+  - g: text
+    at:
+    - 21.5
+    - 12.9
+    text: 40S (18S) + 60S (28S, 5.8S, 5S)
+    size: 0.75
+    align: left
+  - g: text
+    at:
+    - 17.0
+    - 14.3
+    text: 'mitochondria: 55S (12S + 16S rRNA)'
+    size: 0.72
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- translation
+notes_zh: '70S = 30S（16S + 21 蛋白）+ 50S（23S + 5S + 33 種蛋白，L7/L12 有 4 份共 36 個）；80S = 40S（18S）+ 60S（28S、5.8S、5S）。A = aminoacyl-tRNA、P = peptidyl-tRNA、E = exit。小次單元先結合 mRNA 並負責解碼；大次單元的 23S/28S rRNA 形成 peptidyl
+  transferase center（ribozyme）。證明：puromycin 只與 P 位的 peptidyl-tRNA 反應；一個核糖體可結合 3 個去醯化 tRNA 但只能 2 個胺醯 tRNA → E 位。
+
+  【補充】How the sites were found: puromycin (looks like Tyr-tRNA) reacts only with peptidyl-tRNA in the P site, not in the A site; three deacylated tRNAs fit on one ribosome but only two aminoacyl-tRNAs →
+  a third (E) site. Ribosome ~2.5 MDa (bacteria), two-thirds rRNA. Polysome: many ribosomes on one mRNA.
+
+  【補充】large subunit: peptidyl transferase centre (23S / 28S rRNA = ribozyme), exit tunnel small subunit: binds mRNA first, decoding centre (16S / 18S rRNA)'
+parts_png: false
+status: pending

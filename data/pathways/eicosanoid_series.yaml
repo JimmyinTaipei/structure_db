@@ -1,0 +1,101 @@
+id: eicosanoid_series
+title: Eicosanoid series 1, 2, 3
+layout: free
+cell_size: 5.0
+nodes:
+- id: dgla
+  text: 'DGLA
+
+    20:3 (ω6)'
+  pos:
+  - 0
+  - 1.2
+  kind: name
+- id: aa
+  ref: arachidonate
+  pos:
+  - 2.3
+  - 1.2
+  view: name
+- id: epa
+  ref: epa
+  pos:
+  - 4.6
+  - 1.2
+  view: name
+- id: pg1
+  text: 'PGE_1, TXA_1
+
+    (series 1)'
+  pos:
+  - 0
+  - 0
+  kind: concept
+- id: pg2
+  text: 'PGE_2, PGI_2, TXA_2
+
+    (series 2)'
+  pos:
+  - 2.3
+  - 0
+  kind: concept
+- id: pg3
+  text: 'PGI_3, TXA_3
+
+    (series 3)'
+  pos:
+  - 4.6
+  - 0
+  kind: concept
+- id: lt3
+  text: 'LTA_3
+
+    (series 3)'
+  pos:
+  - 0
+  - 2.4
+  kind: concept
+- id: lt4
+  text: 'LTA_4, LTB_4, LTC_4
+
+    (series 4)'
+  pos:
+  - 2.3
+  - 2.4
+  kind: concept
+- id: lt5
+  text: 'LTA_5
+
+    (series 5)'
+  pos:
+  - 4.6
+  - 2.4
+  kind: concept
+edges:
+- from: dgla
+  to: pg1
+  label: COX
+- from: aa
+  to: pg2
+  label: 'COX
+
+    (aspirin
+
+    inhibits)'
+- from: epa
+  to: pg3
+  label: COX
+- from: dgla
+  to: lt3
+  label: LOX
+- from: aa
+  to: lt4
+  label: 5-LOX
+- from: epa
+  to: lt5
+  label: LOX
+tags:
+- lipid
+- eicosanoid
+notes_zh: 前列腺素／血栓素的下標 = 前驅物雙鍵數 − 2（COX 環化用掉 2 個）；白三烯的下標 = 雙鍵數（LOX 不形成環）。DGLA（20:3）→ series 1 PG、LT₃；AA（20:4）→ series 2 PG/TX、LT₄；EPA（20:5）→ series 3、LT₅（魚油：TXA₃ 促凝效果弱 → 抗血栓）。
+status: pending

@@ -1,0 +1,116 @@
+id: enzyme_classes
+title: Seven classes of enzymes (EC)
+layout: free
+cell_size: 4.0
+nodes:
+- id: c1
+  text: 1 Oxidoreductase
+  pos:
+  - 0
+  - 0
+  kind: concept
+- id: c2
+  text: 2 Transferase
+  pos:
+  - 0
+  - 0.8
+  kind: concept
+- id: c3
+  text: 3 Hydrolase
+  pos:
+  - 0
+  - 1.6
+  kind: concept
+- id: c4
+  text: 4 Lyase
+  pos:
+  - 0
+  - 2.4
+  kind: concept
+- id: c5
+  text: 5 Isomerase
+  pos:
+  - 0
+  - 3.2
+  kind: concept
+- id: c6
+  text: 6 Ligase
+  pos:
+  - 0
+  - 4.0
+  kind: concept
+- id: c7
+  text: 7 Translocase
+  pos:
+  - 0
+  - 4.8
+  kind: concept
+- id: e1
+  text: Lactate DH (NADH)
+  pos:
+  - 3.2
+  - 0
+  kind: name
+- id: e2
+  text: Hexokinase (Ⓟ from ATP)
+  pos:
+  - 3.2
+  - 0.8
+  kind: name
+- id: e3
+  text: Arginase (H_2O)
+  pos:
+  - 3.2
+  - 1.6
+  kind: name
+- id: e4
+  text: Fumarase (adds H_2O to C=C)
+  pos:
+  - 3.2
+  - 2.4
+  kind: name
+- id: e5
+  text: Phosphoglucomutase
+  pos:
+  - 3.2
+  - 3.2
+  kind: name
+- id: e6
+  text: Pyruvate carboxylase (ATP)
+  pos:
+  - 3.2
+  - 4.0
+  kind: name
+- id: e7
+  text: ATP synthase / Na^+,K^+-ATPase
+  pos:
+  - 3.2
+  - 4.8
+  kind: name
+edges:
+- from: c1
+  to: e1
+  step: ldh
+- from: c2
+  to: e2
+  step: hexokinase
+- from: c3
+  to: e3
+  step: arginase
+- from: c4
+  to: e4
+  step: fumarase
+- from: c5
+  to: e5
+  step: phosphoglucomutase
+- from: c6
+  to: e6
+  step: pyruvate_carboxylase
+- from: c7
+  to: e7
+  step: atp_synthase
+tags:
+- enzyme
+notes_zh: EC 分類（口訣 OTHLIL＋T）：1 氧化還原（dehydrogenase、oxidase、oxygenase）；2 轉移官能基（kinase、transaminase）；3 水解（protease、lipase、nuclease、phosphatase）；4 Lyase：非水解、非氧化地加成或移除基團形成雙鍵（decarboxylase、aldolase、hydratase；synthase
+  不耗 ATP，如 citrate synthase 屬 lyase）；5 異構（mutase、epimerase、racemase）；6 Ligase：耗 ATP 形成鍵（synthetase、carboxylase）；7 Translocase：跨膜運送（2018 新增）。點箭頭可跳到例子反應。
+status: pending

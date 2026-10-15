@@ -1,0 +1,29 @@
+id: phosphoglycerate_kinase
+title: "Glycolysis ⑦ 1,3-Bisphosphoglycerate → 3-Phosphoglycerate"
+step: 7
+substrates: [bpg_13]
+products: [pg_3]
+cofactors_in: [ADP]
+cofactors_out: [ATP]
+prosthetic: ["Mg^{2+}"]
+enzyme: "phosphoglycerate\nkinase"
+reversible: true
+decorate:
+  bpg_13:
+    colors:
+      0:
+        fork_r: [magenta, '{P}']
+  pg_3:
+    colors:
+      0: {fork_r: magenta}
+  ATP:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: 受質層次磷酸化（第 1 次產 ATP）
+  deltaG: "ΔG'° = −18.5 kJ/mol；與上一步偶聯，整體可逆"
+  exam_points:
+    - "名稱以逆反應命名（kinase）；每個 glucose 產 2 ATP，抵銷準備期消耗"
+    - "紅血球可繞過此步：BPG mutase 生成 2,3-BPG（降低 Hb 對 O₂ 親和力），代價是少 2 ATP"
+tags: [carb_metabolism, glycolysis]
+status: pending

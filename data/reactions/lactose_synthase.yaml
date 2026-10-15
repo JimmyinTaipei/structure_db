@@ -1,0 +1,43 @@
+id: lactose_synthase
+title: UDP-galactose + Glucose → Lactose (lactose synthase)
+substrates:
+- udp_galactose
+- b_glucopyranose
+products:
+- lactose
+- id: udp
+  view: formula
+extra_out:
+- H+
+enzyme: 'lactose synthase
+
+  (galactosyltransferase + α-lactalbumin)'
+reversible: false
+decorate:
+  udp_galactose:
+    colors:
+      d1: cyan
+  udp:
+    colors:
+      0: cyan
+  b_glucopyranose:
+    colors:
+      d4:
+      - magenta
+      - O
+  lactose:
+    colors:
+      link0: magenta
+card_zh:
+  location: 乳腺細胞 Golgi
+  type: 醣基轉移：Gal 的 C1 接到 glucose 的 C4–O（洋紅）形成 β1→4 醣苷鍵；UDP 帶著原本 C1 的 O 離開（青）
+  regulation: α-lactalbumin（調節次單元）使 galactosyltransferase 的 K_m(glucose) 大幅下降；prolactin 誘導 α-lactalbumin，懷孕時 progesterone 抑制
+  exam_points:
+  - 平時 galactosyltransferase 把 Gal 接到 GlcNAc（醣蛋白）；哺乳期加上 α-lactalbumin → 改接 glucose 生成乳糖
+  - Gal 來源：UDP-Glc ⇌ UDP-Gal（4-epimerase），所以不吃半乳糖也能合成乳糖
+tags:
+- carb_metabolism
+- galactose_metabolism
+- carbohydrate
+- disaccharide
+status: pending

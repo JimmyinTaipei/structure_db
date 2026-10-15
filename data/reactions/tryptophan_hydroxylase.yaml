@@ -1,0 +1,34 @@
+id: tryptophan_hydroxylase
+title: Tryptophan → 5-Hydroxytryptophan (tryptophan hydroxylase)
+substrates:
+- tryptophan
+products:
+- five_htp
+cofactors_in:
+- O2
+- BH4
+cofactors_out:
+- H2O
+- BH2
+enzyme: 'tryptophan
+
+  hydroxylase'
+reversible: false
+decorate:
+  five_htp:
+    colors:
+      3:
+        ring:
+        - atoms: [8]
+          color: magenta
+  O2:
+    colors: {0: magenta}
+  H2O:
+    colors: {0: magenta}
+card_zh:
+  type: 羥化（BH4）
+  regulation: serotonin 合成的限速步驟
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

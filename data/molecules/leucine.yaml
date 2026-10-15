@@ -1,0 +1,14 @@
+id: leucine
+name: Leucine
+aliases: [Leu, L, 白胺酸]
+smiles: "CC(C)C[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH, dfork: {l: CH_3, r: CH_3}}
+decorate:
+  boxes: [{rows: [2, 3], name: R}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Leu / L。BCAA、必需；純生酮（Leu、Lys 兩個）。活化 mTOR。"
+status: approved

@@ -1,0 +1,24 @@
+id: fatty_acids
+title: "Fatty acids（脂肪酸：飽和、cis／trans、ω-3／ω-6）"
+layout: free
+cell_size: 4.6
+node_anchor: top
+text: false
+nodes:
+  - {id: h1, text: "Saturated", kind: heading, pos: [-0.2, -0.75]}
+  - {id: pal, ref: palmitate, pos: [2.3, 0]}
+  - {id: ste, ref: stearate, pos: [7.4, 0]}
+  - {id: h2, text: "cis / trans", kind: heading, pos: [-0.2, 1.65]}
+  - {id: ole, ref: oleate, pos: [2.3, 2.4]}
+  - {id: ela, ref: elaidate, pos: [7.4, 2.4]}
+  - {id: h3, text: "Essential (ω-6, ω-3)", kind: heading, pos: [-0.2, 5.25]}
+  - {id: lin, ref: linoleate, pos: [2.3, 6.0]}
+  - {id: aln, ref: alpha_linolenate, pos: [7.4, 6.0]}
+  - {id: h4, text: "Long-chain polyunsaturated", kind: heading, pos: [-0.2, 8.9]}
+  - {id: ara, ref: arachidonate, pos: [1.6, 9.65]}
+  - {id: epa, ref: epa, pos: [5.0, 9.65]}
+  - {id: dha, ref: dha, pos: [8.6, 9.65]}
+edges: []
+tags: [lipid, fatty_acid]
+notes_zh: "Δ 編號從羧基 C1 數；ω 編號從甲基端數（ω-3：最後一個雙鍵距甲基端 3 個碳）。cis 雙鍵讓鏈彎折、熔點降低；trans 接近直鏈。人類不能合成 linoleate（ω-6）與 α-linolenate（ω-3）→ 必需脂肪酸。"
+status: pending

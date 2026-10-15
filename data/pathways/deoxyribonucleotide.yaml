@@ -1,0 +1,28 @@
+id: deoxyribonucleotide
+title: Deoxyribonucleotides & dTMP（去氧核苷酸與 dTMP 合成）
+layout: free
+cell: 0.95
+nodes:
+  - {id: ndp, ref: ndp, pos: [0, 0]}
+  - {id: dndp, ref: dndp, pos: [1.7, 0]}
+  - {id: dump, ref: dump, pos: [0, 1.25]}
+  - {id: dtmp, ref: dtmp, pos: [1.7, 1.25]}
+  - {id: ch2thf, ref: methylene_thf, view: formula, pos: [0.25, 2.25]}
+  - {id: dhf, ref: dhf, view: formula, pos: [1.45, 2.25]}
+  - {id: thf, ref: thf, view: formula, pos: [0.85, 2.95]}
+  - {id: hu, text: "Hydroxyurea", kind: drug, pos: [0.85, -0.7]}
+  - {id: fu, text: "5-FU (FdUMP)", kind: drug, pos: [0.85, 2.05]}
+  - {id: mtx, text: "Methotrexate", kind: drug, pos: [2.35, 2.95]}
+edges:
+  - {from: ndp, to: dndp, step: ribonucleotide_reductase, label: "ribonucleotide\nreductase", label_side: right}
+  - {from: dump, to: dtmp, step: thymidylate_synthase, label: "thymidylate\nsynthase"}
+  - {from: ch2thf, to: "edge:dump->dtmp", bend: 0.1}
+  - {from: "edge:dump->dtmp", to: dhf, bend: 0.1}
+  - {from: dhf, to: thf, step: dhfr, label: "DHFR", side_text: "NADPH → NADP^+", label_side: right}
+  - {from: thf, to: ch2thf, label: "SHMT", side_text: "Ser → Gly", label_side: right}
+  - {from: hu, to: "edge:ndp->dndp", inhibit: true}
+  - {from: fu, to: "edge:dump->dtmp", inhibit: true}
+  - {from: mtx, to: "edge:dhf->thf", inhibit: true}
+tags: [nucleotide, pyrimidine]
+notes_zh: "RNR 作用於 NDP（二磷酸）層級，dATP 抑制全部、ATP 活化；dTMP 由 dUMP 甲基化（CH₂-THF 給碳＋電子 → DHF），DHF 必須經 DHFR 再生成 THF。藥物：hydroxyurea ⊣ RNR；5-FU ⊣ TS；methotrexate ⊣ DHFR。"
+status: pending

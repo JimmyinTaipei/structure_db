@@ -1,0 +1,22 @@
+id: aldolase
+title: "Glycolysis ④ Fructose 1,6-bisphosphate ⇌ DHAP + Glyceraldehyde 3-phosphate"
+step: 4
+substrates: [fructose_16bp]
+products: [dhap, glyceraldehyde_3p]
+enzyme: "aldolase"
+reversible: true
+decorate:                 # C1–C3 → DHAP（洋紅），C4–C6 → G3P（青藍）
+  fructose_16bp: {colors: {0: magenta, 1: magenta, 2: magenta, 3: cyan, 4: cyan, 5: cyan}}
+  dhap: {colors: {0: magenta, 1: magenta, 2: magenta}}
+  glyceraldehyde_3p: {colors: {0: cyan, 1: cyan, 2: cyan}}
+card_zh:
+  location: 細胞質
+  type: 反向 aldol 裂解（C3–C4 斷裂）
+  deltaG: "ΔG'° = +23.8 kJ/mol；細胞內濃度下 ΔG ≈ 0，可逆"
+  mechanism: "Class I aldolase（動物）：活性區 Lys 與 C2 酮基形成 Schiff base（protonated imine）"
+  deficiency: "Aldolase B（肝，作用於 F1P）缺乏 → 遺傳性果糖不耐症"
+  exam_points:
+    - "產物 DHAP（C1–C3）與 G3P（C4–C6）"
+    - "Class II aldolase（細菌、真菌）用 Zn²⁺"
+tags: [carb_metabolism, glycolysis]
+status: pending

@@ -1,0 +1,32 @@
+id: alpha_kg_dehydrogenase
+title: "TCA ④ α-Ketoglutarate → Succinyl-CoA"
+step: 4
+substrates: [alpha_kg]
+products: [succinyl_coa]
+cofactors_in: [CoA-SH, NAD+]
+cofactors_out: [NADH, CO2]
+prosthetic: ["TPP,", "lipoate,", "FAD"]
+enzyme: "α-ketoglutarate\ndehydrogenase complex"
+reversible: false
+decorate:                         # 洋紅：COO⁻ → CO₂；青藍：CoA-SH → S-CoA
+  alpha_kg: {colors: {4: magenta}}
+  CO2: {colors: {0: magenta}}
+  CoA-SH: {colors: {0: cyan}}
+  succinyl_coa: {colors: {3: {r: cyan}}}
+variants:
+  isotope:
+    decorate:
+      alpha_kg: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      succinyl_coa: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+card_zh:
+  location: 粒線體基質
+  type: 氧化脫羧（第 2 個 CO₂、第 2 個 NADH）
+  deltaG: "ΔG'° = −33.5 kJ/mol，不可逆"
+  cofactors: "與 PDH 相同 5 個：TPP（B1）、lipoate、CoA（B5）、FAD（B2）、NAD⁺（B3）"
+  regulation: "抑制：succinyl-CoA、NADH（產物）。活化：Ca²⁺。不受磷酸化調控（與 PDH 不同）"
+  deficiency: "Thiamine 缺乏、砷（arsenite）抑制"
+  exam_points:
+    - "E3（dihydrolipoyl dehydrogenase）與 PDH、BCKDH 共用"
+    - "到此步 C 原子數相當於 acetyl 的 2 個碳已以 CO₂ 離開（但並非同一批碳）"
+tags: [TCA]
+status: pending

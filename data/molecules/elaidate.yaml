@@ -1,0 +1,9 @@
+id: elaidate
+name: "Elaidate"
+label: "Elaidate\n18:1(trans-Δ9)"
+aliases: [elaidic acid, trans fat]
+smiles: "[O-]C(=O)CCCCCCC/C=C/CCCCCCCC"
+lipid: {type: "fatty_acid", chains: [{n: 18, cis: [], trans: [9]}], numbers: true}
+tags: [lipid, fatty_acid]
+notes_zh: "18:1(trans-Δ9)；ω-9。oleate 的 trans 異構物（反式脂肪）：鏈幾乎是直的，物性接近飽和脂肪；增加 LDL、心血管風險。"
+status: pending

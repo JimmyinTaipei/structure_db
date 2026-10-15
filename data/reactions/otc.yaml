@@ -1,0 +1,20 @@
+id: otc
+title: "Urea cycle ② Carbamoyl phosphate + Ornithine → Citrulline (OTC)"
+step: 2
+substrates: [carbamoyl_phosphate, ornithine]
+products: [citrulline]
+cofactors_out: [Pi]
+extra_out: [H+]                   # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "ornithine\ntranscarbamoylase"
+reversible: false
+decorate:                         # 胺甲醯基（H₂N–C=O）轉到 ornithine 的 δ-N 上
+  carbamoyl_phosphate: {colors: {0: {c: magenta, l: magenta, u: magenta}}}
+  citrulline: {colors: {6: magenta, 7: magenta}}
+card_zh:
+  location: 粒線體基質
+  type: 胺甲醯基轉移
+  deficiency: "OTC 缺乏：最常見的尿素循環缺陷（X 染色體隱性）→ 高血氨；carbamoyl phosphate 堆積溢入嘧啶合成 → orotic aciduria（但無巨母紅血球貧血）"
+  exam_points:
+    - "citrulline 由 antiporter 運出粒線體、交換 ornithine 進來"
+tags: [urea]
+status: pending

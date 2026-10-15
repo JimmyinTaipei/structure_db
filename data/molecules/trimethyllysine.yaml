@@ -1,0 +1,32 @@
+id: trimethyllysine
+name: N^ε-Trimethyllysine
+label: N^ε-Trimethyllysine
+aliases:
+- Kme3
+- 三甲基離胺酸
+smiles: C[N+](C)(C)CCCC[C@H]([NH3+])C(=O)[O-]
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: CH_2
+- c: CH_2
+- c: CH_2
+- c: N^+
+  l: H_3C
+  r: CH_3
+- c: CH_3
+decorate:
+  colors:
+    6:
+      l: magenta
+      r: magenta
+    7: magenta
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: HMT（histone methyltransferase）以 SAM 為甲基供體，可做 mono-/di-/tri-methyl。甲基化不改變電荷；依位置可活化（H3K4me3）或抑制（H3K9me3、H3K27me3）轉錄。
+status: pending

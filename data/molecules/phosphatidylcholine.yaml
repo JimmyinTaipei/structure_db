@@ -1,0 +1,8 @@
+id: phosphatidylcholine
+name: "Phosphatidylcholine"
+aliases: [PC, lecithin, 卵磷脂]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])OCC[N+](C)(C)C"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "choline"}
+tags: [lipid, phospholipid]
+notes_zh: "PC（lecithin）：膜外葉主要磷脂；肺表面活性劑主成分為 dipalmitoyl-PC（L/S ratio 判斷胎兒肺成熟度）。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

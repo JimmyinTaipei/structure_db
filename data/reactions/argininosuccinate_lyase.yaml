@@ -1,0 +1,19 @@
+id: argininosuccinate_lyase
+title: "Urea cycle ④ Argininosuccinate → Arginine + Fumarate (ASL)"
+step: 4
+substrates: [argininosuccinate]
+products: [arginine, fumarate]
+enzyme: "argininosuccinate\nlyase"
+reversible: true
+decorate:                         # aspartate 的碳骨架離開成 fumarate（洋紅），N 留在 arginine（青藍）
+  argininosuccinate: {colors: {7: cyan, 8: magenta, 9: magenta, 10: magenta}}
+  arginine: {colors: {7: cyan}}
+  fumarate: {colors: {0: magenta, 1: magenta, 2: magenta, 3: magenta}}
+card_zh:
+  location: 細胞質
+  type: 消去反應（elimination）
+  deficiency: "ASL 缺乏 → argininosuccinic aciduria（高血氨、毛髮脆裂 trichorrhexis nodosa）"
+  exam_points:
+    - "fumarate → malate（細胞質 fumarase）→ OAA → 經 AST 變回 aspartate：aspartate–argininosuccinate shunt，連接尿素循環與 TCA"
+tags: [urea]
+status: pending

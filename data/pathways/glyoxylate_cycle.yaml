@@ -1,0 +1,117 @@
+id: glyoxylate_cycle
+title: Glyoxylate cycle
+layout: free
+cell_size: 4.2
+nodes:
+- id: ac1
+  ref: acetyl_coa
+  pos:
+  - -1.6
+  - -2.2
+  view: name
+- id: oaa
+  ref: oxaloacetate
+  pos:
+  - -1.6
+  - 0
+  view: name
+- id: cit
+  ref: citrate
+  pos:
+  - 0
+  - -1.2
+  view: name
+- id: iso
+  ref: isocitrate
+  pos:
+  - 1.6
+  - 0
+  view: name
+- id: gly
+  ref: glyoxylate
+  pos:
+  - 0
+  - 1.3
+  view: name
+- id: suc
+  ref: succinate
+  pos:
+  - 3.2
+  - 1.3
+  view: name
+- id: mal
+  ref: malate
+  pos:
+  - -1.6
+  - 1.9
+  view: name
+- id: ac2
+  ref: acetyl_coa
+  pos:
+  - 1.4
+  - 2.8
+  view: name
+- id: gng
+  text: '→ mitochondria → OAA
+
+    → gluconeogenesis'
+  pos:
+  - 3.2
+  - 2.6
+  kind: name
+- id: note
+  text: 'Plants (glyoxysome), bacteria, fungi
+
+    NOT animals'
+  pos:
+  - 1.6
+  - -2.2
+  kind: heading
+edges:
+- from: oaa
+  to: cit
+  step: citrate_synthase
+  label: 'Citrate
+
+    synthase'
+- from: ac1
+  to: edge:oaa->cit
+  bend: 0
+- from: cit
+  to: iso
+  label: Aconitase
+- from: iso
+  to: gly
+  step: isocitrate_lyase
+  label: 'Isocitrate
+
+    lyase'
+  color: magenta
+- from: iso
+  to: suc
+  step: isocitrate_lyase
+  color: magenta
+- from: gly
+  to: mal
+  step: malate_synthase
+  label: 'Malate
+
+    synthase'
+  color: magenta
+- from: ac2
+  to: edge:gly->mal
+  bend: 0
+- from: mal
+  to: oaa
+  step: malate_dehydrogenase
+  label: Malate DH
+  side_text: NAD^+ → NADH
+- from: suc
+  to: gng
+  head: true
+tags:
+- carb_metabolism
+- glyoxylate_cycle
+notes_zh: 乙醛酸循環：2 acetyl-CoA → 1 succinate（淨合成 4 碳），跳過 TCA 的兩個脫羧步驟。洋紅箭頭為兩個獨特酵素：isocitrate lyase、malate synthase。植物種子把脂肪轉成糖靠它；動物沒有這兩個酵素 → 偶數碳脂肪酸（acetyl-CoA）無法淨合成葡萄糖（PDH 不可逆，且 TCA 中 2 個碳以 CO₂ 離開）。奇數碳脂肪酸的
+  propionyl-CoA → succinyl-CoA 則可以。
+status: pending

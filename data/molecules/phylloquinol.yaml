@@ -1,0 +1,21 @@
+id: phylloquinol
+name: Vitamin K hydroquinone (KH2)
+label: 'Vitamin K
+
+  hydroquinone (KH_2)'
+aliases:
+- KH2
+- phylloquinol
+- reduced vitamin K
+smiles: Cc1c(C/C=C(\C)CCC[C@H](C)CCC[C@H](C)CCCC(C)C)c(O)c2ccccc2c1O
+ring:
+  methyls: false
+decorate:
+  highlight:
+  - smarts: c[OH:1]
+    color: magenta
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 還原態（活性形式）。洋紅：兩個酚 OH。γ-glutamyl carboxylase 用它與 O₂、CO₂ 把凝血因子 II、VII、IX、X 與 protein C、S 的 Glu 變成 γ-carboxyglutamate（Gla，可螯合 Ca²⁺），KH₂ 同時被氧化成 epoxide。
+status: pending

@@ -1,0 +1,31 @@
+id: fbpase1
+title: Gluconeogenesis ③ Fructose 1,6-bisphosphate → Fructose 6-phosphate (FBPase-1)
+substrates:
+- fructose_16bp
+products:
+- fructose_6p
+cofactors_in:
+- H2O
+cofactors_out:
+- Pi
+enzyme: 'fructose 1,6-
+
+  bisphosphatase'
+reversible: false
+decorate:
+  fructose_16bp:
+    colors:
+      0:
+        c: [magenta, '{P}']
+  Pi:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: 水解（不產生 ATP）
+  regulation: F2,6BP 與 AMP 抑制（與 PFK-1 相反）；限速步驟
+  exam_points:
+  - 與 PFK-1 互為「無效循環」：F2,6BP 同時開一個、關一個
+tags:
+- carb_metabolism
+- gluconeogenesis
+status: pending

@@ -1,0 +1,18 @@
+id: thymine_dimer
+name: Cyclobutane thymine dimer
+label: Thymine dimer (CPD)
+aliases:
+- T=T
+- CPD
+- 胸腺嘧啶雙體
+smiles: '[17*]N1C(=O)NC(=O)C2(C)C1C1N([17*])C(=O)NC(=O)C12C'
+ring:
+  coordgen: true
+  rotate: 90
+  methyls: false
+tags:
+- molecular_biology
+- repair
+notes_zh: UV（UVB）使相鄰兩個嘧啶的 C5–C6 雙鍵形成環丁烷（cis-syn CPD，約 80 %）；另一種是 6-4 photoproduct（約 20 %）。扭曲雙螺旋、阻擋複製與轉錄。修復：NER（人類唯一途徑；XP 缺陷）；細菌與植物另有 photolyase（FADH⁻ 吸光，直接切開）。
+parts_png: false
+status: pending

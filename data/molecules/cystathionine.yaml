@@ -1,0 +1,24 @@
+id: cystathionine
+name: Cystathionine
+aliases:
+- 胱硫醚
+smiles: '[O-]C(=O)[C@@H]([NH3+])CCSC[C@H]([NH3+])C(=O)[O-]'
+chain:
+- &id001
+  c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: CH_2
+- c: S
+- c: CH_2
+- c: C
+  l: H
+  r: NH_3^+
+- *id001
+tags:
+- amino_acid_metabolism
+- one_carbon
+notes_zh: 上半來自 homocysteine，下半（CH₂–CH–COO⁻）來自 serine。cystathionine β-synthase（PLP）缺乏 → homocystinuria：水晶體向下脫位、類 Marfan 體型、智能障礙、血栓（治療：B6、限 Met、補 Cys、betaine）。
+status: pending

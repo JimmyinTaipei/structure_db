@@ -1,0 +1,37 @@
+id: glycerol_3p_dehydrogenase
+title: Glycerol 3-phosphate ⇌ DHAP (glycerol-3-phosphate dehydrogenase)
+substrates:
+- glycerol_3p
+products:
+- dhap
+cofactors_in:
+- NAD+
+cofactors_out:
+- NADH+H+
+enzyme: 'glycerol 3-phosphate
+
+  dehydrogenase'
+reversible: true
+decorate:
+  glycerol_3p:
+    colors:
+      1:
+        l: [magenta, H]
+        r: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+card_zh:
+  location: 細胞質（另有粒線體內膜的 FAD 型，構成 glycerol-phosphate shuttle）
+  type: 氧化還原
+  exam_points:
+  - glycerol 由此進入糖質新生（DHAP）
+  - 反方向：脂肪組織由 DHAP 做出 TAG 的骨架
+tags:
+- carb_metabolism
+- gluconeogenesis
+- lipid
+status: pending

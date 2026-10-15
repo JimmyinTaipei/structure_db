@@ -1,0 +1,34 @@
+id: methionine_synthase
+title: Homocysteine + N5-Methyl-THF → Methionine + THF (methionine synthase)
+substrates:
+- homocysteine
+- id: methyl_thf
+  view: formula
+products:
+- methionine
+- id: thf
+  view: formula
+prosthetic:
+- B_{12}
+enzyme: methionine synthase
+reversible: false
+decorate:
+  methyl_thf:
+    colors:
+      0:
+        c:
+        - [magenta, CH_3]
+  methionine:
+    colors: {5: magenta}
+card_zh:
+  location: 細胞質
+  type: 甲基轉移（methylcobalamin）
+  deficiency:
+  - B12 缺乏 → Hcy ↑ 且 CH₃-THF 卡住（methyl-folate trap）→ 巨球性貧血；另有 MMA ↑ 與神經症狀
+  - folate 缺乏 → Hcy ↑，MMA 正常
+  exam_points:
+  - 連接 folate 循環與甲硫胺酸循環的唯一反應
+tags:
+- amino_acid_metabolism
+- one_carbon
+status: pending

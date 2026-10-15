@@ -1,0 +1,34 @@
+id: arylsulfatase_a
+title: Sulfatide → Galactocerebroside + Sulfate (arylsulfatase A)
+substrates:
+- sulfatide
+products:
+- galactocerebroside
+- sulfate
+cofactors_in:
+- H2O
+extra_out:
+- H+
+enzyme: arylsulfatase A
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  sulfate:
+    colors:
+      0: magenta
+  sulfatide:
+    colors:
+      head:
+      - magenta
+      - Sulfo
+card_zh:
+  location: 溶小體
+  type: 硫酸酯水解
+  deficiency:
+  - metachromatic leukodystrophy（AR）：中樞與周邊脫髓鞘、運動失調、失智；尿中 sulfatide ↑
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

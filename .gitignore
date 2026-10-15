@@ -1,0 +1,12 @@
+# generated images (written to the iCloud copy, see sdb/style.py OUT) and the Pages build
+out/
+site/
+# textbook screenshots and local review state — never public
+reference/
+review/
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+* 2
+* 2.*

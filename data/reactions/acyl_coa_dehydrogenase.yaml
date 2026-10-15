@@ -1,0 +1,33 @@
+id: acyl_coa_dehydrogenase
+title: β-Oxidation ① Acyl-CoA → trans-Δ²-Enoyl-CoA (acyl-CoA dehydrogenase)
+substrates:
+- acyl_coa
+products:
+- enoyl_coa
+cofactors_in:
+- FAD
+cofactors_out:
+- FADH2
+enzyme: acyl-CoA dehydrogenase
+reversible: false
+decorate:
+  acyl_coa:
+    colors: {1: magenta, 2: magenta}
+  enoyl_coa:
+    colors: {1: magenta, 2: magenta}
+  FADH2:
+    colors:
+      0:
+        c:
+        - [magenta, H_2]
+card_zh:
+  location: 粒線體基質
+  type: 氧化（FAD）：α、β 碳間形成 trans 雙鍵
+  cofactors: FAD → 電子經 ETF → Q（約 1.5 ATP）
+  deficiency: MCAD 缺乏（最常見）：空腹低酮性低血糖、dicarboxylic aciduria，嬰兒猝死；避免空腹
+  exam_points:
+  - 依鏈長有 VLCAD、LCAD、MCAD、SCAD
+tags:
+- lipid_metabolism
+- beta_oxidation
+status: pending

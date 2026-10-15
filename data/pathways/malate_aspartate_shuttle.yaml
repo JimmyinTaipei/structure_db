@@ -1,0 +1,373 @@
+id: malate_aspartate_shuttle
+title: Malate–aspartate shuttle（蘋果酸–天門冬胺酸穿梭）
+layout: free
+cell_size: 3.6
+regions:
+- kind: membrane
+  y: 0
+  x0: -4.6
+  x1: 4.6
+  label: 'Inner
+
+    mitochondrial
+
+    membrane'
+nodes:
+- id: cy
+  text: Cytosol
+  kind: heading
+  pos:
+  - -4.6
+  - -3.1
+- id: mx
+  text: Matrix
+  kind: heading
+  pos:
+  - -4.6
+  - 3.1
+- id: asp_c
+  ref: aspartate
+  pos:
+  - -3.2
+  - -2.3
+  view: name
+- id: oaa_c
+  ref: oxaloacetate
+  pos:
+  - 0
+  - -2.3
+  view: name
+- id: mal_c
+  ref: malate
+  pos:
+  - 3.2
+  - -2.3
+  view: name
+- id: t1
+  text: 'malate–α-KG
+
+    antiporter'
+  kind: protein
+  pos:
+  - 3.2
+  - 0
+  w: 3.0
+  h: 2.2
+- id: t2
+  text: 'glutamate–aspartate
+
+    antiporter'
+  kind: protein
+  pos:
+  - -3.2
+  - 0
+  w: 3.6
+  h: 2.2
+- id: mal_m
+  ref: malate
+  pos:
+  - 3.2
+  - 2.3
+  view: name
+- id: oaa_m
+  ref: oxaloacetate
+  pos:
+  - 0
+  - 2.3
+  view: name
+- id: asp_m
+  ref: aspartate
+  pos:
+  - -3.2
+  - 2.3
+  view: name
+edges:
+- from: oaa_c
+  to: mal_c
+  step: malate_dehydrogenase
+  label: malate DH
+  side_text: NADH + H^+ → NAD^+
+  reversible: true
+- from: mal_c
+  to: t1
+- from: t1
+  to: mal_m
+- from: mal_m
+  to: oaa_m
+  step: malate_dehydrogenase
+  label: malate DH
+  side_text: NAD^+ → NADH + H^+
+  reversible: true
+- from: oaa_m
+  to: asp_m
+  step: ast
+  label: AST
+  side_text: Glu → α-KG
+  reversible: true
+- from: asp_m
+  to: t2
+- from: t2
+  to: asp_c
+- from: asp_c
+  to: oaa_c
+  step: ast
+  label: AST
+  side_text: α-KG → Glu
+  reversible: true
+tags:
+- energy_metabolism
+- shuttle
+notes_zh: NADH 本身不能通過粒線體內膜。細胞質的 NADH 把 OAA 還原成 malate → malate–α-KG antiporter 進入基質 → 再氧化成 OAA，在基質內重新產生 NADH（→ Complex I，約 2.5 ATP）。OAA 也不能出膜，所以先轉胺成 Asp，經 Glu–Asp antiporter（aralar／citrin）出去。主要在肝、心、腎。citrin
+  缺乏 → 成人型 citrullinemia type II。可逆，依 NADH/NAD⁺ 比例決定方向。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.0
+        - 0.8
+        text: Cytosol
+        size: 0.75
+        align: left
+        color: gray
+      - g: text
+        at:
+        - -1.0
+        - 13.4
+        text: Matrix
+        size: 0.75
+        align: left
+        color: gray
+      - g: membrane
+        y: 7.0
+        x0: -1.0
+        x1: 27.0
+        lipids: true
+      - g: text
+        at:
+        - 26.8
+        - 9.0
+        text: inner membrane
+        size: 0.55
+        align: right
+        color: gray
+      - g: ion
+        at:
+        - 4.0
+        - 2.6
+        r: 0.7
+        hue: purple
+        text: Asp
+        text_size: 0.42
+      - g: ion
+        at:
+        - 12.0
+        - 2.6
+        r: 0.7
+        hue: orange
+        text: OAA
+        text_size: 0.42
+      - g: ion
+        at:
+        - 20.0
+        - 2.6
+        r: 0.7
+        hue: green
+        text: Mal
+        text_size: 0.42
+      - g: ion
+        at:
+        - 4.0
+        - 11.4
+        r: 0.7
+        hue: purple
+        text: Asp
+        text_size: 0.42
+      - g: ion
+        at:
+        - 12.0
+        - 11.4
+        r: 0.7
+        hue: orange
+        text: OAA
+        text_size: 0.42
+      - g: ion
+        at:
+        - 20.0
+        - 11.4
+        r: 0.7
+        hue: green
+        text: Mal
+        text_size: 0.42
+      - g: arrow
+        from:
+        - 12.8
+        - 2.6
+        to:
+        - 19.2
+        - 2.6
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 16.0
+        - 1.4
+        text: NADH → NAD^+
+        size: 0.6
+        align: center
+        color: cyan
+      - g: text
+        at:
+        - 16.0
+        - 3.6
+        text: MDH
+        size: 0.55
+        align: center
+        color: gray
+      - g: arrow
+        from:
+        - 4.8
+        - 2.6
+        to:
+        - 11.2
+        - 2.6
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 8.0
+        - 1.4
+        text: AST
+        size: 0.55
+        align: center
+        color: gray
+      - g: transporter
+        at:
+        - 20.0
+        - 7.0
+        hue: green
+      - g: arrow
+        from:
+        - 20.0
+        - 3.4
+        to:
+        - 20.0
+        - 10.6
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 22.0
+        - 11.4
+        r: 0.55
+        hue: yellow
+        text: αKG
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 22.0
+        - 10.8
+        to:
+        - 22.0
+        - 3.4
+        color: gray
+        curve: 0
+      - g: ion
+        at:
+        - 22.0
+        - 2.6
+        r: 0.55
+        hue: yellow
+        text: αKG
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 19.2
+        - 11.4
+        to:
+        - 12.8
+        - 11.4
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 16.0
+        - 12.6
+        text: NAD^+ → NADH
+        size: 0.6
+        align: center
+        color: cyan
+      - g: text
+        at:
+        - 16.0
+        - 10.4
+        text: MDH
+        size: 0.55
+        align: center
+        color: gray
+      - g: arrow
+        from:
+        - 11.2
+        - 11.4
+        to:
+        - 4.8
+        - 11.4
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 8.0
+        - 12.6
+        text: AST
+        size: 0.55
+        align: center
+        color: gray
+      - g: transporter
+        at:
+        - 4.0
+        - 7.0
+        hue: purple
+      - g: arrow
+        from:
+        - 4.0
+        - 10.6
+        to:
+        - 4.0
+        - 3.4
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 2.0
+        - 2.6
+        r: 0.55
+        hue: blue
+        text: Glu
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 2.0
+        - 3.2
+        to:
+        - 2.0
+        - 10.8
+        color: gray
+        curve: 0
+      - g: ion
+        at:
+        - 2.0
+        - 11.4
+        r: 0.55
+        hue: blue
+        text: Glu
+        text_size: 0.36
+      - g: text
+        at:
+        - 16.0
+        - 14.6
+        text: NADH → complex I (2.5 ATP)
+        size: 0.62
+        align: center

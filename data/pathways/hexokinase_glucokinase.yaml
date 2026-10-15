@@ -1,0 +1,85 @@
+id: hexokinase_glucokinase
+title: Hexokinase vs glucokinase
+layout: plot
+plot:
+  size:
+  - 15
+  - 9.5
+  params:
+    KmHK: 0.1
+    S05: 10
+    nGK: 1.7
+  x:
+    min: 0
+    max: 20
+    label: '[Glucose] (mM)'
+    ticks:
+    - 0
+    - 5
+    - 10
+    - 15
+    - 20
+  y:
+    min: 0
+    max: 1.15
+    label: v_0 / V_{max}
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  bands:
+  - x0: 4
+    x1: 6
+    label: fasting
+    color: cyan
+  - x0: 12
+    x1: 16
+    label: portal vein (fed)
+    color: magenta
+  curves:
+  - id: hk
+    y: mm(x, 1, KmHK)
+    width: 1.2
+  - id: gk
+    y: hill(x, S05, nGK)
+    color: magenta
+    width: 1.2
+  texts:
+  - at:
+    - 6.6
+    - 0.87
+    text: 'Hexokinase I (muscle, brain):
+
+      K_m ~ 0.1 mM, inhibited by G6P'
+    align: left
+    size: 0.85
+  - at:
+    - 10.6
+    - 0.2
+    text: 'Glucokinase (hexokinase IV;
+
+      liver, β cell): S_{0.5} ~ 10 mM,
+
+      sigmoid, not inhibited by G6P'
+    align: left
+    size: 0.85
+    color: magenta
+  points:
+  - 'on': hk
+    x: KmHK
+    y: 0.5
+    drop: x
+  - 'on': gk
+    x: S05
+    y: 0.5
+    drop: x
+    color: magenta
+tags:
+- carb_metabolism
+- glycolysis
+- enzyme
+- enzyme_kinetics
+notes_zh: Hexokinase I–III（肌肉、腦等）：K_m ≈ 0.1 mM，血糖正常時即飽和；產物 G6P 抑制。Glucokinase（hexokinase IV，肝、胰 β 細胞）：S₀.₅ ≈ 10 mM、cooperative（S 形）、不受 G6P 抑制，飯後門脈血糖高時才大量作用 → 肝把多餘葡萄糖存成肝醣；β 細胞以它當血糖感測器（MODY2 為 GK 突變）。調控：GKRP（glucokinase
+  regulatory protein）在 F6P 高時把 GK 拉進細胞核（失活），glucose 高時釋出；insulin 誘導 GK 合成。肝與 β 細胞都用 GLUT2（高 K_m）。
+status: pending

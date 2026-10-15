@@ -1,0 +1,14 @@
+id: sorbitol
+name: "D-Sorbitol"
+aliases: [glucitol, 山梨醇]
+smiles: "OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, sugar_derivative]
+notes_zh: "D-glucitol。aldose reductase（NADPH）還原 glucose → sorbitol；高血糖時累積於水晶體、神經、腎 → 糖尿病白內障、神經病變。sorbitol dehydrogenase → fructose（polyol pathway）。"
+status: pending

@@ -1,0 +1,102 @@
+id: tryptophan_metabolism
+title: Tryptophan metabolism（名稱版）
+layout: free
+cell: 0.62
+nodes:
+- id: trp
+  ref: tryptophan
+  pos:
+  - 0
+  - 0
+  view: name
+- id: htp
+  ref: five_htp
+  pos:
+  - -1.4
+  - 1
+  view: name
+- id: ser
+  ref: serotonin
+  pos:
+  - -1.4
+  - 2
+  view: name
+- id: nas
+  text: N-Acetylserotonin
+  kind: name
+  pos:
+  - -1.4
+  - 3
+- id: mel
+  text: 'Melatonin
+
+    (pineal)'
+  kind: name
+  pos:
+  - -1.4
+  - 4
+- id: hiaa
+  text: 5-HIAA (urine)
+  kind: name
+  pos:
+  - -3.2
+  - 2
+- id: kyn
+  text: 'N-Formylkynurenine →
+
+    kynurenine'
+  kind: name
+  pos:
+  - 1.4
+  - 1
+- id: nad
+  text: NAD^+ (niacin)
+  kind: name
+  pos:
+  - 1.4
+  - 2.2
+- id: ac
+  text: 'Alanine + acetyl-CoA
+
+    (gluco- & ketogenic)'
+  kind: name
+  pos:
+  - 3.4
+  - 1.6
+edges:
+- from: trp
+  to: htp
+  step: tryptophan_hydroxylase
+  label: 'Trp hydroxylase
+
+    (BH_4)'
+- from: htp
+  to: ser
+  step: htp_decarboxylase
+  label: AADC (PLP)
+- from: ser
+  to: nas
+  label: N-acetyltransferase
+- from: nas
+  to: mel
+  label: O-methyltransferase
+  side_text: SAM
+- from: ser
+  to: hiaa
+  label: MAO
+- from: trp
+  to: kyn
+  label: 'Trp 2,3-dioxygenase
+
+    (IDO, TDO)'
+- from: kyn
+  to: nad
+  label: B_6, B_2
+- from: kyn
+  to: ac
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+- aa_degradation
+notes_zh: Trp → serotonin → melatonin；Trp → kynurenine → NAD⁺（60 mg Trp ≈ 1 mg niacin，需 B6、B2）。Hartnup（中性胺基酸吸收障礙）與 carcinoid（Trp 被大量拿去做 serotonin）→ pellagra。
+status: pending

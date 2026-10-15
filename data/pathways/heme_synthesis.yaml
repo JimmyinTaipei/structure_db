@@ -1,0 +1,184 @@
+id: heme_synthesis
+title: Heme synthesis（血基質合成，含紫質症）
+layout: free
+cell: 0.62
+nodes:
+- id: hm
+  text: Mitochondrion
+  kind: heading
+  pos:
+  - -2.6
+  - -0.6
+- id: hc
+  text: Cytosol
+  kind: heading
+  pos:
+  - 2.4
+  - -0.6
+- id: gly
+  ref: glycine
+  pos:
+  - -2.6
+  - 0.2
+  view: name
+- id: suc
+  ref: succinyl_coa
+  pos:
+  - -0.9
+  - 0.2
+  view: name
+- id: ala
+  ref: aminolevulinate
+  pos:
+  - -1.6
+  - 1.3
+  view: name
+- id: ala_c
+  ref: aminolevulinate
+  pos:
+  - 2.4
+  - 1.3
+  view: name
+- id: pbg
+  ref: porphobilinogen
+  pos:
+  - 2.4
+  - 2.5
+  view: name
+- id: hmb
+  text: Hydroxymethylbilane
+  kind: name
+  pos:
+  - 2.4
+  - 3.7
+- id: uro
+  text: Uroporphyrinogen III
+  kind: name
+  pos:
+  - 2.4
+  - 4.9
+- id: copro
+  text: Coproporphyrinogen III
+  kind: name
+  pos:
+  - 2.4
+  - 6.1
+- id: ppgen
+  text: Protoporphyrinogen IX
+  kind: name
+  pos:
+  - -1.6
+  - 6.1
+- id: pp
+  ref: protoporphyrin
+  pos:
+  - -1.6
+  - 4.9
+  view: name
+- id: heme
+  ref: heme
+  pos:
+  - -1.6
+  - 3.7
+  view: name
+- id: lead
+  text: Lead
+  kind: drug
+  pos:
+  - 0.2
+  - 2.0
+- id: lead2
+  text: Lead
+  kind: drug
+  pos:
+  - 0.2
+  - 4.3
+- id: aip
+  text: AIP
+  kind: drug
+  pos:
+  - 4.2
+  - 3.1
+- id: pct
+  text: PCT
+  kind: drug
+  pos:
+  - 4.2
+  - 5.5
+- id: cep
+  text: CEP
+  kind: drug
+  pos:
+  - 4.2
+  - 4.3
+- id: epp
+  text: EPP
+  kind: drug
+  pos:
+  - -3.4
+  - 4.3
+edges:
+- from: gly
+  to: ala
+  step: ala_synthase
+  label: 'ALA synthase
+
+    (PLP, rate-limiting)'
+- from: suc
+  to: ala
+  step: ala_synthase
+- from: ala
+  to: ala_c
+- from: ala_c
+  to: pbg
+  step: ala_dehydratase
+  label: ALA dehydratase (×2)
+  label_side: right
+- from: pbg
+  to: hmb
+  label: PBG deaminase (×4)
+  label_side: right
+- from: hmb
+  to: uro
+  label: UROS
+  label_side: right
+- from: uro
+  to: copro
+  label: UROD
+  label_side: right
+- from: copro
+  to: ppgen
+  label: CPOX
+- from: ppgen
+  to: pp
+  label: PPOX
+- from: pp
+  to: heme
+  label: ferrochelatase
+  side_text: Fe^{2+}
+- from: heme
+  to: edge:gly->ala
+  inhibit: true
+- from: lead
+  to: edge:ala_c->pbg
+  inhibit: true
+- from: lead2
+  to: edge:pp->heme
+  inhibit: true
+- from: aip
+  to: edge:pbg->hmb
+  inhibit: true
+- from: cep
+  to: edge:hmb->uro
+  inhibit: true
+- from: pct
+  to: edge:uro->copro
+  inhibit: true
+- from: epp
+  to: edge:pp->heme
+  inhibit: true
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: 頭尾兩步在粒線體，中間在細胞質；骨髓（約 85%）與肝。紫質症：AIP（PBG deaminase；急性腹痛、神經精神、紅尿，無光敏感，藥物／酒精／飢餓誘發，治療 hemin + 葡萄糖）、PCT（UROD；最常見，光敏感水泡，與 HCV、酒精、鐵過多有關）、CEP（UROS）、EPP（ferrochelatase）。鉛：抑制 ALAD 與 ferrochelatase。
+status: pending

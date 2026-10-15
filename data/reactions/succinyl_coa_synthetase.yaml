@@ -1,0 +1,29 @@
+id: succinyl_coa_synthetase
+title: "TCA ⑤ Succinyl-CoA ⇌ Succinate"
+step: 5
+substrates: [succinyl_coa]
+products: [succinate]
+cofactors_in: [GDP, Pi]
+cofactors_out: [GTP, CoA-SH]
+enzyme: "succinyl-CoA synthetase"
+reversible: true
+decorate:
+  succinyl_coa: {colors: {3: {r: magenta}}}
+  succinate: {colors: {3: magenta}}
+variants:
+  isotope:
+    note_zh: "Succinate 左右對稱，酵素無法分辨兩端 → 之後 * ○ 的標記會平均分散到分子兩端"
+    decorate:
+      succinyl_coa: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      succinate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+card_zh:
+  location: 粒線體基質
+  type: 受質層次磷酸化（TCA 唯一直接產生 NTP 的步驟）
+  deltaG: "ΔG'° = −2.9 kJ/mol，可逆"
+  mechanism: "硫酯能量 → succinyl phosphate → 磷酸化活性區 His → 轉給 GDP（或 ADP）"
+  exam_points:
+    - "又稱 succinate thiokinase；以逆反應命名"
+    - "GTP + ADP ⇌ GDP + ATP（nucleoside diphosphate kinase）"
+    - "動物有 GTP 型與 ATP 型兩種同功酶"
+tags: [TCA]
+status: pending

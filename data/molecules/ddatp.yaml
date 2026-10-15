@@ -1,0 +1,31 @@
+id: ddatp
+name: ddATP
+aliases:
+- dideoxy ATP
+- 雙去氧核苷酸
+smiles: Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])CC1
+haworth:
+  ring: furanose
+  numbers: true
+  base: '[*]n1cnc2c(N)ncnc21'
+  base_right: 5
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: H
+    3:
+      up: H
+      down: H
+    4:
+      up: '{P}–{P}–{P}–OCH_2'
+      down: H
+tags:
+- molecular_biology
+- replication
+- techniques
+notes_zh: 2′,3′-dideoxy：沒有 3′-OH → 接上後鏈就停止。Sanger 定序用螢光標記的 ddNTP。
+parts_png: false
+status: pending

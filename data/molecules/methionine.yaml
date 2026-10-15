@@ -1,0 +1,16 @@
+id: methionine
+name: Methionine
+aliases: [Met, M, 甲硫胺酸]
+smiles: "CSCC[C@H]([NH3+])C(=O)[O-]"
+chain:                              # Lehninger：COO⁻ 在上、H₃N⁺ 在左（L 型）、R 基在下
+  - {c: "COO^-"}
+  - {c: C, l: "^+H_3N", r: H}
+  - {c: CH_2}
+  - {c: CH_2}
+  - {c: S}
+  - {c: CH_3}
+decorate:
+  boxes: [{rows: [2, 3, 4, 5], name: R}, {parts: ["4.c"], color: yellow, name: S}]
+tags: [amino_acid, nonpolar]
+notes_zh: "Met / M。必需；起始密碼子 AUG。→ SAM（主要甲基供體）→ homocysteine（需 B12、folate 再甲基化）。生糖。"
+status: approved

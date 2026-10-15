@@ -1,0 +1,20 @@
+id: methenyl_thf
+name: N5,N10-Methenyl-THF
+label: N^5,N^{10}-Methenyl-THF
+aliases:
+- 5,10-methenyltetrahydrofolate
+smiles: Nc1nc2NC[C@@H]3C[N+](c8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])=CN3c2c(=O)[nH]1
+ring:
+  coordgen: false
+decorate:
+  highlight:
+  - smarts: '[N+:1]=[CH:2][N:3]'
+    color: magenta
+tags:
+- amino_acid_metabolism
+- one_carbon
+- vitamin
+- coenzyme
+notes_zh: 與 N¹⁰-formyl-THF 同一氧化層級（cyclohydrolase 互換）；由 methylene-THF 經 NADP⁺ 依賴的去氫酶氧化而來。
+parts_png: false
+status: pending

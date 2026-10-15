@@ -1,0 +1,22 @@
+id: hmg_coa_lyase
+title: HMG-CoA → Acetoacetate + Acetyl-CoA (HMG-CoA lyase)
+substrates:
+- hmg_coa
+products:
+- acetoacetate
+- acetyl_coa
+enzyme: HMG-CoA lyase
+reversible: false
+decorate:
+  hmg_coa:
+    colors: {3: magenta, 4: magenta}
+  acetyl_coa:
+    colors: {0: magenta}
+card_zh:
+  location: 肝粒線體
+  type: 裂解
+  deficiency: HMG-CoA lyase 缺乏 → 低酮性低血糖、代謝性酸中毒（也影響 Leu 分解）
+tags:
+- lipid_metabolism
+- ketone_bodies
+status: pending

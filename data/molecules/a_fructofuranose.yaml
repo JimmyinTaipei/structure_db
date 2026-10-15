@@ -1,0 +1,17 @@
+id: a_fructofuranose
+name: "α-D-Fructofuranose"
+label: "α-D-Fructofuranose"
+aliases: [α-D-fructose]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@@](O1)(CO)O)O)O)O"
+haworth:
+  ring: "furanose"
+  numbers: true
+  start: 2
+  subs:
+    2: {up: "CH_2OH", down: "OH"}
+    3: {up: "HO", down: "H"}
+    4: {up: "H", down: "OH"}
+    5: {up: "HOCH_2", down: "H"}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "α：C2-OH 在下（與 C6 的 CH₂OH 反側）。"
+status: approved

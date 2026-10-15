@@ -1,0 +1,39 @@
+id: g6pd
+title: PPP ① Glucose 6-phosphate → 6-Phosphoglucono-δ-lactone (G6PD)
+substrates:
+- b_glucose_6p
+products:
+- phosphogluconolactone
+cofactors_in:
+- NADP+
+cofactors_out:
+- NADPH+H+
+enzyme: 'glucose 6-phosphate
+
+  dehydrogenase (G6PD)'
+reversible: false
+decorate:
+  b_glucose_6p:
+    colors:
+      u1: [magenta, H]
+      d1: magenta
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+card_zh:
+  location: 細胞質
+  type: 氧化（第一個 NADPH）
+  regulation: 限速步驟；NADP⁺ 活化、NADPH 抑制；insulin 誘導
+  deficiency:
+  - G6PD 缺乏（X 性聯）：紅血球 NADPH ↓ → glutathione 無法還原 → 氧化壓力下溶血（蠶豆、primaquine、sulfa、感染）；Heinz bodies、bite cells
+  - 對瘧疾有保護作用
+  exam_points:
+  - PPP 的限速酵素
+  - 紅血球 NADPH 的唯一來源
+tags:
+- carb_metabolism
+- PPP
+status: pending

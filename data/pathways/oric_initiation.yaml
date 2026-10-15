@@ -1,0 +1,255 @@
+id: oric_initiation
+title: Initiation at E. coli oriC
+layout: scene
+scene:
+  items:
+  - g: region
+    x0: 2.0
+    y0: 2.05
+    x1: 3.6
+    y1: 3.95
+    hue: orange
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 4.0
+    y0: 2.05
+    x1: 5.6
+    y1: 3.95
+    hue: orange
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 6.0
+    y0: 2.05
+    x1: 7.6
+    y1: 3.95
+    hue: orange
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 11.0
+    y0: 2.05
+    x1: 12.4
+    y1: 3.95
+    hue: green
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 13.2
+    y0: 2.05
+    x1: 14.600000000000001
+    y1: 3.95
+    hue: green
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 15.4
+    y0: 2.05
+    x1: 16.8
+    y1: 3.95
+    hue: green
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 17.6
+    y0: 2.05
+    x1: 19.0
+    y1: 3.95
+    hue: green
+    opacity: 0.55
+    outline: false
+  - g: region
+    x0: 19.8
+    y0: 2.05
+    x1: 21.200000000000003
+    y1: 3.95
+    hue: green
+    opacity: 0.55
+    outline: false
+  - g: text
+    at:
+    - 4.8
+    - 1.2
+    text: 3 × 13-mer
+    size: 0.75
+    align: center
+  - g: text
+    at:
+    - 15.4
+    - 1.2
+    text: 'DnaA boxes: 9-mer × 5'
+    size: 0.75
+    align: center
+  - g: dsdna
+    from:
+    - 0.5
+    - 3
+    to:
+    - 23.5
+    - 3
+    width: 1.1
+    seq: GATCAATTATAT
+  - g: text
+    at:
+    - 4.8
+    - 5.2
+    text: 'DUE (AT-rich): melts first'
+    size: 0.85
+    align: center
+  - g: text
+    at:
+    - 16.4
+    - 5.2
+    text: DnaA–ATP binding sites
+    size: 0.85
+    align: center
+  - g: helix
+    from:
+    - 0.5
+    - 11
+    to:
+    - 8.0
+    - 11
+    pitch: 2.4
+    amp: 0.45
+  - g: blob
+    at:
+    - 3.0
+    - 10.25
+    w: 1.0
+    h: 0.9
+    shape: round
+    hue: green
+  - g: blob
+    at:
+    - 4.0
+    - 10.0
+    w: 1.0
+    h: 0.9
+    shape: round
+    hue: green
+  - g: blob
+    at:
+    - 5.0
+    - 10.25
+    w: 1.0
+    h: 0.9
+    shape: round
+    hue: green
+    label: 'DnaA–ATP
+
+      oligomer'
+    label_at:
+    - 4.5
+    - 7.9
+  - g: blob
+    at:
+    - 6.0
+    - 10.0
+    w: 1.0
+    h: 0.9
+    shape: round
+    hue: green
+  - g: arrow
+    from:
+    - 9.0
+    - 11
+    to:
+    - 10.8
+    - 11
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 11.5
+      - 10.7
+    - - 14
+      - 10.7
+    - - 16
+      - 9.2
+    - - 19
+      - 9.2
+    - - 21
+      - 10.7
+    - - 24
+      - 10.7
+  - g: strand
+    kind: parent
+    points:
+    - - 11.5
+      - 11.3
+    - - 14
+      - 11.3
+    - - 16
+      - 12.8
+    - - 19
+      - 12.8
+    - - 21
+      - 11.3
+    - - 24
+      - 11.3
+  - id: dnab1
+    g: ring
+    kind: hexamer
+    at:
+    - 16.6
+    - 9.2
+    r: 0.55
+    hue: orange
+    label: 'DnaB helicase
+
+      (loaded by DnaC)'
+    label_at:
+    - 20.5
+    - 7.4
+  - g: ring
+    kind: hexamer
+    at:
+    - 18.4
+    - 12.8
+    r: 0.55
+    hue: orange
+  - id: ssb
+    g: blob
+    at:
+    - 20.2
+    - 12.2
+    w: 0.8
+    h: 0.65
+    shape: round
+    hue: yellow
+    label: SSB
+    label_at:
+    - 22.8
+    - 13.9
+  - id: dnag
+    g: blob
+    at:
+    - 15.0
+    - 13.2
+    w: 1.3
+    h: 0.9
+    shape: kidney
+    hue: pink
+    label: DnaG primase
+    label_at:
+    - 13.4
+    - 15.0
+  - g: text
+    at:
+    - 4.2
+    - 13.8
+    text: IHF, HU, FIS
+    size: 0.75
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- replication
+notes_zh: 'oriC 245 bp：3 個 13-mer（DUE，AT-rich，先解開）＋ 多個 9-mer DnaA box。訊號：完全甲基化的 GATC（11 個，Dam methylase）。DnaA–ATP 多聚化並纏繞 DNA（IHF、HU、FIS 協助彎曲，gyrase 提供負超螺旋）→ DUE 打開 → DnaC（helicase loader）把 DnaB 六聚體裝到兩條單股上
+  → SSB → DnaG primase 合成引子 → Pol III 全酶 → replisome。防止重複起始：SeqA 結合半甲基化 GATC；DnaA–ATP 被水解成 DnaA–ADP。primosome = DnaB + DnaG。
+
+  【補充】oriC (245 bp): 11 GATC sites — fully methylated (Dam) = ready; hemimethylated → SeqA blocks re-initiation'
+parts_png: false
+status: pending

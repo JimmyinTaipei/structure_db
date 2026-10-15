@@ -1,0 +1,242 @@
+id: chromatin_levels
+title: Levels of chromatin packing
+layout: scene
+scene:
+  items:
+  - g: helix
+    from:
+    - 0
+    - 4
+    to:
+    - 5.5
+    - 4
+    pitch: 2.6
+    amp: 0.45
+  - g: text
+    at:
+    - 2.75
+    - 6.6
+    text: 'DNA double helix
+
+      2 nm'
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 6.0
+    - 4
+    to:
+    - 7.6
+    - 4
+    style: fat
+  - g: strand
+    kind: parent
+    points:
+    - - 8.0
+      - 4.3
+    - - 8.3
+      - 4.15
+    - - 9.3
+      - 3.85
+    - - 10.5
+      - 3.85
+    - - 11.5
+      - 4.15
+    - - 12.700000000000001
+      - 4.15
+    - - 13.700000000000001
+      - 3.85
+    - - 14.200000000000001
+      - 4
+    width: 0.2
+  - g: nucleosome
+    at:
+    - 8.8
+    - 3.9
+    r: 0.8
+  - g: nucleosome
+    at:
+    - 11.0
+    - 3.9
+    r: 0.8
+  - g: nucleosome
+    at:
+    - 13.200000000000001
+    - 3.9
+    r: 0.8
+  - g: text
+    at:
+    - 11.0
+    - 1.4
+    text: H1 binds linker DNA
+    size: 0.75
+    color: gray
+  - g: text
+    at:
+    - 11.0
+    - 6.6
+    text: '"Beads on a string"
+
+      nucleosome 11 nm'
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 14.6
+    - 4
+    to:
+    - 16.2
+    - 4
+    style: fat
+  - g: nucleosome
+    at:
+    - 17.6
+    - 1.8
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 18.8
+    - 2.7
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 17.6
+    - 3.6
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 18.8
+    - 4.5
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 20.0
+    - 1.8
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 21.2
+    - 2.7
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 20.0
+    - 3.6
+    r: 0.7
+  - g: nucleosome
+    at:
+    - 21.2
+    - 4.5
+    r: 0.7
+  - g: text
+    at:
+    - 19.4
+    - 6.6
+    text: 30 nm fiber
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 22.6
+    - 4
+    to:
+    - 24.2
+    - 4
+    style: fat
+  - g: blob
+    at:
+    - 27.0
+    - 4.0
+    w: 0.7
+    h: 5.0
+    shape: box
+    hue: brown
+  - g: strand
+    kind: parent
+    width: 0.28
+    points:
+    - - 27.0
+      - 1.8
+    - - 25.0
+      - 1.2000000000000002
+    - - 25.3
+      - 2.2
+    - - 27.0
+      - 2.3
+  - g: strand
+    kind: parent
+    width: 0.28
+    points:
+    - - 27.0
+      - 2.9
+    - - 29.0
+      - 2.3
+    - - 28.7
+      - 3.3
+    - - 27.0
+      - 3.4
+  - g: strand
+    kind: parent
+    width: 0.28
+    points:
+    - - 27.0
+      - 4.0
+    - - 25.0
+      - 3.4
+    - - 25.3
+      - 4.4
+    - - 27.0
+      - 4.5
+  - g: strand
+    kind: parent
+    width: 0.28
+    points:
+    - - 27.0
+      - 5.1
+    - - 29.0
+      - 4.5
+    - - 28.7
+      - 5.5
+    - - 27.0
+      - 5.6
+  - g: text
+    at:
+    - 27.0
+    - 7.4
+    text: 'Loops on a protein
+
+      scaffold (~300 nm)'
+    size: 0.85
+    align: center
+  - g: arrow
+    from:
+    - 30.0
+    - 4
+    to:
+    - 31.6
+    - 4
+    style: fat
+  - g: chromosome
+    at:
+    - 33.6
+    - 4.0
+    h: 5.6
+  - g: text
+    at:
+    - 33.6
+    - 8.6
+    text: 'Metaphase
+
+      chromosome
+
+      (~1400 nm)'
+    size: 0.85
+    align: center
+tags:
+- molecular_biology
+- dna_structure
+notes_zh: 'DNA（2 nm）→ 核小體（11 nm，「串珠」）→ 30 nm 纖維（H1 協助）→ 掛在蛋白質骨架上的環（~300 nm）→ 中期染色體（~1400 nm）。核小體：H2A、H2B、H3、H4 各兩個組成八聚體，纏繞 ~147 bp DNA 1.7 圈；H1 結合 linker DNA。組蛋白富含 Lys、Arg（正電）。原核：類核（nucleoid）以 HU、IHF 等蛋白壓縮，無組蛋白（古菌有）。
+
+  【補充】Nucleosome core: histone octamer (H2A, H2B, H3, H4) × 2 + ~147 bp DNA wrapped 1.7 turns; histones rich in Lys/Arg (+). Euchromatin: open, acetylated, active. Heterochromatin: condensed, H3K9me3, inactive.'
+parts_png: false
+status: pending

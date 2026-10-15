@@ -1,0 +1,15 @@
+id: pantothenate
+name: Pantothenate (vitamin B5)
+label: Pantothenate (B_5)
+aliases:
+- pantothenic acid
+- vitamin B5
+- 泛酸
+smiles: CC(C)(CO)[C@@H](O)C(=O)NCCC(=O)[O-]
+ring:
+  methyls: false
+tags:
+- vitamin
+- water_soluble
+notes_zh: pantoate + β-alanine（醯胺鍵）。是 CoA 與 ACP（fatty acid synthase 的醯基載體）的組成。缺乏罕見（burning feet）。
+status: pending

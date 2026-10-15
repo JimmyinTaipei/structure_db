@@ -1,0 +1,27 @@
+id: glycerol_kinase
+title: Glycerol → Glycerol 3-phosphate (glycerol kinase)
+substrates:
+- glycerol
+products:
+- glycerol_3p
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+extra_out:
+- H+
+enzyme: glycerol kinase
+reversible: false
+decorate:
+  glycerol_3p:
+    colors:
+      2:
+        c: [magenta, '{P}']
+card_zh:
+  location: 肝（脂肪組織沒有）
+  type: 磷酸化（1 ATP）
+tags:
+- carb_metabolism
+- gluconeogenesis
+- lipid
+status: pending

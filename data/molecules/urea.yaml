@@ -1,0 +1,9 @@
+id: urea
+name: Urea
+aliases: [尿素, carbamide]
+smiles: "NC(N)=O"
+chain:
+  - {c: C, l: H_2N, r: NH_2, u: O, ub: 2}
+tags: [urea]
+notes_zh: 兩個 N 分別來自 NH₄⁺（經 carbamoyl phosphate）與 aspartate；C 來自 HCO₃⁻；O 來自 arginase 的 H₂O。由腎臟排出。
+status: pending

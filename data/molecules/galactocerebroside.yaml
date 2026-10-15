@@ -1,0 +1,8 @@
+id: galactocerebroside
+name: "Galactocerebroside"
+aliases: [GalCer, cerebroside]
+smiles: "C(OC1OC(CO)C(O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC"
+lipid: {type: "sphingolipid", chains: [{n: 18}], head: "galactose"}
+tags: [lipid, sphingolipid]
+notes_zh: "ceramide + 一個 β-galactose（C1）。神經髓鞘。Krabbe disease：galactocerebrosidase 缺乏。（glucocerebroside 累積 → Gaucher disease）（圖例：N-stearoyl；sphingosine 有 trans-Δ4 雙鍵）"
+status: pending

@@ -1,0 +1,39 @@
+id: d_aldose_family
+title: "D-Aldoses（D-醛糖家族樹）"
+layout: free
+cell_size: 3.6
+node_anchor: top
+nodes:
+  - {id: d_glyceraldehyde, ref: d_glyceraldehyde, pos: [6.6499999999999995, 0], decorate: {colors: {1: magenta}}}
+  - {id: d_erythrose, ref: d_erythrose, pos: [2.8499999999999996, 2.6], decorate: {colors: {1: magenta}}}
+  - {id: d_threose, ref: d_threose, pos: [10.45, 2.6], decorate: {colors: {1: magenta}}}
+  - {id: d_ribose, ref: d_ribose, pos: [0.95, 5.8], decorate: {colors: {1: magenta}}}
+  - {id: d_arabinose, ref: d_arabinose, pos: [4.75, 5.8], decorate: {colors: {1: magenta}}}
+  - {id: d_xylose, ref: d_xylose, pos: [8.549999999999999, 5.8], decorate: {colors: {1: magenta}}}
+  - {id: d_lyxose, ref: d_lyxose, pos: [12.35, 5.8], decorate: {colors: {1: magenta}}}
+  - {id: d_allose, ref: d_allose, pos: [0, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_altrose, ref: d_altrose, pos: [1.9, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: glucose, ref: glucose, pos: [3.8, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_mannose, ref: d_mannose, pos: [5.699999999999999, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_gulose, ref: d_gulose, pos: [7.6, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_idose, ref: d_idose, pos: [9.5, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_galactose, ref: d_galactose, pos: [11.399999999999999, 9.6], decorate: {colors: {1: magenta}}}
+  - {id: d_talose, ref: d_talose, pos: [13.299999999999999, 9.6], decorate: {colors: {1: magenta}}}
+edges:
+  - {from: d_glyceraldehyde, to: d_erythrose, head: false, bend: 0}
+  - {from: d_glyceraldehyde, to: d_threose, head: false, bend: 0}
+  - {from: d_erythrose, to: d_ribose, head: false, bend: 0}
+  - {from: d_erythrose, to: d_arabinose, head: false, bend: 0}
+  - {from: d_threose, to: d_xylose, head: false, bend: 0}
+  - {from: d_threose, to: d_lyxose, head: false, bend: 0}
+  - {from: d_ribose, to: d_allose, head: false, bend: 0}
+  - {from: d_ribose, to: d_altrose, head: false, bend: 0}
+  - {from: d_arabinose, to: glucose, head: false, bend: 0}
+  - {from: d_arabinose, to: d_mannose, head: false, bend: 0}
+  - {from: d_xylose, to: d_gulose, head: false, bend: 0}
+  - {from: d_xylose, to: d_idose, head: false, bend: 0}
+  - {from: d_lyxose, to: d_galactose, head: false, bend: 0}
+  - {from: d_lyxose, to: d_talose, head: false, bend: 0}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "每往下一層，在羰基下方多一個立體中心（洋紅），OH 左右各一 → 2ⁿ 個異構物。全部 D 型：離羰基最遠的立體中心 OH 在右。必背：glucose、mannose（C2 epimer）、galactose（C4 epimer）、ribose。"
+status: pending

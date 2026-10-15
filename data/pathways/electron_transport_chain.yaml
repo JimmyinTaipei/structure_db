@@ -1,0 +1,584 @@
+id: electron_transport_chain
+title: Electron transport chain & oxidative phosphorylation（電子傳遞鏈與氧化磷酸化）
+layout: free
+cell_size: 3.4
+regions:
+- kind: membrane
+  y: 0
+  x0: -7.4
+  x1: 10.4
+  label: 'Inner
+
+    mitochondrial
+
+    membrane'
+nodes:
+- id: ims
+  text: Intermembrane space (high [H^+], +)
+  kind: heading
+  pos:
+  - -7.4
+  - -3.0
+- id: mat
+  text: Matrix (low [H^+], −)
+  kind: heading
+  pos:
+  - -7.4
+  - 4.0
+- id: c1
+  text: I
+  kind: protein
+  pos:
+  - -5.2
+  - 0
+  w: 2.6
+  h: 4.2
+- id: c2
+  text: II
+  kind: protein
+  pos:
+  - -2.6
+  - 0.55
+  w: 2.0
+  h: 2.4
+- id: q
+  text: Q
+  kind: carrier
+  pos:
+  - -1.1
+  - -0.25
+- id: c3
+  text: III
+  kind: protein
+  pos:
+  - 0.6
+  - 0
+  w: 2.4
+  h: 4.2
+- id: cytc
+  text: cyt c
+  kind: carrier
+  pos:
+  - 2.0
+  - -1.75
+- id: c4
+  text: IV
+  kind: protein
+  pos:
+  - 3.5
+  - 0
+  w: 2.4
+  h: 4.2
+- id: c5
+  text: 'ATP
+
+    synthase
+
+    (F_oF_1)'
+  kind: protein
+  pos:
+  - 7.0
+  - 0
+  w: 3.0
+  h: 4.2
+- id: nadh
+  text: NADH + H^+
+  kind: ion
+  pos:
+  - -6.4
+  - 2.4
+- id: nad
+  text: NAD^+
+  kind: ion
+  pos:
+  - -4.1
+  - 2.4
+- id: succ
+  text: Succinate
+  kind: name
+  pos:
+  - -3.5
+  - 3.2
+- id: fum
+  text: Fumarate
+  kind: name
+  pos:
+  - -1.5
+  - 3.2
+- id: o2
+  text: ½O_2 + 2H^+
+  kind: ion
+  pos:
+  - 2.4
+  - 2.4
+- id: h2o
+  text: H_2O
+  kind: ion
+  pos:
+  - 4.5
+  - 2.4
+- id: adp
+  text: ADP + P_i
+  kind: ion
+  pos:
+  - 6.0
+  - 2.6
+- id: atp
+  text: ATP
+  kind: ion
+  pos:
+  - 8.1
+  - 2.6
+- id: h1
+  text: 4H^+
+  kind: ion
+  pos:
+  - -5.2
+  - -2.4
+- id: h3
+  text: 4H^+
+  kind: ion
+  pos:
+  - 0.6
+  - -2.4
+- id: h4
+  text: 2H^+
+  kind: ion
+  pos:
+  - 3.5
+  - -2.4
+- id: h5
+  text: H^+
+  kind: ion
+  pos:
+  - 7.0
+  - -2.4
+- id: h6
+  text: H^+
+  kind: ion
+  pos:
+  - 9.4
+  - -2.4
+- id: h7
+  text: H^+
+  kind: ion
+  pos:
+  - 9.4
+  - 2.6
+- id: rot
+  text: 'Rotenone,
+
+    amytal'
+  kind: drug
+  pos:
+  - -7.2
+  - -1.6
+- id: mal
+  text: Malonate
+  kind: drug
+  pos:
+  - -2.6
+  - -1.9
+- id: anti
+  text: Antimycin A
+  kind: drug
+  pos:
+  - 1.4
+  - 3.4
+- id: cn
+  text: CN^-, CO, N_3^-
+  kind: drug
+  pos:
+  - 4.8
+  - -1.8
+- id: oligo
+  text: Oligomycin
+  kind: drug
+  pos:
+  - 5.6
+  - -3.3
+- id: unc
+  text: 'Uncouplers
+
+    (2,4-DNP, UCP1)'
+  kind: drug
+  pos:
+  - 10.9
+  - 2.0
+edges:
+- from: nadh
+  to: c1
+  step: complex_i
+- from: c1
+  to: nad
+  step: complex_i
+- from: succ
+  to: c2
+  step: complex_ii
+- from: c2
+  to: fum
+  step: complex_ii
+- from: c1
+  to: q
+  color: orange
+  bend: -0.2
+- from: c2
+  to: q
+  color: orange
+- from: q
+  to: c3
+  color: orange
+- from: c3
+  to: cytc
+  color: orange
+- from: cytc
+  to: c4
+  color: orange
+- from: o2
+  to: c4
+  step: complex_iv
+- from: c4
+  to: h2o
+  step: complex_iv
+- from: c1
+  to: h1
+  color: magenta
+- from: c3
+  to: h3
+  color: magenta
+- from: c4
+  to: h4
+  color: magenta
+- from: h5
+  to: c5
+  color: magenta
+- from: adp
+  to: c5
+  step: atp_synthase
+- from: c5
+  to: atp
+  step: atp_synthase
+- from: rot
+  to: c1
+  inhibit: true
+- from: mal
+  to: c2
+  inhibit: true
+- from: anti
+  to: c3
+  inhibit: true
+- from: cn
+  to: c4
+  inhibit: true
+- from: oligo
+  to: c5
+  inhibit: true
+- from: h6
+  to: h7
+  color: magenta
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: 橙色箭頭＝電子流（NADH → I → Q → III → cyt c → IV → O₂；succinate → II → Q）；洋紅箭頭＝質子流。每對電子：NADH 打出 10 H⁺（I 4、III 4、IV 2），FADH₂ 6 H⁺。ATP synthase 約 4 H⁺/ATP（含 Pi 運輸）→ P/O：NADH 2.5、FADH₂ 1.5。抑制劑：I rotenone、amytal；II
+  malonate；III antimycin A；IV CN⁻、CO、N₃⁻、H₂S；V oligomycin；ANT atractyloside。uncoupler 讓 H⁺ 繞過 ATP synthase：O₂ 消耗 ↑、ATP ↓、體溫 ↑（UCP1 = thermogenin，新生兒棕色脂肪）。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 35.8
+        - 3.4
+        text: IMS (H^+ high)
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 35.8
+        - 14.6
+        text: Matrix
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 7.0
+        x0: -1.0
+        x1: 36.0
+        lipids: true
+      - g: blob
+        at:
+        - 3.0
+        - 7.0
+        w: 2.8
+        h: 3.2
+        shape: box
+        hue: blue
+      - g: blob
+        at:
+        - 2.4
+        - 10.0
+        w: 1.8
+        h: 3.2
+        shape: box
+        hue: blue
+        text: I
+        text_size: 0.8
+      - g: text
+        at:
+        - 2.4
+        - 12.6
+        text: NADH → NAD^+
+        size: 0.62
+        align: center
+      - g: blob
+        at:
+        - 8.0
+        - 9.2
+        w: 2.0
+        h: 2.2
+        shape: oval
+        hue: teal
+        text: II
+        text_size: 0.7
+      - g: text
+        at:
+        - 8.0
+        - 12.6
+        text: succinate → fumarate
+        size: 0.62
+        align: center
+      - g: ion
+        at:
+        - 11.0
+        - 7.0
+        r: 0.55
+        hue: yellow
+        text: Q
+        text_size: 0.5
+      - g: blob
+        at:
+        - 15.0
+        - 7.0
+        w: 3.2
+        h: 3.4
+        shape: box
+        hue: purple
+        text: III
+        text_size: 0.8
+      - g: ion
+        at:
+        - 18.2
+        - 4.6
+        r: 0.5
+        hue: red
+        text: c
+        text_size: 0.5
+      - g: blob
+        at:
+        - 21.4
+        - 7.0
+        w: 3.0
+        h: 3.4
+        shape: box
+        hue: green
+        text: IV
+        text_size: 0.8
+      - g: text
+        at:
+        - 21.4
+        - 12.6
+        text: ½O_2 → H_2O
+        size: 0.62
+        align: center
+      - g: blob
+        at:
+        - 29.0
+        - 7.0
+        w: 3.0
+        h: 3.0
+        shape: box
+        hue: orange
+        text: F_o
+        text_size: 0.6
+      - g: blob
+        at:
+        - 29.0
+        - 9.6
+        w: 0.7
+        h: 2.0
+        shape: box
+        hue: orange
+      - g: blob
+        at:
+        - 29.0
+        - 11.4
+        w: 3.4
+        h: 2.2
+        shape: oval
+        hue: orange
+        accent: true
+        text: F_1
+        text_size: 0.6
+      - g: text
+        at:
+        - 31.0
+        - 11.4
+        text: ADP + P_i → ATP
+        size: 0.62
+        align: left
+      - g: arrow
+        from:
+        - 3.4
+        - 8.6
+        to:
+        - 10.4
+        - 7.4
+        color: '#E07B1A'
+        curve: 0
+      - g: arrow
+        from:
+        - 8.6
+        - 8.2
+        to:
+        - 10.4
+        - 7.5
+        color: '#E07B1A'
+        curve: 0
+      - g: arrow
+        from:
+        - 11.6
+        - 7.0
+        to:
+        - 13.4
+        - 7.0
+        color: '#E07B1A'
+        curve: 0
+      - g: arrow
+        from:
+        - 16.0
+        - 5.1
+        to:
+        - 17.6
+        - 4.6
+        color: '#E07B1A'
+        curve: 0
+      - g: arrow
+        from:
+        - 18.8
+        - 4.6
+        to:
+        - 20.6
+        - 5.1
+        color: '#E07B1A'
+        curve: 0
+      - g: arrow
+        from:
+        - 5.6
+        - 8.0
+        to:
+        - 5.6
+        - 4.0
+        color: magenta
+        curve: 0
+      - g: text
+        at:
+        - 5.6
+        - 3.4
+        text: 4H^+
+        size: 0.62
+        align: center
+        color: magenta
+      - g: arrow
+        from:
+        - 17.0
+        - 8.0
+        to:
+        - 17.0
+        - 4.0
+        color: magenta
+        curve: 0
+      - g: text
+        at:
+        - 17.0
+        - 3.4
+        text: 4H^+
+        size: 0.62
+        align: center
+        color: magenta
+      - g: arrow
+        from:
+        - 23.4
+        - 8.0
+        to:
+        - 23.4
+        - 4.0
+        color: magenta
+        curve: 0
+      - g: text
+        at:
+        - 23.4
+        - 3.4
+        text: 2H^+
+        size: 0.62
+        align: center
+        color: magenta
+      - g: arrow
+        from:
+        - 31.2
+        - 4.0
+        to:
+        - 31.2
+        - 8.2
+        color: magenta
+        curve: 0
+      - g: text
+        at:
+        - 31.2
+        - 3.4
+        text: H^+
+        size: 0.62
+        align: center
+        color: magenta
+      - g: text
+        at:
+        - 3.0
+        - 2.0
+        text: rotenone
+        size: 0.58
+        align: center
+        color: red
+      - g: text
+        at:
+        - 9.4
+        - 10.6
+        text: malonate
+        size: 0.58
+        align: left
+        color: red
+      - g: text
+        at:
+        - 15.0
+        - 2.0
+        text: antimycin A
+        size: 0.58
+        align: center
+        color: red
+      - g: text
+        at:
+        - 21.4
+        - 2.0
+        text: CN^-, CO
+        size: 0.58
+        align: center
+        color: red
+      - g: text
+        at:
+        - 27.0
+        - 2.0
+        text: oligomycin
+        size: 0.58
+        align: center
+        color: red

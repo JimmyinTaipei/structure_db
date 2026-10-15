@@ -1,0 +1,25 @@
+id: ada
+title: "Adenosine → Inosine + NH₄⁺ (adenosine deaminase)"
+substrates: [adenosine]
+products: [inosine]
+cofactors_in: [H2O]
+cofactors_out: [ammonium]
+cofactors_inline: true
+extra_in: [H+]          # NH₃ 接 H⁺ 成 NH₄⁺（不畫，只參與平衡）
+enzyme: "adenosine\ndeaminase (ADA)"
+reversible: false
+decorate:
+  adenosine: {base_colors: {6: magenta}}
+  ammonium: {colors: {0: magenta}}
+  H2O: {colors: {0: cyan}}
+  inosine: {base_colors: {6: cyan}}
+card_zh:
+  location: 細胞質（淋巴球活性最高）
+  type: "水解脫胺"
+  deficiency:
+    - "ADA 缺乏 → 體染色體隱性 SCID：dATP 累積 → 抑制 ribonucleotide reductase → T、B 細胞無法增生"
+    - "第一個以基因治療成功治療的疾病；也可用 PEG-ADA 酵素替代"
+  exam_points:
+    - "dAdo 也被 ADA 代謝；缺 ADA 時 dAdo → dAMP → dATP 堆積"
+tags: [nucleotide, purine, degradation]
+status: pending

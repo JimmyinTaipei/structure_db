@@ -1,0 +1,15 @@
+id: ltc4
+name: Leukotriene C4
+label: LTC_4
+aliases:
+- LTC₄
+- cysteinyl leukotriene
+smiles: CCCCC/C=C\C/C=C\C=C\C=C\[C@H]([C@H](CCCC(=O)[O-])O)S[16*]
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: S–G：glutathione（γ-Glu-Cys-Gly）以 Cys 的 S 接在 C6。LTC₄ synthase 接上 glutathione → LTD₄ → LTE₄（cysteinyl LT，舊稱 SRS-A）：支氣管收縮、血管通透性 ↑。montelukast、zafirlukast 阻斷受體；zileuton 抑制 5-LOX。aspirin-exacerbated
+  respiratory disease：COX 被抑制 → 更多 arachidonate 走 LOX。
+status: pending

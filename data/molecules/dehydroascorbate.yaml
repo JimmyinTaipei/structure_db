@@ -1,0 +1,14 @@
+id: dehydroascorbate
+name: Dehydroascorbate
+label: Dehydroascorbate
+aliases:
+- dehydroascorbic acid
+- 去氫抗壞血酸
+smiles: OC[C@H](O)[C@H]1OC(=O)C(=O)C1=O
+ring:
+  rotate: 0
+tags:
+- vitamin
+- water_soluble
+notes_zh: ascorbate 的氧化態（C2、C3 變成酮）。可被 glutathione 還原回 ascorbate；以 GLUT 進入細胞。
+status: pending

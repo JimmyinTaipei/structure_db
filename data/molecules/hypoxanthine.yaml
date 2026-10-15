@@ -1,0 +1,8 @@
+id: hypoxanthine
+name: "Hypoxanthine"
+aliases: [次黃嘌呤]
+smiles: "O=c1[nH][cH]nc2[nH][cH]nc12"
+ring: {axis: [5, 9], right: 1, h_down: 6, nh_bond: true, mirror: true}
+tags: [nucleotide, purine]
+notes_zh: "IMP 的鹼基。救援：HGPRT（+ PRPP → IMP）；分解：xanthine oxidase → xanthine。"
+status: pending

@@ -1,0 +1,278 @@
+id: polyadenylation
+title: Cleavage and polyadenylation
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 3.0
+    - - 24.0
+      - 3.0
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.0
+      - 3.0
+    - - 9.2
+      - 3.0
+    width: 0.55
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 15.2
+      - 3.0
+    - - 18.2
+      - 3.0
+    width: 0.55
+  - g: blob
+    at:
+    - 8.1
+    - 1.55
+    w: 3.0
+    h: 1.3
+    shape: oval
+    hue: orange
+    text: CPSF
+    text_size: 0.62
+  - g: blob
+    at:
+    - 16.7
+    - 1.55
+    w: 2.8
+    h: 1.3
+    shape: oval
+    hue: teal
+    text: CstF
+    text_size: 0.62
+  - g: blob
+    at:
+    - 11.4
+    - 4.3
+    w: 1.6
+    h: 1.2
+    shape: round
+    hue: purple
+    text: PAP
+    text_size: 0.62
+  - g: blob
+    at:
+    - 13.4
+    - 4.3
+    w: 2.0
+    h: 1.1
+    shape: oval
+    hue: gray
+    text: CF I/II
+    text_size: 0.55
+  - g: mark
+    kind: cut
+    at:
+    - 12.2
+    - 3.0
+    side: up
+  - g: text
+    at:
+    - 12.2
+    - 1.4
+    text: 'cleavage
+
+      (CA)'
+    size: 0.68
+    align: center
+  - g: text
+    at:
+    - 8.1
+    - 3.95
+    text: AAUAAA
+    size: 0.72
+    align: center
+    color: '#B08F10'
+  - g: text
+    at:
+    - 16.7
+    - 3.95
+    text: GU-rich
+    size: 0.72
+    align: center
+    color: '#2F7F7A'
+  - g: text
+    at:
+    - 2.0
+    - 4.2
+    text: pre-mRNA 3′ end
+    size: 0.7
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 4.0
+    - 4.8
+    to:
+    - 4.0
+    - 7.8
+    color: gray
+    width: 1.0
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 8.6
+    - - 12.2
+      - 8.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.0
+      - 8.6
+    - - 9.2
+      - 8.6
+    width: 0.55
+  - g: strand
+    kind: gray
+    points:
+    - - 13.4
+      - 8.6
+    - - 24.0
+      - 8.6
+    width: 0.3
+  - g: strand
+    kind: '#3FA7A0'
+    points:
+    - - 15.2
+      - 8.6
+    - - 18.2
+      - 8.6
+    width: 0.55
+  - g: blob
+    at:
+    - 14.0
+    - 8.6
+    w: 1.4
+    h: 1.1
+    shape: round
+    hue: pink
+    text: Xrn2
+    text_size: 0.5
+  - g: text
+    at:
+    - 19.0
+    - 9.799999999999999
+    text: Xrn2 → termination
+    size: 0.68
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 4.0
+    - 9.7
+    to:
+    - 4.0
+    - 13.0
+    color: gray
+    width: 1.0
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 13.8
+    - - 12.2
+      - 13.8
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 7.0
+      - 13.8
+    - - 9.2
+      - 13.8
+    width: 0.55
+  - g: strand
+    kind: '#E8B400'
+    points:
+    - - 12.2
+      - 13.8
+    - - 20.6
+      - 13.8
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: blob
+    at:
+    - 13.7
+    - 13.8
+    w: 1.3
+    h: 0.95
+    shape: oval
+    hue: teal
+    text: ''
+    text_size: 0.62
+  - g: blob
+    at:
+    - 15.5
+    - 13.8
+    w: 1.3
+    h: 0.95
+    shape: oval
+    hue: teal
+    text: ''
+    text_size: 0.62
+  - g: blob
+    at:
+    - 17.3
+    - 13.8
+    w: 1.3
+    h: 0.95
+    shape: oval
+    hue: teal
+    text: ''
+    text_size: 0.62
+  - g: blob
+    at:
+    - 21.6
+    - 12.5
+    w: 1.6
+    h: 1.2
+    shape: round
+    hue: purple
+    text: PAP
+    text_size: 0.62
+  - g: text
+    at:
+    - 15.2
+    - 12.5
+    text: poly(A) tail ~200–250 A + PABP
+    size: 0.72
+    align: center
+    color: '#B08F10'
+  - g: text
+    at:
+    - 10.0
+    - 15.200000000000001
+    text: poly(A) polymerase
+    size: 0.72
+    align: left
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'CPSF 認 AAUAAA，CstF 認下游 GU-rich；在 AAUAAA 後 10–30 nt（常在 CA 之後）切開，poly(A) polymerase（不需模板，ATP）加上 ~200–250 A，PABP 包覆。下游 RNA 被 Xrn2 分解並使 Pol II 終止（torpedo）。Poly(A)：穩定、出核、轉譯（PABP–eIF4G）；histone mRNA
+  無 poly(A)（莖環）。
+
+  【補充】CPSF binds AAUAAA; CstF binds the GU/U-rich element ~30 nt downstream; CPSF-73 cuts 10–30 nt after AAUAAA (usually after CA). Poly(A): stability, export, translation (PABP–eIF4G closes the loop);
+  shortening (deadenylation) starts decay. Histone mRNAs have a stem-loop instead. Alternative poly(A) sites change the 3′ UTR (miRNA sites) or the C terminus (IgM membrane vs secreted). Bacterial poly(A)
+  instead marks RNA for decay.'
+parts_png: false
+status: pending

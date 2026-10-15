@@ -1,0 +1,35 @@
+id: mevalonate_to_ipp
+title: Mevalonate → Isopentenyl pyrophosphate (3 steps)
+substrates:
+- mevalonate
+products:
+- ipp
+- id: co2
+  view: formula
+cofactors_in:
+- 3ATP
+cofactors_out:
+- 3ADP
+- Pi
+extra_out:
+- H+
+enzyme: 'kinases ×2 +
+
+  decarboxylase'
+reversible: false
+decorate:
+  mevalonate:
+    colors:
+      0: magenta
+      2: {r: cyan}
+  co2:
+    colors: {0: magenta}
+  Pi:
+    colors: {0: cyan}
+card_zh:
+  location: 細胞質
+  type: 兩次磷酸化＋脫羧（共 3 ATP）
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+status: pending

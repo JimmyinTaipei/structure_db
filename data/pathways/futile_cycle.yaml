@@ -1,0 +1,69 @@
+id: futile_cycle
+title: Futile (substrate) cycles
+layout: free
+cell_size: 4.6
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  view: name
+- id: g6p
+  ref: glucose_6p
+  pos:
+  - 2.6
+  - 0
+  view: name
+- id: f6p
+  ref: fructose_6p
+  pos:
+  - 0
+  - 1.8
+  view: name
+- id: fbp
+  ref: fructose_16bp
+  pos:
+  - 2.6
+  - 1.8
+  view: name
+- id: net
+  text: 'Net: ATP + H_2O → ADP + P_i + heat'
+  pos:
+  - 1.3
+  - 2.95
+  kind: concept
+edges:
+- from: glc
+  to: g6p
+  step: hexokinase
+  bend: 0.35
+  label: hexokinase / GK
+  side_text: ATP → ADP
+- from: g6p
+  to: glc
+  step: g6pase
+  bend: 0.35
+  label: G6Pase
+  side_text: H_2O → P_i
+- from: f6p
+  to: fbp
+  step: pfk1
+  bend: 0.35
+  label: PFK-1
+  side_text: ATP → ADP
+- from: fbp
+  to: f6p
+  step: fbpase1
+  bend: 0.35
+  label: FBPase-1
+  side_text: H_2O → P_i
+tags:
+- carb_metabolism
+- glycolysis
+- gluconeogenesis
+- energy_metabolism
+- bioenergetics
+notes_zh: 同一對受質由兩個不同的不可逆酵素正反向轉換，若同時進行，淨結果只是水解 ATP 產熱（substrate cycle）。用途：① 產熱（熊蜂飛行肌 PFK-1／FBPase-1；malignant hyperthermia 為另一種 Ca²⁺ 循環）② 放大訊號：兩方向同時被反向調控（F2,6BP 活化 PFK-1、抑制 FBPase-1），淨流量的變化比單一酵素變化大很多（筆記例：+20
+  % 與 −30 % → 淨流量變化 98 %）。正常情況下由 insulin／glucagon 互惠調控，避免同時進行。
+status: pending

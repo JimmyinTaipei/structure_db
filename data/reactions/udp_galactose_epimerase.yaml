@@ -1,0 +1,28 @@
+id: udp_galactose_epimerase
+title: UDP-galactose ⇌ UDP-glucose (UDP-galactose 4-epimerase)
+substrates:
+- udp_galactose
+products:
+- udp_glucose
+prosthetic:
+- NAD^+
+enzyme: 'UDP-galactose
+
+  4-epimerase'
+reversible: true
+decorate:
+  udp_galactose:
+    colors:
+      u4: [magenta, HO]
+  udp_glucose:
+    colors:
+      d4: [magenta, HO]
+card_zh:
+  type: C4 差向異構化
+  mechanism: 緊密結合的 NAD⁺ 把 C4-OH 氧化成酮，再從另一面還原回來
+  exam_points:
+  - 可逆 → 不吃半乳糖也能做出 UDP-Gal（乳糖、醣脂）
+tags:
+- carb_metabolism
+- galactose_metabolism
+status: pending

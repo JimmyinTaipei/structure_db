@@ -1,0 +1,30 @@
+id: glucocerebrosidase
+title: Glucocerebroside → Ceramide + Glucose (glucocerebrosidase)
+substrates:
+- glucocerebroside
+products:
+- ceramide
+- b_glucopyranose
+cofactors_in:
+- H2O
+enzyme: 'glucocerebrosidase
+
+  (β-glucosidase, GBA)'
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  b_glucopyranose:
+    colors:
+      u1: magenta
+card_zh:
+  location: 溶小體
+  type: 醣苷鍵水解
+  deficiency:
+  - Gaucher disease（最常見的溶小體儲積症，AR）：肝脾腫大、全血球低下、骨痛與骨壞死（Erlenmeyer flask）、Gaucher cell（皺紙狀胞質）；治療 imiglucerase、miglustat
+  - GBA 帶因者 → Parkinson 風險 ↑
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

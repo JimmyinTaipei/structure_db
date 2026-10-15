@@ -1,0 +1,113 @@
+id: cloning_vectors
+title: Cloning vectors
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.9
+    - 0.0
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Plasmid
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 0.0
+    text: E. coli · up to ~15 kb · subcloning, cDNA library; ori + selectable marker + MCS
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.9
+    - 1.6
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: λ phage
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 1.6
+    text: E. coli · up to ~25 kb · genomic or cDNA library
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.9
+    - 3.2
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Cosmid
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 3.2
+    text: E. coli · 30–45 kb · λ cos sites + plasmid ori · genomic library
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.9
+    - 4.800000000000001
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: BAC
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 4.800000000000001
+    text: E. coli (F plasmid) · 100–300 kb · genome projects
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.9
+    - 6.4
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: YAC
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 6.4
+    text: yeast · 250–2000 kb · ARS + centromere + telomeres
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.9
+    - 8.0
+    w: 7.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Shuttle / expression
+    text_size: 0.85
+  - g: text
+    at:
+    - 8.4
+    - 8.0
+    text: two origins (E. coli + yeast) / promoter + RBS for protein production; baculovirus–insect cells
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- techniques
+notes_zh: 載體至少需複製起點、選擇標記、多選殖位點。容量：plasmid < λ < cosmid < BAC < YAC。Shuttle vector 兩種起點；expression vector 帶啟動子與 RBS；真核表現另有 CMV promoter（哺乳類），E. coli 載體（如 pET）則不需要。
+parts_png: false
+status: pending

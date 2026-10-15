@@ -1,0 +1,18 @@
+id: ethanol
+name: Ethanol
+aliases:
+- alcohol
+- EtOH
+- 乙醇
+smiles: CCO
+chain:
+- c: C
+  l: H
+  r: OH
+  u: H
+- c: CH_3
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: 主要在肝代謝：ADH（細胞質，主要）、MEOS／CYP2E1（微粒體，慢性飲酒誘導）、catalase（過氧化體，少量）。
+status: pending

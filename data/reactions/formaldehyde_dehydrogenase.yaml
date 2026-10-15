@@ -1,0 +1,42 @@
+id: formaldehyde_dehydrogenase
+title: Formaldehyde → Formate (aldehyde dehydrogenase)
+substrates:
+- formaldehyde
+products:
+- formate
+cofactors_in:
+- NAD+
+- H2O
+cofactors_out:
+- NADH+H+
+extra_out:
+- H+
+enzyme: aldehyde dehydrogenase
+reversible: false
+decorate:
+  formaldehyde:
+    colors:
+      0:
+        fork_r: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - magenta
+          - H
+  H2O:
+    colors:
+      0: cyan
+  formate:
+    colors:
+      0:
+        fork_r: cyan
+card_zh:
+  location: 肝
+  type: 氧化（NAD⁺）
+  deficiency:
+  - formate 抑制 cytochrome c oxidase → 視神經病變、失明；陰離子間隙代謝性酸中毒
+tags:
+- energy_metabolism
+- ethanol
+status: pending

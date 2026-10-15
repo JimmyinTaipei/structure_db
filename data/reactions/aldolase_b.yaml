@@ -1,0 +1,26 @@
+id: aldolase_b
+title: Fructose 1-phosphate → DHAP + Glyceraldehyde (aldolase B)
+substrates:
+- fructose_1p
+products:
+- dhap
+- d_glyceraldehyde
+enzyme: aldolase B
+reversible: true
+decorate:
+  fructose_1p:
+    colors: {0: magenta, 1: magenta, 2: magenta, 3: cyan, 4: cyan, 5: cyan}
+  dhap:
+    colors: {0: magenta, 1: magenta, 2: magenta}
+  d_glyceraldehyde:
+    colors: {0: cyan, 1: cyan, 2: cyan}
+card_zh:
+  location: 肝
+  type: 醛醇裂解
+  deficiency: 遺傳性果糖不耐症（HFI）：F1P 累積、Pi 耗竭 → 吃果糖／蔗糖後低血糖、嘔吐、黃疸、肝衰竭；治療：避免果糖、蔗糖、sorbitol
+  exam_points:
+  - aldolase A（肌肉）主要切 F1,6BP；aldolase B（肝）兩者都能切
+tags:
+- carb_metabolism
+- fructose_metabolism
+status: pending

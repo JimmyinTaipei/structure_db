@@ -1,0 +1,455 @@
+id: rna_editing
+title: RNA editing
+layout: scene
+scene:
+  items:
+  - g: text
+    at:
+    - 0.0
+    - -0.8
+    text: 'C → U: apoB mRNA (APOBEC-1)'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 3.0
+      - 1.2
+    - - 17.0
+      - 1.2
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: blob
+    at:
+    - 10.0
+    - 1.2
+    w: 2.0
+    h: 0.85
+    shape: box
+    hue: yellow
+    text: CAA
+    text_size: 0.65
+  - g: text
+    at:
+    - 10.0
+    - 2.25
+    text: codon 2153 (Gln)
+    size: 0.65
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 8.6
+    - 2.6
+    to:
+    - 5.0
+    - 4.2
+    color: gray
+    width: 1.0
+  - g: arrow
+    from:
+    - 11.4
+    - 2.6
+    to:
+    - 15.0
+    - 4.2
+    color: gray
+    width: 1.0
+  - g: text
+    at:
+    - 3.6
+    - 2.7
+    text: 'liver: unedited'
+    size: 0.7
+    align: center
+  - g: text
+    at:
+    - 16.6
+    - 2.7
+    text: 'intestine: edited'
+    size: 0.7
+    align: center
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 5.0
+    - - 9.0
+      - 5.0
+    width: 0.3
+  - g: blob
+    at:
+    - 4.5
+    - 5.0
+    w: 2.0
+    h: 0.85
+    shape: box
+    hue: yellow
+    text: CAA
+    text_size: 0.65
+  - g: strand
+    kind: rna
+    points:
+    - - 11.0
+      - 5.0
+    - - 20.0
+      - 5.0
+    width: 0.3
+  - g: blob
+    at:
+    - 15.5
+    - 5.0
+    w: 2.0
+    h: 0.85
+    shape: box
+    hue: red
+    text: UAA
+    text_size: 0.65
+  - g: region
+    x0: 0.0
+    y0: 6.4
+    x1: 9.0
+    y1: 7.0
+    hue: purple
+    opacity: 0.9
+    outline: false
+  - g: region
+    x0: 11.0
+    y0: 6.4
+    x1: 15.4
+    y1: 7.0
+    hue: purple
+    opacity: 0.9
+    outline: false
+  - g: text
+    at:
+    - 4.5
+    - 7.8
+    text: 'apoB-100 (4536 aa): VLDL, LDL'
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 15.5
+    - 7.8
+    text: 'apoB-48 (2152 aa, ~48 %): chylomicron'
+    size: 0.72
+    align: center
+  - g: text
+    at:
+    - 0.0
+    - 10.0
+    text: 'A → I: ADAR (dsRNA)'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.6
+      - 11.6
+    - - 7.4
+      - 11.6
+    - - 7.4
+      - 11.6
+    - - 7.571010071662835
+      - 11.630153689607045
+    - - 7.72139380484327
+      - 11.71697777844051
+    - - 7.83301270189222
+      - 11.85
+    - - 7.892403876506104
+      - 12.013175911166535
+    - - 7.892403876506104
+      - 12.186824088833465
+    - - 7.83301270189222
+      - 12.35
+    - - 7.72139380484327
+      - 12.483022221559489
+    - - 7.571010071662835
+      - 12.569846310392954
+    - - 7.4
+      - 12.6
+    - - 7.4
+      - 12.6
+    - - 0.6
+      - 12.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: gray
+    points:
+    - - 1.2
+      - 11.75
+    - - 1.2
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 1.9
+      - 11.75
+    - - 1.9
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 2.6
+      - 11.75
+    - - 2.6
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 3.3
+      - 11.75
+    - - 3.3
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 4.6
+      - 11.75
+    - - 4.6
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 5.3
+      - 11.75
+    - - 5.3
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 6.0
+      - 11.75
+    - - 6.0
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 6.7
+      - 11.75
+    - - 6.7
+      - 12.45
+    width: 0.08
+  - g: ion
+    at:
+    - 4.0
+    - 11.6
+    r: 0.33
+    hue: red
+    text: A
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 9.0
+    - 12.1
+    to:
+    - 11.4
+    - 12.1
+    style: fat
+  - g: text
+    at:
+    - 10.2
+    - 10.95
+    text: ADAR
+    size: 0.7
+    align: center
+  - g: strand
+    kind: rna
+    points:
+    - - 12.6
+      - 11.6
+    - - 19.4
+      - 11.6
+    - - 19.4
+      - 11.6
+    - - 19.571010071662833
+      - 11.630153689607045
+    - - 19.721393804843267
+      - 11.71697777844051
+    - - 19.83301270189222
+      - 11.85
+    - - 19.8924038765061
+      - 12.013175911166535
+    - - 19.8924038765061
+      - 12.186824088833465
+    - - 19.83301270189222
+      - 12.35
+    - - 19.721393804843267
+      - 12.483022221559489
+    - - 19.571010071662833
+      - 12.569846310392954
+    - - 19.4
+      - 12.6
+    - - 19.4
+      - 12.6
+    - - 12.6
+      - 12.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: strand
+    kind: gray
+    points:
+    - - 13.2
+      - 11.75
+    - - 13.2
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 13.9
+      - 11.75
+    - - 13.9
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 14.6
+      - 11.75
+    - - 14.6
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 15.3
+      - 11.75
+    - - 15.3
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 16.6
+      - 11.75
+    - - 16.6
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 17.3
+      - 11.75
+    - - 17.3
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 18.0
+      - 11.75
+    - - 18.0
+      - 12.45
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 18.7
+      - 11.75
+    - - 18.7
+      - 12.45
+    width: 0.08
+  - g: ion
+    at:
+    - 16.0
+    - 11.6
+    r: 0.33
+    hue: teal
+    text: I
+    text_size: 0.45
+  - g: text
+    at:
+    - 0.0
+    - 16.0
+    text: 'U insertion: trypanosome (gRNA)'
+    size: 0.9
+    align: left
+  - g: strand
+    kind: rna
+    points:
+    - - 0.0
+      - 17.6
+    - - 19.0
+      - 17.6
+    width: 0.3
+    ends:
+    - 5'
+    - 3'
+  - g: text
+    at:
+    - 6.0
+    - 16.95
+    text: U
+    size: 0.7
+    align: center
+    color: red
+  - g: text
+    at:
+    - 7.2
+    - 16.95
+    text: U
+    size: 0.7
+    align: center
+    color: red
+  - g: text
+    at:
+    - 9.4
+    - 16.95
+    text: U
+    size: 0.7
+    align: center
+    color: red
+  - g: text
+    at:
+    - 11.8
+    - 16.95
+    text: U
+    size: 0.7
+    align: center
+    color: red
+  - g: strand
+    kind: gray
+    points:
+    - - 4.0
+      - 18.6
+    - - 15.0
+      - 18.6
+    width: 0.3
+    ends:
+    - 3'
+    - 5'
+  - g: text
+    at:
+    - 16.6
+    - 18.6
+    text: gRNA
+    size: 0.7
+    align: left
+    color: gray
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: 'C→U：APOBEC-1 使 apoB mRNA codon 2153 CAA → UAA，小腸產生 apoB-48（chylomicron），肝臟不編輯產生 apoB-100（VLDL/LDL）。A→I：ADAR 作用於雙股 RNA，I 讀成 G（GluR-B Q/R 位，CAG→CIG：Gln→Arg）。U 插入／刪除：錐蟲粒線體以 guide RNA 為模板（最早發現的編輯）。
+
+  【補充】Editing changes the RNA sequence after transcription (the gene still reads CAA). APOBEC family also includes APOBEC3G (antiviral; HIV Vif degrades it) and AID (somatic hypermutation, class switching).
+  The first editing found was U insertion in trypanosomes. Compare CRISPR–Cas9: a guide RNA edits DNA.
+
+  【補充】GluR-B (AMPA receptor) Q/R site: CAG (Gln) → CIG = CGG (Arg) → Ca^{2+}-impermeable channel; also 5-HT_{2C} receptor; tRNA wobble I (ADAT)'
+parts_png: false
+status: pending

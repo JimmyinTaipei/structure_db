@@ -1,0 +1,31 @@
+id: cyp11b_corticosterone
+title: 11-Deoxycorticosterone → Corticosterone (11β-hydroxylase)
+substrates:
+- doc
+products:
+- corticosterone
+cofactors_in:
+- O2
+- NADPH+H+
+cofactors_out:
+- NADP+
+- H2O
+enzyme: 'CYP11B1 / CYP11B2
+
+  (11β-hydroxylase)'
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  corticosterone:
+    highlight:
+    - smarts: '[CH1;R][OH:1]'
+      color: magenta
+card_zh:
+  location: 粒線體
+  type: 單氧化（C11）
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

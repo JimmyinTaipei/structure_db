@@ -1,0 +1,25 @@
+id: phosphoglucomutase
+title: Glucose 1-phosphate ⇌ Glucose 6-phosphate (phosphoglucomutase)
+substrates:
+- a_glucose_1p
+products:
+- a_glucose_6p
+enzyme: phosphoglucomutase
+reversible: true
+decorate:
+  a_glucose_1p:
+    colors:
+      d1: [magenta, '{P}']
+  a_glucose_6p:
+    colors:
+      u5: [magenta, '{P}']
+card_zh:
+  location: 細胞質
+  type: 異構化（磷酸從 C1 移到 C6）
+  mechanism: 酵素的 Ser-Ⓟ 先把磷酸給 C6 → glucose 1,6-bisphosphate → 再從 C1 收回
+  exam_points:
+  - 肝醣分解的 G1P 由此進入糖解（或在肝變成血糖）
+tags:
+- carb_metabolism
+- glycogen
+status: pending

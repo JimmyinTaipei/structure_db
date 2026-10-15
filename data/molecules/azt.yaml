@@ -1,0 +1,31 @@
+id: azt
+name: AZT (zidovudine)
+label: AZT (zidovudine)
+aliases:
+- zidovudine
+- azidothymidine
+smiles: Cc1cn([C@@H]2O[C@H](CO)[C@@H](N=[N+]=[N-])C2)c(=O)[nH]c1=O
+haworth:
+  ring: furanose
+  numbers: true
+  base: '[*]n1cc(C)c(=O)[nH]c1=O'
+  base_right: 8
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: H
+    3:
+      up: H
+      down: N_3
+    4:
+      up: HOCH_2
+      down: H
+tags:
+- molecular_biology
+- replication
+notes_zh: 3′-azido-thymidine：細胞內磷酸化成 AZT-TP，被 HIV 反轉錄酶接上後因沒有 3′-OH 而終止鏈；反轉錄酶比人類 DNA pol 更容易誤用它。
+parts_png: false
+status: pending

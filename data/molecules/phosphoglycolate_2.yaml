@@ -1,0 +1,22 @@
+id: phosphoglycolate_2
+name: 2-Phosphoglycolate
+label: '2-Phospho-
+
+  glycolate'
+aliases:
+- 2-PG
+- phosphoglycolate
+- 2-磷酸乙醇酸
+smiles: '[O-]C(=O)COP(=O)([O-])[O-]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- calvin_cycle
+notes_zh: Rubisco 的 oxygenase 產物（光呼吸）：2 碳、無法直接用，要經過 peroxisome 與粒線體（photorespiration）回收成 3-PG，損失 CO₂ 與 NH₃。
+status: pending

@@ -1,0 +1,323 @@
+id: ubiquitin_proteasome
+title: Ubiquitin–proteasome pathway
+layout: scene
+scene:
+  items:
+  - g: ion
+    at:
+    - 0.6
+    - 3.0
+    r: 0.45
+    hue: yellow
+    text: Ub
+    text_size: 0.45
+  - g: blob
+    at:
+    - 3.6
+    - 3.0
+    w: 2.4
+    h: 1.6
+    shape: kidney
+    hue: blue
+    text: E1
+    text_size: 0.6
+  - g: text
+    at:
+    - 3.6
+    - 1.3
+    text: ATP → AMP + PP_i
+    size: 0.62
+    align: center
+    color: gray
+  - g: ion
+    at:
+    - 4.4
+    - 2.25
+    r: 0.38
+    hue: yellow
+    text: Ub
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 5.3
+    - 3.0
+    to:
+    - 6.7
+    - 3.0
+    style: fat
+  - g: blob
+    at:
+    - 8.4
+    - 3.0
+    w: 2.0
+    h: 1.4
+    shape: round
+    hue: teal
+    text: E2
+    text_size: 0.6
+  - g: ion
+    at:
+    - 9.1
+    - 2.3
+    r: 0.38
+    hue: yellow
+    text: Ub
+    text_size: 0.4
+  - g: arrow
+    from:
+    - 9.8
+    - 3.0
+    to:
+    - 11.2
+    - 3.0
+    style: fat
+  - g: blob
+    at:
+    - 13.6
+    - 3.2
+    w: 3.0
+    h: 2.0
+    shape: bilobe
+    hue: purple
+    text: E3
+    text_size: 0.6
+  - g: blob
+    at:
+    - 16.4
+    - 3.3
+    w: 2.4
+    h: 1.6
+    shape: oval
+    hue: gray
+    text: substrate
+    text_size: 0.5
+  - g: text
+    at:
+    - 13.6
+    - 1.2
+    text: E3 picks the substrate
+    size: 0.62
+    align: center
+    color: gray
+  - g: arrow
+    from:
+    - 18.1
+    - 3.0
+    to:
+    - 19.5
+    - 3.0
+    style: fat
+  - g: blob
+    at:
+    - 22.0
+    - 3.5
+    w: 2.6
+    h: 1.7
+    shape: oval
+    hue: gray
+    text: substrate
+    text_size: 0.5
+  - g: ion
+    at:
+    - 23.0
+    - 2.3
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: ion
+    at:
+    - 23.55
+    - 1.6999999999999997
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: ion
+    at:
+    - 24.1
+    - 1.0999999999999999
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: ion
+    at:
+    - 24.65
+    - 0.5
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: text
+    at:
+    - 25.8
+    - 1.9
+    text: K48-linked chain (≥ 4 Ub)
+    size: 0.68
+    align: left
+  - g: arrow
+    from:
+    - 22.0
+    - 4.6
+    to:
+    - 22.0
+    - 8.2
+    color: gray
+    width: 1.0
+  - g: blob
+    at:
+    - 22.0
+    - 9.0
+    w: 3.6
+    h: 1.2
+    shape: bilobe
+    hue: orange
+    text: 19S cap
+    text_size: 0.52
+  - g: blob
+    at:
+    - 22.0
+    - 10.1
+    w: 3.0
+    h: 0.9
+    shape: box
+    hue: dkgreen
+    text: α
+    text_size: 0.5
+  - g: blob
+    at:
+    - 22.0
+    - 11.049999999999999
+    w: 3.0
+    h: 0.9
+    shape: box
+    hue: green
+    text: β
+    text_size: 0.5
+  - g: blob
+    at:
+    - 22.0
+    - 12.0
+    w: 3.0
+    h: 0.9
+    shape: box
+    hue: green
+    text: β
+    text_size: 0.5
+  - g: blob
+    at:
+    - 22.0
+    - 12.95
+    w: 3.0
+    h: 0.9
+    shape: box
+    hue: dkgreen
+    text: α
+    text_size: 0.5
+  - g: blob
+    at:
+    - 22.0
+    - 14.0
+    w: 3.6
+    h: 1.2
+    shape: bilobe
+    hue: orange
+    text: 19S cap
+    text_size: 0.52
+    rot: 180
+  - g: text
+    at:
+    - 19.6
+    - 9.1
+    text: '19S: unfolds (ATP)'
+    size: 0.68
+    align: right
+  - g: text
+    at:
+    - 19.6
+    - 12.0
+    text: '20S core: β1, β2, β5'
+    size: 0.68
+    align: right
+  - g: strand
+    kind: gray
+    points:
+    - - 25.0
+      - 12.4
+    - - 25.9
+      - 12.6
+    width: 0.3
+  - g: strand
+    kind: gray
+    points:
+    - - 26.3
+      - 12.9
+    - - 27.2
+      - 13.1
+    width: 0.3
+  - g: strand
+    kind: gray
+    points:
+    - - 27.6
+      - 12.4
+    - - 28.5
+      - 12.6
+    width: 0.3
+  - g: strand
+    kind: gray
+    points:
+    - - 28.9
+      - 12.9
+    - - 29.799999999999997
+      - 13.1
+    width: 0.3
+  - g: text
+    at:
+    - 29.0
+    - 14.2
+    text: peptides (7–9 aa) → amino acids
+    size: 0.68
+    align: center
+  - g: ion
+    at:
+    - 25.4
+    - 10.4
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: ion
+    at:
+    - 26.299999999999997
+    - 10.4
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: ion
+    at:
+    - 27.2
+    - 10.4
+    r: 0.34
+    hue: yellow
+    text: Ub
+    text_size: 0.36
+  - g: text
+    at:
+    - 26.3
+    - 9.4
+    text: Ub recycled
+    size: 0.68
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- translation
+notes_zh: 'E1（ATP → AMP + PPi，Ub 與 Cys 形成硫酯）→ E2 → E3（受質專一性）→ K48 多聚泛素（≥ 4）→ 26S proteasome（19S 認 Ub、去泛素、ATP 解摺疊；20S 核心 β1、β2、β5 蛋白酶） → 7–9 aa 胜肽，Ub 回收。N-end rule、PEST 決定半衰期。K63 鏈為訊號用途。Bortezomib 抑制 β5。
+
+  【補充】E1 activates Ub (thioester on Cys, via Ub-AMP); E2 carries it; E3 (hundreds: RING / HECT; e.g. MDM2 → p53, SCF / APC-C → cyclins, parkin, VHL → HIF-1α) gives specificity. N-end rule: half-life depends
+  on the N-terminal residue (Met, Ser, Ala long; Arg, Lys, Phe, Leu short). PEST sequences shorten half-life. K63 chains → signalling (NF-κB), not degradation. Bortezomib inhibits β5 (multiple myeloma).
+  Lysosomes (autophagy) degrade long-lived and membrane proteins; the proteasome degrades short-lived, misfolded (ERAD) proteins.'
+parts_png: false
+status: pending

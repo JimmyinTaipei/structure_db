@@ -1,0 +1,15 @@
+id: menadione
+name: Menadione (vitamin K3)
+label: Menadione (K_3)
+aliases:
+- vitamin K3
+- menadione
+- 甲萘醌
+smiles: CC1=CC(=O)c2ccccc2C1=O
+ring:
+  rotate: 0
+tags:
+- vitamin
+- fat_soluble
+notes_zh: 合成的 vitamin K（沒有側鏈），體內可接上側鏈。新生兒大量使用可能造成溶血與核黃疸，臨床已少用。
+status: pending

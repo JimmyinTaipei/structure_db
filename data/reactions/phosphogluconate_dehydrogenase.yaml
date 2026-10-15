@@ -1,0 +1,38 @@
+id: phosphogluconate_dehydrogenase
+title: PPP ③ 6-Phosphogluconate → Ribulose 5-phosphate (6-phosphogluconate DH)
+substrates:
+- phosphogluconate
+products:
+- ribulose_5p
+- id: co2
+  view: formula
+cofactors_in:
+- NADP+
+cofactors_out:
+- NADPH
+enzyme: '6-phosphogluconate
+
+  dehydrogenase'
+reversible: false
+decorate:
+  phosphogluconate:
+    colors:
+      0: magenta
+      2:
+        l: [cyan, H]
+        r: cyan
+  co2:
+    colors: {0: magenta}
+  NADPH:
+    colors:
+      0:
+        c:
+        - [cyan, H]
+card_zh:
+  type: 氧化脫羧（第二個 NADPH，C1 → CO₂）
+  exam_points:
+  - 氧化期：1 G6P → 2 NADPH + CO₂ + Ru5P，不可逆
+tags:
+- carb_metabolism
+- PPP
+status: pending

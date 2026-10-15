@@ -1,0 +1,25 @@
+id: d_ketose_family
+title: "D-Ketoses（D-酮糖家族樹）"
+layout: free
+cell_size: 3.6
+node_anchor: top
+nodes:
+  - {id: dihydroxyacetone, ref: dihydroxyacetone, pos: [2.8499999999999996, 0], decorate: {colors: {2: magenta}}}
+  - {id: d_erythrulose, ref: d_erythrulose, pos: [2.8499999999999996, 2.6], decorate: {colors: {2: magenta}}}
+  - {id: d_ribulose, ref: d_ribulose, pos: [0.95, 5.8], decorate: {colors: {2: magenta}}}
+  - {id: d_xylulose, ref: d_xylulose, pos: [4.75, 5.8], decorate: {colors: {2: magenta}}}
+  - {id: d_psicose, ref: d_psicose, pos: [0, 9.6], decorate: {colors: {2: magenta}}}
+  - {id: d_fructose, ref: d_fructose, pos: [1.9, 9.6], decorate: {colors: {2: magenta}}}
+  - {id: d_sorbose, ref: d_sorbose, pos: [3.8, 9.6], decorate: {colors: {2: magenta}}}
+  - {id: d_tagatose, ref: d_tagatose, pos: [5.699999999999999, 9.6], decorate: {colors: {2: magenta}}}
+edges:
+  - {from: dihydroxyacetone, to: d_erythrulose, head: false, bend: 0}
+  - {from: d_erythrulose, to: d_ribulose, head: false, bend: 0}
+  - {from: d_erythrulose, to: d_xylulose, head: false, bend: 0}
+  - {from: d_ribulose, to: d_psicose, head: false, bend: 0}
+  - {from: d_ribulose, to: d_fructose, head: false, bend: 0}
+  - {from: d_xylulose, to: d_sorbose, head: false, bend: 0}
+  - {from: d_xylulose, to: d_tagatose, head: false, bend: 0}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "酮基在 C2；新增的立體中心在 C3（洋紅）。必背：fructose、ribulose、xylulose、dihydroxyacetone。"
+status: pending

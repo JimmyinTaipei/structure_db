@@ -1,0 +1,25 @@
+id: hexokinase
+title: "Glycolysis ① Glucose → Glucose 6-phosphate"
+step: 1
+substrates: [glucose]
+products: [glucose_6p]
+cofactors_in: [ATP]
+cofactors_out: [ADP]
+extra_out: [H+]
+prosthetic: ["Mg^{2+}"]
+enzyme: "hexokinase"
+reversible: false
+decorate:
+  glucose_6p: {colors: {5: {c: [magenta, "{P}"]}}}
+card_zh:
+  location: 細胞質
+  type: 磷酸化（消耗 1 ATP）
+  deltaG: "ΔG'° = −16.7 kJ/mol，不可逆（調控點）"
+  cofactors: "Mg²⁺（真正受質是 MgATP²⁻）"
+  regulation: "Hexokinase I–III：被產物 G6P 抑制，Km 低。Glucokinase（hexokinase IV，肝、胰臟 β 細胞）：Km 高、不被 G6P 抑制；被 GKRP 帶進細胞核而失活（F6P 促進，glucose 拮抗）"
+  deficiency: "Glucokinase 突變 → MODY 2"
+  exam_points:
+    - "磷酸化後 G6P 帶負電、無 GLUT 可運出 → 鎖在細胞內"
+    - "肝臟靠 glucokinase 在高血糖時大量攝取葡萄糖"
+tags: [carb_metabolism, glycolysis]
+status: pending

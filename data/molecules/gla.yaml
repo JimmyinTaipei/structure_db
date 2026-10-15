@@ -1,0 +1,26 @@
+id: gla
+name: γ-Carboxyglutamate
+aliases:
+- Gla
+- γ-羧基麩胺酸
+smiles: '[NH3+][C@@H](CC(C(=O)[O-])C(=O)[O-])C(=O)[O-]'
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2
+- c: C
+  l: H
+  r: COO^-
+- c: COO^-
+decorate:
+  colors:
+    3:
+      r: magenta
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: 凝血因子 II、VII、IX、X（與 protein C、S）N 端的 Glu 由 γ-glutamyl carboxylase 加上第二個 COO⁻（需 vitamin K hydroquinone）。兩個相鄰 COO⁻ 夾住 Ca²⁺，使因子能結合磷脂膜。Warfarin 抑制 VKOR（vitamin K epoxide reductase）→ 無法再生 KH₂。
+status: pending

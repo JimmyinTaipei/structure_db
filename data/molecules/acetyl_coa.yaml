@@ -1,0 +1,9 @@
+id: acetyl_coa
+name: Acetyl-CoA
+aliases: [乙醯輔酶A, acetyl coenzyme A]
+smiles: "O=C(S[1*])C"               # [1*] = CoA 其餘部分
+chain:                              # 橫式 CH₃–C(=O)–S-CoA（老師與 Mathews 的畫法）
+  - {c: C, l: CH_3, r: S-CoA, u: O, ub: 2}
+tags: [TCA, pyruvate, lipid]
+notes_zh: 高能硫酯鍵；TCA 起點（與 OAA 縮合成 citrate），也是脂肪酸、膽固醇、酮體合成的原料。
+status: approved

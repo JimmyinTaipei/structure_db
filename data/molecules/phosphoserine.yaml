@@ -1,0 +1,24 @@
+id: phosphoserine
+name: Phosphoserine
+aliases:
+- P-Ser
+- pSer
+- 磷酸絲胺酸
+smiles: '[O-]P(=O)([O-])OC[C@H]([NH3+])C(=O)[O-]'
+chain:
+- c: COO^-
+- c: C
+  l: ^+H_3N
+  r: H
+- c: CH_2O{P}
+decorate:
+  colors:
+    2:
+    - magenta
+    - '{P}'
+tags:
+- amino_acid
+- protein
+- protein_structure
+notes_zh: Ser／Thr kinase（如 PKA、PKC）把 ATP 的 γ-磷酸接到 –OH；Tyr kinase（如 insulin receptor）作用在 Tyr。phosphatase 水解移除。最常見的可逆調控型 PTM。
+status: pending

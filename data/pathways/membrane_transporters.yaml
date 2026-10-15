@@ -1,0 +1,510 @@
+id: membrane_transporters
+title: Membrane transport proteins
+layout: free
+cell_size: 5.0
+nodes:
+- id: out
+  text: Outside
+  pos:
+  - -3.3
+  - -1.4
+  kind: heading
+- id: in
+  text: Cytosol
+  pos:
+  - -3.3
+  - 1.4
+  kind: heading
+- id: d1
+  text: 'Simple diffusion:
+
+    O_2, CO_2, NO, ethanol'
+  pos:
+  - -1.0
+  - -1.4
+  kind: ion
+- id: d2
+  text: O_2, CO_2 …
+  pos:
+  - -1.0
+  - 1.4
+  kind: ion
+- id: glut
+  text: 'GLUT
+
+    (uniport, facilitated)'
+  pos:
+  - 0.9
+  - 0
+  kind: protein
+  h: 3.2
+- id: sglt
+  text: 'SGLT1
+
+    (symport,
+
+    2° active)'
+  pos:
+  - 2.6
+  - 0
+  kind: protein
+  h: 3.2
+- id: nak
+  text: 'Na^+/K^+-ATPase
+
+    (antiport, 1° active,
+
+    P-type)'
+  pos:
+  - 4.4
+  - 0
+  kind: protein
+  h: 3.2
+- id: ch
+  text: 'Channel
+
+    (K^+, AQP)'
+  pos:
+  - 6.1
+  - 0
+  kind: protein
+  h: 3.2
+- id: abc
+  text: 'ABC transporter
+
+    (MDR1, CFTR)'
+  pos:
+  - 7.8
+  - 0
+  kind: protein
+  h: 3.2
+- id: g1
+  text: Glucose
+  pos:
+  - 0.9
+  - -1.4
+  kind: ion
+- id: g2
+  text: Glucose
+  pos:
+  - 0.9
+  - 1.4
+  kind: ion
+- id: s1
+  text: 2 Na^+ + glucose
+  pos:
+  - 2.6
+  - -1.4
+  kind: ion
+- id: s2
+  text: 2 Na^+ + glucose
+  pos:
+  - 2.6
+  - 1.4
+  kind: ion
+- id: n1
+  text: 3 Na^+ out
+  pos:
+  - 4.0
+  - -1.4
+  kind: ion
+- id: n2
+  text: 3 Na^+
+  pos:
+  - 4.0
+  - 1.4
+  kind: ion
+- id: k1
+  text: 2 K^+
+  pos:
+  - 4.9
+  - -1.4
+  kind: ion
+- id: k2
+  text: 2 K^+ in
+  pos:
+  - 4.9
+  - 1.4
+  kind: ion
+- id: atp
+  text: ATP → ADP + P_i
+  pos:
+  - 4.4
+  - 2.2
+  kind: ion
+- id: c1
+  text: K^+, H_2O
+  pos:
+  - 6.1
+  - 1.4
+  kind: ion
+- id: c2
+  text: K^+, H_2O
+  pos:
+  - 6.1
+  - -1.4
+  kind: ion
+- id: a1
+  text: Drug
+  pos:
+  - 7.8
+  - 1.4
+  kind: ion
+- id: a2
+  text: Drug (out)
+  pos:
+  - 7.8
+  - -1.4
+  kind: ion
+edges:
+- from: d1
+  to: d2
+  color: gray
+- from: g1
+  to: g2
+- from: s1
+  to: s2
+  color: magenta
+- from: n2
+  to: n1
+  color: magenta
+- from: k1
+  to: k2
+  color: cyan
+- from: c1
+  to: c2
+- from: a1
+  to: a2
+  color: magenta
+regions:
+- kind: membrane
+  y: 0
+  x0: -3.6
+  x1: 8.9
+  label: ''
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.2
+        - 1.4
+        text: Outside
+        align: left
+        size: 0.9
+        color: gray
+      - g: text
+        at:
+        - -1.2
+        - 12.6
+        text: Cytosol
+        align: left
+        size: 0.9
+        color: gray
+      - g: membrane
+        y: 7
+        x0: -1.2
+        x1: 44
+      - g: ion
+        at:
+        - 2
+        - 3.4
+        text: O_2
+        hue: gray
+      - g: arrow
+        from:
+        - 2
+        - 4.05
+        to:
+        - 2
+        - 9.95
+        color: gray
+      - g: ion
+        at:
+        - 2
+        - 10.6
+        text: O_2
+        hue: gray
+      - g: text
+        at:
+        - 2
+        - 14.8
+        text: 'Simple
+
+          diffusion'
+        size: 0.85
+      - id: glut
+        g: transporter
+        at:
+        - 8
+        - 7
+        hue: blue
+        open: out
+      - g: ion
+        at:
+        - 8
+        - 3.0
+        text: Glc
+        hue: orange
+      - g: arrow
+        from:
+        - 8
+        - 3.65
+        to:
+        - 8
+        - 10.35
+        color: black
+      - g: ion
+        at:
+        - 8
+        - 11.0
+        text: Glc
+        hue: orange
+      - g: text
+        at:
+        - 8
+        - 14.8
+        text: 'GLUT
+
+          (uniport,
+
+          facilitated)'
+        size: 0.85
+      - id: sglt
+        g: transporter
+        at:
+        - 15
+        - 7
+        hue: teal
+        open: out
+      - g: ion
+        at:
+        - 14.2
+        - 3.0
+        text: Na^+
+        hue: purple
+      - g: arrow
+        from:
+        - 14.2
+        - 3.65
+        to:
+        - 14.2
+        - 10.35
+        color: magenta
+      - g: ion
+        at:
+        - 14.2
+        - 11.0
+        text: Na^+
+        hue: purple
+      - g: ion
+        at:
+        - 15.9
+        - 3.0
+        text: Glc
+        hue: orange
+      - g: arrow
+        from:
+        - 15.9
+        - 3.65
+        to:
+        - 15.9
+        - 10.35
+        color: black
+      - g: ion
+        at:
+        - 15.9
+        - 11.0
+        text: Glc
+        hue: orange
+      - g: text
+        at:
+        - 15
+        - 14.8
+        text: 'SGLT1
+
+          (symport,
+
+          2° active)'
+        size: 0.85
+      - id: pump
+        g: pump
+        at:
+        - 23
+        - 7
+        hue: orange
+        accent: true
+      - g: ion
+        at:
+        - 22.0
+        - 11.0
+        text: Na^+
+        hue: purple
+      - g: arrow
+        from:
+        - 22.0
+        - 10.35
+        to:
+        - 22.0
+        - 3.65
+        color: magenta
+      - g: ion
+        at:
+        - 22.0
+        - 3.0
+        text: Na^+
+        hue: purple
+      - g: text
+        at:
+        - 20.6
+        - 3.0
+        text: 3×
+        size: 0.8
+      - g: ion
+        at:
+        - 24.2
+        - 3.0
+        text: K^+
+        hue: green
+      - g: arrow
+        from:
+        - 24.2
+        - 3.65
+        to:
+        - 24.2
+        - 10.35
+        color: cyan
+      - g: ion
+        at:
+        - 24.2
+        - 11.0
+        text: K^+
+        hue: green
+      - g: text
+        at:
+        - 25.6
+        - 3.0
+        text: 2×
+        size: 0.8
+      - g: text
+        at:
+        - 26.4
+        - 12.7
+        text: ATP → ADP + P_i
+        font: serif
+        size: 0.8
+      - g: text
+        at:
+        - 23
+        - 15.3
+        text: 'Na^+/K^+-ATPase
+
+          (antiport, 1° active,
+
+          P-type)'
+        size: 0.85
+      - id: channel
+        g: channel
+        at:
+        - 31.5
+        - 7
+        hue: teal
+        open: true
+      - g: ion
+        at:
+        - 31.5
+        - 8.3
+        text: K^+
+        hue: green
+        r: 0.36
+        text_size: 0.45
+      - g: ion
+        at:
+        - 31.5
+        - 5.7
+        text: K^+
+        hue: green
+        r: 0.36
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 33.3
+        - 10.4
+        to:
+        - 33.3
+        - 3.6
+        color: cyan
+      - g: text
+        at:
+        - 31.5
+        - 14.8
+        text: 'K^+ channel
+
+          (gated pore)'
+        size: 0.85
+      - id: abc
+        g: transporter
+        at:
+        - 39
+        - 7
+        hue: pink
+        open: in
+      - g: blob
+        at:
+        - 38.2
+        - 10.6
+        w: 1.4
+        h: 1.0
+        shape: kidney
+        hue: pink
+        text: ATP
+        text_size: 0.5
+      - g: blob
+        at:
+        - 39.8
+        - 10.6
+        w: 1.4
+        h: 1.0
+        shape: kidney
+        hue: pink
+        text: ATP
+        text_size: 0.5
+      - g: ligand
+        at:
+        - 41.6
+        - 9.6
+        shape: hexagon
+        hue: red
+        r: 0.45
+      - g: arrow
+        from:
+        - 41.6
+        - 8.9
+        to:
+        - 41.6
+        - 3.8
+        color: magenta
+      - g: ligand
+        at:
+        - 41.6
+        - 3.1
+        shape: hexagon
+        hue: red
+        r: 0.45
+      - g: text
+        at:
+        - 39.5
+        - 14.8
+        text: 'ABC transporter
+
+          (MDR1: drug efflux)'
+        size: 0.85
+tags:
+- membrane
+- membrane_transport
+notes_zh: Simple diffusion：氣體、乙醇、尿素（H₂O 略可）；離子、胺基酸、glucose、ATP、G6P 不能自由通過。Transporter（carrier）：GLUT（uniport，促進性擴散，不耗能）、SGLT（Na⁺ 同向 symport，二級主動運輸，靠 Na⁺ 梯度）、ABC（ATP，MDR1 = P-glycoprotein 把藥物打出；CFTR 為 Cl⁻
+  通道；ABCA1 膽固醇外送、ABCD1 VLCFA 入 peroxisome）。Pump：Na⁺/K⁺-ATPase（3 Na⁺ 出、2 K⁺ 進，P-type：Asp 磷酸化中間物，ouabain／digoxin 抑制）。ATPase 類型：P（Na/K、Ca²⁺、flippase）、V（溶體、內體 H⁺）、F（F₀F₁ ATP synthase）、ABC（floppase、MDR）。Channel：單一閘門，voltage-gated
+  或 ligand-gated（nAChR），aquaporin；pore（porin）一直開。Ionophore：DNP（H⁺）、valinomycin（K⁺ mobile carrier）、gramicidin（channel former）。
+status: pending

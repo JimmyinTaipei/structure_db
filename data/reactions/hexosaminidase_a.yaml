@@ -1,0 +1,28 @@
+id: hexosaminidase_a
+title: GM2 → GM3 + GalNAc (β-hexosaminidase A)
+substrates:
+- gm2
+products:
+- gm3
+- galnac
+cofactors_in:
+- H2O
+enzyme: 'β-hexosaminidase A
+
+  (+ GM2 activator)'
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+card_zh:
+  location: 溶小體
+  type: 醣苷鍵水解
+  deficiency:
+  - Tay-Sachs（HEXA，α 次單元）：進行性神經退化、黃斑櫻桃紅點、對聲音過度驚嚇；無肝脾腫大；Ashkenazi Jews
+  - Sandhoff（HEXB，β 次單元 → Hex A + B 皆缺）：另有 globoside 累積，可有肝脾腫大
+  - GM2 activator 缺乏（AB variant）
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

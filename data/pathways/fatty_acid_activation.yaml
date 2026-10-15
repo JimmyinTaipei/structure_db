@@ -1,0 +1,56 @@
+id: fatty_acid_activation
+title: Fatty acid activation & carnitine shuttle（脂肪酸活化與肉鹼穿梭）
+layout: free
+cell: 0.7
+nodes:
+- id: pal
+  ref: palmitate
+  pos:
+  - 0
+  - 0
+- id: pcoa
+  ref: palmitoyl_coa
+  pos:
+  - 0
+  - 1
+- id: pcar
+  ref: palmitoylcarnitine
+  pos:
+  - 0
+  - 2
+- id: mat
+  text: 'Mitochondrial matrix:
+
+    CPT-II → acyl-CoA → β-oxidation'
+  kind: plain
+  pos:
+  - 0
+  - 2.85
+- id: mal
+  text: Malonyl-CoA
+  kind: drug
+  pos:
+  - 1.25
+  - 1.5
+edges:
+- from: pal
+  to: pcoa
+  step: acyl_coa_synthetase
+  label: acyl-CoA synthetase
+  side_text: CoA, ATP → AMP + PP_i
+- from: pcoa
+  to: pcar
+  step: cpt1
+  label: CPT-I (outer membrane)
+  side_text: carnitine → CoA
+- from: pcar
+  to: mat
+  label: translocase
+- from: mal
+  to: edge:pcoa->pcar
+  inhibit: true
+tags:
+- lipid_metabolism
+- beta_oxidation
+notes_zh: 細胞質活化（−2 ATP）→ CPT-I（限速，malonyl-CoA 抑制）→ translocase → CPT-II → 基質中的 acyl-CoA。
+status: pending

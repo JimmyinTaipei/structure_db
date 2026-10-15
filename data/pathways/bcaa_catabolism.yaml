@@ -1,0 +1,130 @@
+id: bcaa_catabolism
+title: Branched-chain amino acid catabolism（支鏈胺基酸分解，名稱版）
+layout: free
+cell_size: 6.0
+text: false
+nodes:
+- id: leu
+  ref: leucine
+  pos:
+  - 0
+  - 0
+  view: name
+- id: ile
+  ref: isoleucine
+  pos:
+  - 1.5
+  - 0
+  view: name
+- id: val
+  ref: valine
+  pos:
+  - 3.0
+  - 0
+  view: name
+- id: kic
+  text: α-Ketoisocaproate
+  kind: name
+  pos:
+  - 0
+  - 1
+- id: kmv
+  text: α-Keto-β-methylvalerate
+  kind: name
+  pos:
+  - 1.5
+  - 1
+- id: kiv
+  text: α-Ketoisovalerate
+  kind: name
+  pos:
+  - 3.0
+  - 1
+- id: ivc
+  text: Isovaleryl-CoA
+  kind: name
+  pos:
+  - 0
+  - 2.2
+- id: mbc
+  text: α-Methylbutyryl-CoA
+  kind: name
+  pos:
+  - 1.5
+  - 2.2
+- id: ibc
+  text: Isobutyryl-CoA
+  kind: name
+  pos:
+  - 3.0
+  - 2.2
+- id: ac
+  ref: acetyl_coa
+  pos:
+  - 0.6
+  - 3.4
+  view: name
+- id: aa
+  ref: acetoacetate
+  pos:
+  - -0.9
+  - 3.4
+  view: name
+- id: pro
+  ref: propionyl_coa
+  pos:
+  - 2.4
+  - 3.4
+  view: name
+- id: suc
+  ref: succinyl_coa
+  pos:
+  - 2.4
+  - 4.4
+  view: name
+- id: msud
+  text: 'MSUD
+
+    (BCKDH: all three)'
+  kind: drug
+  pos:
+  - 4.6
+  - 1.6
+edges:
+- from: leu
+  to: kic
+  label: BCAT (PLP)
+- from: ile
+  to: kmv
+- from: val
+  to: kiv
+- from: kic
+  to: ivc
+  label: BCKDH
+- from: kmv
+  to: mbc
+  label: BCKDH
+- from: kiv
+  to: ibc
+  label: BCKDH
+- from: ivc
+  to: ac
+- from: ivc
+  to: aa
+- from: mbc
+  to: ac
+- from: mbc
+  to: pro
+- from: ibc
+  to: pro
+- from: pro
+  to: suc
+  label: B_7, B_{12}
+- from: msud
+  to: edge:kiv->ibc
+  inhibit: true
+tags:
+- amino_acid_metabolism
+- aa_degradation
+notes_zh: 主要在肌肉轉胺（BCAT），α-酮酸由 BCKDH（輔因子同 PDH：TPP、lipoate、CoA、FAD、NAD⁺）氧化脫羧。缺乏 → 楓糖尿症（MSUD）：尿有楓糖漿味、餵食困難、神經退化；治療：限制 BCAA、部分對 thiamine 有反應。Leu 只生酮、Val 只生糖、Ile 兩者皆是。
+status: pending

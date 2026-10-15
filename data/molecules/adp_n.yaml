@@ -1,0 +1,30 @@
+id: adp_n
+name: ADP
+aliases:
+- adenosine diphosphate
+smiles: Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O
+haworth:
+  ring: furanose
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: OH
+    3:
+      up: H
+      down: OH
+    4:
+      up: '{P}–{P}–OCH_2'
+      down: H
+  base: '[*]n1cnc2c(N)ncnc21'
+  base_right: 5
+  numbers: true
+tags:
+- energy_metabolism
+- etc_oxphos
+- nucleotide
+- purine
+notes_zh: ATP synthase 的受質（與 Pi）。ADP/ATP 經 adenine nucleotide translocase（ANT）一進一出（atractyloside、bongkrekic acid 抑制）。
+status: pending

@@ -1,0 +1,40 @@
+id: bile_7a_dehydroxylation
+title: Cholate → Deoxycholate (bacterial 7α-dehydroxylation)
+substrates:
+- cholate
+products:
+- deoxycholate
+cofactors_in:
+- NADH+H+
+cofactors_out:
+- NAD+
+- H2O
+enzyme: 'gut bacteria
+
+  (7α-dehydroxylase)'
+reversible: false
+decorate:
+  cholate:
+    highlight:
+    - smarts: '[OH:1][CH1;R]([CH2;R])[CH1;R]'
+      color: magenta
+  H2O:
+    colors:
+      0: magenta
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - - cyan
+          - H
+        - - cyan
+          - H^+
+card_zh:
+  location: 大腸（腸道菌）
+  type: 去羥（先去結合，再脫去 7α-OH）
+  exam_points:
+  - 初級膽酸（肝）：cholate、chenodeoxycholate；次級（細菌）：deoxycholate、lithocholate
+tags:
+- lipid_metabolism
+- bile_acid
+status: pending

@@ -1,0 +1,36 @@
+id: aldosterone_synthase
+title: Corticosterone → Aldosterone (CYP11B2, aldosterone synthase)
+substrates:
+- corticosterone
+products:
+- aldosterone
+cofactors_in:
+- 2O2
+- 2NADPH+H+
+cofactors_out:
+- 2NADP+
+- 3H2O
+enzyme: 'CYP11B2
+
+  (aldosterone synthase)'
+reversible: false
+decorate:
+  corticosterone:
+    highlight:
+    - smarts: '[CH3:1][C;R:2]~[C;R]C(=O)CO'
+      color: cyan
+  2O2:
+    colors:
+      0: cyan
+  aldosterone:
+    highlight:
+    - smarts: '[CH1:1](=[O:2])[C;R:3]'
+      color: cyan
+card_zh:
+  location: 粒線體（只在球狀帶）
+  type: 18-hydroxylation → 18-oxidation（醛）
+  regulation: angiotensin II、高血鉀（ACTH 只有短暫作用）
+tags:
+- lipid_metabolism
+- steroid_hormone
+status: pending

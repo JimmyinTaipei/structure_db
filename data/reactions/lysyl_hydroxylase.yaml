@@ -1,0 +1,41 @@
+id: lysyl_hydroxylase
+title: Lysyl hydroxylase
+substrates:
+- lysine
+- alpha_kg
+products:
+- hydroxylysine
+- succinate
+cofactors_in:
+- O2
+cofactors_out:
+- CO2
+prosthetic:
+- Fe^{2+}
+- vitamin C
+enzyme: Lysyl hydroxylase
+reversible: false
+decorate:
+  O2:
+    colors:
+      0: magenta
+  hydroxylysine:
+    colors:
+      4:
+        l: magenta
+  alpha_kg:
+    colors:
+      4: cyan
+  CO2:
+    colors:
+      0: cyan
+card_zh:
+  location: ER lumen
+  type: 同 prolyl hydroxylase（α-KG–dependent dioxygenase）
+  exam_points:
+  - Hyl 可再接 Gal-Glc（O-linked）
+  - Lysyl oxidase（Cu²⁺）氧化 Lys/Hyl → 醛 → 共價交聯；Menkes（缺 Cu）交聯不良
+tags:
+- protein
+- protein_structure
+status: pending

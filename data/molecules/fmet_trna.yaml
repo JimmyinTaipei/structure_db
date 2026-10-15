@@ -1,0 +1,15 @@
+id: fmet_trna
+name: N-Formylmethionyl-tRNA
+label: fMet-tRNA^{fMet}
+aliases:
+- fMet-tRNA
+- initiator tRNA
+smiles: O=CN[C@@H](CCSC)C(=O)O[20*]
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- translation
+notes_zh: 細菌起始 tRNA：Met-tRNA^{fMet} 由 transformylase 以 N10-formyl-THF 甲醯化。甲醯基使它只能進 P 位、不被 EF-Tu 接受。
+parts_png: false
+status: pending

@@ -1,0 +1,8 @@
+id: orotate
+name: "Orotate"
+aliases: [乳清酸]
+smiles: "O=C([O-])c1cc(=O)[nH]c(=O)[nH]1"
+ring: {down: 10, right: 8}
+tags: [nucleotide, pyrimidine]
+notes_zh: "嘧啶從頭合成中第一個完整的嘧啶環（DHODH 產物）；OPRT 接上 PRPP → OMP。UMP synthase 缺乏 → orotic aciduria。"
+status: pending

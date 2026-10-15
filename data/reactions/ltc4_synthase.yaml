@@ -1,0 +1,33 @@
+id: ltc4_synthase
+title: LTA₄ + GSH → LTC₄ (LTC₄ synthase)
+substrates:
+- lta4
+products:
+- ltc4
+cofactors_in:
+- GSH
+enzyme: LTC_4 synthase
+reversible: false
+decorate:
+  GSH:
+    colors:
+      0: magenta
+  lta4:
+    highlight:
+    - smarts: '[O;R:1]'
+      color: cyan
+  ltc4:
+    highlight:
+    - smarts: '[S:1][#0:2]'
+      color: magenta
+    - smarts: '[OH:1][CH1]([CH2])[CH1]S'
+      color: cyan
+card_zh:
+  location: 肥大細胞、嗜酸性球
+  type: 與 glutathione 結合（開環）
+  exam_points:
+  - LTC₄ → LTD₄ → LTE₄：支氣管收縮（比 histamine 強且久）；montelukast 阻斷 CysLT1 受體
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

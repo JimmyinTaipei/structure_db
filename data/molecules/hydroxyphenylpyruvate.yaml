@@ -1,0 +1,21 @@
+id: hydroxyphenylpyruvate
+name: p-Hydroxyphenylpyruvate
+label: 'p-Hydroxyphenyl-
+
+  pyruvate'
+aliases:
+- 4-hydroxyphenylpyruvate
+- HPP
+smiles: '[O-]C(=O)C(=O)Cc1ccc(O)cc1'
+chain:
+- c: COO^-
+- c: C
+  l: O
+  lb: 2
+- c: CH_2
+- ring: '[*]c1ccc(O)cc1'
+tags:
+- amino_acid_metabolism
+- aa_degradation
+notes_zh: tyrosine aminotransferase 的產物（Tyr 的 α-酮酸）。缺乏 TAT → tyrosinemia II。
+status: pending

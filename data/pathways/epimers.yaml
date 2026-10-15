@@ -1,0 +1,15 @@
+id: epimers
+title: "Epimers: Mannose · Glucose · Galactose"
+layout: free
+cell_size: 4.2
+node_anchor: top
+nodes:
+  - {id: man, ref: d_mannose, pos: [0, 0], decorate: {colors: {1: magenta}}}
+  - {id: glc, ref: glucose, pos: [3, 0], decorate: {colors: {1: magenta, 3: magenta}}}
+  - {id: gal, ref: d_galactose, pos: [6, 0], decorate: {colors: {3: magenta}}}
+edges:
+  - {from: man, to: glc, head: false, bend: 0, label: "C-2 epimers"}
+  - {from: glc, to: gal, head: false, bend: 0, label: "C-4 epimers"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "epimer：只差一個立體中心。mannose 與 glucose 差在 C2；galactose 與 glucose 差在 C4。mannose 與 galactose 差兩個，不是 epimer。"
+status: pending

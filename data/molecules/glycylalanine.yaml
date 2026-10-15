@@ -1,0 +1,101 @@
+id: glycylalanine
+name: Glycylalanine
+label: Gly-Ala
+aliases:
+- Gly-Ala
+- GA dipeptide
+- 雙肽
+smiles: '[NH3+]CC(=O)N[C@@H](C)C(=O)[O-]'
+free:
+  atoms:
+    n1:
+    - ^+H_3N
+    - -3.3
+    - 0
+    ca1:
+    - CH_2
+    - -2.2
+    - 0.55
+    c1:
+    - C
+    - -1.1
+    - 0
+    o1:
+    - O
+    - -1.1
+    - -1.05
+    n2:
+    - N
+    - 0
+    - 0.55
+    h2:
+    - H
+    - 0
+    - 1.55
+    ca2:
+    - C
+    - 1.1
+    - 0
+    ha:
+    - H
+    - 1.1
+    - -1.0
+    cb:
+    - CH_3
+    - 1.1
+    - 1.05
+    c2:
+    - COO^-
+    - 2.4
+    - 0.55
+  bonds:
+  - - n1
+    - ca1
+  - - ca1
+    - c1
+  - - c1
+    - o1
+    - 2
+  - - c1
+    - n2
+  - - n2
+    - h2
+  - - n2
+    - ca2
+  - - ca2
+    - ha
+  - - ca2
+    - cb
+  - - ca2
+    - c2
+  notes:
+  - - Gly residue
+    - -2.4
+    - 1.65
+    - gray
+  - - Ala residue
+    - 1.5
+    - 2.1
+    - gray
+  - - N-terminus
+    - -3.3
+    - -0.85
+    - gray
+  - - C-terminus
+    - 3.1
+    - -0.35
+    - gray
+decorate:
+  boxes:
+  - atoms:
+    - c1
+    - o1
+    - n2
+    - h2
+    name: peptide
+    color: salmon
+tags:
+- protein
+- peptide
+notes_zh: Gly-Ala 雙肽：胜肽依慣例由 N 端（左）寫到 C 端（右）。底色框為胜肽鍵（–CO–NH–，醯胺鍵）。n 個胺基酸的直鏈胜肽有 n − 1 個胜肽鍵、脫去 n − 1 個 H₂O。
+status: pending

@@ -1,0 +1,33 @@
+id: dopamine_beta_hydroxylase
+title: Dopamine → Norepinephrine (dopamine β-hydroxylase)
+substrates:
+- dopamine
+products:
+- norepinephrine
+cofactors_in:
+- O2
+- ascorbate
+cofactors_out:
+- H2O
+- dehydroascorbate
+enzyme: 'dopamine
+
+  β-hydroxylase'
+reversible: false
+decorate:
+  norepinephrine:
+    colors:
+      1: {r: magenta}
+  O2:
+    colors: {0: magenta}
+  H2O:
+    colors: {0: magenta}
+card_zh:
+  location: 儲存囊泡內
+  type: 羥化（Cu²⁺、vitamin C）
+  exam_points:
+  - 含銅酵素（Menkes 病會受影響）
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+status: pending

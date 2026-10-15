@@ -1,0 +1,26 @@
+id: lactose
+name: "Lactose"
+aliases: [乳糖]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O[C@H]1[C@H](O)[C@@H](O)[C@@H](O)[C@@H](CO)O1)O"
+haworth:
+  units:
+    - ring: pyranose
+      subs:
+        1: {up: "link", down: "H"}
+        2: {up: "H", down: "OH"}
+        3: {up: "OH", down: "H"}
+        4: {up: "HO", down: "H"}
+        5: {up: "CH_2OH", down: "H"}
+    - ring: pyranose
+      subs:
+        1: {up: "H", down: "OH"}
+        2: {up: "OH", down: "H"}
+        3: {up: "H", down: "OH"}
+        4: {up: "link", down: "H"}
+        5: {up: "H", down: "CH_2OH"}
+      at: [4.9, -0.2]
+      flip: true
+  links: [{from: [0, 1, "up"], to: [1, 4, "up"]}]
+tags: [carbohydrate, disaccharide]
+notes_zh: "Gal(β1→4)Glc。乳糖；還原糖。小腸 lactase（β-galactosidase）分解；成人 lactase 不足 → 乳糖不耐（腹脹、滲透性腹瀉）。右側 glucose 依慣例翻面畫，讓 β 鍵兩端都朝上。"
+status: pending

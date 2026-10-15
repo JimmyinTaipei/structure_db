@@ -1,0 +1,21 @@
+id: ast
+title: "Transamination: Aspartate + α-Ketoglutarate ⇌ Oxaloacetate + Glutamate (AST)"
+substrates: [aspartate, {id: alpha_kg, chain: aa}]
+products: [oxaloacetate, glutamate]
+prosthetic: [PLP]
+enzyme: "aspartate aminotransferase\n(AST)"
+reversible: true
+decorate:
+  aspartate: {colors: {1: {l: magenta}}}
+  glutamate: {colors: {1: {l: magenta}}}
+card_zh:
+  location: 細胞質與粒線體（兩種同功酶）
+  type: 轉胺作用
+  deltaG: "ΔG'° ≈ 0，可逆"
+  cofactors: "PLP（B6）"
+  exam_points:
+    - "逆反應（Glu + OAA → α-KG + Asp）提供尿素循環的第二個 N（aspartate → ASS）"
+    - "malate–aspartate shuttle 的組成之一"
+    - "AST/ALT > 2 提示酒精性肝病；AST 也存在於心肌、骨骼肌"
+tags: [amino_acid_metabolism, transamination]
+status: pending

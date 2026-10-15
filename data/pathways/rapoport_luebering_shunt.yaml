@@ -1,0 +1,46 @@
+id: rapoport_luebering_shunt
+title: 2,3-BPG shunt (RBC)
+layout: free
+cell_size: 7.0
+nodes:
+- id: b13
+  ref: bpg_13
+  pos:
+  - 0
+  - 0
+- id: pg3
+  ref: pg_3
+  pos:
+  - 2.2
+  - 0
+- id: b23
+  ref: bpg_23
+  pos:
+  - 1.1
+  - 1.35
+edges:
+- from: b13
+  to: pg3
+  step: phosphoglycerate_kinase
+  label: PGK
+  side_text: ADP → ATP
+- from: b13
+  to: b23
+  step: bpg_mutase
+  label: BPG mutase
+  label_side: right
+- from: b23
+  to: pg3
+  step: bpg_phosphatase
+  label: '2,3-BPG
+
+    phosphatase'
+  side_text: H_2O → P_i
+  label_side: right
+tags:
+- carb_metabolism
+- glycolysis
+- protein
+- hemoglobin
+notes_zh: RBC 糖解的支路：1,3-BPG → 2,3-BPG → 3-PG，繞過 PGK（犧牲 1 ATP）換取調節 Hb 的 2,3-BPG。Pyruvate kinase 缺乏 → 上游 2,3-BPG 堆積 → 曲線右移；hexokinase 缺乏 → 2,3-BPG 下降 → 左移。
+status: pending

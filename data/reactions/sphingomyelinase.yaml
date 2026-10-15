@@ -1,0 +1,30 @@
+id: sphingomyelinase
+title: Sphingomyelin → Ceramide + Phosphocholine (sphingomyelinase)
+substrates:
+- sphingomyelin
+products:
+- ceramide
+- phosphocholine
+cofactors_in:
+- H2O
+extra_out:
+- H+
+enzyme: acid sphingomyelinase
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  phosphocholine:
+    smarts: P(=O)([O-])[O-]
+    color: magenta
+card_zh:
+  location: 溶小體
+  type: 磷酸二酯鍵水解
+  deficiency:
+  - Niemann-Pick A/B（AR）：肝脾腫大、黃斑櫻桃紅點、foam cell；A 型嚴重神經退化（Ashkenazi Jews）
+  - Niemann-Pick C：NPC1/2 膽固醇運輸缺陷（不是此酵素）
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

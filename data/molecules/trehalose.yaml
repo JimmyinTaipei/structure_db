@@ -1,0 +1,66 @@
+id: trehalose
+name: Trehalose
+aliases:
+- 海藻糖
+- α,α-trehalose
+smiles: OC[C@H]1O[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@@H]1O
+haworth:
+  units:
+  - ring: pyranose
+    subs:
+      1:
+        up: H
+        down: link
+      2:
+        up: H
+        down: OH
+      3:
+        up: OH
+        down: H
+      4:
+        up: H
+        down: HO
+      5:
+        up: CH_2OH
+        down: H
+  - ring: pyranose
+    subs:
+      1:
+        up: link
+        down: H
+      2:
+        up: OH
+        down: H
+      3:
+        up: H
+        down: OH
+      4:
+        up: OH
+        down: H
+      5:
+        up: H
+        down:
+        - HOCH_2
+        - 2
+        down_len: 0.7
+    at:
+    - 4.7
+    - 0.9
+    mirror: true
+  links:
+  - from:
+    - 0
+    - 1
+    - down
+    to:
+    - 1
+    - 1
+    - up
+    o:
+    - 2.25
+    - 0.75
+tags:
+- carbohydrate
+- disaccharide
+notes_zh: Glc(α1↔α1)Glc：兩個 anomeric C 互相連結 → 沒有游離 anomeric OH → 非還原糖（同 sucrose）。昆蟲血糖、真菌、抗乾燥。右側葡萄糖左右翻（mirror）畫，anomeric C 在左，以 α 鍵與左側相接。
+status: pending

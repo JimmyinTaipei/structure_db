@@ -1,0 +1,102 @@
+id: titration_glycine
+title: Titration curve of glycine
+layout: plot
+plot:
+  size:
+  - 14
+  - 10
+  params:
+    pK1: 2.34
+    pK2: 9.6
+    pI: (pK1+pK2)/2
+  x:
+    min: 0
+    max: 2.15
+    label: OH^- added (equivalents)
+    ticks:
+    - 0
+    - 0.5
+    - 1
+    - 1.5
+    - 2
+  y:
+    min: 0
+    max: 13
+    label: pH
+    ticks:
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+  curves:
+  - id: gly
+    t:
+    - 0.6
+    - 12.6
+    x: 1/(1+10**(pK1-t)) + 1/(1+10**(pK2-t))
+    y: t
+    width: 1.1
+  points:
+  - 'on': gly
+    x: 0.5
+    y: pK1
+    drop: y
+    label: pK_1 = 2.34 (α-COOH)
+    label_off:
+    - 0.4
+    - 0.7
+  - 'on': gly
+    x: 1.0
+    y: pI
+    drop: y
+    color: magenta
+    label: pI = (pK_1 + pK_2)/2 = 5.97
+    label_off:
+    - 0.4
+    - 0.1
+  - 'on': gly
+    x: 1.5
+    y: pK2
+    drop: y
+    label: pK_2 = 9.60 (α-NH_3^+)
+    label_off:
+    - -0.4
+    - -0.65
+    label_align: right
+  texts:
+  - at:
+    - 0.05
+    - 4.6
+    text: ^+H_3N–CH_2–COOH
+    align: left
+    kind: serif
+    size: 0.8
+  - at:
+    - 0.9
+    - 7.7
+    text: '^+H_3N–CH_2–COO^-
+
+      (zwitterion, net 0)'
+    align: right
+    kind: serif
+    size: 0.8
+  - at:
+    - 1.97
+    - 12.25
+    text: H_2N–CH_2–COO^-
+    align: right
+    kind: serif
+    size: 0.8
+  - at:
+    - 1.6
+    - 4.0
+    text: 'Buffer regions:
+
+      pK ± 1'
+    color: cyan
+    size: 0.9
+tags:
+- amino_acid
+notes_zh: Glycine 的滴定曲線：兩個緩衝區，中心為 pK₁ = 2.34（α-COOH）與 pK₂ = 9.60（α-NH₃⁺）。加入 1 當量 OH⁻ 時全部為兩性離子，pH = pI = (pK₁ + pK₂)/2 = 5.97，淨電荷 0（此處斜率最大、緩衝力最差）。pH < pI 帶正電、往陰極移動；pH > pI 帶負電、往陽極移動。
+status: pending

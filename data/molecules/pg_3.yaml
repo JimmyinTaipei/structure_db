@@ -1,0 +1,12 @@
+id: pg_3
+name: 3-Phosphoglycerate
+label: "3-Phospho-\nglycerate"
+aliases: [3PG, 3-磷酸甘油酸]
+smiles: "[O-]C(=O)[C@H](O)COP(=O)([O-])[O-]"
+chain:
+  - {c: C, fork: {l: O, lb: 2, r: "O^-"}}
+  - {c: C, l: H, r: OH}
+  - {c: "CH_2O{P}"}
+tags: [carb_metabolism, glycolysis]
+notes_zh: Serine 合成的起點（→ glycine、cysteine）。
+status: pending

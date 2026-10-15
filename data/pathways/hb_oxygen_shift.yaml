@@ -1,0 +1,122 @@
+id: hb_oxygen_shift
+title: 'Hb O2 curve: right and left shifts'
+layout: plot
+plot:
+  size:
+  - 20
+  - 10
+  params:
+    P50m: 2.8
+    P50: 26
+    n: 2.8
+    Pl: 17
+    Pr: 36
+  x:
+    min: 0
+    max: 150
+    label: pO_2 (mmHg)
+    ticks:
+    - 0
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+    marks:
+    - at: Pl
+      label: '17'
+      color: cyan
+      dy: 0.9
+    - at: P50
+      label: 26 (normal)
+      dy: 1.8
+    - at: Pr
+      label: '36'
+      color: red
+      dy: 0.9
+  y:
+    min: 0
+    max: 1.12
+    label: Fractional saturation (Y)
+    label_pos: center
+    ticks:
+    - 0
+    - 0.5
+    - 1
+  curves:
+  - id: left
+    y: hill(x, Pl, n)
+    color: cyan
+  - id: normal
+    y: hill(x, P50, n)
+  - id: right
+    y: hill(x, Pr, n)
+    color: red
+  points:
+  - 'on': left
+    x: Pl
+    y: 0.5
+    color: cyan
+    drop: x
+  - 'on': normal
+    x: P50
+    y: 0.5
+    drop: x
+  - 'on': right
+    x: Pr
+    y: 0.5
+    color: red
+    drop: x
+  arrows:
+  - from:
+    - 21
+    - 0.38
+    to:
+    - 11
+    - 0.38
+    color: cyan
+  - from:
+    - 31
+    - 0.38
+    to:
+    - 42
+    - 0.38
+    color: red
+  texts:
+  - at:
+    - 56
+    - 0.4
+    align: left
+    color: red
+    text: 'Right shift (P_{50} ↑)
+
+      affinity ↓, unloading ↑
+
+      ↑ H^+ (↓ pH, Bohr)
+
+      ↑ CO_2
+
+      ↑ 2,3-BPG
+
+      ↑ Temperature'
+  - at:
+    - 118
+    - 0.4
+    align: left
+    color: cyan
+    text: 'Left shift (P_{50} ↓)
+
+      O_2 affinity ↑
+
+      HbF, CO, MetHb
+
+      ↓ H^+, ↓ CO_2
+
+      ↓ 2,3-BPG
+
+      ↓ Temperature'
+tags:
+- protein
+- hemoglobin
+notes_zh: 右移（P₅₀ ↑、親和力 ↓、組織卸氧 ↑）：H⁺ ↑（pH ↓，Bohr effect）、CO₂ ↑（carbamino + H⁺）、2,3-BPG ↑、溫度 ↑ —— 運動中的肌肉。左移（親和力 ↑）：HbF（γ 鏈不易結合 BPG）、CO、MetHb、pH ↑、低溫、BPG ↓（如儲存血）。口訣：右移 = 'CADET face Right'（CO₂、Acid、DPG、Exercise、Temperature）。
+status: pending

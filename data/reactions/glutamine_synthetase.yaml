@@ -1,0 +1,25 @@
+id: glutamine_synthetase
+title: "Glutamate + NH₄⁺ → Glutamine (glutamine synthetase)"
+substrates: [glutamate, ammonium]
+products: [glutamine]
+cofactors_in: [ATP]
+cofactors_out: [ADP, Pi]
+prosthetic: ["Mg^{2+}"]
+extra_out: [H+]                   # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "glutamine synthetase"
+reversible: false
+decorate:                         # 洋紅：NH₄⁺ → 醯胺 N；青藍：γ-COO⁻ 的 O 經 γ-glutamyl phosphate 離開成 Pᵢ
+  ammonium: {colors: {0: magenta}}
+  glutamine: {colors: {4: {dfork_l: magenta}}}
+  glutamate: {colors: {4: {c: [cyan, "O^-"]}}}
+  Pi: {colors: {0: cyan}}
+card_zh:
+  location: 細胞質（肝周靜脈細胞、腦、肌肉）
+  type: 醯胺化（消耗 1 ATP）
+  mechanism: "ATP 先磷酸化 γ-COO⁻ 形成 γ-glutamyl phosphate，再由 NH₄⁺ 取代磷酸"
+  regulation: "細菌酵素受多種終產物累積抑制與 adenylylation 調控（Lehninger 經典例子）"
+  exam_points:
+    - "把有毒的 NH₃ 固定成 glutamine：血中運送 NH₃ 的主要形式"
+    - "腦中 NH₃ 解毒的主要途徑；高血氨時 glutamine 累積 → 星狀細胞腫脹"
+tags: [amino_acid_metabolism, deamination]
+status: approved

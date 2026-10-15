@@ -1,0 +1,127 @@
+id: metabolic_crossroads
+title: 'Metabolic crossroads: G6P, pyruvate, acetyl-CoA（代謝交叉點）'
+layout: free
+cell_size: 3.4
+nodes:
+- id: g6p
+  ref: glucose_6p
+  pos:
+  - 0
+  - 0
+  view: name
+- id: pyr
+  ref: pyruvate
+  pos:
+  - 0
+  - 2.6
+  view: name
+- id: acoa
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 5.2
+  view: name
+- id: glyc
+  text: Glycogen
+  kind: name
+  pos:
+  - -3.2
+  - -1.0
+- id: glc
+  text: 'Glucose (liver: G6Pase)'
+  kind: name
+  pos:
+  - 3.4
+  - -1.0
+- id: ppp
+  text: Ribose 5-P + NADPH (PPP)
+  kind: name
+  pos:
+  - 3.6
+  - 0.8
+- id: lac
+  ref: lactate
+  pos:
+  - -3.2
+  - 2.0
+  view: name
+- id: ala
+  ref: alanine
+  pos:
+  - -3.2
+  - 3.3
+  view: name
+- id: oaa
+  ref: oxaloacetate
+  pos:
+  - 3.4
+  - 2.6
+  view: name
+- id: tca
+  text: TCA cycle → CO_2
+  kind: name
+  pos:
+  - 3.4
+  - 4.4
+- id: fa
+  text: Fatty acids
+  kind: name
+  pos:
+  - -3.4
+  - 4.6
+- id: chol
+  text: Cholesterol
+  kind: name
+  pos:
+  - -3.4
+  - 6.0
+- id: kb
+  text: Ketone bodies
+  kind: name
+  pos:
+  - 3.4
+  - 6.0
+edges:
+- from: glyc
+  to: g6p
+  reversible: true
+- from: g6p
+  to: glc
+- from: g6p
+  to: ppp
+- from: g6p
+  to: pyr
+  label: glycolysis
+  reversible: true
+- from: pyr
+  to: lac
+  step: ldh
+  label: LDH
+  reversible: true
+- from: pyr
+  to: ala
+  step: alt
+  label: ALT
+  reversible: true
+- from: pyr
+  to: oaa
+  step: pyruvate_carboxylase
+  label: pyruvate carboxylase
+- from: pyr
+  to: acoa
+  step: pdh
+  label: PDH (irreversible)
+- from: acoa
+  to: tca
+- from: acoa
+  to: fa
+  reversible: true
+- from: acoa
+  to: chol
+- from: acoa
+  to: kb
+tags:
+- energy_metabolism
+- integration
+notes_zh: G6P：肝醣、糖解、PPP、（肝、腎）葡萄糖輸出。Pyruvate：lactate（無氧、RBC）、alanine（肌肉 → 肝）、OAA（補充 TCA、糖質新生；acetyl-CoA 活化 pyruvate carboxylase）、acetyl-CoA（PDH，不可逆 → 脂肪酸不能變成葡萄糖）。Acetyl-CoA：TCA、脂肪酸、膽固醇、酮體。
+status: pending

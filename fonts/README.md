@@ -1,0 +1,2 @@
+- `texgyreschola-regular.otf` — TeX Gyre Schola (GUST Font License, see GUST-FONT-LICENSE.txt)
+- `SourceSans3-Regular.ttf` — Source Sans 3, static Regular instance of the variable font (SIL OFL 1.1, see OFL-SourceSans3.txt)

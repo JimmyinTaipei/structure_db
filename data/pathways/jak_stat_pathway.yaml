@@ -1,0 +1,349 @@
+id: jak_stat_pathway
+title: JAK–STAT pathway
+layout: free
+cell_size: 4.4
+nodes:
+- id: lig
+  text: Cytokine, leptin, EPO, GH
+  pos:
+  - 0
+  - 0
+  kind: name
+- id: rec
+  text: 'Receptor dimerizes
+
+    (no intrinsic kinase)'
+  pos:
+  - 0
+  - 1.0
+  kind: protein
+- id: jak
+  text: 'JAK (Janus kinase)
+
+    trans-autophosphorylation'
+  pos:
+  - 0
+  - 2.0
+  kind: protein
+- id: ty
+  text: Receptor Tyr-P
+  pos:
+  - 0
+  - 3.0
+  kind: protein
+- id: stat
+  text: STAT binds via SH2
+  pos:
+  - 0
+  - 4.0
+  kind: protein
+- id: statp
+  text: 'STAT-P (by JAK)
+
+    → dimer'
+  pos:
+  - 0
+  - 5.0
+  kind: protein
+- id: nuc
+  text: 'Nucleus: transcription factor'
+  pos:
+  - 0
+  - 6.0
+  kind: name
+edges:
+- from: lig
+  to: rec
+- from: rec
+  to: jak
+- from: jak
+  to: ty
+  label: Tyr-P
+- from: ty
+  to: stat
+- from: stat
+  to: statp
+  label: Tyr-P
+- from: statp
+  to: nuc
+tags:
+- signal_transduction
+- rtk
+notes_zh: 受體本身無酵素活性，配體使受體二聚化 → 結合的 JAK 互相磷酸化 → 磷酸化受體的 Tyr → STAT 以 SH2 結合 P-Tyr → JAK 磷酸化 STAT → STAT-P 脫離、二聚化、入核當轉錄因子。例：EPO（紅血球生成）、leptin（飽足）、GH、interferon、IL。JAK2 V617F → polycythemia vera。SOCS 回饋抑制。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 30.0
+        - 2.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 30.0
+        - 6.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 4.0
+        x0: -1.0
+        x1: 30.0
+        lipids: true
+      - g: ligand
+        at:
+        - 6.0
+        - 0.0
+        shape: diamond
+        hue: red
+        r: 0.5
+      - g: blob
+        at:
+        - 5.4
+        - 1.6
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: pink
+      - g: blob
+        at:
+        - 6.6
+        - 1.6
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: pink
+      - g: blob
+        at:
+        - 5.4
+        - 4.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: pink
+      - g: blob
+        at:
+        - 6.6
+        - 4.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: pink
+      - g: strand
+        kind: gray
+        points:
+        - - 5.4
+          - 5.8
+        - - 5.4
+          - 9.0
+        width: 0.22
+      - g: strand
+        kind: gray
+        points:
+        - - 6.6
+          - 5.8
+        - - 6.6
+          - 9.0
+        width: 0.22
+      - g: blob
+        at:
+        - 4.4
+        - 7.0
+        w: 1.6
+        h: 1.2
+        shape: oval
+        hue: orange
+        accent: true
+        text: JAK
+        text_size: 0.42
+      - g: blob
+        at:
+        - 7.6
+        - 7.0
+        w: 1.6
+        h: 1.2
+        shape: oval
+        hue: orange
+        accent: true
+        text: JAK
+        text_size: 0.42
+      - g: ion
+        at:
+        - 5.4
+        - 8.6
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: ion
+        at:
+        - 6.6
+        - 8.6
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: blob
+        at:
+        - 10.4
+        - 8.6
+        w: 2.2
+        h: 1.3
+        shape: oval
+        hue: blue
+        text: STAT
+        text_size: 0.45
+      - g: arrow
+        from:
+        - 9.2
+        - 8.6
+        to:
+        - 7.2
+        - 8.6
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 11.6
+        - 9.2
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 12.4
+        - 9.4
+        to:
+        - 15.0
+        - 10.6
+        style: fat
+      - g: blob
+        at:
+        - 16.6
+        - 11.2
+        w: 2.0
+        h: 1.2
+        shape: oval
+        hue: blue
+        accent: true
+        text: STAT
+        text_size: 0.42
+      - g: blob
+        at:
+        - 16.6
+        - 12.4
+        w: 2.0
+        h: 1.2
+        shape: oval
+        hue: blue
+        accent: true
+        text: STAT
+        text_size: 0.42
+      - g: ion
+        at:
+        - 15.4
+        - 11.2
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: ion
+        at:
+        - 15.4
+        - 12.4
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 17.8
+        - 11.8
+        to:
+        - 19.6
+        - 11.8
+        color: black
+        curve: 0
+      - g: region
+        x0: 19.8
+        y0: 8.6
+        x1: 30.0
+        y1: 16.2
+        hue: blue
+        opacity: 0.18
+        dashed: true
+      - g: text
+        at:
+        - 29.6
+        - 9.2
+        text: nucleus
+        size: 0.65
+        align: right
+        color: gray
+      - g: dsdna
+        from:
+        - 20.6
+        - 14.4
+        to:
+        - 29.4
+        - 14.4
+        width: 1.0
+      - g: blob
+        at:
+        - 24.0
+        - 13.1
+        w: 2.0
+        h: 1.2
+        shape: oval
+        hue: blue
+        text: STAT
+        text_size: 0.42
+      - g: blob
+        at:
+        - 26.0
+        - 13.1
+        w: 2.0
+        h: 1.2
+        shape: oval
+        hue: blue
+        text: STAT
+        text_size: 0.42
+      - g: ion
+        at:
+        - 23.2
+        - 12.3
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: ion
+        at:
+        - 26.8
+        - 12.3
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: text
+        at:
+        - 25.0
+        - 10.0
+        text: gene expression
+        size: 0.65
+        align: center
+      - g: text
+        at:
+        - 6.0
+        - 11.4
+        text: EPO, leptin, GH, IFN
+        size: 0.65
+        align: center
+        color: gray

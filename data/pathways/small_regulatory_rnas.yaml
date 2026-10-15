@@ -1,0 +1,96 @@
+id: small_regulatory_rnas
+title: Small regulatory RNAs compared
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.1
+    - 0.0
+    w: 6.2
+    h: 1.3
+    shape: box
+    hue: green
+    text: miRNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.8
+    - 0.0
+    text: own genes (Pol II) · hairpin → Drosha → Dicer · 21–23 nt · Ago · partial pairing (seed 2–8) in 3′UTR → translation ↓, decay
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.1
+    - 1.6
+    w: 6.2
+    h: 1.3
+    shape: box
+    hue: green
+    text: siRNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.8
+    - 1.6
+    text: long dsRNA (virus, transposon, experiment) · Dicer · 21–23 nt · Ago2 · perfect pairing → mRNA cleaved (RNAi)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.1
+    - 3.2
+    w: 6.2
+    h: 1.3
+    shape: box
+    hue: green
+    text: piRNA
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.8
+    - 3.2
+    text: single-stranded precursors, no Dicer · 24–30 nt · PIWI · silences transposons in the germ line
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.1
+    - 4.800000000000001
+    w: 6.2
+    h: 1.3
+    shape: box
+    hue: green
+    text: sRNA (bacteria)
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.8
+    - 4.800000000000001
+    text: 50–300 nt · Hfq chaperone · pairs with SD / mRNA → translation ↓ or ↑, decay (OxyS, DsrA)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.1
+    - 6.4
+    w: 6.2
+    h: 1.3
+    shape: box
+    hue: green
+    text: Riboswitch
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.8
+    - 6.4
+    text: part of the mRNA 5′UTR · aptamer binds a metabolite (TPP, FMN, SAM, lysine) → terminator or SD hidden
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: miRNA（內生、部分配對、抑制轉譯）、siRNA（外來 dsRNA、完全配對、切斷）、piRNA（PIWI、生殖細胞轉位子）、細菌 sRNA（Hfq）、riboswitch（順式、代謝物）。
+parts_png: false
+status: pending

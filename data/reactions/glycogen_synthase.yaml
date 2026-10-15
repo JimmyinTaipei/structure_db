@@ -1,0 +1,37 @@
+id: glycogen_synthase
+title: UDP-glucose + Glycogen(n) → Glycogen(n+1) (glycogen synthase)
+substrates:
+- udp_glucose
+- glycogen_n
+products:
+- glycogen_n1
+- id: udp
+  view: formula
+extra_out:
+- H+
+enzyme: glycogen synthase
+reversible: false
+decorate:
+  udp_glucose:
+    colors: {d1: cyan}
+  udp:
+    colors: {0: cyan}
+  glycogen_n:
+    colors:
+      d4: [magenta, O]
+  glycogen_n1:
+    colors: {link0: magenta}
+card_zh:
+  location: 細胞質（肝、肌肉）
+  type: 醣基轉移：形成 α1→4 醣苷鍵
+  regulation: insulin → PP1 去磷酸化 → 活化；glucagon／epinephrine → PKA、GSK3 磷酸化 → 失活；G6P 別構活化
+  mechanism: 需要 primer：glycogenin 自我醣化起頭；分支由 branching enzyme（α1→6，每 8–12 個殘基）完成
+  deficiency:
+  - GSD 0：glycogen synthase 缺乏（空腹低血糖）
+  - Andersen（GSD IV）：branching enzyme 缺乏 → 長而少分支的肝醣、肝硬化
+  exam_points:
+  - 肝醣合成的限速酵素
+tags:
+- carb_metabolism
+- glycogen
+status: pending

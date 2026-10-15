@@ -1,0 +1,42 @@
+id: chymotrypsin_acylation
+title: 'Serine protease step 1: acylation (chymotrypsin)'
+substrates:
+- chymo_substrate
+products:
+- acyl_enzyme
+- peptide_c_fragment
+cofactors_in:
+- EnzSer
+cofactors_out: []
+enzyme: chymotrypsin (Ser195, His57, Asp102)
+reversible: false
+decorate:
+  EnzSer:
+    colors:
+      0:
+        c:
+        - - cyan
+          - Ser^{195}–OH (enzyme)
+  chymo_substrate:
+    highlight:
+    - smarts: C(=O)[NH:1][#0]
+      color: magenta
+  acyl_enzyme:
+    highlight:
+    - smarts: C(=O)[O:1]C[#0]
+      color: cyan
+  peptide_c_fragment:
+    highlight:
+    - smarts: '[NH2:1]'
+      color: magenta
+card_zh:
+  type: Ser195 的 O（青）親核攻擊胜肽鍵羰基 → 四面體中間物（氧陰離子洞穩定）→ 醯基-酵素；醯胺 N（洋紅）帶著 C 端片段離開
+  exam_points:
+  - 催化三聯體：Asp102 定位並穩定 His57，His57 當廣義鹼拔 Ser195 的 H（之後當廣義酸給離去的 N）
+  - 氧陰離子洞：Gly193 與 Ser195 主鏈 NH 以氫鍵穩定四面體中間物的 O⁻
+  - Burst kinetics：第一個產物（胺）快速釋出，去醯化較慢（速率限制）
+tags:
+- enzyme
+- catalysis
+parts_png: false
+status: pending

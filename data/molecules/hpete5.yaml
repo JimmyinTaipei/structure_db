@@ -1,0 +1,12 @@
+id: hpete5
+name: 5-HPETE
+aliases:
+- 5-hydroperoxyeicosatetraenoate
+smiles: CCCCC/C=C\C/C=C\C/C=C\C=C\[C@H](CCCC(=O)[O-])OO
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: 5-lipoxygenase（需 FLAP）在 C5 加入 O₂。
+status: pending

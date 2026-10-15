@@ -1,0 +1,12 @@
+id: d_erythrulose
+name: "D-Erythrulose"
+aliases: [Erythrulose]
+smiles: "O=C(CO)[C@H](O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", r: "O", rb: 2}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "酮四碳糖。（ketotetrose）"
+status: pending

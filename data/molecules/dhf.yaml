@@ -1,0 +1,17 @@
+id: dhf
+name: Dihydrofolate
+label: Dihydrofolate (DHF)
+aliases:
+- DHF
+- H2folate
+- 二氫葉酸
+smiles: Nc1nc2NCC(CNc8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])=Nc2c(=O)[nH]1
+ring:
+  rotate: 0
+formula: DHF
+tags:
+- vitamin
+- nucleotide
+- coenzyme
+notes_zh: thymidylate synthase 唯一同時「給碳又給電子」的 THF 反應，所以產生 DHF，必須由 DHFR 再生成 THF（methotrexate、trimethoprim 抑制 DHFR）。
+status: pending

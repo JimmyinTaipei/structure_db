@@ -1,0 +1,130 @@
+id: protein_sorting_signals
+title: Protein sorting signals
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.4
+    - 0.0
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: ER / secretion
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 0.0
+    text: 'N-terminal signal sequence: 1–2 basic aa + 10–15 hydrophobic core; cleaved by signal peptidase (preproinsulin)'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 1.6
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: ER retention
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 1.6
+    text: 'C-terminal KDEL: escaped proteins are returned from the Golgi by the KDEL receptor'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 3.2
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Lysosome
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 3.2
+    text: mannose-6-phosphate on N-glycans (GlcNAc-phosphotransferase in cis-Golgi; missing in I-cell disease)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 4.800000000000001
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Mitochondrion
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 4.800000000000001
+    text: N-terminal amphipathic α-helix (Arg / Lys on one face); TOM / TIM import, cleaved in the matrix
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 6.4
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Nucleus
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 6.4
+    text: internal NLS, basic cluster (PKKKRKV, SV40 T); importin + Ran-GTP; not cleaved
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 8.0
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Peroxisome
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 8.0
+    text: C-terminal PTS1 (SKL, most) or N-terminal PTS2; folded proteins imported (Zellweger syndrome)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.4
+    - 9.6
+    w: 6.8
+    h: 1.3
+    shape: box
+    hue: teal
+    text: Membrane
+    text_size: 0.85
+  - g: text
+    at:
+    - 7.4
+    - 9.6
+    text: stop-transfer / signal-anchor hydrophobic segments; GPI anchor added in the ER
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: ER/分泌：N 端疏水 signal sequence（切除）；KDEL 留 ER；M6P → 溶體（I-cell disease）；粒線體：N 端兩性 α 螺旋；細胞核：內部 NLS（不切除）；過氧化體：C 端 SKL（PTS1）。共轉譯（SRP）vs 轉譯後（粒線體、核、過氧化體）運送。
+parts_png: false
+status: pending

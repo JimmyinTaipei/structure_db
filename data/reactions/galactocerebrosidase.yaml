@@ -1,0 +1,29 @@
+id: galactocerebrosidase
+title: Galactocerebroside → Ceramide + Galactose (galactocerebrosidase)
+substrates:
+- galactocerebroside
+products:
+- ceramide
+- b_galactopyranose
+cofactors_in:
+- H2O
+enzyme: 'galactocerebrosidase
+
+  (GALC)'
+reversible: false
+decorate:
+  H2O:
+    colors:
+      0: magenta
+  b_galactopyranose:
+    colors:
+      u1: magenta
+card_zh:
+  location: 溶小體
+  type: 醣苷鍵水解
+  deficiency:
+  - Krabbe disease（globoid cell leukodystrophy）：psychosine 累積毒殺寡突膠細胞 → 脫髓鞘、視神經萎縮、globoid cell
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+status: pending

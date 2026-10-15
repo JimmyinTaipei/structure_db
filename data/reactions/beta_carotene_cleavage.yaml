@@ -1,0 +1,31 @@
+id: beta_carotene_cleavage
+title: β-Carotene → 2 Retinal (β-carotene dioxygenase)
+substrates:
+- beta_carotene
+products:
+- id: retinal
+  n: 2
+products_layout: stack
+cofactors_in:
+- O2
+enzyme: 'β-carotene
+
+  15,15''-dioxygenase'
+reversible: false
+decorate:
+  beta_carotene:
+    highlight:
+    - atoms: [19, 20]
+      color: magenta
+  O2:
+    colors: {0: magenta}
+  retinal:
+    highlight:
+    - {smarts: '[CH:1]=[O:2]', color: magenta}
+card_zh:
+  location: 小腸黏膜
+  type: 氧化斷裂（從正中間的雙鍵切開）
+tags:
+- vitamin
+- fat_soluble
+status: pending

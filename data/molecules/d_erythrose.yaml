@@ -1,0 +1,12 @@
+id: d_erythrose
+name: "D-Erythrose"
+aliases: [Erythrose]
+smiles: "O=C[C@H](O)[C@H](O)CO"
+chain:
+  - {c: "C", fork: {l: "O", lb: 2, r: "H"}}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "醛四碳糖。erythrose 4-phosphate 是 PPP 與芳香族胺基酸合成（shikimate，植物／細菌）的原料。（aldotetrose）"
+status: pending

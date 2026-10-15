@@ -1,0 +1,7 @@
+id: water
+name: Water
+aliases: [H2O, 水]
+smiles: "O"
+formula: H_2O
+tags: [organic]
+status: approved

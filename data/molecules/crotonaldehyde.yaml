@@ -1,0 +1,8 @@
+id: crotonaldehyde
+name: Crotonaldehyde
+label: "Crotonaldehyde\n(but-2-enal)"
+aliases: [but-2-enal, 巴豆醛, 2-丁烯醛]
+smiles: "C/C=C/C=O"
+tags: [organic, aldol]
+notes_zh: α,β-不飽和醛（共軛烯醛）。
+status: pending

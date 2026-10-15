@@ -1,0 +1,13 @@
+id: pgh2
+name: Prostaglandin H2
+label: PGH_2
+aliases:
+- PGH₂
+smiles: CCCCC[C@H](O)/C=C/[C@@H]1[C@@H](C/C=C\CCCC(=O)[O-])[C@@H]2C[C@H]1OO2
+ring:
+  rotate: 0
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+notes_zh: COX 的過氧化酶活性把 15-OOH 還原成 15-OH。所有 prostanoid（PGE₂、PGF₂α、PGI₂、TXA₂）的共同前驅物，由各組織的 synthase 決定去向。
+status: pending

@@ -1,0 +1,21 @@
+id: xanthine_oxidase_1
+title: "Hypoxanthine → Xanthine (xanthine oxidase)"
+substrates: [hypoxanthine]
+products: [xanthine]
+cofactors_in: [H2O, O2]
+cofactors_out: [H2O2]
+enzyme: "xanthine oxidase"
+reversible: false
+decorate:                         # 洋紅：C2 新加的 O（來自 H₂O）
+  xanthine: {base_colors: {4: magenta}}
+  H2O: {colors: {0: magenta}}
+card_zh:
+  location: 肝、小腸（細胞質）
+  type: "氧化（含 Mo、FAD、Fe-S），O 來自水，電子交給 O₂ → H₂O₂"
+  deficiency:
+    - "allopurinol（→ alloxanthine 自殺抑制）、febuxostat（非嘌呤類）治療痛風"
+    - "合併 azathioprine／6-MP 時須減量（6-MP 由 XO 代謝）"
+  exam_points:
+    - "XO 連續催化兩步：hypoxanthine → xanthine → uric acid"
+tags: [nucleotide, purine, degradation]
+status: pending

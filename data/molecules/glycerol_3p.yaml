@@ -1,0 +1,23 @@
+id: glycerol_3p
+name: sn-Glycerol 3-phosphate
+label: 'Glycerol
+
+  3-phosphate'
+aliases:
+- G3P (glycerol)
+- glycerol phosphate
+- α-glycerophosphate
+- 甘油-3-磷酸
+smiles: OC[C@@H](O)COP(=O)([O-])[O-]
+chain:
+- c: CH_2OH
+- c: C
+  l: HO
+  r: H
+- c: CH_2O{P}
+tags:
+- carb_metabolism
+- gluconeogenesis
+- lipid
+notes_zh: TAG 與磷脂合成的骨架（脂肪組織由 DHAP 經 glycerol-3-P DH 還原而來）。也是 glycerol-phosphate shuttle 的載體（細胞質 NADH → 粒線體 FAD → 約 1.5 ATP）。
+status: pending

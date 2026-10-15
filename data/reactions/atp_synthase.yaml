@@ -1,0 +1,40 @@
+id: atp_synthase
+title: 'Complex V: ADP + Pi + H⁺ → ATP + H₂O (ATP synthase)'
+substrates:
+- adp_n
+products:
+- atp_n
+cofactors_in:
+- Pi
+cofactors_out:
+- H2O
+extra_in:
+- H+
+enzyme: 'ATP synthase
+
+  (F_oF_1, Complex V)'
+conditions: ≈ 3 H^+ flow IMS → matrix (F_o)
+reversible: false
+decorate:
+  Pi:
+    colors:
+      0: magenta
+  atp_n:
+    colors:
+      u4:
+      - magenta
+      - '{P}'
+card_zh:
+  location: 粒線體內膜（F₁ 頭部朝基質）
+  type: 化學滲透偶聯（chemiosmotic coupling）
+  mechanism: H⁺ 經 F_o（a 次單元與 c ring）流回基質 → c ring 與 γ 軸旋轉 → F₁ 的三個 β 次單元輪流經歷 open → loose → tight（binding change, Boyer）；ATP 的釋放才是耗能步驟
+  deficiency:
+  - oligomycin 結合 F_o 阻斷 H⁺ 通道 → ATP 合成與電子傳遞都停止（呼吸控制）
+  - uncoupler（2,4-DNP、大劑量 aspirin、FCCP、UCP1／thermogenin 在棕色脂肪）：H⁺ 不經 ATP synthase 回流 → O₂ 消耗 ↑、ATP ↓、產熱 ↑
+  exam_points:
+  - 每個 ATP 約需 4 H⁺（3 個經 F_o ＋ 1 個隨 Pi 進基質）→ P/O：NADH 2.5、FADH₂ 1.5
+  - 呼吸控制：ADP 的供應決定電子傳遞的速率
+tags:
+- energy_metabolism
+- etc_oxphos
+status: pending

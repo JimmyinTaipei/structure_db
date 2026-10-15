@@ -1,0 +1,31 @@
+id: udp_galactose
+name: UDP-galactose
+label: UDP-galactose
+aliases:
+- UDP-Gal
+- 尿苷二磷酸半乳糖
+smiles: C([C@@H]1[C@@H]([C@@H]([C@H]([C@H](O1)OP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6ccc(=O)[nH]c6=O)[C@H](O)[C@@H]5O)O)O)O)O
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      up: H
+      down: O–UDP
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: HO
+      down: H
+    5:
+      up: CH_2OH
+      down: H
+tags:
+- carb_metabolism
+- galactose_metabolism
+notes_zh: 乳腺合成 lactose（lactose synthase）、醣脂與醣蛋白的 galactose 供體；UDP-Gal 4-epimerase 與 UDP-Glc 互換（所以不吃半乳糖也能合成）。
+status: pending

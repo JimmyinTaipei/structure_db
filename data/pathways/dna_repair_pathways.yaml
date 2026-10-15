@@ -1,0 +1,131 @@
+id: dna_repair_pathways
+title: DNA repair pathways at a glance
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 4.2
+    - 0.0
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Mismatch repair
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 0.0
+    text: replication errors, small loops · MutS/L/H (E. coli), MSH2/MLH1 · Lynch syndrome (HNPCC)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 1.6
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Base excision
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 1.6
+    text: deaminated / oxidised / alkylated single bases, AP sites · glycosylase → APE1 → Pol β → ligase III
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 3.2
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Nucleotide excision
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 3.2
+    text: 'bulky, helix-distorting: T=T dimers, benzo[a]pyrene adducts · UvrABC; XPA–XPG, TFIIH · xeroderma pigmentosum'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 4.800000000000001
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Direct reversal
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 4.800000000000001
+    text: photolyase splits T=T with light (not in humans); MGMT removes O^6-methyl-G (suicide enzyme); AlkB demethylates
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 6.4
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Homologous recomb.
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 6.4
+    text: double-strand breaks, stalled forks (S/G2) · RecBCD, RecA; MRN, BRCA1/2, Rad51 · error-free
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 8.0
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: NHEJ
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 8.0
+    text: double-strand breaks (G1) · Ku70/80, DNA-PKcs, Artemis, ligase IV · error-prone; also V(D)J
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 4.2
+    - 9.6
+    w: 8.4
+    h: 1.3
+    shape: box
+    hue: blue
+    text: Translesion (SOS)
+    text_size: 0.85
+  - g: text
+    at:
+    - 9.0
+    - 9.6
+    text: lesion blocks the replicative polymerase · Pol IV, V (E. coli); Pol η, ζ · error-prone
+    size: 0.82
+    align: left
+tags:
+- molecular_biology
+- repair
+notes_zh: 依損傷選擇修復途徑：錯配 → MMR；單一鹼基 → BER；大型扭曲 → NER；甲基 → MGMT（直接）；雙股斷裂 → HR（S/G2，無誤）或 NHEJ（G1，易錯）；無法修復時以 TLS 越過。相關疾病：XP（NER）、Lynch（MMR）、BRCA1/2（HR）、ataxia telangiectasia（ATM）、Bloom（BLM）、Werner（WRN）、Fanconi
+  anemia（交聯修復）。
+parts_png: false
+status: pending

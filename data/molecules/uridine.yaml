@@ -1,0 +1,30 @@
+id: uridine
+name: Uridine
+label: Uridine
+aliases:
+- 尿苷
+smiles: O=c1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1
+haworth:
+  ring: furanose
+  subs:
+    1:
+      up: base
+      down: H
+    2:
+      up: H
+      down: OH
+    3:
+      up: H
+      down: OH
+    4:
+      up: HOCH_2
+      down: H
+  base: '[*]n1ccc(=O)[nH]c1=O'
+  base_right: 7
+  numbers: true
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: Uracil 以 N1 接核糖 C1′（N-醣苷鍵）。
+parts_png: false
+status: pending

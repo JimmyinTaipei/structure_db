@@ -1,0 +1,25 @@
+id: ribulose_5p_epimerase
+title: PPP ⑤ Ribulose 5-phosphate ⇌ Xylulose 5-phosphate (epimerase)
+substrates:
+- ribulose_5p
+products:
+- xylulose_5p
+enzyme: 'ribulose 5-phosphate
+
+  3-epimerase'
+reversible: true
+decorate:
+  ribulose_5p:
+    colors:
+      2: {l: magenta, r: magenta}
+  xylulose_5p:
+    colors:
+      2: {l: magenta, r: magenta}
+card_zh:
+  type: C3 差向異構化
+  exam_points:
+  - X5P 是 transketolase 的 2C 供體；X5P 也活化 PP2A → 肝中 ChREBP、F2,6BP ↑
+tags:
+- carb_metabolism
+- PPP
+status: pending

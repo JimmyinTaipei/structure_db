@@ -1,0 +1,33 @@
+id: phosphogluconolactone
+name: 6-Phosphoglucono-δ-lactone
+label: '6-Phospho-
+
+  glucono-δ-lactone'
+aliases:
+- 6-phosphogluconolactone
+- 6-磷酸葡萄糖酸內酯
+smiles: C([C@@H]1[C@H]([C@@H]([C@H](C(O1)=O)O)O)O)OP(=O)([O-])[O-]
+haworth:
+  ring: pyranose
+  numbers: true
+  subs:
+    1:
+      out: O
+      out_b: 2
+    2:
+      up: H
+      down: OH
+    3:
+      up: OH
+      down: H
+    4:
+      up: H
+      down: HO
+    5:
+      up: CH_2O{P}
+      down: H
+tags:
+- carb_metabolism
+- PPP
+notes_zh: G6PD 把 β-G6P 的 C1（半縮醛）氧化成內酯（C1=O，洋紅）；lactonase 水解開環。
+status: pending

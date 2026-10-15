@@ -1,0 +1,23 @@
+id: gmp_synthetase
+title: "XMP + Gln → GMP (GMP synthetase)"
+substrates: [xmp]
+products: [gmp]
+cofactors_in: [glutamine, ATP, H2O]
+cofactors_out: [glutamate, AMP, PPi]
+extra_out: [H+, H+]          # 生理 pH 下釋出的 H⁺（不畫，只參與平衡）
+enzyme: "GMP synthetase"
+reversible: false
+decorate:
+  glutamine:
+    colors: {0: magenta}
+  gmp:
+    base_colors: {9: magenta}
+card_zh:
+  location: 細胞質
+  type: "胺化（C2=O → C2–NH₂），ATP → AMP + PPi 活化"
+  regulation: "GMP 回饋抑制"
+  exam_points:
+    - "做 GMP 消耗 ATP（做 AMP 消耗 GTP）→ 交叉供能，維持 A、G 平衡"
+    - "Gln 是嘌呤環 N3、N9 與 GMP 的 C2-NH₂ 來源"
+tags: [nucleotide, purine]
+status: pending

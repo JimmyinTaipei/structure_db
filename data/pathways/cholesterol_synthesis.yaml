@@ -1,0 +1,138 @@
+id: cholesterol_synthesis
+title: Cholesterol synthesis（膽固醇合成，名稱版）
+layout: free
+cell: 0.62
+nodes:
+- id: ac
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 0
+  view: name
+- id: aac
+  ref: acetoacetyl_coa
+  pos:
+  - 0
+  - 1
+  view: name
+- id: hmg
+  ref: hmg_coa
+  pos:
+  - 0
+  - 2
+  view: name
+- id: mev
+  ref: mevalonate
+  pos:
+  - 0
+  - 3
+  view: name
+- id: ipp
+  ref: ipp
+  pos:
+  - 0
+  - 4
+  view: name
+- id: dmapp
+  ref: dmapp
+  pos:
+  - 2.2
+  - 4
+  view: name
+- id: gpp
+  text: Geranyl-PP (C10)
+  kind: name
+  pos:
+  - 0
+  - 5
+- id: fpp
+  text: Farnesyl-PP (C15)
+  kind: name
+  pos:
+  - 0
+  - 6
+- id: sq
+  ref: squalene
+  pos:
+  - 0
+  - 7
+  view: name
+- id: lan
+  text: Lanosterol
+  kind: name
+  pos:
+  - 0
+  - 8
+- id: cho
+  ref: cholesterol
+  pos:
+  - 0
+  - 9
+  view: name
+- id: statin
+  text: Statins
+  kind: drug
+  pos:
+  - -1.7
+  - 2.5
+- id: fpp_out
+  text: 'Dolichol, CoQ,
+
+    prenylated proteins'
+  kind: plain
+  pos:
+  - 2.2
+  - 6
+edges:
+- from: ac
+  to: aac
+  step: acetoacetyl_coa_thiolase
+  label: thiolase
+- from: aac
+  to: hmg
+  step: hmg_coa_synthase
+  label: HMG-CoA synthase
+- from: hmg
+  to: mev
+  step: hmg_coa_reductase
+  label: 'HMG-CoA reductase
+
+    (rate-limiting)'
+  side_text: 2 NADPH
+  label_side: right
+- from: mev
+  to: ipp
+  step: mevalonate_to_ipp
+  side_text: 3 ATP, −CO_2
+- from: ipp
+  to: dmapp
+  step: ipp_isomerase
+  reversible: true
+- from: ipp
+  to: gpp
+  side_text: + DMAPP
+- from: gpp
+  to: fpp
+  side_text: + IPP
+- from: fpp
+  to: sq
+  label: squalene synthase
+  side_text: 2 FPP, NADPH
+- from: sq
+  to: lan
+  label: epoxidase, cyclase
+  side_text: O_2, NADPH
+- from: lan
+  to: cho
+  label: ~19 steps
+- from: statin
+  to: edge:hmg->mev
+  inhibit: true
+- from: fpp
+  to: fpp_out
+  head: true
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+notes_zh: 全部在細胞質／ER，由 acetyl-CoA 開始（27 碳全部來自 acetyl-CoA），需要 NADPH 與 ATP。限速：HMG-CoA reductase（膽固醇經 SREBP–SCAP 回饋抑制；insulin 活化；statin 抑制）。Smith–Lemli–Opitz：7-DHC reductase 缺乏（最後一步）。
+status: pending

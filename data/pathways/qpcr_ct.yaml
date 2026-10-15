@@ -1,0 +1,64 @@
+id: qpcr_ct
+title: Real-time PCR and Ct
+layout: plot
+plot:
+  size:
+  - 15
+  - 9.5
+  params:
+    A: 22
+    B: 30
+    n: 9
+    th: 0.15
+    k: 0.8248
+  x:
+    min: 0
+    max: 40
+    label: cycle
+    ticks:
+    - 0
+    - 10
+    - 20
+    - 30
+    - 40
+  y:
+    min: 0
+    max: 1.15
+    label: fluorescence
+  hlines:
+  - y: th
+    label: threshold
+  curves:
+  - id: a
+    y: hill(x, A/k, n)
+    color: cyan
+  - id: b
+    y: hill(x, B/k, n)
+    color: red
+  points:
+  - 'on': a
+    y: th
+    drop: x
+    dot: true
+    label: C_t = 22
+  - 'on': b
+    y: th
+    drop: x
+    dot: true
+    label: C_t = 30
+  legend:
+    at:
+    - 2
+    - 1.05
+    items:
+    - curve: a
+      text: sample A
+    - curve: b
+      text: sample B
+tags:
+- molecular_biology
+- techniques
+notes_zh: Real-time（quantitative）PCR：以 SYBR Green 或 TaqMan 探針即時偵測產物。Ct（threshold cycle）＝螢光越過閾值的循環數；起始模板越多 Ct 越小。每差 1 個 Ct ≈ 2 倍：A 的 Ct 22、B 的 Ct 30 → ΔCt = 8 → A 的起始量約為 B 的 2⁸ = 256 倍。mRNA 定量用 qRT-PCR（先以
+  reverse transcriptase 做 cDNA）。
+parts_png: false
+status: pending

@@ -1,0 +1,166 @@
+id: eukaryotic_activation
+title: Eukaryotic transcription activation
+layout: scene
+scene:
+  items:
+  - g: strand
+    kind: parent
+    points:
+    - - 0.0
+      - 12.0
+    - - 6.0
+      - 12.0
+    - - 8.6
+      - 11.6
+    - - 9.4
+      - 8.2
+    - - 10.2
+      - 5.4
+    - - 12.6
+      - 4.6
+    - - 15.0
+      - 5.4
+    - - 15.8
+      - 8.2
+    - - 16.6
+      - 11.6
+    - - 19.0
+      - 12.0
+    - - 30.0
+      - 12.0
+    width: 0.42
+  - g: region
+    x0: 11.4
+    y0: 4.2
+    x1: 13.8
+    y1: 5.0
+    hue: yellow
+    opacity: 0.9
+    outline: false
+  - g: blob
+    at:
+    - 12.6
+    - 3.0
+    w: 2.4
+    h: 1.6
+    shape: kidney
+    hue: dkgreen
+    text: activator
+    text_size: 0.5
+  - g: blob
+    at:
+    - 17.8
+    - 6.8
+    w: 6.4
+    h: 4.6
+    shape: oval
+    hue: teal
+    text: Mediator
+    text_size: 0.7
+  - g: blob
+    at:
+    - 20.8
+    - 10.8
+    w: 4.6
+    h: 3.2
+    shape: oval
+    hue: blue
+    text: Pol II
+    text_size: 0.7
+    accent: true
+  - g: blob
+    at:
+    - 17.6
+    - 11.8
+    w: 1.8
+    h: 1.2
+    shape: oval
+    hue: green
+    text: TFIID
+    text_size: 0.45
+  - g: nucleosome
+    at:
+    - 2.2
+    - 11.6
+    r: 0.9
+  - g: nucleosome
+    at:
+    - 26.8
+    - 11.6
+    r: 0.9
+  - g: ion
+    at:
+    - 1.4
+    - 10.4
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: ion
+    at:
+    - 2.3
+    - 10.2
+    r: 0.3
+    hue: yellow
+    text: Ac
+    text_size: 0.4
+  - g: blob
+    at:
+    - 3.9
+    - 10.1
+    w: 1.9
+    h: 1.4
+    shape: round
+    hue: orange
+    text: HAT
+    text_size: 0.55
+  - g: blob
+    at:
+    - 26.8
+    - 10.0
+    w: 2.8
+    h: 1.3
+    shape: oval
+    hue: purple
+    text: SWI/SNF
+    text_size: 0.5
+  - g: text
+    at:
+    - 12.6
+    - 5.7
+    text: enhancer
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 17.6
+    - 13.2
+    text: TATA
+    size: 0.62
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 3.9
+    - 8.8
+    text: (SAGA)
+    size: 0.6
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 26.8
+    - 8.8
+    text: remodeler (ATP)
+    size: 0.6
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- gene_regulation
+- transcription
+notes_zh: Activator 的 DNA-binding domain 結合 enhancer（可遠在數千 bp 外、方向不拘），activation domain（acidic：Gal4；Pro-rich：CTF1；Gln-rich：Sp1）經 DNA 彎成環，透過 coactivators 招募 Pol II：Mediator（> 20 次單元）、HAT（SAGA，組蛋白乙醯化）、chromatin
+  remodeling（SWI/SNF、ISWI，ATP）、TFIID（TAFs）。Architectural protein（HMG）協助彎曲 DNA。酵母 GAL 系統：Gal4（activator）、Gal80（抑制）、Gal3 + galactose 解除抑制。
+parts_png: false
+status: pending

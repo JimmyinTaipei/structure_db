@@ -1,0 +1,23 @@
+id: pyrimidine_atom_sources
+name: Pyrimidine ring — atom sources
+label: "Pyrimidine ring: atom sources"
+aliases: [pyrimidine origin, 嘧啶環來源]
+smiles: "c1cncnc1"
+free:                                  # N1 在下（接核糖），C2 在右，與核苷酸圖同方向
+  schematic: true
+  atoms:
+    n1: [N, 0, 1.2]
+    c2: [C, 1.04, 0.6]
+    n3: [N, 1.04, -0.6]
+    c4: [C, 0, -1.2]
+    c5: [C, -1.04, -0.6]
+    c6: [C, -1.04, 0.6]
+  bonds: [[n1, c2], [c2, n3], [n3, c4], [c4, c5], [c5, c6], [c6, n1]]
+  notes:
+    - ["Carbamoyl phosphate\n(C2 from HCO_3^-, N3 from Gln)", 4.3, 0, magenta]
+    - ["Aspartate\n(N1, C4, C5, C6)", -3.3, 0, cyan]
+decorate:
+  colors: {n1: cyan, c2: magenta, n3: magenta, c4: cyan, c5: cyan, c6: cyan}
+tags: [nucleotide, pyrimidine]
+notes_zh: "嘧啶環 6 個原子：carbamoyl phosphate（CPS II：HCO₃⁻ 的 C + Gln 的 N）→ C2、N3；Asp → N1、C4、C5、C6。先做環（orotate）再接 PRPP。"
+status: pending

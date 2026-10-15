@@ -1,0 +1,14 @@
+id: glycocholate
+name: Glycocholate
+aliases:
+- glycocholic acid
+smiles: C[C@H](CCC(=O)NCC(=O)[O-])[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- bile_acid
+notes_zh: 膽鹽：cholyl-CoA + glycine（BAAT）→ 醯胺鍵；pKa 降低 → 在小腸 pH 下完全解離、兩性 → 乳化脂質、形成 micelle。
+status: pending

@@ -1,0 +1,177 @@
+id: hexose_interconversion
+title: Hexose interconversions around UDP-glucose
+layout: free
+cell_size: 4.4
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  view: name
+- id: g6p
+  ref: a_glucose_6p
+  pos:
+  - 0
+  - 1.2
+  view: name
+- id: g1p
+  ref: a_glucose_1p
+  pos:
+  - 0
+  - 2.4
+  view: name
+- id: udpg
+  ref: udp_glucose
+  pos:
+  - 0
+  - 3.6
+  view: name
+- id: gly
+  ref: glycogen
+  pos:
+  - -2.0
+  - 3.6
+  view: name
+- id: udpgal
+  ref: udp_galactose
+  pos:
+  - 2.2
+  - 3.6
+  view: name
+- id: lac
+  ref: lactose
+  pos:
+  - 4.2
+  - 3.6
+  view: name
+- id: gp
+  text: 'Glycoproteins,
+
+    glycolipids'
+  pos:
+  - 2.2
+  - 4.9
+  kind: name
+- id: udpga
+  ref: udp_glucuronate
+  pos:
+  - 0
+  - 4.9
+  view: name
+- id: conj
+  text: 'Glucuronides (bilirubin, drugs),
+
+    GAGs, vitamin C (not humans)'
+  pos:
+  - 0
+  - 6.0
+  kind: name
+- id: gal
+  ref: a_galactopyranose
+  pos:
+  - 2.4
+  - 1.2
+  view: name
+- id: gal1p
+  ref: a_galactose_1p
+  pos:
+  - 2.4
+  - 2.4
+  view: name
+- id: fru
+  ref: d_fructose
+  pos:
+  - -2.2
+  - 0
+  view: name
+- id: f1p
+  ref: fructose_1p
+  pos:
+  - -2.2
+  - 1.2
+  view: name
+- id: tri
+  text: 'DHAP + glyceraldehyde
+
+    → glycolysis'
+  pos:
+  - -2.2
+  - 2.4
+  kind: name
+edges:
+- from: glc
+  to: g6p
+  step: hexokinase
+  label: hexokinase
+- from: g6p
+  to: g1p
+  step: phosphoglucomutase
+  label: PGM
+  reversible: true
+- from: g1p
+  to: udpg
+  step: udp_glucose_pyrophosphorylase
+  label: 'UDP-Glc
+
+    pyrophosphorylase'
+- from: udpg
+  to: gly
+  step: glycogen_synthase
+  label: 'glycogen
+
+    synthase'
+- from: udpg
+  to: udpgal
+  step: udp_galactose_epimerase
+  label: 4-epimerase
+  reversible: true
+  label_side: right
+- from: udpgal
+  to: lac
+  step: lactose_synthase
+  label: 'lactose
+
+    synthase'
+- from: udpgal
+  to: gp
+  label: 'galactosyl-
+
+    transferase'
+  label_side: right
+- from: udpg
+  to: udpga
+  step: udp_glucose_dehydrogenase
+  label: 'UDP-Glc DH
+
+    (2 NAD^+)'
+- from: udpga
+  to: conj
+  label: UGT
+- from: gal
+  to: gal1p
+  step: galactokinase
+  label: galactokinase
+- from: gal1p
+  to: g1p
+  step: galt
+  label: 'GALT
+
+    (+ UDP-Glc)'
+  label_side: right
+- from: fru
+  to: f1p
+  step: fructokinase
+  label: fructokinase
+- from: f1p
+  to: tri
+  step: aldolase_b
+  label: aldolase B
+tags:
+- carb_metabolism
+- galactose_metabolism
+- fructose_metabolism
+- glycogen
+notes_zh: UDP-glucose 是醣類互換的樞紐（高能活化醣）：→ 肝醣；→ UDP-galactose（4-epimerase）→ 乳糖、醣蛋白；→ UDP-glucuronate（2 NAD⁺）→ 結合解毒、GAG。Galactose 經 GALT 換成 G1P 進入主線；fructose 在肝經 fructokinase、aldolase B 成為三碳糖（繞過 PFK-1，不受 insulin／PFK-1
+  調控 → 代謝比 glucose 快）。缺乏：GALT → classic galactosemia；aldolase B → hereditary fructose intolerance；fructokinase → essential fructosuria（良性）。
+status: pending

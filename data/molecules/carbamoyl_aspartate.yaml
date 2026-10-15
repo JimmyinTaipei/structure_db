@@ -1,0 +1,9 @@
+id: carbamoyl_aspartate
+name: Carbamoyl aspartate
+label: "Carbamoyl\naspartate"
+aliases: [N-carbamoyl-L-aspartate, 胺甲醯天門冬胺酸]
+smiles: "NC(=O)N[C@@H](CC(=O)[O-])C(=O)[O-]"
+ring: {rotate: 0}                 # RDKit 座標＋本資料庫字型（無環分子也可用）
+tags: [nucleotide, pyrimidine]
+notes_zh: "ATCase（aspartate transcarbamoylase）產物：carbamoyl phosphate + Asp。下一步 dihydroorotase 脫水閉環。"
+status: pending

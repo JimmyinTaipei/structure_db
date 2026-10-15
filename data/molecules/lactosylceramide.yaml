@@ -1,0 +1,31 @@
+id: lactosylceramide
+name: Lactosylceramide
+aliases:
+- LacCer
+smiles: C(OC1OC(CO)C(OC2OC(CO)C(O)C(O)C2O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+free:
+  atoms:
+    cer:
+    - Ceramide
+    - 0
+    - 0
+    - 7
+    s0:
+    - '@glc'
+    - 0.95
+    - 0
+    s1:
+    - '@gal'
+    - 1.75
+    - 0
+  bonds:
+  - - cer
+    - s0
+  - - s0
+    - s1
+  schematic: true
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: ceramide–Glc–Gal（β1→4）。GM3 與 Gb3 的共同前驅物。（SNFG 示意圖：藍圓 Glc、黃圓 Gal、黃方 GalNAc、紫菱 NeuAc）
+status: pending

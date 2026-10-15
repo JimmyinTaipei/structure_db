@@ -1,0 +1,15 @@
+id: thiamine
+name: Thiamine (vitamin B1)
+label: Thiamine (B_1)
+aliases:
+- vitamin B1
+- 維生素B1
+- 硫胺
+smiles: Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1
+ring:
+  methyls: true
+tags:
+- vitamin
+- water_soluble
+notes_zh: 嘧啶環＋噻唑（thiazolium）環以 CH₂ 相連。活化：thiamine pyrophosphokinase + ATP → TPP。缺乏：beriberi（乾性：周邊神經病變；濕性：高輸出心衰竭）、Wernicke–Korsakoff（酒精；給葡萄糖前先補 thiamine）。
+status: pending

@@ -1,0 +1,29 @@
+id: retinal_dehydrogenase
+title: Retinal → Retinoic acid (retinal dehydrogenase)
+substrates:
+- retinal
+products:
+- retinoic_acid
+cofactors_in:
+- NAD+
+- H2O
+cofactors_out:
+- NADH+H+
+enzyme: 'retinal
+
+  dehydrogenase'
+reversible: false
+decorate:
+  H2O:
+    colors: {0: magenta}
+  retinoic_acid:
+    highlight:
+    - {smarts: 'C(=O)[OH:1]', color: magenta}
+card_zh:
+  type: 氧化（不可逆）：醛 → 羧酸
+  exam_points:
+  - retinoic acid 無法回到 retinal → 不能支持視覺
+tags:
+- vitamin
+- fat_soluble
+status: pending

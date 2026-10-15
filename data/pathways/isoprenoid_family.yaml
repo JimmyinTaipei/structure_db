@@ -1,0 +1,105 @@
+id: isoprenoid_family
+title: Isoprenoids derived from IPP
+layout: free
+cell_size: 4.6
+nodes:
+- id: ipp
+  ref: ipp
+  pos:
+  - 3.2
+  - 0
+  view: name
+- id: chol
+  ref: cholesterol
+  pos:
+  - 1.0
+  - 1.2
+  view: name
+- id: bile
+  ref: cholate
+  pos:
+  - -0.3
+  - 2.4
+  view: name
+- id: vd
+  ref: calcitriol
+  pos:
+  - 1.0
+  - 3.2
+  view: name
+- id: ster
+  ref: cortisol
+  pos:
+  - 2.3
+  - 2.4
+  view: name
+- id: vit
+  text: Vitamins A, E, K
+  pos:
+  - 4.6
+  - 1.2
+  kind: name
+- id: ret
+  ref: retinol
+  pos:
+  - 3.6
+  - 2.4
+  view: name
+- id: toc
+  ref: tocopherol
+  pos:
+  - 4.6
+  - 3.2
+  view: name
+- id: vk
+  ref: phylloquinone
+  pos:
+  - 5.7
+  - 2.4
+  view: name
+- id: other
+  text: 'CoQ, dolichol,
+
+    farnesyl / geranylgeranyl
+
+    (protein prenylation),
+
+    heme A, carotenoids'
+  pos:
+  - 6.9
+  - 1.2
+  kind: name
+edges:
+- from: ipp
+  to: chol
+  head: false
+- from: ipp
+  to: vit
+  head: false
+- from: ipp
+  to: other
+  head: false
+- from: chol
+  to: bile
+  head: false
+- from: chol
+  to: vd
+  head: false
+- from: chol
+  to: ster
+  head: false
+- from: vit
+  to: ret
+  head: false
+- from: vit
+  to: toc
+  head: false
+- from: vit
+  to: vk
+  head: false
+tags:
+- lipid
+- steroid
+notes_zh: Isoprene（C₅）單位 = IPP／DMAPP（由 mevalonate 途徑；植物與細菌另有 MEP 途徑）。衍生：cholesterol（→ 膽酸、vitamin D、固醇類荷爾蒙）、脂溶性維生素 A、E、K（D 由 cholesterol 而來）、CoQ（ubiquinone 的側鏈）、dolichol（N-linked glycosylation 載體）、farnesyl／geranylgeranyl（Ras
+  等蛋白質 prenylation）、heme A、carotenoid／lycopene。
+status: pending

@@ -1,0 +1,19 @@
+id: aprt
+title: "Adenine + PRPP → AMP (APRT, salvage)"
+substrates: [adenine, prpp]
+products: [amp]
+cofactors_out: [PPi]
+enzyme: "adenine\nphosphoribosyltransferase"
+reversible: false
+decorate:
+  prpp:
+    colors:
+      d1: [magenta, '{P}–{P}']
+  PPi:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: "救援途徑：adenine + PRPP → AMP + PPi"
+  deficiency: "APRT 缺乏 → adenine 被 xanthine oxidase 氧化成 2,8-dihydroxyadenine → 腎結石（allopurinol 有效）"
+tags: [nucleotide, purine, salvage]
+status: pending

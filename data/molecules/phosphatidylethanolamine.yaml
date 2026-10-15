@@ -1,0 +1,8 @@
+id: phosphatidylethanolamine
+name: "Phosphatidylethanolamine"
+aliases: [PE, cephalin]
+smiles: "C(OC(=O)CCCCCCCCCCCCCCC)C(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COP(=O)([O-])OCC[NH3+]"
+lipid: {type: "phospholipid", chains: [{n: 16}, {n: 18, cis: [9]}], head: "ethanolamine"}
+tags: [lipid, phospholipid]
+notes_zh: "PE：膜內葉為主；可甲基化成 PC（肝，PEMT）。（圖例：sn-1 palmitoyl、sn-2 oleoyl）"
+status: pending

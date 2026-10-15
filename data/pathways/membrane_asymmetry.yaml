@@ -1,0 +1,382 @@
+id: membrane_asymmetry
+title: Lipid asymmetry of the plasma membrane
+layout: free
+cell_size: 4.0
+nodes:
+- id: out
+  text: 'Outer leaflet: PC, sphingomyelin,
+
+    glycolipids, GPI-anchored proteins'
+  pos:
+  - 1.8
+  - -1.2
+  kind: name
+- id: in
+  text: 'Inner leaflet: PE, PS, PI (PIP_2);
+
+    myristoyl / palmitoyl / farnesyl-anchored proteins'
+  pos:
+  - 1.8
+  - 1.2
+  kind: name
+- id: flip
+  text: 'Flippase
+
+    (P-type, ATP)'
+  pos:
+  - -0.6
+  - 0
+  kind: protein
+  h: 3.0
+- id: flop
+  text: 'Floppase
+
+    (ABC, ATP)'
+  pos:
+  - 1.8
+  - 0
+  kind: protein
+  h: 3.0
+- id: scr
+  text: 'Scramblase
+
+    (Ca^{2+}, no ATP)'
+  pos:
+  - 4.2
+  - 0
+  kind: protein
+  h: 3.0
+- id: f1
+  text: PS, PE
+  pos:
+  - -1.4
+  - -0.75
+  kind: ion
+- id: f2
+  text: PS, PE
+  pos:
+  - -1.4
+  - 0.75
+  kind: ion
+- id: o1
+  text: PL
+  pos:
+  - 1.0
+  - 0.75
+  kind: ion
+- id: o2
+  text: PL
+  pos:
+  - 1.0
+  - -0.75
+  kind: ion
+- id: x1
+  text: PS
+  pos:
+  - 5.6
+  - 0.75
+  kind: ion
+- id: x2
+  text: 'PS (apoptosis,
+
+    platelets)'
+  pos:
+  - 5.6
+  - -0.8
+  kind: ion
+edges:
+- from: f1
+  to: f2
+  color: magenta
+- from: o1
+  to: o2
+  color: cyan
+- from: x1
+  to: x2
+  color: gray
+  reversible: true
+regions:
+- kind: membrane
+  y: 0
+  x0: -2.4
+  x1: 6.6
+  label: ''
+tags:
+- membrane
+- membrane_lipid
+notes_zh: 外層：PC、SM、醣脂、GPI-anchored 蛋白；內層：PE、PS、PI（PIP₂）、脂質錨定（myristoyl、palmitoyl、farnesyl）蛋白；膽固醇兩層約相等。Flip-flop 自發極慢；flippase（P-type ATPase）把 PS、PE 由外送入內；floppase（ABC）由內送外；scramblase（Ca²⁺ 活化、不耗 ATP）雙向打亂
+  → 凋亡細胞與活化血小板 PS 外露（吞噬訊號、凝血表面）。側向擴散快（~μm/s）、轉動快；膜蛋白分類：integral（transmembrane）、peripheral、lipid-anchored（Lehninger 另有 amphitropic）。Lipid raft：富含膽固醇、sphingolipid、GPI 蛋白；caveolin 形成 caveolae。分離膜蛋白：SDS（離子型）、Triton
+  X-100（非離子型，保留活性）。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - -1.0
+        - 2.6
+        text: Outer leaflet
+        size: 0.75
+        align: left
+        color: gray
+      - g: text
+        at:
+        - -1.0
+        - 9.4
+        text: Inner leaflet (cytosol)
+        size: 0.75
+        align: left
+        color: gray
+      - g: membrane
+        y: 6.0
+        x0: -1.0
+        x1: 31.0
+        lipids: true
+      - g: ion
+        at:
+        - 1.0
+        - 4.9399999999999995
+        r: 0.34
+        hue: blue
+        text: PC
+        text_size: 0.3
+      - g: ion
+        at:
+        - 2.4
+        - 4.9399999999999995
+        r: 0.34
+        hue: teal
+        text: SM
+        text_size: 0.3
+      - g: ion
+        at:
+        - 4.6
+        - 4.9399999999999995
+        r: 0.34
+        hue: blue
+        text: PC
+        text_size: 0.3
+      - g: ion
+        at:
+        - 12.6
+        - 4.9399999999999995
+        r: 0.34
+        hue: teal
+        text: SM
+        text_size: 0.3
+      - g: ion
+        at:
+        - 19.4
+        - 4.9399999999999995
+        r: 0.34
+        hue: blue
+        text: PC
+        text_size: 0.3
+      - g: ion
+        at:
+        - 21.4
+        - 4.9399999999999995
+        r: 0.34
+        hue: green
+        text: GL
+        text_size: 0.3
+      - g: ion
+        at:
+        - 1.6
+        - 7.0600000000000005
+        r: 0.34
+        hue: orange
+        text: PE
+        text_size: 0.3
+      - g: ion
+        at:
+        - 3.4
+        - 7.0600000000000005
+        r: 0.34
+        hue: red
+        text: PS
+        text_size: 0.3
+      - g: ion
+        at:
+        - 5.4
+        - 7.0600000000000005
+        r: 0.34
+        hue: yellow
+        text: PI
+        text_size: 0.3
+      - g: ion
+        at:
+        - 12.0
+        - 7.0600000000000005
+        r: 0.34
+        hue: orange
+        text: PE
+        text_size: 0.3
+      - g: ion
+        at:
+        - 19.0
+        - 7.0600000000000005
+        r: 0.34
+        hue: red
+        text: PS
+        text_size: 0.3
+      - g: ion
+        at:
+        - 20.6
+        - 7.0600000000000005
+        r: 0.34
+        hue: orange
+        text: PE
+        text_size: 0.3
+      - g: pump
+        at:
+        - 8.6
+        - 6.0
+        hue: orange
+      - g: text
+        at:
+        - 8.6
+        - 1.2
+        text: flippase
+        size: 0.65
+        align: center
+      - g: ion
+        at:
+        - 7.2
+        - 2.6
+        r: 0.34
+        hue: red
+        text: PS
+        text_size: 0.3
+      - g: arrow
+        from:
+        - 7.2
+        - 3.2
+        to:
+        - 7.2
+        - 8.6
+        color: magenta
+        curve: 0
+      - g: transporter
+        at:
+        - 15.6
+        - 6.0
+        hue: pink
+        open: in
+      - g: text
+        at:
+        - 15.6
+        - 1.2
+        text: floppase (ABC)
+        size: 0.65
+        align: center
+      - g: arrow
+        from:
+        - 17.2
+        - 8.8
+        to:
+        - 17.2
+        - 3.4
+        color: cyan
+        curve: 0
+      - g: channel
+        at:
+        - 24.6
+        - 6.0
+        hue: teal
+        open: true
+      - g: text
+        at:
+        - 24.6
+        - 1.2
+        text: scramblase
+        size: 0.65
+        align: center
+      - g: arrow
+        from:
+        - 23.6
+        - 3.6
+        to:
+        - 23.6
+        - 8.6
+        color: gray
+        curve: 0
+      - g: arrow
+        from:
+        - 25.6
+        - 8.6
+        to:
+        - 25.6
+        - 3.6
+        color: gray
+        curve: 0
+      - g: ion
+        at:
+        - 26.6
+        - 9.6
+        r: 0.4
+        hue: green
+        text: Ca^{2+}
+        text_size: 0.32
+      - g: blob
+        at:
+        - 28.6
+        - 2.6
+        w: 2.0
+        h: 1.3
+        shape: oval
+        hue: purple
+        text: GPI
+        text_size: 0.45
+      - g: strand
+        kind: gray
+        points:
+        - - 28.6
+          - 3.3
+        - - 28.6
+          - 4.9399999999999995
+        width: 0.12
+      - g: blob
+        at:
+        - 29.0
+        - 10.0
+        w: 1.8
+        h: 1.2
+        shape: oval
+        hue: green
+        text: Ras
+        text_size: 0.42
+      - g: strand
+        kind: gray
+        points:
+        - - 29.0
+          - 9.4
+        - - 29.0
+          - 7.0600000000000005
+        width: 0.12
+      - g: text
+        at:
+        - 8.6
+        - 11.8
+        text: ATP
+        size: 0.6
+        align: center
+        color: gray
+      - g: text
+        at:
+        - 15.6
+        - 11.8
+        text: ATP
+        size: 0.6
+        align: center
+        color: gray
+      - g: text
+        at:
+        - 24.6
+        - 11.8
+        text: no ATP
+        size: 0.6
+        align: center
+        color: gray

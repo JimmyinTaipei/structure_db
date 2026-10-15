@@ -1,0 +1,41 @@
+id: tca_cycle
+title: Citric acid cycle（TCA 總圖）
+layout: cycle
+radius: 2.15          # 環半徑（單位：格 = 最大節點的尺寸）
+start_angle: -110     # 第一個環上節點（OAA）的位置，-90 = 正上方，順時針排列
+center_text: "Citric acid\ncycle"
+nodes:
+  - {id: oaa, ref: oxaloacetate, chain: cs}
+  - {id: cit, ref: citrate}
+  - {id: cis, ref: cis_aconitate}
+  - {id: iso, ref: isocitrate}
+  - {id: akg, ref: alpha_kg}
+  - {id: scoa, ref: succinyl_coa}
+  - {id: suc, ref: succinate}
+  - {id: fum, ref: fumarate}
+  - {id: mal, ref: malate}
+  - {id: accoa, ref: acetyl_coa, pos: [-0.15, -3.25]}
+edges:
+  - {from: oaa, to: cit, step: citrate_synthase, label: "citrate\nsynthase", side_text: "H_2O → CoA-SH"}
+  - {from: accoa, to: "edge:oaa->cit", bend: 0}
+  - {from: cit, to: cis, step: aconitase_1, label: aconitase, side_text: "H_2O", reversible: true}
+  - {from: cis, to: iso, step: aconitase_2, label: aconitase, side_text: "H_2O", reversible: true}
+  - {from: iso, to: akg, step: isocitrate_dehydrogenase, label: "isocitrate\ndehydrogenase", side_text: "NAD^+ → NADH\nCO_2"}
+  - {from: akg, to: scoa, step: alpha_kg_dehydrogenase, label: "α-ketoglutarate\ndehydrogenase\ncomplex", side_text: "CoA-SH\nNAD^+ → NADH\nCO_2"}
+  - {from: scoa, to: suc, step: succinyl_coa_synthetase, label: "succinyl-CoA\nsynthetase", side_text: "GDP + P_i → GTP\nCoA-SH", reversible: true}
+  - {from: suc, to: fum, step: succinate_dehydrogenase, label: "succinate\ndehydrogenase", side_text: "FAD → FADH_2", reversible: true}
+  - {from: fum, to: mal, step: fumarase, label: fumarase, side_text: "H_2O", reversible: true}
+  - {from: mal, to: oaa, step: malate_dehydrogenase, label: "malate\ndehydrogenase", side_text: "NAD^+ → NADH + H^+", reversible: true}
+variants:
+  isotope:                        # 追蹤 acetyl-CoA 的兩個碳（* ○）與 OAA 的 C=O 碳（△），到 succinate 為止
+    decorate:
+      accoa: {marks: {0: {l: "*", c: circle}}}
+      oaa: {marks: {0: {c: tri}}}
+      cit: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      cis: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      iso: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      akg: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      scoa: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+      suc: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+tags: [TCA]
+status: pending

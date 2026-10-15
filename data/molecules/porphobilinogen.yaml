@@ -1,0 +1,16 @@
+id: porphobilinogen
+name: Porphobilinogen (PBG)
+label: 'Porphobilinogen
+
+  (PBG)'
+aliases:
+- PBG
+- 膽色素原
+smiles: '[NH3+]Cc1[nH]cc(CCC(=O)[O-])c1CC(=O)[O-]'
+ring:
+  rotate: 0
+tags:
+- amino_acid_metabolism
+- heme
+notes_zh: 2 ALA 經 ALA dehydratase（Zn²⁺，鉛抑制）縮合成的吡咯（pyrrole）。4 個 PBG → hydroxymethylbilane（PBG deaminase；缺乏 → 急性間歇性紫質症 AIP：腹痛、神經精神症狀、尿 PBG/ALA ↑、無光敏感）。
+status: pending

@@ -1,0 +1,89 @@
+id: atp_yield_glucose
+title: ATP yield from one glucose（一個葡萄糖完全氧化的 ATP）
+layout: free
+cell_size: 3.2
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+  view: name
+- id: pyr
+  ref: pyruvate
+  pos:
+  - 0
+  - 1.6
+  view: name
+- id: acoa
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 3.2
+  view: name
+- id: tca
+  text: Citric acid cycle
+  kind: concept
+  pos:
+  - 0
+  - 4.8
+- id: co2
+  text: CO_2
+  kind: ion
+  pos:
+  - 3.2
+  - 4.8
+- id: y1
+  text: '2 ATP (net) + 2 NADH (cytosol)
+
+    → 2 + 3 or 5 = 5–7 ATP'
+  kind: plain
+  pos:
+  - 4.6
+  - 0.8
+- id: y2
+  text: 2 NADH → 5 ATP
+  kind: plain
+  pos:
+  - 4.6
+  - 2.4
+- id: y3
+  text: '2 GTP + 6 NADH + 2 FADH_2
+
+    → 2 + 15 + 3 = 20 ATP'
+  kind: plain
+  pos:
+  - 4.6
+  - 6.0
+- id: tot
+  text: 'Total ≈ 30–32 ATP
+
+    (P/O: NADH 2.5, FADH_2 1.5;
+
+    cytosolic NADH: 1.5 via G3P shuttle, 2.5 via Mal–Asp)'
+  kind: concept
+  pos:
+  - -4.4
+  - 3.2
+edges:
+- from: glc
+  to: pyr
+  label: glycolysis
+  side_text: ×2 pyruvate
+- from: pyr
+  to: acoa
+  step: pdh
+  label: PDH
+  side_text: ×2, 2 CO_2
+- from: acoa
+  to: tca
+- from: tca
+  to: co2
+  side_text: 4 CO_2
+tags:
+- energy_metabolism
+- etc_oxphos
+- integration
+notes_zh: 糖解淨 2 ATP＋2 NADH（細胞質）；PDH 2 NADH；TCA 2 GTP（ATP）＋6 NADH＋2 FADH₂。以 NADH 2.5、FADH₂ 1.5 計算：糖解 2＋(3 或 5)，PDH 5，TCA 2＋15＋3 → 30（G3P shuttle）或 32（Mal–Asp shuttle）。舊教科書的 36／38 是用 P/O 3 與 2 計算。無氧時只有糖解的
+  2 ATP（NAD⁺ 由 LDH 再生）。
+status: pending

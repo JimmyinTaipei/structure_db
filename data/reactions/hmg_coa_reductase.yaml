@@ -1,0 +1,38 @@
+id: hmg_coa_reductase
+title: HMG-CoA → Mevalonate (HMG-CoA reductase)
+substrates:
+- hmg_coa
+products:
+- mevalonate
+cofactors_in:
+- 2NADPH+H+
+cofactors_out:
+- 2NADP+
+- CoA-SH
+enzyme: HMG-CoA reductase
+reversible: false
+decorate:
+  hmg_coa:
+    colors:
+      4: {c: magenta, l: magenta, r: cyan}
+  2NADPH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  mevalonate:
+    colors: {4: magenta}
+  CoA-SH:
+    colors: {0: cyan}
+card_zh:
+  location: ER 膜（細胞質側）
+  type: 還原（2 NADPH）：硫酯 → 一級醇
+  regulation: 限速。膽固醇 → SREBP 不被活化（轉錄 ↓）並促進酵素降解；insulin 去磷酸化 → 活化；glucagon、AMPK 磷酸化 → 失活
+  exam_points:
+  - statin 競爭性抑制 → 肝細胞膽固醇 ↓ → LDL receptor ↑ → 血 LDL ↓
+  - 副作用：肌病變、肝酵素上升
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+status: pending

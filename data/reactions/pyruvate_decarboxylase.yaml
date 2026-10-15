@@ -1,0 +1,43 @@
+id: pyruvate_decarboxylase
+title: Pyruvate → Acetaldehyde (pyruvate decarboxylase)
+substrates:
+- pyruvate
+products:
+- acetaldehyde
+- co2
+cofactors_in:
+- H+
+prosthetic:
+- TPP,
+- Mg^{2+}
+enzyme: pyruvate decarboxylase
+reversible: false
+decorate:
+  pyruvate:
+    colors:
+      0: magenta
+  co2:
+    colors:
+      0: magenta
+  H+:
+    colors:
+      0: cyan
+  acetaldehyde:
+    colors:
+      0:
+        fork_r: cyan
+card_zh:
+  location: 酵母菌細胞質（人體沒有此酵素）
+  type: 非氧化性脫羧：COO⁻ 以 CO₂ 離開（洋紅），原 C2 變成醛
+  cofactors: TPP（thiamine pyrophosphate）、Mg²⁺；不需 NAD⁺（與 PDH 的氧化性脫羧比較）
+  mechanism: TPP 的 thiazolium C2 carbanion 攻擊 pyruvate 的羰基 → 脫羧 → hydroxyethyl-TPP → 釋出 acetaldehyde
+  exam_points:
+  - 酒精發酵：pyruvate → acetaldehyde（PDC）→ ethanol（ADH，NADH 再生 NAD⁺）
+  - C1-¹⁴C-glucose → ¹⁴CH₃–CH₂OH；CO₂ 來自 glucose C3、C4
+  - TPP 依賴脫羧：PDH、α-KGDH、BCKDH（氧化性）vs PDC（非氧化性）；transketolase 也用 TPP
+tags:
+- carb_metabolism
+- glycolysis
+- energy_metabolism
+- ethanol
+status: pending

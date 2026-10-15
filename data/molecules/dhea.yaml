@@ -1,0 +1,16 @@
+id: dhea
+name: Dehydroepiandrosterone (DHEA)
+label: DHEA
+aliases:
+- dehydroepiandrosterone
+- DHEA-S
+smiles: C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12
+ring:
+  letters: true
+  orient: steroid
+  methyls: false
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: CYP17A1 的 17,20-lyase 活性切掉 C20–C21；網狀帶主要產物（多為 DHEA-S），腎上腺雄性素。
+status: pending

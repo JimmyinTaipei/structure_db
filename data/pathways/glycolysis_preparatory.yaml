@@ -1,0 +1,19 @@
+id: glycolysis_preparatory
+title: Glycolysis — preparatory phase（準備期，消耗 2 ATP）
+layout: free
+nodes:
+  - {id: glc,  ref: glucose,           pos: [0, 0]}
+  - {id: g6p,  ref: glucose_6p,        pos: [0, 1.15]}
+  - {id: f6p,  ref: fructose_6p,       pos: [0, 2.3]}
+  - {id: fbp,  ref: fructose_16bp,     pos: [0, 3.45]}
+  - {id: dhap, ref: dhap,              pos: [-0.75, 4.55]}
+  - {id: g3p,  ref: glyceraldehyde_3p, pos: [0.75, 4.55]}
+edges:
+  - {from: glc, to: g6p, step: hexokinase, label: "1. hexokinase", side_text: "ATP → ADP"}
+  - {from: g6p, to: f6p, step: phosphoglucose_isomerase, label: "2. phosphohexose\nisomerase", reversible: true}
+  - {from: f6p, to: fbp, step: pfk1, label: "3. PFK-1", side_text: "ATP → ADP"}
+  - {from: fbp, to: dhap, step: aldolase, label: "4. aldolase", label_side: right}
+  - {from: fbp, to: g3p, step: aldolase, label: "4. aldolase"}
+  - {from: dhap, to: g3p, step: triose_phosphate_isomerase, label: "5. triose phosphate\nisomerase", label_side: right, reversible: true}
+tags: [carb_metabolism, glycolysis]
+status: pending

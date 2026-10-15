@@ -1,0 +1,18 @@
+id: fad
+name: Flavin adenine dinucleotide (FAD)
+label: FAD
+aliases:
+- flavin adenine dinucleotide
+- 黃素腺嘌呤二核苷酸
+smiles: Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])OP(=O)([O-])OC[C@H]5O[C@@H](n6cnc7c(N)ncnc76)[C@H](O)[C@@H]5O)c2cc1C
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[#7:1]1~[#6:2]2~[#6:3](~[#6]~[#6]~[#6]~[#6]~2)~[#7:4]~[#6:5]~[#6:6]~1~[#7:7]'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: FMN + ATP → FAD + PPi（FAD synthetase）。洋紅：氧化還原中心（N1、N5）。常為緊密結合的輔基（prosthetic group）：succinate DH（Complex II，與膜共價結合）、acyl-CoA DH、PDH／α-KGDH 的 E3（dihydrolipoyl DH）。
+status: pending

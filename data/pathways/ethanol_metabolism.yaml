@@ -1,0 +1,148 @@
+id: ethanol_metabolism
+title: Ethanol metabolism and its consequences（酒精代謝與後果）
+layout: free
+cell_size: 3.4
+nodes:
+- id: etoh
+  ref: ethanol
+  pos:
+  - 0
+  - 0
+  view: name
+- id: acal
+  ref: acetaldehyde
+  pos:
+  - 0
+  - 1.8
+  view: name
+- id: ac
+  ref: acetate
+  pos:
+  - 0
+  - 3.6
+  view: name
+- id: acoa
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 5.4
+  view: name
+- id: fom
+  text: Fomepizole
+  kind: drug
+  pos:
+  - -2.6
+  - 0.9
+- id: dis
+  text: Disulfiram
+  kind: drug
+  pos:
+  - -2.6
+  - 2.7
+- id: flush
+  text: 'ALDH2*2: flushing'
+  kind: concept
+  pos:
+  - 2.9
+  - 2.7
+- id: ratio
+  text: NADH/NAD^+ ↑ (liver)
+  kind: concept
+  pos:
+  - 3.9
+  - 0.9
+- id: lac
+  text: 'Pyruvate → lactate:
+
+    lactic acidosis, gout'
+  kind: name
+  pos:
+  - 8.6
+  - -0.7
+- id: gng
+  text: 'OAA → malate:
+
+    gluconeogenesis ↓ → hypoglycemia'
+  kind: name
+  pos:
+  - 8.6
+  - 0.9
+- id: fat
+  text: 'β-oxidation ↓, G3P ↑ → TAG:
+
+    fatty liver'
+  kind: name
+  pos:
+  - 8.6
+  - 2.5
+- id: keto
+  text: 'acetyl-CoA → ketone bodies:
+
+    alcoholic ketoacidosis'
+  kind: name
+  pos:
+  - 3.9
+  - 5.4
+- id: meoh
+  text: 'Methanol → formaldehyde → formate
+
+    (optic nerve, blindness)'
+  kind: name
+  pos:
+  - -4.2
+  - -1.0
+- id: eg
+  text: 'Ethylene glycol → oxalate
+
+    (kidney)'
+  kind: name
+  pos:
+  - -4.2
+  - -2.4
+edges:
+- from: etoh
+  to: acal
+  step: alcohol_dehydrogenase
+  label: 'ADH (cytosol);
+
+    CYP2E1 (MEOS)'
+  side_text: NAD^+ → NADH
+- from: acal
+  to: ac
+  step: aldehyde_dehydrogenase
+  label: ALDH2 (mitochondria)
+  side_text: NAD^+ → NADH
+- from: ac
+  to: acoa
+  step: acetyl_coa_synthetase
+  label: acetyl-CoA synthetase
+  side_text: ATP → AMP + PP_i
+- from: fom
+  to: edge:etoh->acal
+  inhibit: true
+- from: dis
+  to: edge:acal->ac
+  inhibit: true
+- from: flush
+  to: edge:acal->ac
+  head: false
+- from: ratio
+  to: lac
+- from: ratio
+  to: gng
+- from: ratio
+  to: fat
+- from: acoa
+  to: keto
+- from: fom
+  to: meoh
+  inhibit: true
+- from: fom
+  to: eg
+  inhibit: true
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: 兩次脫氫都產生 NADH → 肝細胞 NADH/NAD⁺ 大增：pyruvate → lactate（乳酸中毒、乳酸與尿酸競爭排泄 → 痛風）；OAA → malate、pyruvate 被耗 → 糖質新生 ↓ → 空腹低血糖（尤其營養不良、肝醣耗竭時）；β 氧化與 TCA 被抑制、DHAP → G3P ↑ → TAG 堆積（脂肪肝）；acetyl-CoA 轉向酮體（酒精性酮酸中毒，以
+  β-hydroxybutyrate 為主）。甲醇（失明）與乙二醇（草酸 → 腎衰竭）都經 ADH 活化，以 fomepizole 阻斷。
+status: pending

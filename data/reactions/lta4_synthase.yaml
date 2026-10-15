@@ -1,0 +1,30 @@
+id: lta4_synthase
+title: 5-HPETE → LTA₄ (5-lipoxygenase, dehydrase activity)
+substrates:
+- hpete5
+products:
+- lta4
+cofactors_out:
+- H2O
+enzyme: 5-lipoxygenase
+reversible: false
+decorate:
+  hpete5:
+    highlight:
+    - smarts: '[OH1:1]O'
+      color: magenta
+    - smarts: C[O:1][OH]
+      color: cyan
+  H2O:
+    colors:
+      0: magenta
+  lta4:
+    highlight:
+    - smarts: '[O;R:1]'
+      color: cyan
+card_zh:
+  type: 脫水形成 5,6-環氧化物
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

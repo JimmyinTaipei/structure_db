@@ -1,0 +1,92 @@
+id: xenobiotic_detoxification
+title: 'Xenobiotic metabolism: phase I and II'
+layout: free
+cell_size: 4.6
+nodes:
+- id: rh
+  text: 'R–H
+
+    (nonpolar drug,
+
+    steroid, toxin)'
+  pos:
+  - 0
+  - 0
+  kind: name
+- id: roh
+  text: 'R–OH
+
+    (hydroxylated)'
+  pos:
+  - 2.4
+  - 0
+  kind: name
+- id: conj
+  text: 'R–O–glucuronide
+
+    (polar)'
+  pos:
+  - 4.8
+  - 0
+  kind: name
+- id: urine
+  text: Urine / bile
+  pos:
+  - 6.8
+  - 0
+  kind: name
+- id: udpga
+  ref: udp_glucuronate
+  pos:
+  - 3.6
+  - 1.2
+  view: name
+- id: p450
+  text: 'Cytochrome P450 monooxygenase (liver smooth ER)
+
+    R–H + O_2 + NADPH + H^+ → R–OH + H_2O + NADP^+'
+  pos:
+  - 2.4
+  - -1.4
+  kind: concept
+- id: other
+  text: 'Other conjugates: sulfate (PAPS), glutathione,
+
+    glycine, acetyl (NAT), methyl (SAM)'
+  pos:
+  - 5.0
+  - 2.4
+  kind: name
+- id: ox
+  text: 'Oxidase:  RH + O_2 → R + H_2O
+
+    Monooxygenase:  one O → R–OH, one O → H_2O
+
+    Dioxygenase:  both O atoms → product'
+  pos:
+  - 0.4
+  - 2.7
+  kind: plain
+edges:
+- from: rh
+  to: roh
+  label: 'Phase I
+
+    (CYP450)'
+  side_text: O_2, NADPH
+- from: roh
+  to: conj
+  label: 'Phase II
+
+    (UGT)'
+- from: udpga
+  to: edge:roh->conj
+- from: conj
+  to: urine
+tags:
+- energy_metabolism
+- detoxification
+notes_zh: Phase I（官能基化）：主要是 cytochrome P450 單氧酶（mixed-function oxidase，肝 smooth ER）：O₂ 的一個 O 進入受質成 –OH、另一個成 H₂O，電子由 NADPH 經 cytochrome P450 reductase（FAD、FMN）供應。Phase II（結合）：UDP-glucuronosyltransferase（UGT，UDP-glucuronate）、sulfotransferase（PAPS）、GST（glutathione）、N-acetyltransferase、methyltransferase
+  → 水溶性增加 → 尿或膽汁排出。同類單氧酶：類固醇合成的 P450（CYP11A1、21、11B1、17）、7α-hydroxylase（膽酸）、desaturase（配 cyt b₅）、NOS。CYP 誘導：酒精（CYP2E1）、phenobarbital、rifampin；抑制：葡萄柚汁、ketoconazole。新生兒 UGT 不足 → 生理性黃疸；Crigler–Najjar、Gilbert
+  為 UGT1A1 缺陷。
+status: pending

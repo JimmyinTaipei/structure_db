@@ -1,0 +1,18 @@
+id: acetate
+name: Acetate
+aliases:
+- ethanoate
+- 醋酸根
+smiles: CC(=O)[O-]
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_3
+tags:
+- energy_metabolism
+- ethanol
+notes_zh: ALDH 的產物；大多離開肝臟，在肌肉、心臟等由 acetyl-CoA synthetase 活化成 acetyl-CoA。
+status: pending

@@ -1,0 +1,29 @@
+id: rna_modified_nucleosides
+title: Uridine vs pseudouridine
+layout: free
+cell_size: 12.0
+nodes:
+- id: u
+  ref: uridine
+  pos:
+  - 0
+  - 0
+  decorate:
+    base_colors:
+      1: magenta
+- id: psi
+  ref: pseudouridine
+  pos:
+  - 1.05
+  - 0
+  decorate:
+    base_colors:
+      3: cyan
+edges: []
+text: false
+tags:
+- molecular_biology
+- rna_processing
+notes_zh: Uridine 以 N1（洋紅）接 C1′（N-醣苷鍵）；pseudouridine 鹼基轉 180°，改以 C5 接 C1′（C–C 醣苷鍵），原本的 N1 變成多出的 N–H（青），可多形成一個氫鍵。
+parts_png: false
+status: pending

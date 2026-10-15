@@ -1,0 +1,156 @@
+id: tyrosine_metabolism
+title: Phenylalanine & tyrosine metabolism（名稱版，含缺陷疾病）
+layout: free
+cell: 0.62
+nodes:
+- id: phe
+  ref: phenylalanine
+  pos:
+  - 0
+  - 0
+  view: name
+- id: tyr
+  ref: tyrosine
+  pos:
+  - 0
+  - 1
+  view: name
+- id: hpp
+  ref: hydroxyphenylpyruvate
+  pos:
+  - 0
+  - 2
+  view: name
+- id: hga
+  ref: homogentisate
+  pos:
+  - 0
+  - 3
+  view: name
+- id: maa
+  text: Maleylacetoacetate
+  kind: name
+  pos:
+  - 0
+  - 4
+- id: faa
+  text: Fumarylacetoacetate
+  kind: name
+  pos:
+  - 0
+  - 5
+- id: fum
+  ref: fumarate
+  pos:
+  - -1.0
+  - 6
+  view: name
+- id: aa
+  ref: acetoacetate
+  pos:
+  - 1.0
+  - 6
+  view: name
+- id: dopa
+  ref: l_dopa
+  pos:
+  - 2.4
+  - 1
+  view: name
+- id: mel
+  text: Melanin
+  kind: name
+  pos:
+  - 4.0
+  - 1
+- id: cat
+  text: Catecholamines
+  kind: name
+  pos:
+  - 2.4
+  - 2
+- id: thy
+  text: 'Thyroid hormones
+
+    (T_3, T_4)'
+  kind: name
+  pos:
+  - -2.3
+  - 1
+- id: pku
+  text: PKU
+  kind: drug
+  pos:
+  - -1.6
+  - 0.5
+- id: alk
+  text: Alkaptonuria
+  kind: drug
+  pos:
+  - -1.6
+  - 3.5
+- id: tyr1
+  text: Tyrosinemia I
+  kind: drug
+  pos:
+  - 1.8
+  - 5.5
+- id: alb
+  text: Albinism
+  kind: drug
+  pos:
+  - 3.3
+  - 1.5
+edges:
+- from: phe
+  to: tyr
+  step: phenylalanine_hydroxylase
+  label: PAH (BH_4)
+- from: tyr
+  to: hpp
+  step: tyrosine_aminotransferase
+  label: TAT (PLP)
+- from: hpp
+  to: hga
+  step: hppd
+  label: HPP dioxygenase (vit C)
+- from: hga
+  to: maa
+  label: homogentisate oxidase
+- from: maa
+  to: faa
+  label: isomerase
+- from: faa
+  to: fum
+  label: FAH
+- from: faa
+  to: aa
+- from: tyr
+  to: dopa
+  step: tyrosine_hydroxylase
+  label: TH
+- from: dopa
+  to: mel
+  label: tyrosinase (Cu)
+- from: dopa
+  to: cat
+- from: tyr
+  to: thy
+- from: pku
+  to: edge:phe->tyr
+  inhibit: true
+- from: alk
+  to: edge:hga->maa
+  inhibit: true
+- from: tyr1
+  to: edge:faa->fum
+  inhibit: true
+- from: alb
+  to: edge:dopa->mel
+  inhibit: true
+tags:
+- amino_acid_metabolism
+- aa_degradation
+- aa_derivatives
+notes_zh: Phe、Tyr 同時生糖（fumarate）也生酮（acetoacetate）。缺陷：PKU（PAH 或 BH4）、alkaptonuria（homogentisate oxidase：黑尿、褐黃病）、tyrosinemia I（FAH：肝衰竭、腎小管病變、煮包心菜味）、albinism（tyrosinase）。
+status: pending

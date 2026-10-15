@@ -1,0 +1,147 @@
+id: protein_sequencing_strategy
+title: Determining a protein's primary structure
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.0
+    - 0.0
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 1. Purify
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 0.0
+    text: '> 98 % pure; count chains (end-group analysis)'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 1.6
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 2. Composition
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 1.6
+    text: 6 M HCl, 110 °C, 24 h (Trp lost; Asn, Gln → Asp, Glu) · ninhydrin / HPLC
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 3.2
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 3. Ends
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 3.2
+    text: 'N-term: Sanger (FDNB), dansyl, Edman (PITC) · C-term: carboxypeptidase'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 4.800000000000001
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 4. S–S
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 4.800000000000001
+    text: performic acid, or DTT / β-ME + iodoacetate (blocks Cys)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 6.4
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 5. Cleave
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 6.4
+    text: 'trypsin: after Lys, Arg · chymotrypsin: Phe, Trp, Tyr · CNBr: after Met'
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 8.0
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 6. Sequence
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 8.0
+    text: Edman degradation of each fragment (≤ 50 residues)
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 9.6
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 7. Overlap
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 9.6
+    text: a second cleavage gives overlapping fragments → order
+    size: 0.82
+    align: left
+  - g: blob
+    at:
+    - 3.0
+    - 11.2
+    w: 6.0
+    h: 1.3
+    shape: box
+    hue: teal
+    text: 8. Today
+    text_size: 0.85
+  - g: text
+    at:
+    - 6.6
+    - 11.2
+    text: MS (MALDI, ESI, MS/MS) · or deduce from the DNA / cDNA sequence
+    size: 0.82
+    align: left
+tags:
+- protein
+- peptide
+notes_zh: Edman 降解：PITC（phenyl isothiocyanate）在弱鹼下接上 N 端胺基，酸處理把 N 端殘基以 PTH-胺基酸切下，其餘胜肽保留 → 每次少一個，可重複約 50 次。Sanger 試劑 FDNB 標 N 端但會水解整條鏈（只能測一次）。不同切法產生重疊片段以排序；雙硫鍵位置：不先還原、切開後以 diagonal electrophoresis 比對。
+parts_png: false
+status: pending

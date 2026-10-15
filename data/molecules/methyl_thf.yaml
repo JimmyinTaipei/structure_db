@@ -1,0 +1,22 @@
+id: methyl_thf
+name: N5-Methyl-THF
+label: N^5-Methyl-THF
+aliases:
+- 5-methyltetrahydrofolate
+- CH3-THF
+- N5-甲基四氫葉酸
+smiles: Nc1nc2NC[C@H](CNc8ccc(cc8)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])N(C)c2c(=O)[nH]1
+ring:
+  rotate: 0
+formula: N^5-CH_3-THF
+decorate:
+  highlight:
+  - smarts: '[CH3:1][N:2]'
+    color: magenta
+tags:
+- amino_acid_metabolism
+- one_carbon
+- vitamin
+- coenzyme
+notes_zh: MTHFR（NADPH）由 N⁵,N¹⁰-methylene-THF 不可逆還原而來；唯一的出路是 methionine synthase（B12）。B12 缺乏 → folate 全部卡在 CH₃-THF（methyl-folate trap）→ 功能性 folate 缺乏 → 巨球性貧血。
+status: pending

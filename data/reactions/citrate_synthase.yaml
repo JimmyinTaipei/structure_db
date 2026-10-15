@@ -1,0 +1,30 @@
+id: citrate_synthase
+title: "TCA ① Acetyl-CoA + Oxaloacetate → Citrate"
+step: 1
+substrates: [acetyl_coa, {id: oxaloacetate, chain: cs}]
+products: [citrate]
+cofactors_in: [H2O]
+cofactors_out: [CoA-SH]
+extra_out: [H+]
+enzyme: "citrate synthase"
+reversible: false
+decorate:                         # acetyl 部分洋紅，OAA 維持黑色；citrate 上兩列來自 acetyl-CoA
+  acetyl_coa: {colors: {0: {c: magenta, l: magenta, u: magenta}}}
+  citrate: {colors: {0: magenta, 1: magenta}}
+variants:
+  isotope:                        # * = acetyl 的 CH₃ 碳、○ = acetyl 的羰基碳、△ = OAA 的羰基碳
+    note_zh: "* 與 ○ 追蹤 acetyl-CoA 的兩個碳，△ 是 OAA 的 C=O 碳（成為 citrate 的中心碳）"
+    decorate:
+      acetyl_coa: {marks: {0: {l: "*", c: circle}}}
+      oxaloacetate: {marks: {0: {c: tri}}}
+      citrate: {marks: {0: {c: circle}, 1: {c: "*"}, 2: {c: tri}}}
+card_zh:
+  location: 粒線體基質
+  type: Claisen 縮合（acetyl-CoA 的 methyl 碳攻擊 OAA 的羰基）＋ 硫酯水解
+  deltaG: "ΔG'° = −32.2 kJ/mol，不可逆；硫酯水解提供驅動力，可把很低濃度的 OAA 往前拉"
+  mechanism: "Induced fit：OAA 先結合，酵素構形改變才讓 acetyl-CoA 結合；中間物 citroyl-CoA"
+  regulation: "抑制：citrate（產物）、succinyl-CoA、NADH、ATP；受質 OAA 濃度本身限制速率"
+  exam_points:
+    - "Fluoroacetate → fluoroacetyl-CoA → fluorocitrate，抑制下一步 aconitase（致死合成）"
+tags: [TCA]
+status: pending

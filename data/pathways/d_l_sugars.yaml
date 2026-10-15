@@ -1,0 +1,16 @@
+id: d_l_sugars
+title: "D- and L-sugars（D/L 構型）"
+layout: free
+cell_size: 4.2
+node_anchor: top
+nodes:
+  - {id: lga, ref: l_glyceraldehyde, pos: [0, 0], decorate: {colors: {1: magenta}}}
+  - {id: dga, ref: d_glyceraldehyde, pos: [2.4, 0], decorate: {colors: {1: magenta}}}
+  - {id: lgl, ref: l_glucose, pos: [4.8, 0], decorate: {colors: {4: magenta}}}
+  - {id: dgl, ref: glucose, pos: [7.2, 0], decorate: {colors: {4: magenta}}}
+edges:
+  - {from: lga, to: dga, head: false, bend: 0, label: "mirror images"}
+  - {from: lgl, to: dgl, head: false, bend: 0, label: "mirror images"}
+tags: [carbohydrate, monosaccharide]
+notes_zh: "D/L 由離羰基最遠的立體中心決定（洋紅）：OH 在右 = D。天然糖幾乎都是 D 型（胺基酸是 L 型）。L-glucose 是 D-glucose 的鏡像（每個中心都反過來），不是 epimer。"
+status: pending

@@ -1,0 +1,199 @@
+id: gtpase_switch
+title: 'GTPase switch: GEF and GAP'
+layout: cycle
+radius: 1.7
+cell_size: 5.0
+start_angle: 180
+center_text: 'GTPase
+
+  switch'
+nodes:
+- id: 'off'
+  text: 'GTPase–GDP
+
+    (inactive)'
+  kind: protein
+- id: 'on'
+  text: 'GTPase–GTP
+
+    (active) → effectors'
+  kind: protein
+edges:
+- from: 'off'
+  to: 'on'
+  label: 'GEF
+
+    (GDP out, GTP in)'
+  bend: 0.5
+- from: 'on'
+  to: 'off'
+  label: 'GAP / RGS
+
+    (GTP → GDP + P_i)'
+  bend: 0.5
+  color: red
+tags:
+- signal_transduction
+- gpcr
+notes_zh: GTPase 本身水解 GTP 很慢；GEF 促進 GDP 釋出（活化），GAP 加速 GTP 水解（關閉）。例：G 蛋白（GEF = GPCR；GAP = RGS）、Ras（GEF = Sos；GAP = RasGAP/NF1）、EF-Tu（GEF = EF-Ts）、Ran、Rho、Rab、Arf。Ras 致癌突變（G12V）使 GTPase 失效 → 持續 on；NF1 缺失
+  → GAP 失去 → neurofibromatosis。脂質修飾：Gα（myristoyl、palmitoyl）、Gγ（farnesyl/geranylgeranyl）、Ras（farnesyl）把它們錨在膜內側。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: membrane
+        y: 0.0
+        x0: -1.0
+        x1: 23.0
+        lipids: true
+      - g: strand
+        kind: gray
+        points:
+        - - 4.0
+          - 1.3
+        - - 4.0
+          - 2.6
+        width: 0.12
+      - g: strand
+        kind: gray
+        points:
+        - - 17.0
+          - 1.3
+        - - 17.0
+          - 2.6
+        width: 0.12
+      - g: blob
+        at:
+        - 4.0
+        - 4.0
+        w: 3.6
+        h: 2.6
+        shape: oval
+        hue: gray
+        text: Ras
+        text_size: 0.7
+      - g: ion
+        at:
+        - 4.0
+        - 5.6
+        r: 0.55
+        hue: gray
+        text: GDP
+        text_size: 0.42
+      - g: text
+        at:
+        - 4.0
+        - 7.6
+        text: inactive
+        size: 0.75
+        align: center
+      - g: blob
+        at:
+        - 17.0
+        - 4.0
+        w: 3.6
+        h: 2.6
+        shape: oval
+        hue: green
+        accent: true
+        text: Ras
+        text_size: 0.7
+      - g: ion
+        at:
+        - 17.0
+        - 5.6
+        r: 0.55
+        hue: pink
+        text: GTP
+        text_size: 0.42
+      - g: text
+        at:
+        - 17.0
+        - 7.6
+        text: active
+        size: 0.75
+        align: center
+      - g: arrow
+        from:
+        - 6.4
+        - 2.9
+        to:
+        - 14.6
+        - 2.9
+        color: black
+        curve: -0.18
+      - g: text
+        at:
+        - 10.5
+        - 3.4
+        text: GEF (Sos)
+        size: 0.75
+        align: center
+        color: green
+      - g: ion
+        at:
+        - 7.6
+        - 4.6
+        r: 0.45
+        hue: gray
+        text: GDP
+        text_size: 0.38
+      - g: ion
+        at:
+        - 13.4
+        - 4.6
+        r: 0.45
+        hue: pink
+        text: GTP
+        text_size: 0.38
+      - g: arrow
+        from:
+        - 14.6
+        - 6.4
+        to:
+        - 6.4
+        - 6.4
+        color: black
+        curve: -0.18
+      - g: text
+        at:
+        - 10.5
+        - 9.4
+        text: GAP (RasGAP, NF1)
+        size: 0.75
+        align: center
+        color: red
+      - g: ion
+        at:
+        - 10.5
+        - 7.2
+        r: 0.4
+        hue: yellow
+        text: P_i
+        text_size: 0.38
+      - g: arrow
+        from:
+        - 19.2
+        - 4.0
+        to:
+        - 21.6
+        - 4.0
+        color: black
+        curve: 0
+      - g: text
+        at:
+        - 22.0
+        - 4.0
+        text: effectors
+        size: 0.75
+        align: left
+      - g: text
+        at:
+        - 10.5
+        - 11.2
+        text: 'G12V: GTPase lost → always on'
+        size: 0.7
+        align: center
+        color: red

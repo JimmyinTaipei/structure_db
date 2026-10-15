@@ -1,0 +1,169 @@
+id: etc_redox_carriers
+title: Redox carriers in order of E°′（電子載體與還原電位）
+layout: free
+cell_size: 3.6
+regions:
+- kind: box
+  x0: 1.4
+  y0: 0.25
+  x1: 5.1
+  y1: 2.45
+  label: Complex I
+- kind: box
+  x0: 7.4
+  y0: 3.25
+  x1: 13.1
+  y1: 6.45
+  label: Complex III
+- kind: box
+  x0: 15.4
+  y0: 7.25
+  x1: 21.1
+  y1: 10.45
+  label: Complex IV
+nodes:
+- id: nadh
+  text: 'NAD^+/NADH
+
+    −0.32 V'
+  kind: carrier
+  pos:
+  - 0.0
+  - 0.0
+- id: fmn
+  text: FMN
+  kind: carrier
+  pos:
+  - 2.0
+  - 1.0
+- id: fes1
+  text: Fe-S
+  kind: carrier
+  pos:
+  - 4.0
+  - 2.0
+- id: q
+  text: 'Q/QH_2
+
+    +0.05 V'
+  kind: carrier
+  pos:
+  - 6.0
+  - 3.0
+- id: cytb
+  text: cyt b
+  kind: carrier
+  pos:
+  - 8.0
+  - 4.0
+- id: fes3
+  text: Fe-S (Rieske)
+  kind: carrier
+  pos:
+  - 10.0
+  - 5.0
+- id: c1
+  text: 'cyt c_1
+
+    +0.22 V'
+  kind: carrier
+  pos:
+  - 12.0
+  - 6.0
+- id: c
+  text: 'cyt c
+
+    +0.25 V'
+  kind: carrier
+  pos:
+  - 14.0
+  - 7.0
+- id: cua
+  text: Cu_A
+  kind: carrier
+  pos:
+  - 16.0
+  - 8.0
+- id: a
+  text: 'cyt a
+
+    +0.29 V'
+  kind: carrier
+  pos:
+  - 18.0
+  - 9.0
+- id: a3
+  text: 'cyt a_3–Cu_B
+
+    +0.35 V'
+  kind: carrier
+  pos:
+  - 20.0
+  - 10.0
+- id: o2
+  text: 'O_2/H_2O
+
+    +0.82 V'
+  kind: carrier
+  pos:
+  - 22.0
+  - 11.0
+- id: succ
+  text: 'Succinate → FAD
+
+    (Complex II) +0.03 V'
+  kind: carrier
+  pos:
+  - 2.6
+  - 5.4
+- id: note
+  text: 'electrons flow toward higher (more positive) E°''
+
+    ΔG°'' = −nFΔE°'' ≈ −220 kJ/mol per NADH'
+  kind: plain
+  pos:
+  - 15.0
+  - 3.2
+edges:
+- from: nadh
+  to: fmn
+  color: orange
+- from: fmn
+  to: fes1
+  color: orange
+- from: fes1
+  to: q
+  color: orange
+- from: q
+  to: cytb
+  color: orange
+- from: cytb
+  to: fes3
+  color: orange
+- from: fes3
+  to: c1
+  color: orange
+- from: c1
+  to: c
+  color: orange
+- from: c
+  to: cua
+  color: orange
+- from: cua
+  to: a
+  color: orange
+- from: a
+  to: a3
+  color: orange
+- from: a3
+  to: o2
+  color: orange
+- from: succ
+  to: q
+  color: orange
+tags:
+- energy_metabolism
+- etc_oxphos
+notes_zh: E°′ 由負到正排列：NADH −0.32 → Q +0.05 → cyt c₁ +0.22 → cyt c +0.25 → cyt a +0.29 → a₃ +0.35 → O₂ +0.82 V（Lehninger Table 19-2 的近似值）。cytochrome 的順序 b → c₁ → c → a → a₃ 是常考點。Q 與 cyt c 是可移動載體；Fe-S 與 cytochrome
+  一次只傳 1 個電子，FMN 與 Q 可以 1 或 2 個。
+status: pending

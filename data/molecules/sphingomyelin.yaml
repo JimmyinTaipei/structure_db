@@ -1,0 +1,8 @@
+id: sphingomyelin
+name: "Sphingomyelin"
+aliases: [SM]
+smiles: "C(OP(=O)([O-])OCC[N+](C)(C)C)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC"
+lipid: {type: "sphingolipid", chains: [{n: 18}], head: "phosphocholine"}
+tags: [lipid, sphingolipid]
+notes_zh: "ceramide + phosphocholine（C1）。髓鞘含量高。Niemann-Pick disease：sphingomyelinase 缺乏。（圖例：N-stearoyl；sphingosine 有 trans-Δ4 雙鍵）"
+status: pending

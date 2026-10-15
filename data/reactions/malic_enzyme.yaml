@@ -1,0 +1,35 @@
+id: malic_enzyme
+title: Malate → Pyruvate (malic enzyme)
+substrates:
+- malate
+products:
+- pyruvate
+- id: co2
+  view: formula
+cofactors_in:
+- NADP+
+cofactors_out:
+- NADPH
+enzyme: malic enzyme
+reversible: false
+decorate:
+  malate:
+    colors:
+      0: magenta
+      1: {r: cyan}
+  co2:
+    colors: {0: magenta}
+  NADPH:
+    colors:
+      0:
+        c:
+        - [cyan, H]
+card_zh:
+  location: 細胞質
+  type: 氧化脫羧（產生 NADPH）
+  exam_points:
+  - 脂肪酸合成的 NADPH 來源：PPP（主要）＋ malic enzyme
+tags:
+- lipid_metabolism
+- fa_synthesis
+status: pending

@@ -1,0 +1,12 @@
+id: dhap
+name: Dihydroxyacetone phosphate
+label: "Dihydroxyacetone\nphosphate"
+aliases: [DHAP, 磷酸二羥丙酮]
+smiles: "O=P([O-])([O-])OCC(=O)CO"
+chain:
+  - {c: "CH_2O{P}"}
+  - {c: C, r: O, rb: 2}
+  - {c: CH_2OH}
+tags: [carb_metabolism, glycolysis, lipid]
+notes_zh: 由 TPI 轉成 G3P；也可經 glycerol-3-P dehydrogenase 轉成 glycerol-3-P（TG 合成、shuttle）。
+status: approved

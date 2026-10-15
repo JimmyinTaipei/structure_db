@@ -1,0 +1,28 @@
+id: prostacyclin_synthase
+title: PGH₂ → PGI₂ (prostacyclin synthase)
+substrates:
+- pgh2
+products:
+- pgi2
+enzyme: prostacyclin synthase
+reversible: false
+decorate:
+  pgh2:
+    highlight:
+    - smarts: '[OX2:1][OX2:2]'
+      color: magenta
+  pgi2:
+    highlight:
+    - smarts: '[O;R:1]'
+      color: magenta
+    - smarts: '[C;R][OH:1]'
+      color: magenta
+card_zh:
+  location: 血管內皮
+  type: 異構化（CYP8A1）
+  exam_points:
+  - PGI₂ 與 TXA₂ 的平衡決定血小板凝集；ω-3（EPA）讓 TXA₃ 較弱 → 抗血栓
+tags:
+- lipid_metabolism
+- eicosanoid_synthesis
+status: pending

@@ -1,0 +1,33 @@
+id: peptide_bond_resonance
+title: Peptide bond resonance
+layout: free
+cell_size: 7
+nodes:
+- id: a
+  ref: peptide_unit
+  pos:
+  - 0
+  - 0
+- id: b
+  ref: peptide_unit_resonance
+  pos:
+  - 1.5
+  - 0
+- id: c
+  text: 'C–N bond: ~40 % double-bond character
+
+    → planar, rigid, no rotation; usually trans'
+  kind: concept
+  pos:
+  - 0.75
+  - 0.85
+edges:
+- from: a
+  to: b
+  resonance: true
+tags:
+- protein
+- peptide
+- protein_structure
+notes_zh: 胜肽鍵的兩個共振式：O 帶部分負電、N 帶部分正電，C–N 鍵約 40 % 雙鍵性質 → 六個原子（Cα、C、O、N、H、Cα）共平面、不能自由旋轉。幾乎都是 trans（兩個 Cα 在對側，立體障礙小）；X–Pro 鍵約 10 % 為 cis（peptidyl prolyl isomerase 催化轉換）。
+status: pending

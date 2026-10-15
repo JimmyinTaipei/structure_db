@@ -1,0 +1,69 @@
+id: ketone_bodies
+title: Ketone body synthesis（酮體合成，肝粒線體）
+layout: free
+cell_size: 9.0
+nodes:
+- id: ac
+  ref: acetyl_coa
+  pos:
+  - 0
+  - 0
+- id: aac
+  ref: acetoacetyl_coa
+  pos:
+  - 0
+  - 1.1
+- id: hmg
+  ref: hmg_coa
+  pos:
+  - 0
+  - 2.4
+- id: aa
+  ref: acetoacetate
+  pos:
+  - 1.6
+  - 2.4
+- id: bhb
+  ref: beta_hydroxybutyrate
+  pos:
+  - 3.2
+  - 2.4
+- id: ace
+  ref: acetone
+  pos:
+  - 1.6
+  - 3.7
+edges:
+- from: ac
+  to: aac
+  step: acetoacetyl_coa_thiolase
+  label: thiolase
+  side_text: 2 acetyl-CoA → CoA
+- from: aac
+  to: hmg
+  step: hmg_coa_synthase
+  label: 'HMG-CoA synthase
+
+    (rate-limiting)'
+  side_text: acetyl-CoA, H_2O
+- from: hmg
+  to: aa
+  step: hmg_coa_lyase
+  label: HMG-CoA lyase
+  side_text: → acetyl-CoA
+- from: aa
+  to: bhb
+  step: hydroxybutyrate_dehydrogenase
+  label: β-HB DH
+  side_text: NADH → NAD^+
+  reversible: true
+- from: aa
+  to: ace
+  step: acetoacetate_decarboxylation
+  label: spontaneous
+  side_text: CO_2
+tags:
+- lipid_metabolism
+- ketone_bodies
+notes_zh: 飢餓、糖尿病（insulin ↓、glucagon ↑）時，β 氧化產生的 acetyl-CoA 超過 TCA 的處理量（OAA 被拿去做糖質新生）→ 酮體。肝製造、肝外利用（SCOT：succinyl-CoA → succinate；肝缺 SCOT）。腦在長期飢餓時可用酮體提供約 2/3 能量；紅血球不能用（無粒線體）。
+status: pending

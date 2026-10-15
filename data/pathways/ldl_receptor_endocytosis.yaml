@@ -1,0 +1,307 @@
+id: ldl_receptor_endocytosis
+title: Receptor-mediated endocytosis of LDL
+layout: cycle
+radius: 2.2
+cell_size: 5.0
+start_angle: -90
+center_text: 'LDL
+
+  receptor
+
+  cycle'
+nodes:
+- id: bind
+  text: 'LDL (apoB-100) binds
+
+    LDL receptor'
+  kind: protein
+- id: pit
+  text: 'Clathrin-coated pit
+
+    (AP2 adaptor)'
+  kind: protein
+- id: ves
+  text: 'Coated vesicle
+
+    (dynamin pinches off)'
+  kind: name
+- id: endo
+  text: 'Uncoated → endosome
+
+    (low pH: LDL released)'
+  kind: name
+- id: lys
+  text: 'Lysosome: cholesterol esters
+
+    → free cholesterol'
+  kind: name
+- id: rec
+  text: 'Receptor recycles
+
+    to surface'
+  kind: protein
+edges:
+- from: bind
+  to: pit
+- from: pit
+  to: ves
+- from: ves
+  to: endo
+- from: endo
+  to: lys
+- from: endo
+  to: rec
+  bend: 0.3
+- from: rec
+  to: bind
+tags:
+- membrane
+- membrane_transport
+- lipid_metabolism
+- lipoprotein
+notes_zh: Clathrin 為三腳形 triskelion（3 重鏈 + 3 輕鏈）；AP2 連接受體與 clathrin；dynamin（GTPase）切下小泡。內體酸化使 LDL 與受體分離，受體回到膜上；LDL 進溶體，cholesteryl ester 被 acid lipase 水解。游離膽固醇：抑制 HMG-CoA reductase（SREBP 停止）、減少 LDL receptor
+  合成、活化 ACAT 酯化儲存。家族性高膽固醇血症：LDL receptor 缺陷。胞吞種類：phagocytosis（>200 nm）、pinocytosis（clathrin、caveolin、macropinocytosis）。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 31.0
+        - 1.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 31.0
+        - 5.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 3.0
+        x0: -1.0
+        x1: 31.0
+        lipids: true
+      - g: ion
+        at:
+        - 3.0
+        - -1.6
+        r: 0.9
+        hue: yellow
+        text: LDL
+        text_size: 0.42
+      - g: blob
+        at:
+        - 3.0
+        - 0.2
+        w: 1.4
+        h: 1.0
+        shape: oval
+        hue: blue
+      - g: blob
+        at:
+        - 3.0
+        - 3.0
+        w: 0.5
+        h: 3.0
+        shape: box
+        hue: blue
+      - g: text
+        at:
+        - 3.0
+        - 5.6
+        text: LDL receptor
+        size: 0.6
+        align: center
+      - g: ion
+        at:
+        - 10.6
+        - 9.4
+        r: 1.5
+        hue: blue
+      - g: ion
+        at:
+        - 12.45
+        - 9.4
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 12.202146997001211
+        - 10.325000000000001
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 11.525
+        - 11.002146997001212
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 10.6
+        - 11.25
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 9.675
+        - 11.002146997001212
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 8.997853002998788
+        - 10.325000000000001
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 8.75
+        - 9.4
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 8.997853002998788
+        - 8.475
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 9.674999999999999
+        - 7.79785300299879
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 10.6
+        - 7.550000000000001
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 11.525
+        - 7.797853002998789
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 12.202146997001211
+        - 8.475
+        r: 0.26
+        hue: gray
+      - g: ion
+        at:
+        - 10.6
+        - 9.4
+        r: 0.75
+        hue: yellow
+        text: LDL
+        text_size: 0.38
+      - g: text
+        at:
+        - 10.6
+        - 12.2
+        text: clathrin-coated vesicle
+        size: 0.6
+        align: center
+      - g: text
+        at:
+        - 13.0
+        - 6.6
+        text: dynamin
+        size: 0.6
+        align: left
+        color: gray
+      - g: arrow
+        from:
+        - 4.4
+        - 5.6
+        to:
+        - 8.8
+        - 7.8
+        color: black
+        curve: 0
+      - g: arrow
+        from:
+        - 12.6
+        - 9.6
+        to:
+        - 15.4
+        - 9.6
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 18.0
+        - 9.6
+        r: 2.2
+        hue: teal
+      - g: ion
+        at:
+        - 17.4
+        - 9.8
+        r: 0.7
+        hue: yellow
+        text: LDL
+        text_size: 0.36
+      - g: text
+        at:
+        - 20.6
+        - 10.4
+        text: endosome (pH ↓)
+        size: 0.6
+        align: left
+      - g: arrow
+        from:
+        - 19.6
+        - 7.8
+        to:
+        - 23.6
+        - 4.6
+        color: blue
+        curve: -0.1
+      - g: text
+        at:
+        - 23.8
+        - 6.2
+        text: receptor recycles
+        size: 0.6
+        align: left
+        color: blue
+      - g: arrow
+        from:
+        - 17.4
+        - 11.8
+        to:
+        - 17.4
+        - 13.6
+        color: black
+        curve: 0
+      - g: ion
+        at:
+        - 17.4
+        - 15.0
+        r: 1.3
+        hue: pink
+      - g: text
+        at:
+        - 19.2
+        - 15.0
+        text: lysosome
+        size: 0.62
+        align: left
+      - g: text
+        at:
+        - 17.4
+        - 17.2
+        text: cholesterol inhibits HMG-CoA reductase
+        size: 0.62
+        align: center

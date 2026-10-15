@@ -1,0 +1,230 @@
+id: dna_binding_motifs
+title: DNA-binding motifs
+layout: scene
+scene:
+  items:
+  - g: helix
+    from:
+    - 0.0
+    - 4.0
+    to:
+    - 11.0
+    - 4.0
+    pitch: 3.6
+    amp: 0.7
+  - g: blob
+    at:
+    - 4.4
+    - 1.7999999999999998
+    w: 0.75
+    h: 2.2
+    shape: box
+    hue: purple
+    rot: 50
+  - g: blob
+    at:
+    - 5.6
+    - 3.4
+    w: 0.75
+    h: 2.2
+    shape: box
+    hue: pink
+    rot: 90
+  - g: text
+    at:
+    - 5.5
+    - -0.2999999999999998
+    text: Helix-turn-helix
+    size: 0.85
+    align: center
+  - g: text
+    at:
+    - 5.5
+    - 5.8
+    text: CAP, LacI, Cro, homeodomain
+    size: 0.65
+    align: center
+    color: gray
+  - g: helix
+    from:
+    - 14.0
+    - 4.0
+    to:
+    - 25.0
+    - 4.0
+    pitch: 3.6
+    amp: 0.7
+  - g: ion
+    at:
+    - 19.0
+    - 2.0
+    r: 0.42
+    hue: gray
+    text: Zn
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 17.4
+    - 3.1
+    to:
+    - 18.0
+    - 1.4
+    color: '#5F5F5F'
+    width: 1.6
+  - g: strand
+    kind: gray
+    points:
+    - - 18.0
+      - 2.2
+    - - 18.6
+      - 2.0
+    width: 0.08
+  - g: strand
+    kind: gray
+    points:
+    - - 19.3
+      - 2.3
+    - - 19.6
+      - 3.1
+    width: 0.08
+  - g: blob
+    at:
+    - 19.8
+    - 3.4
+    w: 0.75
+    h: 2.2
+    shape: box
+    hue: pink
+    rot: 90
+  - g: text
+    at:
+    - 19.5
+    - -0.2999999999999998
+    text: Zinc finger
+    size: 0.85
+    align: center
+  - g: text
+    at:
+    - 19.5
+    - 5.8
+    text: steroid / thyroid receptors, TFIIIA, Sp1
+    size: 0.65
+    align: center
+    color: gray
+  - g: helix
+    from:
+    - 0.0
+    - 12.5
+    to:
+    - 11.0
+    - 12.5
+    pitch: 3.6
+    amp: 0.7
+  - g: blob
+    at:
+    - 4.6
+    - 10.5
+    w: 0.75
+    h: 4.2
+    shape: box
+    hue: pink
+    rot: 22
+  - g: blob
+    at:
+    - 6.4
+    - 10.5
+    w: 0.75
+    h: 4.2
+    shape: box
+    hue: teal
+    rot: -22
+  - g: text
+    at:
+    - 5.5
+    - 7.7
+    text: Leucine zipper (bZIP)
+    size: 0.85
+    align: center
+  - g: text
+    at:
+    - 5.5
+    - 14.3
+    text: c-Fos/c-Jun (AP-1), CREB, C/EBP
+    size: 0.65
+    align: center
+    color: gray
+  - g: helix
+    from:
+    - 14.0
+    - 12.5
+    to:
+    - 25.0
+    - 12.5
+    pitch: 3.6
+    amp: 0.7
+  - g: blob
+    at:
+    - 18.4
+    - 11.1
+    w: 0.75
+    h: 3.0
+    shape: box
+    hue: pink
+    rot: 22
+  - g: blob
+    at:
+    - 20.6
+    - 11.1
+    w: 0.75
+    h: 3.0
+    shape: box
+    hue: teal
+    rot: -22
+  - g: blob
+    at:
+    - 18.6
+    - 9.1
+    w: 0.75
+    h: 1.8
+    shape: box
+    hue: pink
+    rot: -50
+  - g: blob
+    at:
+    - 20.4
+    - 9.1
+    w: 0.75
+    h: 1.8
+    shape: box
+    hue: teal
+    rot: 50
+  - g: text
+    at:
+    - 19.5
+    - 7.7
+    text: Helix-loop-helix (bHLH)
+    size: 0.85
+    align: center
+  - g: text
+    at:
+    - 19.5
+    - 14.3
+    text: MyoD, Myc/Max
+    size: 0.65
+    align: center
+    color: gray
+  - g: text
+    at:
+    - 12.5
+    - 16.0
+    text: pink = recognition helix in the major groove
+    size: 0.65
+    align: center
+    color: gray
+tags:
+- molecular_biology
+- gene_regulation
+notes_zh: 多數以 α-helix 嵌入 major groove（氫鍵多），以 Arg、Gln、Asn 辨識鹼基。HTH：CAP、LacI、Cro、homeodomain。Zinc finger：Cys₂His₂（TFIIIA、Sp1）、Cys₄（核受體：steroid、thyroid、retinoic acid、vitamin D receptor）。Leucine zipper（bZIP）：每
+  7 個胺基酸一個 Leu 形成 coiled-coil 二聚，鹼性區抓 DNA（c-Fos/c-Jun = AP-1、CREB）。bHLH：MyoD、Myc/Max。例外：TBP 以 β-sheet 結合 TATA 的 minor groove。
+parts_png: false
+status: pending

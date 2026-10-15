@@ -1,0 +1,30 @@
+id: aldose_reductase_galactose
+title: Galactose → Galactitol (aldose reductase)
+substrates:
+- d_galactose
+products:
+- galactitol
+cofactors_in:
+- NADPH+H+
+cofactors_out:
+- NADP+
+enzyme: aldose reductase
+reversible: false
+decorate:
+  NADPH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+  galactitol:
+    colors: {0: magenta}
+card_zh:
+  type: 還原
+  exam_points:
+  - galactitol 不能再被代謝 → galactosemia 的白內障
+tags:
+- carb_metabolism
+- polyol
+- galactose_metabolism
+status: pending

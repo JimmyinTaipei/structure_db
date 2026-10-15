@@ -1,0 +1,43 @@
+id: phenylalanine_hydroxylase
+title: Phenylalanine → Tyrosine (phenylalanine hydroxylase)
+substrates:
+- phenylalanine
+products:
+- tyrosine
+cofactors_in:
+- O2
+- BH4
+cofactors_out:
+- H2O
+- BH2
+enzyme: 'phenylalanine
+
+  hydroxylase'
+reversible: false
+decorate:
+  tyrosine:
+    colors:
+      3:
+        ring:
+        - atoms: [5]
+          color: magenta
+  O2:
+    colors: {0: magenta}
+  H2O:
+    colors: {0: magenta}
+card_zh:
+  location: 肝（細胞質）
+  type: 羥化（單氧酶：一個 O 進 Tyr、一個變成 H₂O）
+  cofactors: BH4（tetrahydrobiopterin）→ BH2，由 dihydropteridine reductase（NADH）再生
+  deficiency:
+  - PKU（PAH 缺乏）：Phe ↑ → phenylpyruvate、phenyllactate、phenylacetate（鼠臭味）；智能障礙、淺色皮膚（Tyr ↓ → 黑色素 ↓）；治療：低 Phe 飲食、補 Tyr、避免 aspartame
+  - BH4 缺乏（DHPR 等）：惡性 PKU，也影響 dopamine 與 serotonin 合成
+  - 母體 PKU：胎兒小頭、心臟缺陷
+  exam_points:
+  - Tyr 在 PKU 變成必需胺基酸
+  - 新生兒篩檢項目
+tags:
+- amino_acid_metabolism
+- aa_derivatives
+- aa_degradation
+status: pending

@@ -1,0 +1,13 @@
+id: d_xylulose
+name: "D-Xylulose"
+aliases: [Xylulose]
+smiles: "O=C(CO)[C@@H](O)[C@H](O)CO"
+chain:
+  - {c: "CH_2OH"}
+  - {c: "C", r: "O", rb: 2}
+  - {c: "C", l: "HO", r: "H"}
+  - {c: "C", l: "H", r: "OH"}
+  - {c: "CH_2OH"}
+tags: [carbohydrate, monosaccharide, ketose]
+notes_zh: "ribulose 的 C3 epimer；xylulose 5-phosphate 是 transketolase 的 2C 供體。（ketopentose）"
+status: pending

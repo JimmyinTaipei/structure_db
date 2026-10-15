@@ -1,0 +1,21 @@
+id: malonyl_coa
+name: Malonyl-CoA
+aliases:
+- 丙二醯輔酶A
+smiles: '[O-]C(=O)CC(=O)S[1*]'
+chain:
+- c: C
+  fork:
+    l: O
+    lb: 2
+    r: O^-
+- c: CH_2
+- c: C
+  l: O
+  lb: 2
+  r: S-CoA
+tags:
+- lipid_metabolism
+- fa_synthesis
+notes_zh: ACC（biotin）的產物、脂肪酸合成每輪的 2C 供體（加入時放出 CO₂ 推動縮合）。同時抑制 CPT-I → 合成時不會同時 β 氧化。
+status: pending

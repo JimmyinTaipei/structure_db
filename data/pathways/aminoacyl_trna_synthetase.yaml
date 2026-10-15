@@ -1,0 +1,145 @@
+id: aminoacyl_trna_synthetase
+title: 'Aminoacyl-tRNA synthetase: charging tRNA'
+layout: scene
+scene:
+  items:
+  - g: blob
+    at:
+    - 3.2
+    - 3.0
+    w: 3.6
+    h: 2.6
+    shape: kidney
+    hue: teal
+    text: aaRS
+    text_size: 0.7
+  - g: ion
+    at:
+    - 2.4
+    - 0.7999999999999998
+    r: 0.42
+    hue: orange
+    text: aa
+    text_size: 0.5
+  - g: text
+    at:
+    - 4.4
+    - 0.7999999999999998
+    text: + ATP
+    size: 0.78
+    align: center
+  - g: arrow
+    from:
+    - 6.0
+    - 3.0
+    to:
+    - 8.4
+    - 3.0
+    style: fat
+  - g: text
+    at:
+    - 7.2
+    - 1.8
+    text: PP_i → 2 P_i
+    size: 0.68
+    align: center
+    color: gray
+  - g: blob
+    at:
+    - 11.6
+    - 3.0
+    w: 3.6
+    h: 2.6
+    shape: kidney
+    hue: teal
+    text: ''
+    text_size: 0.7
+  - g: ion
+    at:
+    - 10.9
+    - 2.7
+    r: 0.42
+    hue: orange
+    text: aa
+    text_size: 0.5
+  - g: ion
+    at:
+    - 11.9
+    - 2.7
+    r: 0.42
+    hue: yellow
+    text: AMP
+    text_size: 0.42
+  - g: text
+    at:
+    - 11.4
+    - 5.1
+    text: aminoacyl-AMP (enzyme-bound)
+    size: 0.68
+    align: center
+  - g: arrow
+    from:
+    - 14.4
+    - 3.0
+    to:
+    - 16.8
+    - 3.0
+    style: fat
+  - g: text
+    at:
+    - 15.6
+    - 1.8
+    text: + tRNA
+    size: 0.75
+    align: center
+  - g: blob
+    at:
+    - 21.0
+    - 5.4
+    w: 4.4
+    h: 2.4
+    shape: kidney
+    hue: teal
+    text: aaRS
+    text_size: 0.7
+    text_dx: 1.3
+    text_dy: 0.3
+  - g: trna
+    at:
+    - 20.4
+    - 3.3
+    s: 0.7
+  - g: ion
+    at:
+    - 20.55
+    - 0.6000000000000001
+    r: 0.4
+    hue: orange
+    text: aa
+    text_size: 0.5
+  - g: text
+    at:
+    - 23.2
+    - 2.0
+    text: + AMP
+    size: 0.78
+    align: left
+  - g: text
+    at:
+    - 23.2
+    - 0.6000000000000001
+    text: aminoacyl-tRNA (charged)
+    size: 0.75
+    align: left
+tags:
+- molecular_biology
+- translation
+notes_zh: '兩步：aa + ATP → aa~AMP + PPi；aa~AMP + tRNA → aa-tRNA + AMP（每個胺基酸 2 個高能鍵）。Class I 接 2′-OH、class II 接 3′-OH。辨識 anticodon 與 acceptor stem / discriminator base（second genetic code，tRNA^{Ala} 的 G3·U70）。Double-sieve
+  校對（IleRS 剔除 Val）。
+
+  【補充】Step 1 (activation): aa + ATP → aa~AMP + PP_i (PP_i hydrolysed → 2 high-energy bonds per amino acid). Step 2: aa~AMP + tRNA → aa-tRNA + AMP. Class I aaRS (Rossmann fold, monomeric) attach the aa to
+  the 2′-OH of A76, then it moves to 3′-OH; class II (dimeric, antiparallel β) attach directly to 3′-OH. Specificity (''second genetic code''): anticodon + acceptor stem / discriminator base (tRNA^{Ala}:
+  one G3·U70 pair is enough). Proofreading (double sieve): IleRS activates Val by mistake (~1/200) and hydrolyses Val-AMP / Val-tRNA^{Ile} in an editing site → error ~1/50 000. Indirect routes: Glu-tRNA^{Gln}
+  → Gln-tRNA^{Gln} (amidotransferase, many bacteria); Ser-tRNA^{Sec} → Sec-tRNA^{Sec} (selenocysteine).'
+parts_png: false
+status: pending

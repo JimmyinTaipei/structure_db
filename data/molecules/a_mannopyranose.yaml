@@ -1,0 +1,17 @@
+id: a_mannopyranose
+name: "α-D-Mannopyranose"
+label: "α-D-Mannose"
+aliases: [α-D-mannose]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@@H]([C@H](O1)O)O)O)O)O"
+haworth:
+  ring: "pyranose"
+  numbers: true
+  subs:
+    1: {up: "H", down: "OH"}
+    2: {up: "HO", down: "H"}
+    3: {up: "OH", down: "H"}
+    4: {up: "H", down: "HO"}
+    5: {up: "CH_2OH", down: "H"}
+tags: [carbohydrate, monosaccharide, aldose]
+notes_zh: "glucose 的 C2 epimer：Haworth 中 C2-OH 在上。N-連結醣蛋白核心（Man₃GlcNAc₂）。"
+status: pending

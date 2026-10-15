@@ -1,0 +1,115 @@
+id: bohr_effect_co2_transport
+title: Bohr effect and CO2 transport
+layout: free
+cell_size: 5.0
+regions:
+- kind: box
+  x0: -0.75
+  y0: -0.6
+  x1: 2.45
+  y1: 2.6
+  label: Tissue capillary
+- kind: box
+  x0: 2.6
+  y0: -0.6
+  x1: 5.7
+  y1: 2.6
+  label: Lung
+nodes:
+- id: co2t
+  text: CO_2 + H_2O
+  pos:
+  - 0.3
+  - 0.15
+  kind: ion
+- id: h2co3
+  text: H_2CO_3
+  pos:
+  - 0.3
+  - 1.05
+  kind: ion
+- id: hco3
+  text: HCO_3^- + H^+
+  pos:
+  - 0.3
+  - 1.95
+  kind: ion
+- id: hbo2
+  text: HbO_2 (R)
+  pos:
+  - 1.5
+  - 0.15
+  kind: protein
+- id: hbh
+  text: 'H^+–Hb (T)
+
+    + O_2 → tissue'
+  pos:
+  - 1.45
+  - 1.95
+  kind: protein
+- id: hbh2
+  text: H^+–Hb (T)
+  pos:
+  - 3.35
+  - 1.95
+  kind: protein
+- id: hbo2l
+  text: HbO_2 (R) + H^+
+  pos:
+  - 3.45
+  - 0.15
+  kind: protein
+- id: co2l
+  text: 'CO_2 + H_2O
+
+    (exhaled)'
+  pos:
+  - 5.0
+  - 0.15
+  kind: ion
+- id: hco3l
+  text: HCO_3^- + H^+
+  pos:
+  - 5.0
+  - 1.95
+  kind: ion
+edges:
+- from: co2t
+  to: h2co3
+  label: 'carbonic
+
+    anhydrase'
+- from: h2co3
+  to: hco3
+- from: hco3
+  to: hbh
+  color: magenta
+  label: 'H^+ binds
+
+    His146 (β)'
+- from: hbo2
+  to: hbh
+  label: O_2 released
+- from: hbh
+  to: hbh2
+  label: blood
+- from: hbh2
+  to: hbo2l
+  label: 'O_2 binds
+
+    → H^+ released'
+- from: hbo2l
+  to: hco3l
+  color: magenta
+- from: hco3l
+  to: co2l
+  label: 'carbonic
+
+    anhydrase'
+tags:
+- protein
+- hemoglobin
+notes_zh: Bohr effect：組織 CO₂ 多 → carbonic anhydrase 產生 H⁺ → H⁺ 結合 Hb（β His146 與 Asp94 形成鹽橋）→ 穩定 T 態、放出 O₂。肺部 O₂ 高 → 轉成 R 態釋出 H⁺ → 與 HCO₃⁻ 變回 CO₂ 呼出。CO₂ 也直接接在 N 端胺基形成 carbamate（–NH–COO⁻），同樣穩定 T 態。運輸形式：HCO₃⁻（~70
+  %，chloride shift）、carbamino-Hb（~20 %）、溶解（~10 %）。
+status: pending

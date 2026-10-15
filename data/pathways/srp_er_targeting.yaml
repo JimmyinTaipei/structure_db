@@ -1,0 +1,298 @@
+id: srp_er_targeting
+title: Co-translational targeting to the ER (SRP cycle)
+layout: scene
+scene:
+  items:
+  - g: region
+    x0: -0.6
+    y0: 10.6
+    x1: 30.0
+    y1: 15.0
+    hue: yellow
+    opacity: 0.18
+    outline: false
+  - g: text
+    at:
+    - 0.0
+    - 14.2
+    text: ER lumen
+    size: 0.75
+    align: left
+    color: gray
+  - g: text
+    at:
+    - 29.6
+    - -1.2
+    text: cytosol
+    size: 0.75
+    align: right
+    color: gray
+  - g: membrane
+    y: 9.0
+    x0: -0.6
+    x1: 30.0
+    t: 2.4
+  - g: strand
+    kind: rna
+    points:
+    - - 0.2
+      - 2.0
+    - - 5.8
+      - 2.0
+    width: 0.3
+    ends:
+    - 5'
+    - ''
+  - g: ribosome
+    at:
+    - 3.0
+    - 2.0
+    w: 5.0
+    sites: false
+    flip: true
+  - g: strand
+    kind: '#D23A3A'
+    points:
+    - - 3.0
+      - 5.2
+    - - 3.4
+      - 5.8
+    - - 2.8
+      - 6.4
+    - - 3.2
+      - 7.0
+    width: 0.32
+  - g: text
+    at:
+    - 3.6
+    - 6.9
+    text: signal sequence
+    size: 0.68
+    align: left
+    color: red
+  - g: strand
+    kind: rna
+    points:
+    - - 7.7
+      - 2.0
+    - - 13.3
+      - 2.0
+    width: 0.3
+    ends:
+    - ''
+    - ''
+  - g: ribosome
+    at:
+    - 10.5
+    - 2.0
+    w: 5.0
+    sites: false
+    flip: true
+  - g: strand
+    kind: '#D23A3A'
+    points:
+    - - 10.5
+      - 5.2
+    - - 10.9
+      - 5.8
+    - - 10.3
+      - 6.4
+    width: 0.32
+  - g: blob
+    at:
+    - 11.5
+    - 6.6
+    w: 2.6
+    h: 1.2
+    shape: oval
+    hue: pink
+    text: SRP
+    text_size: 0.55
+  - g: text
+    at:
+    - 10.5
+    - -0.6
+    text: 'SRP binds the signal;
+
+      translation pauses'
+    size: 0.68
+    align: center
+    color: gray
+  - g: strand
+    kind: rna
+    points:
+    - - 14.7
+      - 4.6
+    - - 20.3
+      - 4.6
+    width: 0.3
+    ends:
+    - ''
+    - ''
+  - g: ribosome
+    at:
+    - 17.5
+    - 4.6
+    w: 5.0
+    sites: false
+    flip: true
+  - g: blob
+    at:
+    - 14.2
+    - 7.25
+    w: 1.8
+    h: 1.0
+    shape: oval
+    hue: pink
+    text: SRP
+    text_size: 0.45
+  - g: blob
+    at:
+    - 14.2
+    - 9.0
+    w: 1.6
+    h: 2.8
+    shape: box
+    hue: purple
+    text: SR
+    text_size: 0.5
+  - g: channel
+    at:
+    - 17.5
+    - 9.0
+    open: true
+    hue: teal
+  - g: text
+    at:
+    - 17.0
+    - 12.4
+    text: docks on Sec61
+    size: 0.66
+    align: center
+    color: gray
+  - g: strand
+    kind: rna
+    points:
+    - - 22.2
+      - 4.6
+    - - 27.8
+      - 4.6
+    width: 0.3
+    ends:
+    - ''
+    - 3'
+  - g: ribosome
+    at:
+    - 25.0
+    - 4.6
+    w: 5.0
+    sites: false
+    flip: true
+  - g: channel
+    at:
+    - 25.0
+    - 9.0
+    open: true
+    hue: teal
+  - g: strand
+    kind: '#5F4A8C'
+    points:
+    - - 25.0
+      - 7.6
+    - - 25.0
+      - 11.0
+    - - 25.6
+      - 12.0
+    - - 26.4
+      - 11.6
+    - - 27.2
+      - 12.4
+    width: 0.3
+  - g: strand
+    kind: '#D23A3A'
+    points:
+    - - 22.4
+      - 11.4
+    - - 22.9
+      - 12.2
+    - - 23.4
+      - 11.7
+    width: 0.32
+  - g: blob
+    at:
+    - 23.6
+    - 10.75
+    w: 1.6
+    h: 1.0
+    shape: oval
+    hue: orange
+    text: SPase
+    text_size: 0.42
+  - g: ligand
+    at:
+    - 27.6
+    - 13.4
+    shape: hexagon
+    hue: blue
+    r: 0.35
+  - g: ligand
+    at:
+    - 28.3
+    - 13.9
+    shape: hexagon
+    hue: green
+    r: 0.35
+  - g: ligand
+    at:
+    - 27.6
+    - 14.3
+    shape: hexagon
+    hue: green
+    r: 0.35
+  - g: blob
+    at:
+    - 29.0
+    - 11.9
+    w: 1.6
+    h: 1.2
+    shape: round
+    hue: brown
+    text: BiP
+    text_size: 0.45
+  - g: arrow
+    from:
+    - 5.9
+    - 2.0
+    to:
+    - 7.5
+    - 2.0
+    style: fat
+  - g: arrow
+    from:
+    - 13.4
+    - 2.4
+    to:
+    - 14.9
+    - 3.9
+    style: fat
+  - g: arrow
+    from:
+    - 20.4
+    - 4.6
+    to:
+    - 22.0
+    - 4.6
+    style: fat
+tags:
+- molecular_biology
+- translation
+notes_zh: 'N 端 signal sequence 冒出 → SRP（7SL RNA + 蛋白，GTPase）結合、轉譯暫停 → SRP receptor（GTP）把核糖體送到 Sec61 translocon → SRP 水解 GTP 離開、轉譯恢復 → 胜肽穿膜進入內腔 → signal peptidase 切除訊號 → OST 由 dolichol-PP 轉移 N-glycan 到 Asn-X-Ser/Thr（tunicamycin
+  抑制）→ BiP 協助摺疊 → Golgi。細菌：SRP（4.5S RNA）/FtsY、SecB + SecA → SecYEG、Tat（已摺疊）。
+
+  【補充】SRP = 7SL RNA (Alu-like) + 6 proteins; SRP54 binds the hydrophobic signal (+ charge, 10–15 hydrophobic aa) and is a GTPase, as is the SRP receptor; GTP hydrolysis releases both. Proteins made this
+  way: secreted, plasma-membrane, ER / Golgi, lysosomal. Tunicamycin blocks the first step of dolichol-PP-oligosaccharide synthesis (N-glycosylation). Bacteria: SRP (4.5S RNA) + FtsY → SecYEG co-translationally;
+  post-translational SecB (chaperone) + SecA (ATPase) → SecYEG; folded proteins via Tat (twin-Arg signal).
+
+  【補充】translation resumes; signal peptidase cuts; OST adds the N-glycan (Asn-X-Ser/Thr) from dolichol-PP; BiP folds'
+parts_png: false
+status: pending

@@ -1,0 +1,37 @@
+id: acetyl_coa_carboxylase
+title: Acetyl-CoA → Malonyl-CoA (acetyl-CoA carboxylase)
+substrates:
+- acetyl_coa
+- id: bicarbonate
+  view: formula
+products:
+- malonyl_coa
+cofactors_in:
+- ATP
+cofactors_out:
+- ADP
+- Pi
+extra_out:
+- H+
+prosthetic:
+- biotin
+enzyme: 'acetyl-CoA carboxylase
+
+  (ACC)'
+reversible: false
+decorate:
+  bicarbonate:
+    colors: {0: magenta}
+  malonyl_coa:
+    colors: {0: magenta}
+card_zh:
+  location: 細胞質
+  type: 羧化（biotin、ATP）
+  regulation: 限速。citrate 活化（聚合）；palmitoyl-CoA 抑制；AMPK 與 glucagon／epinephrine（PKA）磷酸化 → 失活；insulin 去磷酸化 → 活化
+  exam_points:
+  - 脂肪酸合成的限速酵素
+  - malonyl-CoA 同時抑制 CPT-I
+tags:
+- lipid_metabolism
+- fa_synthesis
+status: pending

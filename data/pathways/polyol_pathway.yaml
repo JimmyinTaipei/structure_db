@@ -1,0 +1,35 @@
+id: polyol_pathway
+title: Polyol pathway（多元醇路徑）
+layout: linear
+nodes:
+- id: glc
+  ref: glucose
+  pos:
+  - 0
+  - 0
+- id: sor
+  ref: sorbitol
+  pos:
+  - 1
+  - 0
+- id: fru
+  ref: d_fructose
+  pos:
+  - 2
+  - 0
+edges:
+- from: glc
+  to: sor
+  step: aldose_reductase
+  label: aldose reductase
+  side_text: NADPH → NADP^+
+- from: sor
+  to: fru
+  step: sorbitol_dehydrogenase
+  label: sorbitol DH
+  side_text: NAD^+ → NADH
+tags:
+- carb_metabolism
+- polyol
+notes_zh: 水晶體、視網膜、Schwann 細胞缺 sorbitol DH → 高血糖時 sorbitol 堆積 → 滲透壓損傷（白內障、神經病變）。精囊用這條路徑把血糖變成精液中的果糖。
+status: pending

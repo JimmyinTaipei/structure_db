@@ -1,0 +1,24 @@
+id: membrane_lipids
+title: "Membrane lipids（甘油磷脂與鞘脂）"
+layout: free
+cell_size: 5.0
+node_anchor: top
+text: false
+nodes:
+  - {id: h1, text: "Glycerophospholipids (head group on the sn-3 phosphate)", kind: heading, pos: [-0.3, -0.8]}
+  - {id: pa, ref: phosphatidate, pos: [1.4, 0]}
+  - {id: pc, ref: phosphatidylcholine, pos: [4.6, 0]}
+  - {id: pe, ref: phosphatidylethanolamine, pos: [7.800000000000001, 0]}
+  - {id: ps, ref: phosphatidylserine, pos: [11.000000000000002, 0]}
+  - {id: pi, ref: phosphatidylinositol, pos: [14.200000000000001, 0]}
+  - {id: pg, ref: phosphatidylglycerol, pos: [17.4, 0]}
+  - {id: h2, text: "Sphingolipids (sphingosine backbone)", kind: heading, pos: [-0.3, 7.0]}
+  - {id: cer, ref: ceramide, pos: [1.4, 7.8]}
+  - {id: sm, ref: sphingomyelin, pos: [4.6, 7.8]}
+  - {id: gc, ref: galactocerebroside, pos: [7.800000000000001, 7.8]}
+  - {id: h3, text: "Neutral fat (storage, not in membranes)", kind: heading, pos: [9.4, 7.0]}
+  - {id: tag, ref: triacylglycerol, pos: [11.8, 7.8]}
+edges: []
+tags: [lipid, phospholipid, sphingolipid]
+notes_zh: "甘油磷脂：glycerol 的 sn-1、sn-2 接脂肪酸（sn-2 常為不飽和），sn-3 接磷酸＋頭基。鞘脂：sphingosine（C1 頭基、C2 醯胺接脂肪酸、C3-OH、trans-Δ4）。TAG 放在右下角作對照（中性、不在膜上）。"
+status: pending

@@ -1,0 +1,40 @@
+id: glycogen_phosphorylase
+title: Glycogen(n+1) + Pi → Glycogen(n) + Glucose 1-phosphate (glycogen phosphorylase)
+substrates:
+- glycogen_n1
+products:
+- glycogen_n
+- a_glucose_1p
+cofactors_in:
+- Pi
+prosthetic:
+- PLP
+enzyme: glycogen phosphorylase
+reversible: false
+decorate:
+  Pi:
+    colors: {0: magenta}
+  a_glucose_1p:
+    colors: {d1: magenta}
+  glycogen_n1:
+    colors: {link0: cyan}
+  glycogen_n:
+    colors:
+      d4: [cyan, O]
+card_zh:
+  location: 細胞質（肝、肌肉）
+  type: 磷酸解（phosphorolysis）：斷 α1→4，不耗 ATP
+  cofactors: PLP（B6，用它的磷酸當酸鹼觸媒）
+  regulation: glucagon（肝）／epinephrine（肝、肌）→ PKA → phosphorylase kinase → 磷酸化活化（a 型）；肌肉另有 AMP、Ca²⁺ 活化；肝中 glucose 抑制
+  mechanism: 停在分支點前 4 個殘基；debranching enzyme（transferase 搬 3 個 + α1→6 glucosidase 放出 1 個游離 glucose）
+  deficiency:
+  - McArdle（GSD V）：肌肉 phosphorylase → 運動不耐、肌肉痙攣、肌紅素尿，乳酸不上升
+  - Hers（GSD VI）：肝 phosphorylase
+  - Cori（GSD III）：debranching enzyme → 外層短分支（limit dextrin）
+  exam_points:
+  - 肝醣分解的限速酵素
+  - 磷酸解得到 G1P（已磷酸化），比水解多省 1 ATP
+tags:
+- carb_metabolism
+- glycogen
+status: pending

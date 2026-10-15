@@ -1,0 +1,566 @@
+id: receptor_types
+title: Receptor types and their ligands
+layout: free
+cell_size: 6.0
+nodes:
+- id: mem
+  text: Plasma membrane receptors
+  pos:
+  - 1.5
+  - 0
+  kind: heading
+- id: gpcr
+  text: 'GPCR (7TM)
+
+    epinephrine, glucagon,
+
+    light, odorants'
+  pos:
+  - -0.6
+  - 0.9
+  kind: protein
+- id: rtk
+  text: 'RTK
+
+    insulin, EGF, PDGF'
+  pos:
+  - 1.5
+  - 0.9
+  kind: protein
+- id: ser
+  text: 'Receptor Ser/Thr kinase
+
+    TGF-β'
+  pos:
+  - 3.6
+  - 0.9
+  kind: protein
+- id: rgc
+  text: 'Receptor guanylyl cyclase
+
+    ANF'
+  pos:
+  - -0.6
+  - 2.1
+  kind: protein
+- id: ion
+  text: 'Ligand-gated channel
+
+    nicotinic AChR'
+  pos:
+  - 1.5
+  - 2.1
+  kind: protein
+- id: jak
+  text: 'No enzyme activity (→ JAK)
+
+    cytokines, leptin, EPO'
+  pos:
+  - 3.6
+  - 2.1
+  kind: protein
+- id: in
+  text: Intracellular receptors
+  pos:
+  - 1.5
+  - 3.2
+  kind: heading
+- id: sgc
+  text: 'Cytosolic: soluble GC
+
+    (NO)'
+  pos:
+  - -0.6
+  - 4.0
+  kind: protein
+- id: nr
+  text: 'Nuclear (zinc finger):
+
+    steroids (Hsp90 in cytosol),
+
+    vit. D, thyroid, retinoic acid'
+  pos:
+  - 2.3
+  - 4.0
+  kind: protein
+edges: []
+tags:
+- signal_transduction
+notes_zh: 第一傳訊者分兩類：親水性（peptide、catecholamine）→ 膜受體 → 第二傳訊者，半衰期短；親脂性（steroid、thyroxine、vit. D、retinoic acid）→ 細胞內受體 → 調控轉錄，作用慢而久。膜受體：GPCR、RTK、受體 Ser/Thr kinase（TGF-β）、受體 guanylyl cyclase（ANF）、配體門控離子通道（nAChR）、本身無酵素活性的受體（經
+  JAK）；另有 adhesion receptor（integrin、cadherin、selectin、Ig-CAM）。Steroid 受體平時與 Hsp90 結合在細胞質，結合激素後入核成 homodimer；vit. D、thyroid、RA 受體已在核內，與 RXR 形成 heterodimer。訊號系統特徵：specificity、sensitivity、amplification、modularity、desensitization、integration、divergence、localized
+  response。
+status: pending
+variants:
+  illus:
+    note_zh: 圖片版（插畫）
+    scene:
+      items:
+      - g: text
+        at:
+        - 35.0
+        - 3.0
+        text: Outside
+        size: 0.7
+        align: right
+        color: gray
+      - g: text
+        at:
+        - 35.0
+        - 7.0
+        text: Cytosol
+        size: 0.7
+        align: right
+        color: gray
+      - g: membrane
+        y: 5.0
+        x0: -1.0
+        x1: 35.0
+        lipids: true
+      - g: ligand
+        at:
+        - 2.6
+        - 1.0
+        shape: triangle
+        hue: red
+        r: 0.45
+      - g: gpcr
+        at:
+        - 2.6
+        - 5.0
+        hue: purple
+      - g: text
+        at:
+        - 2.6
+        - 10.6
+        text: 'GPCR
+
+          (7TM)'
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 8.0
+        - 0.6
+        shape: diamond
+        hue: red
+        r: 0.45
+      - g: blob
+        at:
+        - 7.4
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: blue
+      - g: blob
+        at:
+        - 8.6
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: blue
+      - g: blob
+        at:
+        - 7.4
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: blue
+      - g: blob
+        at:
+        - 8.6
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: blue
+      - g: blob
+        at:
+        - 7.2
+        - 7.6
+        w: 1.2
+        h: 1.3
+        shape: oval
+        hue: blue
+        text: Y
+        text_size: 0.5
+      - g: blob
+        at:
+        - 8.8
+        - 7.6
+        w: 1.2
+        h: 1.3
+        shape: oval
+        hue: blue
+        text: Y
+        text_size: 0.5
+      - g: ion
+        at:
+        - 6.4
+        - 8.3
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: ion
+        at:
+        - 9.6
+        - 8.3
+        r: 0.3
+        hue: yellow
+        text: P
+        text_size: 0.4
+      - g: text
+        at:
+        - 8.0
+        - 10.6
+        text: RTK
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 13.4
+        - 0.6
+        shape: hexagon
+        hue: red
+        r: 0.45
+      - g: blob
+        at:
+        - 12.8
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: teal
+      - g: blob
+        at:
+        - 14.0
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: teal
+      - g: blob
+        at:
+        - 12.8
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: teal
+      - g: blob
+        at:
+        - 14.0
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: teal
+      - g: blob
+        at:
+        - 12.6
+        - 7.6
+        w: 1.2
+        h: 1.3
+        shape: oval
+        hue: teal
+        text: S/T
+        text_size: 0.42
+      - g: blob
+        at:
+        - 14.2
+        - 7.6
+        w: 1.2
+        h: 1.3
+        shape: oval
+        hue: teal
+        text: S/T
+        text_size: 0.42
+      - g: text
+        at:
+        - 13.4
+        - 10.6
+        text: 'Ser/Thr
+
+          kinase R'
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 18.6
+        - 0.8
+        shape: triangle
+        hue: red
+        r: 0.4
+      - g: blob
+        at:
+        - 18.6
+        - 2.3
+        w: 1.4
+        h: 1.4
+        shape: oval
+        hue: green
+      - g: blob
+        at:
+        - 18.6
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: green
+      - g: blob
+        at:
+        - 18.6
+        - 7.7
+        w: 1.8
+        h: 1.4
+        shape: oval
+        hue: green
+        text: GC
+        text_size: 0.5
+      - g: text
+        at:
+        - 18.6
+        - 10.6
+        text: 'Guanylyl
+
+          cyclase R'
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 23.6
+        - 1.0
+        shape: diamond
+        hue: red
+        r: 0.4
+      - g: channel
+        at:
+        - 24.6
+        - 5.0
+        hue: orange
+        open: true
+      - g: ion
+        at:
+        - 24.6
+        - 2.0
+        r: 0.4
+        hue: purple
+        text: Na^+
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 24.6
+        - 2.6
+        to:
+        - 24.6
+        - 7.6
+        color: magenta
+        curve: 0
+      - g: text
+        at:
+        - 24.6
+        - 10.6
+        text: 'Ligand-gated
+
+          channel'
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 30.0
+        - 0.6
+        shape: hexagon
+        hue: red
+        r: 0.45
+      - g: blob
+        at:
+        - 29.4
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: pink
+      - g: blob
+        at:
+        - 30.6
+        - 2.3
+        w: 1.0
+        h: 1.4
+        shape: oval
+        hue: pink
+      - g: blob
+        at:
+        - 29.4
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: pink
+      - g: blob
+        at:
+        - 30.6
+        - 5.0
+        w: 0.6
+        h: 3.6
+        shape: box
+        hue: pink
+      - g: blob
+        at:
+        - 28.6
+        - 7.5
+        w: 1.4
+        h: 1.1
+        shape: oval
+        hue: orange
+        text: JAK
+        text_size: 0.42
+      - g: blob
+        at:
+        - 31.4
+        - 7.5
+        w: 1.4
+        h: 1.1
+        shape: oval
+        hue: orange
+        text: JAK
+        text_size: 0.42
+      - g: text
+        at:
+        - 30.0
+        - 10.6
+        text: 'Cytokine R
+
+          (→ JAK)'
+        size: 0.75
+        align: center
+      - g: text
+        at:
+        - -1.0
+        - 13.0
+        text: Intracellular receptors
+        size: 0.8
+        align: left
+      - g: ion
+        at:
+        - 3.0
+        - 14.4
+        r: 0.45
+        hue: gray
+        text: 'NO'
+        text_size: 0.4
+      - g: arrow
+        from:
+        - 3.6
+        - 14.4
+        to:
+        - 5.0
+        - 14.4
+        color: black
+        curve: 0
+      - g: blob
+        at:
+        - 6.6
+        - 14.4
+        w: 2.4
+        h: 1.4
+        shape: oval
+        hue: green
+        text: sGC
+        text_size: 0.5
+      - g: text
+        at:
+        - 6.6
+        - 16.2
+        text: soluble GC
+        size: 0.75
+        align: center
+      - g: ligand
+        at:
+        - 11.4
+        - 13.6
+        shape: diamond
+        hue: orange
+        r: 0.4
+      - g: blob
+        at:
+        - 11.6
+        - 14.9
+        w: 1.6
+        h: 1.2
+        shape: oval
+        hue: purple
+        text: R
+        text_size: 0.5
+      - g: blob
+        at:
+        - 13.0
+        - 15.0
+        w: 1.2
+        h: 0.9
+        shape: oval
+        hue: gray
+        text: Hsp90
+        text_size: 0.36
+      - g: arrow
+        from:
+        - 14.0
+        - 14.4
+        to:
+        - 17.4
+        - 14.4
+        color: black
+        curve: 0
+      - g: region
+        x0: 17.8
+        y0: 12.6
+        x1: 34.6
+        y1: 18.0
+        hue: blue
+        opacity: 0.18
+        dashed: true
+      - g: text
+        at:
+        - 34.2
+        - 13.2
+        text: nucleus
+        size: 0.65
+        align: right
+        color: gray
+      - g: dsdna
+        from:
+        - 19.0
+        - 15.6
+        to:
+        - 33.4
+        - 15.6
+        width: 1.0
+      - g: blob
+        at:
+        - 24.0
+        - 14.3
+        w: 1.6
+        h: 1.3
+        shape: oval
+        hue: purple
+        text: R
+        text_size: 0.5
+      - g: blob
+        at:
+        - 25.6
+        - 14.3
+        w: 1.6
+        h: 1.3
+        shape: oval
+        hue: purple
+        text: R
+        text_size: 0.5
+      - g: text
+        at:
+        - 26.2
+        - 17.0
+        text: nuclear receptor dimer on HRE
+        size: 0.65
+        align: center

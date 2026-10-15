@@ -1,0 +1,14 @@
+id: bromochloroindoxyl
+name: 5-Bromo-4-chloro-3-hydroxyindole
+label: 5-Bromo-4-chloro-indoxyl
+aliases:
+- indoxyl
+smiles: Oc1c[nH]c2ccc(Br)c(Cl)c12
+ring:
+  coordgen: true
+tags:
+- molecular_biology
+- techniques
+notes_zh: X-gal 水解產物（無色），兩分子經 O₂ 氧化二聚為 5,5′-dibromo-4,4′-dichloro-indigo（藍）。
+parts_png: false
+status: pending

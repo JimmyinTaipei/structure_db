@@ -1,0 +1,8 @@
+id: estradiol
+name: "Estradiol"
+aliases: [E2, 雌二醇]
+smiles: "C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=C3C=CC(=C4)O"
+ring: {letters: true, orient: "steroid", methyls: false}
+tags: [lipid, steroid]
+notes_zh: "estrogen（18 碳），A 環為芳香環（aromatase 由 testosterone 轉來），沒有 C19 甲基。"
+status: pending

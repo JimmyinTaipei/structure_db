@@ -1,0 +1,16 @@
+id: glucocerebroside
+name: Glucocerebroside
+aliases:
+- glucosylceramide
+- GlcCer
+smiles: C(OC1OC(CO)C(O)C(O)C1O)C(NC(=O)CCCCCCCCCCCCCCCCC)C(O)/C=C/CCCCCCCCCCCCC
+lipid:
+  type: sphingolipid
+  chains:
+  - n: 18
+  head: glucose
+tags:
+- lipid_metabolism
+- sphingolipid_metabolism
+notes_zh: ceramide + β-glucose（UDP-glucose 提供）。大多數鞘醣脂與神經節苷脂的起點。Gaucher disease：glucocerebrosidase 缺乏（最常見的溶小體儲積症；肝脾腫大、骨痛、Gaucher cell 似皺紙；enzyme replacement imiglucerase）。
+status: pending

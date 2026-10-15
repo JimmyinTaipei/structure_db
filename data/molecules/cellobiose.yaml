@@ -1,0 +1,26 @@
+id: cellobiose
+name: "Cellobiose"
+aliases: [纖維二糖]
+smiles: "C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O[C@H]1[C@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O1)O"
+haworth:
+  units:
+    - ring: pyranose
+      subs:
+        1: {up: "link", down: "H"}
+        2: {up: "H", down: "OH"}
+        3: {up: "OH", down: "H"}
+        4: {up: "H", down: "HO"}
+        5: {up: "CH_2OH", down: "H"}
+    - ring: pyranose
+      subs:
+        1: {up: "H", down: "OH"}
+        2: {up: "OH", down: "H"}
+        3: {up: "H", down: "OH"}
+        4: {up: "link", down: "H"}
+        5: {up: "H", down: "CH_2OH"}
+      at: [4.9, -0.2]
+      flip: true
+  links: [{from: [0, 1, "up"], to: [1, 4, "up"]}]
+tags: [carbohydrate, disaccharide]
+notes_zh: "Glc(β1→4)Glc。纖維素的重複單元；人類沒有 cellulase，無法消化 β1→4 鍵（膳食纖維）。右側 glucose 翻面畫。"
+status: pending

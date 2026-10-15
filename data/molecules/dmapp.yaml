@@ -1,0 +1,21 @@
+id: dmapp
+name: Dimethylallyl pyrophosphate
+label: 'Dimethylallyl
+
+  pyrophosphate (DMAPP)'
+aliases:
+- DMAPP
+- dimethylallyl diphosphate
+smiles: CC(C)=CCOP(=O)([O-])OP(=O)([O-])[O-]
+chain:
+- c: C
+  l: H_3C
+  r: CH_3
+  down: 2
+- c: CH
+- c: CH_2O{P}–{P}
+tags:
+- lipid_metabolism
+- cholesterol_synthesis
+notes_zh: IPP 的異構物（C5）。DMAPP + IPP → GPP（C10）→ + IPP → FPP（C15）；2 FPP → squalene（C30）。
+status: pending

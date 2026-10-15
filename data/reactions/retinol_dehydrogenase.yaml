@@ -1,0 +1,30 @@
+id: retinol_dehydrogenase
+title: Retinol ⇌ Retinal (retinol dehydrogenase)
+substrates:
+- retinol
+products:
+- retinal
+cofactors_in:
+- NAD+
+cofactors_out:
+- NADH+H+
+enzyme: 'retinol
+
+  dehydrogenase'
+reversible: true
+decorate:
+  retinol:
+    highlight:
+    - {smarts: '[CH2:1][OH:2]', color: magenta}
+  NADH+H+:
+    colors:
+      0:
+        c:
+        - [magenta, H]
+        - [magenta, H^+]
+card_zh:
+  type: 氧化還原（可逆）：醇 ⇌ 醛
+tags:
+- vitamin
+- fat_soluble
+status: pending

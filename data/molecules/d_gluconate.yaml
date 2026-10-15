@@ -1,0 +1,26 @@
+id: d_gluconate
+name: D-Gluconate
+aliases:
+- gluconic acid
+- 葡萄糖酸
+smiles: '[O-]C(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO'
+chain:
+- c: COO^-
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: HO
+  r: H
+- c: C
+  l: H
+  r: OH
+- c: C
+  l: H
+  r: OH
+- c: CH_2OH
+tags:
+- carbohydrate
+- sugar_derivative
+notes_zh: C1（醛基）氧化成羧酸：aldonic acid。glucose oxidase 的產物（血糖試紙）；PPP 的 6-phosphogluconate 即其 6-磷酸。
+status: pending

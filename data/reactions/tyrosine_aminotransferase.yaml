@@ -1,0 +1,29 @@
+id: tyrosine_aminotransferase
+title: Tyrosine + α-KG ⇌ p-Hydroxyphenylpyruvate + Glutamate (TAT)
+substrates:
+- tyrosine
+- alpha_kg
+products:
+- hydroxyphenylpyruvate
+- glutamate
+prosthetic:
+- PLP
+enzyme: 'tyrosine
+
+  aminotransferase'
+reversible: true
+decorate:
+  tyrosine:
+    colors:
+      1: {l: magenta}
+  glutamate:
+    colors:
+      1: {l: magenta}
+card_zh:
+  location: 肝
+  type: 轉胺（PLP）
+  deficiency: tyrosinemia II（眼、皮膚病灶）
+tags:
+- amino_acid_metabolism
+- aa_degradation
+status: pending

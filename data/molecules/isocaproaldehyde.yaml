@@ -1,0 +1,10 @@
+id: isocaproaldehyde
+name: Isocaproaldehyde
+aliases:
+- 4-methylpentanal
+smiles: CC(C)CCC=O
+tags:
+- lipid_metabolism
+- steroid_hormone
+notes_zh: CYP11A1 切下的膽固醇側鏈（C22–C27）。
+status: pending

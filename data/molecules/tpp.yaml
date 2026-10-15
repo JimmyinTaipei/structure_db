@@ -1,0 +1,22 @@
+id: tpp
+name: Thiamine pyrophosphate (TPP)
+label: 'Thiamine
+
+  pyrophosphate (TPP)'
+aliases:
+- TPP
+- ThDP
+- thiamine diphosphate
+- 硫胺焦磷酸
+smiles: Cc1ncc(C[n+]2csc(CCOP(=O)([O-])OP(=O)([O-])[O-])c2C)c(N)n1
+ring:
+  coordgen: true
+decorate:
+  highlight:
+  - smarts: '[n+]:[cH]:s'
+    color: magenta
+tags:
+- vitamin
+- coenzyme
+notes_zh: 洋紅：噻唑環 C2（夾在 N⁺ 與 S 之間）。C2–H 解離成碳陰離子（ylide），攻擊 α-酮酸的羰基 → 脫羧後以「活性醛」形式攜帶。酵素：PDH（E1）、α-KGDH、BCKDH（MSUD）、transketolase（PPP；紅血球 transketolase 活性可評估 B1 狀態）。
+status: pending
