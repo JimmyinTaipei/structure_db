@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>structure_db</title>
+<link rel="stylesheet" href="web/app.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#/">structure_db</a>
+  <input id="q" type="search" placeholder="搜尋：名稱、別名、中文、酶素…" autocomplete="off">
+  <nav id="tabs">
+    <button data-tab="all" class="on">全部</button>
+    <button data-tab="molecule">分子</button>
+    <button data-tab="reaction">反應</button>
+    <button data-tab="pathway">路徑</button>
+    <button data-tab="review">審核佇列 <span id="qcount" class="badge"></span></button>
+  </nav>
+  <label class="base">引用路徑
+    <select id="base">
+      <option value="rel">相對（typora_file/各科/）</option>
+      <option value="abs">絕對路徑</option>
+    </select>
+  </label>
+</header>
+<div id="tags"></div>
+<main>
+  <aside id="list"></aside>
+  <section id="detail"></section>
+</main>
+<div id="toast"></div>
+<script src="web/app.js"></script>
+</body>
+</html>
